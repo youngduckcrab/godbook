@@ -16,13 +16,14 @@ sources:
 status: reviewed
 review_note: "2026-11-16 독립 검토 4회. 수학적 오류 없음. 증명 가능한 범위로 진술을 좁히고 받아들이는 사실을 명시, 역사 인용과 출처 기록 정정."
 added: 2026-11-16
+updated: 2026-11-16
 ---
 
 :::statement
 $A$가 [[set]]일 때 다음과 같이 정의한다. [[equal-cardinality]]에서처럼 $|\mathbb{N}| = |A|$는 $\mathbb{N}$에서 $A$로의 전단사가 존재한다는 뜻이다.
 
 - $A$가 **가산 무한**(countably infinite)이라는 것은 $|\mathbb{N}| = |A|$, 곧 $\mathbb{N}$에서 $A$로의 [[injective-surjective-bijective|전단사]] $f : \mathbb{N} \to A$가 존재한다는 것이다.
-- $A$가 **가산**(countable)이라는 것은 $A$가 유한집합이거나 가산 무한이라는 것이다. 여기서 유한집합은 [[set]]에서 말한 원소가 유한 개인 집합이다.
+- $A$가 **가산**(countable)이라는 것은 $A$가 유한집합이거나 가산 무한이라는 것이다. 여기서 유한집합은 이 강의 9단원의 "유한집합과 원소의 개수" 항목에서 정의한 유한집합이다.
 - $A$가 **비가산**(uncountable)이라는 것은 $A$가 무한집합(유한집합이 아닌 집합)이고 $|\mathbb{N}| \ne |A|$, 곧 $\mathbb{N}$에서 $A$로의 전단사가 하나도 없다는 것이다.
 - "$|A| = \aleph_0$"($\aleph_0$는 aleph naught로 읽는다)는 "$A$가 가산 무한이다", 곧 "$|\mathbb{N}| = |A|$"를 줄여 쓴 표기이다. 정확히 $A$가 가산 무한일 때 $|A| = \aleph_0$라 쓴다. 이 표기는 $\aleph_0$라는 대상을 정하지 않으며, 이 표기에서 $|A| = |\mathbb{N}|$을 끌어내지 않는다. $A = \mathbb{N}$일 때 $|\mathbb{N}| = \aleph_0$는 $\mathbb{N}$이 가산 무한이라는 뜻이고, 이는 $\mathrm{id}(n) = n$이 $\mathbb{N}$에서 $\mathbb{N}$으로의 전단사이기 때문이다.
 :::
@@ -31,7 +32,7 @@ $A$가 [[set]]일 때 다음과 같이 정의한다. [[equal-cardinality]]에서
 Let $A$ be a set. As in the definition of equal cardinality, $|\mathbb{N}| = |A|$ means that there exists a bijection from $\mathbb{N}$ to $A$.
 
 - $A$ is **countably infinite** if $|\mathbb{N}| = |A|$, that is, if there exists a bijection $f : \mathbb{N} \to A$.
-- $A$ is **countable** if $A$ is finite or countably infinite. Here a finite set is a set with finitely many elements.
+- $A$ is **countable** if $A$ is finite or countably infinite. Here a finite set is a finite set as defined in the entry "Finite Sets and the Number of Elements" in unit 9 of this course.
 - $A$ is **uncountable** if $A$ is infinite (not finite) and $|\mathbb{N}| \ne |A|$, that is, if there is no bijection from $\mathbb{N}$ to $A$.
 - The expression "$|A| = \aleph_0$" (with $\aleph_0$ read as aleph naught) is an abbreviation for "$A$ is countably infinite", that is, for "$|\mathbb{N}| = |A|$". We write $|A| = \aleph_0$ exactly when $A$ is countably infinite. This notation does not introduce an object called $\aleph_0$, and we do not derive $|A| = |\mathbb{N}|$ from it. For $A = \mathbb{N}$, $|\mathbb{N}| = \aleph_0$ means that $\mathbb{N}$ is countably infinite, because $\mathrm{id}(n) = n$ is a bijection from $\mathbb{N}$ to $\mathbb{N}$.
 :::

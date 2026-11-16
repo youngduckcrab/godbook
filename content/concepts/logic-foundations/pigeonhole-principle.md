@@ -6,14 +6,14 @@ kind: theorem
 field: logic-foundations
 msc: ["03"]
 level: intro
-summary: m이 n보다 크면 {1, …, m}에서 {1, …, n}으로의 단사는 없다. 따라서 원소가 더 많은 유한집합에서 더 적은 유한집합으로의 함수는 단사가 아니다.
-requires: [set, subset, function, injective-surjective-bijective, function-composition, composition-preserves-injectivity-and-surjectivity, mathematical-induction, comparing-cardinalities, finite-set, adding-or-removing-an-element, prime-number, well-ordering-principle]
+summary: m이 n보다 크면 {1, …, m}에서 {1, …, n}으로의 단사는 없다. 따라서 원소를 m개 갖는 집합에서 원소를 n개 갖는 집합으로의 함수는 m이 n보다 크면 단사가 아니다.
+requires: [set, subset, function, injective-surjective-bijective, inverse-function, proof-by-contradiction, function-composition, composition-preserves-injectivity-and-surjectivity, mathematical-induction, comparing-cardinalities, finite-set, adding-or-removing-an-element, prime-number, well-ordering-principle]
 proof: full
 sources:
   - ref: hammack-book-of-proof
     loc: 3.9절 The Division and Pigeonhole Principles, Fact 3.10, p.104(개수판). 12.3절 The Pigeonhole Principle Revisited, p.233(함수판)
     checked: original
-    note: "출처 Fact 3.10(p.104)은 '물건 n개를 상자 k개에 넣을 때 n > k이면 어떤 상자에는 물건이 둘 이상 들어 있고, n < k이면 빈 상자가 있다'는 개수판이다. 출처는 이것이 나눗셈 원리(Fact 3.9)에서 따라 나온다고 쓰고 증명하지 않으며, 바로 뒤에서 '나눗셈 원리와 비둘기집 원리는 직관적이고 자명하다(intuitive and obvious)'고 쓴다(p.105). 12.3절(p.233)의 함수판은 유한집합 A, B와 함수 f : A → B에 대해 |A| > |B|이면 f가 단사가 아니고 |A| < |B|이면 f가 전사가 아니라고 서술하며, 출처는 이 원리가 자명하다(obvious)고 쓸 뿐 증명하지 않는다. 이 항목은 함수판 중 단사에 관한 1번만 다루고(전사에 관한 2번은 다루지 않는다) 증명은 출처에 없으며 이 사이트가 n에 대한 귀납으로 직접 썼다. 출처는 |A| > |B|를 원소의 개수의 대소로 쓰지만 이 항목은 정수 m, n의 대소로 진술해, comparing-cardinalities의 |A| ≤ |B|(단사의 존재)와 섞이지 않게 했다. '비둘기집'이라는 이름과 비둘기·상자의 직관은 출처가 3.9절(p.104)에서 설명한 것과 같은 취지이다. 예시와 반례, 확인 질문은 이 사이트에서 새로 만들었고 출처의 예(12.3절의 부분집합 합, 텍사스 사람의 머리카락 수, 3.9절의 예들)와 다르다."
+    note: "출처 Fact 3.10(p.104)은 '물건 n개를 상자 k개에 넣을 때 n > k이면 어떤 상자에는 물건이 둘 이상 들어 있고, n < k이면 빈 상자가 있다'는 개수판이다. 출처는 이것을 나눗셈 원리(Fact 3.9)에서 몇 줄로 이끌어 내지만 나눗셈 원리 자체는 직관적인 설명으로만 제시하고 증명하지 않으며, 바로 뒤에서 '나눗셈 원리와 비둘기집 원리는 직관적이고 자명하다(intuitive and obvious)'고 쓴다(p.105). 12.3절(p.233)의 함수판은 유한집합 A, B와 함수 f : A → B에 대해 |A| > |B|이면 f가 단사가 아니고 |A| < |B|이면 f가 전사가 아니라고 서술하며, 출처는 이 원리가 자명하다(obvious)고 쓸 뿐 증명하지 않는다. 이 항목은 함수판 중 단사에 관한 1번만 다루고(전사에 관한 2번은 다루지 않는다) 증명은 출처에 없으며 이 사이트가 n에 대한 귀납으로 직접 썼다. 출처는 |A| > |B|를 원소의 개수의 대소로 쓰지만 이 항목은 정수 m, n의 대소로 진술해, comparing-cardinalities의 |A| ≤ |B|(단사의 존재)와 섞이지 않게 했다. '비둘기집'이라는 이름과 비둘기·상자의 직관은 출처가 3.9절(p.104)에서 설명한 것과 같은 취지이다. 요일 배정 예는 출처 p.105의 첫 예('13명 가운데 두 사람은 같은 달에 태어났다')와 같은 발상이고 수와 집합은 다르다. 반례(ℕ에서 ℕ의 진부분집합으로의 단사)와 나머지 예시, 확인 질문은 이 사이트에서 새로 만들었고 출처의 예(12.3절의 부분집합 합, 텍사스 사람의 머리카락 수)와 다르다."
 status: source-checked
 added: 2026-11-16
 ---
@@ -22,7 +22,7 @@ added: 2026-11-16
 $m$과 $n$이 정수이고 $m \ge 0$, $n \ge 0$이라 하자. 여기서 $\{1, \dots, n\}$은 [[finite-set]]에서 정한 집합이다.
 
 1. $\{1, \dots, m\}$에서 $\{1, \dots, n\}$으로의 단사가 존재하면 $m \le n$이다. 곧 $m > n$이면 $\{1, \dots, m\}$에서 $\{1, \dots, n\}$으로의 단사는 존재하지 않는다.
-2. (함수판) $A$가 원소를 $m$개, $B$가 원소를 $n$개 갖고 $m > n$이며 $f : A \to B$가 [[function|함수]]이면, $f$는 단사가 아니다. 곧 $a \ne a'$이고 $f(a) = f(a')$인 $a, a' \in A$가 있다.
+2. (함수판) $A$가 원소를 $m$개, $B$가 원소를 $n$개 갖고 $m > n$이며 $f : A \to B$가 [[function|함수]]이면, $f$는 단사가 아니다. 곧 $a \ne a'$이고 $f(a) = f(a')$인 $a, a' \in A$가 있다. 이것의 대우 꼴로, $A$가 원소를 $m$개, $B$가 원소를 $n$개 갖고 단사 $f : A \to B$가 있으면 $m \le n$이다.
 
 여기서 $m \le n$, $m > n$은 정수 $m$, $n$의 대소 비교이다([[comparing-cardinalities]]의 $|A| \le |B|$와 다르다). 증명에서는 [[prime-number]]의 (Z1), [[well-ordering-principle]]의 (Z5)–(Z8), (L1)–(L3), [[finite-set]]의 (F1)–(F3)과 [[adding-or-removing-an-element]]의 결과를 인용한다.
 :::
@@ -31,7 +31,7 @@ $m$과 $n$이 정수이고 $m \ge 0$, $n \ge 0$이라 하자. 여기서 $\{1, \d
 Let $m$ and $n$ be integers with $m \ge 0$ and $n \ge 0$. Here $\{1, \dots, n\}$ is the set defined in the entry on finite sets.
 
 1. If there exists an injection from $\{1, \dots, m\}$ to $\{1, \dots, n\}$, then $m \le n$. Equivalently, if $m > n$, there is no injection from $\{1, \dots, m\}$ to $\{1, \dots, n\}$.
-2. (Function version) If $A$ has $m$ elements, $B$ has $n$ elements, $m > n$, and $f : A \to B$ is a function, then $f$ is not injective. That is, there are $a, a' \in A$ with $a \ne a'$ and $f(a) = f(a')$.
+2. (Function version) If $A$ has $m$ elements, $B$ has $n$ elements, $m > n$, and $f : A \to B$ is a function, then $f$ is not injective. That is, there are $a, a' \in A$ with $a \ne a'$ and $f(a) = f(a')$. Equivalently, if $A$ has $m$ elements, $B$ has $n$ elements, and there is an injection $f : A \to B$, then $m \le n$.
 
 Here $m \le n$ and $m > n$ are comparisons of the integers $m$ and $n$ (not the relation $|A| \le |B|$ defined by the existence of an injection). In the proof we cite (Z1) of the entry on prime numbers, (Z5)–(Z8) and (L1)–(L3) of the entry on the well-ordering principle, (F1)–(F3) of the entry on finite sets, and the results on adding or removing one element.
 :::
@@ -40,7 +40,7 @@ Here $m \le n$ and $m > n$ are comparisons of the integers $m$ and $n$ (not the 
 
 비둘기 $m$마리가 집 $n$개에 들어갈 때 $m > n$이면 어느 집에는 두 마리 이상이 들어갑니다. 비둘기를 $\{1, \dots, m\}$, 집을 $\{1, \dots, n\}$의 원소로 보고 "비둘기가 들어간 집"을 함수 $f$로 쓰면, 어느 집에 두 마리 이상 있다는 것은 $f$가 단사가 아니라는 말입니다. 그러니 "$m > n$이면 단사가 없다"가 같은 말입니다.
 
-비유가 어긋나는 곳은 집이 무한히 많거나 비둘기가 무한히 많은 경우입니다. 이 항목은 $\{1, \dots, m\}$, $\{1, \dots, n\}$처럼 개수가 정해진 집합에 대한 것이고, 무한집합에는 아래 반례처럼 이 결론이 통하지 않습니다.
+비유가 어긋나는 곳은 비둘기나 집의 수가 정해지지 않은 경우입니다. 이 항목은 $\{1, \dots, m\}$, $\{1, \dots, n\}$처럼 개수가 정해진 집합에 대한 것이고, 그렇지 않은 집합에서는 아래 반례처럼 "일부분으로 가는 단사는 없다"는 기대가 깨집니다.
 
 증명은 $n$에 대한 귀납입니다. 집이 하나 늘 때, 마지막 비둘기가 들어간 집 하나를 치우고 나머지 비둘기와 나머지 집을 보면 비둘기 한 마리와 집 한 개가 줄어든 같은 문제가 됩니다.
 
@@ -71,7 +71,9 @@ $m > 0$이면 (Z1)에 의해 $1 \le m$이고, 양변에서 $1$을 빼면 (Z7)에
 
 두 경우 모두 $m \le n + 1$이므로 $S_{n+1}$이 참이다. 귀납법의 원리에 의해 모든 정수 $n \ge 0$에서 $S_n$이 참이다. 이것이 1이다. "곧 $m > n$이면 단사가 없다"는 대우이다: 단사가 있으면 $m \le n$이고, (L1)에 의해 $n < m$과 $m \le n$은 함께 성립하지 않는다.
 
-**2의 증명.** $f : A \to B$가 단사라고 가정하고 모순을 이끈다. $A$가 원소를 $m$개, $B$가 원소를 $n$개 가지므로 전단사 $h_A : \{1, \dots, m\} \to A$와 $h_B : \{1, \dots, n\} \to B$가 있다. (F3)에 의해 $h_B^{-1} : B \to \{1, \dots, n\}$도 전단사이다. [[composition-preserves-injectivity-and-surjectivity|합성에 관한 정리]]의 1번에 의해 $f \circ h_A : \{1, \dots, m\} \to B$가 단사이고, 같은 정리를 다시 쓰면 $h_B^{-1} \circ f \circ h_A : \{1, \dots, m\} \to \{1, \dots, n\}$이 단사이다. 1에 의해 $m \le n$인데, $m > n$이므로 (L1)에 어긋난다. 따라서 $f$는 단사가 아니고, [[injective-surjective-bijective|단사의 부정]]에 의해 $a \ne a'$이고 $f(a) = f(a')$인 $a, a' \in A$가 있다. $\blacksquare$
+**2의 증명.** $f : A \to B$가 단사라고 가정하고 모순을 이끈다. $A$가 원소를 $m$개, $B$가 원소를 $n$개 가지므로 전단사 $h_A : \{1, \dots, m\} \to A$와 $h_B : \{1, \dots, n\} \to B$가 있다. (F3)에 의해 $h_B^{-1} : B \to \{1, \dots, n\}$도 전단사이다. [[composition-preserves-injectivity-and-surjectivity|합성에 관한 정리]]의 1번에 의해 $f \circ h_A : \{1, \dots, m\} \to B$가 단사이고, 같은 정리를 다시 쓰면 $h_B^{-1} \circ f \circ h_A : \{1, \dots, m\} \to \{1, \dots, n\}$이 단사이다. 1에 의해 $m \le n$인데, $m > n$이므로 (L1)에 어긋난다. 따라서 $f$는 단사가 아니고, [[injective-surjective-bijective|단사의 부정]]에 의해 $a \ne a'$이고 $f(a) = f(a')$인 $a, a' \in A$가 있다.
+
+마지막 문장은 같은 증명에서 나온다. 단사 $f : A \to B$가 있으면 위의 논증대로 $m > n$일 수 없다. (Z5)에 의해 $m < n$, $m = n$, $m > n$ 가운데 정확히 하나가 성립하므로 $m < n$ 또는 $m = n$, 곧 $m \le n$이다. $\blacksquare$
 :::
 
 :::remark[전사에 관한 판은 다루지 않는다]
@@ -81,7 +83,7 @@ $m > 0$이면 (Z1)에 의해 $1 \le m$이고, 양변에서 $1$을 빼면 (Z7)에
 ## 예시와 반례
 
 :::example[$\{1, 2, 3\}$에서 $\{1, 2\}$로의 함수를 모두 늘어놓기]
-$3 > 2$이므로 비둘기집 원리는 $\{1, 2, 3\}$에서 $\{1, 2\}$로의 단사가 없다고 말합니다. 직접 확인해 봅시다. 함수는 $(f(1), f(2), f(3))$를 $\{1, 2\}$에서 고르는 것이므로 $2^3 = 8$개이고, 각각 값이 같은 서로 다른 입력의 쌍이 있습니다.
+$3 > 2$이므로 비둘기집 원리는 $\{1, 2, 3\}$에서 $\{1, 2\}$로의 단사가 없다고 말합니다. 직접 확인해 봅시다. $f(1)$, $f(2)$, $f(3)$은 각각 $1$ 또는 $2$이므로, 가능한 경우를 빠짐없이 늘어놓으면 다음 여덟 가지이고, 각각 값이 같은 서로 다른 입력의 쌍이 있습니다.
 
 | $(f(1), f(2), f(3))$ | 값이 같은 두 입력 |
 |---|---|
@@ -105,8 +107,8 @@ $3 > 2$이므로 비둘기집 원리는 $\{1, 2, 3\}$에서 $\{1, 2\}$로의 단
 "$m \le n$이면 $\{1, \dots, m\}$에서 $\{1, \dots, n\}$으로의 함수는 모두 단사이다"는 거짓입니다. $m = 2$, $n = 3$이면 $2 \le 3$이지만 $f = \{(1, 1), (2, 1)\}$은 $\{1, 2\}$에서 $\{1, 2, 3\}$으로의 함수이고 $f(1) = f(2)$이며 $1 \ne 2$이므로 단사가 아닙니다. 이 항목은 $m > n$일 때 단사가 하나도 없다고 말할 뿐, $m \le n$일 때 어떤 함수가 단사일지는 말하지 않습니다.
 :::
 
-:::counterexample[무한집합에서는 통하지 않는다]
-$E = \{2n : n \in \mathbb{N}\}$이라 하고 $g(n) = 2n$으로 정한 $g : \mathbb{N} \to E$를 봅시다. $2a = 2a'$이면 $a = a'$이므로(양변을 $2$로 나눈다) 단사이고, $E$의 원소는 모두 $2n$ 꼴이므로 전사입니다. 한편 $n \ge 1$이면 $2n = n + n \ge 1 + 1 = 2$($\mathbb{Z}$의 덧셈과 부등식의 성질 (Z7)과 (Z6))이므로 $E$의 원소는 모두 $2$ 이상의 자연수이고, $1 \in \mathbb{N}$은 $E$에 속하지 않습니다. $E$는 $\mathbb{N}$의 일부분인데도 $\mathbb{N}$에서 $E$로의 단사가 있습니다. 이 항목이 증명한 것은 $\{1, \dots, m\}$, $\{1, \dots, n\}$처럼 원소의 개수가 정해진 집합에 대한 "더 큰 쪽에서 더 작은 쪽으로는 단사가 없다"뿐입니다.
+:::counterexample[개수가 정해지지 않은 집합에서는 일부분으로 가는 단사가 있을 수 있다]
+$g(n) = n + 1$로 정한 $g : \mathbb{N} \to \mathbb{N}$을 봅시다. $g(a) = g(a')$이면 $a + 1 = a' + 1$이고 양변에서 $1$을 빼면 (Z7)에 의해 $a = a'$이므로 단사입니다. $n \ge 1$이면 $n + 1 \ge 1 + 1 = 2$((Z7))이므로 $g$의 값은 모두 $E = \{k \in \mathbb{N} : k \ge 2\}$에 속합니다. $E \subseteq \mathbb{N}$이고 $1 \in \mathbb{N}$인데 $1 \notin E$입니다($2 \le 1$이면 $1 < 1 + 1 = 2$((L3))와 (L1)에 어긋납니다). 곧 $\mathbb{N}$에서 자기 자신의 진부분집합 $E$로의 단사가 있습니다. $\{1, \dots, m\}$에서 $\{1, \dots, n\}$으로($m > n$)는 이런 일이 없다는 것이 이 항목입니다. 그러나 $\mathbb{N}$이 원소를 몇 개 갖는다고 할 수 있는지는 이 항목이 말하지 않으므로 비둘기집 원리는 $\mathbb{N}$과 $E$에는 적용되지 않습니다. 원소의 개수가 정해진 집합에서 자기 자신의 진부분집합으로의 단사가 없다는 것은 [[subset-of-finite-set]]에서 이 항목을 바탕으로 보입니다. $\mathbb{N}$이 원소를 몇 개도 갖지 않는다는 것은 [[natural-numbers-are-infinite|자연수의 집합이 무한집합이라는 정리]]에서 보입니다.
 :::
 
 ## 확인 질문
