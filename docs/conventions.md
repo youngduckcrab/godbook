@@ -22,6 +22,9 @@
 | 실수의 뺄셈·나눗셈 | $a - b$, $a/b$ | a + (−b), a·b⁻¹ (b ≠ 0). `real-number-arithmetic`. 1/2 는 2⁻¹ |
 | 벡터공간의 연산 | $u + v$, $\alpha v$ | "덧셈"과 "스칼라배". 스칼라는 ℝ 만 쓴다. 영벡터는 $0_V$ (문맥이 분명하면 0) |
 | 함수의 공간, ℝⁿ | $\mathbb{R}^X$, $\mathbb{R}^n$ | ℝ^X 는 X 에서 ℝ 로의 함수 전체. ℝⁿ = ℝ^{{1,…,n}} (n 은 자연수). (x₁, …, xₙ) 은 i 에서의 값이 x_i 인 함수. 이 강의는 ℝ × ℝ 를 ℝ² 로 쓰지 않는다 (`real-function-space`) |
+| 벡터의 열 | $v_1, \dots, v_n$ | {1, …, n} 에서 V 로의 함수. 길이 0 인 빈 열을 허용하고 같은 벡터가 되풀이되어도 된다. 벡터의 모임은 집합이 아니라 열로 다룬다. "덧붙인 열", "k 번째 항을 지운 열"은 `finite-sum-of-vectors` |
+| 벡터의 유한 합 | $v_1 + \dots + v_n$ | 재귀로 정의. 빈 열의 합은 $0_V$. 실수의 유한 합은 ℝ 을 벡터공간으로 본 경우. 기호 Σ 는 쓰지 않는다 |
+| 생성 | $\operatorname{span}(v_1, \dots, v_n)$ | 일차결합 전체의 집합. 빈 열의 생성은 {0_V} |
 | 함수의 제한 | $f|_X$ | `adding-or-removing-an-element`의 진술에서 정의 |
 | 거듭제곱 | $a^k$ | k 는 자연수. 모든 자리가 a 인 길이 k 인 열의 곱(`congruence-arithmetic` 진술). a⁰ 은 정의하지 않는다. 지수법칙은 아직 없다 |
 | 함수 | $f : A \to B$ | 아래 "함수와 공역" 참조 |
@@ -75,6 +78,8 @@
 | 정수의 계산 법칙(교환·결합·분배, 0 과 1 과 음수의 계산)과 구체적인 정수 사이의 등식·부등식 | `well-ordering-principle` 진술 (쓸 때마다 적지 않아도 된다) |
 | 유한 곱의 재귀적 정의가 모든 길이 n 과 모든 열에 값을 하나 정한다 (재귀 정의 일반의 정당성은 다루지 않는다. 다른 재귀 정의가 필요하면 그 항목의 진술에서 따로 받아들인다) | `finite-product` 진술 |
 | (K1)–(K7) 실수의 계산 법칙: 교환, 결합, 분배, 0 과 1 (0 ≠ 1), 덧셈 역원과 0 이 아닌 수의 역수의 존재, 정수는 실수이고 정수 0, 1, −n 과 정수끼리의 계산이 실수로서의 것과 같다. 순서와 절댓값은 없다 | `real-number-arithmetic` 진술 |
+| 벡터의 유한 합의 재귀 정의가 모든 길이와 모든 열에 값을 하나 정한다 | `finite-sum-of-vectors` 진술 |
+| "항을 m 개 지워 얻는 열"의 재귀 정의가 모든 m 과 모든 열에 뜻을 정한다 | `spanning-list-contains-basis` 진술 |
 | 수학적 귀납법의 원리 (시작점이 정수 m 인 꼴 포함) | `mathematical-induction` 진술 |
 | 유리수는 분자와 분모가 둘 다 짝수는 아닌 분수로 쓸 수 있다 | `rational-and-irrational-numbers` 진술 |
 | 제곱하여 2가 되는 양의 실수가 꼭 하나 있다 | `sqrt2-is-irrational` 진술 |
@@ -88,7 +93,9 @@
 
 자주 쓰는 꼴: 정수 c, k 에 대하여 c ≤ k 이거나 c ≥ k + 1 이다. (Z5)와 (Z1)에서 나오므로 "(Z5)와 (Z1)에 의해"로 인용한다.
 
-선형대수에서 증명되어 진술을 번호로 인용하는 것: `real-number-arithmetic`의 (K8)–(K12) (0, 1, −a, a⁻¹ 의 유일성, 0·a = 0 과 부호 규칙, ab = 0 이면 a = 0 이거나 b = 0, 소거, 오른쪽 분배, (ab)⁻¹ = a⁻¹b⁻¹ 등); `vector-space`의 공리 (V1)–(V8); `vector-space-basic-properties`의 (B1)–(B12); `real-function-space`의 (G) (값으로 함수 정하기: 각 x ∈ X 에 Y 의 원소 r(x) 가 정해져 있으면 {(x, r(x))} 는 X 에서 Y 로의 함수).
+선형대수에서 증명되어 진술을 번호로 인용하는 것: `real-number-arithmetic`의 (K8)–(K12) (0, 1, −a, a⁻¹ 의 유일성, 0·a = 0 과 부호 규칙, ab = 0 이면 a = 0 이거나 b = 0, 소거, 오른쪽 분배, (ab)⁻¹ = a⁻¹b⁻¹ 등); `vector-space`의 공리 (V1)–(V8); `vector-space-basic-properties`의 (B1)–(B12); `real-function-space`의 (G) (값으로 함수 정하기: 각 x ∈ X 에 Y 의 원소 r(x) 가 정해져 있으면 {(x, r(x))} 는 X 에서 Y 로의 함수); `subspace`의 (S1)–(S3), (P1)–(P5); `finite-sum-of-vectors`의 (H0)–(H7) (합의 성질, k 번째 항 떼어 내기)과 (C1)–(C6) (계수의 열에 관한 성질, 계수 끼워 넣기, 차의 규칙); `linear-combination-and-span`의 (N1)–(N4); `linear-independence`의 (I1)–(I4); `basis`의 (Q1) (빈 열이 기저인 것은 정확히 V = {0_V} 일 때), (Q2) (x + y 와 γx 의 좌표); `standard-basis`의 (1) (ℝ^X 에서 유한 합의 값은 값들의 유한 합).
+
+번호의 글자는 강의를 넘어 겹치지 않게 한다. 이미 쓴 글자: Z, L, F, P, D, O, A, R, K, V, B, G, S, H, C, N, I, Q. 새 번호를 붙일 때는 이 문서와 `grep -rn "(X1)" content/` 로 확인한다.
 
 강한 귀납법은 받아들인 원리가 아니다. `strong-induction`이 보통의 귀납법에서 끌어낸다.
 
