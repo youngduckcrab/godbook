@@ -7,13 +7,14 @@ field: linear-algebra
 msc: ["15"]
 level: undergrad
 summary: 자연수 m, n 에 대하여 m × n 행렬은 {1, …, m} × {1, …, n} 에서 ℝ 로의 함수이고, 성분마다의 연산으로 벡터공간을 이룬다. 행렬은 성분으로도, 열로도 하나로 정해지고 행의 개수와 열의 개수도 하나로 정해지며, 단위행렬 Iₙ 의 k 번째 열은 표준기저의 e_k 이다.
-requires: [cartesian-product, function, finite-set, well-ordering-principle, real-number-arithmetic, vector-space, real-function-space, finite-sum-of-vectors, standard-basis]
+requires: [cartesian-product, function, finite-set, prime-number, well-ordering-principle, real-number-arithmetic, vector-space, real-function-space, finite-sum-of-vectors, standard-basis]
 sources:
   - ref: treil-linear-algebra-done-wrong
     loc: 1장 1.2절 Matrix notation, p.4; 1.1절 Examples 의 예 'The space M_{m×n}', p.3; 3.2절 열의 표기, p.14; 6.1절 단위행렬, p.24
     checked: original
     note: "출처는 m × n 행렬을 행이 m 개, 열이 n 개인 직사각형 배열이라 하고 배열의 원소를 성분(entries)이라 부르며, 첫째 첨자가 행 번호, 둘째 첨자가 열 번호라고 적는다(1.2절, p.4). 행 j, 열 k 의 성분을 A_{j,k} 나 (A)_{j,k} 로, 또는 같은 글자의 소문자로 쓴다고도 적는다(p.4). 이 항목은 행렬을 배열이 아니라 함수 {1, …, m} × {1, …, n} → ℝ 로 정의하고, 배열은 이 함수를 적는 표기로 둔다. 출처는 M_{m×n} 의 덧셈과 스칼라배를 성분마다 정하고, 연산이 성분마다이므로 공리가 스칼라에서 그대로 성립한다며 그 이유를 'can you see why?'로 돌린다(1.1절, pp.3–4). 이 항목은 M_{m×n} 을 real-function-space 항목의 ℝ^X 로 두어 그 항목의 명제로 벡터공간임을 얻는다. 출처는 3.2절(p.14)에서 A 의 k 번째 열을 a_k 로 쓰고 A = [a_1, …, a_n] 으로 적는다. 이 항목은 성분 a_{j,k} 와 구별하려고 열을 굵은 글자 𝐚_k 로 쓴다. 출처는 6.1절(p.24)에서 항등사상의 행렬이 주대각선이 1 이고 나머지가 0 인 n × n 행렬 I = I_n 이라고 'Clearly'를 붙여 적는다. 이 항목은 I_n 을 성분으로 정의하고 그 열이 e_k 임을 보인다. 두 행렬이 같을 조건(성분, 열), 열을 주면 행렬이 하나로 정해진다는 것, 합과 스칼라배의 열, 행의 개수와 열의 개수가 행렬마다 하나로 정해진다는 (7), 그리고 그 증명은 이 사이트가 썼다. 출처는 n × n 행렬을 square 라 부른다(5.3절, p.22). 출처는 F^n 의 원소를 세로 열로 적고 열(column)과 같은 것으로 다루지만, 이 강의는 ℝ^m 의 원소를 m × 1 행렬로 여기지 않는다. 출처의 스칼라는 실수 또는 복소수이고 이 항목은 실수만 쓴다. 예시와 반례와 확인 질문은 새로 만들었다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 작성자의 자기 검토 뒤 독립 검토 통과(전반 2회, 후반 1회). 행렬의 크기가 하나로 정해진다는 사실을 진술에 더하고, 1 × 1 행렬과 ℝ¹ 의 원소의 표기, 직관의 설명, 출처 메모를 보완했다. 마지막 수정은 지휘자가 변경분을 확인했다."
 added: 2026-11-16
 ---
 
@@ -92,7 +93,7 @@ $X = \{1, \dots, m\} \times \{1, \dots, n\}$이라 한다. [[cartesian-product|�
 
 **(6)의 증명.** $X = \{1, \dots, n\} \times \{1, \dots, n\}$의 원소 $(j, k)$마다 $j = k$이거나 $j \ne k$이고 둘 가운데 하나만 성립하므로, $(j, k)$에 실수($j = k$이면 $1$, $j \ne k$이면 $0$)가 하나 정해진다. (G)에 의해 이 값을 갖는 $n \times n$ 행렬이 있고, (2)에 의해 이런 행렬은 하나뿐이다. 그 $(j, j)$ 성분은 $1$이고 $j \ne k$인 $(j, k)$ 성분은 $0$이다. $k \in \{1, \dots, n\}$을 잡으면 $I_n$의 $k$번째 열의 $j$번째 값은 $j = k$이면 $1$이고 $j \ne k$이면 $0$이다. [[standard-basis|표준기저]]의 진술에 의해 $e_k$의 $j$번째 값도 $j = k$이면 $1$이고 $j \ne k$이면 $0$이다. 정의역이 $\{1, \dots, n\}$인 두 함수의 값이 모두 같으므로 함수의 같음에 의해 $I_n$의 $k$번째 열은 $e_k$이다.
 
-**(7)의 증명.** $A$가 $m \times n$ 행렬이면서 $p \times q$ 행렬이면, $A$는 집합으로서 하나이므로 [[function|함수]]의 진술("두 함수가 같으면 정의역도 같다")에 의해 두 정의역 $\{1, \dots, m\} \times \{1, \dots, n\}$과 $\{1, \dots, p\} \times \{1, \dots, q\}$가 같다. [[finite-set|유한집합]] 항목에서 $\{1, \dots, m\} = \{i \in \mathbb{Z} : 1 \le i \le m\}$이다. 자연수는 $\mathbb{N} = \{1, 2, 3, \dots\}$의 원소이므로 $m \ge 1$이고 $n \ge 1$이며, $m \le m$, $1 \le 1$이므로 $m \in \{1, \dots, m\}$, $1 \in \{1, \dots, n\}$이다. 따라서 $(m, 1)$은 왼쪽 집합에 속하고, 두 집합이 같으므로 오른쪽 집합에도 속한다. [[cartesian-product|곱집합]]의 진술에 의해 $m \in \{1, \dots, p\}$, 곧 $m \le p$이다. 같은 논증을 $(p, 1)$에 쓴다. $p \ge 1$, $q \ge 1$이므로 $(p, 1)$은 오른쪽 집합에 속하고 따라서 왼쪽 집합에 속하므로 $p \in \{1, \dots, m\}$, 곧 $p \le m$이다. [[well-ordering-principle|정렬 원리]] 항목의 (L2)에 의해 $m = p$이다. 열의 개수도 같은 방식으로 원소를 바꾸어 쓴다. $(1, n)$은 왼쪽 집합에 속하므로 오른쪽 집합에 속하고 $n \le q$이다. $(1, q)$는 오른쪽 집합에 속하므로 왼쪽 집합에 속하고 $q \le n$이다. (L2)에 의해 $n = q$이다. $\blacksquare$
+**(7)의 증명.** $A$가 $m \times n$ 행렬이면서 $p \times q$ 행렬이면, $A$는 집합으로서 하나이므로 [[function|함수]]의 진술("두 함수가 같으면 정의역도 같다")에 의해 두 정의역 $\{1, \dots, m\} \times \{1, \dots, n\}$과 $\{1, \dots, p\} \times \{1, \dots, q\}$가 같다. [[finite-set|유한집합]] 항목에서 $\{1, \dots, m\} = \{i \in \mathbb{Z} : 1 \le i \le m\}$이다. $m$, $n$은 자연수, 곧 양의 정수이므로 [[prime-number]]의 진술에서 받아들인 (Z1)에 의해 $m \ge 1$, $n \ge 1$이고, $m \le m$, $1 \le 1$이므로 $m \in \{1, \dots, m\}$, $1 \in \{1, \dots, n\}$이다. 따라서 $(m, 1)$은 왼쪽 집합에 속하고, 두 집합이 같으므로 오른쪽 집합에도 속한다. [[cartesian-product|곱집합]]의 진술에 의해 $m \in \{1, \dots, p\}$, 곧 $m \le p$이다. 같은 논증을 $(p, 1)$에 쓴다. $p$, $q$도 자연수이므로 (Z1)에 의해 $p \ge 1$, $q \ge 1$이고, 따라서 $(p, 1)$은 오른쪽 집합에 속하고 따라서 왼쪽 집합에 속하므로 $p \in \{1, \dots, m\}$, 곧 $p \le m$이다. [[well-ordering-principle|정렬 원리]] 항목의 (L2)에 의해 $m = p$이다. 열의 개수도 같은 방식으로 원소를 바꾸어 쓴다. $(1, n)$은 왼쪽 집합에 속하므로 오른쪽 집합에 속하고 $n \le q$이다. $(1, q)$는 오른쪽 집합에 속하므로 왼쪽 집합에 속하고 $q \le n$이다. (L2)에 의해 $n = q$이다. $\blacksquare$
 :::
 
 ## 예시와 반례
