@@ -1,5 +1,6 @@
 // Container directives used in content:
 //   :::statement            진술 상자
+//   :::english              같은 진술의 영어판 (진술 상자 바로 아래에 붙는다)
 //   :::idea                 증명의 핵심 아이디어 (접힘)
 //   :::hint                 단계별 힌트 (접힘, 자동 번호)
 //   :::proof                전체 증명 (접힘)
@@ -9,7 +10,7 @@
 import { visit } from 'unist-util-visit';
 
 const FOLDS = { idea: '핵심 아이디어', hint: '힌트', proof: '전체 증명', solution: '풀이' };
-const BOXES = { statement: '', example: '예시', counterexample: '반례', remark: '참고', exercise: '문제' };
+const BOXES = { statement: '', english: 'English', example: '예시', counterexample: '반례', remark: '참고', exercise: '문제' };
 
 function takeLabel(node) {
   const first = node.children[0];

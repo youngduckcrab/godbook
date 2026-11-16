@@ -14,12 +14,16 @@ sources:
     loc: 2.6절, Fact 2.1, p.51
     checked: original    # original | mirror | not-opened
     note: 출처와 다른 표기나 증명을 썼으면 여기에 밝힌다.
-status: source-checked   # reviewed | source-checked | unverified
+status: source-checked   # 작성자는 source-checked 로 낸다
 added: 2026-01-01
 ---
 
 :::statement
 진술.
+:::
+
+:::english
+The same statement in English.
 :::
 
 ## 직관

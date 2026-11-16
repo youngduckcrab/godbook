@@ -39,6 +39,7 @@ for (const c of concepts) {
   if (d.status !== 'unverified' && !opened) err(c.file, `status 가 '${d.status}' 인데 실제로 열어 본 출처가 없다`);
   if (d.status === 'reviewed' && !d.review_note) err(c.file, "status 가 'reviewed' 이면 review_note 가 필요하다");
   if (!/^:::statement\s*$/m.test(c.body)) err(c.file, ':::statement 블록이 없다');
+  if (!/^:::statement\s*\n[\s\S]*?\n:::\s*\n+:::english\s*$/m.test(c.body)) err(c.file, ':::statement 바로 뒤에 :::english 블록(영어 진술)이 없다');
   const hasProof = /^:::proof\s*$/m.test(c.body);
   if (PROVABLE.has(d.kind)) {
     if (d.proof === 'full' && !hasProof) err(c.file, "proof: full 인데 :::proof 블록이 없다");

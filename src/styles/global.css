@@ -71,6 +71,9 @@ button.read[aria-pressed="true"] { background: var(--ok-soft); color: var(--ok);
 .box > :first-child { margin-top: 0; } .box > :last-child { margin-bottom: 0; }
 .box-title { font-weight: 700; font-size: .88rem; color: var(--muted); margin: 0 0 .3em; }
 .box-statement { background: var(--state); border: 0; border-left: 4px solid var(--accent); border-radius: 4px var(--radius) var(--radius) 4px; font-size: 1.03rem; }
+.box-statement:has(+ .box-english) { margin-bottom: 0; border-bottom-right-radius: 0; }
+.box-english { margin-top: 0; background: var(--state); border: 0; border-top: 1px dashed var(--line); border-left: 4px solid var(--line); border-radius: 0 0 var(--radius) 4px; color: var(--muted); font-size: .97rem; }
+.box-english .box-title { font-size: .75rem; letter-spacing: .06em; text-transform: uppercase; }
 .box-counterexample { border-left: 4px solid var(--bad); }
 .box-example { border-left: 4px solid var(--ok); }
 .box-exercise { border-left: 4px solid var(--warn); }
