@@ -35,7 +35,7 @@ $$\mathscr{P}(A) = \{X : X \subseteq A\}$$
 
 $$X \in \mathscr{P}(A) \quad\text{과}\quad X \subseteq A$$
 
-[[empty-set-is-subset]]이고 모든 집합은 자기 자신의 부분집합이므로, $\emptyset$과 $A$는 언제나 $\mathscr{P}(A)$의 원소입니다.
+[[empty-set-is-subset|공집합은 모든 집합의 부분집합]]이고 모든 집합은 자기 자신의 부분집합이므로, $\emptyset$과 $A$는 언제나 $\mathscr{P}(A)$의 원소입니다.
 
 부분집합을 하나 만든다는 것은 $A$의 원소마다 "넣는다 / 뺀다"를 정하는 일입니다. 원소가 $n$개이면 이런 선택이 $n$번 있으므로 부분집합은 모두 $2^n$개가 됩니다.
 
