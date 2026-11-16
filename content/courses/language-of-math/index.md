@@ -5,9 +5,7 @@ summary: 명제와 논리, 집합, 증명 기법. 이후의 모든 강의가 딛
 level: intro
 order: 1
 track: 기초
-status: in-progress
-planned_units:
-  - 집합의 크기
+status: complete
 ---
 
 대학 수학은 계산보다 **문장**으로 이루어져 있습니다. "모든 $x$에 대하여", "…이면 …이다", "…인 것들의 모임" 같은 말이 정확히 무엇을 뜻하는지 정해 두지 않으면, 증명을 읽을 수도 쓸 수도 없습니다.
