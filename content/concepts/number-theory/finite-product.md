@@ -17,7 +17,8 @@ sources:
     loc: 1.1.1절, Theorem 1.1.6 (Fundamental Theorem of Arithmetic), p.3
     checked: original
     note: "출처는 소수들의 곱과 p₁p₂⋯p_d, q₁q₂⋯q_m 꼴의 곱을 정의 없이 쓴다(p.3, p.10의 증명). 같은 쪽에서 출처는 소수가 인수 하나인 곱이고 1이 빈 곱이라고 적는데(p.3), 이 항목은 인수가 하나인 곱만 정의하고 빈 곱(n = 0)은 정의하지 않는다. 정의와 성질의 증명은 이 사이트가 썼다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 3회. 수학적 오류 없음. 유한 곱의 정의와 성질을 보강하고 정렬된 꼴로 진술, 직관의 거짓 문장과 출처 기록 정정. 마지막 표현 수정은 지휘자가 변경분으로 확인."
 added: 2026-11-16
 ---
 

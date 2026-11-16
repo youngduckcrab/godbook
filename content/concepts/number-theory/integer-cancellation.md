@@ -18,7 +18,8 @@ sources:
     loc: 1.1.4절 The Fundamental Theorem of Arithmetic, Theorem 1.1.6의 증명, p.10
     checked: original
     note: "출처는 이 법칙을 진술하지 않는다. p.10의 증명에서 p₁과 q_i를 '지운다(cancel)'고만 쓰고 근거를 적지 않는다. 진술과 증명은 이 사이트가 썼다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 3회. 수학적 오류 없음. 유한 곱의 정의와 성질을 보강하고 정렬된 꼴로 진술, 직관의 거짓 문장과 출처 기록 정정. 마지막 표현 수정은 지휘자가 변경분으로 확인."
 added: 2026-11-16
 ---
 

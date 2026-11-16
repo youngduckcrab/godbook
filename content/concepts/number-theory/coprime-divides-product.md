@@ -18,7 +18,8 @@ sources:
     loc: 1.3절 Exercises, 연습문제 1.8(b), p.19
     checked: original
     note: "출처는 같은 진술을 정수 a, b, c, n에 대한 연습문제 1.8(b)로 싣는다(p.19). 책 뒤의 Answers and Hints(p.149)에는 1장 연습문제 1.8의 답이 없다(2장 9번의 힌트가 연습문제 1.8을 가리킬 뿐이다). 출처는 2.1.1절 Proposition 2.1.10(Cancellation, p.23)의 증명에서 n | (a − b)c이고 gcd(n, c) = 1이면 n | a − b라는 같은 꼴의 사실을 쓰는데, 그 자리에서는 산술의 기본 정리(Theorem 1.1.6)에서 나온다고만 적고 증명을 쓰지 않는다. 이 항목의 증명은 Hammack과 같은 베주 경로이다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 3회. 수학적 오류 없음. 유한 곱의 정의와 성질을 보강하고 정렬된 꼴로 진술, 직관의 거짓 문장과 출처 기록 정정. 마지막 표현 수정은 지휘자가 변경분으로 확인."
 added: 2026-11-16
 ---
 
