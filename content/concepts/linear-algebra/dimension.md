@@ -60,7 +60,7 @@ The following hold.
 
 **(4)** $n$이 자연수이면 [[standard-basis|표준기저]]의 (2)에 의해 길이 $n$인 열 $e_1, \dots, e_n$이 $\mathbb{R}^n$의 기저이다. (1)에 의해 $\mathbb{R}^n$은 유한차원이고 (2)에 의해 $\dim \mathbb{R}^n = n$이다.
 
-**(5)** 항이 실수 $1$인 길이 $1$인 열을 $\iota$라 하자. 벡터공간 $\mathbb{R}$에서 실수 $\alpha$와 벡터 $1$의 스칼라배는 실수의 곱 $\alpha \cdot 1$이고, [[finite-sum-of-vectors|(H0)]]에 의해 길이 $1$인 열의 합은 그 항이므로, 계수 $\alpha$에 대한 $\iota$의 일차결합은 $\alpha \cdot 1$이며 [[real-number-arithmetic|(K4)]]에 의해 $\alpha$와 같다. 따라서 모든 실수 $a$는 계수 $a$에 대한 일차결합이다. 또 길이 $1$인 두 계수의 열 $\alpha$, $\beta$에 대하여 두 일차결합이 같으면 $\alpha = \alpha \cdot 1 = \beta \cdot 1 = \beta$이다. 곧 모든 $a \in \mathbb{R}$에 대하여 $a$를 나타내는 계수의 열이 하나 있고 하나뿐이므로, 기저의 정의에 의해 $\iota$는 $\mathbb{R}$의 기저이다. (1)과 (2)에 의해 $\mathbb{R}$은 유한차원이고 $\dim \mathbb{R} = 1$이다.
+**(5)** 항이 실수 $1$인 길이 $1$인 열을 $\iota$라 하자. 벡터공간 $\mathbb{R}$에서 실수 $\alpha_1$과 벡터 $1$의 스칼라배는 실수의 곱 $\alpha_1 \cdot 1$이고, [[finite-sum-of-vectors|(H0)]]에 의해 길이 $1$인 열의 합은 그 항이므로, 길이 $1$인 계수의 열 $\alpha$(항 $\alpha_1$)에 대한 $\iota$의 일차결합은 $\alpha_1 \cdot 1$이며 [[real-number-arithmetic|(K4)]]에 의해 $\alpha_1$과 같다. 따라서 모든 실수 $a$는 항이 $a$인 계수의 열에 대한 일차결합이다. 또 길이 $1$인 두 계수의 열 $\alpha$, $\beta$에 대하여 두 일차결합이 같으면 $\alpha_1 = \beta_1$이고, 길이가 같은 두 열은 모든 자리에서 항이 같으면 같으므로([[finite-sum-of-vectors]]의 진술) $\alpha = \beta$이다. 곧 모든 $a \in \mathbb{R}$에 대하여 $a$를 나타내는 계수의 열이 하나 있고 하나뿐이므로, 기저의 정의에 의해 $\iota$는 $\mathbb{R}$의 기저이다. (1)과 (2)에 의해 $\mathbb{R}$은 유한차원이고 $\dim \mathbb{R} = 1$이다.
 :::
 
 ## 예시와 반례
