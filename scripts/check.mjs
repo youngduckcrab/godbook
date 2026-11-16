@@ -111,7 +111,7 @@ const hasFinal = (word) => {
 // 받침이 있을 때만 / 없을 때만 올 수 있는 조사 (서술격 조사 "이-"는 제외)
 const AFTER_FINAL = ['으로', '은', '을', '과'];
 const AFTER_VOWEL = ['는', '를', '와', '가'];
-const UNDEFINED_SYMBOLS = ['\\iff', '\\Leftrightarrow', '\\mapsto', '\\subsetneq', '\\supsetneq', '\\implies'];
+const UNDEFINED_SYMBOLS = ['\\iff', '\\Leftrightarrow', '\\mapsto', '\\subsetneq', '\\supsetneq', '\\implies', '\\sum'];
 const closure = (id, seen = new Set()) => {
   for (const r of ids.get(id)?.data.requires ?? []) if (!seen.has(r)) { seen.add(r); closure(r, seen); }
   return seen;
@@ -128,6 +128,8 @@ function lintBody(file, body, requires, self) {
     const bad = (fin ? AFTER_VOWEL : AFTER_FINAL).find((j) => after.startsWith(j) && !['가지', '가운', '과정', '와서', '은근'].some((w) => after.startsWith(w)));
     if (bad) warn(file, `조사가 안 맞는다: "${shown}${after}" ([[${id}]])`);
   }
+  // 탭과 제어 문자: \\text 의 \\t 가 탭으로 바뀌는 사고가 있었다. 화면에서 수식이 깨진다.
+  text.split('\n').forEach((line, i) => { if (/[\x00-\x09\x0b-\x1f]/.test(line)) warn(file, `본문 ${i + 1}번째 줄에 탭이나 제어 문자가 있다`); });
   // 수식 구분 기호: 본문의 한 문단(줄) 안에서 $ 의 개수가 홀수이면 수식이 깨져 보인다.
   let inDisplay = false;
   text.split('\n').forEach((line, i) => {
