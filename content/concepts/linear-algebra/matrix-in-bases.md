@@ -12,7 +12,7 @@ sources:
   - ref: treil-linear-algebra-done-wrong
     loc: 2장 8절, 8.1절 Coordinate vector, p.69; 8.2절 Matrix of a linear transformation, pp.69–70 (식 (8.1), p.70)
     checked: original
-    note: "출처는 8.1절(p.69)에서 기저 B 에 관한 v 의 좌표를 모은 열을 좌표벡터 [v]_B 라 하고, v 를 [v]_B 로 보내는 대응이 V 와 Fⁿ 사이의 동형사상이며 기저를 표준기저로 보낸다고 'Note that'으로 적는다. 8.2절(pp.69–70)은 기저 A, B 에 관한 T 의 행렬 [T]_BA 를 등식 [Tv]_B = [T]_BA[v]_A 를 만족하는 m × n 행렬로 정하고, 그 k 번째 열이 [Ta_k]_B 라고 적으며, 합성의 행렬이 행렬의 곱이라는 (8.1)을 진술한 뒤 증명은 표준기저의 경우와 같다거나 좌표 동형사상으로 모든 것을 Fⁿ 으로 옮기면 증명이 필요 없다고 적는다(p.70). 이 항목은 출처가 말한 '좌표 동형사상으로 옮기기'를 정의로 삼는다. 좌표벡터를 isomorphism-and-bases 의 동형사상 C_ℬ 의 역함수의 값으로, [T]_{𝒞ℬ} 를 C_𝒞⁻¹ ∘ T ∘ C_ℬ 의 행렬로 정의하고, 출처의 정의인 등식과 그 등식을 만족하는 행렬이 하나뿐이라는 것을 (3)으로 증명한다. 기저 기호 ℬ, 𝒞 와 [T]_{𝒞ℬ} 의 첨자 순서(둘째 첨자가 정의역의 기저)는 출처를 따랐다. 출처는 기저를 집합 기호 {b_1, …, b_n} 으로 적지만 순서 있는 열로 쓰며, 이 항목은 벡터의 열로 쓴다. 좌표 동형사상이라는 이름과 기호 C_ℬ, 출처의 'Note that'과 (8.1)의 증명, (1)의 나머지 성질, (5), (6), (7)과 그 증명은 이 사이트가 썼다. 기저의 길이가 0 인 경우(V = {0_V})는 크기 0 인 행렬이 없으므로 다루지 않는다. 출처의 한 기저 표기 [T]_A(8.5절, p.72)는 [T]_ℬ 로 쓴다. 예시는 ℝ² 의 표준기저가 아닌 기저에 관한 행렬을 구하는 계산으로, 출처 연습문제 8.4(p.73)와 같은 종류이며 기저와 사상은 새로 골랐다. 반례와 확인 질문은 새로 만들었다."
+    note: "출처는 8.1절(p.69)에서 기저 B 에 관한 v 의 좌표를 모은 열을 좌표벡터 [v]_B 라 하고, v 를 [v]_B 로 보내는 대응이 V 와 Fⁿ 사이의 동형사상이며 기저를 표준기저로 보낸다고 'Note that'으로 적는다. 8.2절(pp.69–70)은 기저 A, B 에 관한 T 의 행렬 [T]_BA 를 등식 [Tv]_B = [T]_BA[v]_A 를 만족하는 m × n 행렬로 정하고, 그 k 번째 열이 [Ta_k]_B 라고 적으며, 합성의 행렬이 행렬의 곱이라는 (8.1)을 진술한 뒤 증명은 표준기저의 경우와 같다거나 좌표 동형사상으로 모든 것을 Fⁿ 으로 옮기면 증명이 필요 없다고 적는다(p.70). 이 항목은 출처가 말한 '좌표 동형사상으로 옮기기'를 정의로 삼는다. 좌표벡터를 isomorphism-and-bases 의 동형사상 C_ℬ 의 역함수의 값으로, [T]_{𝒞ℬ} 를 C_𝒞⁻¹ ∘ T ∘ C_ℬ 의 행렬로 정의하고, 출처의 정의인 등식과 그 등식을 만족하는 행렬이 하나뿐이라는 것을 (3)으로 증명한다. 기저 기호 ℬ, 𝒞 와 [T]_{𝒞ℬ} 의 첨자 순서(둘째 첨자가 정의역의 기저)는 출처를 따랐다. 출처는 기저를 집합 기호 {b_1, …, b_n} 으로 적지만 순서 있는 열로 쓰며, 이 항목은 벡터의 열로 쓴다. 출처는 8.2절(p.70)에서 v 를 [v]_B 로 보내는 대응, 곧 V 에서 Fⁿ 으로 가는 방향의 대응을 coordinate isomorphism 이라 부른다. 이 항목은 그 역함수 C_ℬ : ℝⁿ → V 를 좌표 동형사상이라 하고, 출처의 대응은 C_ℬ⁻¹ 이다. 기호 C_ℬ, 출처의 'Note that'과 (8.1)의 증명, (1)의 나머지 성질, (5), (6), (7)과 그 증명은 이 사이트가 썼다. 기저의 길이가 0 인 경우(V = {0_V})는 크기 0 인 행렬이 없으므로 다루지 않는다. 출처의 한 기저 표기 [T]_A(8.5절, p.72)는 [T]_ℬ 로 쓴다. 예시는 ℝ² 의 표준기저가 아닌 기저에 관한 행렬을 구하는 계산으로, 출처 연습문제 8.4(p.73)와 같은 종류이며 기저와 사상은 새로 골랐다. 첫 예시의 좌표 공식을 연립방정식으로 구하는 부분은 출처 8.3.1절(pp.70–71)의 [I]_BS = B⁻¹ 과 같은 계산이다. 반례와 확인 질문은 새로 만들었다."
 status: source-checked
 added: 2026-11-16
 ---
@@ -32,7 +32,7 @@ $V$, $W$가 [[vector-space|벡터공간]]이고 $n$, $m$이 자연수이며, $\m
 4. $U$가 벡터공간이고 $p$가 자연수이며 $\mathcal{A}$가 길이 $p$인 $U$의 기저이고 $S : U \to V$가 선형사상이면 $[T \circ S]_{\mathcal{C}\mathcal{A}} = [T]_{\mathcal{C}\mathcal{B}}[S]_{\mathcal{B}\mathcal{A}}$이다.
 5. $V$ 위의 항등함수 $i_V$에 대하여 $[i_V]_{\mathcal{B}} = I_n$이다.
 6. $T$가 동형사상인 것은 정확히 $[T]_{\mathcal{C}\mathcal{B}}$가 [[invertible-matrix|가역]]일 때이다. 이때 역함수 $T^{-1} : W \to V$에 대하여 $[T^{-1}]_{\mathcal{B}\mathcal{C}} = ([T]_{\mathcal{C}\mathcal{B}})^{-1}$이다.
-7. $\mathbb{R}^n$과 $\mathbb{R}^m$의 표준기저를 모두 $\mathcal{E}$로 쓰자. $C_{\mathcal{E}} : \mathbb{R}^n \to \mathbb{R}^n$은 항등함수 $i_{\mathbb{R}^n}$이고, 모든 $x \in \mathbb{R}^n$에서 $[x]_{\mathcal{E}} = x$이다. 선형사상 $T : \mathbb{R}^n \to \mathbb{R}^m$에 대하여 $[T]_{\mathcal{E}\mathcal{E}} = [T]$이다.
+7. (이 (7)에서는 $V = \mathbb{R}^n$, $W = \mathbb{R}^m$으로 두고) $\mathbb{R}^n$과 $\mathbb{R}^m$의 표준기저를 모두 $\mathcal{E}$로 쓰자. $C_{\mathcal{E}} : \mathbb{R}^n \to \mathbb{R}^n$은 항등함수 $i_{\mathbb{R}^n}$이고, 모든 $x \in \mathbb{R}^n$에서 $[x]_{\mathcal{E}} = x$이다. 선형사상 $R : \mathbb{R}^n \to \mathbb{R}^m$에 대하여 $[R]_{\mathcal{E}\mathcal{E}} = [R]$이다.
 :::
 
 :::english
@@ -50,7 +50,7 @@ The following hold.
 4. If $U$ is a vector space, $p$ a natural number, $\mathcal{A}$ a basis of $U$ of length $p$, and $S : U \to V$ a linear map, then $[T \circ S]_{\mathcal{C}\mathcal{A}} = [T]_{\mathcal{C}\mathcal{B}}[S]_{\mathcal{B}\mathcal{A}}$.
 5. For the identity function $i_V$ on $V$, $[i_V]_{\mathcal{B}} = I_n$.
 6. $T$ is an isomorphism exactly when $[T]_{\mathcal{C}\mathcal{B}}$ is invertible. In that case, for the inverse function $T^{-1} : W \to V$, $[T^{-1}]_{\mathcal{B}\mathcal{C}} = ([T]_{\mathcal{C}\mathcal{B}})^{-1}$.
-7. Write $\mathcal{E}$ for the standard bases of both $\mathbb{R}^n$ and $\mathbb{R}^m$. $C_{\mathcal{E}} : \mathbb{R}^n \to \mathbb{R}^n$ is the identity function $i_{\mathbb{R}^n}$, and $[x]_{\mathcal{E}} = x$ for every $x \in \mathbb{R}^n$. For a linear map $T : \mathbb{R}^n \to \mathbb{R}^m$, $[T]_{\mathcal{E}\mathcal{E}} = [T]$.
+7. (In this (7), let $V = \mathbb{R}^n$ and $W = \mathbb{R}^m$.) Write $\mathcal{E}$ for the standard bases of both $\mathbb{R}^n$ and $\mathbb{R}^m$. $C_{\mathcal{E}} : \mathbb{R}^n \to \mathbb{R}^n$ is the identity function $i_{\mathbb{R}^n}$, and $[x]_{\mathcal{E}} = x$ for every $x \in \mathbb{R}^n$. For a linear map $R : \mathbb{R}^n \to \mathbb{R}^m$, $[R]_{\mathcal{E}\mathcal{E}} = [R]$.
 :::
 
 ## 직관
@@ -90,7 +90,7 @@ $$[T^{-1}]_{\mathcal{B}\mathcal{C}}[T]_{\mathcal{C}\mathcal{B}} = [T^{-1} \circ 
 $$C_{\mathcal{C}}\bigl(P(C_{\mathcal{B}}^{-1} v)\bigr) = C_{\mathcal{C}}\Bigl(C_{\mathcal{C}}^{-1}\bigl(T(C_{\mathcal{B}}(C_{\mathcal{B}}^{-1} v))\bigr)\Bigr) = C_{\mathcal{C}}(C_{\mathcal{C}}^{-1} w) = w = Tv$$
 이다. 함수의 같음에 의해 $T = (C_{\mathcal{C}} \circ P) \circ C_{\mathcal{B}}^{-1}$이다. $C_{\mathcal{C}}$, $P$, $C_{\mathcal{B}}^{-1}$이 모두 동형사상이므로 동형사상의 (4)를 두 번 쓰면 이 합성은 동형사상이고, 따라서 $T$는 동형사상이다.
 
-**(7)의 증명.** $x \in \mathbb{R}^n$이면 [[standard-basis|표준기저]]의 (3)에 의해 $C_{\mathcal{E}} x = x_1 e_1 + \cdots + x_n e_n = x$이므로, 함수의 같음에 의해 $C_{\mathcal{E}} = i_{\mathbb{R}^n}$이다. (1)에 의해 $x = C_{\mathcal{E}}([x]_{\mathcal{E}}) = [x]_{\mathcal{E}}$이다. 이것은 $\mathbb{R}^m$과 그 표준기저에서도 같다. 따라서 $x \in \mathbb{R}^n$이면 $C_{\mathcal{E}}^{-1}\bigl(T(C_{\mathcal{E}} x)\bigr) = [Tx]_{\mathcal{E}} = Tx$이고, 함수의 같음에 의해 $C_{\mathcal{E}}^{-1} \circ T \circ C_{\mathcal{E}} = T$이므로 $[T]_{\mathcal{E}\mathcal{E}} = [T]$이다. $\blacksquare$
+**(7)의 증명.** $x \in \mathbb{R}^n$이면 [[standard-basis|표준기저]]의 (3)에 의해 $C_{\mathcal{E}} x = x_1 e_1 + \cdots + x_n e_n = x$이므로, 함수의 같음에 의해 $C_{\mathcal{E}} = i_{\mathbb{R}^n}$이다. (1)에 의해 $x = C_{\mathcal{E}}([x]_{\mathcal{E}}) = [x]_{\mathcal{E}}$이다. 같은 논증을 $\mathbb{R}^m$과 그 표준기저에 쓰면 $C_{\mathcal{E}} = i_{\mathbb{R}^m}$이고 모든 $y \in \mathbb{R}^m$에서 $[y]_{\mathcal{E}} = y$이다. 따라서 $x \in \mathbb{R}^n$이면 $C_{\mathcal{E}}^{-1}\bigl(R(C_{\mathcal{E}} x)\bigr) = [Rx]_{\mathcal{E}} = Rx$이고, 함수의 같음에 의해 $C_{\mathcal{E}}^{-1} \circ R \circ C_{\mathcal{E}} = R$이므로 $[R]_{\mathcal{E}\mathcal{E}} = [R]$이다. $\blacksquare$
 :::
 
 ## 예시와 반례
@@ -109,8 +109,8 @@ $$[P]_{\mathcal{B}} = \begin{pmatrix} -1 & 0 \\ 3 & 1 \end{pmatrix}$$
 입니다. $M$과 다릅니다. (3)을 $v = (3, 1)$에서 확인하면 $Pv = (1, 3)$이고 $[Pv]_{\mathcal{B}} = (1 - 3, -1 + 6) = (-2, 5)$이며, $[P]_{\mathcal{B}}[v]_{\mathcal{B}} = 2(-1, 3) + (-1)(0, 1) = (-2, 6 - 1) = (-2, 5)$로 같습니다.
 :::
 
-:::counterexample[기저의 순서를 바꾸면 좌표벡터가 바뀐다]
-위 예시의 $b_1$, $b_2$를 바꾼 순서로 늘어놓은 열 $\mathcal{B}' = b_2, b_1$도 기저입니다. (V1)에 의해 $x_1 b_2 + x_2 b_1 = x_2 b_1 + x_1 b_2$이므로, 위의 계산에서 두 계수의 자리만 바뀌기 때문입니다. 그런데 $v = (3, 1) = (-1)b_2 + 2b_1$이므로 $[v]_{\mathcal{B}'} = (-1, 2)$이고, 이것은 $[v]_{\mathcal{B}} = (2, -1)$과 첫째 값이 다릅니다. 기저를 벡터들의 집합 $\{b_1, b_2\}$로만 보면 좌표벡터가 하나로 정해지지 않습니다. 이 강의가 기저를 [[finite-sum-of-vectors|벡터의 열]]로 다루는 까닭이 여기에 있습니다.
+:::counterexample[기저의 순서를 바꾸면 좌표벡터가 달라질 수 있다]
+위 예시의 $b_1$, $b_2$를 바꾼 순서로 늘어놓은 열 $\mathcal{B}' = b_2, b_1$도 기저입니다. (V1)에 의해 $x_1 b_2 + x_2 b_1 = x_2 b_1 + x_1 b_2$이므로, 위의 계산에서 두 계수의 자리만 바뀌기 때문입니다. 그런데 $v = (3, 1) = (-1)b_2 + 2b_1$이므로 $[v]_{\mathcal{B}'} = (-1, 2)$이고, 이것은 $[v]_{\mathcal{B}} = (2, -1)$과 첫째 값이 다릅니다. 기저를 벡터들의 집합 $\{b_1, b_2\}$로만 보면 좌표벡터가 하나로 정해지지 않습니다. 이 강의가 기저를 [[finite-sum-of-vectors|벡터의 열]]로 다루는 까닭 가운데 하나가 여기에 있습니다.
 :::
 
 ## 확인 질문

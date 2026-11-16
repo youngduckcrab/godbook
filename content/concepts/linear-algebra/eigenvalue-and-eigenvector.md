@@ -10,9 +10,9 @@ summary: 선형사상 T 가 영벡터가 아닌 v 를 λv 로 보낼 때 실수 
 requires: [real-number-arithmetic, vector-space, vector-space-basic-properties, real-function-space, function, inverse-function, injective-surjective-bijective, subspace, linear-map, linear-map-examples, linear-maps-form-a-vector-space, kernel-and-range, injective-iff-trivial-kernel, isomorphism, dimension, injective-iff-surjective-equal-dimension, matrix, matrix-vector-product, invertible-matrix]
 sources:
   - ref: treil-linear-algebra-done-wrong
-    loc: 4장 1.1절 Eigenvalues, eigenvectors, spectrum, p.100; 1.2절 첫 문단, p.100
+    loc: 4장 1.1절 Eigenvalues, eigenvectors, spectrum, p.100; 1.2절 첫 두 문단, p.100; 예시의 행렬은 2.7.1절, pp.112–113 참조
     checked: original
-    note: "출처는 1.1절(p.100)에서 영벡터가 아닌 v 로 Av = λv 가 되는 스칼라 λ 를 연산자 A : V → V 의 고윳값, v 를 그 고유벡터라 하고, 고유벡터를 찾는 일은 A − λI 의 핵을 찾는 일이며 핵 Ker(A − λI), 곧 고유벡터 전체와 0 벡터를 고유공간이라 한다고 적는다. 1.2절 첫 문단(p.100)은 λ 가 고윳값인 것은 정확히 Ker(A − λI) 가 자명하지 않을 때이고, Fⁿ 위의 연산자에서는 정사각행렬이므로 정확히 A − λI 가 가역이 아닐 때라고 적은 뒤 행렬식으로 넘어간다. 이 항목은 스칼라를 실수로만 두고, 출처의 I 를 항등함수 i_V 로, 연산자와 행렬을 T 와 A 로 나누어 쓴다. 출처는 4장 첫머리(p.100)에서 유한차원 공간의 연산자만 다룬다고 하지만, 이 항목의 정의와 (1), (2), (5), (6)은 차원을 가정하지 않는다. 출처는 1.1절에서 고유공간을 Ker(A − λI) 로 쓰고, 2.3절 Remark 2.4(p.109)에서는 E_k := Ker(A − λ_kI) 로 쓴다. 이 항목은 E 를 쓰지 않고 Ker(T − λi_V) 로 쓴다. T − λi_V 가 선형사상이고 그 값이 Tv − λv 라는 것((1)), 정사각행렬에 대한 '핵이 자명하지 않다 ⇔ 가역이 아니다'를 유한차원 공간의 단사·전사·동형사상으로 옮긴 (3), (4)의 등식 T_A − λi = T_{A − λI_n}, 고유벡터가 속하는 고윳값이 하나뿐이라는 (5), 0 이 고윳값일 조건 (6)과 모든 증명은 이 사이트가 썼다. (5)는 출처에 없다(4장 전체를 검색한 범위). 출처의 스펙트럼 σ(A)(p.100)는 이 항목에서 쓰지 않는다. 예시와 반례와 확인 질문은 새로 만들었다."
+    note: "출처는 1.1절(p.100)에서 영벡터가 아닌 v 로 Av = λv 가 되는 스칼라 λ 를 연산자 A : V → V 의 고윳값, v 를 그 고유벡터라 하고, 고유벡터를 찾는 일은 A − λI 의 핵을 찾는 일이며 핵 Ker(A − λI), 곧 고유벡터 전체와 0 벡터를 고유공간이라 한다고 적는다. 1.2절 첫 두 문단(p.100)은 λ 가 고윳값인 것은 정확히 Ker(A − λI) 가 자명하지 않을 때이고, Fⁿ 위의 연산자에서는 정사각행렬이므로 정확히 A − λI 가 가역이 아닐 때라고 적은 뒤 행렬식으로 넘어간다. 이 항목은 스칼라를 실수로만 두고, 출처의 I 를 항등함수 i_V 로, 연산자와 행렬을 T 와 A 로 나누어 쓴다. 출처는 4장 첫머리(p.100)에서 유한차원 공간의 연산자만 다룬다고 하지만, 이 항목의 정의와 (1), (2), (5), (6)은 차원을 가정하지 않는다. 출처는 1.1절에서 고유공간을 Ker(A − λI) 로 쓰고, 2.3절 Remark 2.4(p.109)에서는 E_k := Ker(A − λ_kI) 로 쓴다. 이 항목은 E 를 쓰지 않고 Ker(T − λi_V) 로 쓴다. T − λi_V 가 선형사상이고 그 값이 Tv − λv 라는 것((1)), 정사각행렬에 대한 '핵이 자명하지 않다 ⇔ 가역이 아니다'를 유한차원 공간의 단사·전사·동형사상으로 옮긴 (3), (4)의 등식 T_A − λi = T_{A − λI_n}, 고유벡터가 속하는 고윳값이 하나뿐이라는 (5), 0 이 고윳값일 조건 (6)과 모든 증명은 이 사이트가 썼다. (5)는 출처에 없다(4장 전체를 검색한 범위). 출처의 스펙트럼 σ(A)(p.100)는 이 항목에서 쓰지 않는다. 첫 예시는 출처 4장 2.7.1절(pp.112–113)의 (1 2; 8 1) 의 예(고윳값 5, −3, 고유벡터 (1, 2), (1, −2))와 같은 꼴의 행렬이며, 출처는 특성다항식으로 고윳값을 구하고 이 항목은 주어진 벡터를 곱해 확인하고 λ = 2 를 직접 판정한다. 둘째 예시와 반례와 확인 질문은 새로 만들었다."
 status: source-checked
 added: 2026-11-16
 ---
@@ -20,7 +20,7 @@ added: 2026-11-16
 :::statement
 $V$가 [[vector-space|벡터공간]]이고 $T : V \to V$가 [[linear-map|선형사상]]이라 하자.
 
-실수 $\lambda$가 $T$의 **고윳값**(eigenvalue)인 것은 정확히 $Tv = \lambda v$이고 $v \ne 0_V$인 $v \in V$가 있을 때이다. 실수 $\lambda$와 $v \in V$에 대하여, $v$가 $\lambda$에 속하는 $T$의 **고유벡터**(eigenvector)인 것은 정확히 $Tv = \lambda v$이고 $v \ne 0_V$일 때이다. 따라서 $\lambda$가 고윳값인 것은 정확히 $\lambda$에 속하는 고유벡터가 있을 때이다.
+실수 $\lambda$가 $T$의 **고윳값**(eigenvalue)인 것은 정확히 $Tv = \lambda v$이고 $v \ne 0_V$인 $v \in V$가 있을 때이다. 실수 $\lambda$와 $v \in V$에 대하여, $v$가 $\lambda$에 속하는 $T$의 **고유벡터**(eigenvector)인 것은 정확히 $Tv = \lambda v$이고 $v \ne 0_V$일 때이다. 따라서 $\lambda$가 고윳값인 것은 정확히 $\lambda$에 속하는 고유벡터가 있을 때이다. $v$가 $T$의 **고유벡터**인 것은 정확히 $v$가 어떤 실수에 속하는 $T$의 고유벡터일 때이다.
 
 $i_V$는 $V$ 위의 [[inverse-function|항등함수]]이다. 실수 $\lambda$에 대하여 $T - \lambda i_V$는 [[linear-maps-form-a-vector-space|선형사상의 공간]] $L(V, V)$에서의 차, 곧 $T + \bigl(-(\lambda i_V)\bigr)$이다. $\operatorname{Ker}(T - \lambda i_V)$를 $\lambda$에 대한 $T$의 **고유공간**(eigenspace)이라 한다.
 
@@ -39,7 +39,7 @@ $n$이 자연수이고 $A$가 $n \times n$ [[matrix|행렬]]이면, $A$의 고�
 :::english
 Let $V$ be a vector space and $T : V \to V$ a linear map.
 
-A real number $\lambda$ is an **eigenvalue** of $T$ exactly when there is $v \in V$ with $Tv = \lambda v$ and $v \ne 0_V$. For a real number $\lambda$ and $v \in V$, $v$ is an **eigenvector** of $T$ corresponding to $\lambda$ exactly when $Tv = \lambda v$ and $v \ne 0_V$. Hence $\lambda$ is an eigenvalue exactly when there is an eigenvector corresponding to $\lambda$.
+A real number $\lambda$ is an **eigenvalue** of $T$ exactly when there is $v \in V$ with $Tv = \lambda v$ and $v \ne 0_V$. For a real number $\lambda$ and $v \in V$, $v$ is an **eigenvector** of $T$ corresponding to $\lambda$ exactly when $Tv = \lambda v$ and $v \ne 0_V$. Hence $\lambda$ is an eigenvalue exactly when there is an eigenvector corresponding to $\lambda$. $v$ is an **eigenvector** of $T$ exactly when $v$ is an eigenvector of $T$ corresponding to some real number.
 
 $i_V$ is the identity function on $V$. For a real number $\lambda$, $T - \lambda i_V$ is the difference in the space of linear maps $L(V, V)$, that is, $T + \bigl(-(\lambda i_V)\bigr)$. $\operatorname{Ker}(T - \lambda i_V)$ is called the **eigenspace** of $T$ for $\lambda$.
 
@@ -94,7 +94,7 @@ $$(A - \lambda I_n)x = Ax + \bigl((-1)(\lambda I_n)\bigr)x = Ax + (-1)\bigl((\la
 :::example[작은 행렬의 고윳값 판정]
 $A = \begin{pmatrix} 1 & 2 \\ 2 & 1 \end{pmatrix}$이라 합시다. $u = (1, 1)$, $w = (1, -1)$로 두면 [[matrix-vector-product|행렬과 벡터의 곱]]의 정의에 의해 $Au = 1(1, 2) + 1(2, 1) = (3, 3) = 3u$이고 $Aw = 1(1, 2) + (-1)(2, 1) = (-1, 1) = (-1)w$입니다. $u$와 $w$는 첫째 값이 $1 \ne 0$이므로 영벡터가 아닙니다. 따라서 $3$과 $-1$은 $A$의 고윳값이고, $u$는 $3$에, $w$는 $-1$에 속하는 고유벡터입니다.
 
-$2$는 고윳값이 아닙니다. $x = (x_1, x_2)$가 $(A - 2I_2)x = 0$을 만족한다고 하면, $A - 2I_2 = \begin{pmatrix} -1 & 2 \\ 2 & -1 \end{pmatrix}$이므로 같은 항목의 (1)(행 규칙)에 의해 $-x_1 + 2x_2 = 0$이고 $2x_1 - x_2 = 0$입니다. 첫 식에서 $x_1 = 2x_2$이고, 이것을 둘째 식에 넣으면 $4x_2 - x_2 = 3x_2 = 0$이고 $3 \ne 0$이므로 (K10)에 의해 $x_2 = 0$, 따라서 $x_1 = 0$입니다. 곧 $\operatorname{Ker}(T_A - 2i_{\mathbb{R}^2}) = \{0\}$이고, (2)에 의해 $2$는 고윳값이 아닙니다. 같은 계산을 $\lambda = 3$으로 하면 두 식이 모두 $x_1 = x_2$가 되어, $3$에 대한 고유공간은 $\{(t, t) : t \in \mathbb{R}\}$입니다.
+$2$는 고윳값이 아닙니다. $x = (x_1, x_2)$가 $(A - 2I_2)x = 0$을 만족한다고 하면, $A - 2I_2 = \begin{pmatrix} -1 & 2 \\ 2 & -1 \end{pmatrix}$이므로 같은 항목의 (1)(행 규칙)에 의해 $-x_1 + 2x_2 = 0$이고 $2x_1 - x_2 = 0$입니다. 첫 식에서 $x_1 = 2x_2$이고, 이것을 둘째 식에 넣으면 $4x_2 - x_2 = 3x_2 = 0$이고 $3 \ne 0$이므로 (K10)에 의해 $x_2 = 0$, 따라서 $x_1 = 0$입니다. 곧 $\operatorname{Ker} T_{A - 2I_2} = \{0\}$입니다. (4)에 의해 $T_A - 2i_{\mathbb{R}^2} = T_{A - 2I_2}$이므로 $\operatorname{Ker}(T_A - 2i_{\mathbb{R}^2}) = \{0\}$이고, (2)에 의해 $2$는 고윳값이 아닙니다. 같은 계산을 $\lambda = 3$으로 하면 두 식이 모두 $x_1 = x_2$가 되어, $3$에 대한 고유공간은 $\{(t, t) : t \in \mathbb{R}\}$입니다.
 :::
 
 :::example[스칼라배 사상]
