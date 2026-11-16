@@ -1,13 +1,13 @@
 ---
 title: 자연수 집합의 멱집합은 가산 무한이 아니다
 title_en: The Power Set of the Natural Numbers Is Not Countably Infinite
-aliases: [P(N)은 비가산, 자연수의 멱집합, 𝒫(ℕ)은 비가산, power set of N]
+aliases: [자연수의 멱집합, P(N)은 가산 무한이 아니다, 𝒫(ℕ)은 가산 무한이 아니다, power set of N]
 kind: corollary
 field: logic-foundations
 msc: ["03E10"]
 level: intro
 summary: ℕ에서 𝒫(ℕ)로의 전단사는 존재하지 않으므로 𝒫(ℕ)은 가산 무한이 아니고, 더 나아가 |ℕ| < |𝒫(ℕ)|이다.
-requires: [set, subset, function, injective-surjective-bijective, power-set, equal-cardinality, comparing-cardinalities, countably-infinite-set, cantors-theorem]
+requires: [set, subset, function, injective-surjective-bijective, power-set, equal-cardinality, comparing-cardinalities, countably-infinite-set, cantors-theorem, n-and-z-have-equal-cardinality]
 proof: full
 sources:
   - ref: hammack-book-of-proof
@@ -38,7 +38,7 @@ For the power set $\mathscr{P}(\mathbb{N})$ of the set $\mathbb{N}$ of natural n
 
 [[countably-infinite-set|가산 무한]]은 자연수 $1, 2, 3, \dots$로 번호를 매겨 원소를 빠짐없이 늘어놓을 수 있다는 뜻이었습니다. 이 항목은 $\mathbb{N}$의 부분집합 전체는 그렇게 번호를 매길 수 없다고 말합니다. 어떤 번호 매김 $f$가 주어져도, "$n$번 부분집합 $f(n)$ 안에 $n$이 없는 $n$들"을 모은 집합은 어느 번호의 집합과도 다르기 때문입니다.
 
-정의에서 "비가산"은 가산 무한이 아닌 것에 더해 무한집합일 것을 요구합니다. 출처는 $\mathscr{P}(\mathbb{N})$을 비가산이라고 말하지만, 이 항목은 $\mathscr{P}(\mathbb{N})$이 무한집합이라는 것까지는 증명하지 않습니다. 그래서 증명한 것만 진술에 적었고, 진술은 "가산 무한이 아니다"로 끝납니다. 이것은 유한집합과 무한집합을 엄밀히 다루는 도구가 아직 이 강의에 없기 때문이고, 결과가 약하다는 뜻은 아닙니다. 가산 무한이 아니라는 사실이 이 항목의 핵심 내용입니다.
+정의에서 "비가산"은 가산 무한이 아닌 것에 더해 무한집합일 것을 요구합니다. 출처는 $\mathscr{P}(\mathbb{N})$을 비가산이라고 말하지만, 이 항목은 $\mathscr{P}(\mathbb{N})$이 무한집합이라는 것까지는 증명하지 않습니다. 그래서 증명한 것만 진술에 적었고, 진술은 "가산 무한이 아니다"로 끝납니다. 이것은 유한집합과 무한집합을 엄밀히 다루는 도구가 아직 이 강의에 없기 때문입니다. 가산 무한이 아니라는 사실이 이 항목이 증명하는 내용입니다.
 
 ## 증명
 
@@ -51,7 +51,7 @@ For the power set $\mathscr{P}(\mathbb{N})$ of the set $\mathbb{N}$ of natural n
 :::
 
 :::proof
-$\mathbb{N}$은 집합이므로 [[cantors-theorem]]에 의해 $|\mathbb{N}| < |\mathscr{P}(\mathbb{N})|$이다. [[comparing-cardinalities]]의 정의에 의해 이는 $\mathbb{N}$에서 $\mathscr{P}(\mathbb{N})$으로의 단사가 존재하지만 $\mathbb{N}$에서 $\mathscr{P}(\mathbb{N})$으로의 전단사는 존재하지 않는다는 뜻이다. 이로써 3과 1이 증명된다. 1은 [[equal-cardinality]]의 정의에 의해 $|\mathbb{N}| \ne |\mathscr{P}(\mathbb{N})|$과 같다.
+$\mathbb{N}$은 집합이므로 [[cantors-theorem|칸토어 정리]]에 의해 $|\mathbb{N}| < |\mathscr{P}(\mathbb{N})|$이다. [[comparing-cardinalities|크기 비교]]의 정의에 의해 이는 $\mathbb{N}$에서 $\mathscr{P}(\mathbb{N})$으로의 단사가 존재하지만 $\mathbb{N}$에서 $\mathscr{P}(\mathbb{N})$으로의 전단사는 존재하지 않는다는 뜻이다. 이로써 3과 1이 증명된다. 1은 [[equal-cardinality]]의 정의에 의해 $|\mathbb{N}| \ne |\mathscr{P}(\mathbb{N})|$과 같다.
 
 $\mathscr{P}(\mathbb{N})$이 가산 무한이라는 것은 [[countably-infinite-set]]의 정의에 의해 $|\mathbb{N}| = |\mathscr{P}(\mathbb{N})|$, 곧 $\mathbb{N}$에서 $\mathscr{P}(\mathbb{N})$으로의 전단사가 존재한다는 것이다. 1에 의해 그런 전단사는 없으므로 $\mathscr{P}(\mathbb{N})$은 가산 무한이 아니다. 이로써 2가 증명된다.
 :::
@@ -65,7 +65,7 @@ $f(n) = \{m \in \mathbb{N} : m \le n\}$으로 정한 $f : \mathbb{N} \to \mathsc
 :::
 
 :::counterexample[단사가 있다고 가산 무한이 아닌 것은 아니다]
-$g(n) = \{n\}$으로 정한 $g : \mathbb{N} \to \mathscr{P}(\mathbb{N})$은 단사입니다. 그러나 단사가 있다는 것만으로는 $\mathscr{P}(\mathbb{N})$이 가산 무한이 아니라고 할 수 없습니다. $\mathbb{N}$에서 $\mathbb{Z}$로의 $g(n) = n$도 단사이지만 [[n-and-z-have-equal-cardinality]]의 진술에 의해 $\mathbb{Z}$는 $\mathbb{N}$과 전단사가 있어 가산 무한입니다. $\mathscr{P}(\mathbb{N})$이 가산 무한이 아닌 이유는 단사가 아니라 전단사가 하나도 없다는 것입니다.
+$g(n) = \{n\}$으로 정한 $g : \mathbb{N} \to \mathscr{P}(\mathbb{N})$은 단사입니다. 그러나 단사가 있다는 것만으로는 $\mathscr{P}(\mathbb{N})$이 가산 무한이 아니라고 할 수 없습니다. $\mathbb{N}$에서 $\mathbb{Z}$로의 $j(n) = n$도 단사이지만 [[n-and-z-have-equal-cardinality|앞의 정리]]에 의해 $\mathbb{Z}$는 $\mathbb{N}$과 전단사가 있어 가산 무한입니다. $\mathscr{P}(\mathbb{N})$이 가산 무한이 아닌 이유는 단사가 아니라 전단사가 하나도 없다는 것입니다.
 :::
 
 :::counterexample["가산 무한이 아니다"를 곧바로 "비가산이다"로 쓰면]

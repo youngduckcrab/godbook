@@ -7,19 +7,19 @@ field: logic-foundations
 msc: ["03E10"]
 level: intro
 summary: 모든 집합 A에 대해 |A| = |A|이고, |A| = |B|이면 |B| = |A|이며, |A| = |B|이고 |B| = |C|이면 |A| = |C|이다.
-requires: [set, function, injective-surjective-bijective, function-composition, inverse-function, bijective-iff-inverse-is-a-function, composition-preserves-injectivity-and-surjectivity, equal-cardinality]
+requires: [set, function, injective-surjective-bijective, function-composition, inverse-function, bijective-iff-inverse-is-a-function, composition-preserves-injectivity-and-surjectivity, equal-cardinality, n-and-z-have-equal-cardinality, even-and-odd, prime-number]
 proof: full
 sources:
   - ref: hammack-book-of-proof
     loc: 14.1절 Sets with Equal Cardinalities, 'equality of cardinalities is an equivalence relation on sets'로 시작하는 문단, p.273 (이 문단 뒤에서 Example 14.4가 추이성을 쓴다. 같은 내용이 p.274에서 '동치류'를 설명할 때 다시 언급된다.)
     checked: original
-    note: "출처는 이 사실을 번호가 붙은 정리로 진술하지 않고, p.273의 본문 한 문단에서 '|A| = |B|는 집합들 위의 동치관계이다. 반사적, 대칭적, 추이적이다'라고 말한 뒤 짧게 확인한다. 출처의 확인은 항등함수가 전단사이고, 전단사의 역함수가 전단사이며, 전단사의 합성이 전단사(Theorem 12.2)라는 것을 쓴다. 아래 증명은 이 사이트의 12장 항목들(합성은 composition-preserves-injectivity-and-surjectivity, 역함수는 inverse-function과 bijective-iff-inverse-is-a-function)로 직접 쓴 것이고, 출처가 '그 역함수는 전단사이다'를 이유 없이 적는 대목은 이 사이트에서 f⁻¹∘f = i_A, f∘f⁻¹ = i_B로 단사와 전사를 각각 보였다. 출처는 이 관계를 '집합들 위의 동치관계'라고 부르지만, 모든 집합의 모임은 이 강의에서 집합으로 다루지 않으므로(set 항목의 러셀의 역설 언급 참조) 이 항목은 '동치관계이다'라고 진술하지 않고 세 성질을 각각 진술한다. 출처의 'equivalence relation'과 'reflexive, symmetric, transitive'는 relation과 properties-of-relations 항목의 정의를 집합 위의 관계에 대해 쓴 것으로, 여기서는 쓰지 않는다."
+    note: "출처는 이 사실을 번호가 붙은 정리로 진술하지 않고, p.273의 본문 한 문단에서 '|A| = |B|는 집합들 위의 동치관계이다. 반사적, 대칭적, 추이적이다'라고 말한 뒤 짧게 확인한다. 출처의 확인은 항등함수가 전단사이고, 전단사의 역함수가 전단사이며, 전단사의 합성이 전단사(Theorem 12.2)라는 것을 쓴다. 아래 증명은 출처 12장에 해당하는 이 사이트 7단원의 항목들(합성은 composition-preserves-injectivity-and-surjectivity, 역함수는 inverse-function과 bijective-iff-inverse-is-a-function)로 직접 쓴 것이고, 출처가 '그 역함수는 전단사이다'를 이유 없이 적는 대목은 이 사이트에서 f⁻¹∘f = i_A, f∘f⁻¹ = i_B로 단사와 전사를 각각 보였다. 출처는 이 관계를 '집합들 위의 동치관계'라고 부르지만, 모든 집합의 모임은 이 강의에서 집합으로 다루지 않으므로(set 항목의 러셀의 역설 언급 참조) 이 항목은 '동치관계이다'라고 진술하지 않고 세 성질을 각각 진술한다. 이 항목은 properties-of-relations 항목의 정의를 인용하지 않고, 반사·대칭·추이는 진술의 세 문장의 이름으로만 쓴다."
 status: source-checked
 added: 2026-11-16
 ---
 
 :::statement
-임의의 [[set|집합]] $A$, $B$, $C$에 대하여 [[equal-cardinality]]의 뜻으로 다음이 성립한다.
+임의의 [[set|집합]] $A$, $B$, $C$에 대하여 [[equal-cardinality|크기가 같다는 정의]]의 뜻으로 다음이 성립한다.
 
 1. (반사) $|A| = |A|$이다.
 2. (대칭) $|A| = |B|$이면 $|B| = |A|$이다.
@@ -53,13 +53,13 @@ $|A| = |A|$를 보이려면 $A$에서 $A$로의 전단사가 하나 필요하다
 :::
 
 :::hint
-$f : A \to B$가 전단사이면 [[bijective-iff-inverse-is-a-function]]에 의해 $f^{-1}$이 $B$에서 $A$로의 함수이다. 이 $f^{-1}$이 단사인지는 $f \circ f^{-1}$을, 전사인지는 $f^{-1} \circ f$를 보면 된다.
+$f : A \to B$가 전단사이면 [[bijective-iff-inverse-is-a-function|전단사일 조건]]에 의해 $f^{-1}$이 $B$에서 $A$로의 함수이다. 이 $f^{-1}$이 단사인지는 $f \circ f^{-1}$을, 전사인지는 $f^{-1} \circ f$를 보면 된다.
 :::
 
 :::proof
 **(1) 반사.** $A$ 위의 항등함수 $i_A : A \to A$($i_A(x) = x$)를 생각한다([[inverse-function]]). $a, a' \in A$이고 $i_A(a) = i_A(a')$이면 $a = i_A(a) = i_A(a') = a'$이므로 $i_A$는 단사이다. $a \in A$이면 $i_A(a) = a$이므로 $a$는 $i_A$의 값이고, 따라서 $i_A : A \to A$는 전사이다. 그러므로 $i_A$는 $A$에서 $A$로의 전단사이고 $|A| = |A|$이다.
 
-**(2) 대칭.** $|A| = |B|$라 하자. 정의에 의해 전단사 $f : A \to B$가 있다. [[bijective-iff-inverse-is-a-function]]에 의해 역관계 $f^{-1}$은 $B$에서 $A$로의 함수 $f^{-1} : B \to A$이다. [[inverse-function]]에 의해 다음 두 등식이 성립한다.
+**(2) 대칭.** $|A| = |B|$라 하자. 정의에 의해 전단사 $f : A \to B$가 있다. [[bijective-iff-inverse-is-a-function|전단사일 조건]]에 의해 역관계 $f^{-1}$은 $B$에서 $A$로의 함수 $f^{-1} : B \to A$이다. [[inverse-function]]에 의해 다음 두 등식이 성립한다.
 $$f^{-1} \circ f = i_A, \qquad f \circ f^{-1} = i_B$$
 [[function-composition]]에 의해 $b \in B$에 대하여 $(f \circ f^{-1})(b) = f(f^{-1}(b))$이고, $a \in A$에 대하여 $(f^{-1} \circ f)(a) = f^{-1}(f(a))$이다. 따라서 모든 $b \in B$에 대하여 $f(f^{-1}(b)) = i_B(b) = b$이고, 모든 $a \in A$에 대하여 $f^{-1}(f(a)) = i_A(a) = a$이다.
 
@@ -69,7 +69,7 @@ $f^{-1} : B \to A$가 전사임을 보인다. $a \in A$라 하자. $b = f(a)$는
 
 $f^{-1} : B \to A$는 단사이고 전사이므로 $B$에서 $A$로의 전단사이다. 그러므로 $|B| = |A|$이다.
 
-**(3) 추이.** $|A| = |B|$이고 $|B| = |C|$라 하자. 정의에 의해 전단사 $f : A \to B$와 $g : B \to C$가 있다. [[composition-preserves-injectivity-and-surjectivity]]의 (3)에 의해 합성 $g \circ f : A \to C$는 전단사이다. 그러므로 $|A| = |C|$이다.
+**(3) 추이.** $|A| = |B|$이고 $|B| = |C|$라 하자. 정의에 의해 전단사 $f : A \to B$와 $g : B \to C$가 있다. [[composition-preserves-injectivity-and-surjectivity|합성 정리]]의 (3)에 의해 합성 $g \circ f : A \to C$는 전단사이다. 그러므로 $|A| = |C|$이다.
 :::
 
 ## 예시와 반례
@@ -83,7 +83,7 @@ $A = \{1, 2\}$, $B = \{\text{가}, \text{나}\}$, $C = \{5, 6\}$이고 $f = \{(1
 :::
 
 :::example[무한집합에서]
-$\mathbb{N}$에서 짝수인 자연수의 집합 $E$로의 $f(n) = 2n$은 [[equal-cardinality]]의 예에서 전단사임을 보았으므로 $|\mathbb{N}| = |E|$입니다. 대칭에 의해 $|E| = |\mathbb{N}|$이고, $E$에서 $\mathbb{N}$으로의 전단사는 역관계 $f^{-1}$로 주어집니다. $f^{-1}(2) = 1$, $f^{-1}(4) = 2$, $f^{-1}(6) = 3$이므로 $f^{-1}(e) = e/2$ 꼴입니다. $f(n) = 2n = e$이면 $n = e/2$이기 때문입니다.
+$E = \{n \in \mathbb{N} : n \text{은 짝수}\}$라 하고 $f(n) = 2n$으로 정한 $f : \mathbb{N} \to E$를 봅시다. $n \ge 1$이므로 (Z3)에 의해 $2n \ge 2$이고 $2n = 2 \cdot n$은 짝수이므로 $f(n) \in E$입니다. $f$는 단사입니다($2a = 2a'$이면 $a = a'$). 또 전사입니다. $e \in E$이면 $e = 2k$인 정수 $k$가 있고, $k \le 0$이면 [[prime-number|소수]] 항목의 진술의 (Z3)에 의해 $e = 2k \le 0$이어서 $e \ge 1$에 모순이므로 $k > 0$이고 (Z1)에 의해 $k \ge 1$입니다. 따라서 $k \in \mathbb{N}$이고 $f(k) = e$입니다. 따라서 $|\mathbb{N}| = |E|$입니다. 대칭에 의해 $|E| = |\mathbb{N}|$이고, $E$에서 $\mathbb{N}$으로의 전단사는 역관계 $f^{-1}$로 주어집니다. $f^{-1}(2) = 1$, $f^{-1}(4) = 2$, $f^{-1}(6) = 3$이므로 $f^{-1}(e) = e/2$ 꼴입니다. $f(n) = 2n = e$이면 $n = e/2$이기 때문입니다.
 :::
 
 :::counterexample[전단사가 아닌 함수는 뒤집지 못한다]
@@ -93,7 +93,7 @@ $\mathbb{N}$에서 짝수인 자연수의 집합 $E$로의 $f(n) = 2n$은 [[equa
 ## 확인 질문
 
 :::check[$|\mathbb{N}| = |\mathbb{Z}|$이고 $|\mathbb{Z}| = |\mathbb{N}|$인가? 같은 내용인가?]
-$|\mathbb{N}| = |\mathbb{Z}|$는 $\mathbb{N}$에서 $\mathbb{Z}$로의 전단사가 있다는 뜻이고 $|\mathbb{Z}| = |\mathbb{N}|$은 $\mathbb{Z}$에서 $\mathbb{N}$으로의 전단사가 있다는 뜻으로, 정의의 글자로는 다른 문장입니다. 이 항목의 대칭에 의해 한쪽이 성립하면 다른 쪽도 성립합니다. 전단사 $f : \mathbb{N} \to \mathbb{Z}$가 있으므로 $f^{-1} : \mathbb{Z} \to \mathbb{N}$이 전단사이고 $|\mathbb{Z}| = |\mathbb{N}|$입니다.
+$|\mathbb{N}| = |\mathbb{Z}|$는 $\mathbb{N}$에서 $\mathbb{Z}$로의 전단사가 있다는 뜻이고 $|\mathbb{Z}| = |\mathbb{N}|$은 $\mathbb{Z}$에서 $\mathbb{N}$으로의 전단사가 있다는 뜻으로, 정의의 글자로는 다른 문장입니다. 이 항목의 대칭에 의해 한쪽이 성립하면 다른 쪽도 성립합니다. [[n-and-z-have-equal-cardinality|앞의 정리]]에 의해 전단사 $f : \mathbb{N} \to \mathbb{Z}$가 있으므로 $f^{-1} : \mathbb{Z} \to \mathbb{N}$이 전단사이고 $|\mathbb{Z}| = |\mathbb{N}|$입니다.
 :::
 
 :::check[$|A| = |B|$이고 $|C| = |B|$이면 $|A| = |C|$인가?]

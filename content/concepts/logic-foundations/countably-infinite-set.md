@@ -50,7 +50,7 @@ $\mathrm{id}(n) = n$으로 정한 $\mathrm{id} : \mathbb{N} \to \mathbb{N}$은 $
 :::
 
 :::example[$\mathbb{Z}$]
-[[n-and-z-have-equal-cardinality]]에서 $\mathbb{N}$에서 $\mathbb{Z}$로의 전단사를 보였으므로 $|\mathbb{N}| = |\mathbb{Z}|$이고 $\mathbb{Z}$는 가산 무한입니다. 목록으로는 $0, 1, -1, 2, -2, \dots$입니다.
+[[n-and-z-have-equal-cardinality|앞의 정리]]에서 $\mathbb{N}$에서 $\mathbb{Z}$로의 전단사를 보였으므로 $|\mathbb{N}| = |\mathbb{Z}|$이고 $\mathbb{Z}$는 가산 무한입니다. 목록으로는 $0, 1, -1, 2, -2, \dots$입니다.
 :::
 
 :::example[짝수인 자연수의 집합]

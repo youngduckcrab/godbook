@@ -7,7 +7,7 @@ field: logic-foundations
 msc: ["03E10"]
 level: intro
 summary: A에서 B로의 단사가 존재하면 |A| ≤ |B|이고, 단사는 존재하지만 전단사가 없으면 |A| < |B|라고 쓴다. 무한집합에서는 이것이 수의 대소가 아니라 이 정의로 뜻이 정해진 표기이다.
-requires: [set, function, injective-surjective-bijective, equal-cardinality, n-and-z-have-equal-cardinality, equal-cardinality-is-an-equivalence]
+requires: [set, function, injective-surjective-bijective, equal-cardinality, n-and-z-have-equal-cardinality, equal-cardinality-is-an-equivalence, even-and-odd]
 sources:
   - ref: hammack-book-of-proof
     loc: 14.3절 Comparing Cardinalities, Definition 14.4, p.281 (절의 도입과 유한집합에 대한 설명은 p.280, 정의 직후의 ℕ과 ℝ의 예는 p.281)
@@ -18,10 +18,10 @@ added: 2026-11-16
 ---
 
 :::statement
-$A$와 $B$가 [[set|집합]]일 때 다음과 같이 정의한다. 단사와 전단사는 [[injective-surjective-bijective]]의 뜻이고, 공역은 $f : A \to B$라고 쓸 때 밝힌 $B$이다.
+$A$와 $B$가 [[set|집합]]일 때 다음과 같이 정의한다. 단사와 전단사는 [[injective-surjective-bijective|단사와 전단사]]의 뜻이고, 공역은 $f : A \to B$라고 쓸 때 밝힌 $B$이다.
 
 - $|A| \le |B|$는 $A$에서 $B$로의 **단사** $f : A \to B$가 존재한다는 뜻의 표기이다.
-- $|A| < |B|$는 $A$에서 $B$로의 단사가 존재하지만 $A$에서 $B$로의 전단사는 존재하지 않는다는 뜻의 표기이다. 곧 $|A| \le |B|$이고 $|A| \ne |B|$([[equal-cardinality]])라는 뜻이다.
+- $|A| < |B|$는 $A$에서 $B$로의 단사가 존재하지만 $A$에서 $B$로의 전단사는 존재하지 않는다는 뜻의 표기이다. 곧 $|A| \le |B|$이고 $|A| \ne |B|$([[equal-cardinality|크기가 같다는 정의]])라는 뜻이다.
 
 두 표기는 "$|A| \le |B|$", "$|A| < |B|$"라는 표기 전체에 뜻을 주는 정의이다. 집합이 무한일 때 $|A|$와 $|B|$는 어떤 수도 아니며, $\le$와 $<$는 수의 대소 비교가 아니다. 이 정의는 $A$에서 $B$로 가는 함수의 존재에 관한 것이다.
 :::
@@ -54,7 +54,7 @@ $A = \{1\}$, $B = \{\text{가}, \text{나}\}$라 합시다. $A$에서 $B$로의 
 :::
 
 :::example[무한집합에서 $|A| \le |B|$]
-$g(n) = n$으로 정한 $g : \mathbb{N} \to \mathbb{Z}$는 $g(a) = g(a')$이면 $a = a'$이므로 단사이고 $|\mathbb{N}| \le |\mathbb{Z}|$입니다. $g$ 자체는 $0$을 놓치지만, [[n-and-z-have-equal-cardinality]]의 진술에 의해 $\mathbb{N}$에서 $\mathbb{Z}$로의 전단사가 있으므로 $|\mathbb{N}| < |\mathbb{Z}|$는 성립하지 않습니다.
+$g(n) = n$으로 정한 $g : \mathbb{N} \to \mathbb{Z}$는 $g(a) = g(a')$이면 $a = a'$이므로 단사이고 $|\mathbb{N}| \le |\mathbb{Z}|$입니다. $g$ 자체는 $0$을 놓치지만, [[n-and-z-have-equal-cardinality|앞의 정리]]에 의해 $\mathbb{N}$에서 $\mathbb{Z}$로의 전단사가 있으므로 $|\mathbb{N}| < |\mathbb{Z}|$는 성립하지 않습니다.
 :::
 
 :::counterexample[단사 하나가 있고 전사가 아니라고 $|A| < |B|$는 아니다]
@@ -62,7 +62,7 @@ $|A| < |B|$를 보이려면 $A$에서 $B$로의 전단사가 하나도 없음을
 :::
 
 :::counterexample[$|A| < |B|$는 수의 부등식이 아니다]
-무한집합에서 "$|A| < |B|$이면 $B$가 $A$보다 원소가 더 많다"고 읽어서는 안 됩니다. 이 정의에는 원소의 개수가 나오지 않습니다. 예를 들어 짝수인 자연수의 집합 $E$는 $\mathbb{N}$의 일부분이고 $E \ne \mathbb{N}$이므로($1 \notin E$) $\mathbb{N}$에 원소가 더 많아 보입니다. 그러나 $f(n) = 2n$으로 정한 $f : \mathbb{N} \to E$는 단사이고($2a = 2a'$이면 $a = a'$) 전사이므로($e \in E$이면 $e = 2k$인 $k \in \mathbb{N}$이 있고 $f(k) = e$) $|\mathbb{N}| = |E|$이며 [[equal-cardinality-is-an-equivalence|대칭]]에 의해 $|E| = |\mathbb{N}|$, 곧 $E$에서 $\mathbb{N}$으로의 전단사가 있습니다. 따라서 $|E| < |\mathbb{N}|$은 성립하지 않습니다. 단사 $E \to \mathbb{N}$, 곧 $|E| \le |\mathbb{N}|$은 성립하지만 둘째 조건이 깨집니다.
+$A$가 $B$의 일부분이고 $A \ne B$이면 $|A| < |B|$라고 읽어서는 안 됩니다. 이 정의에는 원소의 개수가 나오지 않습니다. 예를 들어 짝수인 자연수의 집합 $E$는 $\mathbb{N}$의 일부분이고 $E \ne \mathbb{N}$이므로($1 \notin E$) $\mathbb{N}$에 원소가 더 많아 보입니다. 그러나 $f(n) = 2n$으로 정한 $f : \mathbb{N} \to E$는 단사이고($2a = 2a'$이면 $a = a'$) 전사이므로($e \in E$이면 $e = 2k$인 정수 $k$가 있고, $e \ge 1$에서 $k \ge 1$이므로 $k \in \mathbb{N}$이고 $f(k) = e$) $|\mathbb{N}| = |E|$이며 [[equal-cardinality-is-an-equivalence|대칭]]에 의해 $|E| = |\mathbb{N}|$, 곧 $E$에서 $\mathbb{N}$으로의 전단사가 있습니다. 따라서 $|E| < |\mathbb{N}|$은 성립하지 않습니다. 단사 $E \to \mathbb{N}$, 곧 $|E| \le |\mathbb{N}|$은 성립하지만 둘째 조건이 깨집니다.
 :::
 
 ## 확인 질문

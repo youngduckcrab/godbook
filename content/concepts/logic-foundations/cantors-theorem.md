@@ -1,13 +1,13 @@
 ---
 title: 칸토어 정리
 title_en: Cantor's Theorem
-aliases: [Cantor's theorem, 멱집합은 더 크다, 대각선 논법, 모든 집합은 멱집합보다 작다]
+aliases: [Cantor's theorem, 멱집합은 더 크다, 모든 집합은 멱집합보다 작다]
 kind: theorem
 field: logic-foundations
 msc: ["03E10"]
 level: intro
 summary: 모든 집합 A에 대해 A에서 멱집합 𝒫(A)로의 단사는 존재하지만 전단사는 존재하지 않으므로 |A| < |𝒫(A)|이다.
-requires: [set, subset, function, injective-surjective-bijective, power-set, empty-set-is-subset, negation-of-quantified-statements, proof-by-contradiction, equal-cardinality, comparing-cardinalities]
+requires: [set, subset, function, injective-surjective-bijective, power-set, empty-set-is-subset, proof-by-contradiction, equal-cardinality, comparing-cardinalities, n-and-z-have-equal-cardinality]
 proof: full
 sources:
   - ref: hammack-book-of-proof
@@ -38,9 +38,9 @@ For every set $A$, $|A| < |\mathscr{P}(A)|$ (in the sense of the comparison of c
 
 ## 직관
 
-$A$의 각 원소에 $A$의 부분집합을 하나씩 짝지어 준 명단 $f$를 생각합시다. 명단에는 원소 $x$마다 "$x$가 자기 짝 $f(x)$ 안에 들어 있는가, 아닌가"가 적혀 있습니다. 칸토어 정리의 핵심은 이 명단을 거꾸로 읽어서 만든 부분집합 $B$, 곧 자기 짝 안에 들어 있지 않은 원소들만 모은 집합이 명단의 어떤 짝과도 같을 수 없다는 것입니다. $B$가 $f(a)$와 같다면 $a$는 $B$에 들어가는지 아닌지 어느 쪽으로도 말이 안 됩니다. 이 "자기 자신에 대해 반대로 정한다"는 방법을 대각선 논법이라 부르는데, 이름은 $x$와 $f(x)$의 관계를 표의 대각선 칸에서 읽기 때문입니다.
+$A$의 각 원소에 $A$의 부분집합을 하나씩 짝지어 준 명단 $f$를 생각합시다. 명단에는 원소 $x$마다 "$x$가 자기 짝 $f(x)$ 안에 들어 있는가, 아닌가"가 적혀 있습니다. 칸토어 정리의 핵심은 이 명단을 거꾸로 읽어서 만든 부분집합 $B$, 곧 자기 짝 안에 들어 있지 않은 원소들만 모은 집합이 명단의 어떤 짝과도 같을 수 없다는 것입니다. $B$가 $f(a)$와 같다면 $a$는 $B$에 들어가는지 아닌지 어느 쪽으로도 말이 안 됩니다. 이 "자기 자신에 대해 반대로 정한다"는 방법을 대각선 논법이라 부르는데, 이름은 행을 $x$, 열을 $y$로 두고 "$y \in f(x)$인가"를 적은 표에서 $x$행 $x$열의 칸, 곧 대각선 칸을 읽어 $B$를 만들기 때문입니다.
 
-정리는 어떤 집합 $A$에서도 그 부분집합 전체의 모임이 $A$보다 "크다"고 말합니다. 여기서 "크다"는 [[comparing-cardinalities]]의 정의, 곧 단사는 있지만 전단사는 없다는 뜻입니다. $A$가 무한집합이어도 같은 문장이 성립하며, 이 정리를 거듭 적용하면 크기가 계속 커지는 집합들 $A$, $\mathscr{P}(A)$, $\mathscr{P}(\mathscr{P}(A))$, … 을 얻는다는 것이 출처의 설명입니다. 이 항목은 그 거듭된 적용을 증명하지 않습니다.
+정리는 어떤 집합 $A$에서도 그 부분집합 전체의 모임이 $A$보다 "크다"고 말합니다. 여기서 "크다"는 [[comparing-cardinalities|크기 비교]]의 정의, 곧 단사는 있지만 전단사는 없다는 뜻입니다. $A$가 무한집합이어도 같은 문장이 성립하며, 출처는 이 정리를 $\mathbb{N}$에 거듭 적용해 크기가 계속 커지는 집합들 $\mathbb{N}$, $\mathscr{P}(\mathbb{N})$, $\mathscr{P}(\mathscr{P}(\mathbb{N}))$, … 을 얻는다고 설명합니다. 이 항목은 그 거듭된 적용을 증명하지 않습니다.
 
 비유는 이렇습니다. 학급 학생 각자가 "친구 모임"(학급의 부분집합)을 하나씩 말했다고 합시다. 자기가 말한 모임에 자기가 들어 있지 않은 학생만 모아 새 모임 $B$를 만들면, $B$는 어떤 학생이 말한 모임과도 같을 수 없습니다. 그 학생이 $B$에 들어 있는지를 따지면 모순이 되기 때문입니다. 비유는 학생이 유한하다고 느끼게 하지만 증명은 학급이 유한한지를 전혀 쓰지 않습니다.
 
@@ -61,7 +61,7 @@ $B = \{x \in A : x \notin f(x)\}$를 정의하라. $B \subseteq A$이므로 $B \
 :::proof
 **(1) 단사의 존재.** $a \in A$에 대하여 $\{a\}$는 $a$만 원소로 갖는 집합이고, $\{a\}$의 모든 원소 $a$는 $A$의 원소이므로 $\{a\} \subseteq A$, 곧 $\{a\} \in \mathscr{P}(A)$이다. $g = \{(a, \{a\}) : a \in A\}$로 두면, 각 $a \in A$에 대하여 $(a, X) \in g$인 $X$는 $X = \{a\}$ 하나뿐이므로 $g$는 $A$에서 $\mathscr{P}(A)$로의 함수이고 $g(a) = \{a\}$이다. $a, a' \in A$이고 $g(a) = g(a')$라 하자. 그러면 $\{a\} = \{a'\}$이다. $a \in \{a\}$이므로 $a \in \{a'\}$이고, $\{a'\}$의 유일한 원소는 $a'$이므로 $a = a'$이다. 따라서 $g$는 단사이다.
 
-**(2) 전단사의 부재.** 임의의 함수 $f : A \to \mathscr{P}(A)$가 전사가 아님을 [[proof-by-contradiction|귀류법]]으로 보인다. 곧 $P$를 "$f : A \to \mathscr{P}(A)$는 전사가 아니다"로 두고 $\lnot P$, 곧 "$f : A \to \mathscr{P}(A)$는 전사이다"를 가정한다. [[negation-of-quantified-statements]]에 의해 이는 $\mathscr{P}(A)$의 모든 원소 $Y$에 대하여 $f(x) = Y$인 $x \in A$가 존재한다는 뜻이다.
+**(2) 전단사의 부재.** 임의의 함수 $f : A \to \mathscr{P}(A)$가 전사가 아님을 [[proof-by-contradiction|귀류법]]으로 보인다. 곧 $P$를 "$f : A \to \mathscr{P}(A)$는 전사가 아니다"로 두고 $\lnot P$, 곧 "$f : A \to \mathscr{P}(A)$는 전사이다"를 가정한다. [[injective-surjective-bijective|전사]]의 정의에 의해 이는 $\mathscr{P}(A)$의 모든 원소 $Y$에 대하여 $f(x) = Y$인 $x \in A$가 존재한다는 뜻이다.
 
 $f$의 값 $f(x)$는 $\mathscr{P}(A)$의 원소이므로 $A$의 부분집합이다. 따라서 각 $x \in A$에 대하여 $x \in f(x)$이거나 $x \notin f(x)$이다. 다음 집합을 정의한다.
 $$B = \{x \in A : x \notin f(x)\}$$
@@ -74,7 +74,7 @@ $B$의 원소는 모두 $A$의 원소이므로 $B \subseteq A$, 곧 $B \in \math
 
 모든 전단사는 전사이므로 $A$에서 $\mathscr{P}(A)$로의 전단사는 존재하지 않는다.
 
-**결론.** (1)에 의해 단사가 존재하고 (2)에 의해 전단사가 없으므로 [[comparing-cardinalities]]의 정의에 의해 $|A| < |\mathscr{P}(A)|$이다.
+**결론.** (1)에 의해 단사가 존재하고 (2)에 의해 전단사가 없으므로 [[comparing-cardinalities|크기 비교]]의 정의에 의해 $|A| < |\mathscr{P}(A)|$이다.
 
 이 증명은 $A$가 공집합인 경우에도 그대로 맞다. $A = \emptyset$이면 (1)의 $g$는 $\emptyset$이고 단사 조건은 공허하게 참이다. (2)에서 $f : \emptyset \to \mathscr{P}(\emptyset)$가 전사라는 가정은 $f(x_0) = B$인 $x_0 \in \emptyset$의 존재를 말하는데, 증명은 그런 $x_0$가 있다고 하고 모순을 이끌어내므로 논증에 빈틈이 없다(실제로는 그런 $x_0$가 없으므로 가정부터 성립하지 않는다).
 :::
@@ -92,20 +92,20 @@ $A = \{1, 2, 3\}$일 때 $g(1) = \{1\}$, $g(2) = \{2\}$, $g(3) = \{3\}$이고 �
 :::
 
 :::example[공집합]
-$A = \emptyset$이면 $\mathscr{P}(A) = \{\emptyset\}$입니다. $\emptyset$의 모든 부분집합은 $\emptyset$뿐이기 때문입니다. $\emptyset$에서 $\{\emptyset\}$로의 함수는 $\emptyset$ 하나이고 단사입니다. 이 함수의 값은 하나도 없으므로 $\{\emptyset\}$의 원소 $\emptyset$이 값이 아니어서 전사가 아닙니다. 따라서 $|\emptyset| < |\mathscr{P}(\emptyset)|$입니다.
+$A = \emptyset$이면 $\mathscr{P}(A) = \{\emptyset\}$입니다. $\emptyset$의 부분집합은 $\emptyset$뿐이기 때문입니다. $\emptyset$에서 $\{\emptyset\}$로의 함수는 $\emptyset$ 하나이고 단사입니다. 이 함수의 값은 하나도 없으므로 $\{\emptyset\}$의 원소 $\emptyset$이 값이 아니어서 전사가 아닙니다. 따라서 $|\emptyset| < |\mathscr{P}(\emptyset)|$입니다.
 :::
 
 :::counterexample[$\notin$ 대신 $\in$으로 집합을 만들면 안 된다]
-$C = \{x \in A : x \in f(x)\}$로 정하면 $f$의 값이 될 수 있어서 증명이 안 됩니다. $A = \{1, 2\}$, $f(1) = \{1\}$, $f(2) = \emptyset$이면 $1 \in f(1)$이고 $2 \notin f(2)$이므로 $C = \{1\} = f(1)$입니다. 증명의 모순은 $B$의 정의가 "자기 짝에 들어 있지 않은"이어서 $x_0 \in B$와 $x_0 \in f(x_0)$가 서로 반대가 되기 때문에 나옵니다.
+$D = \{x \in A : x \in f(x)\}$로 정하면 $f$의 값이 될 수 있어서 증명이 안 됩니다. $A = \{1, 2\}$, $f(1) = \{1\}$, $f(2) = \emptyset$이면 $1 \in f(1)$이고 $2 \notin f(2)$이므로 $D = \{1\} = f(1)$입니다. 증명의 모순은 $B$의 정의가 "자기 짝에 들어 있지 않은"이어서 $x_0 \in B$와 $x_0 \in f(x_0)$가 서로 반대가 되기 때문에 나옵니다.
 :::
 
 :::counterexample[단사만으로는 크기가 다르다고 할 수 없다]
-정리의 (1)만으로는 $|A| < |\mathscr{P}(A)|$가 나오지 않습니다. 단사는 [[comparing-cardinalities]]의 $|A| \le |B|$에 해당할 뿐이고, 둘째 조건인 전단사의 부재가 따로 필요합니다. 예를 들어 $g(n) = n$인 $g : \mathbb{N} \to \mathbb{Z}$는 단사이지만 $|\mathbb{N}| < |\mathbb{Z}|$가 아닙니다. 칸토어 정리에서는 (2)가 모든 $f$에 대해 증명되어 있기 때문에 $<$를 얻습니다.
+정리의 (1)만으로는 $|A| < |\mathscr{P}(A)|$가 나오지 않습니다. 단사는 [[comparing-cardinalities]]의 $|A| \le |B|$에 해당할 뿐이고, 둘째 조건인 전단사의 부재가 따로 필요합니다. 예를 들어 $j(n) = n$인 $j : \mathbb{N} \to \mathbb{Z}$는 단사이지만, [[n-and-z-have-equal-cardinality|앞의 정리]]에 의해 $\mathbb{N}$에서 $\mathbb{Z}$로의 전단사가 있으므로 $|\mathbb{N}| < |\mathbb{Z}|$가 아닙니다. 칸토어 정리에서는 (2)가 모든 $f$에 대해 증명되어 있기 때문에 $<$를 얻습니다.
 :::
 
 ## 역사와 맥락
 
-스탠퍼드 철학 백과사전(SEP)의 집합론 초기 발전 항목은 칸토어가 1895년과 1897년의 마지막 두 논문에 수록하지 않은 정리로 "칸토어 정리"를 언급합니다. 그 서술은 어떤 집합 $S$가 주어져도 그보다 기수가 큰 다른 집합이 있다는 것이고, 지금은 이것을 멱집합 $\mathscr{P}(S)$라 하지만 칸토어는 $S$에서 $\{0, 1\}$로의 함수 전체의 집합을 썼다고 합니다. 같은 항목은 1892년의 짧은 논문에서 칸토어가 대각선 방법으로 실수 집합이 자연수와 일대일 대응될 수 없음을 보였고, 이 방법을 확장해 칸토어 정리를 증명했다고 적습니다. 이 항목의 증명이 SEP가 말하는 칸토어 본래의 증명과 같은지는 확인하지 않았습니다. 출처 Book of Proof는 이 정리를 Theorem 14.7이라고만 부릅니다.
+스탠퍼드 철학 백과사전(SEP)의 집합론 초기 발전 항목은 칸토어가 1895년과 1897년의 마지막 두 논문에 수록하지 않은 정리로 "칸토어 정리"를 언급합니다. 그 서술은 어떤 집합 $S$가 주어져도 그보다 크기가 더 큰 다른 집합이 있다는 것이고, 지금은 이것을 멱집합 $\mathscr{P}(S)$라 하지만 칸토어는 $S$에서 $\{0, 1\}$로의 함수 전체의 집합을 썼다고 합니다. 같은 항목은 1892년의 짧은 논문에서 칸토어가 대각선 방법으로 실수 집합이 자연수와 일대일 대응될 수 없음을 보였고, 이 방법을 확장해 칸토어 정리를 증명했다고 적습니다. 출처 Book of Proof는 이 정리를 Theorem 14.7이라고만 부릅니다.
 
 ## 확인 질문
 
