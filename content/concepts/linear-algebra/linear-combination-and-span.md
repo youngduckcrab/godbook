@@ -13,7 +13,8 @@ sources:
     loc: 1장 2절, 일차결합(첫 문단)과 Definition 2.5(generating system), pp.6–7; 1장 7절, 예 4(linear span), p.31
     checked: original
     note: "출처는 일차결합을 합의 꼴 α₁v₁ + … + α_pv_p 로 정의하고(p.6), Definition 2.5(p.7)에서 모든 벡터가 일차결합으로 표현될 때 벡터의 계(system)를 generating(spanning, complete) system이라 부른다. 1장 7절(p.31)은 벡터의 계의 일차생성(linear span) L{v₁, …, v_r}을 일차결합으로 표현되는 벡터 전체의 모임으로 정의하고, 그것이 부분공간임을 독자에게 맡긴다. 이 항목은 벡터의 모임을 열로 다루고(출처는 계와 집합을 섞어 쓴다), 길이 0 인 빈 열을 허용하며 그 생성이 {0_V} 라고 정한다. 일차결합과 생성의 정의, 성질 (N1)–(N4)와 증명은 이 사이트가 썼다. 생성이 열의 항을 모두 포함하는 가장 작은 부분공간이라는 진술은 책 전체에서 'smallest'를 검색해도 찾지 못했다(연습문제 7.5, p.31은 다른 내용이다). '생성한다'는 말을 출처는 계가 V의 generating system이라고 쓴다. 출처가 span 을 L{⋯} 와 span{⋯} 로 쓰는 것을 이 항목은 span(⋯) 으로 쓴다. 예시와 반례와 확인 질문은 새로 만들었다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 3회 통과(후반 다섯 항목은 2회). 겹치는 번호, 뒤 정리가 인용할 계수 끼워 넣기와 차의 규칙, 재귀 정의의 문구, 직관의 틀린 일반화를 보완했다."
 added: 2026-11-16
 ---
 
