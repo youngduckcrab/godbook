@@ -7,7 +7,7 @@ field: number-theory
 msc: ["11A07"]
 level: undergrad
 summary: n이 자연수이고 x가 n과 서로소인 정수이면 x의 φ(n)제곱은 n을 법으로 1과 합동이다.
-requires: [euler-phi-function, coprime-to-modulus, multiplication-permutes-reduced-residues, finite-product-of-products, congruence-cancellation, congruence-arithmetic, congruence-modulo-n, congruence-is-an-equivalence-relation, finite-set, finite-product, divisibility, greatest-common-divisor, even-and-odd]
+requires: [function, euler-phi-function, coprime-to-modulus, multiplication-permutes-reduced-residues, finite-product-of-products, congruence-cancellation, congruence-arithmetic, congruence-modulo-n, congruence-is-an-equivalence-relation, finite-set, finite-product, divisibility, greatest-common-divisor, even-and-odd]
 proof: full
 sources:
   - ref: stein-elementary-number-theory
@@ -34,9 +34,9 @@ Here $\varphi(n)$ is Euler's phi function, and since $\varphi(n) \ge 1$ it is a 
 
 ## 직관
 
-시계의 눈금이 $n$칸이라 하고, $x$칸씩 한 번 움직이는 동작을 되풀이한다고 합시다. $x$가 $n$과 서로소이면 이 동작은 "법과 서로소인 눈금들"을 서로 바꾸기만 합니다([[multiplication-permutes-reduced-residues]]). 눈금이 $\varphi(n)$개이므로, 각 눈금에 $x$를 곱한 것을 모두 곱하면 처음 눈금을 모두 곱한 것과 같은 수가 되고, 왼쪽에는 $x$가 $\varphi(n)$번 묶여 나옵니다. 그 묶음을 양변에서 지우면 $x$의 $\varphi(n)$제곱이 $1$과 합동이라는 결론이 남습니다. 이 비유가 맞아떨어지는 곳은 "곱하면 순서만 바뀌어서 전체의 곱이 변하지 않는다"는 점이고, 맞지 않는 곳은 더 작은 지수로도 $1$이 될 수 있다는 점입니다. 예를 들어 $4^3 = 64$이고 $64 - 1 = 63 = 9 \cdot 7$이므로 $4^3 \equiv 1 \pmod 9$인데 $\varphi(9) = 6$입니다. 이 정리는 $\varphi(n)$제곱이 $1$과 합동이라고만 말할 뿐 가장 작은 지수는 말하지 않습니다.
+시계의 눈금이 $n$칸이라 하고, 법 $n$과 서로소인 눈금 $a$만 모아 둡니다. 각 눈금 $a$를 $xa$의 눈금으로 옮기는 동작(곱하기 $x$)을 생각합시다. $x$가 $n$과 서로소이면 이 동작은 모아 둔 눈금들을 서로 바꾸기만 합니다([[multiplication-permutes-reduced-residues]]). 모아 둔 눈금이 $\varphi(n)$개이므로, 옮긴 눈금을 모두 곱한 수는 처음 눈금을 모두 곱한 수와 합동이고, 왼쪽에는 $x$가 $\varphi(n)$번 묶여 나옵니다. 그 묶음을 양변에서 지우면 $x$의 $\varphi(n)$제곱이 $1$과 합동이라는 결론이 남습니다. 이 비유가 맞아떨어지는 곳은 "곱하면 순서만 바뀌어서 전체의 곱이 변하지 않는다"는 점이고, 맞지 않는 곳은 더 작은 지수로도 $1$이 될 수 있다는 점입니다. 예를 들어 $4^3 = 64$이고 $64 - 1 = 63 = 9 \cdot 7$이므로 $4^3 \equiv 1 \pmod 9$인데 $\varphi(9) = 6$입니다. 이 정리는 $\varphi(n)$제곱이 $1$과 합동이라고만 말할 뿐 가장 작은 지수는 말하지 않습니다.
 
-$x$가 $n$과 서로소여야 한다는 조건은 증명 마지막의 소거에서 쓰입니다. 소거하려는 수는 $P_n$의 원소들의 곱인데, 이 곱이 $n$과 서로소라는 것이 [[coprime-to-modulus|법과 서로소인 수의 성질]]의 3입니다. 지수 $\varphi(n)$ 자리에 $n - 1$을 넣으면 합성수에서는 깨집니다. 반례에서 봅니다.
+$x$가 $n$과 서로소여야 한다는 조건은 [[multiplication-permutes-reduced-residues]]의 3을 쓰는 단계에서 쓰입니다. 마지막 소거에 필요한 것은 $P_n$의 원소들의 곱이 $n$과 서로소라는 것이고, 이는 $x$와 상관없이 [[coprime-to-modulus|법과 서로소인 수의 성질]]의 3에서 나옵니다. 지수 $\varphi(n)$ 자리에 $n - 1$을 넣은 것은 합성수 $9$에서 성립하지 않습니다. 반례에서 봅니다.
 
 ## 증명
 
@@ -55,7 +55,7 @@ $n \ge 2$이면 [[multiplication-permutes-reduced-residues]]의 3을 쓰려면 $
 :::proof
 **$n = 1$일 때.** [[euler-phi-function]]의 3에 의해 $\varphi(1) = 1$이고, 거듭제곱의 뜻(모든 자리가 $x$인 길이 $1$인 열의 곱)과 [[finite-product]]의 정의에 의해 $x^1 = x$이다. $x - 1$은 정수이고 $x - 1 = 1 \cdot (x - 1)$이므로 $1 \mid (x - 1)$이며, [[congruence-modulo-n|합동]]의 정의에 의해 $x \equiv 1 \pmod 1$이다. 따라서 $x^{\varphi(1)} \equiv 1 \pmod 1$이다.
 
-**$n \ge 2$일 때.** $k = \varphi(n)$이라 하자. [[euler-phi-function]]의 2에 의해 $k$는 자연수이고, 같은 항목의 1에 의해 $P_n$은 원소를 $k$개 가지므로 [[finite-set]]의 정의에 의해 전단사 $b : \{1, \dots, k\} \to P_n$이 있다. 이 $b$를 길이 $k$인 정수의 열 $b_1, \dots, b_k$로 보고 $Q = b_1 b_2 \cdots b_k$라 하자. $Q$는 정수이다((P1), [[finite-product]]).
+**$n \ge 2$일 때.** $k = \varphi(n)$이라 하자. [[euler-phi-function]]의 2에 의해 $k$는 자연수이고, 같은 항목의 1에 의해 $P_n$은 원소를 $k$개 가지므로 [[finite-set]]의 정의에 의해 전단사 $b : \{1, \dots, k\} \to P_n$이 있다. $P_n \subseteq \mathbb{Z}$이므로 [[function]]의 진술에 의해 이 $b$를 길이 $k$인 정수의 열 $b_1, \dots, b_k$로 볼 수 있고 $Q = b_1 b_2 \cdots b_k$라 하자. $Q$는 정수이다((P1), [[finite-product]]).
 
 [[multiplication-permutes-reduced-residues]]의 3을 $x$와 이 $b$에 쓰면 ($n \ge 2$이고 $\gcd(x, n) = 1$이므로)
 $$(x b_1)(x b_2) \cdots (x b_k) \equiv b_1 b_2 \cdots b_k = Q \pmod n$$
@@ -75,10 +75,10 @@ $14$의 양의 약수는 $1, 2, 7, 14$이고 $\gcd(3, 14) = 1$입니다($3$은 $
 :::
 
 :::counterexample[x와 n이 서로소가 아니면 깨진다]
-$n = 6$, $x = 2$이면 $\gcd(2, 6) \ge 2$입니다($2 \mid 2$, $2 \mid 6$). $P_6 = \{1, 5\}$이고($6$과 서로소가 아닌 수는 $2, 3, 4, 6$) $\varphi(6) = 2$인데, $2^2 = 4$이고 $4 - 1 = 3$은 $6$의 배수가 아니므로($3 = 6c$인 정수 $c$는 없습니다) $2^{\varphi(6)} \not\equiv 1 \pmod 6$입니다. 증명이 막히는 곳은 소거입니다. $x$가 서로소가 아니면 $P_n$ 위에서 곱하는 일이 $P_n$ 안에서 닫히지 않습니다([[multiplication-permutes-reduced-residues]]의 반례).
+$n = 6$, $x = 2$이면 $\gcd(2, 6) \ge 2$입니다($2 \mid 2$, $2 \mid 6$). $P_6 = \{1, 5\}$이고($6$과 서로소가 아닌 수는 $2, 3, 4, 6$) $\varphi(6) = 2$인데, $2^2 = 4$이고 $4 - 1 = 3$은 $6$의 배수가 아니므로($3 = 6c$인 정수 $c$는 없습니다) $2^{\varphi(6)} \not\equiv 1 \pmod 6$입니다. 증명이 막히는 곳은 곱의 합동 $(x b_1) \cdots (x b_k) \equiv b_1 \cdots b_k$를 얻는 단계입니다. $P_6$의 나열 $b = (1, 5)$에 $x = 2$를 곱하면 $2 \cdot 1 = 2$, $2 \cdot 5 = 10 = 6 + 4$이고 $2$와 $4$는 $P_6$의 원소가 아니어서 [[multiplication-permutes-reduced-residues]]의 1이 깨집니다. 실제로 $(2 \cdot 1)(2 \cdot 5) = 20$이고 $b_1 b_2 = 5$이며 $20 - 5 = 15$는 $6$의 배수가 아니므로 $20 \not\equiv 5 \pmod 6$입니다.
 :::
 
-:::counterexample[지수 n − 1은 합성수에서 통하지 않는다]
+:::counterexample[지수 n − 1은 n = 9에서 통하지 않는다]
 $n = 9$, $x = 2$이면 $\gcd(2, 9) = 1$입니다. $2^{\varphi(9)} = 2^6 = 64$이고 $64 - 1 = 63 = 9 \cdot 7$이어서 정리가 말하는 대로 $2^6 \equiv 1 \pmod 9$입니다. 그러나 $n - 1 = 8$을 지수로 쓰면 $2^8 = 256$이고 $256 - 1 = 255 = 9 \cdot 28 + 3$이므로 $2^8 \not\equiv 1 \pmod 9$입니다($255 = 9c$이면 $c = 28$일 때 $252$, $c = 29$일 때 $261$이어서 $255$는 $9$의 배수가 아닙니다). 이 정리의 지수는 $n - 1$이 아니라 $\varphi(n)$입니다.
 :::
 

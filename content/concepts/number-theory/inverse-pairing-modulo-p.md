@@ -13,13 +13,13 @@ sources:
   - ref: stein-elementary-number-theory
     loc: 2.1.3절 Wilson's Theorem, Proposition 2.1.22의 증명, p.28 (줄 1340–1347의 "has a unique solution a′ ∈ {1, 2, …, p − 1}"과 짝짓기 단락)
     checked: original
-    note: "출처는 윌슨 정리의 증명 안에서 '각 a ∈ {1, …, p − 1}에 대해 ax ≡ 1 (mod p)는 {1, …, p − 1} 안에 유일한 해 a′을 갖는다'고 쓰고(유일성은 Proposition 2.1.13에 기대며 그 증명은 완전잉여계의 원소 개수를 센다), a = a′이면 a² ≡ 1이고 p | (a − 1)(a + 1)이므로 a ∈ {1, p − 1}이라고 적는다(여기서 유클리드 보조정리를 쓴다). 이 항목은 (1)–(3)을 이 사이트의 도구로 증명했다. 존재는 inverse-modulo-n의 1과 coprime-to-modulus의 4로, 유일성은 inverse-modulo-n의 2와 coprime-to-modulus의 5로 보이므로 세기를 쓰지 않는다. (a′)′ = a는 출처에 쓰여 있지 않고 이 사이트가 유일성에서 끌어냈다. 출처는 'We can thus pair off the elements of {2, 3, …, p − 2}, each with their inverse. Thus 2·3·…·(p − 2) ≡ 1 (mod p)'로 짝지은 곱이 1과 합동이라는 것을 한 줄로 넘어간다. 이 항목의 (4)가 그 단계를 원소의 개수에 대한 강한 귀납법으로 증명한 것이고 출처에는 없다. 예시와 반례의 수(p = 11, 13, 법 8)는 출처의 예(p = 17, Example 2.1.23)와 다르게 새로 골랐다."
+    note: "출처는 윌슨 정리의 증명 안에서 '각 a ∈ {1, …, p − 1}에 대해 ax ≡ 1 (mod p)는 {1, …, p − 1} 안에 유일한 해 a′을 갖는다'고 쓰고 유일성의 근거를 적지 않는다(같은 책의 Proposition 2.1.13이 그 내용이고, 그 증명은 완전잉여계의 원소 개수를 센다). a = a′이면 a² ≡ 1이고 p | (a − 1)(a + 1)이므로 a ∈ {1, p − 1}이라고 적고, p | (a − 1)(a + 1)에서 p | (a − 1) 또는 p | (a + 1)로 넘어가는 것은 근거 없이 쓴다(유클리드 보조정리의 내용). 이 항목은 (1)–(3)을 이 사이트의 도구로 증명했다. 존재는 inverse-modulo-n의 1과 coprime-to-modulus의 4로, 유일성은 inverse-modulo-n의 2와 coprime-to-modulus의 5로 보이므로 세기를 쓰지 않는다. (a′)′ = a는 출처에 쓰여 있지 않고 이 사이트가 유일성에서 끌어냈다. 출처는 'We can thus pair off the elements of {2, 3, …, p − 2}, each with their inverse. Thus 2·3·…·(p − 2) ≡ 1 (mod p)'로 짝지은 곱이 1과 합동이라는 것을 한 줄로 넘어간다. 이 항목의 (4)가 그 단계를 원소의 개수에 대한 강한 귀납법으로 증명한 것이고 출처에는 없다. 예시와 반례의 수(p = 11, 13, 법 8)는 출처의 예(p = 17, Example 2.1.23)와 다르게 새로 골랐다."
 status: source-checked
 added: 2026-11-16
 ---
 
 :::statement
-$p$가 소수라 하자. $p \ge 2$이고 [[euler-phi-function]]의 4에 의해 $\{1, \dots, p - 1\} = P_p$이다. 그러면 다음이 성립한다.
+$p$가 소수라 하자. $1$과 $p$가 $p$의 서로 다른 양의 약수이므로 $p \ne 1$이고 (Z1)에 의해 $p \ge 2$이다. [[euler-phi-function]]의 4에 의해 $\{1, \dots, p - 1\} = P_p$이다. 그러면 다음이 성립한다.
 
 1. 각 $a \in \{1, \dots, p - 1\}$에 대하여 $a a' \equiv 1 \pmod p$인 $a' \in \{1, \dots, p - 1\}$이 정확히 하나 있다. 이 $a'$을 $a^*$로 쓰고 $a$의 **짝**이라 부른다. 곧 $a^* \in \{1, \dots, p - 1\}$이고 $a a^* \equiv 1 \pmod p$이며, $c \in \{1, \dots, p - 1\}$이 $ac \equiv 1 \pmod p$이면 $c = a^*$이다.
 2. $a \in \{1, \dots, p - 1\}$이면 $(a^*)^* = a$이다.
@@ -63,7 +63,7 @@ Let $p$ be a prime number. Then $p \ge 2$, and by the description of $P_p$ for p
 :::
 
 :::proof
-$p$가 소수이므로 $p \ge 2$이고 $\{1, \dots, p - 1\} = P_p$이다([[euler-phi-function]]의 4). $P_p$의 원소는 $p$와 서로소이다. 합동의 반사성, 대칭성, 추이성은 [[congruence-is-an-equivalence-relation|합동의 동치관계 성질]]에서 쓴다.
+$p \ge 2$이고 $\{1, \dots, p - 1\} = P_p$이다([[euler-phi-function]]의 4). $P_p$의 원소는 $p$와 서로소이다. 합동의 반사성, 대칭성, 추이성은 [[congruence-is-an-equivalence-relation|합동의 동치관계 성질]]에서 쓴다.
 
 **1.** 존재. $a \in \{1, \dots, p - 1\}$이면 $a \in P_p$이므로 $\gcd(a, p) = 1$이고, [[inverse-modulo-n]]의 1에 의해 $ax \equiv 1 \pmod p$인 정수 $x$가 있다. $xa = ax$이므로 $xa \equiv 1$이고, 같은 항목의 1을 $x$에 쓰면 $\gcd(x, p) = 1$이다. $x$를 $p$로 나눈 나머지를 $r$이라 하면 [[coprime-to-modulus]]의 4에 의해 $x \equiv r \pmod p$이고 $r \in \{1, \dots, p - 1\}$이다. [[congruence-arithmetic|합동의 계산 법칙]]의 2에 의해 $ar \equiv ax$이고 $ax \equiv 1$이므로 $ar \equiv 1 \pmod p$이다. 이 $r$이 구하는 $a'$이다.
 
@@ -99,7 +99,7 @@ $$\prod_{s \in S} s = \Bigl(\Bigl(\prod_{s \in T} s\Bigr) \cdot a^*\Bigr) \cdot 
 ## 예시와 반례
 
 :::example[p = 11]
-$11$ 이하의 각 수의 짝을 구합니다. $1 \cdot 1 = 1$, $2 \cdot 6 = 12 = 11 + 1$, $3 \cdot 4 = 12 = 11 + 1$, $5 \cdot 9 = 45 = 4 \cdot 11 + 1$, $7 \cdot 8 = 56 = 5 \cdot 11 + 1$, $10 \cdot 10 = 100 = 9 \cdot 11 + 1$이므로 $1^* = 1$, $2^* = 6$, $6^* = 2$, $3^* = 4$, $4^* = 3$, $5^* = 9$, $9^* = 5$, $7^* = 8$, $8^* = 7$, $10^* = 10$입니다. 자기 자신이 짝인 수는 $1$과 $10 = p - 1$뿐입니다. $S = \{2, 3, \dots, 9\}$는 4의 조건을 만족하고 $\prod_{s \in S} s \equiv (2 \cdot 6)(3 \cdot 4)(5 \cdot 9)(7 \cdot 8) \equiv 1 \pmod{11}$입니다(각 쌍의 곱이 $12$, $12$, $45$, $56$이고 $11$로 나눈 나머지가 모두 $1$).
+$1$부터 $10$까지 각 수의 짝을 구합니다. $1 \cdot 1 = 1$, $2 \cdot 6 = 12 = 11 + 1$, $3 \cdot 4 = 12 = 11 + 1$, $5 \cdot 9 = 45 = 4 \cdot 11 + 1$, $7 \cdot 8 = 56 = 5 \cdot 11 + 1$, $10 \cdot 10 = 100 = 9 \cdot 11 + 1$이므로 $1^* = 1$, $2^* = 6$, $6^* = 2$, $3^* = 4$, $4^* = 3$, $5^* = 9$, $9^* = 5$, $7^* = 8$, $8^* = 7$, $10^* = 10$입니다. 자기 자신이 짝인 수는 $1$과 $10 = p - 1$뿐입니다. $S = \{2, 3, \dots, 9\}$는 4의 조건을 만족하고 $\prod_{s \in S} s \equiv (2 \cdot 6)(3 \cdot 4)(5 \cdot 9)(7 \cdot 8) \equiv 1 \pmod{11}$입니다(각 쌍의 곱이 $12$, $12$, $45$, $56$이고 $11$로 나눈 나머지가 모두 $1$).
 :::
 
 :::counterexample[법이 합성수이면 깨진다]

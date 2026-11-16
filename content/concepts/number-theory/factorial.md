@@ -14,15 +14,15 @@ sources:
     checked: original
     note: "출처는 계승을 정의하지 않고 (p − 1)!을 그대로 쓴다(책 전체에서 계승의 정의를 찾지 못했다). 이 항목은 용어와 표기 n!을 위해 Hammack을 함께 단다."
   - ref: hammack-book-of-proof
-    loc: 3.4절 Factorials and Permutations, Definition 3.1, p.78
+    loc: 3.4절 Factorials and Permutations, Definition 3.1, p.78. 식 (3.1)과 표, p.79
     checked: original
-    note: "Hammack은 n!을 'n개의 기호로 중복 없이 만들 수 있는 길이 n인 목록의 개수'로 정의하고(0!도 포함해 n이 음이 아닌 정수), n > 1이면 n! = n(n − 1)(n − 2)···3·2·1이라고 적는다. 이 사이트에는 목록을 세는 도구가 없으므로 이 항목은 n!을 1부터 n까지의 열의 유한 곱으로 정의하고, 정의가 같은 수를 준다는 것은 다루지 않는다. 0!은 정의하지 않는다(빈 곱이 이 사이트에 없다). Hammack은 0! = 1이라고 정한다. 아래 성질들(점화식, 약수, 집합 위의 곱)과 그 증명은 출처에 없고 이 사이트가 썼다."
+    note: "Hammack은 n!을 'n개의 기호로 중복 없이 만들 수 있는 길이 n인 목록의 개수'로 정의하고(0!도 포함해 n이 음이 아닌 정수), n > 1이면 n! = n(n − 1)(n − 2)···3·2·1이라고 적는다. 이 사이트에는 목록을 세는 도구가 없으므로 이 항목은 n!을 1부터 n까지의 열의 유한 곱으로 정의하고, 정의가 같은 수를 준다는 것은 다루지 않는다. 0!은 정의하지 않는다(빈 곱이 이 사이트에 없다). Hammack의 정의에서는 0! = 1이 나온다(Thus 0! = 1). 점화식은 Hammack p.79의 식 (3.1) n! = n·(n − 1)!과 같은 내용이다(이 항목의 1은 n ≥ 1에서 (n + 1)! = n!·(n + 1)로 적는다). 예시의 1!부터 6!까지의 값은 p.79의 표와 같다. 약수와 집합 위의 곱에 관한 성질과 모든 증명은 출처에 없고 이 사이트가 썼다."
 status: source-checked
 added: 2026-11-16
 ---
 
 :::statement
-$n$이 자연수일 때 **$n$의 계승**(factorial) $n!$을, 각 자리의 값이 그 자리의 번호인 길이 $n$인 정수의 열 $1, 2, \dots, n$(곧 $i$번째 항이 $i$인 열)의 [[finite-product|곱]]으로 정한다. 곧 $n! = 1 \cdot 2 \cdots n$이다. $0!$은 정의하지 않는다(인수가 없는 곱은 [[finite-product]]에서 정의하지 않는다. 관례로 $0! = 1$이라 두는 책도 있으나 이 사이트는 쓰지 않는다). 다음이 성립한다.
+$n$이 자연수일 때 **$n$의 계승**(factorial) $n!$을, 각 자리의 값이 그 자리의 번호인 길이 $n$인 정수의 열 $1, 2, \dots, n$(곧 $i$번째 항이 $i$인 열)의 [[finite-product|곱]]으로 정한다. 곧 $n! = 1 \cdot 2 \cdots n$이다. $0!$은 정의하지 않는다(인수가 없는 곱은 [[finite-product]]에서 정의하지 않는다. Hammack의 정의에서는 $0! = 1$이 나오지만 이 사이트는 $0!$을 쓰지 않는다). 다음이 성립한다.
 
 1. $1! = 1$이고, 모든 자연수 $n$에 대하여 $(n + 1)! = n! \cdot (n + 1)$이다.
 2. $n!$은 양의 정수이다. 또 $j$가 $1 \le j \le n$인 정수이면 $j \mid n!$이다.
@@ -32,7 +32,7 @@ $n$이 자연수일 때 **$n$의 계승**(factorial) $n!$을, 각 자리의 값�
 :::
 
 :::english
-For a natural number $n$, the **factorial** $n!$ is the finite product of the sequence $1, 2, \dots, n$ of length $n$ whose $i$-th term is $i$. That is, $n! = 1 \cdot 2 \cdots n$. The value $0!$ is not defined (the product with no factors is not defined; some books set $0! = 1$ by convention, but this site does not use it). The following hold.
+For a natural number $n$, the **factorial** $n!$ is the finite product of the sequence $1, 2, \dots, n$ of length $n$ whose $i$-th term is $i$. That is, $n! = 1 \cdot 2 \cdots n$. The value $0!$ is not defined (the product with no factors is not defined; in the definition of some books, $0! = 1$ results, but this site does not use it). The following hold.
 
 1. $1! = 1$, and $(n + 1)! = n! \cdot (n + 1)$ for every natural number $n$.
 2. $n!$ is a positive integer. Moreover, if $j$ is an integer with $1 \le j \le n$, then $j \mid n!$.
@@ -41,7 +41,7 @@ For a natural number $n$, the **factorial** $n!$ is the finite product of the se
 
 ## 직관
 
-$n!$은 $1$부터 $n$까지를 차례로 곱한 수입니다. $5! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 = 120$이고, 한 단계 올라갈 때마다 새 수를 곱합니다. $6! = 5! \cdot 6 = 720$입니다. 이것이 1의 점화식입니다. 비유로는 탑을 쌓는 일을 생각할 수 있습니다. 한 층씩 올릴 때마다 높이에 새 층의 번호를 곱합니다. 이 비유가 맞는 곳은 "앞의 결과에 새 인수 하나만 곱한다"는 점이고, 어긋나는 곳은 $0$층이 없다는 점입니다. 이 사이트에서는 $0!$을 정의하지 않습니다.
+$n!$은 $1$부터 $n$까지를 차례로 곱한 수입니다. $5! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 = 120$이고, 한 단계 올라갈 때마다 새 수를 곱합니다. $6! = 5! \cdot 6 = 720$입니다. 이것이 1의 점화식입니다. 비유로는 갈림길이 있는 나무를 생각할 수 있습니다. $n$번째 층에서는 앞 층의 갈래마다 $n$개씩 새 갈래가 갈라진다고 하면 갈래의 수가 $n!$이 됩니다. 이 비유가 맞는 곳은 "앞의 결과에 새 인수 하나만 곱한다"는 점이고, 어긋나는 곳은 첫 층 앞에 $0$번째 층이 없다는 점입니다. 이 사이트에서는 $0!$을 정의하지 않습니다.
 
 2의 둘째 문장은 $n!$이 $1$부터 $n$까지의 모든 정수의 배수라는 말입니다. 곱에 나오는 인수는 곱을 나누기 때문입니다([[finite-product]]의 (P4)). 3은 같은 곱을 집합 위의 곱의 기호로 쓸 수 있다는 것으로, [[wilson-theorem|윌슨 정리]]의 증명에서 곱을 집합의 원소별로 나눠 다루는 데 쓰입니다.
 
@@ -54,7 +54,7 @@ $n!$은 $1$부터 $n$까지를 차례로 곱한 수입니다. $5! = 1 \cdot 2 \c
 
 **2.** 열 $1, 2, \dots, n$의 모든 항은 양의 정수이므로 [[finite-product]]의 (P5)에 의해 곱 $n!$은 양의 정수이고, $1 \le j \le n$인 정수 $j$는 열의 $j$번째 항이므로 (P4)에 의해 $j \mid n!$이다.
 
-**3.** [[finite-set]]의 (F2)에 의해 $\{1, \dots, n\}$은 원소를 $n$개 갖는다. 곧 $n \ge 1$이고 전단사 $p : \{1, \dots, n\} \to \{1, \dots, n\}$이 있다. 항등함수 $p(i) = i$($i_{\{1, \dots, n\}}$)가 이런 전단사이다. 이 $p$는 길이 $n$인 정수의 열 $p_1, \dots, p_n$이고 $p_i = i$이므로 이 열의 곱은 $n!$이다. [[product-over-a-finite-set]]의 1에 의해 집합 위의 곱은 어느 나열로 구하든 같으므로 $\prod_{s \in \{1, \dots, n\}} s = n!$이다.
+**3.** [[finite-set]]의 (F2)에 의해 $\{1, \dots, n\}$은 원소를 $n$개 갖는다. 곧 $n \ge 1$이고 전단사 $p : \{1, \dots, n\} \to \{1, \dots, n\}$이 있다. 항등함수 $p(i) = i$($i_{\{1, \dots, n\}}$)가 이런 전단사이다. 서로 다른 $i$에 서로 다른 값 $i$를 주므로 단사이고, 모든 $s \in \{1, \dots, n\}$이 $p(s) = s$의 값이므로 전사이다. 이 $p$는 길이 $n$인 정수의 열 $p_1, \dots, p_n$이고 $p_i = i$이므로 이 열의 곱은 $n!$이다. [[product-over-a-finite-set]]의 1에 의해 집합 위의 곱은 어느 나열로 구하든 같으므로 $\prod_{s \in \{1, \dots, n\}} s = n!$이다.
 :::
 
 ## 예시와 반례
@@ -67,8 +67,8 @@ $1! = 1$, $2! = 1! \cdot 2 = 2$, $3! = 2! \cdot 3 = 6$, $4! = 6 \cdot 4 = 24$, $
 2의 $j \mid n!$은 $1 \le j \le n$일 때의 진술입니다. $n = 6$, $j = 7$이면 $6! = 720 = 7 \cdot 102 + 6$이고 나머지가 $0$이 아니므로 $7 \nmid 720$입니다([[division-theorem|나눗셈 정리]]의 유일성에 의해 $720 = 7c$인 정수 $c$는 없습니다).
 :::
 
-:::counterexample[(2n)!은 2·n!이 아니다]
-계승은 덧셈이나 곱셈과 이런 식으로 어울리지 않습니다. $n = 2$이면 $(2n)! = 4! = 24$이지만 $2 \cdot n! = 2 \cdot 2 = 4$입니다.
+:::counterexample[n = 2에서 (2n)! ≠ 2·n!]
+계승은 인수를 두 배로 하는 일과 이런 식으로 늘 어울리지는 않습니다. $n = 2$이면 $(2n)! = 4! = 24$이지만 $2 \cdot n! = 2 \cdot 2 = 4$입니다.
 :::
 
 ## 확인 질문
