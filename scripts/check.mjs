@@ -128,6 +128,15 @@ function lintBody(file, body, requires, self) {
     const bad = (fin ? AFTER_VOWEL : AFTER_FINAL).find((j) => after.startsWith(j) && !['가지', '가운', '과정', '와서', '은근'].some((w) => after.startsWith(w)));
     if (bad) warn(file, `조사가 안 맞는다: "${shown}${after}" ([[${id}]])`);
   }
+  // 수식 구분 기호: 본문의 한 문단(줄) 안에서 $ 의 개수가 홀수이면 수식이 깨져 보인다.
+  let inDisplay = false;
+  text.split('\n').forEach((line, i) => {
+    if (line.trim() === '$$') { inDisplay = !inDisplay; return; }
+    if ((line.split('$$').length - 1) % 2 === 1) { warn(file, `본문 ${i + 1}번째 줄: 여러 줄 수식의 $$ 는 홀로 한 줄에 둔다(같은 줄에 수식을 쓰면 화면에서 깨진다)`); return; }
+    if (inDisplay) return;
+    const n = (line.replace(/\\\$/g, '').match(/\$/g) || []).length;
+    if (n % 2 === 1) warn(file, `본문 ${i + 1}번째 줄의 $ 가 홀수 개다(${n}개). 수식을 여닫는 $ 가 빠졌는지 본다`);
+  });
   for (const sym of UNDEFINED_SYMBOLS) if (text.includes(sym)) warn(file, `정의하지 않은 기호 ${sym} 를 쓴다. 문장으로 풀어 쓴다`);
   if (/(위|아래|앞|뒤|끝)의?\s*remark|remark\s*(에서|참조|에 의해)/.test(text)) warn(file, '본문에서 "remark" 라는 낱말로 블록을 가리킨다. 블록의 제목으로 가리킨다');
   if (requires) {
