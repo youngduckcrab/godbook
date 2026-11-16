@@ -19,7 +19,7 @@ added: 2026-11-16
 ---
 
 :::statement
-$A$와 $B$가 [[set]]일 때, $A$에서 $B$로의 전단사인 함수(줄여서 **전단사**, bijection) $f : A \to B$([[injective-surjective-bijective]], 공역은 $f : A \to B$라고 쓸 때 밝힌 $B$)가 **존재하면** $A$와 $B$는 **크기가 같다**(have the same cardinality)고 하고 $|A| = |B|$로 쓴다. 이런 $f$가 **하나도 없으면** $A$와 $B$의 크기가 같지 않다고 하고 $|A| \ne |B|$로 쓴다.
+$A$와 $B$가 [[set]]일 때, $A$에서 $B$로의 전단사인 함수(줄여서 **전단사**, bijection) $f : A \to B$([[injective-surjective-bijective|전단사]], 공역은 $f : A \to B$라고 쓸 때 밝힌 $B$)가 **존재하면** $A$와 $B$는 **크기가 같다**(have the same cardinality)고 하고 $|A| = |B|$로 쓴다. 이런 $f$가 **하나도 없으면** $A$와 $B$의 크기가 같지 않다고 하고 $|A| \ne |B|$로 쓴다.
 
 이 정의는 "$|A| = |B|$"라는 표기 전체에 뜻을 준다. $A$가 [[set]]에서 말한 원소가 유한 개인 집합일 때의 $|A|$는 원소의 개수였지만, 이 정의에서는 $|A|$ 자체에 어떤 수도 짝지어 주지 않는다. $|A| = |B|$인지 아닌지는 $A$에서 $B$로의 전단사가 있느냐 없느냐로 정해진다.
 :::

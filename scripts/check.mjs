@@ -131,7 +131,9 @@ function lintBody(file, body, requires, self) {
   for (const sym of UNDEFINED_SYMBOLS) if (text.includes(sym)) warn(file, `정의하지 않은 기호 ${sym} 를 쓴다. 문장으로 풀어 쓴다`);
   if (/(위|아래|앞|뒤|끝)의?\s*remark|remark\s*(에서|참조|에 의해)/.test(text)) warn(file, '본문에서 "remark" 라는 낱말로 블록을 가리킨다. 블록의 제목으로 가리킨다');
   if (requires) {
-    const linked = new Set([...text.matchAll(WIKILINK)].map((m) => m[1]));
+    // requires 는 진술·증명·예시·확인 질문이 쓰는 항목이다. 블록 밖 산문(직관, 역사)의 안내 링크는 보지 않는다.
+    const blocks = [...text.matchAll(/^:::[a-z]+[^\n]*\n([\s\S]*?)\n:::\s*$/gm)].map((m) => m[1]).join('\n');
+    const linked = new Set([...blocks.matchAll(WIKILINK)].map((m) => m[1]));
     // 이 항목을 선행으로 삼는 뒤 항목으로의 안내 링크는 제외한다.
     const missing = [...linked].filter((id) => ids.has(id) && !requires.has(id) && !closure(id).has(self));
     if (missing.length) warn(file, `본문에서 쓰지만 requires 에 없는 항목: ${missing.join(', ')}`);

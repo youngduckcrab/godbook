@@ -24,7 +24,7 @@ $n$이 자연수일 때, $n$의 **양의 약수**란 $d \mid n$인 양의 정수
 - $n$이 **소수**(prime number)인 것은 정확히 $n$의 양의 약수가 **정확히 두 개**, 곧 $1$과 $n$뿐일 때이다.
 - $n$이 **합성수**(composite number)인 것은 정확히 $n$의 양의 약수가 **셋 이상**일 때이다.
 
-모든 자연수 $n$에 대하여 $1$과 $n$은 $n$의 양의 약수이다($n = 1 \cdot n = n \cdot 1$). 또 $n$의 양의 약수 $d$는 $1 \le d \le n$을 만족한다(증명은 "직관" 절 끝의 remark 참조). 따라서 $n \ge 2$이면 $1 \ne n$이므로 $1$과 $n$이 서로 다른 두 양의 약수이고, 이때 $n$이 소수가 아닌 것은 정확히 $1$과 $n$ 이외의 양의 약수 $d$가 존재할 때이다. $n = 1$은 소수도 합성수도 아니다.
+모든 자연수 $n$에 대하여 $1$과 $n$은 $n$의 양의 약수이다($n = 1 \cdot n = n \cdot 1$). 또 $n$의 양의 약수 $d$는 $1 \le d \le n$을 만족한다(증명은 "직관" 절 끝의 "자연수 $n$의 양의 약수 $d$는 $1 \le d \le n$이다" 참조). 따라서 $n \ge 2$이면 $1 \ne n$이므로 $1$과 $n$이 서로 다른 두 양의 약수이고, 이때 $n$이 소수가 아닌 것은 정확히 $1$과 $n$ 이외의 양의 약수 $d$가 존재할 때이다. $n = 1$은 소수도 합성수도 아니다.
 
 이 사이트는 정수와 부등식에 관한 다음 성질을 증명 없이 받아들인다. 여기서 $a$, $b$, $c$는 정수 또는 실수이다.
 
@@ -40,7 +40,7 @@ Let $n$ be a natural number. A **positive divisor** of $n$ is a positive integer
 - $n$ is a **prime number** exactly when $n$ has **exactly two** positive divisors, namely $1$ and $n$.
 - $n$ is a **composite number** exactly when $n$ has **three or more** positive divisors.
 
-For every natural number $n$, both $1$ and $n$ are positive divisors of $n$, since $n = 1 \cdot n = n \cdot 1$. Moreover every positive divisor $d$ of $n$ satisfies $1 \le d \le n$ (proved in the remark at the end of the "직관" section). Hence if $n \ge 2$, then $1 \ne n$, so $1$ and $n$ are two distinct positive divisors, and in this case $n$ is not prime exactly when there exists a positive divisor $d$ of $n$ other than $1$ and $n$. The number $n = 1$ is neither prime nor composite.
+For every natural number $n$, both $1$ and $n$ are positive divisors of $n$, since $n = 1 \cdot n = n \cdot 1$. Moreover every positive divisor $d$ of $n$ satisfies $1 \le d \le n$ (proved at the end of the "직관" section below). Hence if $n \ge 2$, then $1 \ne n$, so $1$ and $n$ are two distinct positive divisors, and in this case $n$ is not prime exactly when there exists a positive divisor $d$ of $n$ other than $1$ and $n$. The number $n = 1$ is neither prime nor composite.
 
 This text accepts the following properties of integers and inequalities without proof. Here $a$, $b$, $c$ are integers or real numbers.
 
@@ -54,7 +54,7 @@ This text accepts the following properties of integers and inequalities without 
 
 소수는 "$2$ 이상의 자연수 가운데, 자기보다 작은 두 자연수의 곱으로 쓸 수 없는 수"입니다. 양의 정수 $a$, $b$로 $7 = a \cdot b$라 쓰면 $1 \cdot 7$이나 $7 \cdot 1$뿐이지만 $12$는 $3 \cdot 4$로도 쓰입니다. 레고 블록에 비유하면, 소수는 더 작은 블록으로 나눌 수 없는 가장 작은 블록이고 합성수는 그 블록들을 이어 만든 것입니다. 이 비유는 다음 정리 [[prime-factorization-exists]]에서 정확한 문장이 됩니다.
 
-$1$이 소수가 아닌 까닭은 정의에서 바로 나옵니다. $1$의 양의 약수 $d$는 이 절 끝의 remark에 의해 $1 \le d \le 1$이므로 $d = 1$ 하나뿐입니다. 정확히 두 개가 아니므로 소수가 아니고, 셋 이상도 아니므로 합성수도 아닙니다.
+$1$이 소수가 아닌 까닭은 정의에서 바로 나옵니다. $1$의 양의 약수 $d$는 이 절 끝의 "자연수 $n$의 양의 약수 $d$는 $1 \le d \le n$이다"에 의해 $1 \le d \le 1$이므로 $d = 1$ 하나뿐입니다. 정확히 두 개가 아니므로 소수가 아니고, 셋 이상도 아니므로 합성수도 아닙니다.
 
 :::remark[자연수 $n$의 양의 약수 $d$는 $1 \le d \le n$이다]
 $d$가 $n$의 양의 약수이면 $n = dc$인 정수 $c$가 있다. $d$는 양의 정수이므로 (Z1)에 의해 $d \ge 1$이다. 만약 $c \le 0$이면 $d > 0$이므로 (Z2)에 의해 $dc \le 0$이지만 $dc = n \ge 1 > 0$이어서 모순이다. 그러므로 $c > 0$이고, 정수이므로 (Z1)에 의해 $c \ge 1$이다. $c \ge 1$이고 $d > 0$이므로 (Z3)에 의해 $dc \ge d \cdot 1$, 곧 $n \ge d$이다. 따라서 $1 \le d \le n$이다.
