@@ -13,7 +13,8 @@ sources:
     loc: 1장 7절 Subspaces, 번호 없는 정의와 바로 뒤의 설명, 예 1, p.30
     checked: original
     note: "출처는 부분공간을 '덧셈과 스칼라배에 닫혀 있는 공집합이 아닌 부분집합'으로 정의하고(조건 1, 2), 두 조건을 'αu + βv가 속한다'는 하나의 조건으로 바꿀 수 있다고 적는다(증명은 쓰지 않는다). 이어서 부분공간이 물려받은 연산으로 벡터공간이라는 것을 보이는데, 영벡터와 덧셈 역원이 속한다는 것을 0 = 0v, −v = (−1)v로 보이고 나머지 공리는 연산을 물려받으므로 성립한다고 적는다. 이 항목은 영벡터를 포함한다는 (S1)을 정의에 넣었고, 출처의 '공집합이 아니다'와 같은 조건임을 (P2)에서 증명한다. 출처가 말하는 '두 조건을 하나로 바꾼다'는 (P3)이다(공집합이 아니라는 조건과 함께 쓴다). (P1)은 출처가 증명하지 않고 넘어가는 부분을 채운 것으로, 제한한 연산이 W × W에서 W로, ℝ × W에서 W로의 함수라는 것과 (V1)–(V8)을 하나씩 확인했다. (P4)는 출처 예 1(자명한 부분공간과 공집합은 부분공간이 아니라는 설명)에 해당하고 증명은 이 사이트가 썼다. 출처는 예 2–4(핵, 상, 일차생성)도 들지만 이 항목은 다루지 않는다. (S1)–(S4)와 (P1)–(P4)의 번호, '제한한 연산'이라는 말은 출처에 나오지 않는 이 사이트의 것이고, '선형 부분공간'이라는 별칭도 출처에 나오지 않는다. 예시와 반례와 확인 질문은 새로 만들었다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 2회 통과. 부분공간의 부분공간에 관한 사실을 진술에 더하고, 틀린 일반화와 출처 메모를 보완했다."
 added: 2026-11-16
 ---
 
@@ -26,7 +27,7 @@ $W$가 $V$의 **부분공간**(subspace)인 것은 정확히 다음 (S1)–(S3)�
 - (S2) $u + v \in W$이다. (덧셈에 닫혀 있다.)
 - (S3) $\alpha v \in W$이다. (스칼라배에 닫혀 있다.)
 
-다음 네 가지가 성립한다.
+다음 다섯 가지가 성립한다.
 
 - (P1) $W$가 부분공간이면 $W$는 $V$의 연산을 $W$로 제한한 것으로 그 자체가 벡터공간이다. 곧 (S2)에 의해 각 $(u, v) \in W \times W$에 $W$의 원소 $u + v$가 하나씩 정해지고 (S3)에 의해 각 $(\alpha, v) \in \mathbb{R} \times W$에 $W$의 원소 $\alpha v$가 하나씩 정해지므로, [[real-function-space|(G)]]에 의해 이 값을 갖는 함수 $+_W : W \times W \to W$와 $\cdot_W : \mathbb{R} \times W \to W$가 있다(함수는 값으로 정해지므로 하나뿐이다). 이 두 함수를 $V$의 연산을 **$W$로 제한한 연산**이라 하고, 이 연산에 관하여 $W$는 벡터공간이다. 이때 $W$의 영벡터는 $0_V$이고 $v \in W$의 덧셈 역원은 $V$에서의 $-v$이다.
 - (P2) $W$가 (S2)와 (S3)을 만족한다고 하자. 이때 $W$가 부분공간인 것은 정확히 $W \ne \emptyset$일 때이다. 곧 (S1)을 "$W$는 공집합이 아니다"로 바꿔도 같은 정의이다.
@@ -44,7 +45,7 @@ $W$ is a **subspace** of $V$ exactly when the following (S1)–(S3) all hold.
 - (S2) $u + v \in W$. ($W$ is closed under addition.)
 - (S3) $\alpha v \in W$. ($W$ is closed under scalar multiplication.)
 
-The following four statements hold.
+The following five statements hold.
 
 - (P1) If $W$ is a subspace, then $W$ is itself a vector space with the operations of $V$ restricted to $W$. That is, by (S2) each $(u, v) \in W \times W$ is assigned the element $u + v$ of $W$, and by (S3) each $(\alpha, v) \in \mathbb{R} \times W$ is assigned the element $\alpha v$ of $W$; so by (G) there are functions $+_W : W \times W \to W$ and $\cdot_W : \mathbb{R} \times W \to W$ with these values (a function is determined by its values, so each is unique). We call these two functions the operations of $V$ **restricted to $W$**, and with respect to them $W$ is a vector space. The zero vector of $W$ is $0_V$, and the additive inverse of $v \in W$ is its additive inverse $-v$ in $V$.
 - (P2) Suppose $W$ satisfies (S2) and (S3). Then $W$ is a subspace exactly when $W \ne \emptyset$. That is, (S1) may be replaced by "$W$ is not empty" without changing the definition.
@@ -70,7 +71,7 @@ The following four statements hold.
 
 **(P4)의 증명.** $\{0_V\}$: (S1)은 $0_V \in \{0_V\}$이다. (S2): $u$, $v \in \{0_V\}$이면 $u = v = 0_V$이고, $0_V$가 영벡터이므로 $0_V + 0_V = 0_V$이다(영벡터의 정의 "모든 $x$에서 $x + 0_V = x$"에서 $x = 0_V$). 따라서 $u + v = 0_V \in \{0_V\}$이다. (S3): $v \in \{0_V\}$이면 $v = 0_V$이고 [[vector-space-basic-properties|(B4)]]에 의해 $\alpha v = \alpha 0_V = 0_V \in \{0_V\}$이다. $V$: $0_V \in V$이고, $V$의 두 연산이 $V$의 원소를 값으로 가지므로([[vector-space|벡터공간의 정의]]에서 덧셈과 스칼라배는 $V \times V$, $\mathbb{R} \times V$에서 $V$로의 함수이다) (S2), (S3)이 성립한다. 공집합: $0_V \in \emptyset$은 거짓이므로 (S1)이 성립하지 않는다.
 
-**(P5)의 증명.** $W$가 부분공간이므로 (P1)에 의해 $W$는 제한한 연산 $+_W$, $\cdot_W$에 관하여 벡터공간이고, 그 영벡터는 $0_V$이며 $+_W$, $\cdot_W$의 값은 $V$에서의 값과 같다. $U \subseteq W$라 하자. 벡터공간 $W$의 부분집합 $U$가 $W$의 부분공간인 것은 (S1)–(S3)을 $W$에서 쓴 다음 세 조건이 성립할 때이다. (i) $W$의 영벡터 $0_V$가 $U$의 원소이다. (ii) $u$, $v \in U$이면 $u +_W v \in U$이다. (iii) $v \in U$이고 $\alpha$가 실수이면 $\alpha \cdot_W v \in U$이다. $u +_W v = u + v$이고 $\alpha \cdot_W v = \alpha v$이므로 (i)–(iii)은 $V$에서의 (S1)–(S3)과 글자 그대로 같은 조건이다. 따라서 $U$가 $W$의 부분공간인 것은 정확히 $U$가 $V$의 부분공간일 때이다.
+**(P5)의 증명.** $W$가 부분공간이므로 (P1)에 의해 $W$는 제한한 연산 $+_W$, $\cdot_W$에 관하여 벡터공간이고, 그 영벡터는 $0_V$이며 $+_W$, $\cdot_W$의 값은 $V$에서의 값과 같다. $U \subseteq W$라 하자. 벡터공간 $W$의 부분집합 $U$가 $W$의 부분공간인 것은 (S1)–(S3)을 $W$에서 쓴 다음 세 조건이 성립할 때이다. (i) $W$의 영벡터 $0_V$가 $U$의 원소이다. (ii) $u$, $v \in U$이면 $u +_W v \in U$이다. (iii) $v \in U$이고 $\alpha$가 실수이면 $\alpha \cdot_W v \in U$이다. $u +_W v = u + v$이고 $\alpha \cdot_W v = \alpha v$이므로 (i)–(iii)은 $V$에서의 (S1)–(S3)과 글자 그대로 같은 조건이다. $U \subseteq W$이고 $W \subseteq V$이므로 $U$는 $V$의 부분집합이기도 하다. 따라서 $U$가 $W$의 부분공간인 것은 정확히 $U$가 $V$의 부분공간일 때이다.
 
 **(P1)의 증명.** $W$가 부분공간이라 하자. 함수 $+_W$, $\cdot_W$가 있다는 것과 값이 $V$에서의 값과 같다는 것은 진술에서 보였다. $W$의 원소는 $V$의 원소이고 $+_W$, $\cdot_W$의 값은 $V$에서의 합과 스칼라배이므로, $W$의 원소 $u$, $v$, $w$와 실수 $\alpha$, $\beta$에 대하여 각 법칙의 양변을 $W$의 연산으로 계산한 값은 $V$의 연산으로 계산한 값과 같다. 예를 들어 $(u +_W v) +_W w$는 $V$의 원소 $(u + v) + w$이고 $u +_W (v +_W w)$는 $u + (v + w)$이다. 그러므로 $V$에서 성립하는 법칙은 같은 식으로 $W$에서 성립한다.
 
