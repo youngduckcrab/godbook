@@ -7,7 +7,7 @@ field: number-theory
 msc: ["11A07"]
 level: undergrad
 summary: c와 n이 서로소이면 ac ≡ bc (mod n)에서 양변의 c를 지워 a ≡ b (mod n)을 얻는다.
-requires: [congruence-modulo-n, coprime-divides-product, greatest-common-divisor, divisibility, even-and-odd, well-ordering-principle]
+requires: [congruence-modulo-n, coprime-divides-product, greatest-common-divisor, divisibility, even-and-odd, prime-number, well-ordering-principle]
 proof: full
 sources:
   - ref: stein-elementary-number-theory
@@ -35,7 +35,7 @@ Let $n$ be a natural number and let $a$, $b$, $c$ be integers. If $ac \equiv bc 
 ## 증명
 
 :::idea
-$ac - bc = (a - b)c$가 $n$의 배수이다. $c$와 $n$이 서로소이므로, 곱 $c(a - b)$를 나누는 $n$은 서로소가 아닌 인수 $c$ 쪽이 아니라 $a - b$를 나눈다.
+$ac - bc = c(a - b)$가 $n$의 배수이다. $n$이 인수 $c$와 서로소이므로, [[coprime-divides-product|곱의 한 인수와 서로소인 약수는 다른 인수를 나눈다]]에 의해 $n$은 다른 인수 $a - b$를 나눈다.
 :::
 
 :::hint
@@ -67,15 +67,15 @@ $5$의 양의 약수는 $1, 5$이고 $12$의 양의 약수는 $1, 2, 3, 4, 6, 12
 :::
 
 :::example[$c$가 음수인 경우]
-$c = -7$, $n = 10$이면 $\gcd(-7, 10) = \gcd(7, 10) = 1$입니다([[greatest-common-divisor]]의 성질 (iii)). $a = 4$, $b = -6$에서 $ac = -28$, $bc = 42$이고 $-28 - 42 = -70 = 10 \cdot (-7)$이므로 $ac \equiv bc \pmod{10}$입니다. 소거하면 $4 \equiv -6 \pmod{10}$이고, 실제로 $4 - (-6) = 10$입니다.
+$c = -7$, $n = 10$이면 $\gcd(-7, 10) = \gcd(7, 10)$입니다([[greatest-common-divisor]]의 성질 (iii)). $7$의 양의 약수 $1, 7$ 가운데 $10$을 나누는 것은 $1$뿐이므로 $\gcd(7, 10) = 1$입니다. $a = 4$, $b = -6$에서 $ac = -28$, $bc = 42$이고 $-28 - 42 = -70 = 10 \cdot (-7)$이므로 $ac \equiv bc \pmod{10}$입니다. 소거하면 $4 \equiv -6 \pmod{10}$이고, 실제로 $4 - (-6) = 10$입니다.
 :::
 
 :::example[$n = 1$인 경우]
-$n = 1$이면 모든 정수 쌍이 합동이므로 결론이 늘 참입니다. 조건 $\gcd(c, 1) = 1$은 $c = 0$일 때도 성립합니다($\gcd(0, 1) = 1$, [[greatest-common-divisor]]의 성질 (iv)와 (ii)). $c = 0$이고 $n \ge 2$이면 $\gcd(0, n) = n \ne 1$이어서 조건이 성립하지 않습니다.
+$n = 1$이면 모든 정수 쌍이 합동이므로 결론이 늘 참입니다. 조건 $\gcd(c, 1) = 1$은 $c = 0$일 때도 성립합니다($\gcd(0, 1) = 1$, [[greatest-common-divisor]]의 성질 (iv)). $c = 0$이고 $n \ge 2$이면 $\gcd(0, n) = n \ne 1$이어서 조건이 성립하지 않습니다.
 :::
 
 :::counterexample[서로소가 아니면 깨진다]
-$n = 12$, $c = 4$, $a = 3$, $b = 0$이면 $ac = 12$, $bc = 0$이고 $12 - 0 = 12 = 12 \cdot 1$이므로 $3 \cdot 4 \equiv 0 \cdot 4 \pmod{12}$입니다. 그러나 $3 - 0 = 3$이고 $3 = 12m$인 정수 $m$이 없으므로($m \le 0$이면 $12m \le 0 < 3$, $m \ge 1$이면 $12m \ge 12 > 3$) $3 \not\equiv 0 \pmod{12}$입니다. $4$의 양의 약수는 $1, 2, 4$이고 $12$와 공통인 것은 $1, 2, 4$이므로 $\gcd(4, 12) = 4 \ne 1$입니다.
+$n = 12$, $c = 4$, $a = 3$, $b = 0$이면 $ac = 12$, $bc = 0$이고 $12 - 0 = 12 = 12 \cdot 1$이므로 $3 \cdot 4 \equiv 0 \cdot 4 \pmod{12}$입니다. 그러나 $3 - 0 = 3$이고 $3 = 12m$인 정수 $m$이 없습니다. [[prime-number]]의 (Z1)에 의해 $m \le 0$이거나 $m \ge 1$이고, (Z2)에 의해 $m \le 0$이면 $12m \le 0 < 3$, (Z3)에 의해 $m \ge 1$이면 $12m \ge 12 > 3$이기 때문입니다. 따라서 $3 \not\equiv 0 \pmod{12}$입니다. $4$의 양의 약수는 $1, 2, 4$이고 $12$와 공통인 것은 $1, 2, 4$이므로 $\gcd(4, 12) = 4 \ne 1$입니다.
 
 증명이 막히는 곳은 마지막 단계입니다. $12 \mid 4 \cdot 3$이지만 $\gcd(12, 4) = 4$이므로 [[coprime-divides-product]]의 가정이 성립하지 않고, 실제로 $12 \nmid 3$입니다.
 :::
@@ -90,6 +90,6 @@ $n = 9$, $c = 6$, $a = 2$, $b = 5$이면 $ac = 12$, $bc = 30$이고 $12 - 30 = -
 $7 \cdot 10 = 70$, $7 \cdot (-5) = -35$이고 $70 - (-35) = 105 = 15 \cdot 7$이므로 $7 \cdot 10 \equiv 7 \cdot (-5) \pmod{15}$입니다. $7$의 양의 약수는 $1, 7$이고 $7 \nmid 15$($15 = 7 \cdot 2 + 1$)이므로 $15$와의 공통 양의 약수는 $1$뿐이고 $\gcd(7, 15) = 1$입니다. 따라서 소거할 수 있고, 실제로 $10 - (-5) = 15 = 15 \cdot 1$입니다.
 :::
 
-:::check[$a \equiv b \pmod n$이면 $c$와 $n$이 서로소가 아니어도 $ac \equiv bc \pmod n$인가?]
-네. $a - b = nk$인 정수 $k$가 있으면 $ac - bc = (a - b)c = n(kc)$이고 $kc$는 정수이므로 $n \mid (ac - bc)$입니다. 이 방향은 서로소 조건 없이 성립하고, 소거 법칙은 그 역을 서로소일 때 되찾는 것입니다.
+:::check[$\gcd(c, n) \ne 1$인데도 $ac \equiv bc \pmod n$에서 $a \equiv b \pmod n$이 나오는 수의 예를 들 수 있는가?]
+네. $n = 6$, $c = 2$, $a = 1$, $b = 7$이면 $ac = 2$, $bc = 14$이고 $2 - 14 = -12 = 6 \cdot (-2)$이므로 $ac \equiv bc \pmod 6$입니다. 또 $1 - 7 = -6 = 6 \cdot (-1)$이므로 $a \equiv b \pmod 6$입니다. 그런데 $\gcd(2, 6) = 2$입니다($2$의 양의 약수 $1, 2$가 모두 $6$을 나눕니다). 소거 법칙은 서로소이면 지울 수 있다는 충분조건을 말할 뿐이고, 서로소가 아니면 반드시 지울 수 없다는 말이 아닙니다. 그러나 $n = 12$, $c = 4$, $a = 3$, $b = 0$처럼 지울 수 없는 경우도 있습니다.
 :::

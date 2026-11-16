@@ -6,14 +6,14 @@ kind: theorem
 field: number-theory
 msc: ["11A07"]
 level: undergrad
-summary: 정수 a의 법 n 역원(ax ≡ 1 (mod n)인 x)이 있는 것은 gcd(a, n) = 1일 때뿐이고, 역원은 법 n에 대해 하나뿐이다.
+summary: 정수 a의 법 n 역원(ax ≡ 1 (mod n)인 x)이 있는 것은 정확히 gcd(a, n) = 1일 때이고, 역원은 법 n에 대해 하나뿐이다.
 requires: [congruence-modulo-n, congruence-is-an-equivalence-relation, congruence-arithmetic, bezout-identity, greatest-common-divisor, euclidean-algorithm, divisibility, prime-number, even-and-odd, well-ordering-principle]
 proof: full
 sources:
   - ref: stein-elementary-number-theory
     loc: 2.1.1절 Linear Equations Modulo n, p.24의 역원 설명과 Proposition 2.1.13 (Units), p.24. Proposition 2.1.15 (Solvability) 증명의 첫 문단, p.25. 2.3.1절 How to Solve ax ≡ 1 (mod n), Algorithm 2.3.8 (Inverse Modulo n), p.33–34, Example 2.3.9, p.34
     checked: original
-    note: "Stein은 p.24에서 aa′ ≡ 1 (mod n)인 a′을 Z/nZ에서 a의 곱셈 역원이라 부른다. Proposition 2.1.13(p.24)은 gcd(a, n) = 1이면 ax ≡ b (mod n)의 해가 있고 법 n에 대해 유일하다고 일반의 b로 진술하며, 증명은 완전잉여계 R에 대해 aR도 완전잉여계라는 Lemma 2.1.12(증명이 원소의 개수 #aR = n에 기댄다)에서 나온다. 이 사이트에는 유한집합의 세기가 없으므로 따르지 않았고, 이 항목은 b = 1인 경우만 진술하며 존재는 베주 항등식으로, 유일성은 합동의 계산으로 직접 증명한다. 역 방향(역원이 있으면 gcd(a, n) = 1)은 Stein이 Proposition 2.1.15(p.25)의 증명 첫 문단에서 b = 1로 놓으면 나오는 논증(g | n이고 g | a이면 g | b)으로 보이며, 이 항목의 증명도 같은 발상이다. Algorithm 2.3.8(p.33)은 Algorithm 2.3.7로 ax + ny = 1인 x, y를 구하고 이 식을 n으로 줄이면 ax ≡ 1이라고 한다(증명은 p.34 첫머리). 이 항목의 (1)의 존재 증명이 그 생각이다. 이 사이트에는 Algorithm 2.3.7(확장 유클리드 호제법)에 해당하는 항목이 없으므로, 역원을 구하는 방법은 정리가 아니라 예시의 계산으로만 보였다. '역원'이라는 한국어 이름은 출처에 나오지 않는 이 사이트의 용어이고, 출처는 inverse라고 쓴다. 예시의 계산 방식(호제법의 줄을 거꾸로 따라가기)은 출처 Example 2.3.9(p.34)와 같은 발상이지만, 수(23, 100)와 반례의 수는 새로 골랐다."
+    note: "Stein은 p.24에서 aa′ ≡ 1 (mod n)인 a′을 Z/nZ에서 a의 곱셈 역원이라 부른다. Proposition 2.1.13(p.24)은 gcd(a, n) = 1이면 ax ≡ b (mod n)의 해가 있고 법 n에 대해 유일하다고 일반의 b로 진술하며, 증명은 완전잉여계 R에 대해 aR도 완전잉여계라는 Lemma 2.1.12(증명이 원소의 개수 #aR = n에 기댄다)에서 나온다. 이 사이트에는 유한집합의 세기가 없으므로 따르지 않았고, 이 항목은 b = 1인 경우만 진술하며 존재는 베주 항등식으로, 유일성은 합동의 계산으로 직접 증명한다. 역 방향(역원이 있으면 gcd(a, n) = 1)을 Stein은 따로 진술하지 않는다. Proposition 2.1.15(p.25) 증명의 첫 문단의 논증(g | n, g | a이면 g | b)에 b = 1을 넣으면 g | 1이 나오며, 이 항목의 증명도 같은 발상이다. Algorithm 2.3.8(p.33)은 Algorithm 2.3.7로 ax + ny = 1인 x, y를 구하고 이 식을 n으로 줄이면 ax ≡ 1이라고 한다(증명은 p.34 첫머리). 이 항목의 (1)의 존재 증명이 그 생각이다. 이 사이트에는 Algorithm 2.3.7(확장 유클리드 호제법)에 해당하는 항목이 없으므로, 역원을 구하는 방법은 정리가 아니라 예시의 계산으로만 보였다. '역원'이라는 한국어 이름은 출처에 나오지 않는 이 사이트의 용어이고, 출처는 inverse라고 쓴다. 출처 Example 2.3.9(p.34)는 호제법의 각 나머지를 차례로 61과 17의 결합으로 적어 내려가고, 이 항목의 예시는 줄을 거꾸로 따라간다. 1을 두 수의 결합으로 쓰는 발상은 같다. 수(23, 100)와 반례의 수는 새로 골랐다."
 status: source-checked
 added: 2026-11-16
 ---
@@ -34,7 +34,7 @@ Let $n$ be a natural number and let $a$ be an integer. Since $n \ne 0$, the inte
 
 ## 직관
 
-실수에서 $a$의 역수는 $a \cdot x = 1$인 $x$입니다. 합동에서는 "$ax$가 $1$과 합동"이면 역수 구실을 합니다. 일차방정식 $5x = 3$을 $x = 3/5$로 푸는 것이 역수로 나누는 일이듯이, $ax \equiv b \pmod n$을 풀 때 역원이 있으면 양변에 곱해서 $x$를 얻을 수 있습니다. 이 비유가 맞는 곳은 "곱해서 $1$이 되는 수"라는 역할이고, 맞지 않는 곳은 합동에서는 역원이 모든 $a$에 있지 않다는 점입니다. 시계 비유로는, $a$칸씩 몇 번 움직여서 정확히 $1$칸 앞에 올 수 있는지를 묻는 것입니다. $a$와 $n$이 공통의 약수를 가지면 $a$칸씩 움직인 자리가 모두 그 약수의 배수 눈금에 놓여서 $1$칸 앞에 올 수 없습니다.
+실수에서 $a$의 역수는 $a \cdot x = 1$인 $x$입니다. 합동에서는 "$ax$가 $1$과 합동"이면 역수 구실을 합니다. 일차방정식 $5x = 3$을 $x = 3/5$로 푸는 것이 역수로 나누는 일이듯이, $ax \equiv b \pmod n$을 풀 때 역원이 있으면 양변에 곱해서 $x$를 얻을 수 있습니다. 이 비유가 맞는 곳은 "곱해서 $1$이 되는 수"라는 역할이고, 맞지 않는 곳은 합동에서는 역원이 모든 $a$에 있지 않다는 점입니다. 시계 비유로는, $a$칸씩 몇 번 움직여서 정확히 $1$칸 앞에 올 수 있는지를 묻는 것입니다. $a$와 $n$이 $1$보다 큰 공약수 $d$를 가지면 $a$칸씩 움직인 자리가 모두 $d$의 배수 눈금에 놓여서 $1$칸 앞에 올 수 없습니다.
 
 역원이 있으면 [[congruence-cancellation|소거 법칙]]이 가리키는 일이 한 번에 됩니다. $ac \equiv bc$의 양변에 $c$의 역원을 곱하면 $a \equiv b$를 얻습니다. 이 항목의 증명은 소거 법칙이 아니라 [[bezout-identity|베주 항등식]]과 합동의 계산을 씁니다.
 
@@ -77,13 +77,13 @@ $$1 = ga_1 x - gn_1 k = g(a_1 x - n_1 k)$$
 :::
 
 :::remark[(2)의 역]
-역원에 합동인 수는 또 역원입니다. $x$가 $a$의 법 $n$ 역원이고 $x' \equiv x \pmod n$이면 [[congruence-arithmetic|합동의 계산 법칙]]의 (2)를 $p = q = a$, $s = x'$, $t = x$에 적용해 $ax' \equiv ax \pmod n$이고, $ax \equiv 1$이므로 추이성에 의해 $ax' \equiv 1 \pmod n$입니다. 따라서 (2)와 합치면, 역원이 있을 때 $a$의 법 $n$ 역원 전체는 정확히 하나의 동치류를 이룹니다. 곧 $x_0$가 역원이면 역원 전체의 집합은 [[congruence-is-an-equivalence-relation|합동 관계]]의 동치류 $[x_0] = \{y \in \mathbb{Z} : y \equiv x_0 \pmod n\}$입니다.
+역원에 합동인 수는 또 역원입니다. $x$가 $a$의 법 $n$ 역원이고 $x' \equiv x \pmod n$이면 [[congruence-arithmetic|합동의 계산 법칙]]의 (2)를 $p = q = a$, $s = x'$, $t = x$에 적용해($a \equiv a$는 반사성) $ax' \equiv ax \pmod n$이고, $ax \equiv 1$이므로 추이성에 의해 $ax' \equiv 1 \pmod n$입니다. 따라서 (2)와 합치면, 역원이 있을 때 $a$의 법 $n$ 역원 전체는 정확히 하나의 동치류를 이룹니다. 곧 $x_0$가 역원이면 역원 전체의 집합은 [[congruence-is-an-equivalence-relation|합동 관계]]의 동치류 $[x_0] = \{y \in \mathbb{Z} : y \equiv x_0 \pmod n\}$입니다.
 :::
 
 ## 예시와 반례
 
 :::example[$23x \equiv 1 \pmod{100}$의 역원 구하기]
-먼저 [[euclidean-algorithm|유클리드 호제법]]의 나눗셈을 적습니다. $100 = 4 \cdot 23 + 8$, $23 = 2 \cdot 8 + 7$, $8 = 1 \cdot 7 + 1$, $7 = 7 \cdot 1 + 0$입니다. 각 줄은 $92 + 8 = 100$, $16 + 7 = 23$, $7 + 1 = 8$, $7 + 0 = 7$로 맞습니다. 나머지가 $0$이 되기 직전의 나머지가 $1$이므로 $\gcd(23, 100) = 1$이고 (1)에 의해 역원이 있습니다.
+먼저 [[euclidean-algorithm|유클리드 호제법]]의 나눗셈을 적습니다. $100 = 4 \cdot 23 + 8$, $23 = 2 \cdot 8 + 7$, $8 = 1 \cdot 7 + 1$, $7 = 7 \cdot 1 + 0$입니다. 각 줄은 $92 + 8 = 100$, $16 + 7 = 23$, $7 + 1 = 8$, $7 + 0 = 7$로 맞습니다. 호제법의 입력이 $(100, 23)$이고 나머지가 $0$이 되기 직전의 나머지가 $1$이므로 $\gcd(100, 23) = 1$이고, [[greatest-common-divisor]]의 성질 (ii)에 의해 $\gcd(23, 100) = 1$입니다. (1)에 의해 역원이 있습니다.
 
 역원을 구하려면 줄을 거꾸로 따라가며 $1$을 $23$과 $100$으로 나타냅니다. 셋째 줄에서 $1 = 8 - 1 \cdot 7$입니다. 둘째 줄에서 $7 = 23 - 2 \cdot 8$이므로 $1 = 8 - (23 - 2 \cdot 8) = 3 \cdot 8 - 23$입니다. 첫째 줄에서 $8 = 100 - 4 \cdot 23$이므로
 $$1 = 3(100 - 4 \cdot 23) - 23 = 3 \cdot 100 - 13 \cdot 23$$
@@ -95,7 +95,7 @@ $n = 1$이면 모든 정수 $x$에 대하여 $ax - 1 = 1 \cdot (ax - 1)$이므�
 :::
 
 :::example[법 2의 역원]
-$n = 2$, $a = 3$이면 $\gcd(3, 2) = 1$이고 $3 \cdot 1 = 3$, $3 - 1 = 2 = 2 \cdot 1$이므로 $x = 1$이 역원입니다. $x = 5$도 역원입니다. $3 \cdot 5 - 1 = 14 = 2 \cdot 7$입니다. 그리고 $5 - 1 = 4$는 $2$의 배수이므로 (2)가 말하는 대로 $5 \equiv 1 \pmod 2$입니다.
+$n = 2$, $a = 3$이면 $2$의 양의 약수 $1, 2$ 가운데 $3$을 나누는 것은 $1$뿐이므로 $\gcd(3, 2) = 1$이고 $3 \cdot 1 = 3$, $3 - 1 = 2 = 2 \cdot 1$이므로 $x = 1$이 역원입니다. $x = 5$도 역원입니다. $3 \cdot 5 - 1 = 14 = 2 \cdot 7$입니다. 그리고 $5 - 1 = 4$는 $2$의 배수이므로 (2)가 말하는 대로 $5 \equiv 1 \pmod 2$입니다.
 :::
 
 :::counterexample[서로소가 아니면 역원이 없다]
