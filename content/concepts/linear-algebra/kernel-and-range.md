@@ -6,13 +6,13 @@ kind: definition
 field: linear-algebra
 msc: ["15A04"]
 level: undergrad
-summary: 선형사상 T의 핵은 T가 영벡터로 보내는 벡터 전체, 상은 T의 값 전체이다. 둘 다 부분공간이고, 생성하는 열의 상은 상을 생성하며, 전사는 상이 공역 전체인 것이고, 부분공간으로 제한한 T도 선형사상이다.
+summary: 선형사상 T의 핵은 T가 영벡터로 보내는 벡터 전체, 상은 T의 값 전체이다. 둘 다 부분공간이고, V를 생성하는 열의 각 항에서의 값들은 상을 생성하며, 전사는 상이 공역 전체인 것이고, 부분공간으로 제한한 T도 선형사상이다.
 requires: [vector-space, vector-space-basic-properties, subspace, finite-sum-of-vectors, linear-combination-and-span, linear-map, linear-map-examples, function, image-and-preimage, injective-surjective-bijective, adding-or-removing-an-element, real-function-space, real-number-arithmetic, standard-basis]
 sources:
   - ref: treil-linear-algebra-done-wrong
     loc: 1장 7절 Subspaces, 부분공간의 예 2, 3, p.31. 2장 7절 Fundamental subspaces of a matrix. Rank, 첫머리, p.59–60
     checked: original
-    note: "출처는 p.31에서 선형사상 A : V → W 에 부분공간 두 개를 짝짓는다. 하나는 Av = 0 인 v ∈ V 전체인 null space 또는 kernel (Null A, Ker A)이고, 다른 하나는 어떤 v 에 대하여 w = Av 로 쓸 수 있는 w ∈ W 전체인 range Ran A 이다. 이 둘이 부분공간이라는 것은 확인하기 쉽다며 독자에게 맡긴다(p.31). 2장 p.59는 같은 정의를 Ker A = Null A := {v ∈ V : Av = 0}, Ran A = {w ∈ W : w = Av 인 v ∈ V 가 있다}로 다시 쓰고, p.60은 핵이 동차방정식 Ax = 0 의 해 집합이고 상이 Ax = b 가 해를 갖는 우변 b 전체라고 적는다. 이 항목의 (1)이 독자에게 맡긴 확인의 증명이다. 출처는 행렬 A 에 대해 Ran A 의 원소가 열의 일차결합이라서 Ran A 를 열공간(column space, Col A)이라고도 부른다고 적는데, 이 항목은 행렬을 다루지 않는다. 출처는 Ran 을 range 라 부르고, 이 사이트는 같은 집합을 '상'이라 부르며 function 항목의 치역, image-and-preimage 항목의 T(V)와 같은 집합이다. 출처는 선형사상을 A 로 쓰고 이 항목은 T 로 쓴다. 이 항목의 (2), (3), (4)와 번호는 이 사이트가 덧붙였다. 예시와 반례와 확인 질문은 새로 만들었다."
+    note: "출처는 p.31에서 선형사상 A : V → W 에 부분공간 두 개를 짝짓는다. 하나는 Av = 0 인 v ∈ V 전체인 null space 또는 kernel (Null A, Ker A)이고, 다른 하나는 어떤 v 에 대하여 w = Av 로 쓸 수 있는 w ∈ W 전체인 range Ran A 이다. 이 둘이 부분공간이라는 것은 확인하기 쉽다며 독자에게 맡긴다(p.31). 2장 p.59는 같은 정의를 Ker A = Null A := {v ∈ V : Av = 0}, Ran A = {w ∈ W : w = Av 인 v ∈ V 가 있다}로 다시 쓰고, p.60은 핵이 동차방정식 Ax = 0 의 해 집합이고 상이 Ax = b 가 해를 갖는 우변 b 전체라고 적는다. 이 항목의 (1)이 독자에게 맡긴 확인의 증명이다. 출처는 행렬 A 에 대해 Ran A 의 원소가 열의 일차결합이라서 Ran A 를 열공간(column space, Col A)이라고도 부른다고 적는데, 이 항목은 행렬을 다루지 않는다. 출처는 Ran 을 range 라 부르고, 이 사이트는 같은 집합을 '상'이라 부르며 function 항목의 치역, image-and-preimage 항목의 T(V)와 같은 집합이다. 출처는 선형사상을 A 로 쓰고 이 항목은 T 로 쓴다. 이 항목의 (2), (3), (4)와 번호는 이 사이트가 덧붙였다. 반례의 함수는 출처 1장 8절 p.32의 평행이동(0을 보존하지 않아 선형이 아니다)과 같은 꼴이고 더하는 수를 바꾸었다. 나머지 예시와 확인 질문은 새로 만들었다."
 status: source-checked
 added: 2026-11-16
 ---
@@ -47,7 +47,7 @@ The following hold.
 
 선형사상을 믹서에 비유하면, $V$의 벡터는 넣는 재료이고 $W$의 벡터는 나오는 주스입니다. 핵은 넣어도 아무 맛도 나지 않는, 곧 영벡터가 나오는 재료의 모임이고, 상은 이 믹서로 만들 수 있는 주스 전체입니다. 재료 두 가지를 함께 넣으면 두 주스를 합친 것이 나오므로 만들 수 있는 주스를 합친 것도 만들 수 있고, 이것이 상이 덧셈에 닫혀 있다는 말입니다. 비유가 어긋나는 곳은 스칼라배입니다. 실제 믹서는 재료를 두 배로 넣을 때 맛이 정확히 두 배라는 보장이 없지만, 선형사상은 (T-배)에 의해 그것이 보장됩니다.
 
-(1)의 증명은 부분공간의 세 조건 (S1)–(S3)에 (T1), (T-합), (T-배)를 하나씩 맞춰 보는 일입니다. (2)는 (T5)가 양쪽 포함을 모두 줍니다. 한쪽에서는 $V$의 일차결합이 같은 계수의 $W$의 일차결합으로 가고, 다른 쪽에서는 $W$의 일차결합이 같은 계수의 $V$의 일차결합의 상이 됩니다. 이 때문에 $V$를 생성하는 열 몇 개에서의 값만 알면 상 전체의 모양을 알 수 있습니다. (3)은 정의를 풀어 쓴 것이고, (4)는 선형이라는 조건이 정의역을 줄여도 그대로 남는다는 말입니다.
+(1)의 증명은 부분공간의 세 조건 (S1)–(S3)에 (T1), (T-합), (T-배)를 하나씩 맞춰 보는 일입니다. (2)는 (T5)가 양쪽 포함을 모두 줍니다. 한쪽에서는 $V$의 일차결합이 같은 계수의 $W$의 일차결합으로 가고, 다른 쪽에서는 $W$의 일차결합이 같은 계수의 $V$의 일차결합의 상이 됩니다. 이 때문에 $V$를 생성하는 열 몇 개에서의 값만 알면 상 전체의 모양을 알 수 있습니다. (3)은 정의를 풀어 쓴 것이고, (4)는 선형이라는 조건이 정의역을 부분공간으로 줄여도 그대로 남는다는 말입니다.
 
 ## 성질의 증명
 
@@ -72,23 +72,23 @@ $o : V \to W$가 [[linear-map-examples|영사상]]이라 합시다. 모든 $v \i
 :::
 
 :::example[ℝ³의 둘째 값 읽기]
-[[linear-map-examples]]의 (4)에서 $p_2 : \mathbb{R}^3 \to \mathbb{R}$은 각 $x$에서 값이 $x_2$인 선형사상입니다. $x \in \operatorname{Ker} p_2$인 것은 정확히 $x_2 = 0$일 때이므로 $\operatorname{Ker} p_2$는 $(a, 0, c)$ 꼴의 벡터 전체이고, (1)에 의해 $\mathbb{R}^3$의 부분공간입니다. 상은 $\mathbb{R}$ 전체입니다. 실수 $r$에 대하여 벡터 $(0, r, 0)$의 둘째 값이 $r$이므로 $r = p_2(0, r, 0) \in \operatorname{Ran} p_2$이기 때문입니다. (3)에 의해 $p_2 : \mathbb{R}^3 \to \mathbb{R}$은 전사입니다.
+[[linear-map-examples]]의 (4)에서 $p_2 : \mathbb{R}^3 \to \mathbb{R}$은 각 $x$에서 값이 $x_2$인 선형사상입니다. $x \in \operatorname{Ker} p_2$인 것은 정확히 $x_2 = 0$일 때이므로 $\operatorname{Ker} p_2$는 실수 $a$, $c$에 대하여 $(a, 0, c)$ 꼴인 벡터 전체이고, (1)에 의해 $\mathbb{R}^3$의 부분공간입니다. 상은 $\mathbb{R}$ 전체입니다. 실수 $r$에 대하여 벡터 $(0, r, 0)$의 둘째 값이 $r$이므로 $r = p_2(0, r, 0) \in \operatorname{Ran} p_2$이기 때문입니다. (3)에 의해 $p_2 : \mathbb{R}^3 \to \mathbb{R}$은 전사입니다.
 :::
 
 :::example[생성하는 열의 상으로 상 구하기]
-위의 $p_2$에서 [[standard-basis|표준기저]]의 (3)에 의해 $\mathbb{R}^3$의 모든 벡터는 $e_1, e_2, e_3$의 일차결합이므로 이 열은 $\mathbb{R}^3$을 생성합니다. (2)에 의해 $\operatorname{Ran} p_2 = \operatorname{span}(p_2 e_1, p_2 e_2, p_2 e_3)$이고, $e_1 = (1, 0, 0)$, $e_2 = (0, 1, 0)$, $e_3 = (0, 0, 1)$의 둘째 값이 $0$, $1$, $0$이므로 이 열은 $\mathbb{R}$의 벡터의 열 $0, 1, 0$입니다. 실수 $r$은 계수 $0, r, 0$으로 $r = 0 \cdot 0 + r \cdot 1 + 0 \cdot 0$이고 ((C4)의 $k = 2$) 따라서 $\operatorname{span}(0, 1, 0) = \mathbb{R}$입니다.
+위의 $p_2$에서 [[standard-basis|표준기저]]의 (3)에 의해 $\mathbb{R}^3$의 모든 벡터는 $e_1, e_2, e_3$의 일차결합이므로 이 열은 $\mathbb{R}^3$을 생성합니다. (2)에 의해 $\operatorname{Ran} p_2 = \operatorname{span}(p_2 e_1, p_2 e_2, p_2 e_3)$이고, $e_1 = (1, 0, 0)$, $e_2 = (0, 1, 0)$, $e_3 = (0, 0, 1)$의 둘째 값이 $0$, $1$, $0$이므로 이 열은 벡터공간 $\mathbb{R}$의 열 $0, 1, 0$입니다. 실수 $r$에 대하여 계수의 열 $0, r, 0$을 쓰면 (C4)의 $k = 2$와 (K4)에 의해 일차결합이 $r \cdot 1 = r$이므로 $r$은 이 열의 생성에 속합니다. 생성은 언제나 $\mathbb{R}$의 부분집합이므로 이 열의 생성은 $\mathbb{R}$입니다.
 :::
 
 :::counterexample[선형이 아니면 핵이 부분공간이 아닐 수 있다]
-$T : \mathbb{R} \to \mathbb{R}$이 모든 $x$에서 $Tx = x + 1$인 함수라 하고, 선형사상의 핵과 같은 식으로 $K = \{x \in \mathbb{R} : Tx = 0\}$이라 합시다. $T0 = 0 + 1 = 1 \ne 0$이므로((K4)) $0 \notin K$이고, $\mathbb{R}$의 영벡터는 실수 $0$이므로 $K$는 (S1)을 만족하지 못해 부분공간이 아닙니다. 이 반례는 (1)에서 $T$가 선형사상이라는 가정을 뺄 수 없음을 보여 줍니다. 선형사상이면 (S1)은 (T1)이 보장합니다.
+$T : \mathbb{R} \to \mathbb{R}$이 모든 $x$에서 $Tx = x - 2$인 함수라 하고, 선형사상의 핵과 같은 식으로 $K = \{x \in \mathbb{R} : Tx = 0\}$이라 합시다. $T(0) = 0 + (-2) = -2$이고, $-2 = 0$이면 $2 = 2 + 0 = 2 + (-2) = 0$이 되어 $2 \ne 0$((K7))에 어긋나므로 $-2 \ne 0$입니다. 따라서 $0 \notin K$이고, $\mathbb{R}$의 영벡터는 실수 $0$이므로 $K$는 (S1)을 만족하지 못해 부분공간이 아닙니다. 이 반례는 (1)에서 $T$가 선형사상이라는 가정을 뺄 수 없음을 보여 줍니다. 선형사상이면 (S1)은 (T1)이 보장합니다.
 :::
 
 ## 확인 질문
 
-:::check[$T : V \to W$가 선형사상이고 $Tv = w$일 때, $\operatorname{Ker} T$의 모든 원소 $k$에 대하여 $T(v + k) = w$임을 보여라.]
-(T-합)에 의해 $T(v + k) = Tv + Tk$이고, $k \in \operatorname{Ker} T$이므로 $Tk = 0_W$입니다. 따라서 $T(v + k) = w + 0_W = w$입니다. $0_W$가 영벡터이기 때문입니다.
+:::check[$T : V \to W$가 선형사상이고 $\operatorname{Ker} T = V$이면 $T$는 어떤 함수인가?]
+영사상입니다. 모든 $v \in V$가 $\operatorname{Ker} T$에 속하므로 $Tv = 0_W$이고, $T$와 영사상은 정의역이 같고 모든 원소에서 값이 같기 때문입니다.
 :::
 
 :::check[$T : V \to W$가 선형사상이고 $v_1, v_2$가 $V$를 생성하는 열이며 $Tv_1 = Tv_2 = 0_W$이면 $\operatorname{Ran} T$는 무엇인가?]
-$\{0_W\}$입니다. (2)에 의해 $\operatorname{Ran} T = \operatorname{span}(0_W, 0_W)$이고, 이 열의 일차결합은 $\alpha 0_W + \beta 0_W$입니다. [[vector-space-basic-properties|(B4)]]에 의해 $\alpha 0_W = 0_W$, $\beta 0_W = 0_W$이므로 이 합은 $0_W + 0_W = 0_W$입니다. 곧 $T$는 모든 벡터를 $0_W$로 보냅니다.
+$\{0_W\}$입니다. (2)에 의해 $\operatorname{Ran} T = \operatorname{span}(0_W, 0_W)$이고, 이 열의 일차결합은 ((H0)에 의해) $\alpha 0_W + \beta 0_W$입니다. [[vector-space-basic-properties|(B4)]]에 의해 $\alpha 0_W = 0_W$, $\beta 0_W = 0_W$이므로 이 합은 $0_W + 0_W = 0_W$입니다. 곧 $T$는 모든 벡터를 $0_W$로 보냅니다.
 :::
