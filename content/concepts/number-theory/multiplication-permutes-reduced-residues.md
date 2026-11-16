@@ -7,13 +7,13 @@ field: number-theory
 msc: ["11A07"]
 level: undergrad
 summary: n ≥ 2이고 x가 n과 서로소이면, n과 서로소인 나머지 각각에 x를 곱해 n으로 나눈 나머지를 대응시키는 함수는 그 나머지들의 집합에서 자신으로의 전단사이다.
-requires: [euler-phi-function, coprime-to-modulus, inverse-modulo-n, congruence-cancellation, congruence-modulo-n, congruence-is-an-equivalence-relation, congruence-arithmetic, residues-modulo-n, division-theorem, finite-set, function, function-composition, injective-surjective-bijective, composition-preserves-injectivity-and-surjectivity, inverse-function, bijective-iff-inverse-is-a-function, finite-product, rearranging-a-finite-product, greatest-common-divisor, well-ordering-principle, even-and-odd]
+requires: [euler-phi-function, coprime-to-modulus, inverse-modulo-n, congruence-cancellation, congruence-modulo-n, congruence-is-an-equivalence-relation, congruence-arithmetic, residues-modulo-n, division-theorem, finite-set, function, function-composition, injective-surjective-bijective, composition-preserves-injectivity-and-surjectivity, inverse-function, finite-product, rearranging-a-finite-product, greatest-common-divisor, well-ordering-principle, even-and-odd]
 proof: full
 sources:
   - ref: stein-elementary-number-theory
-    loc: 2.1.1절 Lemma 2.1.12, p.24 (증명의 소거 단계). 2.1.2절 Theorem 2.1.20의 증명, p.27 (xP의 나머지가 P의 나머지와 같다는 문장)
+    loc: 2.1.1절 Lemma 2.1.12, p.24 (증명의 소거 단계). 2.1.2절 Theorem 2.1.20의 증명, p.27 (xP의 나머지가 P의 나머지와 같다는 문장과 곱의 합동식 ∏(xa) ≡ ∏a)
     checked: original
-    note: "출처 p.27은 오일러 정리의 증명에서 'Lemma 2.1.12를 증명한 것과 같은 방법으로 xP의 원소를 n으로 나눈 나머지들이 P의 원소를 n으로 나눈 나머지들과 같다'고만 쓰고 증명하지 않는다. 출처의 Lemma 2.1.12(p.24)는 완전잉여계 R에 대한 진술이고 P에 대한 것이 아니며, 그 증명은 소거로 ax ≡ ax′이면 x ≡ x′임을 보인 뒤 'aR의 원소 개수가 n이므로' aR이 완전잉여계라고 끝낸다(세기에 기댄 단사에서 전사로의 단계). 이 항목은 P_n에 대한 진술을 스스로 세웠다. 단사는 출처처럼 소거 법칙을 쓰지만 전사는 세기를 쓰지 않고 x의 법 n 역원을 이용해 원소를 직접 찾는 것으로 보였다. 이 전사의 증명과, 값이 다시 P_n에 든다는 것(coprime-to-modulus의 4), 나열 b_i에 대해 곱이 합동이라는 3은 출처에 없고 이 사이트가 썼다. n = 1은 나머지가 0이 되어 값이 P_1에 들지 않으므로 범위에서 뺐다(출처는 n = 1을 따로 언급하지 않는다). 예시와 반례의 수(n = 9, x = 4와 x = 3)는 출처의 예(Example 2.1.14의 2x ≡ 3 (mod 7))와 다르게 새로 골랐다."
+    note: "출처 p.27은 오일러 정리의 증명에서 'Lemma 2.1.12를 증명한 것과 같은 방법으로 xP의 원소를 n으로 나눈 나머지들이 P의 원소를 n으로 나눈 나머지들과 같다'고만 쓰고 증명하지 않는다. 출처의 Lemma 2.1.12(p.24)는 완전잉여계 R에 대한 진술이고 P에 대한 것이 아니며, 그 증명은 소거로 ax ≡ ax′이면 x ≡ x′임을 보인 뒤 'aR의 원소 개수가 n이므로' aR이 완전잉여계라고 끝낸다(세기에 기댄 단사에서 전사로의 단계). 이 항목은 P_n에 대한 진술을 스스로 세웠다. 단사는 출처처럼 소거 법칙을 쓰지만 전사는 세기를 쓰지 않고 x의 법 n 역원을 이용해 원소를 직접 찾는 것으로 보였다. 3의 곱의 합동식은 출처 p.27의 ∏_{a∈P}(xa) ≡ ∏_{a∈P} a와 같은 내용이고, 출처는 'the products are over the same numbers modulo n'이라고만 적는다. 나열 b와 재배열 정리로 보인 3의 증명, 전사의 증명, 값이 다시 P_n에 든다는 것(coprime-to-modulus의 4)은 출처에 없고 이 사이트가 썼다. 확인 질문의 P_12 = {1, 5, 7, 11}은 출처 p.26의 ϕ(12) 예와 같은 집합이다(x = 5를 곱하는 부분은 새것이다). n = 1은 나머지가 0이 되어 값이 P_1에 들지 않으므로 범위에서 뺐다(출처는 n = 1을 따로 언급하지 않는다). 예시와 반례의 수(n = 9, x = 4와 x = 3)는 출처의 예(Example 2.1.14의 2x ≡ 3 (mod 7))와 다르게 새로 골랐다."
 status: source-checked
 added: 2026-11-16
 ---
@@ -29,7 +29,7 @@ $$(x b_1)(x b_2) \cdots (x b_k) \equiv b_1 b_2 \cdots b_k \pmod n$$
 
 $n = 1$은 이 항목에서 다루지 않는다. $n = 1$이면 $P_1 = \{1\}$이고 $x \cdot 1$을 $1$로 나눈 나머지가 $0$이어서 $0 \notin P_1$이므로 1이 성립하지 않는다.
 
-증명에서 정수와 부등식에 관하여 [[prime-number]]의 (Z1)과 [[well-ordering-principle]]의 (Z5)–(Z8), (L1)–(L3)을 인용하고, 정수끼리의 곱이 정수라는 것은 [[even-and-odd]]에서 받아들인 사실을 쓴다.
+증명에서 정수의 곱셈의 교환법칙과 결합법칙은 [[well-ordering-principle]]의 진술에서 받아들인 계산 법칙으로 쓰고, 정수끼리의 곱이 정수라는 것은 [[even-and-odd]]에서 받아들인 사실을 쓴다.
 :::
 
 :::english
@@ -45,7 +45,7 @@ The case $n = 1$ is not treated here. If $n = 1$, then $P_1 = \{1\}$ and the rem
 
 ## 직관
 
-$P_n$의 원소를 번호표가 붙은 자리라고 하고, 자리마다 손님이 한 명씩 앉아 있다고 합시다. $x$를 곱한 뒤 나머지를 취하는 것은 각 손님을 다른 자리로 옮기는 일입니다. 이 항목이 말하는 것은 어느 손님도 자리 밖으로 나가지 않고(1), 두 손님이 같은 자리로 가지 않으며 빈 자리도 남지 않는다(2)는 것입니다. 곧 자리가 서로 바뀔 뿐입니다. 이 비유가 맞아떨어지는 곳은 "곱하면 전체가 자리만 바꾼다"는 점이고, 어긋나는 곳은 어느 손님이 어느 자리로 가는지는 $x$마다 다르고 비유가 알려 주지 않는다는 점입니다.
+$P_n$의 원소를 번호표가 붙은 자리라고 하고, 자리마다 손님이 한 명씩 앉아 있다고 합시다. $x$를 곱한 뒤 나머지를 취하는 것은 각 손님을 어떤 자리로(제자리일 수도 있습니다) 옮기는 일입니다. 이 항목이 말하는 것은 어느 손님도 자리 밖으로 나가지 않고(1), 두 손님이 같은 자리로 가지 않으며 빈 자리도 남지 않는다(2)는 것입니다. 곧 자리가 서로 바뀔 뿐입니다. 이 비유가 맞아떨어지는 곳은 "곱하면 전체가 자리만 바꾼다"는 점이고, 어긋나는 곳은 어느 손님이 어느 자리로 가는지는 $x$마다 다르고 비유가 알려 주지 않는다는 점입니다.
 
 $x$가 $n$과 서로소여야 한다는 조건이 없으면 일이 틀어집니다. 반례에서 보듯이 손님이 몰려 한 자리에 겹치거나 자리 밖으로 나갑니다. 단사는 [[congruence-cancellation|소거 법칙]]에서 나옵니다. 전사는 [[inverse-modulo-n|역원]]에서 나옵니다. $x$를 곱해서 $d$가 되는 자리를 찾으려면 $x$의 역원 $x'$를 $d$에 곱하면 되기 때문입니다. 원소의 개수를 세어 단사에서 전사를 끌어내는 방법도 있을 법하지만, 여기서는 세기에 기대지 않고 해당 자리를 직접 찾습니다.
 
@@ -70,23 +70,17 @@ $d \in P_n$이 주어졌을 때 $\mu_x(a) = d$인 $a$를 찾아야 합니다. $x
 :::
 
 :::proof
-먼저 두 가지를 준비한다.
-
-(가) $c \in P_n$이면 $0 \le c \le n - 1$이다. [[euler-phi-function]]의 3($n \ge 2$)에 의해 $P_n \subseteq \{1, \dots, n - 1\}$이므로 $1 \le c \le n - 1$이다. $0 < 1$((Z8))과 $1 \le c$에서 (Z6)에 의해 $0 < c$이므로 $0 \le c$이다.
-
-(나) $c, d \in P_n$이고 $c \equiv d \pmod n$이면 $c = d$이다. [[residues-modulo-n]]의 1을 정수 $c$에 쓰면 $c \equiv r \pmod n$이고 $0 \le r \le n - 1$인 정수 $r$이 정확히 하나 있다. $r = c$가 이 조건을 만족한다. 반사성([[congruence-is-an-equivalence-relation|합동의 동치관계 성질]])에 의해 $c \equiv c$이고 (가)에 의해 $0 \le c \le n - 1$이기 때문이다. $r = d$도 만족한다. 가정에서 $c \equiv d$이고 (가)에 의해 $0 \le d \le n - 1$이기 때문이다. 정확히 하나뿐이므로 $c = d$이다.
-
 **1.** $a \in P_n$이라 하자. $\gcd(a, n) = 1$이고 $\gcd(x, n) = 1$이므로 [[coprime-to-modulus]]의 2에 의해 $\gcd(xa, n) = 1$이다. [[division-theorem|나눗셈 정리]]에 의해 $xa$를 $n$으로 나눈 나머지 $r$이 하나로 정해지고, $n \ge 2$이므로 같은 항목의 4를 정수 $xa$에 쓰면 $xa \equiv r \pmod n$이고 $r \in \{1, \dots, n - 1\}$이며 $r \in P_n$이다. 곧 $\mu_x(a) = r \in P_n$이고 $xa \equiv \mu_x(a) \pmod n$이다. $P_n$의 각 원소 $a$에 $P_n$의 원소 $\mu_x(a)$가 하나씩 정해지므로 $\mu_x$는 $P_n$에서 $P_n$으로의 함수이다.
 
-**2. 단사.** $a, a' \in P_n$이고 $\mu_x(a) = \mu_x(a')$라 하자. 1에 의해 $xa \equiv \mu_x(a)$이고 $xa' \equiv \mu_x(a') = \mu_x(a)$이다. 대칭성과 추이성에 의해 $xa \equiv xa' \pmod n$이다. 곱셈의 교환법칙([[well-ordering-principle]]의 진술에서 받아들임)에 의해 $ax \equiv a'x \pmod n$이고, $\gcd(x, n) = 1$이므로 [[congruence-cancellation|합동식의 소거 법칙]]에 의해 $a \equiv a' \pmod n$이다. $a, a' \in P_n$이므로 (나)에 의해 $a = a'$이다.
+**2. 단사.** $a, a' \in P_n$이고 $\mu_x(a) = \mu_x(a')$라 하자. 1에 의해 $xa \equiv \mu_x(a)$이고 $xa' \equiv \mu_x(a') = \mu_x(a)$이다. 대칭성과 추이성에 의해 $xa \equiv xa' \pmod n$이다. 곱셈의 교환법칙([[well-ordering-principle]]의 진술에서 받아들임)에 의해 $ax \equiv a'x \pmod n$이고, $\gcd(x, n) = 1$이므로 [[congruence-cancellation|합동식의 소거 법칙]]에 의해 $a \equiv a' \pmod n$이다. $a, a' \in P_n$이므로 [[coprime-to-modulus]]의 5에 의해 $a = a'$이다.
 
-**2. 전사.** $d \in P_n$이라 하자. $\gcd(x, n) = 1$이므로 [[inverse-modulo-n]]의 1에 의해 $xx' \equiv 1 \pmod n$인 정수 $x'$가 있다. $x'x = xx'$이므로 $x'x \equiv 1$이고, 같은 항목의 1을 $x'$에 쓰면 $\gcd(x', n) = 1$이다. $\gcd(d, n) = 1$이므로 [[coprime-to-modulus]]의 2에 의해 $\gcd(x'd, n) = 1$이고, 같은 항목의 4를 정수 $x'd$에 쓰면 $x'd$를 $n$으로 나눈 나머지 $a$는 $a \in P_n$이고 $x'd \equiv a \pmod n$이다. 대칭성에 의해 $a \equiv x'd$이고, 반사성에 의해 $x \equiv x$이므로 [[congruence-arithmetic|합동의 계산 법칙]]의 2에 의해 $xa \equiv x(x'd) \pmod n$이다. 결합법칙에 의해 $x(x'd) = (xx')d$이고, $xx' \equiv 1$, $d \equiv d$에서 같은 계산 법칙에 의해 $(xx')d \equiv 1 \cdot d = d$이다. 추이성에 의해 $xa \equiv d \pmod n$이다. 한편 1에 의해 $xa \equiv \mu_x(a)$이므로 대칭성과 추이성으로 $\mu_x(a) \equiv d$이다. $\mu_x(a) \in P_n$이고 $d \in P_n$이므로 (나)에 의해 $\mu_x(a) = d$이다. 따라서 $\mu_x$는 전사이고, 단사와 합쳐 전단사이다.
+**2. 전사.** $d \in P_n$이라 하자. $\gcd(x, n) = 1$이므로 [[inverse-modulo-n]]의 1에 의해 $xx' \equiv 1 \pmod n$인 정수 $x'$가 있다. $x'x = xx'$이므로 $x'x \equiv 1$이고, 같은 항목의 1을 $x'$에 쓰면 $\gcd(x', n) = 1$이다. $\gcd(d, n) = 1$이므로 [[coprime-to-modulus]]의 2에 의해 $\gcd(x'd, n) = 1$이고, 같은 항목의 4를 정수 $x'd$에 쓰면 $x'd$를 $n$으로 나눈 나머지 $a$는 $a \in P_n$이고 $x'd \equiv a \pmod n$이다. 대칭성에 의해 $a \equiv x'd$이고, 반사성에 의해 $x \equiv x$이므로 [[congruence-arithmetic|합동의 계산 법칙]]의 2에 의해 $xa \equiv x(x'd) \pmod n$이다. 결합법칙에 의해 $x(x'd) = (xx')d$이고, $xx' \equiv 1$, $d \equiv d$에서 같은 계산 법칙에 의해 $(xx')d \equiv 1 \cdot d = d$이다. 추이성에 의해 $xa \equiv d \pmod n$이다. 한편 1에 의해 $xa \equiv \mu_x(a)$이므로 대칭성과 추이성으로 $\mu_x(a) \equiv d$이다. $\mu_x(a) \in P_n$이고 $d \in P_n$이므로 [[coprime-to-modulus]]의 5에 의해 $\mu_x(a) = d$이다. 따라서 $\mu_x$는 전사이고, 단사와 합쳐 전단사이다.
 
 **3.** $\varphi(n)$은 [[euler-phi-function]]의 2에 의해 자연수이므로 $k$가 자연수이고, 같은 항목의 1에 의해 $P_n$은 원소를 $k$개 가지므로 [[finite-set]]의 정의에 의해 전단사 $b : \{1, \dots, k\} \to P_n$이 있다. $c_i = \mu_x(b_i)$는 합성 $c = \mu_x \circ b$이다. $b$와 $\mu_x$가 모두 전단사이므로 [[composition-preserves-injectivity-and-surjectivity|합성에 관한 정리]]의 3에 의해 $c : \{1, \dots, k\} \to P_n$은 전단사이다. 각 $b_i \in P_n$에 1을 쓰면 $x b_i \equiv \mu_x(b_i) = c_i \pmod n$이다.
 
-곱의 합동을 보이자. $x b_1, \dots, x b_k$와 $c_1, \dots, c_k$는 길이 $k$인 정수의 열이고 모든 자리에서 $x b_i \equiv c_i$이므로, [[congruence-arithmetic|합동의 계산 법칙]]의 3에 의해
+곱의 합동을 보이자. $b$와 $c$는 $P_n \subseteq \mathbb{Z}$로의 함수이므로 [[function]]의 진술에 의해 $\{1, \dots, k\}$에서 $\mathbb{Z}$로의 함수, 곧 길이 $k$인 정수의 열이다. $x b_1, \dots, x b_k$도 길이 $k$인 정수의 열이고 모든 자리에서 $x b_i \equiv c_i$이므로, [[congruence-arithmetic|합동의 계산 법칙]]의 3에 의해
 $$(x b_1) \cdots (x b_k) \equiv c_1 \cdots c_k \pmod n$$
-이다. 이제 $c_1 \cdots c_k = b_1 \cdots b_k$임을 보인다. [[finite-set]]의 (F3)에 의해 $b^{-1} : P_n \to \{1, \dots, k\}$은 전단사이고, 합성에 관한 정리의 3에 의해 $\sigma = b^{-1} \circ c : \{1, \dots, k\} \to \{1, \dots, k\}$는 전단사이다. [[inverse-function]]에서 $b \circ b^{-1} = i_{P_n}$이므로 각 $i$에 대하여 $b_{\sigma(i)} = b(b^{-1}(c_i)) = c_i$이다. 열 $b$는 $P_n \subseteq \mathbb{Z}$로의 함수이므로 [[function]]의 진술에 의해 $\{1, \dots, k\}$에서 $\mathbb{Z}$로의 함수, 곧 길이 $k$인 정수의 열이다. 따라서 [[rearranging-a-finite-product|재배열 정리]]의 2에 의해
+이다. 이제 $c_1 \cdots c_k = b_1 \cdots b_k$임을 보인다. [[finite-set]]의 (F3)에 의해 $b^{-1} : P_n \to \{1, \dots, k\}$은 전단사이고, 합성에 관한 정리의 3에 의해 $\sigma = b^{-1} \circ c : \{1, \dots, k\} \to \{1, \dots, k\}$는 전단사이다. [[inverse-function]]에서 $b \circ b^{-1} = i_{P_n}$이므로 각 $i$에 대하여 $b_{\sigma(i)} = b(b^{-1}(c_i)) = c_i$이다. 따라서 열 $b \circ \sigma$와 열 $c$는 모든 자리의 값이 같아 같은 열이고, [[finite-product]]에서 같은 열의 곱은 같으므로 [[rearranging-a-finite-product|재배열 정리]]의 2에 의해
 $$c_1 \cdots c_k = b_{\sigma(1)} \cdots b_{\sigma(k)} = b_1 \cdots b_k$$
 이다. 두 합동식을 합치면 $(x b_1) \cdots (x b_k) \equiv b_1 \cdots b_k \pmod n$이다. $\blacksquare$
 :::

@@ -6,25 +6,27 @@ kind: lemma
 field: number-theory
 msc: ["11A07"]
 level: undergrad
-summary: 합동인 수는 법과 서로소인 정도가 같고, 법과 서로소인 수들의 곱도 법과 서로소이며, 법 n과 서로소인 정수를 n으로 나눈 나머지는 1 이상 n − 1 이하이고 n과 서로소이다(n ≥ 2).
+summary: 합동인 두 정수는 한쪽이 법과 서로소이면 다른 쪽도 서로소이고, 법과 서로소인 수들의 곱도 법과 서로소이며, 법 n과 서로소인 정수를 n으로 나눈 나머지는 1 이상 n − 1 이하이고 n과 서로소이다(n ≥ 2). 0 이상 n − 1 이하인 두 정수가 합동이면 같다.
 requires: [euler-phi-function, inverse-modulo-n, congruence-modulo-n, congruence-is-an-equivalence-relation, congruence-arithmetic, residues-modulo-n, division-theorem, greatest-common-divisor, divisibility, finite-product, mathematical-induction, well-ordering-principle, prime-number, even-and-odd]
 proof: full
 sources:
   - ref: stein-elementary-number-theory
     loc: 2.1.2절 Euler's Theorem, Theorem 2.1.20의 증명(p.26–27)과 2.2.1절 Lemma 2.2.5의 증명(p.31)에서 말없이 쓰이는 사실
     checked: original
-    note: "출처에는 이 꼴의 진술이 없다. 출처는 Lemma 2.2.5의 증명(p.31)에서 gcd(a, m) = 1과 gcd(b, n) = 1에서 gcd(c, nm) = 1을 따로 이유 없이 쓰고, Theorem 2.1.20의 증명(p.27)에서 xa를 n으로 나눈 나머지가 다시 P에 든다는 것을 말하지 않고 쓴다. 이 항목은 그런 사실들을 정리로 만들어 증명한 것이다. 서로소의 보존(1)–(3)은 inverse-modulo-n의 (1)(역원이 있는 것은 정확히 서로소일 때)을 양쪽 방향으로 써서 증명하므로 증명 경로는 이 사이트의 것이다. 출처는 나머지 r이 1 이상 n − 1 이하라는 것(4)도 따로 말하지 않는다."
+    note: "출처에는 이 꼴의 진술이 없다. 출처는 Lemma 2.2.5의 증명(p.31)에서 c ≡ a (mod m)이고 gcd(a, m) = 1이면 gcd(c, m) = 1이라는 것(이 항목의 1)을 말없이 쓴다(같은 자리의 gcd(c, nm) = 1이라는 결론은 이 항목이 다루지 않는다). 또 Theorem 2.1.20의 증명(p.27)에서 xa를 n으로 나눈 나머지가 다시 P에 든다는 것을 말하지 않고 쓴다. 이 항목은 그 사실들을 정리로 만들어 증명한 것이다. 서로소의 보존(1)–(3)은 inverse-modulo-n의 (1)(역원이 있는 것은 정확히 서로소일 때)을 양쪽 방향으로 써서 증명하므로 증명 경로는 이 사이트의 것이다. 출처는 나머지 r이 1 이상 n − 1 이하라는 것(4)과 나머지의 유일성(5)도 따로 말하지 않는다."
 status: source-checked
 added: 2026-11-16
 ---
 
 :::statement
-$n$이 자연수이고 $a$, $b$가 정수라 하자. $n \ne 0$이므로 정수 $c$마다 $c$와 $n$은 둘 다 $0$은 아니고, $\gcd(c, n)$은 [[greatest-common-divisor|최대공약수]]이다. 정수 $c$가 $n$과 **서로소**라는 것은 $\gcd(c, n) = 1$이라는 뜻이다. $P_n$은 [[euler-phi-function]]의 집합 $\{a \in \mathbb{Z} : 1 \le a \le n \text{이고 } \gcd(a, n) = 1\}$이다. 그러면 다음이 성립한다.
+$n$이 자연수이고 $a$, $b$가 정수라 하자. $n \ne 0$이므로 정수 $c$마다 $c$와 $n$은 둘 다 $0$은 아니고, $\gcd(c, n)$은 [[greatest-common-divisor|최대공약수]]이다. 정수 $c$가 $n$과 **서로소**라는 것은 $\gcd(c, n) = 1$이라는 뜻이다. $P_n$은 [[euler-phi-function]]의 집합 $\{t \in \mathbb{Z} : 1 \le t \le n \text{이고 } \gcd(t, n) = 1\}$이다. 그러면 다음이 성립한다.
 
 1. $a \equiv b \pmod n$이면, $\gcd(a, n) = 1$인 것은 정확히 $\gcd(b, n) = 1$일 때이다.
 2. $\gcd(a, n) = 1$이고 $\gcd(b, n) = 1$이면 $\gcd(ab, n) = 1$이다.
 3. $k$가 자연수이고 $a_1, \dots, a_k$가 길이 $k$인 정수의 열이며 모든 $i \in \{1, \dots, k\}$에 대하여 $\gcd(a_i, n) = 1$이면, [[finite-product|유한 곱]] $a_1 a_2 \cdots a_k$에 대하여 $\gcd(a_1 a_2 \cdots a_k, n) = 1$이다.
 4. $n \ge 2$이고 $\gcd(a, n) = 1$이라 하자. $r$이 $a$를 $n$으로 나눈 나머지([[residues-modulo-n]])이면 $a \equiv r \pmod n$이고 $r \in \{1, \dots, n - 1\}$이며 $\gcd(r, n) = 1$이다. 따라서 $r \in P_n$이다.
+
+5. (나머지의 유일성) $c$, $d$가 $0 \le c \le n - 1$, $0 \le d \le n - 1$인 정수이고 $c \equiv d \pmod n$이면 $c = d$이다. 특히 $n \ge 2$이고 $c, d \in P_n$이며 $c \equiv d \pmod n$이면 $c = d$이다.
 
 4는 $n \ge 2$에서만 말한다. $n = 1$이면 모든 정수를 $1$로 나눈 나머지가 $0$이고 $0 \notin P_1 = \{1\}$이다.
 
@@ -32,21 +34,23 @@ $n$이 자연수이고 $a$, $b$가 정수라 하자. $n \ne 0$이므로 정수 $
 :::
 
 :::english
-Let $n$ be a natural number and let $a$, $b$ be integers. Since $n \ne 0$, for every integer $c$ the integers $c$ and $n$ are not both $0$, and $\gcd(c, n)$ is the greatest common divisor. An integer $c$ is **coprime to $n$** if $\gcd(c, n) = 1$. Let $P_n$ be the set $\{a \in \mathbb{Z} : 1 \le a \le n \text{ and } \gcd(a, n) = 1\}$. Then the following hold.
+Let $n$ be a natural number and let $a$, $b$ be integers. Since $n \ne 0$, for every integer $c$ the integers $c$ and $n$ are not both $0$, and $\gcd(c, n)$ is the greatest common divisor. An integer $c$ is **coprime to $n$** if $\gcd(c, n) = 1$. Let $P_n$ be the set $\{t \in \mathbb{Z} : 1 \le t \le n \text{ and } \gcd(t, n) = 1\}$. Then the following hold.
 
 1. If $a \equiv b \pmod n$, then $\gcd(a, n) = 1$ exactly when $\gcd(b, n) = 1$.
 2. If $\gcd(a, n) = 1$ and $\gcd(b, n) = 1$, then $\gcd(ab, n) = 1$.
 3. If $k$ is a natural number, $a_1, \dots, a_k$ is a sequence of integers of length $k$, and $\gcd(a_i, n) = 1$ for every $i \in \{1, \dots, k\}$, then the finite product satisfies $\gcd(a_1 a_2 \cdots a_k, n) = 1$.
 4. Suppose $n \ge 2$ and $\gcd(a, n) = 1$. If $r$ is the remainder of $a$ upon division by $n$, then $a \equiv r \pmod n$, $r \in \{1, \dots, n - 1\}$, and $\gcd(r, n) = 1$. Hence $r \in P_n$.
 
+5. (Uniqueness of remainders) If $c$ and $d$ are integers with $0 \le c \le n - 1$ and $0 \le d \le n - 1$ and $c \equiv d \pmod n$, then $c = d$. In particular, if $n \ge 2$, $c, d \in P_n$, and $c \equiv d \pmod n$, then $c = d$.
+
 Part 4 is stated only for $n \ge 2$. If $n = 1$, the remainder of every integer upon division by $1$ is $0$, and $0 \notin P_1 = \{1\}$.
 :::
 
 ## 직관
 
-시계의 눈금이 $n$칸이라 하고, 정수 $a$는 "$a$칸 앞"이라는 눈금을 가리킨다고 합시다. 합동인 두 정수는 같은 눈금을 가리킵니다. $a$와 $n$이 서로소라는 것은 $a$칸씩 움직여 $1$칸 앞에 올 수 있다는 것이었고([[inverse-modulo-n]]), 이것은 눈금 하나가 정하는 성질이어서 같은 눈금을 가리키는 다른 이름 $b$에서도 똑같이 성립합니다. 이것이 1입니다. 두 수 $a$, $b$에서 각각 $1$칸 앞에 오는 방법이 있으면 둘을 이어 붙여 $ab$칸씩 움직여도 $1$칸 앞에 올 수 있다는 것이 2이고, 3은 이것을 여러 번 되풀이한 것입니다. 이 비유가 맞아떨어지는 곳은 "서로소는 눈금이 정하는 성질"이라는 점이고, 비유가 보여 주지 못하는 곳은 서로소가 아닌 수가 섞이면 곱이 서로소가 아닐 수 있다는 점입니다. 그 경우는 아래 반례에서 봅니다.
+시계의 눈금이 $n$칸이라 하고, 정수 $a$는 "$a$칸 앞"이라는 눈금을 가리킨다고 합시다. 합동인 두 정수는 같은 눈금을 가리킵니다. $a$와 $n$이 서로소라는 것은 $a$칸씩 움직여 $1$칸 앞에 올 수 있다는 것이었고([[inverse-modulo-n]]), 이것은 눈금 하나가 정하는 성질이어서 같은 눈금을 가리키는 다른 이름 $b$에서도 똑같이 성립합니다. 이것이 1입니다. 두 수 $a$, $b$에서 각각 $1$칸 앞에 오는 방법이 있으면 둘을 이어 붙여 $ab$칸씩 움직여도 $1$칸 앞에 올 수 있다는 것이 2이고, 3은 이것을 여러 번 되풀이한 것입니다. 이 비유가 맞아떨어지는 곳은 "서로소는 눈금이 정하는 성질"이라는 점이고, 비유가 보여 주지 못하는 곳은 서로소가 아닌 수가 섞이면 곱도 서로소가 아니라는 점입니다. 그 경우는 아래 반례에서 봅니다.
 
-4는 나머지를 대표로 삼을 수 있다는 말입니다. 법과 서로소인 정수 $a$를 법 $n$의 나머지 $r$로 바꿔 놓아도 서로소라는 성질이 유지되고, 그 나머지는 $0$이 아니라 $1$ 이상 $n - 1$ 이하라는 것입니다. 이 사실이 있어야 법과 서로소인 수들의 곱을 나머지로 바꿔 놓고 이야기할 수 있습니다. 증명은 모두 [[inverse-modulo-n|역원이 있는 것은 정확히 서로소일 때]]라는 정리를 양쪽 방향으로 쓰는 것이 전부입니다.
+4는 나머지를 대표로 삼을 수 있다는 말입니다. 법과 서로소인 정수 $a$를 법 $n$의 나머지 $r$로 바꿔 놓아도 서로소라는 성질이 유지되고, 그 나머지는 $0$이 아니라 $1$ 이상 $n - 1$ 이하라는 것입니다. 이 사실이 있어야 법과 서로소인 수들의 곱을 나머지로 바꿔 놓고 이야기할 수 있습니다. 1과 2의 증명은 [[inverse-modulo-n|역원이 있는 것은 정확히 서로소일 때]]라는 정리를 양쪽 방향으로 쓰는 것이 전부이고, 3은 2를 되풀이하며, 4는 1에 나머지의 범위를 더한 것입니다. 5는 나머지가 하나로 정해진다는 말을 뒤 항목이 인용하기 쉽게 적어 둔 것입니다.
 
 ## 증명
 
@@ -81,7 +85,9 @@ $n \ne 0$이므로 모든 정수 $c$에 대해 $\gcd(c, n)$이 정해지고, [[i
 
 **4.** $n \ge 2$이고 $\gcd(a, n) = 1$이라 하자. [[division-theorem|나눗셈 정리]]에 의해 $a = qn + r$, $0 \le r < n$인 정수 $q$, $r$이 하나로 정해지고, 이 $r$이 나머지이다. [[residues-modulo-n]]의 1에 의해 $a \equiv r \pmod n$이다. 1에 의해 $\gcd(r, n) = 1$이다.
 
-$r = 0$이라고 가정하자. 그러면 $a = qn$이므로 $n \mid a$이다. 또 $n = n \cdot 1$이므로 $n \mid n$이다. 따라서 $n$은 $a$와 $n$의 공약수이고, [[greatest-common-divisor]]의 정의의 조건 2에 의해 $n \le \gcd(a, n) = 1$이다. 그런데 $1 < 2 \le n$에서 (Z6)에 의해 $1 < n$이고, 이는 (L1)에 의해 $n \le 1$과 함께 성립할 수 없다. 따라서 $r \ne 0$이다. $0 \le r$이고 $r \ne 0$이므로 $0 < r$이고, (Z1)에 의해 $1 \le r$이다. 또 $r < n$이므로 (Z1)에 의해 $r + 1 \le n$이고 (Z7)에 의해 $r \le n - 1$이다. $n \ge 2$에서 $n - 1 \ge 1$이므로 $\{1, \dots, n - 1\}$이 정해지고 $r$은 그 원소이다. 마지막으로 $r < n$에서 $r \le n$이므로 $1 \le r \le n$이고 $\gcd(r, n) = 1$이어서 $r \in P_n$이다. $\blacksquare$
+$r = 0$이라고 가정하자. 그러면 $a = qn$이므로 $n \mid a$이다. 또 $n = n \cdot 1$이므로 $n \mid n$이다. 따라서 $n$은 $a$와 $n$의 공약수이고, [[greatest-common-divisor]]의 정의의 조건 2에 의해 $n \le \gcd(a, n) = 1$이다. 그런데 $1 < 2 \le n$에서 (Z6)에 의해 $1 < n$이고, 이는 (L1)에 의해 $n \le 1$과 함께 성립할 수 없다. 따라서 $r \ne 0$이다. $0 \le r$이고 $r \ne 0$이므로 $0 < r$이고, (Z1)에 의해 $1 \le r$이다. 또 $r < n$이므로 (Z1)에 의해 $r + 1 \le n$이고 (Z7)에 의해 $r \le n - 1$이다. $n \ge 2$에서 $n - 1 \ge 1$이므로 $\{1, \dots, n - 1\}$이 정해지고 $r$은 그 원소이다. 마지막으로 $r < n$에서 $r \le n$이므로 $1 \le r \le n$이고 $\gcd(r, n) = 1$이어서 $r \in P_n$이다.
+
+**5.** $c$를 정수로 보고 [[residues-modulo-n]]의 1을 쓰면 $c \equiv r \pmod n$이고 $0 \le r \le n - 1$인 정수 $r$이 정확히 하나 있다. $r = c$가 이 조건을 만족한다. 합동의 반사성에 의해 $c \equiv c$이고 $0 \le c \le n - 1$이기 때문이다. $r = d$도 만족한다. 가정에서 $c \equiv d$이고 $0 \le d \le n - 1$이기 때문이다. 정확히 하나뿐이므로 $c = d$이다. 특히 $n \ge 2$이고 $c, d \in P_n$이면, [[euler-phi-function]]의 3에 의해 $1 \le c \le n - 1$이고 $1 \le d \le n - 1$이며, $0 < 1$((Z8))과 (Z6)에 의해 $0 < c$, $0 < d$이므로 $0 \le c, d \le n - 1$이다. 앞의 경우를 쓰면 $c = d$이다. $\blacksquare$
 :::
 
 ## 예시와 반례
@@ -95,7 +101,7 @@ $n = 14$, $a = 45$이면 $45 = 3 \cdot 14 + 3$이므로 나머지는 $r = 3$입�
 :::
 
 :::counterexample[서로소가 아닌 두 수의 곱]
-2의 가정에서 "둘 다 서로소"를 "한쪽만 서로소"로 바꾸면 결론이 성립하지 않을 수 있습니다. $n = 6$, $a = 5$, $b = 3$이면 $\gcd(5, 6) = 1$이지만 $\gcd(3, 6) = 3$입니다. 곱은 $ab = 15$이고 $\gcd(15, 6) = 3$으로 $1$이 아닙니다($3 \mid 15$, $3 \mid 6$이므로 $\gcd(15, 6) \ge 3$입니다).
+2의 가정에서 "둘 다 서로소"를 "한쪽만 서로소"로 바꾸면 결론이 성립하지 않습니다. 예를 들어 $n = 6$, $a = 5$, $b = 3$이면 $\gcd(5, 6) = 1$이지만 $\gcd(3, 6) \ge 3$입니다. 곱은 $ab = 15$이고 $\gcd(15, 6) \ge 3$이어서 $1$이 아닙니다($3 \mid 15$, $3 \mid 6$).
 :::
 
 :::counterexample[n = 1에서는 나머지가 P_n에 들어가지 않는다]
