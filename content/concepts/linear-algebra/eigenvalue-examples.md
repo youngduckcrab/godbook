@@ -7,14 +7,15 @@ field: linear-algebra
 msc: ["15A18"]
 level: undergrad
 summary: 실수 a, b 에 대하여 aa + bb = 0 이면 a = b = 0 이라는 사실을 받아들이면 (0 −1; 1 0) 에는 고윳값이 없다. (1 1; 0 1) 은 고윳값 1 을 갖지만 대각화 가능하지 않고, 영행렬이 아니면서 자기 자신과의 곱이 영행렬인 행렬도 대각화 가능하지 않다.
-requires: [real-number-arithmetic, vector-space, vector-space-basic-properties, real-function-space, standard-basis, linear-combination-and-span, matrix, matrix-vector-product, matrix-product, matrix-product-properties, invertible-matrix, inverse-matrix-properties, eigenvalue-and-eigenvector, change-of-basis-and-similarity, diagonalizable, eigenvalues-of-triangular-matrix]
+requires: [real-number-arithmetic, vector-space, vector-space-basic-properties, real-function-space, finite-sum-of-vectors, standard-basis, linear-combination-and-span, matrix, matrix-vector-product, matrix-product, matrix-product-properties, invertible-matrix, inverse-matrix-properties, eigenvalue-and-eigenvector, change-of-basis-and-similarity, diagonalizable, eigenvalues-of-triangular-matrix]
 proof: full
 sources:
   - ref: treil-linear-algebra-done-wrong
     loc: 4장 1.4절 Complex vs real spaces, p.102; 2.7.2절 Complex eigenvalues, p.113; 2.7.3절 A non-diagonalizable matrix와 각주 5, pp.113–114; 4장 연습문제 1.1 c, 1.6(p.104), 2.12(p.115)
     checked: original
     note: "출처는 1.4절(p.102)에서 실수 공간에서 실수 고윳값이 없는 선형사상을 만들기는 쉽다고 하며 평면의 회전 R_α(α ≠ πn)를 예로 들고, 증명은 적지 않는다. 출처는 이어서 실수 행렬을 ℂⁿ 위의 연산자로 보아 복소 고윳값을 허용하기로 약속하고, 2.7.2절(p.113)에서 (1 2; −2 1) 의 고윳값을 특성다항식으로 1 ± 2i 로 구한다. 이 사이트는 스칼라를 실수로만 두고 삼각함수와 복소수를 쓰지 않는다. (1)의 J 는 회전을 쓰지 않고 행렬로 준 예이며, 실수 고윳값이 없다는 것을 받아들이는 사실 (Y1)로 증명한다. 출처는 (Y1)을 진술로 쓰지 않는다. 출처 연습문제 1.1 c(p.104)는 실수 고윳값이 없는 실수 정사각행렬이 있는지 묻는다. (2)의 N = (1 1; 0 1) 은 출처 2.7.3절(pp.113–114)의 예와 같다. 출처는 특성다항식으로 고윳값 1 의 중복도가 2 이고 고유공간이 1차원이라 대각화할 수 없다고 하고, 각주 5(p.114)에서 '어떤 기저에서 행렬이 I 인 선형사상은 항등사상뿐이므로' 대각화할 수 없다고 적는다. 이 항목의 (2)의 증명은 그 각주와 같은 발상(대각행렬이 I₂ 여야 한다)을 닮음과 고윳값으로 적은 것이다. (3)은 출처 연습문제 2.12(p.115, A⁵ = 0 이고 A ≠ 0 이면 대각화할 수 없다)와 1.6(p.104, 멱영 연산자의 고윳값)을 행렬의 거듭제곱 없이 AA 로 바꾼 것이다. 예시와 반례와 확인 질문은 새로 만들었다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 작성자의 자기 검토 뒤 독립 검토 통과(전반 2회, 후반 1회). 고유벡터의 정의, 출처 메모, 출처의 예와 같은 꼴임을 밝히는 일, 반례의 일반화를 보완했다. 마지막 표현 수정은 지휘자가 변경분을 확인했다."
 added: 2026-11-16
 ---
 
@@ -48,7 +49,7 @@ Eigenvalues and eigenvectors are as defined in the entry on eigenvalues and eige
 
 $J$에 고유벡터가 없다는 것은 계산하면 $x_1 x_1 + x_2 x_2 = 0$이라는 등식으로 모입니다. 여기서 $x_1 = x_2 = 0$을 끌어내는 데 (Y1)이 필요합니다. (Y1)은 실수의 순서(제곱은 $0$ 이상이고, $0$ 이상인 두 수의 합이 $0$이면 둘 다 $0$)에서 나오는 사실인데, 이 강의가 받아들인 실수의 법칙 [[real-number-arithmetic|(K1)–(K7)]]에는 순서가 없으므로 따로 받아들입니다. (2)와 (3)은 (Y1)을 쓰지 않습니다.
 
-(2)와 (3)은 고윳값이 있어도 대각화할 수 없는 예입니다. 대각화 가능하다면 대각행렬 $D$와 닮아야 하고, 닮은 행렬은 고윳값이 같으므로 $D$의 대각성분이 모두 고윳값이어야 합니다. 고윳값이 하나뿐이면 $D$는 그 수의 단위행렬 배가 되고, 그러면 원래 행렬도 그 꼴이어야 해서 모순이 됩니다. 이 강의는 행렬식과 다항식, 복소수를 다루지 않으므로 고윳값을 일반적으로 구하는 방법이나 고윳값이 언제 있는지는 다루지 않습니다. 이 항목도 세 행렬 각각에 대해서만 말합니다.
+(2)와 (3)은 고윳값이 있어도 대각화할 수 없는 예입니다. 대각화 가능하다면 대각행렬 $D$와 닮아야 하고, 닮은 행렬은 고윳값이 같으므로 $D$의 대각성분이 모두 고윳값이어야 합니다. 고윳값이 하나뿐이면 $D$는 그 수의 단위행렬 배가 되고, 그러면 원래 행렬도 그 꼴이어야 해서 모순이 됩니다. 이 강의는 행렬식과 다항식, 복소수를 다루지 않으므로 고윳값을 일반적으로 구하는 방법이나 고윳값이 있는지를 일반적으로 판정하는 방법은 다루지 않습니다. 이 항목도 세 행렬 각각에 대해서만 말합니다.
 
 ## 증명
 
