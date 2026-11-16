@@ -40,7 +40,7 @@ added: 2026-11-16
 - (Z7) $a < b$이면 $a + c < b + c$이고, $a = b$이면 $a + c = b + c$이다. 따라서 $a \le b$이면 $a + c \le b + c$이다. 뺄셈은 $-c$를 더하는 것이므로 양변에서 같은 정수를 빼도 같다.
 - (Z8) $0 < 1$이다.
 
-이 밖에 정수의 덧셈과 곱셈의 교환법칙, 결합법칙, 분배법칙과 $0$, $1$, 음수에 관한 계산($0 \cdot a = 0$, $1 \cdot a = a$, $a + (-a) = 0$ 등)은 증명 없이 쓰며 쓸 때마다 적지 않는다. 정수끼리 더하거나 빼거나 곱한 결과가 정수라는 것은 [[even-and-odd]]에서 받아들인 사실을 쓴다.
+이 밖에 정수의 덧셈과 곱셈의 교환법칙, 결합법칙, 분배법칙과 $0$, $1$, 음수에 관한 계산($0 \cdot a = 0$, $1 \cdot a = a$, $a + (-a) = 0$ 등)과 구체적인 정수 사이의 등식과 부등식(예: $0 < 3$, $-18 < 0$)은 계산으로 보아 증명 없이 쓰며 쓸 때마다 적지 않는다. 정수끼리 더하거나 빼거나 곱한 결과가 정수라는 것은 [[even-and-odd]]에서 받아들인 사실을 쓴다.
 
 위 성질에서 따라 나오는 다음 사실을 뒤 항목들이 인용한다. 여기서 $a$, $b$는 정수이다. 증명은 아래 "(L1)–(L3)의 증명"에 있다.
 
@@ -71,7 +71,7 @@ In addition to (Z1)–(Z4) in the entry on prime numbers, this text accepts the 
 - (Z7) If $a < b$, then $a + c < b + c$, and if $a = b$, then $a + c = b + c$. Hence if $a \le b$, then $a + c \le b + c$. Subtraction is addition of $-c$, so subtracting the same integer from both sides works the same way.
 - (Z8) $0 < 1$.
 
-Besides these, the commutative, associative, and distributive laws of addition and multiplication of integers and the computations involving $0$, $1$, and negatives ($0 \cdot a = 0$, $1 \cdot a = a$, $a + (-a) = 0$, and so on) are used without proof and are not cited each time. That the sum, difference, and product of integers are integers is the fact accepted earlier on this site.
+Besides these, the commutative, associative, and distributive laws of addition and multiplication of integers and the computations involving $0$, $1$, and negatives ($0 \cdot a = 0$, $1 \cdot a = a$, $a + (-a) = 0$, and so on), as well as equalities and inequalities between specific integers (for example $0 < 3$ and $-18 < 0$), are treated as computations and are used without proof and are not cited each time. That the sum, difference, and product of integers are integers is the fact accepted earlier on this site.
 
 The following facts follow from the properties above and are cited by later entries. Here $a$ and $b$ are integers. They are proved below.
 
@@ -132,13 +132,13 @@ $c$ 이상인 정수 $n$마다 명제 $S_n$을 "$A$의 원소 가운데 $n$ 이�
 
 (L2) $a \ne b$라 하면 $a \le b$에서 $a < b$이다. 이것과 $b \le a$는 (L1)에 의해 함께 성립할 수 없다. 따라서 $a = b$이다.
 
-(L3) (Z8) $0 < 1$의 양변에 $a$를 더하면 (Z7)에 의해 $a < a + 1$이다. 양변에 $a - 1$을 더하면 (Z7)에 의해 $a - 1 < a$이다. $0 = 1$이면 (Z5)에 의해 $0 < 1$과 양립하지 않으므로 $0 \ne 1$이다.
+(L3) (Z8) $0 < 1$의 양변에 $a$를 더하면 (Z7)에 의해 $a < a + 1$이다. 또 $0 < 1$의 양변에 $a - 1$을 더하면 (Z7)에 의해 $a - 1 < a$이다. $0 = 1$이면 (Z5)에 의해 $0 < 1$과 양립하지 않으므로 $0 \ne 1$이다.
 :::
 
 ## 예시와 반례
 
 :::example[자연수의 부분집합]
-$A = \{n \in \mathbb{N} : n^2 > 50\}$을 생각합니다. $1, 2, \dots, 7$의 제곱은 $1, 4, 9, 16, 25, 36, 49$로 모두 $50$ 이하이므로 이 수들은 $A$의 원소가 아닙니다. $8^2 = 64 > 50$이므로 $8 \in A$이고, $A$의 원소는 모두 $8$ 이상이고 $8 \in A$이므로 $8$이 최소 원소입니다. 정렬 원리가 보장하는 최소 원소의 위치를 이 경우에는 직접 찾아낸 것입니다.
+$A = \{n \in \mathbb{N} : n^2 > 50\}$을 생각합니다. $1, 2, \dots, 7$의 제곱은 $1, 4, 9, 16, 25, 36, 49$로 모두 $50$ 이하이므로 이 수들은 $A$의 원소가 아닙니다. $8^2 = 64 > 50$이므로 $8 \in A$입니다. $1$부터 $7$까지는 $A$에 없으므로 $A$의 원소는 모두 $8$ 이상이고, 따라서 $8$이 최소 원소입니다. 정렬 원리가 보장하는 최소 원소의 위치를 이 경우에는 직접 찾아낸 것입니다.
 :::
 
 :::example[아래로 유계인 정수의 집합과 위로 유계인 정수의 집합]
