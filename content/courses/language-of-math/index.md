@@ -7,9 +7,7 @@ order: 1
 track: 기초
 status: in-progress
 planned_units:
-  - 증명 기법 (직접 증명, 대우, 귀류법)
   - 수학적 귀납법
-  - 관계와 동치관계
   - 함수
   - 집합의 크기
 ---
