@@ -25,7 +25,7 @@ added: 2026-11-16
 
 유리수 전체의 집합을 $\mathbb{Q}$로 쓴다.
 
-이 사이트는 다음 사실을 증명 없이 받아들인다. 모든 유리수 $x$는 $x = a/b$인 정수 $a$, $b$($b \ne 0$)로서 $a$와 $b$가 둘 다 짝수는 아니도록 쓸 수 있다. 곧 둘 다 짝수인 분수는 분자와 분모를 $2$로 나누어 계속 줄일 수 있다는 것이다.
+이 사이트는 다음 사실을 증명 없이 받아들인다. 모든 유리수 $x$는 $x = a/b$인 정수 $a$, $b$($b \ne 0$)로서 $a$와 $b$가 둘 다 짝수는 아니도록 쓸 수 있다. 곧 둘 다 짝수인 분수에서 분자와 분모를 $2$로 나누는 일을 되풀이하면, 유한 번 만에 둘 다 짝수는 아닌 분수에 이른다는 것이다.
 :::
 
 :::english
@@ -36,14 +36,14 @@ For a real number $x$, define the following. The set of real numbers is denoted 
 
 The set of rational numbers is denoted $\mathbb{Q}$.
 
-This site accepts the following fact without proof. Every rational number $x$ can be written as $x = a/b$ with integers $a$ and $b$, $b \ne 0$, such that $a$ and $b$ are not both even. That is, a fraction whose numerator and denominator are both even can be reduced further by dividing both by $2$, repeatedly.
+This site accepts the following fact without proof. Every rational number $x$ can be written as $x = a/b$ with integers $a$ and $b$, $b \ne 0$, such that $a$ and $b$ are not both even. That is, starting from a fraction whose numerator and denominator are both even, repeatedly dividing both by $2$ reaches, after finitely many steps, a fraction whose numerator and denominator are not both even.
 :::
 
 ## 직관
 
 유리수는 "두 정수의 비로 나타낼 수 있는 수"입니다. 분수 $\tfrac{3}{4}$가 대표적이고, 정수 $n$도 $n = \tfrac{n}{1}$이므로 유리수입니다. 무리수는 실수이면서 그렇게 나타낼 수 없는 수입니다.
 
-같은 유리수를 여러 분수로 쓸 수 있습니다. $\tfrac{3}{4} = \tfrac{6}{8} = \tfrac{-12}{-16}$이 모두 같은 수입니다. 이 가운데 분자와 분모가 둘 다 짝수인 것(예: $\tfrac{6}{8}$)은 $2$로 약분해 줄일 수 있습니다. 위의 받아들인 사실은 이 약분을 계속하면 결국 둘 다 짝수는 아닌 분수에 이른다는 말입니다. 이 사실은 [[sqrt2-is-irrational]]의 증명에서 쓰입니다.
+같은 유리수를 여러 분수로 쓸 수 있습니다. $\tfrac{3}{4} = \tfrac{6}{8} = \tfrac{-12}{-16}$이 모두 같은 수입니다. 이 가운데 분자와 분모가 둘 다 짝수인 것(예: $\tfrac{6}{8}$)은 $2$로 약분해 줄일 수 있습니다. 위의 받아들인 사실은 이 약분을 계속하면 결국 둘 다 짝수는 아닌 분수에 이른다는 말입니다. 이 사실은 [[sqrt2-is-irrational]]의 증명에서 쓰입니다. 무리수의 예는 그 항목에서 처음 증명합니다. 어떤 수가 무리수임을 보이려면 "그런 정수 $a$, $b$가 하나도 없다"를 증명해야 하므로, 예를 드는 것부터가 정리입니다.
 
 ## 예시와 반례
 
@@ -55,7 +55,7 @@ This site accepts the following fact without proof. Every rational number $x$ ca
 :::
 
 :::counterexample
-분모가 $0$인 꼴 $\tfrac{5}{0}$은 수를 나타내지 않으므로 이것으로 어떤 수를 유리수라고 할 수 없습니다. 정의에 $b \ne 0$이 들어 있는 이유입니다. 또 정의는 $a$, $b$가 **정수**일 것을 요구하므로, $\tfrac{\pi}{\pi}$처럼 분수 꼴로 쓸 수 있다는 것만으로는 유리수라고 할 수 없습니다. 분자와 분모가 정수가 아니면 정의의 조건을 확인한 것이 아닙니다.
+분모가 $0$인 꼴 $\tfrac{5}{0}$은 수를 나타내지 않으므로 이것으로 어떤 수를 유리수라고 할 수 없습니다. 정의에 $b \ne 0$이 들어 있는 이유입니다. 또 정의는 $a$, $b$가 **정수**일 것을 요구하므로, $\tfrac{0.5}{1.5}$처럼 분자와 분모가 정수가 아닌 분수 꼴로 쓴 것만으로는 정의의 조건을 확인한 것이 아닙니다. $\tfrac{0.5}{1.5} = \tfrac{1}{3}$으로 고쳐 써서 정수 $1$, $3$을 얻어야 유리수임이 확인됩니다.
 :::
 
 ## 확인 질문

@@ -7,13 +7,13 @@ field: number-theory
 msc: ["11A07"]
 level: intro
 summary: 정수 a에 대하여 a의 제곱이 짝수이면 a도 짝수이다.
-requires: [even-and-odd, odd-square-is-odd, proof-by-contrapositive, contrapositive-law]
+requires: [divisibility, even-and-odd, odd-square-is-odd, proof-by-contrapositive, contrapositive-law]
 proof: full
 sources:
   - ref: hammack-book-of-proof
     loc: 6.2절 Proving Conditional Statements by Contradiction, 명제 "Suppose a ∈ Z. If a² is even, then a is even", p.141
     checked: original
-    note: 출처는 이 명제를 귀류법으로 증명한다(p.141). 아래 증명은 대우 증명이며 출처와 방법이 다르다. 출처의 귀류법 증명은 a가 홀수라고 가정하고 a = 2c + 1을 제곱해 a²이 홀수임을 직접 계산하지만, 아래 증명은 같은 계산을 odd-square-is-odd 항목으로 대신한다. 출처는 6.1절 √2 증명(p.139)에서 이 명제를 "앞에서 증명했다(5장 연습문제 1, p.136)"고 인용한다. 예시와 확인 질문은 새로 만들었다.
+    note: 출처는 이 명제를 귀류법으로 증명한다(p.141). 아래 증명은 대우 증명이며 출처와 방법이 다르다. 출처의 귀류법 증명은 a가 홀수라고 가정하고 a = 2c + 1을 제곱해 a²이 홀수임을 직접 계산하지만, 아래 증명은 같은 계산을 odd-square-is-odd 항목으로 대신한다. 출처는 6.1절 √2 증명(p.139)에서 이 명제를 "앞에서 증명했다(5장 연습문제 1, p.136)"고 인용한다. 출처의 5장 연습문제 1(p.136)은 이 명제를 대우 증명으로 풀라고 하는 문제이며, 아래 증명은 같은 방법이다. 예시와 확인 질문은 새로 만들었다.
 status: source-checked
 added: 2026-11-16
 ---
@@ -28,7 +28,7 @@ Let $a$ be an integer. If $a^2$ is even, then $a$ is even.
 
 ## 직관
 
-[[odd-square-is-odd]]는 홀수를 제곱하면 홀수라고 말합니다. 이 명제는 그 말을 뒤집은 것처럼 보이지만, 그냥 뒤집은 것이 아니라 대우입니다. "$a$가 홀수이면 $a^2$도 홀수이다"의 대우는 "$a^2$이 홀수가 아니면 $a$는 홀수가 아니다"이고, 정수는 짝수이거나 홀수이므로 이는 "$a^2$이 짝수이면 $a$는 짝수이다"와 같은 말입니다.
+[[odd-square-is-odd]]는 홀수를 제곱하면 홀수라고 말합니다. 이 명제는 그 말을 뒤집은 것처럼 보이지만, 그냥 뒤집은 것이 아니라 대우입니다. "$a$가 홀수이면 $a^2$도 홀수이다"의 대우는 "$a^2$이 홀수가 아니면 $a$는 홀수가 아니다"이고, 정수는 짝수이거나 홀수이고 둘 다는 아니므로 이는 "$a^2$이 짝수이면 $a$는 짝수이다"와 같은 말입니다.
 
 그래서 이 명제는 [[proof-by-contrapositive]]로 증명합니다. 가정 "$a^2$이 짝수"에서 곧바로 $a$를 뽑아내기는 어렵지만, "$a$가 짝수가 아니다"에서 출발하면 이미 아는 사실을 쓸 수 있습니다.
 
@@ -67,7 +67,7 @@ $a = 14$이면 $a^2 = 196 = 2 \cdot 98$은 짝수이고 $a = 14$도 짝수입니
 ## 확인 질문
 
 :::check[$a$가 정수이고 $a^2$이 짝수이면 $a^2$은 $4$의 배수인가?]
-그렇습니다. 이 명제에 의해 $a$는 짝수이므로 $a = 2c$인 정수 $c$가 있고, $a^2 = 4c^2$입니다. $c^2$은 정수이므로 $a^2$은 $4$의 배수입니다.
+그렇습니다. 이 명제에 의해 $a$는 짝수이므로 $a = 2c$인 정수 $c$가 있고, $a^2 = 4c^2$입니다. 정수의 합·곱은 정수라는 기본 성질([[even-and-odd]]에서 증명 없이 받아들임)에 의해 $c^2$은 정수이므로 $a^2$은 $4$의 배수입니다.
 :::
 
 :::check[$a$가 정수이고 $a^2 = 100$이면 $a$에 대해 무엇을 말할 수 있는가?]
