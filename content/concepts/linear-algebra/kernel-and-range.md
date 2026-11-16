@@ -13,7 +13,8 @@ sources:
     loc: 1장 7절 Subspaces, 부분공간의 예 2, 3, p.31. 2장 7절 Fundamental subspaces of a matrix. Rank, 첫머리, p.59–60
     checked: original
     note: "출처는 p.31에서 선형사상 A : V → W 에 부분공간 두 개를 짝짓는다. 하나는 Av = 0 인 v ∈ V 전체인 null space 또는 kernel (Null A, Ker A)이고, 다른 하나는 어떤 v 에 대하여 w = Av 로 쓸 수 있는 w ∈ W 전체인 range Ran A 이다. 이 둘이 부분공간이라는 것은 확인하기 쉽다며 독자에게 맡긴다(p.31). 2장 p.59는 같은 정의를 Ker A = Null A := {v ∈ V : Av = 0}, Ran A = {w ∈ W : w = Av 인 v ∈ V 가 있다}로 다시 쓰고, p.60은 핵이 동차방정식 Ax = 0 의 해 집합이고 상이 Ax = b 가 해를 갖는 우변 b 전체라고 적는다. 이 항목의 (1)이 독자에게 맡긴 확인의 증명이다. 출처는 행렬 A 에 대해 Ran A 의 원소가 열의 일차결합이라서 Ran A 를 열공간(column space, Col A)이라고도 부른다고 적는데, 이 항목은 행렬을 다루지 않는다. 출처는 Ran 을 range 라 부르고, 이 사이트는 같은 집합을 '상'이라 부르며 function 항목의 치역, image-and-preimage 항목의 T(V)와 같은 집합이다. 출처는 선형사상을 A 로 쓰고 이 항목은 T 로 쓴다. 이 항목의 (2), (3), (4)와 번호는 이 사이트가 덧붙였다. 반례의 함수는 출처 1장 8절 p.32의 평행이동(0을 보존하지 않아 선형이 아니다)과 같은 꼴이고 더하는 수를 바꾸었다. 나머지 예시와 확인 질문은 새로 만들었다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 3회 통과(후반 다섯 항목은 2회). 출처 메모의 틀린 서술, 출처와 같은 발상의 반례 표기, 예 하나에서 넘겨짚은 일반화, 건너뛴 증명 단계, 다른 항목의 예시에 기댄 인용을 보완했다."
 added: 2026-11-16
 ---
 

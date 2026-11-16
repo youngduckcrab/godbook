@@ -14,7 +14,8 @@ sources:
     loc: 1장 3.3절 Linear transformations and generating sets, p.15
     checked: original
     note: "출처는 p.15에서 선형사상 T : V → W 가 생성하는 집합 위의 값으로(특히 기저 위의 값으로) 완전히 정해진다고 쓰고, v_1, …, v_n 이 생성하는 열이고 T, T_1 이 모든 k 에서 Tv_k = T_1 v_k 인 선형사상이면 T = T_1 이라고 진술한다. 증명은 자명하다며 독자에게 맡긴다. 이 항목의 (1)이 그 진술이고 증명은 이 사이트가 썼다. (2)의 존재(기저의 각 항에 W의 벡터를 마음대로 짝지은 선형사상이 있다)는 출처에 진술이 없다. 출처는 Theorem 6.7의 증명(p.27)에서 'as we know, a linear transformation is defined by its values on a basis'라고 쓰고 이를 존재로 쓰며, 그 뒤의 예 1, 2(p.27–28)와 2장 Proposition 3.3의 증명(p.49)에서도 Ae_k = v_k 로 정한 사상을 증명 없이 쓴다. 이 항목의 (2)와 그 증명(좌표로 값을 정한 사상이 선형이고 v_k 를 w_k 로 보냄)은 이 사이트가 썼다. 출처는 F^n 의 표준기저 위의 값으로 정해진다는 경우를 p.13–14에서 설명하는데(T(x)가 x_1 a_1 + … + x_n a_n 꼴이라는 설명), 이 항목은 일반 V 와 임의의 기저를 다룬다. 예시와 반례와 확인 질문은 새로 만들었다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 3회 통과(후반 다섯 항목은 2회). 출처 메모의 틀린 서술, 출처와 같은 발상의 반례 표기, 예 하나에서 넘겨짚은 일반화, 건너뛴 증명 단계, 다른 항목의 예시에 기댄 인용을 보완했다."
 added: 2026-11-16
 ---
 

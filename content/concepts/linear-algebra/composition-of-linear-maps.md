@@ -14,7 +14,8 @@ sources:
     loc: "1장 5.2절 Motivation, composition of linear transformations, p.20. 5.3절 Properties of matrix multiplication, p.22. 6.1절 Identity transformation and identity matrix, p.24"
     checked: original
     note: "출처는 p.20에서 선형사상 T_1 : F^n → F^m 과 T_2 : F^r → F^n 의 합성 T(x) = T_1(T_2(x))를 정하고 T 가 선형사상임을 쉽게 보일 수 있다며 연습문제로 돌린다. 이 항목의 (1)이 그 증명이다(일반 벡터공간 U, V, W 에서). 출처는 p.22에서 행렬 곱의 결합·분배·스칼라 법칙이 쉽게 증명된다고 하고 선형사상에 대해 대응하는 성질을 증명하면 선형사상의 성질은 거의 정의에서 나온다고만 적는다. 이 항목의 (3)이 분배법칙과 스칼라 법칙을 선형사상에 대해 증명한 것이다. 결합법칙은 composition-is-associative 항목에 있다. 출처는 p.24에서 항등사상에 대해 AI = A, IA = A 가 성립한다고 적고 앞에 'Clearly'를 붙인다. 이 항목의 (2)가 이에 해당하며, 이 사이트의 어느 항목의 진술에도 없으므로 진술에 넣고 증명했다. (2)는 선형성과 무관하게 모든 함수에서 성립한다. 출처는 합성을 T_1 ∘ T_2 로 정의한 뒤 T_1 T_2 로 쓰겠다고 하고, 이 사이트는 T_1 ∘ T_2 로 쓴다. 예시와 반례와 확인 질문은 새로 만들었다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 3회 통과(후반 다섯 항목은 2회). 출처 메모의 틀린 서술, 출처와 같은 발상의 반례 표기, 예 하나에서 넘겨짚은 일반화, 건너뛴 증명 단계, 다른 항목의 예시에 기댄 인용을 보완했다."
 added: 2026-11-16
 ---
 
