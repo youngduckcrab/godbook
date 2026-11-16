@@ -13,7 +13,7 @@ sources:
   - ref: treil-linear-algebra-done-wrong
     loc: "2장 7.3절 The Rank Theorem. Dimensions of fundamental subspaces., Theorem 7.2 의 1, p.64–65"
     checked: original
-    note: "출처의 Theorem 7.2 는 m × n 행렬 A(Fⁿ 에서 Fᵐ 로의 선형변환)에 대하여 1. dim Ker A + rank A = n, 2. dim Ker Aᵀ + rank A = m 이라고 한다(p.64). 이 항목은 1 에 해당하는 것을 유한차원 벡터공간 V 에서 아무 벡터공간 W 로 가는 선형사상에 대하여 진술한다. 2 는 이 항목에 없다. 출처의 증명은 앞 절(7.1절)의 기본 부분공간의 기저를 구하는 방법(행 소거)을 전제로 하고, 자유변수의 수(dim Ker A)와 기본변수, 곧 피벗의 수(rank A)를 더하면 열의 수 n 이라는 데서 끝난다(p.64). 이 항목은 행 소거와 피벗을 쓰지 않고, 핵의 기저를 V 의 기저로 늘린 뒤 덧붙인 벡터들의 상이 상의 기저임을 보여 증명한다. 이 증명은 출처에 없다. 출처는 Theorem 7.1(rank A = rank Aᵀ)에 'The Rank Theorem' 이라는 이름을 붙이고 Theorem 7.2 도 흔히 그렇게 부른다고 적는다(p.64). '차원 정리', 'rank–nullity' 라는 이름은 출처에 없다('nullity' 는 책 전체를 검색한 범위에서 나오지 않는다). 직관의 '사라지는 방향' 설명은 출처 p.66 의 해석(핵이 자명하지 않으면 변환이 dim Ker A 만큼의 차원을 '없애' dim Ran A = n − dim Ker A 가 된다)과 같은 발상이다. 첫째 확인 질문은 차원 정리로 한쪽 차원의 범위에서 다른 쪽 차원의 범위를 얻는다는 점에서 출처 p.65 의 적용(rank A ≥ 3 에서 dim Ker A ≤ 2 를 얻는다)과 같은 발상이다. 예시와 반례는 새로 만들었다."
+    note: "출처의 Theorem 7.2 는 m × n 행렬 A(Fⁿ 에서 Fᵐ 로의 선형변환)에 대하여 1. dim Ker A + rank A = n, 2. dim Ker Aᵀ + rank A = m 이라고 한다(p.64). 이 항목은 1 에 해당하는 것을 유한차원 벡터공간 V 에서 아무 벡터공간 W 로 가는 선형사상에 대하여 진술한다(출처도 7장 p.208 에서 행렬이 아닌 사상 T 에 이 등식을 쓴다). 2 는 이 항목에 없다. 출처의 증명은 앞 절들(7.1–7.2절)의 기본 부분공간의 기저를 구하는 방법(행 소거)을 전제로 하고, 자유변수의 수(dim Ker A)와 기본변수, 곧 피벗의 수(rank A)를 더하면 열의 수 n 이라는 데서 끝난다(p.64). 이 항목은 행 소거와 피벗을 쓰지 않고, 핵의 기저를 V 의 기저로 늘린 뒤 덧붙인 벡터들의 상이 상의 기저임을 보여 증명한다. 이 증명은 출처에 없다. 출처는 Theorem 7.1(rank A = rank Aᵀ)에 'The Rank Theorem' 이라는 이름을 붙이고 Theorem 7.2 도 흔히 그렇게 부른다고 적는다(p.64). '차원 정리', 'rank–nullity' 라는 이름은 출처에 없다('nullity' 는 책 전체를 검색한 범위에서 나오지 않는다). 직관의 '사라지는 방향' 설명은 출처 p.66 의 해석(핵이 자명하지 않으면 변환이 dim Ker A 만큼의 차원을 '없애' dim Ran A = n − dim Ker A 가 된다)과 같은 발상이다. 첫째 확인 질문은 차원 정리로 한쪽 차원의 범위에서 다른 쪽 차원의 범위를 얻는다는 점에서 출처 p.65 의 적용(rank A ≥ 3 에서 dim Ker A ≤ 2 를 얻는다)과 같은 발상이다. 예시와 반례는 새로 만들었다."
 status: source-checked
 added: 2026-11-16
 ---
@@ -32,7 +32,7 @@ $$\operatorname{nullity} T + \operatorname{rank} T = \dim V.$$
 
 ## 직관
 
-물체를 정면에서 눌러 납작하게 찍은 사진을 생각해 봅시다. 가로, 세로, 깊이의 세 방향 가운데 깊이 방향은 사진에서 사라지고, 가로와 세로의 두 방향이 사진에 남습니다. 사라진 방향의 수 $1$과 남은 방향의 수 $2$를 더하면 처음의 $3$입니다. 차원 정리에서 사라지는 방향은 핵, 남는 방향은 상이고, 그 수가 각각 퇴화차수와 계수입니다. 비유와 다른 점은, 정리가 말하는 "방향의 수"는 기저의 길이이고, 핵과 상은 각각 $V$와 $W$의 부분공간이라는 것입니다.
+물체를 정면에서 찍은 사진을 생각해 봅시다. 가로, 세로, 깊이의 세 방향 가운데 깊이 방향은 사진에서 사라지고, 가로와 세로의 두 방향이 사진에 남습니다. 사라진 방향의 수 $1$과 남은 방향의 수 $2$를 더하면 처음의 $3$입니다. 차원 정리에서 사라지는 방향은 핵, 남는 방향은 상이고, 그 수가 각각 퇴화차수와 계수입니다. 비유와 다른 점은, 정리가 말하는 "방향의 수"는 기저의 길이이고, 핵과 상은 각각 $V$와 $W$의 부분공간이라는 것입니다.
 
 증명은 이 그림을 그대로 따릅니다. 먼저 핵의 기저를 잡고, 거기에 벡터를 덧붙여 $V$의 기저를 만듭니다. 핵의 벡터는 $T$가 영벡터로 보내므로, 상을 만드는 것은 덧붙인 벡터들의 상뿐입니다. 덧붙인 벡터들의 상이 일차독립이라는 것은, 그렇지 않다면 덧붙인 벡터들의 자명하지 않은 일차결합이 핵에 들어가 같은 벡터를 늘린 기저로 두 가지로 표현하게 된다는 데서 나옵니다.
 
@@ -53,7 +53,7 @@ $\operatorname{Ker} T$의 기저 $u_1, \dots, u_k$를 $V$의 기저 $u_1, \dots,
 :::
 
 :::proof
-$d = \dim V$, $k = \operatorname{nullity} T$라 하자. [[rank-and-nullity|계수와 퇴화차수]]의 정의 다음의 문장에 의해 벡터공간 $\operatorname{Ker} T$에 길이 $k$인 기저 $u_1, \dots, u_k$가 있다. [[sequences-in-a-subspace|부분공간 안의 열]]의 (J4)를 $V$의 부분공간 $\operatorname{Ker} T$에 쓰면, $u$는 모든 항이 $\operatorname{Ker} T$에 속하는 $V$의 벡터의 열이고, $V$에서 [[linear-independence|일차독립]]이며, $\operatorname{span}(u_1, \dots, u_k) = \operatorname{Ker} T$이다.
+$d = \dim V$, $k = \operatorname{nullity} T$라 하자. [[rank-and-nullity|계수와 퇴화차수]]의 정의 다음의 문장에 의해 벡터공간 $\operatorname{Ker} T$에 길이 $k$인 기저 $u_1, \dots, u_k$가 있다. [[sequences-in-a-subspace|부분공간 안의 열]]의 "두 가지로 보는 열"에 의해 $u$는 모든 항이 $\operatorname{Ker} T$에 속하는 $V$의 벡터의 열이고, (J4)를 $V$의 부분공간 $\operatorname{Ker} T$에 쓰면 $u$는 $V$에서 [[linear-independence|일차독립]]이며, $\operatorname{span}(u_1, \dots, u_k) = \operatorname{Ker} T$이다.
 
 $V$는 유한차원이고 $u$는 $V$에서 일차독립이므로, [[extension-to-a-basis|일차독립인 열을 기저로 늘리기]]의 (2)에 의해 $k \le d$이고 길이 $s = d - k$인 $V$의 벡터의 열 $x_1, \dots, x_s$가 있어 $u$와 $x$를 이어 붙인 길이 $d$인 벡터의 열 $b = u_1, \dots, u_k, x_1, \dots, x_s$가 $V$의 [[basis|기저]]이다. 곧 $b_i = u_i$ ($1 \le i \le k$), $b_{k+j} = x_j$ ($1 \le j \le s$)이다.
 
@@ -84,7 +84,7 @@ $Ax = (0, 0, 0)$인 것은 정확히 $x_2 = x_3 = 0$일 때이므로 $\operatorn
 증명처럼 이 기저를 $\mathbb{R}^3$의 기저 $e_1, e_2, e_3$(표준기저의 (2))으로 늘리면, 덧붙인 벡터의 상은 행렬과 벡터의 곱의 (3)에 의해 $Ae_2 = (1, 0, 0) = e_1$, $Ae_3 = (0, 1, 0) = e_2$이고, 증명에 따르면 벡터의 열 $e_1, e_2$가 벡터공간 $\operatorname{Ran} T_A$의 기저입니다. 직접 확인해 봅니다. $e_1$, $e_2$는 $\operatorname{Ran} T_A$에 속하므로 (N3)에 의해 $\operatorname{span}(e_1, e_2) \subseteq \operatorname{Ran} T_A$이고, 거꾸로 모든 $x$에서 $Ax = (x_2, x_3, 0) = x_2 e_1 + x_3 e_2$이므로 $\operatorname{Ran} T_A \subseteq \operatorname{span}(e_1, e_2)$입니다. 또 $\alpha e_1 + \beta e_2 = (\alpha, \beta, 0)$이 영벡터이면 $\alpha = \beta = 0$이므로 $e_1, e_2$는 일차독립입니다. (J4)에 의해 $e_1, e_2$는 벡터공간 $\operatorname{Ran} T_A$의 기저이고 $\operatorname{rank} T_A = 2$입니다. $1 + 2 = 3 = \dim \mathbb{R}^3$입니다.
 :::
 
-:::counterexample[더해서 나오는 것은 공역의 차원이 아니다]
+:::counterexample[합이 공역의 차원과 다른 예]
 흔한 착각은 퇴화차수와 계수를 더하면 공역의 차원이 된다는 것입니다. 행렬
 $$B = \begin{pmatrix} 1 & 0 \\ 0 & 1 \\ 1 & 1 \end{pmatrix}$$
 에 대하여 $T_B : \mathbb{R}^2 \to \mathbb{R}^3$을 봅니다. 행 규칙으로 계산하면 $x = (x_1, x_2)$에 대하여 $Bx = (x_1, x_2, x_1 + x_2)$입니다. $Bx = (0, 0, 0)$이면 처음 두 값에서 $x_1 = x_2 = 0$이고, $(0, 0)$은 [[linear-map|(T1)]]에 의해 핵에 속하므로 $\operatorname{Ker} T_B = \{(0, 0)\}$이며, 차원의 (3)에 의해 $\operatorname{nullity} T_B = 0$입니다. [[dimension|차원]]의 (4)에 의해 $\dim \mathbb{R}^2 = 2$이므로 차원 정리에 의해 $\operatorname{rank} T_B = 2 - 0 = 2$입니다. 두 수의 합은 $0 + 2 = 2 = \dim \mathbb{R}^2$이고, $\dim \mathbb{R}^3 = 3$(차원의 (4))과 다릅니다. 차원 정리가 세는 것은 정의역의 차원입니다.

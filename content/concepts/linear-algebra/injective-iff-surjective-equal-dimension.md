@@ -7,13 +7,13 @@ field: linear-algebra
 msc: ["15A03"]
 level: undergrad
 summary: 차원이 같은 두 유한차원 벡터공간 사이의 선형사상은 단사인 것, 전사인 것, 동형사상인 것이 모두 같은 조건이다. 특히 유한차원 공간에서 자기 자신으로 가는 선형사상은 단사이면 전사이고 전사이면 단사이다.
-requires: [vector-space, function, injective-surjective-bijective, linear-combination-and-span, linear-map, kernel-and-range, injective-iff-trivial-kernel, isomorphism, dimension, independent-and-spanning-bounds, rank-and-nullity, rank-nullity-theorem, standard-basis, real-function-space, real-number-arithmetic, matrix, matrix-vector-product, well-ordering-principle, prime-number, proof-by-contradiction]
+requires: [vector-space, function, injective-surjective-bijective, linear-combination-and-span, linear-map, kernel-and-range, injective-iff-trivial-kernel, isomorphism, dimension, independent-and-spanning-bounds, rank-and-nullity, rank-nullity-theorem, standard-basis, real-function-space, real-number-arithmetic, matrix, matrix-vector-product, well-ordering-principle, prime-number, even-and-odd, proof-by-contradiction]
 proof: full
 sources:
   - ref: treil-linear-algebra-done-wrong
-    loc: "정리로는 출처에 없음(검색한 범위). 관련: 2장 3.2절, Proposition 3.8 과 그 증명, p.50–51; 2장 7.3절, Theorem 7.3 뒤의 해설, p.66"
+    loc: "정리로는 출처에 없음(검색한 범위). 관련: 2장 3.2절, Proposition 3.8 과 그 증명, p.50–51; 2장 7절 연습문제 7.1 h, p.67; 2장 7.3절, Theorem 7.3 뒤의 해설, p.66"
     checked: original
-    note: "이 정리는 출처에 이 꼴로 진술된 곳이 없다(책 전체에서 'same dimension', 'dim V = dim W', 'injective', 'surjective', 'one-to-one', 'onto' 를 검색한 범위). 출처의 Proposition 3.8(p.50)은 정사각(n × n) 행렬이 왼쪽 가역이거나 오른쪽 가역이면 가역이라고 하고, 이것이 정사각행렬에만 적용된다고 덧붙인다. 그 증명(p.50–51)은 왼쪽 역이 있으면 Ax = 0 의 해가 x = 0 하나뿐이어서 사다리꼴의 모든 열에 피벗이 있고, 정사각이면 모든 행에도 피벗이 있어 가역이라는 식으로 피벗을 센다. 2장 p.66 의 해설은 Theorem 7.2 의 1 을, 변환 A : Fⁿ → Fᵐ 의 핵이 {0} 이면 정의역과 상의 차원이 같다는 뜻으로 풀이한다. 이 항목은 일반 유한차원 공간 사이의 선형사상에 대하여 진술하고, 차원 정리와 이 사이트의 계수와 퇴화차수 (4), (5)로 증명한다. 5장 Proposition 6.3 의 증명(p.147)은 dim X = dim Y 이므로 (왼쪽 가역인) 등거리 사상이 가역이라고 하면서 괄호 안에 '왼쪽 가역인 정사각행렬은 가역이다'라고 적는다. 예시는 단사를 확인하면 Ax = b 의 해가 모든 b 에 있다는 결론을 얻는다는 점에서 출처 Proposition 3.8 의 증명(정사각행렬에서 해의 유일성으로부터 해의 존재를 얻는다)과 같은 발상이다. 첫째 반례의 두 사상은 출처 1장 6절 p.26 의 예 3, 4(열 (1, 1)ᵀ 는 왼쪽 가역이지만 오른쪽 가역이 아니고, 행 (1, 1) 은 오른쪽 가역이지만 왼쪽 가역이 아니다)와 같은 발상이다(정사각이 아닌 행렬). ℝ^ℕ 의 자리 옮김 사상의 반례와 확인 질문은 새로 만들었다(출처에 자리 옮김 사상은 없다. 'shift' 는 평행이동의 뜻으로만 나온다)."
+    note: "이 정리는 출처에 이 꼴로 진술된 곳이 없다(책 전체에서 'same dimension', 'dim V = dim W', 'injective', 'surjective', 'one-to-one', 'onto' 를 검색한 범위). 출처의 Proposition 3.8(p.50)은 정사각(n × n) 행렬이 왼쪽 가역이거나 오른쪽 가역이면 가역이라고 하고, 이것이 정사각행렬에만 적용된다고 덧붙인다. 그 증명(p.50–51)은 왼쪽 역이 있으면 Ax = 0 의 해가 x = 0 하나뿐이어서 사다리꼴의 모든 열에 피벗이 있고, 정사각이면 모든 행에도 피벗이 있어 가역이라는 식으로 피벗을 센다. 2장 p.66 의 해설은 Theorem 7.2 의 1 을, 변환 A : Fⁿ → Fᵐ 의 핵이 {0} 이면 정의역과 상의 차원이 같다는 뜻으로 풀이한다. 이 항목은 일반 유한차원 공간 사이의 선형사상에 대하여 진술하고, 차원 정리와 이 사이트의 계수와 퇴화차수 (4), (5)로 증명한다. 5장 Proposition 6.3 의 증명(p.147)은 dim X = dim Y 이므로 (왼쪽 가역인) 등거리 사상이 가역이라고 하면서 괄호 안에 '왼쪽 가역인 정사각행렬은 가역이다'라고 적는다. 출처의 참·거짓 연습문제 7.1 h(p.67)는 계수가 n 인 n × n 행렬이 가역인지 묻는데, 이것은 이 정리의 행렬판과 가깝다. 예시는 단사를 확인하면 Ax = b 의 해가 모든 b 에 있다는 결론을 얻는다는 점에서 출처 Proposition 3.8 의 증명(정사각행렬에서 해의 유일성으로부터 해의 존재를 얻는다)과 같은 발상이다. 첫째 반례의 두 사상은 출처 1장 6절 p.26 의 예 3, 4(열 (1, 1)ᵀ 는 왼쪽 가역이지만 오른쪽 가역이 아니고, 행 (1, 1) 은 오른쪽 가역이지만 왼쪽 가역이 아니다)와 같은 발상이다(정사각이 아닌 행렬). ℝ^ℕ 의 자리 옮김 사상의 반례와 확인 질문은 새로 만들었다(출처에 자리 옮김 사상은 없다. 'shift' 는 평행이동의 뜻으로만 나온다)."
 status: source-checked
 added: 2026-11-16
 ---
@@ -75,21 +75,21 @@ $n = \dim V = \dim W$라 하자. $V$가 유한차원이므로 [[rank-nullity-the
 :::
 
 :::counterexample[차원이 다른 두 예]
-차원이 다르면 단사와 전사가 서로를 따라오지 않는 예가 있습니다. 아래 두 사상에서 그렇습니다.
+차원이 다르면 단사와 전사가 서로를 따라오지 않는 예가 있습니다. 아래 두 사상에서 그렇습니다. [[dimension|차원]]의 (4), (5)에 의해 $\dim \mathbb{R}^3 = 3$, $\dim \mathbb{R}^2 = 2$, $\dim \mathbb{R} = 1$입니다.
 
 $P = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \end{pmatrix}$에 대하여 $T_P : \mathbb{R}^3 \to \mathbb{R}^2$는 행 규칙에 의해 $(x_1, x_2, x_3)$을 $(x_1, x_2)$로 보냅니다. $b = (b_1, b_2)$는 $(b_1, b_2, 0)$의 값이므로 $T_P$는 전사입니다. 그러나 행렬과 벡터의 곱의 (3)에 의해 $Pe_3$은 $P$의 셋째 열 $(0, 0)$이고 [[linear-map|(T1)]]에 의해 $T_P$의 영벡터에서의 값도 $(0, 0)$인데, $e_3 \ne (0, 0, 0)$([[standard-basis|표준기저]])이므로 $T_P$는 단사가 아닙니다.
 
-실수 $a$에서의 값이 $(2a, a)$인 함수 $J : \mathbb{R} \to \mathbb{R}^2$는 $J(a + b) = (2(a + b), a + b) = (2a + 2b, a + b) = (2a, a) + (2b, b)$이고((K3)) $J(\gamma a) = (2(\gamma a), \gamma a) = (\gamma(2a), \gamma a) = \gamma(2a, a)$이므로((K1), (K2)) 선형사상입니다. $(2a, a) = (2b, b)$이면 둘째 값에서 $a = b$이므로 $J$는 단사입니다. 그러나 $(1, 0) = (2a, a)$라면 둘째 값에서 $a = 0$이고 첫째 값에서 $1 = 2a = 2 \cdot 0 = 0$((K9))이어서 (K4)의 $0 \ne 1$에 어긋나므로, $(1, 0)$은 $J$의 값이 아니고 $J : \mathbb{R} \to \mathbb{R}^2$는 전사가 아닙니다.
+실수 $a$마다 $(2a, a) \in \mathbb{R}^2$가 하나씩 정해지므로 [[real-function-space|(G)]]에 의해 이 값을 갖는 함수 $J : \mathbb{R} \to \mathbb{R}^2$가 있습니다. $J$는 $J(a + b) = (2(a + b), a + b) = (2a + 2b, a + b) = (2a, a) + (2b, b)$이고((K3)) $J(\gamma a) = (2(\gamma a), \gamma a) = (\gamma(2a), \gamma a) = \gamma(2a, a)$이므로((K1), (K2)) 선형사상입니다. $(2a, a) = (2b, b)$이면 둘째 값에서 $a = b$이므로 $J$는 단사입니다. 그러나 $(1, 0) = (2a, a)$라면 둘째 값에서 $a = 0$이고 첫째 값에서 $1 = 2a = 2 \cdot 0 = 0$((K9))이어서 (K4)의 $0 \ne 1$에 어긋나므로, $(1, 0)$은 $J$의 값이 아니고 $J : \mathbb{R} \to \mathbb{R}^2$는 전사가 아닙니다.
 :::
 
 :::counterexample[ℝ^ℕ의 자리 옮김: 단사이지만 전사가 아니다]
 마지막 문장에서 $V$가 유한차원이라는 가정을 뺄 수 없습니다. [[independent-and-spanning-bounds|일차독립인 열과 생성하는 열의 길이]]의 (5)에 의해 무한차원인 $V = \mathbb{R}^{\mathbb{N}}$에서 이를 봅니다.
 
-**사상 정하기.** 자연수는 양의 정수이므로 [[prime-number|(Z1)]]에 의해 $1$ 이상입니다. 자연수 $k \ne 1$이면 $k \ge 1$이고 $k \ne 1$이므로 [[well-ordering-principle|정렬 원리]]의 진술에서 정한 $\ge$의 뜻에 의해 $k > 1$이고, (Z1)에 의해 $k \ge 2$, (Z7)에 의해 $k - 1 \ge 1$입니다. $k - 1$은 정수이므로 $k - 1 \in \mathbb{N}$입니다. 그러므로 $f \in \mathbb{R}^{\mathbb{N}}$마다 각 $k \in \mathbb{N}$에 실수($k = 1$이면 $0$, $k \ne 1$이면 $f(k - 1)$)가 하나씩 정해지고, [[real-function-space|(G)]]에 의해 이 값을 갖는 $Sf \in \mathbb{R}^{\mathbb{N}}$이 있습니다. 다시 (G)에 의해 $f$에서의 값이 $Sf$인 함수 $S : \mathbb{R}^{\mathbb{N}} \to \mathbb{R}^{\mathbb{N}}$이 있습니다. 값을 한 칸씩 뒤로 미는 사상입니다.
+**사상 정하기.** 자연수는 양의 정수이므로 [[prime-number|(Z1)]]에 의해 $1$ 이상입니다. 자연수 $k \ne 1$이면 $k \ge 1$이고 $k \ne 1$이므로 [[well-ordering-principle|정렬 원리]]의 진술에서 정한 $\ge$의 뜻에 의해 $k > 1$이고, (Z1)에 의해 $k \ge 2$, (Z7)에 의해 $k - 1 \ge 1$입니다. 정수의 합·곱은 정수라는 기본 성질([[even-and-odd]]에서 증명 없이 받아들임)에 의해 $k - 1$은 정수이므로 $k - 1 \in \mathbb{N}$입니다. 그러므로 $f \in \mathbb{R}^{\mathbb{N}}$마다 각 $k \in \mathbb{N}$에 실수($k = 1$이면 $0$, $k \ne 1$이면 $f(k - 1)$)가 하나씩 정해지고, [[real-function-space|(G)]]에 의해 이 값을 갖는 $Sf \in \mathbb{R}^{\mathbb{N}}$이 있습니다. 다시 (G)에 의해 $f$에서의 값이 $Sf$인 함수 $S : \mathbb{R}^{\mathbb{N}} \to \mathbb{R}^{\mathbb{N}}$이 있습니다. 값을 한 칸씩 뒤로 미는 사상입니다.
 
 **선형.** $\mathbb{R}^{\mathbb{N}}$의 덧셈과 스칼라배는 값마다의 계산이고([[real-function-space|함수의 공간]]의 진술), [[function|함수]]의 같음에 의해 정의역의 모든 점에서 값이 같은 두 함수는 같습니다. $f, g \in \mathbb{R}^{\mathbb{N}}$와 실수 $\alpha$에 대하여, $k = 1$에서는 $(S(f + g))(1) = 0 = 0 + 0 = (Sf + Sg)(1)$이고 $(S(\alpha f))(1) = 0 = \alpha \cdot 0 = (\alpha Sf)(1)$입니다((K4), (K9)). $k \ne 1$에서는 $(S(f + g))(k) = (f + g)(k - 1) = f(k - 1) + g(k - 1) = (Sf)(k) + (Sg)(k) = (Sf + Sg)(k)$이고 $(S(\alpha f))(k) = (\alpha f)(k - 1) = \alpha f(k - 1) = \alpha (Sf)(k) = (\alpha Sf)(k)$입니다. 따라서 $S(f + g) = Sf + Sg$, $S(\alpha f) = \alpha Sf$이고 $S$는 선형사상입니다.
 
-**단사.** $Sf = Sg$라 하자. 자연수 $k$에 대하여 (Z8)과 (Z7)에 의해 $k = k + 0 < k + 1$이고 $k \ge 1$이므로 (Z6)에 의해 $1 < k + 1$, 곧 $k + 1$은 자연수이고 (Z5)에 의해 $k + 1 \ne 1$입니다. $(k + 1) - 1 = k$이므로 $S$의 정의에 의해 $f(k) = (Sf)(k + 1) = (Sg)(k + 1) = g(k)$이고, 함수의 같음에 의해 $f = g$입니다. $S$는 단사입니다.
+**단사.** $Sf = Sg$라 하자. 자연수 $k$에 대하여 (Z8)과 (Z7)에 의해 $k = k + 0 < k + 1$이고 $k \ge 1$이므로 (Z6)에 의해 $1 < k + 1$이고, 같은 기본 성질에 의해 $k + 1$은 정수이므로 자연수이며, (Z5)에 의해 $k + 1 \ne 1$입니다. $(k + 1) - 1 = k$이므로 $S$의 정의에 의해 $f(k) = (Sf)(k + 1) = (Sg)(k + 1) = g(k)$이고, 함수의 같음에 의해 $f = g$입니다. $S$는 단사입니다.
 
 **전사가 아님.** 일차독립인 열과 생성하는 열의 길이의 (5)의 $\varepsilon_1$은 $1$에서의 값이 $1$입니다. 모든 $f$에서 $(Sf)(1) = 0$이고 (K4)에 의해 $0 \ne 1$이므로 $Sf \ne \varepsilon_1$입니다. 따라서 $S : \mathbb{R}^{\mathbb{N}} \to \mathbb{R}^{\mathbb{N}}$은 전사가 아닙니다.
 :::

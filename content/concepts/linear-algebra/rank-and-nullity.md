@@ -12,7 +12,7 @@ sources:
   - ref: treil-linear-algebra-done-wrong
     loc: "2장 7절 Fundamental subspaces of a matrix. Rank., 첫머리와 Definition(계수), p.59–60"
     checked: original
-    note: "출처는 선형변환(행렬) A 의 계수를 상의 차원으로, 곧 rank A := dim Ran A 로 정의한다(p.60). 그 앞(p.59)에서 핵을 Ker A = Null A := {v ∈ V : Av = 0} 로, 상을 Ran A 로 다시 적는다. 'nullity'라는 낱말은 출처에 나오지 않는다(책 전체를 검색한 범위). 출처는 핵의 차원을 언제나 dim Ker A 로 쓴다(예: p.64 의 Theorem 7.2). 이 항목은 그 수를 퇴화차수(nullity)라 부르고 기호 nullity T 로 쓴다. 이 항목은 정의역 V 가 유한차원이라는 가정을 진술에 두고, 핵과 상이 유한차원이어서 두 차원이 정해진다는 것(1)을 증명한다. (1)–(5)와 그 증명은 이 사이트가 덧붙였다. 출처의 참·거짓 연습문제 7.1 g(p.67)는 n × n 행렬의 계수가 n 이하인지 묻는데, 이것은 (2), (3)의 행렬판에 해당한다. 출처는 선형사상을 A 로 쓰고 이 항목은 T 로 쓴다. 예시와 반례와 확인 질문은 새로 만들었다."
+    note: "출처는 선형변환(행렬) A 의 계수를 상의 차원으로, 곧 rank A := dim Ran A 로 정의한다(p.60). 그 앞(p.59)에서 핵을 Ker A = Null A := {v ∈ V : Av = 0} 로, 상을 Ran A 로 다시 적는다. 'nullity'라는 낱말은 출처에 나오지 않는다(책 전체를 검색한 범위). 출처는 핵의 차원을 언제나 dim Ker A 로 쓴다(예: p.64 의 Theorem 7.2). 이 항목은 그 수를 퇴화차수(nullity)라 부르고 기호 nullity T 로 쓴다. 이 항목은 정의역 V 가 유한차원이라는 가정을 진술에 두고, 핵과 상이 유한차원이어서 두 차원이 정해진다는 것(1)을 증명한다. (1)–(5)의 증명은 이 사이트의 것이다. (2)의 rank T ≤ dim V 는 출처 연습문제 7.5(p.68, A : X → Y 이고 V 가 X 의 부분공간이면 dim AV ≤ dim V)의 V = X 인 경우이고, (3)은 연습문제 7.4(p.67–68)의 Remark(V ⊂ W 이면 dim V ≤ dim W)와 같은 논증이며, 출처는 둘 다 연습문제로 둔다. 출처의 참·거짓 연습문제 7.1 g(p.67)는 n × n 행렬의 계수가 n 이하인지 묻는데, 이것은 (2), (3)의 행렬판에 해당한다. 출처는 선형사상을 A 로 쓰고 이 항목은 T 로 쓴다. 첫째 확인 질문(계수가 0 이면 영사상)은 출처 연습문제 7.1 b(p.67, m × n 영행렬만이 계수 0 인 m × n 행렬인가)와 같은 발상이다. 예시와 반례와 둘째 확인 질문은 새로 만들었다."
 status: source-checked
 added: 2026-11-16
 ---
@@ -47,9 +47,11 @@ Since (1) makes both dimensions defined, we define the following. The **rank** o
 
 물체에 바로 위에서 빛을 비추면 바닥에 그림자가 생깁니다. 물체의 각 점이 그림자의 한 점으로 옮겨지는데, 위아래 방향의 차이는 그림자에서 사라집니다. 선형사상에서 이 "사라지는 방향"에 해당하는 것이 핵이고, 그림자가 놓이는 곳에 해당하는 것이 상입니다. 계수는 상의 차원, 퇴화차수는 핵의 차원이므로, 이 그림자에서는 계수가 $2$(바닥), 퇴화차수가 $1$(위아래)입니다. 비유와 다른 점은, 선형사상의 상은 물체 하나의 그림자가 아니라 정의역 전체가 옮겨진 부분공간이라는 것입니다.
 
-계수와 퇴화차수를 정하려면 상과 핵이 유한차원이어야 합니다. 정의역 $V$가 유한차원이라는 가정이 여기서 쓰입니다. 핵은 $V$의 부분공간이라서 유한차원이고, 상은 $V$의 기저의 상으로 생성되므로 공역 $W$가 아무리 커도 유한차원입니다. 그래서 계수와 퇴화차수 모두 $\dim V$를 넘지 않습니다.
+계수와 퇴화차수를 정하려면 상과 핵이 유한차원이어야 합니다. 정의역 $V$가 유한차원이라는 가정이 여기서 쓰입니다. 핵은 $V$의 부분공간이라서 유한차원이고, 상은 $V$의 기저의 상으로 생성되므로 공역 $W$가 아무리 커도 유한차원입니다. 또 핵은 $V$ 안에 있고 상은 길이 $\dim V$인 열로 생성되므로, 계수와 퇴화차수 모두 $\dim V$를 넘지 않습니다.
 
-(4)와 (5)는 단사와 전사를 수 하나로 바꿔 줍니다. 단사는 [[injective-iff-trivial-kernel|핵이 영벡터뿐인 것]]과 같고, 전사는 [[kernel-and-range|상이 공역 전체인 것]]과 같은데, 이 조건들을 각각 "퇴화차수가 $0$", "계수가 $\dim W$"로 셀 수 있습니다.
+(4)와 (5)는 단사와 전사를 수 하나로 바꿔 줍니다. 단사는 [[injective-iff-trivial-kernel|핵이 영벡터뿐인 것]]과 같고, 전사는 [[kernel-and-range|상이 공역 전체인 것]]과 같은데, 이 조건들을 각각 "퇴화차수가 $0$", "계수가 $\dim W$"(전사 쪽은 $W$가 유한차원일 때)로 셀 수 있습니다.
+
+이 항목의 계수(rank)는 일차결합의 계수(coefficients)와 다른 말입니다. 한자로는 階數와 係數로 다릅니다. 헷갈리지 않도록 이 단원에서는 일차결합의 계수를 "일차결합의 계수", "좌표" 또는 "실수의 열"로 풀어 씁니다.
 
 ## 성질의 증명
 
@@ -86,7 +88,7 @@ $$A = \begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \end{pmatrix}$$
 :::
 
 :::example[공역이 무한차원이어도 계수가 정해진다]
-[[independent-and-spanning-bounds|일차독립인 열과 생성하는 열의 길이]]의 (5)에 의해 $\mathbb{R}^{\mathbb{N}}$은 무한차원이고, 거기서 쓰는 $\varepsilon_1 \in \mathbb{R}^{\mathbb{N}}$은 $1$에서의 값이 $1$이고 다른 자연수에서의 값이 $0$인 함수입니다. 실수 $a$에서의 값이 $a\varepsilon_1$인 함수 $T : \mathbb{R} \to \mathbb{R}^{\mathbb{N}}$을 생각합니다. [[vector-space|벡터공간]]의 (V8)과 (V6)에 의해 $T(a + b) = (a + b)\varepsilon_1 = a\varepsilon_1 + b\varepsilon_1$이고 $T(\gamma a) = (\gamma a)\varepsilon_1 = \gamma(a\varepsilon_1)$이므로 $T$는 선형사상입니다.
+[[independent-and-spanning-bounds|일차독립인 열과 생성하는 열의 길이]]의 (5)에 의해 $\mathbb{R}^{\mathbb{N}}$은 무한차원이고, 거기서 쓰는 $\varepsilon_1 \in \mathbb{R}^{\mathbb{N}}$은 $1$에서의 값이 $1$이고 다른 자연수에서의 값이 $0$인 함수입니다. 실수 $a$마다 $a\varepsilon_1$이 하나씩 정해지므로 [[real-function-space|(G)]]에 의해 이 값을 갖는 함수 $T : \mathbb{R} \to \mathbb{R}^{\mathbb{N}}$이 있습니다. [[vector-space|벡터공간]]의 (V8)과 (V6)에 의해 $T(a + b) = (a + b)\varepsilon_1 = a\varepsilon_1 + b\varepsilon_1$이고 $T(\gamma a) = (\gamma a)\varepsilon_1 = \gamma(a\varepsilon_1)$이므로 $T$는 선형사상입니다.
 
 $\operatorname{Ran} T = \{a\varepsilon_1 : a \text{는 실수}\}$는 (N4)에 의해 $\operatorname{span}(\varepsilon_1)$입니다. $\varepsilon_1$의 $1$에서의 값이 $1 \ne 0$이므로 $\varepsilon_1$은 영벡터(모든 값이 $0$인 함수, [[real-function-space|함수의 공간]]의 (1))가 아니고, (I4)와 부분공간의 차원의 (4)에 의해 $\operatorname{rank} T = 1$입니다. 또 $a\varepsilon_1$이 영벡터이면 $1$에서의 값을 비교해 $a \cdot 1 = 0$, 곧 (K4)에 의해 $a = 0$입니다. $\operatorname{Ker} T$는 부분공간이므로 [[subspace|(S1)]]에 의해 $0$을 원소로 가지고, 그러므로 $\operatorname{Ker} T = \{0\}$이며 [[dimension|차원]]의 (3)에 의해 $\operatorname{nullity} T = 0$입니다. 공역 $\mathbb{R}^{\mathbb{N}}$의 차원은 정의되지 않지만 $T$의 계수와 퇴화차수는 정해집니다.
 :::
@@ -98,7 +100,7 @@ $\operatorname{Ran} T = \{a\varepsilon_1 : a \text{는 실수}\}$는 (N4)에 의
 ## 확인 질문
 
 :::check[$V$가 유한차원이고 $T : V \to W$가 선형사상이며 $\operatorname{rank} T = 0$이면 $T$는 어떤 사상인가?]
-영사상입니다. [[dimension|차원]]의 (3)을 벡터공간 $\operatorname{Ran} T$(영벡터는 [[subspace|(P1)]]에 의해 $0_W$)에 쓰면 $\operatorname{Ran} T = \{0_W\}$입니다. 따라서 모든 $v \in V$에서 $Tv \in \operatorname{Ran} T$이므로 $Tv = 0_W$이고, $T$는 [[linear-map-examples|선형사상의 예]] (1)의 영사상 $o : V \to W$와 정의역이 같고 모든 점에서 값이 같으므로 [[function|함수]]의 같음에 의해 $T = o$입니다.
+영사상입니다. 이 항목의 (1)에 의해 $\operatorname{Ran} T$는 유한차원이므로, [[dimension|차원]]의 (3)을 벡터공간 $\operatorname{Ran} T$(영벡터는 [[subspace|(P1)]]에 의해 $0_W$)에 쓰면 $\operatorname{Ran} T = \{0_W\}$입니다. 따라서 모든 $v \in V$에서 $Tv \in \operatorname{Ran} T$이므로 $Tv = 0_W$이고, $T$는 [[linear-map-examples|선형사상의 예]] (1)의 영사상 $o : V \to W$와 정의역이 같고 모든 점에서 값이 같으므로 [[function|함수]]의 같음에 의해 $T = o$입니다.
 :::
 
 :::check[선형사상 $T : \mathbb{R}^2 \to \mathbb{R}^3$은 전사일 수 있는가?]
