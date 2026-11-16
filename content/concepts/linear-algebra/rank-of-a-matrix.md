@@ -12,8 +12,9 @@ sources:
   - ref: treil-linear-algebra-done-wrong
     loc: "2장 7절 Fundamental subspaces of a matrix. Rank., 첫머리와 Definition, p.59–60; 같은 절 연습문제 7.1, 7.4, 7.5, p.67–68"
     checked: original
-    note: "출처는 m × n 행렬 A 를 Fⁿ 에서 Fᵐ 로의 사상으로 보고, 행렬과 벡터의 곱의 '열과 좌표' 규칙에서 Ran A 의 모든 원소가 A 의 열의 일차결합이라서 Ran A 를 열공간(column space, Col A)이라고도 부른다고 적는다(p.60). 계수는 선형변환(행렬)에 대하여 rank A := dim Ran A 로 정의한다(p.60). 이 항목은 열공간을 열들의 생성으로 정의하고 matrix-vector-product (6)으로 Ran T_A 와 같음을 쓰며, rank A 를 rank T_A 로 정한다. 출처는 행렬과 사상을 같은 기호 A 로 쓰고 이 사이트는 T_A 로 구별한다. (6)은 출처의 참·거짓 연습문제 7.1 b(p.67, m × n 영행렬만이 계수 0 인 m × n 행렬인가), (1)의 n × n 인 경우는 7.1 g(n × n 행렬의 계수는 n 이하인가), (5)의 한 방향은 7.1 h(계수가 n 인 n × n 행렬은 가역인가)가 묻는다. (2)는 7.1 e(계수는 일차독립인 열의 최대 개수인가)와 관련된다. (7)은 출처가 연습문제 7.4(p.67–68, dim AV ≤ rank A 와 rank(AB) ≤ rank A)와 7.5(p.68, dim AV ≤ dim V 와 rank(AB) ≤ rank B)로 둔다. (1)–(7)의 증명은 이 사이트의 것이다. 예시와 반례와 확인 질문은 새로 만들었다."
-status: source-checked
+    note: "출처는 m × n 행렬 A 를 Fⁿ 에서 Fᵐ 로의 사상으로 보고, 행렬과 벡터의 곱의 '열과 좌표' 규칙에서 Ran A 의 모든 원소가 A 의 열의 일차결합이라서 Ran A 를 열공간(column space, Col A)이라고도 부른다고 적는다(p.60). 계수는 선형변환(행렬)에 대하여 rank A := dim Ran A 로 정의한다(p.60). 이 항목은 열공간을 열들의 생성으로 정의하고 matrix-vector-product (6)으로 Ran T_A 와 같음을 쓰며, rank A 를 rank T_A 로 정한다. 출처는 행렬과 사상을 같은 기호 A 로 쓰고 이 사이트는 T_A 로 구별한다. (6)은 출처의 참·거짓 연습문제 7.1 b(p.67, m × n 영행렬만이 계수 0 인 m × n 행렬인가), (1)의 n × n 인 경우는 7.1 g(n × n 행렬의 계수는 n 이하인가), (5)의 한 방향은 7.1 h(계수가 n 인 n × n 행렬은 가역인가)가 묻는다. (2)는 7.1 e(계수는 일차독립인 열의 최대 개수인가)와 관련된다. (7)은 출처가 연습문제 7.4(p.67–68, dim AV ≤ rank A 와 rank(AB) ≤ rank A)와 7.5(p.68, dim AV ≤ dim V 와 rank(AB) ≤ rank B)로 둔다. (1)–(7)의 증명은 이 사이트의 것이다. 첫째 확인 질문은 출처 2장 연습문제 3.5(p.51, F⁴ 의 벡터 5 개가 일차독립일 수 있는가)와 같은 발상이다. 예시와 반례와 둘째 확인 질문은 새로 만들었다."
+status: reviewed
+review_note: "2026-11-16 작성자의 자기 검토 뒤 독립 검토 통과(전반 2회, 후반 1회). 출처의 연습문제와 같은 발상임을 메모에 밝히고, 틀린 일반화와 인용 누락을 보완했다. 마지막 수정은 지휘자가 변경분을 확인했다."
 added: 2026-11-16
 ---
 
@@ -28,7 +29,7 @@ $A$의 **열공간**(column space)은 $\mathbb{R}^m$의 부분공간 $\operatorn
 4. $\operatorname{nullity} T_A + \operatorname{rank} A = n$이다.
 5. $m = n$이면, $A$가 [[invertible-matrix|가역]]인 것은 정확히 $\operatorname{rank} A = n$일 때이다.
 6. $\operatorname{rank} A = 0$인 것은 정확히 $A$가 영행렬일 때이다.
-7. $r$이 자연수이고 $B$가 $n \times r$ 행렬이면 $\operatorname{rank}(AB) \le \operatorname{rank} A$이고 $\operatorname{rank}(AB) \le \operatorname{rank} B$이다.
+7. $r$이 자연수이고 $B$가 $n \times r$ 행렬이면 $\operatorname{Col}(AB) \subseteq \operatorname{Col} A$이고, $\operatorname{rank}(AB) \le \operatorname{rank} A$이며 $\operatorname{rank}(AB) \le \operatorname{rank} B$이다.
 :::
 
 :::english
@@ -42,7 +43,7 @@ The **column space** of $A$ is the subspace $\operatorname{Col} A = \operatornam
 4. $\operatorname{nullity} T_A + \operatorname{rank} A = n$.
 5. If $m = n$, then $A$ is invertible exactly when $\operatorname{rank} A = n$.
 6. $\operatorname{rank} A = 0$ exactly when $A$ is the zero matrix.
-7. If $r$ is a natural number and $B$ is an $n \times r$ matrix, then $\operatorname{rank}(AB) \le \operatorname{rank} A$ and $\operatorname{rank}(AB) \le \operatorname{rank} B$.
+7. If $r$ is a natural number and $B$ is an $n \times r$ matrix, then $\operatorname{Col}(AB) \subseteq \operatorname{Col} A$, and $\operatorname{rank}(AB) \le \operatorname{rank} A$ and $\operatorname{rank}(AB) \le \operatorname{rank} B$.
 :::
 
 ## 직관
@@ -74,7 +75,7 @@ $\operatorname{rank} A = 0$이라 하자. 벡터공간 $\operatorname{Col} A$는
 
 **(7)** [[matrix-product|행렬의 곱]]의 (1)에 의해 모든 $z \in \mathbb{R}^r$에서 $(AB)z = A(Bz)$이다.
 
-첫째 부등식. $y \in \operatorname{Ran} T_{AB}$이면 $y = (AB)z = A(Bz)$인 $z$가 있으므로 $y \in \operatorname{Ran} T_A$이다. 곧 $\operatorname{Ran} T_{AB} \subseteq \operatorname{Ran} T_A$이고, 둘 다 $\mathbb{R}^m$의 부분공간이며([[kernel-and-range|핵과 상]]의 (1)) $\operatorname{Ran} T_A$는 유한차원이다(계수와 퇴화차수의 (1)). [[dimension-of-subspace|부분공간의 차원]]의 (5)를 $\mathbb{R}^m$의 두 부분공간 $\operatorname{Ran} T_{AB} \subseteq \operatorname{Ran} T_A$에 쓰면 $\operatorname{rank}(AB) \le \operatorname{rank} A$이다.
+첫째 부등식. $y \in \operatorname{Ran} T_{AB}$이면 $y = (AB)z = A(Bz)$인 $z$가 있으므로 $y \in \operatorname{Ran} T_A$이다. 곧 $\operatorname{Col}(AB) = \operatorname{Ran} T_{AB} \subseteq \operatorname{Ran} T_A = \operatorname{Col} A$이고, 둘 다 $\mathbb{R}^m$의 부분공간이며([[kernel-and-range|핵과 상]]의 (1)) $\operatorname{Ran} T_A$는 유한차원이다(계수와 퇴화차수의 (1)). [[dimension-of-subspace|부분공간의 차원]]의 (5)를 $\mathbb{R}^m$의 두 부분공간 $\operatorname{Ran} T_{AB} \subseteq \operatorname{Ran} T_A$에 쓰면 $\operatorname{rank}(AB) \le \operatorname{rank} A$이다.
 
 둘째 부등식. $s = \operatorname{rank} B$라 하면 벡터공간 $\operatorname{Ran} T_B$에 길이 $s$인 기저 $y_1, \dots, y_s$가 있다(계수와 퇴화차수의 정의 다음의 문장). [[sequences-in-a-subspace|부분공간 안의 열]]의 "두 가지로 보는 열"과 (J4)에 의해 $y$는 모든 항이 $\operatorname{Ran} T_B$에 속하는 $\mathbb{R}^n$의 벡터의 열이고 $\operatorname{span}(y_1, \dots, y_s) = \operatorname{Ran} T_B$이다. 핵과 상의 (2)를 $T_A$와 이 열에 쓰면
 $$\{Ax : x \in \operatorname{Ran} T_B\} = \operatorname{span}(Ay_1, \dots, Ay_s)$$
@@ -89,7 +90,7 @@ $$A = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \end{pmatrix}$$
 :::
 
 :::counterexample[곱의 계수가 두 계수보다 작을 수 있다]
-이 항목의 (7)의 부등식에서 등호가 성립한다고 생각하기 쉽지만 그렇지 않은 예가 있습니다. $A = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}$, $B = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}$이라 합시다. $AB$의 열은 $A\mathbf{b}_1 = 0(1, 0) + 0(0, 0) = (0, 0)$과 $A\mathbf{b}_2 = 0(1, 0) + 1(0, 0) = (0, 0)$이므로 영행렬의 열은 모두 영벡터이므로 [[matrix|행렬]]의 (3)에 의해 $AB$는 영행렬이고, 이 항목의 (6)에 의해 $\operatorname{rank}(AB) = 0$입니다. 한편 $A$와 $B$는 $0$이 아닌 성분이 있어 영행렬이 아니므로 이 항목의 (6)에 의해 계수가 $0$이 아닙니다. 계수는 $0$ 이상의 정수이므로 [[well-ordering-principle|정렬 원리]]의 진술에서 정한 $\ge$의 뜻에 의해 $0$보다 크고, [[prime-number|(Z1)]]에 의해 $\operatorname{rank} A$와 $\operatorname{rank} B$는 $1$ 이상입니다. 이 예에서 $\operatorname{rank}(AB)$는 두 계수 가운데 작은 쪽보다도 작습니다.
+이 항목의 (7)의 부등식에서 등호가 성립한다고 생각하기 쉽지만 그렇지 않은 예가 있습니다. $A = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}$, $B = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}$이라 합시다. $AB$의 열은 $A\mathbf{b}_1 = 0(1, 0) + 0(0, 0) = (0, 0)$과 $A\mathbf{b}_2 = 0(1, 0) + 1(0, 0) = (0, 0)$입니다. $AB$의 두 열은 모두 영벡터이고 $2 \times 2$ 영행렬의 열도 모두 영벡터이므로, [[matrix|행렬]]의 (3)에 의해 $AB$는 영행렬이고, 이 항목의 (6)에 의해 $\operatorname{rank}(AB) = 0$입니다. 한편 $A$와 $B$는 $0$이 아닌 성분이 있어 영행렬이 아니므로 이 항목의 (6)에 의해 계수가 $0$이 아닙니다. 계수는 $0$ 이상의 정수이므로 [[well-ordering-principle|정렬 원리]]의 진술에서 정한 $\ge$의 뜻에 의해 $0$보다 크고, [[prime-number|(Z1)]]에 의해 $\operatorname{rank} A$와 $\operatorname{rank} B$는 $1$ 이상입니다. 이 예에서 $\operatorname{rank}(AB)$는 두 계수 가운데 작은 쪽보다도 작습니다.
 :::
 
 ## 확인 질문
