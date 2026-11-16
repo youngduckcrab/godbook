@@ -42,7 +42,7 @@ In the proof we cite (Z1) of the entry on prime numbers and (Z5)–(Z8), (L1)–
 
 번호를 $1, 2, 3, \dots$로 붙여 나가면 끝이 없다는 것은 누구나 압니다. 이 항목은 그것을 "전단사로 센 결과가 있을 수 없다"는 말로 바꿔 증명합니다. 만약 $\mathbb{N}$이 원소를 $n$개 가진다면 $\{1, \dots, n+1\}$도 $\mathbb{N}$의 일부이므로, 그 일부분이 전체보다 원소가 많다는 모순이 생깁니다. 이 모순을 만드는 도구가 [[subset-of-finite-set|유한집합의 부분집합]]입니다.
 
-비유가 어긋나는 곳은 "무한집합"의 뜻입니다. 이 사이트에서 무한집합은 "유한집합이 아닌 집합", 곧 어떤 $n$에 대해서도 원소를 $n$개 갖지 않는 집합입니다. "무한히 크다"는 느낌과는 다르고, 무한집합이라고 해서 모두 크기가 같은 것도 아닙니다.
+비유가 어긋나는 곳은 "무한집합"의 뜻입니다. 이 사이트에서 무한집합은 "유한집합이 아닌 집합", 곧 어떤 $n$에 대해서도 원소를 $n$개 갖지 않는 집합입니다. "무한히 크다"는 느낌과는 다르고입니다.
 
 ## 증명
 
@@ -57,7 +57,7 @@ $\{1, \dots, n+1\}$이 $\mathbb{N}$의 부분집합인지부터 확인하세요.
 :::proof
 **1의 증명.** [[proof-by-contradiction]]의 틀을 따른다. $\mathbb{N}$이 유한집합이라고 가정하면 어떤 정수 $n \ge 0$에 대하여 $\mathbb{N}$이 원소를 $n$개 갖는다. $i \in \{1, \dots, n+1\}$이면 $1 \le i$이고 (Z8)의 $0 < 1$과 (Z6)에 의해 $0 < i$이므로 $i \in \mathbb{N}$이다. 따라서 $\{1, \dots, n+1\} \subseteq \mathbb{N}$이다. [[subset-of-finite-set]]의 1에 의해 $|\{1, \dots, n+1\}| \le n$이다. 그런데 [[finite-set]]의 (F2)에 의해 $\{1, \dots, n+1\}$은 원소를 $n + 1$개 가지므로 $|\{1, \dots, n+1\}| = n + 1$이다. 따라서 $n + 1 \le n$이고, (L3)의 $n < n + 1$과 함께 (L1)에 어긋난다. 따라서 $\mathbb{N}$은 유한집합이 아니다.
 
-**2의 증명.** $\mathbb{N} \subseteq C$이고 $C$가 유한집합이라 가정하면 $C$는 원소를 $n$개 갖는 정수 $n \ge 0$이 있다. [[subset-of-finite-set]]의 1에 의해 $\mathbb{N}$은 유한집합이다. 이는 1에 어긋나므로 $C$는 무한집합이다. $\mathbb{Z}$에 대해서는 $\mathbb{N}$의 원소가 모두 정수이므로 $\mathbb{N} \subseteq \mathbb{Z}$이다.
+**2의 증명.** $\mathbb{N} \subseteq C$이고 $C$가 유한집합이라 가정하면 $C$가 원소를 $n$개 갖게 하는 정수 $n \ge 0$이 있다. [[subset-of-finite-set]]의 1에 의해 $\mathbb{N}$은 유한집합이다. 이는 1에 어긋나므로 $C$는 무한집합이다. $\mathbb{Z}$에 대해서는 $\mathbb{N}$의 원소가 모두 정수이므로 $\mathbb{N} \subseteq \mathbb{Z}$이다.
 
 **3의 증명.** $f : \mathbb{N} \to A$가 전단사이고 $A$가 유한집합이라 가정한다. $A$가 원소를 $n$개 갖는 정수 $n \ge 0$이 있고 전단사 $h : \{1, \dots, n\} \to A$가 있다. [[finite-set]]의 (F3)에 의해 $f^{-1} : A \to \mathbb{N}$이 전단사이므로, $f^{-1} \circ h : \{1, \dots, n\} \to \mathbb{N}$은 [[composition-preserves-injectivity-and-surjectivity|합성에 관한 정리]]의 3번에 의해 전단사이다. 곧 $\mathbb{N}$이 원소를 $n$개 갖게 되어 $\mathbb{N}$이 유한집합이라는 결론이 되는데, 1에 어긋난다. 따라서 $A$는 무한집합이다. $\blacksquare$
 :::
@@ -65,7 +65,7 @@ $\{1, \dots, n+1\}$이 $\mathbb{N}$의 부분집합인지부터 확인하세요.
 ## 예시와 반례
 
 :::example[$\mathbb{Z}$와 큰 자연수의 집합]
-$\mathbb{N}$의 원소는 모두 정수이므로 $\mathbb{N} \subseteq \mathbb{Z}$이고 2에 의해 $\mathbb{Z}$는 무한집합입니다. 또 $F = \{k \in \mathbb{N} : k \ge 5\}$에 대하여 $g(n) = n + 4$로 정한 $g : \mathbb{N} \to F$는 단사이고($a + 4 = a' + 4$이면 $a = a'$) 전사입니다($k \ge 5$이면 $k - 4 \ge 1$이므로 $k - 4 \in \mathbb{N}$이고 $g(k - 4) = k$). 따라서 $F$는 가산 무한이고 3에 의해 무한집합입니다.
+$\mathbb{N}$의 원소는 모두 정수이므로 $\mathbb{N} \subseteq \mathbb{Z}$이고 2에 의해 $\mathbb{Z}$는 무한집합입니다. 또 $F = \{k \in \mathbb{N} : k \ge 5\}$에 대하여 $g(n) = n + 4$로 정한 $g : \mathbb{N} \to F$는 값이 $F$에 있고($n \ge 1$이면 (Z7)에 의해 $n + 4 \ge 5$), 단사이고($a + 4 = a' + 4$이면 $a = a'$) 전사입니다($k \ge 5$이면 $k - 4 \ge 1$이므로 $k - 4 \in \mathbb{N}$이고 $g(k - 4) = k$). 따라서 $F$는 가산 무한이고 3에 의해 무한집합입니다.
 :::
 
 :::counterexample[무한집합이면 비가산인가?]
