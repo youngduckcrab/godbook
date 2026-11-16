@@ -108,6 +108,6 @@ $\mathbb{R}^2$의 열 $(1, 2), (2, 4)$는 길이가 $2 = \dim \mathbb{R}^2$이�
 그렇습니다. $\alpha u + \beta(u + v) = 0_V$라 하면(길이 $2$인 일차결합은 [[finite-sum-of-vectors|(H0)]]에 의해 두 벡터의 합입니다) (V7), (V2), (V8)에 의해 $(\alpha + \beta)u + \beta v = 0_V$이고, $u$, $v$가 일차독립이므로 $\alpha + \beta = 0$, $\beta = 0$, 따라서 $\alpha = 0$입니다. 곧 $u$, $u + v$는 일차독립입니다. $V$에 길이 $2$인 기저 $u$, $v$가 있으므로 [[dimension|차원]]의 (2)에 의해 $\dim V = 2$이고, (3)에 의해 기저입니다. 생성하는지는 따로 보이지 않아도 됩니다.
 :::
 
-:::check[$\mathbb{R}^{\mathbb{N}}$에서 $\varepsilon_3$은 $\operatorname{span}(\varepsilon_1, \varepsilon_2)$에 속하는가?]
-속하지 않습니다. 증명의 계산과 같이 $\alpha \varepsilon_1 + \beta \varepsilon_2$의 $3$에서의 값은 $\alpha \cdot 0 + \beta \cdot 0 = 0$인데 $\varepsilon_3(3) = 1$이고 $0 \ne 1$이기 때문입니다.
+:::check[$\mathbb{R}^{\mathbb{N}}$에서 $\varepsilon_1 + \varepsilon_2$와 $\varepsilon_1 - \varepsilon_2$로 된 열은 일차독립인가?]
+그렇습니다. $\alpha(\varepsilon_1 + \varepsilon_2) + \beta(\varepsilon_1 - \varepsilon_2)$가 모든 값이 $0$인 함수라 합시다. $1$에서의 값을 보면 $\varepsilon_1(1) = 1$, $\varepsilon_2(1) = 0$이므로 $\alpha(1 + 0) + \beta(1 - 0) = \alpha + \beta = 0$이고, $2$에서의 값을 보면 $\alpha(0 + 1) + \beta(0 - 1) = \alpha - \beta = 0$입니다. 두 식을 더하면 $2\alpha = 0$이므로 (K10)에 의해 $\alpha = 0$이고, 그러면 $\beta = 0$입니다.
 :::

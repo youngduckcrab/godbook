@@ -7,7 +7,7 @@ field: linear-algebra
 msc: ["15A03"]
 level: undergrad
 summary: 유한차원 벡터공간 V 의 일차독립인 열 v₁, …, vᵣ 에 길이 dim V − r 인 열을 이어 붙여 V 의 기저를 만들 수 있다. 이어 붙인 열의 일차결합이 두 일차결합의 합이라는 계산 규칙도 함께 증명한다.
-requires: [real-number-arithmetic, vector-space, finite-sum-of-vectors, linear-combination-and-span, linear-independence, basis, basis-iff-independent-and-spanning, independent-list-extension, dimension, independent-and-spanning-bounds, mathematical-induction, well-ordering-principle, prime-number]
+requires: [real-function-space, real-number-arithmetic, vector-space, finite-sum-of-vectors, linear-combination-and-span, linear-independence, basis, basis-iff-independent-and-spanning, independent-list-extension, dimension, independent-and-spanning-bounds, mathematical-induction, well-ordering-principle, prime-number]
 proof: full
 sources:
   - ref: treil-linear-algebra-done-wrong
@@ -96,8 +96,8 @@ $\mathbb{R}^2$의 열 $(1, 0), (2, 0)$($r = 2$)은 $2(1, 0) + (-1)(2, 0) = (0, 0
 
 ## 확인 질문
 
-:::check[$\dim V = 4$이고 $v_1, v_2, v_3, v_4$가 일차독립이다. 정리가 주는 $x$는 무엇인가?]
-$r = d = 4$이므로 $x$는 길이 $0$인 빈 열이고, $v$ 자신이 기저입니다. 이는 [[independent-and-spanning-bounds|길이가 차원인 일차독립인 열]]이 기저라는 것과 같은 내용입니다.
+:::check[$\mathbb{R}^3$의 열 $(1, 0, 0), (0, 1, 0)$에 이어 붙일 열의 길이는 얼마인가? $(0, 0, 1)$ 하나를 이어 붙이면 기저가 되는가, $(1, 1, 0)$ 하나를 이어 붙이면?]
+[[dimension|차원]]의 (4)에 의해 $\dim \mathbb{R}^3 = 3$이므로 길이는 $3 - 2 = 1$입니다. $(0, 0, 1)$은 됩니다. $\alpha(1, 0, 0) + \beta(0, 1, 0) + \gamma(0, 0, 1) = (\alpha, \beta, \gamma)$가 $(0, 0, 0)$이면 세 계수가 모두 $0$이므로 일차독립이고, 길이가 $3$이므로 [[independent-and-spanning-bounds|(3)]]에 의해 기저입니다. $(1, 1, 0)$은 안 됩니다. $1(1, 0, 0) + 1(0, 1, 0) + (-1)(1, 1, 0) = (0, 0, 0)$이어서 일차종속이기 때문입니다.
 :::
 
 :::check[$\mathbb{R}^2$에서 $(3, 1)$ 하나로 된 열에 $(0, 1)$을 이어 붙이면 기저가 되는가? $(6, 2)$를 이어 붙이면?]

@@ -7,7 +7,7 @@ field: linear-algebra
 msc: ["15A03"]
 level: undergrad
 summary: 벡터공간 V 의 두 기저 v₁, …, vₙ 과 w₁, …, wₘ 의 길이는 같다(m = n). 교환 보조정리를 두 방향으로 쓴다.
-requires: [vector-space, finite-sum-of-vectors, linear-combination-and-span, linear-independence, basis, basis-iff-independent-and-spanning, exchange-lemma, standard-basis, well-ordering-principle]
+requires: [real-function-space, vector-space, finite-sum-of-vectors, linear-combination-and-span, linear-independence, basis, basis-iff-independent-and-spanning, exchange-lemma, standard-basis, well-ordering-principle]
 proof: full
 sources:
   - ref: treil-linear-algebra-done-wrong

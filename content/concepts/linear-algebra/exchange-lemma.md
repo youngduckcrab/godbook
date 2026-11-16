@@ -7,7 +7,7 @@ field: linear-algebra
 msc: ["15A03"]
 level: undergrad
 summary: 일차독립인 열 w₁, …, wₘ 의 모든 항이 일차독립인 열 b₁, …, bₚ 의 생성에 속하면 m ≤ p 이다. 일차독립인 열의 계수가 하나뿐이라는 것과 실수의 합을 벡터에 곱하는 규칙도 함께 증명한다.
-requires: [real-number-arithmetic, vector-space, vector-space-basic-properties, real-function-space, subspace, finite-sum-of-vectors, linear-combination-and-span, linear-independence, mathematical-induction, proof-by-contradiction, negation-of-quantified-statements, well-ordering-principle, prime-number]
+requires: [real-number-arithmetic, vector-space, vector-space-basic-properties, real-function-space, subspace, finite-sum-of-vectors, linear-combination-and-span, linear-independence, linear-dependence-criterion, mathematical-induction, proof-by-contradiction, negation-of-quantified-statements, well-ordering-principle, prime-number]
 proof: full
 sources:
   - ref: treil-linear-algebra-done-wrong

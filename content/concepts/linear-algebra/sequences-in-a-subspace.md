@@ -7,7 +7,7 @@ field: linear-algebra
 msc: ["15A03"]
 level: undergrad
 summary: 부분공간 W 의 원소로 된 벡터의 열은 V 의 열이기도 하고 벡터공간 W 의 열이기도 하다. 이 열의 일차결합, 생성, 일차독립은 W 에서 계산하든 V 에서 계산하든 같고, W 의 기저인 것은 정확히 일차독립이고 생성이 W 일 때이다.
-requires: [function, real-number-arithmetic, vector-space, subspace, finite-sum-of-vectors, linear-combination-and-span, linear-independence, basis, basis-iff-independent-and-spanning, dimension, mathematical-induction]
+requires: [real-function-space, function, real-number-arithmetic, vector-space, subspace, finite-sum-of-vectors, linear-combination-and-span, linear-independence, basis, basis-iff-independent-and-spanning, dimension, mathematical-induction]
 proof: full
 sources:
   - ref: treil-linear-algebra-done-wrong

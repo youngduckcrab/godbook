@@ -7,7 +7,7 @@ field: linear-algebra
 msc: ["15A03"]
 level: undergrad
 summary: 유한차원 벡터공간과 동형인 공간은 유한차원이고 차원이 같다. 두 유한차원 벡터공간이 동형인 것은 정확히 차원이 같을 때이다. 차원이 0 인 경우도 포함한다.
-requires: [real-function-space, vector-space, finite-sum-of-vectors, basis, linear-map, injective-surjective-bijective, isomorphism, isomorphism-and-bases, linear-map-determined-by-basis, dimension, dimension-of-subspace, real-number-arithmetic]
+requires: [real-function-space, vector-space, finite-sum-of-vectors, basis, linear-map, injective-surjective-bijective, isomorphism, isomorphism-and-bases, linear-map-determined-by-basis, standard-basis, dimension, dimension-of-subspace, real-number-arithmetic]
 proof: full
 sources:
   - ref: treil-linear-algebra-done-wrong
@@ -59,7 +59,7 @@ $d = 0$인 경우도 이 논증에 들어 있다. 이때 $v$와 $w$는 빈 열�
 ## 예시와 반례
 
 :::example[ℝ과 ℝ¹]
-[[dimension|차원]]의 (4), (5)에 의해 $\dim \mathbb{R}^1 = 1 = \dim \mathbb{R}$이므로 (2)에 의해 $\mathbb{R} \cong \mathbb{R}^1$입니다. 증명대로 만들면, $\mathbb{R}$의 기저(항이 $1$인 열)와 $\mathbb{R}^1$의 기저(항이 $e_1$인 열)에 대하여 $1$을 $e_1$로 보내는 선형사상이 동형사상이고, 이 사상은 실수 $a = a \cdot 1$을 $ae_1$, 곧 $1$에서의 값이 $a$인 함수로 보냅니다.
+[[dimension|차원]]의 (4), (5)에 의해 $\dim \mathbb{R}^1 = 1 = \dim \mathbb{R}$이므로 (2)에 의해 $\mathbb{R} \cong \mathbb{R}^1$입니다. 증명대로 만들면, $\mathbb{R}$의 기저(항이 $1$인 열)와 $\mathbb{R}^1$의 기저(항이 $e_1$인 열, [[standard-basis|표준기저]]의 (2))에 대하여 $1$을 $e_1$로 보내는 선형사상이 동형사상이고, 이 사상은 실수 $a = a \cdot 1$을 $ae_1$, 곧 $1$에서의 값이 $a$인 함수로 보냅니다.
 :::
 
 :::counterexample[단사인 선형사상이 있어도 동형은 아니다]
