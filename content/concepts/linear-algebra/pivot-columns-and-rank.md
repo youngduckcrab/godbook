@@ -7,14 +7,15 @@ field: linear-algebra
 msc: ["15A03"]
 level: undergrad
 summary: 행렬 A 를 기본행렬의 곱 E 로 기약 사다리꼴 EA 로 만들면, 피벗의 개수가 A 의 계수이고, EA 의 피벗 열과 같은 번호의 A 의 열들이 A 의 열공간의 기저이다. 따라서 A 의 열이 일차독립인지, ℝᵐ 을 생성하는지, 기저인지를 피벗의 개수로 판정할 수 있고, 피벗의 개수는 E 를 고르는 방법에 따르지 않는다.
-requires: [well-ordering-principle, real-function-space, finite-sum-of-vectors, linear-combination-and-span, linear-independence, subspace, basis-iff-independent-and-spanning, linear-map, sequences-in-a-subspace, dimension-of-subspace, rank-and-nullity, matrix, matrix-vector-product, matrix-product, invertible-matrix, rank-of-a-matrix, row-equivalence, echelon-form, row-reduction]
+requires: [well-ordering-principle, real-function-space, finite-sum-of-vectors, linear-combination-and-span, linear-independence, subspace, basis, standard-basis, basis-iff-independent-and-spanning, linear-map, sequences-in-a-subspace, dimension-of-subspace, rank-and-nullity, matrix, matrix-vector-product, matrix-product, invertible-matrix, rank-of-a-matrix, row-equivalence, echelon-form, row-reduction]
 proof: full
 sources:
   - ref: treil-linear-algebra-done-wrong
     loc: "2장 3.1절 Proposition 3.1, p.48; 7.1 Computing fundamental subspaces and rank, p.60; 7.2.2 The column space Ran A, pp.62–63"
     checked: original
-    note: "출처 Proposition 3.1(p.48)은 Fⁿ 의 벡터 v_1, …, v_m 을 열로 하는 행렬 A 에 대하여, 그 벡터들이 일차독립인 것은 A 의 사다리꼴의 모든 열에 피벗이 있을 때, Fⁿ 을 생성하는 것은 모든 행에 피벗이 있을 때, 기저인 것은 둘 다일 때라고 적고, 연립방정식의 해의 분석(3절 첫머리의 진술 1–3)으로 증명한다. 출처 7.1(p.60)은 원래 행렬 A 의 피벗 열(행 연산 뒤 피벗이 오는 열)이 Ran A 의 기저를 준다고 적고, 7.2.2(pp.62–63)에서 그 이유를 적는다. 기약 사다리꼴의 피벗 열이 그 기약 사다리꼴의 열공간의 기저라는 것을 먼저 들고(원래 행렬의 열공간이 아니라고 강조한다), 행 연산은 가역행렬을 왼쪽에 곱하는 것이므로 일차독립을 바꾸지 않는다는 것과, 피벗 열의 생성이 E⁻¹ 을 곱해 원래 행렬로 옮겨진다는 계산으로 설명한다. 이 항목의 (2)는 그 계산의 생성 부분을 그대로 따르고, 일차독립은 계수가 r 이라는 (1)과 dimension-of-subspace 의 (4)로 얻는다. 출처는 계수가 피벗의 개수와 같다는 것을 7.3절(p.64)에서 차원을 피벗 수로 세어 쓴다. 이 항목의 (1)은 행 동치가 계수를 바꾸지 않는다는 것과 기약 사다리꼴의 계수가 r 이라는 것으로 증명하고, (3)은 rank-of-a-matrix 의 (2), (3)으로 증명한다. 피벗의 개수가 E 를 고르는 방법에 따르지 않는다는 문장은 출처 연습문제 3.9(p.52)의 힌트와 관련되지만, 이 항목은 피벗 열의 위치나 기약 사다리꼴 자체의 유일성은 다루지 않는다. 반례(기약 사다리꼴의 피벗 열은 원래 행렬의 열공간의 기저가 아닐 수 있다)는 출처 7.2.2 의 강조와 같은 발상이다. 예시는 출처 7.1 의 4 × 5 예(p.60)와 다른 행렬로 새로 만들었고, 확인 질문은 출처 3절 연습문제 3.2, 3.3, 3.5 와 7절 연습문제 7.1 을 다시 읽고 겹치지 않게 만들었다."
-status: source-checked
+    note: "출처 Proposition 3.1(p.48)은 Fⁿ 의 벡터 v_1, …, v_m 을 열로 하는 행렬 A 에 대하여, 그 벡터들이 일차독립인 것은 A 의 사다리꼴의 모든 열에 피벗이 있을 때, Fⁿ 을 생성하는 것은 모든 행에 피벗이 있을 때, 기저인 것은 둘 다일 때라고 적고, 연립방정식의 해의 분석(3절 첫머리의 진술 1–3)으로 증명한다. 출처 7.1(p.60)은 원래 행렬 A 의 피벗 열(행 연산 뒤 피벗이 오는 열)이 Ran A 의 기저를 준다고 적고, 7.2.2(pp.62–63)에서 그 이유를 적는다. 기약 사다리꼴의 피벗 열이 그 기약 사다리꼴의 열공간의 기저라는 것을 먼저 들고(원래 행렬의 열공간이 아니라고 강조한다), 행 연산은 가역행렬을 왼쪽에 곱하는 것이므로 일차독립을 바꾸지 않는다는 것과, 피벗 열의 생성이 E⁻¹ 을 곱해 원래 행렬로 옮겨진다는 계산으로 설명한다. 이 항목의 (2)는 그 계산의 생성 부분을 그대로 따르고, 일차독립은 계수가 r 이라는 (1)과 dimension-of-subspace 의 (4)로 얻는다. 출처는 계수가 피벗의 개수와 같다는 것을 7.3절(p.64)에서 차원을 피벗 수로 세어 쓴다. 이 항목의 (1)은 행 동치가 계수를 바꾸지 않는다는 것과 기약 사다리꼴의 계수가 r 이라는 것으로 증명하고, (3)은 rank-of-a-matrix 의 (2), (3)으로 증명한다. 피벗의 개수가 E 를 고르는 방법에 따르지 않는다는 문장은 출처 연습문제 3.9(p.52)의 힌트와 관련되지만(힌트는 피벗 열의 위치를 묻는다), 이 항목은 피벗 열의 위치나 기약 사다리꼴 자체의 유일성은 다루지 않는다. 반례(기약 사다리꼴의 피벗 열은 원래 행렬의 열공간의 기저가 아닐 수 있다)는 출처 7.2.2 의 강조와 같은 발상이다. 예시는 출처 7.1 의 4 × 5 예(p.60)와 다른 행렬로 새로 만들었고, 확인 질문은 출처 3절 연습문제 3.2, 3.3, 3.5 와 7절 연습문제 7.1 을 다시 읽고 겹치지 않게 만들었다."
+status: reviewed
+review_note: "2026-11-16 작성자의 자기 검토 뒤 독립 검토 통과(전반 2회, 후반 1회). 기약 사다리꼴의 계수와 기본행렬의 작용을 진술에 더하고, 출처 메모, 헷갈리는 용어와 겹치는 글자, 직관의 일반화를 보완했다. 마지막 수정은 지휘자가 변경분을 확인했다."
 added: 2026-11-16
 ---
 

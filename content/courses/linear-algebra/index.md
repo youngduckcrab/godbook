@@ -6,7 +6,7 @@ level: undergrad
 order: 2
 track: 대수
 requires: [language-of-math]
-status: in-progress
+status: complete
 planned_units: []
 ---
 
