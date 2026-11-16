@@ -13,7 +13,7 @@ sources:
   - ref: hammack-book-of-proof
     loc: 12.4절 Composition, Theorem 12.1, p.237
     checked: original
-    note: "출처 Theorem 12.1과 같은 진술이고 증명도 같은 방법이다. 두 쪽이 모두 A에서 D로의 함수임을 합성의 정의에서 확인하고, 모든 x ∈ A에서 값이 같음을 보인다. 아래 증명은 함수의 같음의 정의가 요구하는 것(정의역이 같고 모든 원소에서 값이 같다)이 무엇인지를 명시하고 각 등호의 근거를 더 자세히 적었다. 예시와 반례는 이 사이트에서 새로 만들었다."
+    note: "출처 Theorem 12.1의 진술은 (h∘g)∘f = h∘(g∘f)이고, 두 쪽이 모두 A에서 D로의 함수라는 부분은 출처에서는 증명 안에 있다. 증명은 출처와 같은 방법이다. 두 쪽이 A에서 D로의 함수임을 합성의 정의에서 확인하고, 모든 x ∈ A에서 값이 같음을 보인다. 아래 증명은 함수의 같음의 정의가 요구하는 것(정의역이 같고 모든 원소에서 값이 같다)이 무엇인지를 명시하고 각 등호의 근거를 더 자세히 적었다. 예시와 반례는 이 사이트에서 새로 만들었다. 첫째 예시의 f, g는 function-composition 항목의 첫째 예시와 같은 것이고, 이는 출처 예 12.8과 집합 크기와 대응을 다르게 잡았다."
 status: source-checked
 added: 2026-11-16
 ---
@@ -46,7 +46,7 @@ $$(h \circ g) \circ f = h \circ (g \circ f).$$
 :::
 
 :::hint
-$(h \circ g) \circ f$의 $x$에서의 값은 합성의 정의 $(\,\cdot \circ f)(x) = \cdot\,(f(x))$를 바깥에서부터 적용해서 풀어 쓴다.
+$(h \circ g) \circ f$의 $x$에서의 값은 합성의 정의 $(u \circ f)(x) = u(f(x))$ (여기서 $u$는 $B$에서 출발하는 함수)를 바깥에서부터 적용해서 풀어 쓴다.
 :::
 
 :::proof
@@ -56,7 +56,7 @@ $f$, $g$, $h$를 진술과 같다고 하자.
 
 **같음을 보이는 방법.** 두 함수 $(h \circ g) \circ f$와 $h \circ (g \circ f)$는 정의역이 모두 $A$이다. [[function]]의 진술에 따라 정의역이 같은 두 함수는 모든 $x \in A$에서 값이 같을 때 정확히 같은 함수이다. 그러므로 모든 $x \in A$에 대하여
 $$\bigl((h \circ g) \circ f\bigr)(x) = \bigl(h \circ (g \circ f)\bigr)(x)$$
-임을 보이면 된다. 두 함수의 공역은 모두 $D$이다.
+임을 보이면 된다. 공역은 같음의 조건이 아니다.
 
 **값의 계산.** $x \in A$라 하자. [[function-composition]]의 진술 $(u \circ v)(t) = u(v(t))$를 쓰면, $(h \circ g) \circ f$에서 $u = h \circ g$, $v = f$, $t = x$이므로
 $$\bigl((h \circ g) \circ f\bigr)(x) = (h \circ g)\bigl(f(x)\bigr)$$
@@ -76,18 +76,18 @@ $$h\bigl((g \circ f)(x)\bigr) = h\bigl(g(f(x))\bigr)$$
 ## 예시와 반례
 
 :::example[유한집합 사이의 세 함수]
-$A = \{1, 2, 3\}$, $B = \{p, q\}$, $C = \{x, y, z\}$, $D = \{0, 1\}$이고
-$$f = \{(1, p), (2, q), (3, p)\},\quad g = \{(p, z), (q, x)\},\quad h = \{(x, 0), (y, 1), (z, 1)\}$$
-라 합시다. $h \circ g$를 계산하면 $(h \circ g)(p) = h(z) = 1$, $(h \circ g)(q) = h(x) = 0$이므로 $h \circ g = \{(p, 1), (q, 0)\}$이고,
-$$(h \circ g) \circ f = \{(1, 1), (2, 0), (3, 1)\}$$
-입니다. 한편 $g \circ f = \{(1, z), (2, x), (3, z)\}$이므로 $(h \circ (g \circ f))(1) = h(z) = 1$, $(h \circ (g \circ f))(2) = h(x) = 0$, $(h \circ (g \circ f))(3) = h(z) = 1$이고 $h \circ (g \circ f) = \{(1, 1), (2, 0), (3, 1)\}$입니다. 두 결과가 같습니다.
+$A = \{1, 2, 3, 4\}$, $B = \{\text{가}, \text{나}, \text{다}\}$, $C = \{5, 6\}$, $D = \{0, 1, 2\}$이고
+$$f = \{(1, \text{가}), (2, \text{다}), (3, \text{가}), (4, \text{나})\},\quad g = \{(\text{가}, 6), (\text{나}, 5), (\text{다}, 6)\},\quad h = \{(5, 2), (6, 0)\}$$
+라 합시다. 가, 나, 다는 서로 다른 대상입니다. $h \circ g$를 계산하면 $(h \circ g)(\text{가}) = h(6) = 0$, $(h \circ g)(\text{나}) = h(5) = 2$, $(h \circ g)(\text{다}) = h(6) = 0$이므로 $h \circ g = \{(\text{가}, 0), (\text{나}, 2), (\text{다}, 0)\}$이고,
+$$(h \circ g) \circ f = \{(1, 0), (2, 0), (3, 0), (4, 2)\}$$
+입니다. 한편 $g \circ f = \{(1, 6), (2, 6), (3, 6), (4, 5)\}$이므로 $(h \circ (g \circ f))(1) = h(6) = 0$, $(h \circ (g \circ f))(2) = h(6) = 0$, $(h \circ (g \circ f))(3) = h(6) = 0$, $(h \circ (g \circ f))(4) = h(5) = 2$이고 $h \circ (g \circ f) = \{(1, 0), (2, 0), (3, 0), (4, 2)\}$입니다. 두 결과가 같습니다.
 :::
 
 :::example[$\mathbb{Z}$ 위의 식]
 $f(n) = 2n$, $g(n) = n + 1$, $h(n) = n^2$으로 정한 $f, g, h : \mathbb{Z} \to \mathbb{Z}$에서 $\bigl((h \circ g) \circ f\bigr)(n) = (h \circ g)(2n) = h(2n + 1) = (2n + 1)^2$이고 $\bigl(h \circ (g \circ f)\bigr)(n) = h\bigl((g \circ f)(n)\bigr) = h(2n + 1) = (2n + 1)^2$입니다.
 :::
 
-:::counterexample[결합법칙은 순서를 바꿔도 된다는 뜻이 아니다]
+:::counterexample[합성은 교환법칙을 만족하지 않는다]
 결합법칙이 허락하는 것은 괄호를 옮기는 것뿐입니다. 위의 $\mathbb{Z}$ 위의 $f$, $g$에서 $(g \circ f)(0) = 1$이고 $(f \circ g)(0) = 2$이므로 $g \circ f \ne f \circ g$입니다. $h \circ g \circ f$는 하나의 함수로 정해지지만 $g \circ h \circ f$ 같은 다른 순서의 합성은 일반적으로 다른 함수입니다. 위 $\mathbb{Z}$ 예에서 $(h \circ g \circ f)(1) = (2 \cdot 1 + 1)^2 = 9$이고 $(g \circ h \circ f)(1) = g(h(f(1))) = g(4) = 5$입니다.
 :::
 
