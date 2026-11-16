@@ -14,7 +14,8 @@ sources:
     loc: 11.4절 Equivalence Classes and Partitions, Theorem 11.1, p.215
     checked: original
     note: "출처의 증명과 같은 방식이다. 한쪽 방향은 a ∈ [a]에서 aRb를 얻고, 다른 방향은 양쪽 포함을 추이성과 대칭성으로 보인다. 아래는 각 단계의 근거를 requires 항목의 진술에 맞춰 다시 적었다. 예시와 반례, 확인 질문은 새로 만들었다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 4회. 수학적 오류 없음. 정의되지 않은 기호 제거, 출처에서 가져온 예 교체, 출처 기록 정정."
 added: 2026-11-16
 ---
 

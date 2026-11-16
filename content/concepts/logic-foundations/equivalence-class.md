@@ -13,7 +13,8 @@ sources:
     loc: 11.3절 Equivalence Relations, Definition 11.4, p.211 (예 11.9–11.11, p.211)
     checked: original
     note: "출처는 동치류를 {x ∈ A : x R a}로 정의하고 [a]로 쓴다. 이 항목의 예시와 확인 질문은 새로 만들었고, 출처 p.211의 예(같음 R1에서 [2] = {2}를 구하는 것)와 같은 종류인 '같음'의 예가 하나 들어 있다. [a]는 어느 관계인지가 문맥에서 정해질 때의 약식 표기이다. 'a ∈ [a]'와 'x R a를 a R x로 읽어도 된다'는 설명은 출처에 없고 이 사이트에서 덧붙였다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 4회. 수학적 오류 없음. 정의되지 않은 기호 제거, 출처에서 가져온 예 교체, 출처 기록 정정."
 added: 2026-11-16
 ---
 
