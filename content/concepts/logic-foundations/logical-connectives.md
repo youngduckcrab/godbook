@@ -44,6 +44,28 @@ $P$와 $Q$가 [[proposition]]일 때 다음 세 명제를 만들 수 있다.
 | $F$ | $T$ |
 :::
 
+:::english
+If $P$ and $Q$ are statements, the following three statements can be formed.
+
+- The **conjunction** $P \land Q$ ("$P$ and $Q$") is true when **both** $P$ and $Q$ are true, and false otherwise.
+- The **disjunction** $P \lor Q$ ("$P$ or $Q$") is true when **at least one** of $P$ and $Q$ is true, and false only when both are false.
+- The **negation** $\lnot P$ ("not $P$") is false if $P$ is true, and true if $P$ is false.
+
+In truth tables:
+
+| $P$ | $Q$ | $P \land Q$ | $P \lor Q$ |
+|:---:|:---:|:---:|:---:|
+| $T$ | $T$ | $T$ | $T$ |
+| $T$ | $F$ | $F$ | $T$ |
+| $F$ | $T$ | $F$ | $T$ |
+| $F$ | $F$ | $F$ | $F$ |
+
+| $P$ | $\lnot P$ |
+|:---:|:---:|
+| $T$ | $F$ |
+| $F$ | $T$ |
+:::
+
 ## 직관
 
 **진리표**(truth table)는 재료가 되는 명제들의 참·거짓 조합을 빠짐없이 한 줄씩 적고, 각 경우에 새 명제가 참인지 거짓인지를 적은 표입니다. 명제가 둘이면 조합은 네 가지뿐이므로 네 줄이면 모든 경우를 다 본 것입니다.

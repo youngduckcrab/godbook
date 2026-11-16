@@ -24,6 +24,12 @@ added: 2026-11-16
 명제가 참이면 그 **진릿값**(truth value)이 참($T$)이라 하고, 거짓이면 진릿값이 거짓($F$)이라 한다.
 :::
 
+:::english
+A **statement** (also called a **proposition**) is a sentence or mathematical expression that is definitely determined to be exactly one of true or false.
+
+If a statement is true, its **truth value** is said to be true ($T$); if it is false, its truth value is said to be false ($F$).
+:::
+
 ## 직관
 
 수학에서 무언가를 증명한다는 것은 어떤 문장이 참임을 보이는 일입니다. 그러려면 먼저 그 문장이 "참이냐 거짓이냐"를 물을 수 있는 종류여야 합니다. 명제는 바로 그런 문장입니다.

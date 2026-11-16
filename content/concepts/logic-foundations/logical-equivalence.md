@@ -24,6 +24,12 @@ added: 2026-11-16
 $A$와 $B$가 논리적으로 동치일 때 $A \equiv B$로 쓴다.
 :::
 
+:::english
+Two statements built from statements, logical connectives, and conditional statements are **logically equivalent** if their truth values agree in **every row** of the truth table.
+
+When $A$ and $B$ are logically equivalent, we write $A \equiv B$.
+:::
+
 ## 직관
 
 논리적으로 동치인 두 명제는 재료 명제들이 참이든 거짓이든 언제나 함께 참이고 함께 거짓입니다. 겉모습은 달라도 담고 있는 정보가 같으므로, 증명에서 한쪽을 다른 쪽으로 **바꿔 써도** 됩니다.

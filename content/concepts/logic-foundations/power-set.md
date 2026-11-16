@@ -23,6 +23,12 @@ added: 2026-11-16
 $$\mathscr{P}(A) = \{X : X \subseteq A\}$$
 :::
 
+:::english
+The **power set** $\mathscr{P}(A)$ of a set $A$ is the set of all subsets of $A$:
+
+$$\mathscr{P}(A) = \{X : X \subseteq A\}$$
+:::
+
 ## 직관
 
 멱집합은 **집합을 원소로 갖는 집합**입니다. $\mathscr{P}(A)$의 원소 하나하나가 $A$의 부분집합입니다. 그래서 다음 두 문장은 같은 말입니다.
