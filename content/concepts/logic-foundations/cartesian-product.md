@@ -10,9 +10,9 @@ summary: 순서가 구별되는 두 대상의 목록이 순서쌍이고, 첫째 
 requires: [set]
 sources:
   - ref: hammack-book-of-proof
-    loc: 1.2절 The Cartesian Product, Definition 1.1, Definition 1.2, p.8
+    loc: 1.2절 The Cartesian Product, Definition 1.1, Definition 1.2, p.8 (A² 표기는 p.10)
     checked: original
-    note: "처는 순서쌍을 \"괄호로 싸고 쉼표로 구분한 두 대상의 목록\"이라 정의하고 (2, 4)와 (4, 2)가 다르다는 예로 순서가 중요함을 보인다. \"두 순서쌍이 같을 필요충분조건은 성분이 차례로 같은 것\"이라는 문장은 출처에 그대로 있지 않고 이 사이트에서 순서쌍의 뜻을 풀어 쓴 것이다. 공집합과의 곱이 공집합이라는 설명도 이 사이트에서 덧붙였다. 예시는 새로 만들었다."
+    note: "출처는 순서쌍을 '괄호로 싸고 쉼표로 구분한 두 대상의 목록'이라 정의하고 (2, 4)와 (4, 2)가 다르다는 예로 순서가 중요함을 보인다. '두 순서쌍이 같을 필요충분조건은 성분이 차례로 같은 것'이라는 문장은 출처에 그대로 있지 않고 이 사이트에서 순서쌍의 뜻을 풀어 쓴 것이다. 직관의 좌표 비유와 '성분은 수일 필요가 없다'는 설명은 순서쌍이 평면의 점을 나타내는 데 쓰이지만 성분이 수일 필요는 없다는 출처 p.8의 문단을 따른 것이다. 첫째 예시(원소 3개와 2개인 집합의 곱)는 출처 p.8–9의 {k, l, m} × {q, r} 예와 Fact 1.1(p.9)을 바탕으로 기호만 바꾼 것이다. 공집합과의 곱이 공집합이라는 설명은 이 사이트에서 덧붙였다. 나머지 예시와 반례는 새로 만들었다."
 status: source-checked
 added: 2026-11-16
 ---
@@ -26,7 +26,7 @@ $$A \times B = \{(a, b) : a \in A,\ b \in B\}$$
 :::
 
 :::english
-An **ordered pair** is a list $(x, y)$ of two objects $x$ and $y$ in this order, enclosed in parentheses; $x$ is its first coordinate and $y$ its second. Two ordered pairs $(x, y)$ and $(x', y')$ are equal when $x = x'$ and $y = y'$. In particular, if $x \neq y$ then $(x, y) \neq (y, x)$.
+An **ordered pair** is a list $(x, y)$ of two objects $x$ and $y$ in this order, enclosed in parentheses; $x$ is its first coordinate and $y$ its second. Two ordered pairs $(x, y)$ and $(x', y')$ are equal exactly when $x = x'$ and $y = y'$. In particular, if $x \neq y$ then $(x, y) \neq (y, x)$.
 
 The **Cartesian product** $A \times B$ of two sets $A$ and $B$ is the set of all ordered pairs whose first coordinate is an element of $A$ and whose second coordinate is an element of $B$.
 $$A \times B = \{(a, b) : a \in A,\ b \in B\}$$
