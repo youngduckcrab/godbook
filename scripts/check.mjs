@@ -6,6 +6,8 @@ import { CONTENT, ROOT, loadConcepts, loadSources, loadCourses, walk, readMd, WI
 
 const errors = [];
 const err = (file, msg) => errors.push(`${file}: ${msg}`);
+const warns = [];
+const warn = (file, msg) => warns.push(`${file}: ${msg}`);
 
 const fields = yaml.load(fs.readFileSync(path.join(CONTENT, 'fields.yaml'), 'utf8'));
 const concepts = loadConcepts();
@@ -96,6 +98,50 @@ for (const file of walk(path.join(CONTENT, 'exercises'), '.md')) {
   const { data, body } = readMd(file);
   for (const s of data?.sources ?? []) if (!sources.has(s.ref)) err(rel, `출처 '${s.ref}' 가 없다`);
   for (const m of body.matchAll(WIKILINK)) if (!ids.has(m[1])) err(rel, `링크 [[${m[1]}]] 의 대상이 없다`);
+}
+
+
+// ---- 경고 (빌드를 막지 않는다). 검토에서 반복해 나온 실수를 미리 알려 준다. ----
+const titleOf = new Map(concepts.map((c) => [c.id, String(c.data.title ?? c.id)]));
+const hasFinal = (word) => {
+  const ch = word[word.length - 1];
+  if (ch < '가' || ch > '힣') return null;
+  return (ch.charCodeAt(0) - 0xac00) % 28 !== 0;
+};
+// 받침이 있을 때만 / 없을 때만 올 수 있는 조사 (서술격 조사 "이-"는 제외)
+const AFTER_FINAL = ['으로', '은', '을', '과'];
+const AFTER_VOWEL = ['는', '를', '와', '가'];
+const UNDEFINED_SYMBOLS = ['\\iff', '\\Leftrightarrow', '\\mapsto', '\\subsetneq', '\\supsetneq', '\\implies'];
+const closure = (id, seen = new Set()) => {
+  for (const r of ids.get(id)?.data.requires ?? []) if (!seen.has(r)) { seen.add(r); closure(r, seen); }
+  return seen;
+};
+function lintBody(file, body, requires, self) {
+  const text = body.replace(/^:::english\s*\n[\s\S]*?\n:::\s*$/m, '');
+  for (const m of text.matchAll(/\[\[([a-z0-9-]+)(?:\|([^\]]+))?\]\]([가-힣]{0,2})/g)) {
+    const [, id, label, after] = m;
+    if (!titleOf.has(id)) continue;
+    const shown = label ?? titleOf.get(id);
+    if (!label && /[,()·:]|이다$|한다$/.test(shown)) warn(file, `링크 [[${id}]] 가 "${shown}${after}" 로 보인다. [[${id}|표시할 말]] 을 붙인다`);
+    const fin = hasFinal(shown.replace(/[\s)\]"']+$/, ''));
+    if (fin === null || !after) continue;
+    const bad = (fin ? AFTER_VOWEL : AFTER_FINAL).find((j) => after.startsWith(j) && !['가지', '가운', '과정', '와서', '은근'].some((w) => after.startsWith(w)));
+    if (bad) warn(file, `조사가 안 맞는다: "${shown}${after}" ([[${id}]])`);
+  }
+  for (const sym of UNDEFINED_SYMBOLS) if (text.includes(sym)) warn(file, `정의하지 않은 기호 ${sym} 를 쓴다. 문장으로 풀어 쓴다`);
+  if (/(위|아래|앞|뒤|끝)의?\s*remark|remark\s*(에서|참조|에 의해)/.test(text)) warn(file, '본문에서 "remark" 라는 낱말로 블록을 가리킨다. 블록의 제목으로 가리킨다');
+  if (requires) {
+    const linked = new Set([...text.matchAll(WIKILINK)].map((m) => m[1]));
+    // 이 항목을 선행으로 삼는 뒤 항목으로의 안내 링크는 제외한다.
+    const missing = [...linked].filter((id) => ids.has(id) && !requires.has(id) && !closure(id).has(self));
+    if (missing.length) warn(file, `본문에서 쓰지만 requires 에 없는 항목: ${missing.join(', ')}`);
+  }
+}
+for (const c of concepts) lintBody(c.file, c.body, new Set([c.id, ...closure(c.id)]), c.id);
+for (const course of courses) for (const u of course.units) lintBody(u.file, u.body, null);
+
+if (warns.length && !process.argv.includes('--quiet')) {
+  console.warn(`경고 ${warns.length}건 (빌드는 계속된다)\n` + warns.map((e) => '  - ' + e).join('\n'));
 }
 
 if (errors.length) {
