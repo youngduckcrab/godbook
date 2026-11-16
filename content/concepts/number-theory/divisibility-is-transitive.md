@@ -14,7 +14,8 @@ sources:
     loc: 4.3절 Direct Proof, 명제 "Let a, b and c be integers. If a | b and b | c, then a | c", p.121
     checked: original
     note: 출처와 같은 방식의 직접 증명이다. 곧 b = ad와 c = be를 합쳐 c = a(de)를 얻는다. 문장은 직접 썼다. 출처가 쓰는 사실인 "정수끼리 곱하면 정수"(Fact 4.1, p.117)는 출처가 증명 없이 받아들이는 것이며(출처 원문에 "we accept the following fact without justification or proof"로 적혀 있다), 아래 증명도 같은 사실을 증명 없이 쓰며, 이 사이트는 even-and-odd 항목에서 이를 받아들인다고 밝혔다. "추이성"이라는 이름은 출처의 이 곳에 나오지 않는다. 널리 쓰이는 이름이어서 붙였다. 예시와 확인 질문은 새로 만들었다.
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 3회. 수학적 오류 없음. 증명 없이 받아들이는 사실을 진술에 명시하고 출처 기록과 설명 문장을 보완."
 added: 2026-11-16
 ---
 

@@ -14,7 +14,8 @@ sources:
     loc: 6.2절 Proving Conditional Statements by Contradiction, 명제 "Suppose a ∈ Z. If a² is even, then a is even", p.141
     checked: original
     note: 출처는 이 명제를 귀류법으로 증명한다(p.141). 아래 증명은 대우 증명이며 출처와 방법이 다르다. 출처의 귀류법 증명은 a가 홀수라고 가정하고 a = 2c + 1을 제곱해 a²이 홀수임을 직접 계산하지만, 아래 증명은 같은 계산을 odd-square-is-odd 항목으로 대신한다. 출처는 6.1절 √2 증명(p.139)에서 이 명제를 "앞에서 증명했다(5장 연습문제 1, p.136)"고 인용한다. 출처의 5장 연습문제 1(p.136)은 이 명제를 대우 증명으로 풀라고 하는 문제이며, 아래 증명은 같은 방법이다. 예시와 확인 질문은 새로 만들었다.
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 3회. 수학적 오류 없음. 증명 없이 받아들이는 사실을 진술에 명시하고 출처 기록과 설명 문장을 보완."
 added: 2026-11-16
 ---
 
