@@ -18,7 +18,8 @@ sources:
     loc: "1절(Emergence), 1873년 말 데데킨트와의 서신과 1874년 논문을 다루는 단락 / 2절(Consolidation), 칸토어의 1895년과 1897년 논문을 다루는 단락의 끝부분(1892년의 짧은 논문 언급)"
     checked: original
     note: 역사와 맥락 절의 근거. 이 항목의 증명은 이 출처의 것이 아니다.
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 4회. 수학적 오류 없음. 증명 가능한 범위로 진술을 좁히고 받아들이는 사실을 명시, 역사 인용과 출처 기록 정정."
 added: 2026-11-16
 ---
 
@@ -34,7 +35,7 @@ added: 2026-11-16
 :::
 
 :::english
-**Facts this site accepts without proof.** A **decimal expansion** is a sequence $d_1, d_2, d_3, \dots$ of digits $0, 1, \dots, 9$, written $0.d_1 d_2 d_3 \dots$; it represents the real number $x = \frac{d_1}{10} + \frac{d_2}{100} + \frac{d_3}{1000} + \cdots$ (an infinite sum). The precise meaning of an infinite sum is not defined in this course; it belongs to analysis. This entry accepts the statement that a decimal expansion represents a real number, together with (D1) and (D2) below. We say the expansion "ends in $9$'s" if there is an $N$ such that $d_i = 9$ for all $i \ge N$. This site accepts the following two facts.
+**Facts this site accepts without proof.** A **decimal expansion** is a sequence $d_1, d_2, d_3, \dots$ of digits $0, 1, \dots, 9$, written $0.d_1 d_2 d_3 \dots$; it represents the real number $x = \frac{d_1}{10} + \frac{d_2}{100} + \frac{d_3}{1000} + \cdots$ (an infinite sum). The precise meaning of an infinite sum is not defined in this course; it belongs to analysis. This entry accepts the notion "a decimal expansion represents a real number", together with (D1) and (D2) below. We say the expansion "ends in $9$'s" if there is an $N$ such that $d_i = 9$ for all $i \ge N$. This site accepts the following two facts.
 
 - (D1) Every real number $x$ with $0 \le x < 1$ has **exactly one** decimal expansion that does not end in $9$'s. We call it the **standard expansion** of $x$, and its $n$th digit the $n$th digit of $x$.
 - (D2) Every sequence of digits $d_1, d_2, d_3, \dots$ ($d_i \in \{0, 1, \dots, 9\}$) that does not end in $9$'s is the standard expansion of some real number $x$ with $0 \le x < 1$.
@@ -104,7 +105,7 @@ $f(1) = \frac{1}{2}$를 $0.4999\dots$로 적었다고 합시다(진술에서 받
 
 ## 역사와 맥락
 
-스탠퍼드 철학 백과사전(SEP)의 집합론 초기 발전 항목은 1873년 말 칸토어가 데데킨트에게 $\mathbb{N}$과 $\mathbb{R}$이 일대일 대응될 수 있는지 물었고, 며칠 뒤 칸토어가 $\mathbb{R}$이 $\mathbb{N}$과 일대일 대응된다는 가정이 모순에 이른다는 것을 증명했다고 적습니다. SEP는 이때 칸토어가 볼차노-바이어슈트라스 원리를 썼다고 적고, 이 결과가 1874년 논문에 실렸으며 그 논문이 초한 집합론의 탄생으로 정당하게 여겨진다고 적습니다. 같은 항목은 1892년의 짧은 논문에서 칸토어가 대각선 방법으로 $\mathbb{R}$이 "non-denumerable"(자연수와 일대일 대응될 수 없음)임을 보인 유명한 증명을 소개했다고 적습니다. 출처 Book of Proof는 $|\mathbb{N}| \ne |\mathbb{R}|$을 처음 인식한 사람이 칸토어이고 그가 이 항목의 대각선 논증처럼 전사가 없음을 보이는 논증을 고안했다고 적습니다(p.271).
+스탠퍼드 철학 백과사전(SEP)의 집합론 초기 발전 항목은 1873년 말 칸토어가 데데킨트에게 $\mathbb{N}$과 $\mathbb{R}$이 일대일 대응될 수 있는지 물었고, 데데킨트의 답장이 있은 며칠 뒤 칸토어가 $\mathbb{R}$이 $\mathbb{N}$과 일대일 대응된다는 가정이 모순에 이른다는 것을 증명했다고 적습니다. SEP는 이때 칸토어가 볼차노-바이어슈트라스 원리를 썼다고 적고, 이 결과가 1874년 논문에 실렸으며 그 논문이 초한 집합론의 탄생으로 정당하게 여겨진다고 적습니다. 같은 항목은 1892년의 짧은 논문에서 칸토어가 대각선 방법으로 $\mathbb{R}$이 "non-denumerable"(자연수와 일대일 대응될 수 없음)임을 보인 유명한 증명을 소개했다고 적습니다. 출처 Book of Proof는 $|\mathbb{N}| \ne |\mathbb{R}|$을 처음 인식한 사람이 칸토어이고 그가 이 항목의 대각선 논증처럼 전사가 없음을 보이는 논증을 고안했다고 적습니다(p.271).
 
 ## 확인 질문
 

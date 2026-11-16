@@ -14,7 +14,8 @@ sources:
     loc: 14.1절 Sets with Equal Cardinalities, 'equality of cardinalities is an equivalence relation on sets'로 시작하는 문단, p.273 (이 문단 뒤에서 Example 14.4가 추이성을 쓴다. 같은 내용이 p.274에서 '동치류'를 설명할 때 다시 언급된다.)
     checked: original
     note: "출처는 이 사실을 번호가 붙은 정리로 진술하지 않고, p.273의 본문 한 문단에서 '|A| = |B|는 집합들 위의 동치관계이다. 반사적, 대칭적, 추이적이다'라고 말한 뒤 짧게 확인한다. 출처의 확인은 항등함수가 전단사이고, 전단사의 역함수가 전단사이며, 전단사의 합성이 전단사(Theorem 12.2)라는 것을 쓴다. 아래 증명은 출처 12장에 해당하는 이 사이트 7단원의 항목들(합성은 composition-preserves-injectivity-and-surjectivity, 역함수는 inverse-function과 bijective-iff-inverse-is-a-function)로 직접 쓴 것이고, 출처가 '그 역함수는 전단사이다'를 이유 없이 적는 대목은 이 사이트에서 f⁻¹∘f = i_A, f∘f⁻¹ = i_B로 단사와 전사를 각각 보였다. 출처는 이 관계를 '집합들 위의 동치관계'라고 부르지만, 모든 집합의 모임은 이 강의에서 집합으로 다루지 않으므로(set 항목의 러셀의 역설 언급 참조) 이 항목은 '동치관계이다'라고 진술하지 않고 세 성질을 각각 진술한다. 이 항목은 properties-of-relations 항목의 정의를 인용하지 않고, 반사·대칭·추이는 진술의 세 문장의 이름으로만 쓴다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 4회. 수학적 오류 없음. 증명 가능한 범위로 진술을 좁히고 받아들이는 사실을 명시, 역사 인용과 출처 기록 정정."
 added: 2026-11-16
 ---
 
@@ -83,7 +84,7 @@ $A = \{1, 2\}$, $B = \{\text{가}, \text{나}\}$, $C = \{5, 6\}$이고 $f = \{(1
 :::
 
 :::example[무한집합에서]
-$E = \{n \in \mathbb{N} : n \text{은 짝수}\}$라 하고 $f(n) = 2n$으로 정한 $f : \mathbb{N} \to E$를 봅시다. $n \ge 1$이므로 (Z3)에 의해 $2n \ge 2$이고 $2n = 2 \cdot n$은 짝수이므로 $f(n) \in E$입니다. $f$는 단사입니다($2a = 2a'$이면 $a = a'$). 또 전사입니다. $e \in E$이면 $e = 2k$인 정수 $k$가 있고, $k \le 0$이면 [[prime-number|소수]] 항목의 진술의 (Z3)에 의해 $e = 2k \le 0$이어서 $e \ge 1$에 모순이므로 $k > 0$이고 (Z1)에 의해 $k \ge 1$입니다. 따라서 $k \in \mathbb{N}$이고 $f(k) = e$입니다. 따라서 $|\mathbb{N}| = |E|$입니다. 대칭에 의해 $|E| = |\mathbb{N}|$이고, $E$에서 $\mathbb{N}$으로의 전단사는 역관계 $f^{-1}$로 주어집니다. $f^{-1}(2) = 1$, $f^{-1}(4) = 2$, $f^{-1}(6) = 3$이므로 $f^{-1}(e) = e/2$ 꼴입니다. $f(n) = 2n = e$이면 $n = e/2$이기 때문입니다.
+$E = \{n \in \mathbb{N} : n \text{은 짝수}\}$라 하고 $f(n) = 2n$으로 정한 $f : \mathbb{N} \to E$를 봅시다. $n \ge 1$이므로 [[prime-number|소수]] 항목의 진술의 (Z3)에 의해 $2n \ge 2$이고 $2n = 2 \cdot n$은 짝수이므로 $f(n) \in E$입니다. $f$는 단사입니다($2a = 2a'$이면 $a = a'$). 또 전사입니다. $e \in E$이면 $e = 2k$인 정수 $k$가 있고, $k \le 0$이면 (Z3)에 의해 $e = 2k \le 0$이어서 $e \ge 1$에 모순이므로 $k > 0$이고 (Z1)에 의해 $k \ge 1$입니다. 따라서 $k \in \mathbb{N}$이고 $f(k) = e$입니다. 따라서 $|\mathbb{N}| = |E|$입니다. 대칭에 의해 $|E| = |\mathbb{N}|$이고, $E$에서 $\mathbb{N}$으로의 전단사는 역관계 $f^{-1}$로 주어집니다. $f^{-1}(2) = 1$, $f^{-1}(4) = 2$, $f^{-1}(6) = 3$이므로 $f^{-1}(e) = e/2$ 꼴입니다. $f(n) = 2n = e$이면 $n = e/2$이기 때문입니다.
 :::
 
 :::counterexample[전단사가 아닌 함수는 뒤집지 못한다]

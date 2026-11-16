@@ -18,7 +18,8 @@ sources:
     loc: "2절(Consolidation), 칸토어의 1895년과 1897년 논문을 다루는 단락의 끝부분(칸토어 정리와 1892년의 짧은 논문을 언급하는 문장들)"
     checked: original
     note: 역사와 맥락 절의 근거. 이 항목의 증명은 이 출처의 것이 아니다.
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 4회. 수학적 오류 없음. 증명 가능한 범위로 진술을 좁히고 받아들이는 사실을 명시, 역사 인용과 출처 기록 정정."
 added: 2026-11-16
 ---
 
