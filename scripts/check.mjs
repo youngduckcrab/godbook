@@ -38,6 +38,7 @@ for (const c of concepts) {
   const opened = (d.sources ?? []).some((s) => s.checked === 'original' || s.checked === 'mirror');
   if (d.status !== 'unverified' && !opened) err(c.file, `status 가 '${d.status}' 인데 실제로 열어 본 출처가 없다`);
   if (d.status === 'reviewed' && !d.review_note) err(c.file, "status 가 'reviewed' 이면 review_note 가 필요하다");
+  if (/[$\\]/.test(d.summary ?? '')) err(c.file, 'summary 에는 수식($...$)이나 LaTeX 명령을 쓸 수 없다 (글자 그대로 표시된다). 말이나 유니코드 기호로 쓴다');
   if (!/^:::statement\s*$/m.test(c.body)) err(c.file, ':::statement 블록이 없다');
   if (!/^:::statement\s*\n[\s\S]*?\n:::\s*\n+:::english\s*$/m.test(c.body)) err(c.file, ':::statement 바로 뒤에 :::english 블록(영어 진술)이 없다');
   const hasProof = /^:::proof\s*$/m.test(c.body);
@@ -70,6 +71,7 @@ for (const course of courses) {
   for (const u of course.units) {
     if (!/^\d\d-[a-z0-9-]+$/.test(u.slug)) err(u.file, '단원 파일 이름은 01-이름.md 형식이어야 한다');
     for (const m of u.body.matchAll(WIKILINK)) if (!ids.has(m[1])) err(u.file, `링크 [[${m[1]}]] 의 대상이 없다`);
+    if (/[$\\]/.test(u.data?.summary ?? '')) err(u.file, 'summary 에는 수식이나 LaTeX 명령을 쓸 수 없다');
     for (const id of u.data?.concepts ?? []) {
       if (!ids.has(id)) { err(u.file, `항목 '${id}' 가 없다`); continue; }
       if (seen.has(id)) err(u.file, `항목 '${id}' 가 강의 안에서 두 번 나온다`);
