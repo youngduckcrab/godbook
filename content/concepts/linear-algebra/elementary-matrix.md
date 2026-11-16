@@ -7,12 +7,12 @@ field: linear-algebra
 msc: ["15A06"]
 level: undergrad
 summary: 두 행을 맞바꾸는 P, 한 행에 0 이 아닌 수를 곱하는 D, 한 행에 다른 행의 상수배를 더하는 R 의 세 종류 정사각행렬을 기본행렬이라 하고, 기본행렬을 왼쪽에 곱하는 것을 기본 행 연산이라 한다. 왼쪽에 곱하면 이름대로 행이 바뀌고, 기본행렬은 가역이며 그 역행렬도 같은 종류의 기본행렬이다.
-requires: [function, finite-set, well-ordering-principle, real-number-arithmetic, real-function-space, finite-sum-of-vectors, matrix, matrix-vector-product, matrix-product, matrix-product-properties, invertible-matrix]
+requires: [function, finite-set, well-ordering-principle, real-number-arithmetic, real-function-space, finite-sum-of-vectors, standard-basis, matrix, matrix-vector-product, matrix-product, matrix-product-properties, invertible-matrix]
 sources:
   - ref: treil-linear-algebra-done-wrong
     loc: "2장 2절 2.1 Row operations, p.40; 2.1.1 Row operations and multiplication by elementary matrices, pp.41–42"
     checked: original
-    note: "출처는 2.1절(p.40)에서 세 가지 행 연산, 곧 두 행을 맞바꾸기(row exchange), 한 행에 0 이 아닌 스칼라 곱하기(scaling), k 번째 행을 그것과 j 번째 행의 상수배의 합으로 바꾸고 나머지 행은 그대로 두기(row replacement)를 든다. 2.1.1(pp.41–42)에서는 모든 행 연산이 특별한 기본행렬(elementary matrices)을 왼쪽에 곱하는 것과 같다고 적고, 세 행렬을 점을 찍은 그림으로 보인 뒤, 곱이 그렇게 작용한다는 것은 벡터(열)에 어떻게 작용하는지 보면 알 수 있다고 적는다. 또 세 행렬이 모두 가역이고, 첫째의 역행렬은 자기 자신, 둘째는 a 를 1/a 로, 셋째는 a 를 −a 로 바꾼 것이라고 적되 그 확인은 열에 대한 작용을 보면 된다고 적는다(p.42). 이 항목은 세 행렬을 성분으로 정의하고, 행렬과 벡터의 곱의 행 규칙으로 (1)–(3)을 증명한다. 출처는 세 행렬에 이름이나 기호를 붙이지 않는다. P_{j,k}, D_k(c), R_{k,j}(c) 는 이 항목의 기호이다. 출처는 행 연산을 행렬에 대한 조작으로 먼저 정의하고 기본행렬의 곱을 그 설명으로 쓰지만, 이 항목은 거꾸로 기본 행 연산을 기본행렬을 왼쪽에 곱하는 것으로 정의한다. '기본 행 연산'(elementary row operation)이라는 말은 출처 2장 7절 연습문제 7.1 c(p.67)에 나온다. 기본행렬이 단위행렬에 그 행 연산을 한 것이라는 참고 블록의 내용은 출처 p.42 의 여백 글과 같다. 반례 '오른쪽에 곱하면 열이 바뀐다'는 출처 3장 3.5절 Lemma 3.6 의 증명(p.83)이 기본행렬을 오른쪽에 곱하는 것은 열 연산이라고 적는 것과 같은 발상이다. 출처의 스칼라는 실수 또는 복소수이고 이 항목은 실수만 쓴다. 예시, 다른 반례, 확인 질문은 새로 만들었다(출처 2.1절과 2.1.1 에는 기본행렬의 수치 예가 없다)."
+    note: "출처는 2.1절(p.40)에서 세 가지 행 연산, 곧 두 행을 맞바꾸기(row exchange), 한 행에 0 이 아닌 스칼라 곱하기(scaling), k 번째 행을 그것과 j 번째 행의 상수배의 합으로 바꾸고 나머지 행은 그대로 두기(row replacement)를 든다. 2.1.1(pp.41–42)에서는 모든 행 연산이 특별한 기본행렬(elementary matrices)을 왼쪽에 곱하는 것과 같다고 적고, 세 행렬을 점을 찍은 그림으로 보인 뒤, 곱이 그렇게 작용한다는 것은 벡터(열)에 어떻게 작용하는지 보면 알 수 있다고 적는다. 또 세 행렬이 모두 가역이고, 첫째의 역행렬은 자기 자신, 둘째는 a 를 1/a 로, 셋째는 a 를 −a 로 바꾼 것이라고 적되 그 확인은 열에 대한 작용을 보면 된다고 적는다(p.42). 이 항목은 세 행렬을 성분으로 정의하고, 행렬과 벡터의 곱의 행 규칙으로 (1)–(3)과 표준기저 벡터에 대한 작용 (5)를 증명한다. (4)와 (5)는 출처에 따로 적혀 있지 않다(2장 본문과 연습문제를 읽은 범위). 출처는 세 행렬에 이름이나 기호를 붙이지 않는다. P_{j,k}, D_k(c), R_{k,j}(c) 는 이 항목의 기호이다. 출처는 행 연산을 행렬에 대한 조작으로 먼저 정의하고 기본행렬의 곱을 그 설명으로 쓰지만, 이 항목은 거꾸로 기본 행 연산을 기본행렬을 왼쪽에 곱하는 것으로 정의한다. '기본 행 연산'(elementary row operation)이라는 말은 출처 2장 7절 연습문제 7.1 c(p.67)에 나온다. 기본행렬이 단위행렬에 그 행 연산을 한 것이라는 참고 블록의 내용은 출처 p.42 의 여백 글과 같다. 반례 '오른쪽에 곱하면 열이 바뀐다'는 출처 3장 3.5절 Lemma 3.6 의 증명(p.83)이 기본행렬을 오른쪽에 곱하는 것은 열 연산이라고 적는 것과 같은 발상이다. 출처의 스칼라는 실수 또는 복소수이고 이 항목은 실수만 쓴다. 예시, 다른 반례, 확인 질문은 새로 만들었다(출처 2.1절과 2.1.1 에는 기본행렬의 수치 예가 없다)."
 status: source-checked
 added: 2026-11-16
 ---
@@ -36,6 +36,7 @@ $$(P_{j,k}A)_{p,q} = a_{\tau(p),q}$$
 $$P_{j,k}P_{j,k} = I_m, \qquad D_k(c)D_k(c^{-1}) = D_k(c^{-1})D_k(c) = I_m, \qquad R_{k,j}(c)R_{k,j}(-c) = R_{k,j}(-c)R_{k,j}(c) = I_m$$
 이다. 따라서 모든 기본행렬은 [[invertible-matrix|가역]]이고, $P_{j,k}^{-1} = P_{j,k}$, $D_k(c)^{-1} = D_k(c^{-1})$, $R_{k,j}(c)^{-1} = R_{k,j}(-c)$이다. 특히 기본행렬의 역행렬은 같은 꼴의 기본행렬이다.
 4. ($m = 1$) $m = 1$이면 $j \ne k$인 $j$, $k \in \{1\}$이 없으므로 $P_{j,k}$와 $R_{k,j}(c)$는 없다. $1 \times 1$ 기본행렬은 $0$이 아닌 실수 $c$에 대한 $D_1(c) = \begin{pmatrix} c \end{pmatrix}$뿐이다.
+5. (표준기저 벡터에 곱하기) $q \in \{1, \dots, m\}$이고 $e_q \in \mathbb{R}^m$이 [[standard-basis|표준기저]]의 벡터이면 $P_{j,k}e_q = e_{\tau(q)}$이다. $D_k(c)e_k = c e_k$이고, $q \ne k$이면 $D_k(c)e_q = e_q$이다. $R_{k,j}(c)e_j = e_j + c e_k$이고, $q \ne j$이면 $R_{k,j}(c)e_q = e_q$이다.
 :::
 
 :::english
@@ -57,6 +58,7 @@ Also $(D_k(c)A)_{k,q} = c\, a_{k,q}$, and $(D_k(c)A)_{p,q} = a_{p,q}$ if $p \ne 
 $$P_{j,k}P_{j,k} = I_m, \qquad D_k(c)D_k(c^{-1}) = D_k(c^{-1})D_k(c) = I_m, \qquad R_{k,j}(c)R_{k,j}(-c) = R_{k,j}(-c)R_{k,j}(c) = I_m.$$
 Hence every elementary matrix is invertible, and $P_{j,k}^{-1} = P_{j,k}$, $D_k(c)^{-1} = D_k(c^{-1})$, $R_{k,j}(c)^{-1} = R_{k,j}(-c)$. In particular, the inverse of an elementary matrix is an elementary matrix of the same form.
 4. ($m = 1$) If $m = 1$, there are no $j$, $k \in \{1\}$ with $j \ne k$, so there is no $P_{j,k}$ and no $R_{k,j}(c)$. The $1 \times 1$ elementary matrices are exactly the matrices $D_1(c) = \begin{pmatrix} c \end{pmatrix}$ with $c$ a nonzero real number.
+5. (Multiplying standard basis vectors) If $q \in \{1, \dots, m\}$ and $e_q \in \mathbb{R}^m$ is a vector of the standard basis, then $P_{j,k}e_q = e_{\tau(q)}$. Also $D_k(c)e_k = c e_k$, and $D_k(c)e_q = e_q$ if $q \ne k$. Also $R_{k,j}(c)e_j = e_j + c e_k$, and $R_{k,j}(c)e_q = e_q$ if $q \ne j$.
 :::
 
 ## 직관
@@ -96,7 +98,15 @@ $$y_k + (-c)y_j = (x_k + c x_j) + (-c)x_j = x_k + (c x_j + (-c)x_j) = x_k + (c +
 
 가역: 기본행렬 $G$와 위에서 짝지은 $m \times m$ 행렬 $G'$($P_{j,k}$에는 $P_{j,k}$, $D_k(c)$에는 $D_k(c^{-1})$, $R_{k,j}(c)$에는 $R_{k,j}(-c)$)은 $G'G = I_m$이고 $GG' = I_m$을 만족한다. [[invertible-matrix|가역행렬]]의 정의에 의해 $G'$은 $G$의 왼쪽 역이면서 오른쪽 역이므로 $G$는 가역이고, 그 항목의 (1)에 의해 $G^{-1} = G'$이다. $c^{-1} \ne 0$이므로 $D_k(c^{-1})$은 상수배 꼴의 기본행렬이고, $R_{k,j}(-c)$는 같은 $j \ne k$에 대한 더하기 꼴의 기본행렬이다.
 
-**(4)의 증명.** [[finite-set|유한집합]] 항목의 정의에 의해 $\{1, \dots, 1\} = \{i \in \mathbb{Z} : 1 \le i \le 1\}$이고, $1 \le i \le 1$이면 [[well-ordering-principle|정렬 원리]] 항목의 (L2)에 의해 $i = 1$이며 $1$은 이 집합에 속하므로 이 집합은 $\{1\}$이다. 따라서 $j$, $k \in \{1\}$이면 $j = 1 = k$이고, $j \ne k$인 $j$, $k$는 없다. 남은 기본행렬은 $k = 1$인 $D_1(c)$이고, 그 유일한 성분 $(1, 1)$은 $p = q = k$인 경우이므로 $c$이다. $\blacksquare$
+**(4)의 증명.** [[finite-set|유한집합]] 항목의 정의에 의해 $\{1, \dots, 1\} = \{i \in \mathbb{Z} : 1 \le i \le 1\}$이고, $1 \le i \le 1$이면 [[well-ordering-principle|정렬 원리]] 항목의 (L2)에 의해 $i = 1$이며 $1$은 이 집합에 속하므로 이 집합은 $\{1\}$이다. 따라서 $j$, $k \in \{1\}$이면 $j = 1 = k$이고, $j \ne k$인 $j$, $k$는 없다. 남은 기본행렬은 $k = 1$인 $D_1(c)$이고, 그 유일한 성분 $(1, 1)$은 $p = q = k$인 경우이므로 $c$이다.
+
+**(5)의 증명.** $e_q$의 $p$번째 값은 $p = q$이면 $1$, 아니면 $0$이다([[standard-basis|표준기저]]). $\mathbb{R}^m$의 덧셈과 스칼라배는 값마다 정해지므로([[real-function-space|실숫값 함수의 공간]]) 두 원소의 같음은 값마다 비교한다. 아래에서 이 항목의 (1)을 $x = e_q$에 쓴다.
+
+맞바꿈: $P_{j,k}e_q$의 $p$번째 값은 $e_q$의 $\tau(p)$번째 값이므로, $\tau(p) = q$이면 $1$이고 아니면 $0$이다. (3)의 증명에서 보인 $\tau(\tau(p)) = p$에 의해 $\tau(p) = q$이면 $p = \tau(\tau(p)) = \tau(q)$이고, 거꾸로 $p = \tau(q)$이면 $\tau(p) = \tau(\tau(q)) = q$이다. 따라서 $P_{j,k}e_q$의 $p$번째 값은 $p = \tau(q)$이면 $1$이고 아니면 $0$이며, 이것은 $e_{\tau(q)}$의 $p$번째 값이다.
+
+상수배: $q \ne k$이면 $D_k(c)e_q$의 $k$번째 값은 $c \cdot e_q(k) = c \cdot 0 = 0 = e_q(k)$이고((K9)), $p \ne k$이면 $p$번째 값은 $e_q(p)$이므로 $D_k(c)e_q = e_q$이다. $q = k$이면 $D_k(c)e_k$의 $k$번째 값은 $c \cdot 1 = c$이고((K4)), 이것은 $c e_k$의 $k$번째 값 $c \cdot 1$과 같다. $p \ne k$이면 $D_k(c)e_k$의 $p$번째 값은 $e_k(p) = 0$이고 $c e_k$의 $p$번째 값은 $c \cdot 0 = 0$이다((K9)).
+
+더하기: $q \ne j$이면 $R_{k,j}(c)e_q$의 $k$번째 값은 $e_q(k) + c \cdot e_q(j) = e_q(k) + c \cdot 0 = e_q(k)$이고((K9), (K4)), $p \ne k$이면 $p$번째 값은 $e_q(p)$이므로 $R_{k,j}(c)e_q = e_q$이다. $q = j$이면, $j \ne k$이므로 $e_j(k) = 0$이고 $R_{k,j}(c)e_j$의 $k$번째 값은 $0 + c \cdot 1 = c$이며((K1), (K4)), $e_j + c e_k$의 $k$번째 값도 $e_j(k) + c \cdot e_k(k) = 0 + c \cdot 1 = c$이다. $p \ne k$이면 $R_{k,j}(c)e_j$의 $p$번째 값은 $e_j(p)$이고, $e_j + c e_k$의 $p$번째 값은 $e_j(p) + c \cdot 0 = e_j(p)$이다((K9), (K4)). 모든 자리에서 값이 같으므로 $R_{k,j}(c)e_j = e_j + c e_k$이다. $\blacksquare$
 :::
 
 ## 예시와 반례
@@ -106,7 +116,7 @@ $m = 3$이고
 $$A = \begin{pmatrix} 2 & -1 \\ 1 & 3 \\ 4 & 0 \end{pmatrix}, \qquad R_{3,1}(-2) = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ -2 & 0 & 1 \end{pmatrix}$$
 이라 합시다. $R_{3,1}(-2)$는 대각성분이 $1$이고 $(3, 1)$ 성분이 $-2$입니다. 이 항목의 (2)에 의해 $R_{3,1}(-2)A$의 셋째 행은 $(4 + (-2) \cdot 2,\ 0 + (-2)(-1)) = (0, 2)$이고 첫째, 둘째 행은 그대로입니다. 열로 계산해도 같습니다. $A$의 첫째 열 $(2, 1, 4)$에 대해 $R_{3,1}(-2)$의 열들의 일차결합 $2(1, 0, -2) + 1(0, 1, 0) + 4(0, 0, 1) = (2, 1, 0)$이고, 둘째 열 $(-1, 3, 0)$에 대해 $(-1)(1, 0, -2) + 3(0, 1, 0) + 0(0, 0, 1) = (-1, 3, 2)$입니다. 따라서
 $$R_{3,1}(-2)A = \begin{pmatrix} 2 & -1 \\ 1 & 3 \\ 0 & 2 \end{pmatrix}, \qquad P_{1,2}R_{3,1}(-2)A = \begin{pmatrix} 1 & 3 \\ 2 & -1 \\ 0 & 2 \end{pmatrix}$$
-입니다. 둘째 등식은 이 항목의 (2)에 의해 첫째 행과 둘째 행을 맞바꾼 것입니다. 이 항목의 (3)에 의해 $R_{3,1}(2)$를 왼쪽에 곱하면 $R_{3,1}(-2)A$에서 $A$로 돌아옵니다. 실제로 셋째 행이 $(0 + 2 \cdot 2,\ 2 + 2(-1)) = (4, 0)$이 됩니다.
+입니다. 둘째 등식은 이 항목의 (2)에 의해 첫째 행과 둘째 행을 맞바꾼 것입니다. 이 항목의 (3)과 [[matrix-product-properties|행렬 곱의 성질]]의 (1), (4)에 의해 $R_{3,1}(2)$를 왼쪽에 곱하면 $R_{3,1}(-2)A$에서 $A$로 돌아옵니다. 실제로 셋째 행이 $(0 + 2 \cdot 2,\ 2 + 2(-1)) = (4, 0)$이 됩니다.
 :::
 
 :::counterexample[한 행에 0을 곱하는 행렬은 가역이 아니다]
