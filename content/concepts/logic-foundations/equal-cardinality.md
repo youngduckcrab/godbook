@@ -1,0 +1,88 @@
+---
+title: 크기가 같은 집합
+title_en: Sets with Equal Cardinalities
+aliases: [같은 크기, 기수가 같다, 집합의 크기, same cardinality, equal cardinality, cardinality]
+kind: definition
+field: logic-foundations
+msc: ["03E10"]
+level: intro
+summary: "$A$에서 $B$로의 전단사가 존재할 때 두 집합의 크기가 같다고 하고 $|A| = |B|$로 쓴다. 없으면 $|A| \\ne |B|$로 쓴다."
+requires: [set, subset, function, injective-surjective-bijective, even-and-odd]
+sources:
+  - ref: hammack-book-of-proof
+    loc: 14.1절 Sets with Equal Cardinalities, Definition 14.1, p.269 (전단사의 그림, Example 14.1, 전단사(bijection) 등의 용어 설명, 정의가 유한집합과 무한집합 모두에 적용된다는 강조는 p.270)
+    checked: original
+    note: "출처는 14장 첫머리(p.269)에서 유한집합에 대해서는 원소를 세어 같은 수가 나오면 |A| = |B|라 해 왔다고 말하고, 무한집합에는 이 방법이 통하지 않으므로 Definition 14.1의 새 접근이 필요하다고 설명한다. 출처는 이 정의가 유한집합에서도 원소를 세는 방식과 같은 답을 준다는 것을 따로 증명하지 않으며 이 항목도 증명하지 않는다. 출처는 |A| = |B|가 A에서 B로의 전단사의 존재라는 점만 정의하고, 이 관계가 대칭적이고 추이적이라는 사실은 이 항목에서 다루지 않는다. 진술의 문장은 출처의 것을 직접 다시 서술했다. 예시 중 ℕ과 짝수인 자연수의 집합 사이의 f(n) = 2n은 출처 Example 14.5(p.275)의 'ℤ에서 짝수인 정수의 집합 E로의 f(n) = 2n'과 같은 발상이나 정의역과 공역이 다르고 증명은 이 사이트에서 새로 썼다. 크기가 같은 작은 유한집합의 예와 반례, 확인 질문은 이 사이트에서 새로 만들었으며 출처의 예(p.269의 5개 원소 그림, Example 14.1)와는 집합이 다르다. '정의에 따르면 부분이 전체와 크기가 같을 수 있다'는 직관의 설명은 출처가 p.271에서 ℕ과 ℤ에 대해 말하는 것과 같은 취지이다."
+status: source-checked
+added: 2026-11-16
+---
+
+:::statement
+$A$와 $B$가 [[set]]일 때, $A$에서 $B$로의 전단사 $f : A \to B$([[injective-surjective-bijective]], 공역은 $f : A \to B$라고 쓸 때 밝힌 $B$)가 **존재하면** $A$와 $B$는 **크기가 같다**(have the same cardinality)고 하고 $|A| = |B|$로 쓴다. 이런 $f$가 **하나도 없으면** $A$와 $B$의 크기가 같지 않다고 하고 $|A| \ne |B|$로 쓴다.
+
+이 정의는 "$|A| = |B|$"라는 표기 전체에 뜻을 준다. $A$가 [[set]]에서 말한 원소가 유한 개인 집합일 때의 $|A|$는 원소의 개수였지만, 이 정의에서는 $|A|$ 자체에 어떤 수도 짝지어 주지 않는다. $|A| = |B|$인지 아닌지는 $A$에서 $B$로의 전단사가 있느냐 없느냐로 정해진다.
+:::
+
+:::english
+Let $A$ and $B$ be sets. If there **exists** a bijective function $f : A \to B$ (here $B$ is the codomain named in the notation $f : A \to B$), then $A$ and $B$ are said to have the **same cardinality**, and we write $|A| = |B|$. If **no** such function exists, then $A$ and $B$ are said not to have the same cardinality, and we write $|A| \ne |B|$.
+
+This definition gives a meaning to the whole expression "$|A| = |B|$". For a set $A$ with finitely many elements, $|A|$ was the number of elements, but under this definition no number is assigned to $|A|$ itself. Whether $|A| = |B|$ holds is decided by whether there exists a bijection from $A$ to $B$.
+:::
+
+## 직관
+
+강당에서 손님들이 의자에 앉는 상황을 생각합시다. 손님 수도 의자 수도 세지 않아도, 모든 손님이 앉았고(모든 손님에게 의자가 있다), 한 의자에 두 명이 앉지 않았고(단사), 빈 의자가 없다(전사)는 것만 확인하면 손님과 의자가 "같은 수"라고 말할 수 있습니다. 손님의 집합이 $A$, 의자의 집합이 $B$, 앉는 규칙이 $f : A \to B$입니다. 이 정의는 "짝짓기가 가능하다"를 크기가 같다는 말의 뜻으로 삼습니다.
+
+원소가 유한 개인 집합에서는 짝지을 수 있을 때와 개수가 같을 때가 일치하는 것이 우리의 경험입니다. 아래 첫째 예가 그런 경우입니다. 이 항목은 이것을 일반적으로 증명하지 않습니다. 새로운 점은 원소를 다 셀 수 없는 집합에도 같은 정의를 쓴다는 것입니다. 이때 $|A|$는 어떤 수가 아니고, $|A| = |B|$라는 표기가 "$A$에서 $B$로의 전단사가 존재한다"를 줄여 쓴 것입니다. 정의는 $A$에서 $B$로 가는 방향으로 쓰여 있습니다. $B$에서 $A$로의 전단사를 말하는 것이 아니며, 두 방향의 관계는 이 항목에서 다루지 않습니다. 크기가 같다는 관계가 반사·대칭·추이를 만족한다는 사실은 함수에 관한 뒤의 항목들을 바탕으로 다음에 다룹니다.
+
+이 정의에서는 집합의 일부가 전체와 크기가 같을 수 있습니다. 아래 둘째 예에서 짝수인 자연수의 집합은 자연수의 집합에 들어 있는 일부인데, 둘 사이에 전단사가 있습니다. 비유에서 의자를 일부만 쓰는 상황은 나타나지 않습니다. 유한 개의 의자에서는 일부만 쓰면 빈 의자가 생기지만, 의자가 끝없이 있으면 짝짓기가 의자 전체를 채울 수 있다는 것이 비유가 놓치는 곳입니다.
+
+## 예시와 반례
+
+변수 문자와 겹치지 않도록 원소 이름으로 가, 나, 다를 씁니다.
+
+:::example[크기가 같은 작은 유한집합]
+$A = \{1, 2, 3\}$, $B = \{\text{가}, \text{나}, \text{다}\}$이고 $f = \{(1, \text{다}), (2, \text{가}), (3, \text{나})\}$라 합시다. $1, 2, 3$ 각각이 첫째 성분으로 정확히 한 번 나오고 둘째 성분은 모두 $B$의 원소이므로 $f : A \to B$는 함수입니다. 값 $f(1) = \text{다}$, $f(2) = \text{가}$, $f(3) = \text{나}$가 서로 다르므로 단사입니다. 가, 나, 다가 모두 값으로 나오므로($\text{가} = f(2)$, $\text{나} = f(3)$, $\text{다} = f(1)$) 전사입니다. 따라서 $f$는 전단사이고 $|A| = |B|$입니다.
+:::
+
+:::example[자연수와 짝수인 자연수]
+$E$를 짝수인 자연수의 집합, 곧 $E = \{n \in \mathbb{N} : n \text{은 짝수}\}$라 하고, $f(n) = 2n$으로 정한 $f : \mathbb{N} \to E$를 봅시다. 정수의 곱은 정수이므로 $2n$은 정수이고, $n \ge 1$이므로 $2n \ge 2$이니 $2n \in \mathbb{N}$입니다. $2n = 2 \cdot n$이고 $n$은 정수이므로 $2n$은 [[even-and-odd|짝수]]입니다. 따라서 $f(n) \in E$이고 $f$는 $\mathbb{N}$에서 $E$로의 함수입니다.
+
+단사: $f(a) = f(a')$이면 $2a = 2a'$이고 양변을 $2$로 나누면 $a = a'$입니다. 전사: $e \in E$라 합시다. $e$가 짝수이므로 $e = 2k$인 정수 $k$가 있습니다. $k \le 0$이면 $e = 2k \le 0$인데 $e \ge 1$이므로 $k \ge 1$이고 $k \in \mathbb{N}$입니다. $f(k) = 2k = e$입니다. 따라서 $f$는 전단사이고 $|\mathbb{N}| = |E|$입니다.
+
+$E \subseteq \mathbb{N}$이지만 $1 \in \mathbb{N}$은 홀수이고, 짝수이면서 홀수인 정수는 없으므로 $1 \notin E$입니다. 일부분 $E$가 전체 $\mathbb{N}$과 크기가 같습니다.
+:::
+
+:::counterexample[원소가 2개인 집합과 3개인 집합]
+"$|A| \ne |B|$"는 전단사가 하나도 없다는 뜻이므로, 함수 하나가 전단사가 아니라는 것만으로는 보이지 못합니다. 예를 들어 $A = \{1, 2\}$, $B = \{\text{가}, \text{나}\}$이고 $g = \{(1, \text{가}), (2, \text{가})\}$는 $g(1) = g(2)$이고 $1 \ne 2$이므로 단사가 아니어서 전단사가 아닙니다. 그러나 $\{(1, \text{가}), (2, \text{나})\}$는 전단사이므로 $|A| = |B|$입니다.
+
+$|A| \ne |B|$를 보이려면 가능한 함수를 빠짐없이 따져야 합니다. $A = \{1, 2\}$, $B = \{\text{가}, \text{나}, \text{다}\}$로 합시다. $A$에서 $B$로의 함수는 $f(1)$과 $f(2)$를 각각 $B$의 원소로 고르는 것이므로 모두 $9$개이고 $(f(1), f(2))$로 나열하면 다음과 같습니다. 각각 공역의 원소 하나가 값으로 나오지 않으므로 전사가 아닙니다.
+
+| $(f(1), f(2))$ | 값이 아닌 공역의 원소 |
+|---|---|
+| (가, 가) | 나 |
+| (가, 나) | 다 |
+| (가, 다) | 나 |
+| (나, 가) | 다 |
+| (나, 나) | 가 |
+| (나, 다) | 가 |
+| (다, 가) | 나 |
+| (다, 나) | 가 |
+| (다, 다) | 가 |
+
+전단사가 하나도 없으므로 $|A| \ne |B|$입니다. 이 확인은 $A$에서 $B$로의 함수만 다룹니다.
+:::
+
+:::counterexample[전사가 아닌 함수가 있다고 크기가 다른 것은 아니다]
+$h(n) = 2n$인 $h : \mathbb{N} \to \mathbb{N}$은 단사입니다. $1 \in \mathbb{N}$에 대하여 $2n = 1$인 정수 $n$이 없으므로($n \le 0$이면 $2n \le 0$이고 $n \ge 1$이면 $2n \ge 2$) 전사가 아닙니다. 그렇다고 $|\mathbb{N}| \ne |\mathbb{N}|$인 것은 아닙니다. $\mathrm{id}(n) = n$인 $\mathrm{id} : \mathbb{N} \to \mathbb{N}$은 $\mathrm{id}(a) = \mathrm{id}(a')$이면 $a = a'$이므로 단사이고, 모든 $b \in \mathbb{N}$에 대해 $\mathrm{id}(b) = b$이므로 전사이어서 전단사이고, $|\mathbb{N}| = |\mathbb{N}|$입니다.
+:::
+
+## 확인 질문
+
+:::check[$A = \{1, 2, 3\}$, $B = \{5, 6, 7\}$이고 $f(n) = n + 4$이다. $|A| = |B|$임을 보여라.]
+$f(1) = 5$, $f(2) = 6$, $f(3) = 7$이므로 $f : A \to B$는 함수이고, 세 값이 서로 달라 단사이며, $B$의 원소 $5, 6, 7$이 모두 값이므로 전사입니다. 전단사가 존재하므로 $|A| = |B|$입니다.
+:::
+
+:::check[$A = \{1, 2\}$, $B = \{\text{가}, \text{나}\}$이고 $g = \{(1, \text{가}), (2, \text{가})\}$이다. $g$가 전단사가 아니므로 $|A| \ne |B|$인가?]
+아닙니다. $|A| \ne |B|$는 전단사가 하나도 없다는 뜻인데, $\{(1, \text{가}), (2, \text{나})\}$는 $A$에서 $B$로의 전단사입니다. 따라서 $|A| = |B|$입니다.
+:::
