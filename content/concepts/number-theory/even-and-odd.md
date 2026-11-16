@@ -10,9 +10,9 @@ summary: 정수 n은 n = 2a인 정수 a가 있을 때 짝수, n = 2a + 1인 정�
 requires: [set, quantifiers]
 sources:
   - ref: hammack-book-of-proof
-    loc: 4.2절 Definitions, Definition 4.1과 4.2, p.115 (정의를 쌍조건문으로 읽는다는 설명도 p.115). 정수의 합·차·곱에 관한 Fact 4.1과 나눗셈 정리는 p.117
+    loc: 4.2절 Definitions, Definition 4.1과 4.2, p.115 (정의를 쌍조건문으로 읽는다는 설명도 p.115). 정수의 합·차·곱에 관한 Fact 4.1과 나눗셈 정리는 p.117. "짝수이거나 홀수"를 쓰는 곳은 p.124(4.4절), p.54(2.7절 Example 2.5)
     checked: original
-    note: 출처는 정의를 "~이면 짝수이다" 꼴로 쓰면서, 이를 "정확히 ~일 때"로 읽는 것이 관례라고 같은 쪽에서 설명한다. 아래 진술은 처음부터 양방향으로 적었다. 출처는 p.117에서 Fact 4.1(정수의 합·차·곱은 정수)을 "without justification or proof" 받아들이고, 나눗셈 정리(정수 a와 양의 정수 b에 대해 a = qb + r, 0 ≤ r < b인 정수 q, r이 유일하게 존재)도 증명 없이 받아들인다. 정수가 짝수이거나 홀수이고 둘 다는 아니라는 사실은 출처가 문장으로 진술하지 않는다. 이는 나눗셈 정리에서 b = 2인 경우, 곧 나머지가 0 또는 1이고 유일하다는 것에 해당하며, 이 사이트는 이를 증명 없이 받아들인다. 예시와 확인 질문은 출처 p.115의 예(10 = 2·5, 7 = 2·3 + 1, 7은 짝수가 아님)와 같은 꼴에 수를 바꾸어 만들었다.
+    note: 출처는 정의를 "~이면 짝수이다" 꼴로 쓰면서, 이를 "정확히 ~일 때"로 읽는 것이 관례라고 같은 쪽에서 설명한다. 아래 진술은 처음부터 양방향으로 적었다. 출처는 p.117에서 Fact 4.1(정수의 합·차·곱은 정수)을 "without justification or proof" 받아들이고, 나눗셈 정리(정수 a와 양의 정수 b에 대해 a = qb + r, 0 ≤ r < b인 정수 q, r이 유일하게 존재)도 증명 없이 받아들인다. 출처는 4.2절에서 "모든 정수는 짝수이거나 홀수이고 둘 다는 아니다"를 따로 진술하지 않는다. 다만 p.124(4.4절의 증명)에서 'n is either even or odd'를, p.54(Example 2.5)에서 'Every integer that is not odd is even'을 증명 없이 쓴다. '둘 다는 아니다'를 문장으로 적은 곳은 확인하지 못했다. 이 사이트는 두 부분을 모두 증명 없이 받아들이며, 이는 p.117의 나눗셈 정리에서 b = 2인 경우, 곧 나머지가 0 또는 1이고 유일하다는 것에 해당한다. 예시와 확인 질문은 출처 p.115의 예(10 = 2·5, 7 = 2·3 + 1, 7은 짝수가 아님)와 같은 꼴에 수를 바꾸어 만들었다.
 status: source-checked
 added: 2026-11-16
 ---
@@ -25,7 +25,10 @@ $n$이 정수, 곧 [[set|집합]] $\mathbb{Z}$의 원소일 때, 다음과 같�
 
 여기서 $a$는 $n$마다 달라질 수 있는 정수이다. 괄호 안은 같은 조건을 [[quantifiers]]의 존재 기호로 쓴 것이다.
 
-모든 정수는 짝수이거나 홀수이며, 둘 다인 정수는 없다. 이 사이트는 이를 증명 없이 받아들인다.
+이 사이트는 다음 두 사실을 증명 없이 받아들인다.
+
+- 정수끼리 더하거나 빼거나 곱한 결과는 정수이다. (정수의 합·차·곱에 관한 기본 성질)
+- 모든 정수는 짝수이거나 홀수이며, 둘 다인 정수는 없다.
 :::
 
 :::english
@@ -36,20 +39,19 @@ Let $n$ be an integer, that is, an element of $\mathbb{Z}$. The following defini
 
 Here $a$ is an integer that may depend on $n$. The parenthetical forms write the same conditions with the existential quantifier.
 
-Every integer is even or odd, and no integer is both. This site accepts this fact without proof.
+This site accepts the following two facts without proof.
+
+- The sum, difference, and product of integers are integers. (the basic property of integer sums, differences, and products)
+- Every integer is even or odd, and no integer is both.
 :::
 
 ## 직관
 
 짝수는 "둘씩 짝지어 남김없이 묶이는 개수"이고, 홀수는 "둘씩 묶고 하나가 남는 개수"입니다. $n = 2a$는 $a$개의 짝으로 묶인다는 뜻이고, $n = 2a + 1$은 $a$개의 짝과 낱개 하나라는 뜻입니다. 정수에는 음수와 $0$도 있으므로 $a$가 음수나 $0$이어도 됩니다.
 
-정수를 둘씩 묶으면 낱개가 남지 않거나 하나 남거나 둘 중 하나이고 둘 다는 아니라는 것이, 진술 끝의 "짝수이거나 홀수이며 둘 다는 아니다"입니다. 그래서 짝수가 아닌 정수는 곧 홀수입니다.
+정수를 둘씩 묶으면 낱개가 남지 않거나 하나 남거나 둘 중 하나이고 둘 다는 아니라는 것이, 진술 끝에서 받아들인 "짝수이거나 홀수이며 둘 다는 아니다"입니다. 그래서 짝수가 아닌 정수는 곧 홀수입니다.
 
 이 정의를 쓰는 방법은 두 가지입니다. 어떤 정수가 짝수라는 사실이 주어지면 그것을 $2a$ 꼴의 식으로 바꿔 쓸 수 있습니다. 거꾸로 어떤 수를 $2b$ 꼴이나 $2b + 1$ 꼴로 정리해 내면, 그 수가 짝수나 홀수임을 결론 내릴 수 있습니다. 정의가 양방향이기 때문에 두 방향 모두 가능합니다.
-
-:::remark[증명 없이 받아들이는 사실]
-정수끼리 더하거나 빼거나 곱한 결과는 정수입니다. 이 사이트는 이를 **정수의 합·차·곱에 관한 기본 성질**로 증명 없이 받아들이고, 뒤의 증명에서 "정수의 합·곱은 정수라는 기본 성질에 의해"라고 인용합니다. 출처(Hammack)도 같은 사실(Fact 4.1)을 증명 없이 받아들입니다.
-:::
 
 ## 예시와 반례
 
@@ -57,7 +59,7 @@ Every integer is even or odd, and no integer is both. This site accepts this fac
 - $18 = 2 \cdot 9$이므로 $18$은 짝수입니다.
 - $-7 = 2 \cdot (-4) + 1$이므로 $-7$은 홀수입니다. $a = -4$는 정수이므로 문제없습니다.
 - $0 = 2 \cdot 0$이므로 $0$은 짝수입니다.
-- $n$이 정수일 때 $2n + 6 = 2(n + 3)$입니다. 정수의 합은 정수라는 기본 성질(위 참조)에 의해 $n + 3$은 정수이므로, $2n + 6$은 짝수입니다.
+- $n$이 정수일 때 $2n + 6 = 2(n + 3)$입니다. 정수의 합은 정수라는 기본 성질(위 진술에서 받아들임)에 의해 $n + 3$은 정수이므로, $2n + 6$은 짝수입니다.
 :::
 
 :::counterexample
