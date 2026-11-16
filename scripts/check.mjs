@@ -128,6 +128,8 @@ function lintBody(file, body, requires, self) {
     const bad = (fin ? AFTER_VOWEL : AFTER_FINAL).find((j) => after.startsWith(j) && !['가지', '가운', '과정', '와서', '은근'].some((w) => after.startsWith(w)));
     if (bad) warn(file, `조사가 안 맞는다: "${shown}${after}" ([[${id}]])`);
   }
+  // 링크의 표시말에 수식이 있으면 링크가 풀리지 않고 [[ 가 그대로 보인다.
+  for (const m of text.matchAll(/\[\[[a-z0-9-]+\|[^\]]*\$[^\]]*\]\]/g)) warn(file, `링크의 표시말에 수식($)이 있다: ${m[0].slice(0, 60)}`);
   // 탭과 제어 문자: \\text 의 \\t 가 탭으로 바뀌는 사고가 있었다. 화면에서 수식이 깨진다.
   text.split('\n').forEach((line, i) => { if (/[\x00-\x09\x0b-\x1f]/.test(line)) warn(file, `본문 ${i + 1}번째 줄에 탭이나 제어 문자가 있다`); });
   // 수식 구분 기호: 본문의 한 문단(줄) 안에서 $ 의 개수가 홀수이면 수식이 깨져 보인다.
