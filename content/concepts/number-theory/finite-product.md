@@ -7,7 +7,7 @@ field: number-theory
 msc: ["11"]
 level: undergrad
 summary: 정수 a₁, …, aₙ의 곱 a₁a₂⋯aₙ을 앞에서부터 하나씩 곱하는 재귀로 정의하고, 곱이 정수라는 것, 두 곱을 이어 붙일 수 있다는 것, 맨 앞 인수를 뗄 수 있다는 것, 각 인수가 곱을 나눈다는 것, 양의 정수들의 곱의 크기를 보인다.
-requires: [function, mathematical-induction, even-and-odd, divisibility, prime-number, well-ordering-principle]
+requires: [function, mathematical-induction, even-and-odd, divisibility, prime-number, well-ordering-principle, prime-factorization-exists]
 sources:
   - ref: hammack-book-of-proof
     loc: 10.4절 The Fundamental Theorem of Arithmetic, Theorem 10.1의 증명, p.192 (같은 표기가 10.1절 Proposition 10.1, p.186에도 나온다)
@@ -31,7 +31,7 @@ $n$이 자연수일 때, 길이 $n$인 **정수의 열**(finite sequence of inte
 $$a_1 a_2 \cdots a_{n+1} = (a_1 a_2 \cdots a_n) \cdot a_{n+1}$$
 이다. 오른쪽의 $a_1 a_2 \cdots a_n$은 이 열의 처음 $n$개로 이루어진 길이 $n$인 열의 곱이고, $\cdot$은 두 정수의 곱셈이다.
 
-모든 자연수 $n$과 길이 $n$인 정수의 열마다 이 규칙을 만족하는 정수 하나가 정해진다는 것은 [[mathematical-induction|수학적 귀납법]]의 원리와 함께 증명 없이 받아들인다. 따라서 같은 열의 곱은 같다. 인수가 없는 곱($n = 0$)은 정의하지 않는다.
+모든 자연수 $n$과 길이 $n$인 정수의 열마다 이 규칙을 만족하는 정수 하나가 정해진다는 것은 [[mathematical-induction|수학적 귀납법]]의 원리와 함께 증명 없이 받아들인다. 따라서 같은 열의 곱은 같다. 인수가 없는 곱($n = 0$)은 정의하지 않는다. [[prime-factorization-exists]]의 진술 "$n = p_1 \cdot p_2 \cdots p_\ell$"에 나오는 곱은 길이 $\ell$인 열 $p_1, \dots, p_\ell$의 이 곱으로 읽는다.
 
 다음 성질들이 성립한다. 증명은 아래 각 성질의 이름이 붙은 참고 블록에 있고, 앞의 성질만 쓰므로 순환하지 않는다.
 
@@ -58,7 +58,7 @@ The **product** (finite product) $a_1 a_2 \cdots a_n$ of a sequence of integers 
 $$a_1 a_2 \cdots a_{n+1} = (a_1 a_2 \cdots a_n) \cdot a_{n+1}.$$
 Here $a_1 a_2 \cdots a_n$ on the right is the product of the sequence of length $n$ formed by the first $n$ terms of this sequence, and $\cdot$ is the multiplication of two integers.
 
-That for every natural number $n$ and every sequence of integers of length $n$ there is exactly one integer satisfying this rule is accepted without proof, together with the principle of mathematical induction. Hence equal sequences have equal products. The product with no factors ($n = 0$) is not defined.
+That for every natural number $n$ and every sequence of integers of length $n$ there is exactly one integer satisfying this rule is accepted without proof, together with the principle of mathematical induction. Hence equal sequences have equal products. The product with no factors ($n = 0$) is not defined. The product in the statement "$n = p_1 \cdot p_2 \cdots p_\ell$" of the earlier entry on the existence of prime factorizations is read as this product of the sequence $p_1, \dots, p_\ell$ of length $\ell$.
 
 The following properties hold. They are proved below, each in the block named after it, and each proof uses only earlier properties, so there is no circularity.
 
@@ -120,7 +120,7 @@ $$A \cdot (b_1 \cdots b_{k+1}) = (c_1 \cdots c_{m+k}) \cdot c_{m+k+1} = c_1 \cdo
 
 기초 단계. $n = 1$이면 곱은 $a_1 > 0$이고 $a_1 \le a_1$이다.
 
-귀납 단계. $S_k$가 참이라 하고 양의 정수의 열 $a_1, \dots, a_{k+1}$을 잡는다. $P = a_1 \cdots a_k$로 두면 $S_k$에 의해 $P > 0$이고 모든 $i \le k$에서 $a_i \le P$이다. (P1)에 의해 $P$는 정수이므로 (Z1)에 의해 $P \ge 1$이다. $a_{k+1} > 0$이므로 (Z3)에 의해 $1 \cdot a_{k+1} \le P \cdot a_{k+1}$, 곧 $a_{k+1} \le P \cdot a_{k+1}$이다. $0 < a_{k+1}$이므로 (Z6)에 의해 $0 < P \cdot a_{k+1} = a_1 \cdots a_{k+1}$이고, 같은 부등식이 $i = k + 1$의 경우이다. 또 $a_{k+1} \ge 1$이고 $P > 0$이므로 (Z3)에 의해 $P \cdot 1 \le P \cdot a_{k+1}$, 곧 $P \le a_1 \cdots a_{k+1}$이다. $i \le k$이면 $a_i \le P \le a_1 \cdots a_{k+1}$이므로 (Z6)에 의해 $a_i \le a_1 \cdots a_{k+1}$이다. 따라서 $S_{k+1}$이 참이다.
+귀납 단계. $S_k$가 참이라 하고 양의 정수의 열 $a_1, \dots, a_{k+1}$을 잡는다. $P = a_1 \cdots a_k$로 두면 $S_k$에 의해 $P > 0$이고 모든 $i \le k$에서 $a_i \le P$이다. (P1)에 의해 $P$는 정수이므로 (Z1)에 의해 $P \ge 1$이다. $a_{k+1} > 0$이므로 (Z3)에 의해 $1 \cdot a_{k+1} \le P \cdot a_{k+1}$, 곧 $a_{k+1} \le P \cdot a_{k+1}$이다. $0 < a_{k+1}$이므로 (Z6)에 의해 $0 < P \cdot a_{k+1} = a_1 \cdots a_{k+1}$이고, 같은 부등식이 $i = k + 1$의 경우이다. 또 (Z1)에 의해 $a_{k+1} \ge 1$이고 $P > 0$이므로 (Z3)에 의해 $P \cdot 1 \le P \cdot a_{k+1}$, 곧 $P \le a_1 \cdots a_{k+1}$이다. $i \le k$이면 $a_i \le P \le a_1 \cdots a_{k+1}$이므로 (Z6)에 의해 $a_i \le a_1 \cdots a_{k+1}$이다. 따라서 $S_{k+1}$이 참이다. 귀납법의 원리에 의해 모든 자연수 $n$에 대하여 $S_n$이 참이다.
 
 둘째 주장. $n \ge 2$이고 모든 $a_i \ge 2$라 하자. $a_i \ge 2 > 0$이므로 모든 $a_i$는 양의 정수이다. $P = a_1 \cdots a_{n-1}$로 두면 $n - 1 \ge 1$이므로 첫째 주장을 처음 $n - 1$개의 열에 적용해 $P > 0$이고 모든 $i \le n - 1$에서 $a_i \le P$이다. 특히 $2 \le a_1 \le P$이다. 곱은 $a_1 \cdots a_n = P \cdot a_n$이다.
 - $i = n$: $2 \le P$이고 $a_n > 0$이므로 (Z3)에 의해 $2 a_n \le P a_n$이다. $2 a_n = a_n + a_n$이고 $a_n > 0$이므로 (Z7)에 의해 $a_n + a_n > a_n + 0 = a_n$이다. (Z6)에 의해 $a_n < P a_n = a_1 \cdots a_n$이다.
