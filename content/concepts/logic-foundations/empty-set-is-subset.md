@@ -14,7 +14,8 @@ sources:
     loc: 1.3절, Fact 1.2와 그 앞의 설명, p.12
     checked: original
     note: "출처는 '∅ ⊄ B 이려면 B에 속하지 않는 ∅의 원소가 있어야 하는데 그런 원소가 없다'는 논증을 쓴다. 아래 증명은 같은 내용을 조건문의 진리표로 표현한 것이고, 출처의 논증은 '다른 증명'으로 실었다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토. 수학적 오류 없음. 부분집합 정의에 조건문 꼴을 넣어 증명의 근거를 분명히 함."
 added: 2026-11-16
 ---
 

@@ -12,7 +12,8 @@ sources:
   - ref: hammack-book-of-proof
     loc: 1.4절 Power Sets, Definition 1.4와 Fact 1.4, p.15
     checked: original
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토. 지적 사항 없음."
 added: 2026-11-16
 ---
 

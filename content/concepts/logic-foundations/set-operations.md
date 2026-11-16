@@ -7,13 +7,14 @@ field: logic-foundations
 msc: ["03E20"]
 level: intro
 summary: 두 집합으로 새 집합을 만드는 세 가지 기본 연산.
-requires: [set, logical-connectives]
+requires: [set, subset, logical-connectives]
 sources:
   - ref: hammack-book-of-proof
     loc: 1.5절 Union, Intersection, Difference, Definition 1.5, p.18
     checked: original
-    note: 출처는 차집합을 A − B 로 쓴다. A ∖ B 로 쓰는 책도 많다.
-status: source-checked
+    note: "출처는 차집합을 A − B 로 쓴다. A ∖ B 로 쓰는 책도 많다. '서로소'라는 용어는 이 출처에 나오지 않으며 널리 쓰이는 이름이어서 함께 적었다."
+status: reviewed
+review_note: "2026-11-16 독립 검토. 수학적 오류 없음. 선행 항목과 표현 보완."
 added: 2026-11-16
 ---
 
@@ -47,7 +48,7 @@ $A = \{1, 2, 3, 4\}$, $B = \{3, 4, 5\}$이면
 :::
 
 :::counterexample
-합집합과 교집합은 순서를 바꾸어도 같지만 차집합은 그렇지 않습니다. 위 예에서 $A - B = \{1, 2\}$이고 $B - A = \{5\}$로 서로 다릅니다.
+합집합과 교집합은 순서를 바꾸어도 같지만 차집합은 일반적으로 그렇지 않습니다. 위 예에서 $A - B = \{1, 2\}$이고 $B - A = \{5\}$로 서로 다릅니다.
 :::
 
 :::example[공통 원소가 없는 경우]

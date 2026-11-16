@@ -7,13 +7,14 @@ field: logic-foundations
 msc: ["03B05"]
 level: intro
 summary: "\"P이면 Q이다\" 꼴의 명제. P가 참인데 Q가 거짓일 때만 거짓이다."
-requires: [proposition, logical-connectives]
+requires: [proposition]
 sources:
   - ref: hammack-book-of-proof
     loc: 2.3절 Conditional Statements, pp.42–43
     checked: original
-    note: "가정이 거짓일 때 참이 되는 것을 가리키는 '공허한 참'이라는 용어는 이 출처에 나오지 않는다. 널리 쓰이는 이름이어서 함께 적었다."
-status: source-checked
+    note: "가정이 거짓일 때 참이 되는 것을 가리키는 '공허한 참'이라는 용어는 이 출처에 나오지 않는다. 널리 쓰이는 이름이어서 함께 적었다. 직관 부분의 시험 약속 예는 출처 p.43의 예를 바탕으로 다시 쓴 것이다."
+status: reviewed
+review_note: "2026-11-16 독립 검토. 수학적 오류 없음. 선행 항목 정리와 용어 병기."
 added: 2026-11-16
 ---
 
@@ -27,7 +28,7 @@ added: 2026-11-16
 | $F$ | $T$ | $T$ |
 | $F$ | $F$ | $T$ |
 
-이때 $P$를 **가정**, $Q$를 **결론**이라 한다.
+이때 $P$를 **가정**(hypothesis), $Q$를 **결론**(conclusion)이라 한다.
 :::
 
 ## 직관
@@ -54,7 +55,7 @@ $P \Rightarrow Q$를 **약속**으로 생각하면 표가 자연스러워집니�
 :::
 
 :::counterexample
-$P \Rightarrow Q$가 참이라고 해서 순서를 바꾼 $Q \Rightarrow P$(이를 **역**이라 합니다)가 참인 것은 아닙니다. $a = 4$일 때 "$a$가 $6$의 배수이면 $a$는 짝수이다"는 참이지만, "$a$가 짝수이면 $a$는 $6$의 배수이다"는 가정이 참이고 결론이 거짓이므로 거짓입니다.
+$P \Rightarrow Q$가 참이라고 해서 순서를 바꾼 $Q \Rightarrow P$(이를 **역**(converse)이라 합니다)가 참인 것은 아닙니다. $a = 4$일 때 "$a$가 $6$의 배수이면 $a$는 짝수이다"는 참이지만, "$a$가 짝수이면 $a$는 $6$의 배수이다"는 가정이 참이고 결론이 거짓이므로 거짓입니다.
 :::
 
 ## 확인 질문

@@ -12,21 +12,20 @@ sources:
   - ref: hammack-book-of-proof
     loc: 1.3절 Subsets, Definition 1.3, p.12 (두 집합이 같음을 보이는 방법은 8.3절, p.162)
     checked: original
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토. 수학적 오류 없음. 정의에 조건문 꼴 추가."
 added: 2026-11-16
 ---
 
 :::statement
-$A$와 $B$가 [[set]]일 때, $A$의 **모든** 원소가 $B$의 원소이기도 하면 $A$를 $B$의 **부분집합**(subset)이라 하고 $A \subseteq B$로 쓴다.
+$A$와 $B$가 [[set]]일 때, $A$의 **모든** 원소가 $B$의 원소이기도 하면 $A$를 $B$의 **부분집합**(subset)이라 하고 $A \subseteq B$로 쓴다. 다시 말해, 어떤 대상 $x$를 가져오든 [[conditional-statement]] "$x \in A$이면 $x \in B$이다"가 참이라는 뜻이다.
 
 $A$가 $B$의 부분집합이 아니면 $A \nsubseteq B$로 쓴다. 이는 $A$의 원소 가운데 $B$의 원소가 아닌 것이 **적어도 하나** 있다는 뜻이다.
 :::
 
 ## 직관
 
-$A \subseteq B$는 "$A$가 $B$ 안에 통째로 들어 있다"는 말입니다. [[conditional-statement]]으로 쓰면 다음과 같습니다.
-
-$$\text{어떤 대상 } x \text{를 가져오든, } x \in A \text{이면 } x \in B \text{이다.}$$
+$A \subseteq B$는 "$A$가 $B$ 안에 통째로 들어 있다"는 말입니다. 정의의 둘째 문장처럼 조건문으로 읽을 수 있다는 점이 중요합니다. $x$가 $A$의 원소가 아닐 때는 조건문의 가정이 거짓이므로 따질 것이 없고, $x$가 $A$의 원소일 때만 실제로 확인할 일이 생깁니다.
 
 그래서 $A \subseteq B$를 증명하는 표준적인 방법은 "$A$의 원소 $x$를 아무거나 하나 잡고, 그것이 $B$의 원소임을 보이는 것"입니다.
 

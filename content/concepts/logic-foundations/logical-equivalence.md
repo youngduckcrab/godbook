@@ -13,7 +13,8 @@ sources:
     loc: 2.6절 Logical Equivalence, pp.50–51
     checked: original
     note: 출처는 논리적 동치를 등호 = 로 쓴다. 이 사이트는 ≡ 를 쓴다.
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토. 수학적 오류 없음. 식에 괄호 추가."
 added: 2026-11-16
 ---
 
@@ -45,9 +46,9 @@ $\lnot(\lnot P) \equiv P$ 입니다.
 :::
 
 :::example[조건문을 "또는"으로 바꾸기]
-$P \Rightarrow Q \equiv \lnot P \lor Q$ 입니다.
+$(P \Rightarrow Q) \equiv (\lnot P) \lor Q$ 입니다.
 
-| $P$ | $Q$ | $\lnot P$ | $\lnot P \lor Q$ | $P \Rightarrow Q$ |
+| $P$ | $Q$ | $\lnot P$ | $(\lnot P) \lor Q$ | $P \Rightarrow Q$ |
 |:---:|:---:|:---:|:---:|:---:|
 | $T$ | $T$ | $F$ | $T$ | $T$ |
 | $T$ | $F$ | $F$ | $F$ | $F$ |

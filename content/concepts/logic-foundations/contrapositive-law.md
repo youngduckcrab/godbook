@@ -13,14 +13,15 @@ sources:
   - ref: hammack-book-of-proof
     loc: 2.6절, p.51의 진리표와 p.52의 식 (2.1) Contrapositive law
     checked: original
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토. 수학적 오류 없음. 표기와 확인 질문의 답 보완."
 added: 2026-11-16
 ---
 
 :::statement
 [[proposition]] $P$, $Q$에 대하여
 
-$$P \Rightarrow Q \;\equiv\; (\lnot Q) \Rightarrow (\lnot P)$$
+$$(P \Rightarrow Q) \;\equiv\; \bigl((\lnot Q) \Rightarrow (\lnot P)\bigr)$$
 
 이다. 오른쪽 명제 $(\lnot Q) \Rightarrow (\lnot P)$를 [[conditional-statement]] $P \Rightarrow Q$의 **대우**(contrapositive)라 한다.
 :::
@@ -64,16 +65,16 @@ $P$, $Q$의 진릿값 조합 네 가지에 대해 두 명제를 계산한다. �
 대우를 **역** $Q \Rightarrow P$와 혼동하면 안 됩니다. 조건문과 역은 동치가 아닙니다. "비가 오면 땅이 젖는다"가 참이어도 "땅이 젖었으면 비가 왔다"는 참이 아닐 수 있습니다. 누가 물을 뿌렸을 수도 있기 때문입니다. $P$가 거짓이고 $Q$가 참인 경우에 $P \Rightarrow Q$는 참이지만 $Q \Rightarrow P$는 거짓입니다.
 :::
 
-## 역사와 맥락
+## 쓰임새
 
-수학의 정리는 대부분 "$P$이면 $Q$이다" 꼴입니다. 이 법칙 덕분에 그런 정리를 증명할 때 대신 "$Q$가 아니면 $P$가 아니다"를 증명해도 됩니다. 이 방법을 **대우를 이용한 증명**(proof by contrapositive)이라 하며, 출처로 삼은 책도 이 법칙을 소개하면서 바로 그 쓰임새를 이유로 듭니다.
+수학의 많은 정리는 "$P$이면 $Q$이다" 꼴입니다. 이 법칙 덕분에 그런 정리를 증명할 때 대신 "$Q$가 아니면 $P$가 아니다"를 증명해도 됩니다. 이 방법을 **대우를 이용한 증명**(proof by contrapositive)이라 하며, 출처로 삼은 책도 이 법칙을 소개하면서 바로 그 쓰임새를 이유로 듭니다.
 
 ## 확인 질문
 
-:::check["$x > 3$ 이면 $x^2 > 9$ 이다" 의 대우를 쓰라.]
+:::check[실수 $x$에 대하여 "$x > 3$ 이면 $x^2 > 9$ 이다" 의 대우를 쓰라.]
 "$x^2 \le 9$이면 $x \le 3$이다"입니다. 가정과 결론을 각각 부정하고 **자리를 바꿉니다**. "$x^2 > 9$이면 $x > 3$이다"는 역이지 대우가 아니며, $x = -4$에서 거짓입니다.
 :::
 
 :::check[대우의 대우는 무엇인가?]
-원래 조건문입니다. $(\lnot Q) \Rightarrow (\lnot P)$의 대우는 $\lnot(\lnot P) \Rightarrow \lnot(\lnot Q)$이고, 이중 부정은 원래 명제와 동치이므로 이는 $P \Rightarrow Q$와 동치입니다.
+원래 조건문과 동치인 명제입니다. $(\lnot Q) \Rightarrow (\lnot P)$의 대우는 $\lnot(\lnot P) \Rightarrow \lnot(\lnot Q)$입니다. $\lnot(\lnot P)$는 $P$와 진릿값이 항상 같고 $\lnot(\lnot Q)$도 $Q$와 항상 같으므로([[logical-equivalence]]의 이중 부정 예시), 이 조건문의 진리표는 $P \Rightarrow Q$의 진리표와 모든 줄에서 일치합니다.
 :::
