@@ -29,6 +29,9 @@
 | 핵과 상 | $\operatorname{Ker} T$, $\operatorname{Ran} T$ | {v : Tv = 0_W}, {Tv : v ∈ V}. Ran T 는 `image-and-preimage`의 T(V). 부분집합 U 의 상 T(U) 와 구별해 쓴다. 핵을 역상 기호 T⁻¹({0}) 로 쓰지 않는다 |
 | 선형사상의 공간 | $L(V, W)$ | 값마다의 덧셈과 스칼라배로 벡터공간. 영벡터는 영사상 |
 | 행렬 | $M_{m \times n}$, $a_{j,k}$, $\mathbf{a}_k$ | m × n 행렬은 {1,…,m} × {1,…,n} 에서 ℝ 로의 함수(m, n 은 자연수). 성분 a_{j,k} 는 j 가 행, k 가 열. k 번째 열은 굵은 소문자 𝐚_k (ℝᵐ 의 원소). 식으로 나타낸 행렬의 성분은 (A + B)_{j,k}. 직사각형 배열은 이 함수를 적는 표기. ℝᵐ 과 M_{m×1} 을 같은 집합이라 하지 않는다 (`matrix`) |
+| 1 × 1 행렬과 ℝ¹ | | 행렬은 언제나 배열(pmatrix)이나 이름으로, ℝ¹ 의 원소는 이름이나 "1 에서의 값이 c 인 원소"로 쓴다. 괄호 하나짜리 (1), (b) 로 쓰지 않는다. 같은 항목의 번호는 "이 항목의 (1)"처럼 쓴다 |
+| 전치, 역행렬 | $A^T$, $A^{-1}$ | ℝⁿ 의 원소에는 ᵀ 를 쓰지 않는다. 가역은 m × n 행렬에 대해 왼쪽 역과 오른쪽 역이 모두 있는 것(`invertible-matrix`) |
+| 차원 | $\dim V$ | 유한차원(생성하는 열이 있다)인 V 의 기저의 길이. 무한차원 공간에는 정의하지 않고 ∞ 를 쓰지 않는다 (`dimension`) |
 | "열"의 두 뜻 | | 행렬의 열(column)과 벡터의 열(sequence). 증명에서 sequence 의 뜻일 때는 끝까지 "벡터의 열"이라고 쓴다 |
 | 행렬과 사상 | $Ax$, $T_A$, $[T]$, $I_n$ | Ax 는 열의 일차결합. T_A 는 x 를 Ax 로 보내는 선형사상, [T] 는 k 번째 열이 Te_k 인 행렬. 사상과 행렬을 같은 기호로 쓰지 않는다. 곱 Ax 를 A(1, 1) 처럼 쓰지 않고 벡터에 이름을 붙인다(성분으로 읽힌다) |
 | 함수의 제한 | $f|_X$ | `adding-or-removing-an-element`의 진술에서 정의 |
@@ -99,9 +102,9 @@
 
 자주 쓰는 꼴: 정수 c, k 에 대하여 c ≤ k 이거나 c ≥ k + 1 이다. (Z5)와 (Z1)에서 나오므로 "(Z5)와 (Z1)에 의해"로 인용한다.
 
-선형대수에서 증명되어 진술을 번호로 인용하는 것: `real-number-arithmetic`의 (K8)–(K12) (0, 1, −a, a⁻¹ 의 유일성, 0·a = 0 과 부호 규칙, ab = 0 이면 a = 0 이거나 b = 0, 소거, 오른쪽 분배, (ab)⁻¹ = a⁻¹b⁻¹ 등); `vector-space`의 공리 (V1)–(V8); `vector-space-basic-properties`의 (B1)–(B12); `real-function-space`의 (G) (값으로 함수 정하기: 각 x ∈ X 에 Y 의 원소 r(x) 가 정해져 있으면 {(x, r(x))} 는 X 에서 Y 로의 함수); `subspace`의 (S1)–(S3), (P1)–(P5); `finite-sum-of-vectors`의 (H0)–(H7) (합의 성질, k 번째 항 떼어 내기)과 (C1)–(C6) (계수의 열에 관한 성질, 계수 끼워 넣기, 차의 규칙); `linear-combination-and-span`의 (N1)–(N4); `linear-independence`의 (I1)–(I4); `basis`의 (Q1) (빈 열이 기저인 것은 정확히 V = {0_V} 일 때), (Q2) (x + y 와 γx 의 좌표); `standard-basis`의 (1) (ℝ^X 에서 유한 합의 값은 값들의 유한 합); `linear-map`의 두 조건 (T-합), (T-배)와 성질 (T1)–(T5).
+선형대수에서 증명되어 진술을 번호로 인용하는 것: `real-number-arithmetic`의 (K8)–(K12) (0, 1, −a, a⁻¹ 의 유일성, 0·a = 0 과 부호 규칙, ab = 0 이면 a = 0 이거나 b = 0, 소거, 오른쪽 분배, (ab)⁻¹ = a⁻¹b⁻¹ 등); `vector-space`의 공리 (V1)–(V8); `vector-space-basic-properties`의 (B1)–(B12); `real-function-space`의 (G) (값으로 함수 정하기: 각 x ∈ X 에 Y 의 원소 r(x) 가 정해져 있으면 {(x, r(x))} 는 X 에서 Y 로의 함수); `subspace`의 (S1)–(S3), (P1)–(P5); `finite-sum-of-vectors`의 (H0)–(H7) (합의 성질, k 번째 항 떼어 내기)과 (C1)–(C6) (계수의 열에 관한 성질, 계수 끼워 넣기, 차의 규칙); `linear-combination-and-span`의 (N1)–(N4); `linear-independence`의 (I1)–(I4); `basis`의 (Q1) (빈 열이 기저인 것은 정확히 V = {0_V} 일 때), (Q2) (x + y 와 γx 의 좌표); `standard-basis`의 (1) (ℝ^X 에서 유한 합의 값은 값들의 유한 합); `linear-map`의 두 조건 (T-합), (T-배)와 성질 (T1)–(T5); `matrix`의 (7) (행렬의 크기는 하나로 정해진다); `exchange-lemma`의 (X1) (일차독립인 열의 계수는 하나뿐이다), (X2) ((μ_1 + ⋯ + μ_n)x = μ_1 x + ⋯ + μ_n x).
 
-번호의 글자는 강의를 넘어 겹치지 않게 한다. 이미 쓴 글자: Z, L, F, P, D, O, A, R, K, V, B, G, E, S, H, C, N, I, Q, T. 새 번호를 붙일 때는 이 문서와 `grep -rn "(X1)" content/` 로 확인한다.
+번호의 글자는 강의를 넘어 겹치지 않게 한다. 이미 쓴 글자: Z, L, F, P, D, O, A, R, K, V, B, G, E, S, H, C, N, I, Q, T, X. (J 는 5단원 `sequences-in-a-subspace`가 쓴다.) 새 번호를 붙일 때는 이 문서와 `grep -rn "(X1)" content/` 로 확인한다.
 
 강한 귀납법은 받아들인 원리가 아니다. `strong-induction`이 보통의 귀납법에서 끌어낸다.
 
