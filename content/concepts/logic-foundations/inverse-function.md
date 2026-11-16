@@ -13,7 +13,8 @@ sources:
     loc: 12.5절 Inverse Functions, Definition 12.6(p.238), Definition 12.7(p.239), Definition 12.8(p.240)
     checked: original
     note: "출처 Definition 12.6은 항등함수 i_A(x) = x를, Definition 12.7은 'A에서 B로의 관계 R의 역관계 R⁻¹ = {(y, x) : (x, y) ∈ R}'을 정의한다. 출처 Definition 12.8은 'f : A → B가 전단사이면 그 역은 함수 f⁻¹ : B → A이고 f⁻¹∘f = i_A, f∘f⁻¹ = i_B를 만족한다'고 정의한다(정리 12.3, p.240으로 전단사일 때 역관계가 함수임을 보장). 출처는 Definition 12.8 앞의 설명(p.240)에서 f⁻¹(f(x)) = x를 순서쌍 (f(x), x) ∈ f⁻¹로 설명하고 'Similar reasoning'으로 f∘f⁻¹ = i_B를 말한다. 이 항목은 다음 항목(bijective-iff-inverse-is-a-function)이 이 항목의 역관계를 쓰므로 순환을 피하려고 순서를 바꿔, 역함수를 '역관계가 B에서 A로의 함수일 때'로 정의하고 두 등식을 이 정의에서 증명했다. 이 조건이 f가 전단사일 때와 정확히 같다는 것은 다음 항목에서 보인다. 출처가 정의에서 전단사를 요구하는 것과 같은 대상이다. 출처가 항등함수가 전단사임을 p.238–239에서 간단히 보이는 것은 아래 '항등함수는 전단사이다' 블록에서 이 사이트가 다시 썼다. 첫째 예시(원소 4개의 전단사)는 출처 p.239의 원소 3개짜리 f 예와 원소 수와 대응이 다르게 새로 만들었다. 반례의 g(한 쌍이 겹치고 한 원소가 빠진 g)는 출처 p.239의 g 예와 같은 종류이고 집합과 대응은 새로 골랐다. f⁻¹이 역관계를 뜻할 때와 역함수를 뜻할 때를 구별하는 설명, 나머지 예시와 반례는 이 사이트에서 새로 만들었다. 합성에서의 'f⁻¹∘f'는 이 사이트의 function-composition 진술을 따른다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 4회. 수학적 오류 없음. 공역의 지위(선언에 따른 것)를 명확히 하고 출처에서 가져온 예를 교체, 링크 표시말 정리."
 added: 2026-11-16
 ---
 
@@ -24,7 +25,7 @@ added: 2026-11-16
 $$R^{-1} = \{(y, x) : (x, y) \in R\}$$
 이다. 이것은 $B$에서 $A$로의 관계, 곧 $R^{-1} \subseteq B \times A$이다. 따라서 $y \in B$, $x \in A$에 대하여 $(y, x) \in R^{-1}$인 것은 정확히 $(x, y) \in R$일 때이다.
 
-**역함수.** $f : A \to B$가 [[function]]이면 $f$는 $A$에서 $B$로의 관계이므로 역관계 $f^{-1} \subseteq B \times A$가 있다. 이 $f^{-1}$이 $B$에서 $A$로의 함수일 때(여기서 $B$는 $f : A \to B$라고 쓸 때 밝힌 공역이다), $f^{-1} : B \to A$를 $f$의 **역함수**(inverse function)라 한다. (다음 항목 [[bijective-iff-inverse-is-a-function|전단사일 조건을 다루는 항목]]에서, 이것은 $f : A \to B$가 [[injective-surjective-bijective|전단사]]일 때와 정확히 같음을 보인다.) $f$의 역함수가 있으면 다음 두 등식이 성립한다.
+**역함수.** $f : A \to B$가 [[function]]이면 $f$는 $A$에서 $B$로의 관계이므로 역관계 $f^{-1} \subseteq B \times A$가 있다. 이 $f^{-1}$이 $B$에서 $A$로의 함수일 때(여기서 $B$는 $f : A \to B$라고 쓸 때 밝힌 공역이다), $f^{-1} : B \to A$를 $f$의 **역함수**(inverse function)라 한다. ([[bijective-iff-inverse-is-a-function|전단사일 조건을 다루는 항목]]에서, 이것은 $f : A \to B$가 [[injective-surjective-bijective|전단사]]일 때와 정확히 같음을 보인다.) $f$의 역함수가 있으면 다음 두 등식이 성립한다.
 $$f^{-1} \circ f = i_A, \qquad f \circ f^{-1} = i_B$$
 :::
 
@@ -35,7 +36,7 @@ $$f^{-1} \circ f = i_A, \qquad f \circ f^{-1} = i_B$$
 $$R^{-1} = \{(y, x) : (x, y) \in R\}.$$
 It is a relation from $B$ to $A$, that is, $R^{-1} \subseteq B \times A$. Hence for $y \in B$ and $x \in A$, we have $(y, x) \in R^{-1}$ exactly when $(x, y) \in R$.
 
-**Inverse function.** If $f : A \to B$ is a function, then $f$ is a relation from $A$ to $B$, so it has an inverse relation $f^{-1} \subseteq B \times A$. When this $f^{-1}$ is a function from $B$ to $A$ (here $B$ is the codomain named in the notation $f : A \to B$), we call $f^{-1} : B \to A$ the **inverse function** of $f$. (The next entry shows that this happens exactly when $f : A \to B$ is bijective.) If $f$ has an inverse function, then the following two equations hold.
+**Inverse function.** If $f : A \to B$ is a function, then $f$ is a relation from $A$ to $B$, so it has an inverse relation $f^{-1} \subseteq B \times A$. When this $f^{-1}$ is a function from $B$ to $A$ (here $B$ is the codomain named in the notation $f : A \to B$), we call $f^{-1} : B \to A$ the **inverse function** of $f$. (A later entry shows that this happens exactly when $f : A \to B$ is bijective.) If $f$ has an inverse function, then the following two equations hold.
 $$f^{-1} \circ f = i_A, \qquad f \circ f^{-1} = i_B$$
 :::
 
