@@ -132,6 +132,7 @@ function lintBody(file, body, requires, self) {
   let inDisplay = false;
   text.split('\n').forEach((line, i) => {
     if (line.trim() === '$$') { inDisplay = !inDisplay; return; }
+    if ((line.split('$$').length - 1) % 2 === 1) { warn(file, `본문 ${i + 1}번째 줄: 여러 줄 수식의 $$ 는 홀로 한 줄에 둔다(같은 줄에 수식을 쓰면 화면에서 깨진다)`); return; }
     if (inDisplay) return;
     const n = (line.replace(/\\\$/g, '').match(/\$/g) || []).length;
     if (n % 2 === 1) warn(file, `본문 ${i + 1}번째 줄의 $ 가 홀수 개다(${n}개). 수식을 여닫는 $ 가 빠졌는지 본다`);
