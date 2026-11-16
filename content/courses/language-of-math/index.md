@@ -7,7 +7,6 @@ order: 1
 track: 기초
 status: in-progress
 planned_units:
-  - 수학적 귀납법
   - 함수
   - 집합의 크기
 ---
