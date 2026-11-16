@@ -59,11 +59,11 @@ Let $m$, $n$ be natural numbers and $T : \mathbb{R}^n \to \mathbb{R}^m$ a linear
 :::
 
 :::proof
-$\mathbb{R}^m$의 덧셈과 스칼라배는 [[real-function-space|실숫값 함수의 공간]]에서 정한 것이고, [[finite-sum-of-vectors|벡터의 유한 합]]의 진술에 의해 길이가 같고 모든 자리의 항이 같은 두 열은 같은 열이며 같은 열의 합은 같다. $L(\mathbb{R}^n, \mathbb{R}^m)$의 원소는 선형사상이므로 그 행렬이 정해진다.
+$\mathbb{R}^m$의 덧셈과 스칼라배는 [[real-function-space|실숫값 함수의 공간]]에서 정한 것이고, [[finite-sum-of-vectors|벡터의 유한 합]]의 진술에 의해 길이가 같고 모든 자리의 항이 같은 두 벡터의 열은 같은 열이며 같은 열의 합은 같다. $L(\mathbb{R}^n, \mathbb{R}^m)$의 원소는 선형사상이므로 그 행렬이 정해진다.
 
-**(1)의 증명.** $x = (x_1, \dots, x_n) \in \mathbb{R}^n$이라 하자. [[standard-basis|표준기저]]의 (3)에 의해 $x = x_1 e_1 + \cdots + x_n e_n$이다. $T$가 선형사상이므로 [[linear-map|선형사상]]의 (T5)를 실수의 열 $x_1, \dots, x_n$과 열 $e_1, \dots, e_n$에 쓰면
+**(1)의 증명.** $x = (x_1, \dots, x_n) \in \mathbb{R}^n$이라 하자. [[standard-basis|표준기저]]의 (3)에 의해 $x = x_1 e_1 + \cdots + x_n e_n$이다. $T$가 선형사상이므로 [[linear-map|선형사상]]의 (T5)를 실수의 열 $x_1, \dots, x_n$과 벡터의 열 $e_1, \dots, e_n$에 쓰면
 $$Tx = T(x_1 e_1 + \cdots + x_n e_n) = x_1 Te_1 + \cdots + x_n Te_n$$
-이고, 오른쪽은 $k$번째 항이 $x_k(Te_k)$인 $\mathbb{R}^m$의 열의 합이다. 한편 $[T]$의 $k$번째 열은 $Te_k$이므로 [[matrix-vector-product|행렬과 벡터의 곱]]의 정의에 의해 $[T]x$도 $k$번째 항이 $x_k(Te_k)$인 열의 합이다. 두 열이 같으므로 $Tx = [T]x$이다. $T$와 $T_{[T]}$는 정의역이 $\mathbb{R}^n$으로 같고 모든 $x$에서 $T_{[T]} x = [T]x = Tx$이므로, [[function|함수의 같음]]에 의해 $T = T_{[T]}$이다.
+이고, 오른쪽은 $k$번째 항이 $x_k(Te_k)$인 $\mathbb{R}^m$의 벡터의 열의 합이다. 한편 $[T]$의 $k$번째 열은 $Te_k$이므로 [[matrix-vector-product|행렬과 벡터의 곱]]의 정의에 의해 $[T]x$도 $k$번째 항이 $x_k(Te_k)$인 벡터의 열의 합이다. 두 벡터의 열이 같으므로 $Tx = [T]x$이다. $T$와 $T_{[T]}$는 정의역이 $\mathbb{R}^n$으로 같고 모든 $x$에서 $T_{[T]} x = [T]x = Tx$이므로, [[function|함수의 같음]]에 의해 $T = T_{[T]}$이다.
 
 **(2)의 증명.** [[matrix-vector-product|행렬과 벡터의 곱]]의 (2)에 의해 $T_A$는 선형사상이므로 $[T_A]$가 정해지고, 그 $k$번째 열은 $T_A e_k = Ae_k$이다. 같은 항목의 (3)에 의해 $Ae_k = \mathbf{a}_k$이다. 따라서 모든 $k$에서 $[T_A]$의 $k$번째 열과 $A$의 $k$번째 열이 같고, [[matrix|행렬]]의 (3)에 의해 $[T_A] = A$이다.
 
@@ -79,7 +79,7 @@ $$Tx = T(x_1 e_1 + \cdots + x_n e_n) = x_1 Te_1 + \cdots + x_n Te_n$$
 ## 예시와 반례
 
 :::example[표준기저 위의 값에서 행렬과 다른 값 얻기]
-선형사상 $T : \mathbb{R}^2 \to \mathbb{R}^3$이 $Te_1 = (1, 0, 2)$, $Te_2 = (-1, 3, 1)$을 만족한다고 합시다. 이런 $T$는 있습니다. 이 두 벡터를 열로 갖는 $3 \times 2$ 행렬 $A$에 대하여 $T_A$가 [[matrix-vector-product|행렬과 벡터의 곱]]의 (3)에 의해 그렇습니다. $T$의 행렬은 열을 차례로 적은
+선형사상 $T : \mathbb{R}^2 \to \mathbb{R}^3$이 $Te_1 = (1, 0, 2)$, $Te_2 = (-1, 3, 1)$을 만족한다고 합시다. 이런 $T$는 있습니다. [[matrix|행렬]]의 (4)에 의해 이 두 벡터를 차례로 열로 갖는 $3 \times 2$ 행렬 $A$가 있고, $T_A$가 [[matrix-vector-product|행렬과 벡터의 곱]]의 (3)에 의해 그렇습니다. $T$의 행렬은 열을 차례로 적은
 
 $$
 [T] = \begin{pmatrix} 1 & -1 \\ 0 & 3 \\ 2 & 1 \end{pmatrix}
@@ -89,11 +89,11 @@ $$
 :::
 
 :::example[스칼라배 사상의 행렬]
-$\gamma$가 실수이고 $S : \mathbb{R}^n \to \mathbb{R}^n$이 모든 $x$에서 값이 $\gamma x$인 함수라 합시다. [[linear-map-examples|선형사상의 예]]의 (3)에 의해 $S$는 선형사상입니다. $[S]$의 $k$번째 열은 $Se_k = \gamma e_k$이고, [[matrix|행렬]]의 (5)와 (6)에 의해 $\gamma I_n$의 $k$번째 열도 $\gamma e_k$이므로 행렬의 (3)에 의해 $[S] = \gamma I_n$입니다. 예를 들어 $n = 2$, $\gamma = 3$이면 $[S] = \begin{pmatrix} 3 & 0 \\ 0 & 3 \end{pmatrix}$입니다. $\gamma = 1$이면 $S$는 항등함수이고, [[vector-space|(V5)]]에 의해 $1I_n = I_n$이므로 이것은 (5)와 맞습니다.
+$\gamma$가 실수이고 $S : \mathbb{R}^n \to \mathbb{R}^n$이 모든 $x$에서 값이 $\gamma x$인 함수라 합시다. [[linear-map-examples|선형사상의 예]]의 (3)에 의해 $S$는 선형사상입니다. $[S]$의 $k$번째 열은 $Se_k = \gamma e_k$이고, [[matrix|행렬]]의 (5)와 (6)에 의해 $\gamma I_n$의 $k$번째 열도 $\gamma e_k$이므로 행렬의 (3)에 의해 $[S] = \gamma I_n$입니다. 예를 들어 $n = 2$, $\gamma = 3$이면 $[S] = \begin{pmatrix} 3 & 0 \\ 0 & 3 \end{pmatrix}$입니다. $\gamma = 1$이면 (V5)에 의해 모든 $x$에서 $Sx = 1x = x$이므로 함수의 같음에 의해 $S$는 항등함수이고, [[vector-space|(V5)]]에 의해 $1I_n = I_n$이므로 이것은 (5)와 맞습니다.
 :::
 
 :::counterexample[선형이 아닌 함수에서 (1)이 깨지는 예]
-$F : \mathbb{R}^2 \to \mathbb{R}^2$를 각 $(x_1, x_2)$에서 값이 $(x_1 x_2, 0)$인 함수라 합시다. $Fe_1 = F(1, 0) = (1 \cdot 0, 0) = (0, 0)$이고 $Fe_2 = F(0, 1) = (0 \cdot 1, 0) = (0, 0)$이므로, 열이 $Fe_1$, $Fe_2$인 행렬은 $2 \times 2$ 영행렬 $O$입니다. 그런데 $x = (1, 1)$에서 $Fx = (1 \cdot 1, 0) = (1, 0)$이고 $Ox = 1(0, 0) + 1(0, 0) = (0, 0)$입니다. 첫째 값이 $1$과 $0$으로 다르므로 $Fx \ne Ox$이고, (1)의 결론이 깨집니다. $F$가 선형사상이 아니어서 $F$를 일차결합에 통과시키는 단계를 쓸 수 없기 때문입니다. 실제로 $F(1, 1) = (1, 0)$이고 $F(1, 0) + F(0, 1) = (0, 0)$이므로 $F$는 (T-합)을 만족하지 않습니다.
+$F : \mathbb{R}^2 \to \mathbb{R}^2$를 각 $(x_1, x_2)$에서 값이 $(x_1 x_2, 0)$인 함수라 합시다. $Fe_1 = F(1, 0) = (1 \cdot 0, 0) = (0, 0)$이고 $Fe_2 = F(0, 1) = (0 \cdot 1, 0) = (0, 0)$이므로, 열이 $Fe_1$, $Fe_2$인 행렬은 $2 \times 2$ 영행렬 $O$입니다. 그런데 $x = (1, 1)$에서 $Fx = (1 \cdot 1, 0) = (1, 0)$이고 $Ox = 1(0, 0) + 1(0, 0) = (0, 0)$입니다. 첫째 값이 $1$과 $0$으로 다르므로 $Fx \ne Ox$입니다. 곧 (1)과 같은 꼴의 등식이 $F$와 이 행렬 사이에서는 성립하지 않습니다. $F$가 선형사상이 아니어서 $F$를 일차결합에 통과시키는 단계를 쓸 수 없기 때문입니다. 실제로 $F(1, 1) = (1, 0)$이고 $F(1, 0) + F(0, 1) = (0, 0)$이므로 $F$는 (T-합)을 만족하지 않습니다.
 :::
 
 ## 확인 질문

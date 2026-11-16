@@ -6,13 +6,13 @@ kind: definition
 field: linear-algebra
 msc: ["15"]
 level: undergrad
-summary: 자연수 m, n 에 대하여 m × n 행렬은 {1, …, m} × {1, …, n} 에서 ℝ 로의 함수이고, 성분마다의 연산으로 벡터공간을 이룬다. 행렬은 성분으로도, 열로도 하나로 정해지며, 단위행렬 Iₙ 의 k 번째 열은 표준기저의 e_k 이다.
-requires: [cartesian-product, function, finite-set, vector-space, real-function-space, finite-sum-of-vectors, standard-basis]
+summary: 자연수 m, n 에 대하여 m × n 행렬은 {1, …, m} × {1, …, n} 에서 ℝ 로의 함수이고, 성분마다의 연산으로 벡터공간을 이룬다. 행렬은 성분으로도, 열로도 하나로 정해지고 행의 개수와 열의 개수도 하나로 정해지며, 단위행렬 Iₙ 의 k 번째 열은 표준기저의 e_k 이다.
+requires: [cartesian-product, function, finite-set, well-ordering-principle, real-number-arithmetic, vector-space, real-function-space, finite-sum-of-vectors, standard-basis]
 sources:
   - ref: treil-linear-algebra-done-wrong
     loc: 1장 1.2절 Matrix notation, p.4; 1.1절 Examples 의 예 'The space M_{m×n}', p.3; 3.2절 열의 표기, p.14; 6.1절 단위행렬, p.24
     checked: original
-    note: "출처는 m × n 행렬을 행이 m 개, 열이 n 개인 직사각형 배열이라 하고 배열의 원소를 성분(entries)이라 부르며, 첫째 첨자가 행 번호, 둘째 첨자가 열 번호라고 적는다(1.2절, p.4). 행 j, 열 k 의 성분을 A_{j,k} 나 (A)_{j,k} 로, 또는 같은 글자의 소문자로 쓴다고도 적는다(p.4). 이 항목은 행렬을 배열이 아니라 함수 {1, …, m} × {1, …, n} → ℝ 로 정의하고, 배열은 이 함수를 적는 표기로 둔다. 출처는 M_{m×n} 의 덧셈과 스칼라배를 성분마다 정하고, 연산이 성분마다이므로 공리가 스칼라에서 그대로 성립한다며 그 이유를 'can you see why?'로 돌린다(1.1절, pp.3–4). 이 항목은 M_{m×n} 을 real-function-space 항목의 ℝ^X 로 두어 그 항목의 명제로 벡터공간임을 얻는다. 출처는 3.2절(p.14)에서 A 의 k 번째 열을 a_k 로 쓰고 A = [a_1, …, a_n] 으로 적는다. 이 항목은 성분 a_{j,k} 와 구별하려고 열을 굵은 글자 𝐚_k 로 쓴다. 출처는 6.1절(p.24)에서 항등사상의 행렬이 주대각선이 1 이고 나머지가 0 인 n × n 행렬 I = I_n 이라고 'Clearly'를 붙여 적는다. 이 항목은 I_n 을 성분으로 정의하고 그 열이 e_k 임을 보인다. 두 행렬이 같을 조건(성분, 열), 열을 주면 행렬이 하나로 정해진다는 것, 합과 스칼라배의 열, 그리고 그 증명은 이 사이트가 썼다. 출처는 F^n 의 원소를 세로 열로 적고 열(column)과 같은 것으로 다루지만, 이 강의는 ℝ^m 의 원소를 m × 1 행렬로 여기지 않는다. 출처의 스칼라는 실수 또는 복소수이고 이 항목은 실수만 쓴다. 예시와 반례와 확인 질문은 새로 만들었다."
+    note: "출처는 m × n 행렬을 행이 m 개, 열이 n 개인 직사각형 배열이라 하고 배열의 원소를 성분(entries)이라 부르며, 첫째 첨자가 행 번호, 둘째 첨자가 열 번호라고 적는다(1.2절, p.4). 행 j, 열 k 의 성분을 A_{j,k} 나 (A)_{j,k} 로, 또는 같은 글자의 소문자로 쓴다고도 적는다(p.4). 이 항목은 행렬을 배열이 아니라 함수 {1, …, m} × {1, …, n} → ℝ 로 정의하고, 배열은 이 함수를 적는 표기로 둔다. 출처는 M_{m×n} 의 덧셈과 스칼라배를 성분마다 정하고, 연산이 성분마다이므로 공리가 스칼라에서 그대로 성립한다며 그 이유를 'can you see why?'로 돌린다(1.1절, pp.3–4). 이 항목은 M_{m×n} 을 real-function-space 항목의 ℝ^X 로 두어 그 항목의 명제로 벡터공간임을 얻는다. 출처는 3.2절(p.14)에서 A 의 k 번째 열을 a_k 로 쓰고 A = [a_1, …, a_n] 으로 적는다. 이 항목은 성분 a_{j,k} 와 구별하려고 열을 굵은 글자 𝐚_k 로 쓴다. 출처는 6.1절(p.24)에서 항등사상의 행렬이 주대각선이 1 이고 나머지가 0 인 n × n 행렬 I = I_n 이라고 'Clearly'를 붙여 적는다. 이 항목은 I_n 을 성분으로 정의하고 그 열이 e_k 임을 보인다. 두 행렬이 같을 조건(성분, 열), 열을 주면 행렬이 하나로 정해진다는 것, 합과 스칼라배의 열, 행의 개수와 열의 개수가 행렬마다 하나로 정해진다는 (7), 그리고 그 증명은 이 사이트가 썼다. 출처는 n × n 행렬을 square 라 부른다(5.3절, p.22). 출처는 F^n 의 원소를 세로 열로 적고 열(column)과 같은 것으로 다루지만, 이 강의는 ℝ^m 의 원소를 m × 1 행렬로 여기지 않는다. 출처의 스칼라는 실수 또는 복소수이고 이 항목은 실수만 쓴다. 예시와 반례와 확인 질문은 새로 만들었다."
 status: source-checked
 added: 2026-11-16
 ---
@@ -37,7 +37,8 @@ $$
 3. $A = B$인 것은 정확히 모든 $k \in \{1, \dots, n\}$에서 $\mathbf{a}_k = \mathbf{b}_k$일 때이다.
 4. $v_1, \dots, v_n$이 $\mathbb{R}^m$의 길이 $n$인 벡터의 열이면, 모든 $k \in \{1, \dots, n\}$에서 $k$번째 열이 $v_k$인 $m \times n$ 행렬이 정확히 하나 있다. 그 행렬의 $(j, k)$ 성분은 $v_k$의 $j$번째 값 $v_k(j)$이다.
 5. $A + B$의 $k$번째 열은 $\mathbf{a}_k + \mathbf{b}_k$이고, $\alpha A$의 $k$번째 열은 $\alpha \mathbf{a}_k$이다. 오른쪽의 덧셈과 스칼라배는 $\mathbb{R}^m$의 것이다.
-6. (단위행렬) $n$이 자연수이면 $(j, k)$ 성분이 $j = k$일 때 $1$이고 $j \ne k$일 때 $0$인 $n \times n$ 행렬이 정확히 하나 있다. 이 행렬을 **단위행렬**(identity matrix)이라 하고 $I_n$으로 쓴다. $n \times n$ 행렬의 $(j, j)$ 성분($j \in \{1, \dots, n\}$)을 **대각성분**(diagonal entry)이라 하면, $I_n$의 대각성분은 모두 $1$이고 나머지 성분은 모두 $0$이다. $I_n$의 $k$번째 열은 [[standard-basis|표준기저]]의 $e_k$이다.
+6. (단위행렬) $n$이 자연수이면 $(j, k)$ 성분이 $j = k$일 때 $1$이고 $j \ne k$일 때 $0$인 $n \times n$ 행렬이 정확히 하나 있다. 이 행렬을 **단위행렬**(identity matrix)이라 하고 $I_n$으로 쓴다. $n \times n$ 행렬의 $(j, j)$ 성분($j \in \{1, \dots, n\}$)을 **대각성분**(diagonal entry)이라 한다. $I_n$의 대각성분은 모두 $1$이고 나머지 성분은 모두 $0$이다. $I_n$의 $k$번째 열은 [[standard-basis|표준기저]]의 $e_k$이다.
+7. (크기) $A$가 $m \times n$ 행렬이면서 $p \times q$ 행렬이기도 하면($p$, $q$는 자연수) $m = p$이고 $n = q$이다. 따라서 행렬 $A$마다 $m$과 $n$이 하나로 정해지며, $m$을 $A$의 **행의 개수**, $n$을 $A$의 **열의 개수**라 한다. 행의 개수와 열의 개수가 같은 행렬, 곧 $n \times n$ 행렬을 **정사각행렬**(square matrix)이라 한다.
 
 $m = 0$이나 $n = 0$인 행렬은 이 항목에서 다루지 않는다.
 :::
@@ -62,7 +63,8 @@ The following hold. $A$, $B$ are $m \times n$ matrices and $\alpha$ is a real nu
 3. $A = B$ exactly when $\mathbf{a}_k = \mathbf{b}_k$ for every $k \in \{1, \dots, n\}$.
 4. If $v_1, \dots, v_n$ is a sequence of vectors of $\mathbb{R}^m$ of length $n$, then there is exactly one $m \times n$ matrix whose $k$-th column is $v_k$ for every $k \in \{1, \dots, n\}$. Its $(j, k)$ entry is the $j$-th value $v_k(j)$ of $v_k$.
 5. The $k$-th column of $A + B$ is $\mathbf{a}_k + \mathbf{b}_k$, and the $k$-th column of $\alpha A$ is $\alpha \mathbf{a}_k$. The addition and scalar multiplication on the right are those of $\mathbb{R}^m$.
-6. (Identity matrix) If $n$ is a natural number, there is exactly one $n \times n$ matrix whose $(j, k)$ entry is $1$ when $j = k$ and $0$ when $j \ne k$. This matrix is called the **identity matrix** and written $I_n$. If the $(j, j)$ entries ($j \in \{1, \dots, n\}$) of an $n \times n$ matrix are called its **diagonal entries**, then all diagonal entries of $I_n$ are $1$ and all other entries are $0$. The $k$-th column of $I_n$ is the vector $e_k$ of the standard basis.
+6. (Identity matrix) If $n$ is a natural number, there is exactly one $n \times n$ matrix whose $(j, k)$ entry is $1$ when $j = k$ and $0$ when $j \ne k$. This matrix is called the **identity matrix** and written $I_n$. The $(j, j)$ entries ($j \in \{1, \dots, n\}$) of an $n \times n$ matrix are called its **diagonal entries**. All diagonal entries of $I_n$ are $1$ and all other entries are $0$. The $k$-th column of $I_n$ is the vector $e_k$ of the standard basis.
+7. (Size) If $A$ is an $m \times n$ matrix and also a $p \times q$ matrix ($p$, $q$ natural numbers), then $m = p$ and $n = q$. Hence $m$ and $n$ are determined by the matrix $A$; $m$ is called the **number of rows** of $A$ and $n$ the **number of columns** of $A$. A matrix whose number of rows equals its number of columns, that is, an $n \times n$ matrix, is called a **square matrix**.
 
 Matrices with $m = 0$ or $n = 0$ are not treated in this entry.
 :::
@@ -86,9 +88,11 @@ $X = \{1, \dots, m\} \times \{1, \dots, n\}$이라 한다. [[cartesian-product|�
 
 **(4)의 증명.** 존재: $x \in X$이면 $x = (j, k)$인 $j$, $k$가 하나로 정해지므로 $x$에 실수 $v_k(j)$가 하나 정해진다. [[real-function-space|(G)]]에 의해 $(j, k)$에서의 값이 $v_k(j)$인 함수 $C : X \to \mathbb{R}$, 곧 $c_{j,k} = v_k(j)$인 $m \times n$ 행렬 $C$가 있다. $k$를 잡으면 $C$의 $k$번째 열 $\mathbf{c}_k$의 $j$번째 값은 $c_{j,k} = v_k(j)$이므로, 정의역이 $\{1, \dots, m\}$인 두 함수 $\mathbf{c}_k$와 $v_k$는 모든 $j$에서 값이 같고 함수의 같음에 의해 $\mathbf{c}_k = v_k$이다. 유일성: $D$도 모든 $k$에서 $k$번째 열이 $v_k$인 $m \times n$ 행렬이면 모든 $k$에서 $\mathbf{d}_k = v_k = \mathbf{c}_k$이므로 (3)에 의해 $D = C$이다. 성분이 $v_k(j)$라는 것은 $C$를 만든 방법 그대로이다.
 
-**(5)의 증명.** $k$를 잡는다. $A + B$의 $k$번째 열의 $j$번째 값은 (1)에 의해 $(A + B)_{j,k} = a_{j,k} + b_{j,k}$이다. $\mathbb{R}^m$의 덧셈은 [[real-function-space|실숫값 함수의 공간]]에서 값마다 정했으므로 $\mathbf{a}_k + \mathbf{b}_k$의 $j$번째 값도 $a_{j,k} + b_{j,k}$이다. 두 함수의 정의역이 $\{1, \dots, m\}$으로 같고 모든 $j$에서 값이 같으므로 함수의 같음에 의해 $A + B$의 $k$번째 열은 $\mathbf{a}_k + \mathbf{b}_k$이다. 스칼라배도 값을 비교한다. $\alpha A$의 $k$번째 열의 $j$번째 값은 (1)에 의해 $\alpha a_{j,k}$이고 $\mathbb{R}^m$의 스칼라배의 정의에 의해 $\alpha \mathbf{a}_k$의 $j$번째 값도 $\alpha a_{j,k}$이므로, 함수의 같음에 의해 $\alpha A$의 $k$번째 열은 $\alpha \mathbf{a}_k$이다.
+**(5)의 증명.** $k$를 잡는다. $A + B$의 $k$번째 열의 $j$번째 값은 열의 정의에 의해 $(A + B)_{j,k}$이고, (1)에 의해 이것은 $a_{j,k} + b_{j,k}$이다. $\mathbb{R}^m$의 덧셈은 [[real-function-space|실숫값 함수의 공간]]에서 값마다 정했으므로 $\mathbf{a}_k + \mathbf{b}_k$의 $j$번째 값도 $a_{j,k} + b_{j,k}$이다. 두 함수의 정의역이 $\{1, \dots, m\}$으로 같고 모든 $j$에서 값이 같으므로 함수의 같음에 의해 $A + B$의 $k$번째 열은 $\mathbf{a}_k + \mathbf{b}_k$이다. 스칼라배도 값을 비교한다. $\alpha A$의 $k$번째 열의 $j$번째 값은 열의 정의에 의해 $(\alpha A)_{j,k}$이고 (1)에 의해 이것은 $\alpha a_{j,k}$이다. 또 $\mathbb{R}^m$의 스칼라배의 정의에 의해 $\alpha \mathbf{a}_k$의 $j$번째 값도 $\alpha a_{j,k}$이다. 따라서 함수의 같음에 의해 $\alpha A$의 $k$번째 열은 $\alpha \mathbf{a}_k$이다.
 
-**(6)의 증명.** $X = \{1, \dots, n\} \times \{1, \dots, n\}$의 원소 $(j, k)$마다 $j = k$이거나 $j \ne k$이고 둘 가운데 하나만 성립하므로, $(j, k)$에 실수($j = k$이면 $1$, $j \ne k$이면 $0$)가 하나 정해진다. (G)에 의해 이 값을 갖는 $n \times n$ 행렬이 있고, (2)에 의해 이런 행렬은 하나뿐이다. 그 $(j, j)$ 성분은 $1$이고 $j \ne k$인 $(j, k)$ 성분은 $0$이다. $k \in \{1, \dots, n\}$을 잡으면 $I_n$의 $k$번째 열의 $j$번째 값은 $j = k$이면 $1$이고 $j \ne k$이면 $0$이다. [[standard-basis|표준기저]]의 진술에 의해 $e_k$의 $j$번째 값도 $j = k$이면 $1$이고 $j \ne k$이면 $0$이다. 정의역이 $\{1, \dots, n\}$인 두 함수의 값이 모두 같으므로 함수의 같음에 의해 $I_n$의 $k$번째 열은 $e_k$이다. $\blacksquare$
+**(6)의 증명.** $X = \{1, \dots, n\} \times \{1, \dots, n\}$의 원소 $(j, k)$마다 $j = k$이거나 $j \ne k$이고 둘 가운데 하나만 성립하므로, $(j, k)$에 실수($j = k$이면 $1$, $j \ne k$이면 $0$)가 하나 정해진다. (G)에 의해 이 값을 갖는 $n \times n$ 행렬이 있고, (2)에 의해 이런 행렬은 하나뿐이다. 그 $(j, j)$ 성분은 $1$이고 $j \ne k$인 $(j, k)$ 성분은 $0$이다. $k \in \{1, \dots, n\}$을 잡으면 $I_n$의 $k$번째 열의 $j$번째 값은 $j = k$이면 $1$이고 $j \ne k$이면 $0$이다. [[standard-basis|표준기저]]의 진술에 의해 $e_k$의 $j$번째 값도 $j = k$이면 $1$이고 $j \ne k$이면 $0$이다. 정의역이 $\{1, \dots, n\}$인 두 함수의 값이 모두 같으므로 함수의 같음에 의해 $I_n$의 $k$번째 열은 $e_k$이다.
+
+**(7)의 증명.** $A$가 $m \times n$ 행렬이면서 $p \times q$ 행렬이면, $A$는 집합으로서 하나이므로 [[function|함수]]의 진술("두 함수가 같으면 정의역도 같다")에 의해 두 정의역 $\{1, \dots, m\} \times \{1, \dots, n\}$과 $\{1, \dots, p\} \times \{1, \dots, q\}$가 같다. [[finite-set|유한집합]] 항목에서 $\{1, \dots, m\} = \{i \in \mathbb{Z} : 1 \le i \le m\}$이다. 자연수는 $\mathbb{N} = \{1, 2, 3, \dots\}$의 원소이므로 $m \ge 1$이고 $n \ge 1$이며, $m \le m$, $1 \le 1$이므로 $m \in \{1, \dots, m\}$, $1 \in \{1, \dots, n\}$이다. 따라서 $(m, 1)$은 왼쪽 집합에 속하고, 두 집합이 같으므로 오른쪽 집합에도 속한다. [[cartesian-product|곱집합]]의 진술에 의해 $m \in \{1, \dots, p\}$, 곧 $m \le p$이다. 같은 논증을 $(p, 1)$에 쓴다. $p \ge 1$, $q \ge 1$이므로 $(p, 1)$은 오른쪽 집합에 속하고 따라서 왼쪽 집합에 속하므로 $p \in \{1, \dots, m\}$, 곧 $p \le m$이다. [[well-ordering-principle|정렬 원리]] 항목의 (L2)에 의해 $m = p$이다. 열의 개수도 같은 방식으로 원소를 바꾸어 쓴다. $(1, n)$은 왼쪽 집합에 속하므로 오른쪽 집합에 속하고 $n \le q$이다. $(1, q)$는 오른쪽 집합에 속하므로 왼쪽 집합에 속하고 $q \le n$이다. (L2)에 의해 $n = q$이다. $\blacksquare$
 :::
 
 ## 예시와 반례

@@ -7,7 +7,7 @@ field: linear-algebra
 msc: ["15"]
 level: undergrad
 summary: m × n 행렬 A 와 x ∈ ℝⁿ 의 곱 Ax 는 A 의 열들에 x 의 값을 계수로 곱해 더한 ℝᵐ 의 벡터이다. Ax 의 j 번째 값은 A 의 j 번째 행으로 계산되고, x 를 Ax 로 보내는 함수 T_A 는 선형사상이며 그 상은 열들의 생성이다.
-requires: [real-number-arithmetic, vector-space, function, real-function-space, finite-sum-of-vectors, linear-combination-and-span, standard-basis, linear-map, kernel-and-range, matrix]
+requires: [real-number-arithmetic, vector-space, function, inverse-function, real-function-space, finite-sum-of-vectors, linear-combination-and-span, standard-basis, linear-map, kernel-and-range, matrix]
 sources:
   - ref: treil-linear-algebra-done-wrong
     loc: 1장 3.2절 Linear transformations Fⁿ → Fᵐ. Matrix–column multiplication, pp.13–15; 3.4절의 Remark(곱할 수 있는 크기), p.16
@@ -26,11 +26,11 @@ $$
 
 로 정한다. 여기서 $\mathbf{a}_1, \dots, \mathbf{a}_n$은 [[matrix|행렬]]에서 정한, $A$의 열을 차례로 늘어놓은 $\mathbb{R}^m$의 벡터의 열이고, 오른쪽은 [[finite-sum-of-vectors|벡터의 유한 합]]에서 정한, $k$번째 항이 $x_k \mathbf{a}_k$인 $\mathbb{R}^m$의 벡터의 열의 합이다. 따라서 $Ax \in \mathbb{R}^m$이다. $m \times n$ 행렬과 $\mathbb{R}^n$이 아닌 공간의 벡터의 곱은 정의하지 않는다.
 
-다음이 성립한다. $A$, $B$는 $m \times n$ 행렬이고 $x$, $y \in \mathbb{R}^n$이며 $\alpha$는 실수이다.
+다음이 성립한다. $A$, $B$는 $m \times n$ 행렬이고 $x$, $y \in \mathbb{R}^n$이며($x_k = x(k)$, $y_k = y(k)$) $\alpha$는 실수이다.
 
 1. (행 규칙) 모든 $j \in \{1, \dots, m\}$에서 $Ax$의 $j$번째 값은 $a_{j,1} x_1 + \cdots + a_{j,n} x_n$이다. 오른쪽은 $k$번째 항이 $a_{j,k} x_k$인 실수의 열의 합이다.
 2. 각 $x \in \mathbb{R}^n$에 $Ax \in \mathbb{R}^m$가 하나 정해지므로 [[real-function-space|(G)]]에 의해 $x$에서의 값이 $Ax$인 함수 $T_A : \mathbb{R}^n \to \mathbb{R}^m$가 있다. $T_A$는 [[linear-map|선형사상]]이다. 곧 $A(x + y) = Ax + Ay$이고 $A(\alpha x) = \alpha(Ax)$이다.
-3. $k \in \{1, \dots, n\}$이면 $Ae_k = \mathbf{a}_k$이다(곧 $A$와 [[standard-basis|표준기저]]의 $e_k$의 곱은 $A$의 $k$번째 열이다). 또 $I_n x = x$이다.
+3. $k \in \{1, \dots, n\}$이면 $Ae_k = \mathbf{a}_k$이다(곧 $A$와 [[standard-basis|표준기저]]의 $e_k$의 곱은 $A$의 $k$번째 열이다). 또 $I_n x = x$이다. 곧 $T_{I_n}$은 $\mathbb{R}^n$ 위의 [[inverse-function|항등함수]] $i_{\mathbb{R}^n}$이다.
 4. $(A + B)x = Ax + Bx$이고 $(\alpha A)x = \alpha(Ax)$이다.
 5. $A = B$인 것은 정확히 모든 $x \in \mathbb{R}^n$에서 $Ax = Bx$일 때이다. 곧 $A = B$인 것은 정확히 $T_A = T_B$일 때이다.
 6. $T_A$의 [[kernel-and-range|상]]은 $A$의 열들의 [[linear-combination-and-span|생성]]이다. 곧 $\operatorname{Ran} T_A = \operatorname{span}(\mathbf{a}_1, \dots, \mathbf{a}_n)$이다.
@@ -45,11 +45,11 @@ $$
 
 Here $\mathbf{a}_1, \dots, \mathbf{a}_n$ is the sequence of vectors of $\mathbb{R}^m$ formed by the columns of $A$ in order, as defined in the entry on matrices, and the right-hand side is the sum, as defined in the entry on finite sums of vectors, of the sequence of vectors of $\mathbb{R}^m$ whose $k$-th term is $x_k \mathbf{a}_k$. Hence $Ax \in \mathbb{R}^m$. The product of an $m \times n$ matrix and a vector of a space other than $\mathbb{R}^n$ is not defined.
 
-The following hold. $A$, $B$ are $m \times n$ matrices, $x$, $y \in \mathbb{R}^n$, and $\alpha$ is a real number.
+The following hold. $A$, $B$ are $m \times n$ matrices, $x$, $y \in \mathbb{R}^n$ (with $x_k = x(k)$, $y_k = y(k)$), and $\alpha$ is a real number.
 
 1. (Row rule) For every $j \in \{1, \dots, m\}$, the $j$-th value of $Ax$ is $a_{j,1} x_1 + \cdots + a_{j,n} x_n$. The right-hand side is the sum of the sequence of real numbers whose $k$-th term is $a_{j,k} x_k$.
 2. Since an element $Ax \in \mathbb{R}^m$ is assigned to each $x \in \mathbb{R}^n$, by (G) there is a function $T_A : \mathbb{R}^n \to \mathbb{R}^m$ whose value at $x$ is $Ax$. $T_A$ is a linear map. That is, $A(x + y) = Ax + Ay$ and $A(\alpha x) = \alpha(Ax)$.
-3. If $k \in \{1, \dots, n\}$, then $Ae_k = \mathbf{a}_k$ (that is, the product of $A$ and the vector $e_k$ of the standard basis is the $k$-th column of $A$). Also $I_n x = x$.
+3. If $k \in \{1, \dots, n\}$, then $Ae_k = \mathbf{a}_k$ (that is, the product of $A$ and the vector $e_k$ of the standard basis is the $k$-th column of $A$). Also $I_n x = x$. That is, $T_{I_n}$ is the identity function $i_{\mathbb{R}^n}$ on $\mathbb{R}^n$.
 4. $(A + B)x = Ax + Bx$ and $(\alpha A)x = \alpha(Ax)$.
 5. $A = B$ exactly when $Ax = Bx$ for every $x \in \mathbb{R}^n$. That is, $A = B$ exactly when $T_A = T_B$.
 6. The range of $T_A$ is the span of the columns of $A$. That is, $\operatorname{Ran} T_A = \operatorname{span}(\mathbf{a}_1, \dots, \mathbf{a}_n)$.
@@ -57,26 +57,26 @@ The following hold. $A$, $B$ are $m \times n$ matrices, $x$, $y \in \mathbb{R}^n
 
 ## 직관
 
-장보기 목록으로 생각해 볼 수 있습니다. 재료가 $n$가지이고 재료 $k$ 한 단위에 든 영양소 $m$가지의 양을 적은 것이 열 $\mathbf{a}_k$라 합시다. 재료 $k$를 $x_k$단위 사면 영양소의 총량은 $x_1 \mathbf{a}_1 + \cdots + x_n \mathbf{a}_n$, 곧 $Ax$입니다. 영양소 $j$ 하나의 총량만 알고 싶으면 재료마다 "단위당 양 $a_{j,k}$ 곱하기 단위 수 $x_k$"를 더하면 되는데, 이것이 행 규칙 (1)입니다. 비유가 정의와 맞지 않는 곳은 $x_k$가 음수일 수 있다는 점입니다. 장보기에서는 재료를 음수 단위로 살 수 없습니다.
+장보기 목록으로 생각해 볼 수 있습니다. 재료가 $n$가지이고 재료 $k$ 한 단위에 든 영양소 $m$가지의 양을 적은 것이 열 $\mathbf{a}_k$라 합시다. 재료 $k$를 $x_k$단위 사면 영양소의 총량은 $x_1 \mathbf{a}_1 + \cdots + x_n \mathbf{a}_n$, 곧 $Ax$입니다. 영양소 $j$ 하나의 총량만 알고 싶으면 재료마다 "단위당 양 $a_{j,k}$ 곱하기 단위 수 $x_k$"를 더하면 되는데, 이것이 행 규칙 (1)입니다. 비유가 정의와 맞지 않는 곳은 $x_k$와 $a_{j,k}$가 음수일 수 있다는 점입니다. 장보기에서는 재료를 음수 단위로 살 수 없고 영양소의 양도 음수가 아닙니다.
 
 정의는 열로 하고 계산은 행으로도 할 수 있다는 것이 이 항목의 요점입니다. 열로 정의하면 $Ax$가 일차결합이라는 것이 드러나서, $T_A$의 선형성 (2)는 계수의 열에 관한 계산 규칙에서 바로 나오고, 상이 열들의 생성이라는 (6)은 정의를 다시 읽은 것입니다. (3)은 $T_A$가 표준기저를 $A$의 열로 보낸다는 뜻입니다. 다음 항목은 거꾸로 모든 선형사상 $\mathbb{R}^n \to \mathbb{R}^m$이 어떤 행렬 $A$의 $T_A$라는 것을 보입니다.
 
 ## 성질의 증명
 
 :::proof
-증명에서 인용하는 (V1)–(V8)은 [[vector-space]]의 것, (H0)–(H7)과 (C1)–(C6)은 [[finite-sum-of-vectors]]의 것, (K1)–(K12)는 [[real-number-arithmetic]]의 것이다. $\mathbb{R}^m$과 $\mathbb{R}^n$의 덧셈과 스칼라배는 [[real-function-space|실숫값 함수의 공간]]에서 정한 대로 값마다 한다. 또 [[finite-sum-of-vectors|벡터의 유한 합]]의 진술에 의해 길이가 같고 모든 자리의 항이 같은 두 열은 같은 열이고, 같은 열의 합은 같다.
+증명에서 인용하는 (V1)–(V8)은 [[vector-space]]의 것, (H0)–(H7)과 (C1)–(C6)은 [[finite-sum-of-vectors]]의 것, (K1)–(K12)는 [[real-number-arithmetic]]의 것이다. $\mathbb{R}^m$과 $\mathbb{R}^n$의 덧셈과 스칼라배는 [[real-function-space|실숫값 함수의 공간]]에서 정한 대로 값마다 한다. 또 [[finite-sum-of-vectors|벡터의 유한 합]]의 진술에 의해 길이가 같고 모든 자리의 항이 같은 두 벡터의 열(실수의 열도 마찬가지)은 같은 열이고, 같은 열의 합은 같다.
 
-**(1)의 증명.** $Ax$는 $k$번째 항이 $f_k = x_k \mathbf{a}_k$인 $\mathbb{R}^m$의 벡터의 열 $f_1, \dots, f_n$의 합이다. $\mathbb{R}^m = \mathbb{R}^{\{1, \dots, m\}}$이므로 [[standard-basis|표준기저]]의 (1)을 집합 $\{1, \dots, m\}$과 이 열에 쓰면, $j \in \{1, \dots, m\}$에서 $(Ax)(j) = f_1(j) + \cdots + f_n(j)$이다. 오른쪽은 $k$번째 항이 $f_k(j)$인 실수의 열의 합이다. 스칼라배는 값마다 하므로 $f_k(j) = x_k \cdot \mathbf{a}_k(j) = x_k a_{j,k}$이고, (K1)에 의해 이것은 $a_{j,k} x_k$이다. 따라서 이 실수의 열은 $k$번째 항이 $a_{j,k} x_k$인 열과 같고, 같은 열의 합은 같으므로 $(Ax)(j) = a_{j,1} x_1 + \cdots + a_{j,n} x_n$이다.
+**(1)의 증명.** $Ax$는 $k$번째 항이 $f_k = x_k \mathbf{a}_k$인 $\mathbb{R}^m$의 벡터의 열 $f_1, \dots, f_n$의 합이다. $\mathbb{R}^m = \mathbb{R}^{\{1, \dots, m\}}$이므로 [[standard-basis|표준기저]]의 (1)을 집합 $\{1, \dots, m\}$과 이 열에 쓰면, $j \in \{1, \dots, m\}$에서 $(Ax)(j) = f_1(j) + \cdots + f_n(j)$이다. 오른쪽은 $k$번째 항이 $f_k(j)$인 실수의 열의 합이다. 스칼라배는 값마다 하므로 $f_k(j) = x_k \cdot \mathbf{a}_k(j) = x_k a_{j,k}$이고, (K1)에 의해 이것은 $a_{j,k} x_k$이다. 따라서 이 실수의 열은 $k$번째 항이 $a_{j,k} x_k$인 실수의 열과 같고, 같은 열의 합은 같으므로 $(Ax)(j) = a_{j,1} x_1 + \cdots + a_{j,n} x_n$이다.
 
-**(2)의 증명.** $T_A$가 있다는 것은 진술에 적은 대로 (G)이다. (T-합): $x + y$의 $k$번째 값은 $x_k + y_k$이므로 $A(x + y)$는 $k$번째 항이 $(x_k + y_k)\mathbf{a}_k$인 열의 합이다. (C1)을 실수의 열 $x_1, \dots, x_n$과 $y_1, \dots, y_n$, 벡터의 열 $\mathbf{a}_1, \dots, \mathbf{a}_n$에 쓰면
+**(2)의 증명.** $T_A$가 있다는 것은 진술에 적은 대로 (G)이다. (T-합): $x + y$의 $k$번째 값은 $x_k + y_k$이므로 $A(x + y)$는 $k$번째 항이 $(x_k + y_k)\mathbf{a}_k$인 벡터의 열의 합이다. (C1)을 실수의 열 $x_1, \dots, x_n$과 $y_1, \dots, y_n$, 벡터의 열 $\mathbf{a}_1, \dots, \mathbf{a}_n$에 쓰면
 $$Ax + Ay = (x_1 \mathbf{a}_1 + \cdots + x_n \mathbf{a}_n) + (y_1 \mathbf{a}_1 + \cdots + y_n \mathbf{a}_n) = (x_1 + y_1)\mathbf{a}_1 + \cdots + (x_n + y_n)\mathbf{a}_n = A(x + y)$$
-이다. 곧 $T_A(x + y) = T_A x + T_A y$이다. (T-배): $\alpha x$의 $k$번째 값은 $\alpha x_k$이므로 $A(\alpha x)$는 $k$번째 항이 $(\alpha x_k)\mathbf{a}_k$인 열의 합이다. (C2)에서 $\gamma = \alpha$로 두면 $\alpha(Ax) = (\alpha x_1)\mathbf{a}_1 + \cdots + (\alpha x_n)\mathbf{a}_n = A(\alpha x)$이다. 곧 $T_A(\alpha x) = \alpha T_A x$이다. 두 조건이 모두 성립하므로 $T_A$는 [[linear-map|선형사상]]이다.
+이다. 곧 $T_A(x + y) = T_A x + T_A y$이다. (T-배): $\alpha x$의 $k$번째 값은 $\alpha x_k$이므로 $A(\alpha x)$는 $k$번째 항이 $(\alpha x_k)\mathbf{a}_k$인 벡터의 열의 합이다. (C2)에서 $\gamma = \alpha$로 두면 $\alpha(Ax) = (\alpha x_1)\mathbf{a}_1 + \cdots + (\alpha x_n)\mathbf{a}_n = A(\alpha x)$이다. 곧 $T_A(\alpha x) = \alpha T_A x$이다. 두 조건이 모두 성립하므로 $T_A$는 [[linear-map|선형사상]]이다.
 
-**(3)의 증명.** [[standard-basis|표준기저]]의 진술에 의해 $e_k$의 $i$번째 값은 $i = k$이면 $1$이고 $i \ne k$이면 $0$이다. 따라서 $Ae_k$는 계수의 열이 $e_k$인 일차결합이고, $k$번째가 아닌 계수가 모두 $0$이므로 (C4)에 의해 $Ae_k = 1\mathbf{a}_k$이다. (V5)에 의해 $1\mathbf{a}_k = \mathbf{a}_k$이다. 다음으로 [[matrix|행렬]]의 (6)에 의해 $I_n$의 $k$번째 열은 $e_k$이므로, $I_n$의 열을 늘어놓은 열은 모든 자리의 항이 같은 열 $e_1, \dots, e_n$이다. 따라서 $I_n x = x_1 e_1 + \cdots + x_n e_n$이고, 이것은 표준기저의 (3)에 의해 $x$이다.
+**(3)의 증명.** [[standard-basis|표준기저]]의 진술에 의해 $e_k$의 $i$번째 값은 $i = k$이면 $1$이고 $i \ne k$이면 $0$이다. 따라서 $Ae_k$는 계수의 열이 $e_k$인 일차결합이고, $k$번째가 아닌 계수가 모두 $0$이므로 (C4)에 의해 $Ae_k = 1\mathbf{a}_k$이다. (V5)에 의해 $1\mathbf{a}_k = \mathbf{a}_k$이다. 다음으로 [[matrix|행렬]]의 (6)에 의해 $I_n$의 $k$번째 열은 $e_k$이므로, $I_n$의 열을 차례로 늘어놓은 벡터의 열은 모든 자리에서 벡터의 열 $e_1, \dots, e_n$과 항이 같으므로 같은 열이다. 따라서 $I_n x = x_1 e_1 + \cdots + x_n e_n$이고, 이것은 표준기저의 (3)에 의해 $x$이다. $T_{I_n}$과 $i_{\mathbb{R}^n}$은 정의역이 $\mathbb{R}^n$으로 같고 모든 $x$에서 $T_{I_n} x = I_n x = x = i_{\mathbb{R}^n}(x)$이므로([[inverse-function|항등함수]]의 정의), [[function|함수의 같음]]에 의해 $T_{I_n} = i_{\mathbb{R}^n}$이다.
 
-**(4)의 증명.** [[matrix|행렬]]의 (5)에 의해 $A + B$의 $k$번째 열은 $\mathbf{a}_k + \mathbf{b}_k$이므로 $(A + B)x$는 $k$번째 항이 $x_k(\mathbf{a}_k + \mathbf{b}_k)$인 열의 합이다. (V7)에 의해 $x_k(\mathbf{a}_k + \mathbf{b}_k) = x_k \mathbf{a}_k + x_k \mathbf{b}_k$이므로 이 열은 $k$번째 항이 $x_k \mathbf{a}_k + x_k \mathbf{b}_k$인 열과 같다. (H3)을 열 $x_1 \mathbf{a}_1, \dots, x_n \mathbf{a}_n$과 $x_1 \mathbf{b}_1, \dots, x_n \mathbf{b}_n$에 쓰면 그 합은 $(x_1 \mathbf{a}_1 + \cdots + x_n \mathbf{a}_n) + (x_1 \mathbf{b}_1 + \cdots + x_n \mathbf{b}_n) = Ax + Bx$이다. 따라서 $(A + B)x = Ax + Bx$이다.
+**(4)의 증명.** [[matrix|행렬]]의 (5)에 의해 $A + B$의 $k$번째 열은 $\mathbf{a}_k + \mathbf{b}_k$이므로 $(A + B)x$는 $k$번째 항이 $x_k(\mathbf{a}_k + \mathbf{b}_k)$인 벡터의 열의 합이다. (V7)에 의해 $x_k(\mathbf{a}_k + \mathbf{b}_k) = x_k \mathbf{a}_k + x_k \mathbf{b}_k$이므로 이 벡터의 열은 $k$번째 항이 $x_k \mathbf{a}_k + x_k \mathbf{b}_k$인 벡터의 열과 같다. (H3)을 벡터의 열 $x_1 \mathbf{a}_1, \dots, x_n \mathbf{a}_n$과 $x_1 \mathbf{b}_1, \dots, x_n \mathbf{b}_n$에 쓰면 그 합은 $(x_1 \mathbf{a}_1 + \cdots + x_n \mathbf{a}_n) + (x_1 \mathbf{b}_1 + \cdots + x_n \mathbf{b}_n) = Ax + Bx$이다. 따라서 $(A + B)x = Ax + Bx$이다.
 
-같은 행렬의 (5)에 의해 $\alpha A$의 $k$번째 열은 $\alpha \mathbf{a}_k$이므로 $(\alpha A)x$는 $k$번째 항이 $x_k(\alpha \mathbf{a}_k)$인 열의 합이다. (V6)과 (K1)에 의해 $x_k(\alpha \mathbf{a}_k) = (x_k \alpha)\mathbf{a}_k = (\alpha x_k)\mathbf{a}_k$이므로, 이 열은 $k$번째 항이 $(\alpha x_k)\mathbf{a}_k$인 열과 같다. 그 합은 (C2)에 의해 $\alpha(x_1 \mathbf{a}_1 + \cdots + x_n \mathbf{a}_n) = \alpha(Ax)$이다. 따라서 $(\alpha A)x = \alpha(Ax)$이다.
+같은 행렬의 (5)에 의해 $\alpha A$의 $k$번째 열은 $\alpha \mathbf{a}_k$이므로 $(\alpha A)x$는 $k$번째 항이 $x_k(\alpha \mathbf{a}_k)$인 벡터의 열의 합이다. (V6)과 (K1)에 의해 $x_k(\alpha \mathbf{a}_k) = (x_k \alpha)\mathbf{a}_k = (\alpha x_k)\mathbf{a}_k$이므로, 이 벡터의 열은 $k$번째 항이 $(\alpha x_k)\mathbf{a}_k$인 벡터의 열과 같다. 그 합은 (C2)에 의해 $\alpha(x_1 \mathbf{a}_1 + \cdots + x_n \mathbf{a}_n) = \alpha(Ax)$이다. 따라서 $(\alpha A)x = \alpha(Ax)$이다.
 
 **(5)의 증명.** $A = B$이면 $Ax$와 $Bx$는 같은 행렬과 같은 벡터의 곱이므로 같다. 거꾸로 모든 $x \in \mathbb{R}^n$에서 $Ax = Bx$라 하자. $k \in \{1, \dots, n\}$을 잡고 $x = e_k$로 두면 (3)에 의해 $\mathbf{a}_k = Ae_k = Be_k = \mathbf{b}_k$이다. 모든 $k$에서 열이 같으므로 [[matrix|행렬]]의 (3)에 의해 $A = B$이다. 끝으로 $T_A$와 $T_B$는 정의역이 $\mathbb{R}^n$으로 같은 함수이므로 [[function|함수의 같음]]에 의해 $T_A = T_B$인 것은 정확히 모든 $x$에서 $T_A x = T_B x$, 곧 $Ax = Bx$일 때이다.
 
