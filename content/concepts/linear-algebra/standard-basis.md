@@ -7,7 +7,7 @@ field: linear-algebra
 msc: ["15A03"]
 level: undergrad
 summary: ℝⁿ 에서 k 번째 값만 1 이고 나머지가 0 인 벡터 e_k 를 차례로 늘어놓은 열 e_1, …, e_n 은 ℝⁿ 의 기저이고, 벡터 (x_1, …, x_n) 의 좌표는 x_1, …, x_n 이다.
-requires: [real-number-arithmetic, vector-space, real-function-space, finite-set, mathematical-induction, finite-sum-of-vectors, basis]
+requires: [real-number-arithmetic, vector-space, real-function-space, finite-set, mathematical-induction, finite-sum-of-vectors, linear-combination-and-span, basis]
 proof: full
 sources:
   - ref: treil-linear-algebra-done-wrong
@@ -40,7 +40,7 @@ The sum on the left is the sum in the vector space $\mathbb{R}^X$, and the right
 
 ## 직관
 
-$\mathbb{R}^n$의 벡터는 $n$개의 칸에 실수가 하나씩 적힌 표입니다. $e_k$는 $k$번째 칸에만 $1$이 켜진 표이고, $x_k e_k$는 그 스위치의 세기를 $x_k$배로 맞춘 표입니다. 이런 표를 칸마다 하나씩 모두 더하면 칸 $j$에는 $x_j e_j$만 값을 남기므로 원래 표 $x$가 됩니다. 계수를 읽는 방법이 곧 "$j$번째 칸의 값"이라서 좌표가 $x_j$입니다. 그래서 이 기저에서 좌표를 구하는 데는 계산이 필요 없습니다. 이 비유가 맞지 않는 곳은, 다른 기저에 관한 좌표는 이렇게 칸을 읽는 것으로 얻을 수 없다는 점입니다. 아래 반례에서 같은 벡터가 다른 기저에서 다른 좌표를 가지는 경우를 봅니다.
+$\mathbb{R}^n$의 벡터는 $n$개의 칸에 실수가 하나씩 적힌 표입니다. $e_k$는 $k$번째 칸에만 $1$이 적힌 표이고, $x_k e_k$는 $k$번째 칸에만 $x_k$가 적힌 표입니다. 이런 표를 칸마다 하나씩 모두 더하면 칸 $j$에는 $x_j e_j$만 값을 남기므로 원래 표 $x$가 됩니다. 계수를 읽는 방법이 곧 "$j$번째 칸의 값"이라서 좌표가 $x_j$입니다. 그래서 이 기저에서 좌표를 구하는 데는 계산이 필요 없습니다. 이 비유가 맞지 않는 곳은, 다른 기저에 관한 좌표는 이렇게 칸을 읽는 것으로 얻을 수 없다는 점입니다. 아래 예에서 같은 벡터가 다른 기저에서 다른 좌표를 가지는 경우를 봅니다.
 
 증명에서 할 일은 일차결합의 값을 한 칸씩 읽는 것입니다. 함수의 합은 칸마다 더하는 것으로 정의되었지만 합이 셋 이상일 때 그렇다는 것은 (1)로 보여야 합니다. 이것은 합의 정의를 따라 하는 귀납법으로 증명됩니다.
 
@@ -68,7 +68,7 @@ $(\alpha_i e_i)(j)$를 $i = j$인 경우와 $i \ne j$인 경우로 나누어 계
 $n = 2$이면 $e_1 = (1, 0)$, $e_2 = (0, 1)$이고 $(7, -3) = 7 e_1 + (-3) e_2$입니다. 실제로 $7(1, 0) + (-3)(0, 1) = (7, 0) + (0, -3) = (7, -3)$이므로 좌표는 $(7, -3)$ 자신입니다. $n = 3$이면 $e_2 = (0, 1, 0)$이고 $(4, 0, -1) = 4 e_1 + 0 e_2 + (-1) e_3$입니다.
 :::
 
-:::counterexample[같은 벡터가 기저에 따라 다른 좌표를 갖는다]
+:::example[같은 벡터가 기저에 따라 다른 좌표를 갖는다]
 $\mathbb{R}^2$의 벡터 $(5, -2)$의 표준기저에 관한 좌표는 $(5, -2)$입니다. 그런데 [[basis]]의 예시에서 기저임을 확인한 열 $(1, 0), (1, 1)$에 관한 좌표는 $(7, -2)$입니다($7(1, 0) + (-2)(1, 1) = (5, -2)$). 따라서 같은 벡터 $(5, -2)$가 이 두 기저에서 다른 좌표를 갖습니다.
 :::
 

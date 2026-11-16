@@ -28,7 +28,7 @@ $$\alpha_1 v_1 + \cdots + \alpha_n v_n = 0_V \quad \text{이면 모든 } k \in \
 
 - (I1) 어떤 $k$에서 $v_k = 0_V$이면 열은 일차종속이다.
 - (I2) 서로 다른 두 자리 $j \ne k$에서 $v_j = v_k$이면 열은 일차종속이다.
-- (I3) (이 성질에서만 길이를 $n + 1$로 쓴다.) $n \ge 0$이고 $v_1, \dots, v_{n+1}$이 길이 $n + 1$인 일차독립인 열이며 $k \in \{1, \dots, n+1\}$이면, $k$번째 항을 뺀 길이 $n$인 열($c_i = v_i$ ($i < k$), $c_i = v_{i+1}$ ($k \le i \le n$). [[finite-sum-of-vectors|(H6)]])도 일차독립이다.
+- (I3) (이 성질에서만 길이를 $n + 1$로 쓴다.) $n \ge 0$이고 $v_1, \dots, v_{n+1}$이 길이 $n + 1$인 일차독립인 열이며 $k \in \{1, \dots, n+1\}$이면, $k$번째 항을 [[finite-sum-of-vectors|지운 열]](길이 $n$)도 일차독립이다.
 - (I4) 길이 $1$인 열 $v_1$이 일차독립인 것은 정확히 $v_1 \ne 0_V$일 때이다.
 :::
 
@@ -43,7 +43,7 @@ The following hold, where $v_1, \dots, v_n$ is a sequence of vectors of $V$.
 
 - (I1) If $v_k = 0_V$ for some $k$, then the sequence is linearly dependent.
 - (I2) If $v_j = v_k$ for two different positions $j \ne k$, then the sequence is linearly dependent.
-- (I3) (Only in this property the length is written $n + 1$.) Let $n \ge 0$, let $v_1, \dots, v_{n+1}$ be a linearly independent sequence of length $n + 1$, and let $k \in \{1, \dots, n+1\}$. Then the sequence of length $n$ with the $k$-th term removed ($c_i = v_i$ for $i < k$ and $c_i = v_{i+1}$ for $k \le i \le n$; see (H6)) is also linearly independent.
+- (I3) (Only in this property the length is written $n + 1$.) Let $n \ge 0$, let $v_1, \dots, v_{n+1}$ be a linearly independent sequence of length $n + 1$, and let $k \in \{1, \dots, n+1\}$. Then the sequence of length $n$ with the $k$-th term deleted is also linearly independent.
 - (I4) A sequence $v_1$ of length $1$ is linearly independent exactly when $v_1 \ne 0_V$.
 :::
 

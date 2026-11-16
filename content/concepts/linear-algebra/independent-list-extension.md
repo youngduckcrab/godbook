@@ -7,7 +7,7 @@ field: linear-algebra
 msc: ["15A03"]
 level: undergrad
 summary: 일차독립인 열 v 에 벡터 x 를 덧붙인 열이 일차독립인 것은 정확히 x 가 v 의 생성에 속하지 않을 때이다. 따라서 일차독립인 열이 V 를 생성하지 않으면 V 의 벡터를 덧붙여 일차독립인 더 긴 열을 얻는다.
-requires: [real-number-arithmetic, vector-space, vector-space-basic-properties, finite-sum-of-vectors, linear-combination-and-span, linear-independence]
+requires: [real-number-arithmetic, vector-space, vector-space-basic-properties, finite-sum-of-vectors, linear-combination-and-span, linear-independence, proof-by-contrapositive, proof-by-contradiction]
 proof: full
 sources:
   - ref: treil-linear-algebra-done-wrong
@@ -53,9 +53,9 @@ $x$가 생성에 속하면 $-1$을 계수로 하는 $0_V$의 표현이 생긴다
 $$\alpha_1 w_1 + \cdots + \alpha_{n+1} w_{n+1} = (\alpha_1 v_1 + \cdots + \alpha_n v_n) + \alpha_{n+1} x \qquad (\ast)$$
 이다.
 
-(1) ($\Rightarrow$) 대우를 보인다. $x \in \operatorname{span}(v_1, \dots, v_n)$이라 하고 $x = \beta_1 v_1 + \cdots + \beta_n v_n$으로 쓴다. $\alpha_i = \beta_i$ ($i \le n$), $\alpha_{n+1} = -1$로 두면 $(\ast)$에 의해 합은 $x + (-1)x$이고, [[vector-space-basic-properties|(B5)]]와 (B2)에 의해 $(-1)x = -x$, $x + (-x) = 0_V$이다. $\alpha_{n+1} = -1 \ne 0$이므로($-1 = 0$이라면 $1 = 1 + (-1) = 0$이 되어 [[real-number-arithmetic|(K4)]]에 어긋난다) 덧붙인 열은 일차종속이다.
+(1) ($\Rightarrow$) 대우를 보인다. $x \in \operatorname{span}(v_1, \dots, v_n)$이라 하고 $x = \beta_1 v_1 + \cdots + \beta_n v_n$으로 쓴다. $\alpha_i = \beta_i$ ($i \le n$), $\alpha_{n+1} = -1$로 두면 $(\ast)$에 의해 합은 $x + (-1)x$이고, [[vector-space-basic-properties|(B5)]]와 (B2)에 의해 $(-1)x = -x$, $x + (-x) = 0_V$이다. $\alpha_{n+1} = -1 \ne 0$이므로($-1 = 0$이라면 $1 = 1 + 0 = 1 + (-1) = 0$이 되어 [[real-number-arithmetic|(K4)]]에 어긋난다) 덧붙인 열은 일차종속이다.
 
-($\Leftarrow$) $x \notin \operatorname{span}(v_1, \dots, v_n)$이라 하고, 길이 $n + 1$인 실수의 열 $\alpha$가 $\alpha_1 w_1 + \cdots + \alpha_{n+1} w_{n+1} = 0_V$를 만족한다고 하자. $u = \alpha_1 v_1 + \cdots + \alpha_n v_n$이라 쓰면 $(\ast)$에 의해 $u + \alpha_{n+1} x = 0_V$이다. $\alpha_{n+1} \ne 0$이라 가정하면, (B2)의 유일성에 의해 $\alpha_{n+1} x = -u = (-1)u$이고, $\alpha_{n+1}$의 역수([[real-number-arithmetic|(K6)]])를 곱하면 [[vector-space|(V6)]], (V5)에 의해 $x = \alpha_{n+1}^{-1}\bigl((-1)u\bigr)$이다. [[finite-sum-of-vectors|(C2)]]에 의해 이것은 $\alpha_{n+1}^{-1}\bigl((-1)\alpha_1\bigr) v_1 + \cdots + \alpha_{n+1}^{-1}\bigl((-1)\alpha_n\bigr) v_n$이므로 $x \in \operatorname{span}(v_1, \dots, v_n)$이 되어 가정에 어긋난다. 따라서 $\alpha_{n+1} = 0$이다. 그러면 $\alpha_{n+1} x = 0 x = 0_V$([[vector-space-basic-properties|(B3)]])이므로 $u + 0_V = u = 0_V$이다. $v_1, \dots, v_n$이 일차독립이므로 $\alpha_1 = \cdots = \alpha_n = 0$이다. 따라서 모든 계수가 $0$이고 덧붙인 열은 일차독립이다. ($n = 0$이면 $u = 0_V$이고 같은 논증이 성립한다.)
+($\Leftarrow$) $x \notin \operatorname{span}(v_1, \dots, v_n)$이라 하고, 길이 $n + 1$인 실수의 열 $\alpha$가 $\alpha_1 w_1 + \cdots + \alpha_{n+1} w_{n+1} = 0_V$를 만족한다고 하자. $u = \alpha_1 v_1 + \cdots + \alpha_n v_n$이라 쓰면 $(\ast)$에 의해 $u + \alpha_{n+1} x = 0_V$이다. $\alpha_{n+1} \ne 0$이라 가정하면, (B2)의 유일성에 의해 $\alpha_{n+1} x = -u = (-1)u$이고, $\alpha_{n+1}$의 역수([[real-number-arithmetic|(K1)]], (K6))를 곱하면 [[vector-space|(V6)]], (V5)에 의해 $x = \alpha_{n+1}^{-1}\bigl((-1)u\bigr)$이다. [[finite-sum-of-vectors|(C2)]]에 의해 이것은 $\alpha_{n+1}^{-1}\bigl((-1)\alpha_1\bigr) v_1 + \cdots + \alpha_{n+1}^{-1}\bigl((-1)\alpha_n\bigr) v_n$이므로 $x \in \operatorname{span}(v_1, \dots, v_n)$이 되어 가정에 어긋난다. 따라서 $\alpha_{n+1} = 0$이다. 그러면 $\alpha_{n+1} x = 0 x = 0_V$([[vector-space-basic-properties|(B3)]])이므로 $u + 0_V = u = 0_V$이다. $v_1, \dots, v_n$이 일차독립이므로 $\alpha_1 = \cdots = \alpha_n = 0$이다. 따라서 모든 계수가 $0$이고 덧붙인 열은 일차독립이다. ($n = 0$이면 $u = 0_V$이고 같은 논증이 성립한다.)
 
 (2) $v_1, \dots, v_n$이 $V$를 생성하지 않으면 $\operatorname{span}(v_1, \dots, v_n) \ne V$이다. 생성은 $V$의 부분집합이므로($\operatorname{span} \subseteq V$) $x \in V$이고 $x \notin \operatorname{span}(v_1, \dots, v_n)$인 $x$가 있다. (1)에 의해 덧붙인 열이 일차독립이다.
 :::
@@ -73,7 +73,7 @@ $x = (3, 0)$은 열 $v_1 = (1, 0)$의 항이 아니고 $(3, 0) \ne (1, 0)$이지
 ## 확인 질문
 
 :::check[$\mathbb{R}^2$의 열 $(1, 2)$에 $(2, 4)$와 $(2, 3)$을 각각 덧붙이면 일차독립인가?]
-$\operatorname{span}((1, 2)) = \{(t, 2t)\}$입니다. $(2, 4) = 2(1, 2)$는 속하므로 덧붙인 열은 일차종속입니다. $(2, 3)$은 $3 \ne 2 \cdot 2$이므로 속하지 않고 덧붙인 열 $(1, 2), (2, 3)$은 일차독립입니다.
+$\operatorname{span}((1, 2)) = \{(t, 2t) : t \text{는 실수}\}$입니다. $(2, 4) = 2(1, 2)$는 속하므로 덧붙인 열은 일차종속입니다. $(2, 3)$은 $3 \ne 2 \cdot 2$이므로 속하지 않고 덧붙인 열 $(1, 2), (2, 3)$은 일차독립입니다.
 :::
 
 :::check[빈 열에 $x = (0, 0)$을 덧붙이면 일차독립인가?]

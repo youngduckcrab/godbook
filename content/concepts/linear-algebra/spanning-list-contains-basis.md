@@ -7,7 +7,7 @@ field: linear-algebra
 msc: ["15A03"]
 level: undergrad
 summary: 벡터공간 V 를 생성하는 벡터의 열에서 항을 몇 개(0 개 포함) 지워 V 의 기저를 얻을 수 있다. 증명은 열의 길이에 대한 귀납법으로, 일차종속이면 한 항을 지워도 생성이 같다는 것을 쓴다.
-requires: [real-number-arithmetic, vector-space, finite-sum-of-vectors, mathematical-induction, linear-combination-and-span, linear-independence, basis, linear-dependence-criterion, basis-iff-independent-and-spanning]
+requires: [real-number-arithmetic, vector-space, real-function-space, finite-sum-of-vectors, mathematical-induction, linear-combination-and-span, linear-independence, basis, linear-dependence-criterion, basis-iff-independent-and-spanning]
 proof: full
 sources:
   - ref: treil-linear-algebra-done-wrong
@@ -19,23 +19,25 @@ added: 2026-11-16
 ---
 
 :::statement
-$V$가 [[vector-space|벡터공간]]이고 $v_1, \dots, v_n$이 길이 $n \ge 0$인 벡터의 열이라 하자. 열에서 **항을 $m$개 지워 얻는 열**(sequence obtained by deleting $m$ terms)을 $m$에 대한 재귀로 정한다.
+$V$가 [[vector-space|벡터공간]]이라 하자. $V$의 벡터의 열에서 **항을 $m$개 지워 얻는 열**(sequence obtained by deleting $m$ terms)을, 모든 정수 $n \ge 0$과 길이 $n$인 모든 열 $v_1, \dots, v_n$에 대하여 동시에 $m$에 대한 재귀로 정한다.
 
 - $m = 0$이면 $v$ 자신이다.
-- $m \ge 0$이면, 열 $u$가 $v$에서 항을 $m + 1$개 지워 얻는 열인 것은 정확히 $n \ge 1$이고 어떤 $k \in \{1, \dots, n\}$에 대하여 $u$가 $v$에서 $k$번째 항을 [[finite-sum-of-vectors|지운 열]] $c$에서 항을 $m$개 지워 얻는 열일 때이다.
+- $m \ge 0$이면, 열 $u$가 길이 $n$인 열 $v$에서 항을 $m + 1$개 지워 얻는 열인 것은 정확히 $n \ge 1$이고 어떤 $k \in \{1, \dots, n\}$에 대하여 $u$가 $v$에서 $k$번째 항을 [[finite-sum-of-vectors|지운 열]] $c$에서 항을 $m$개 지워 얻는 열일 때이다.
 
-항을 $m$개 지워 얻는 열의 길이는 $n - m$이다. 다음이 성립한다.
+이 재귀가 모든 $m \ge 0$과 모든 열에 대하여 "항을 $m$개 지워 얻는 열"이라는 말의 뜻을 정한다는 것은 [[finite-sum-of-vectors]]의 합의 정의에서와 같이 증명 없이 받아들인다. 길이 $n$인 열에서 항을 $m$개 지워 얻는 열의 길이는 $n - m$이다(증명 첫머리에서 보인다). 다음이 성립한다.
 
-열 $v_1, \dots, v_n$이 $V$를 [[linear-combination-and-span|생성]]하면, 어떤 정수 $m$ ($0 \le m \le n$)과 $v$에서 항을 $m$개 지워 얻는 열 $u$가 있어 $u$가 $V$의 [[basis|기저]]이다. ($m = 0$이면 $v$ 자신이 기저이다.)
+$v_1, \dots, v_n$이 길이 $n \ge 0$인 벡터의 열이라 하자. 열 $v_1, \dots, v_n$이 $V$를 [[linear-combination-and-span|생성]]하면, 어떤 정수 $m$ ($0 \le m \le n$)과 $v$에서 항을 $m$개 지워 얻는 열 $u$가 있어 $u$가 $V$의 [[basis|기저]]이다. ($m = 0$이면 $v$ 자신이 기저이다.)
 :::
 
 :::english
-Let $V$ be a vector space and let $v_1, \dots, v_n$ be a sequence of vectors of length $n \ge 0$. The **sequence obtained from $v$ by deleting $m$ terms** is defined recursively on $m$.
+Let $V$ be a vector space. The **sequence obtained by deleting $m$ terms** from a sequence of vectors of $V$ is defined, simultaneously for every integer $n \ge 0$ and every sequence $v_1, \dots, v_n$ of length $n$, recursively on $m$.
 
 - If $m = 0$, it is $v$ itself.
-- If $m \ge 0$, a sequence $u$ is obtained from $v$ by deleting $m + 1$ terms exactly when $n \ge 1$ and, for some $k \in \{1, \dots, n\}$, $u$ is obtained by deleting $m$ terms from the sequence $c$ obtained from $v$ by deleting the $k$-th term.
+- If $m \ge 0$, a sequence $u$ is obtained from a sequence $v$ of length $n$ by deleting $m + 1$ terms exactly when $n \ge 1$ and, for some $k \in \{1, \dots, n\}$, $u$ is obtained by deleting $m$ terms from the sequence $c$ obtained from $v$ by deleting the $k$-th term.
 
-A sequence obtained by deleting $m$ terms has length $n - m$. The following holds.
+That this recursion determines the meaning of "the sequence obtained by deleting $m$ terms" for every $m \ge 0$ and every sequence is accepted without proof, in the same way as for the definition of sums in the entry on finite sums of vectors. A sequence obtained from a sequence of length $n$ by deleting $m$ terms has length $n - m$ (shown at the beginning of the proof). The following holds.
+
+Let $v_1, \dots, v_n$ be a sequence of vectors of length $n \ge 0$.
 
 If the sequence $v_1, \dots, v_n$ spans $V$, then there are an integer $m$ ($0 \le m \le n$) and a sequence $u$ obtained from $v$ by deleting $m$ terms such that $u$ is a basis of $V$. (If $m = 0$, then $v$ itself is a basis.)
 :::
@@ -57,7 +59,9 @@ If the sequence $v_1, \dots, v_n$ spans $V$, then there are an integer $m$ ($0 \
 :::
 
 :::proof
-$V$를 고정하고 $n$에 대한 귀납법으로 증명한다. $S_n$을 "$V$를 생성하는 길이 $n$인 모든 벡터의 열 $v$에 대하여 $V$의 기저인, $v$에서 항을 몇 개 지워 얻는 열이 있다"로 둔다.
+**길이.** $m$에 대한 귀납법으로, 길이 $n$인 모든 열 $v$에 대하여 $v$에서 항을 $m$개 지워 얻는 열의 길이가 $n - m$임을 보인다. $m = 0$이면 $v$ 자신이어서 길이가 $n$이다. 모든 열에 대하여 성립한다고 하고 $u$가 $v$에서 항을 $m + 1$개 지워 얻는 열이라 하자. 정의에 의해 $n \ge 1$이고 $u$는 길이 $n - 1$인 열 $c$에서 항을 $m$개 지워 얻는 열이므로 길이가 $(n - 1) - m = n - (m + 1)$이다. 열의 길이는 $0$ 이상이므로 항을 $m$개 지워 얻는 열이 있으면 $m \le n$이다.
+
+**정리.** $V$를 고정하고 $n$에 대한 귀납법으로 증명한다. $S_n$을 "$V$를 생성하는 길이 $n$인 모든 벡터의 열 $v$에 대하여 $V$의 기저인, $v$에서 항을 몇 개 지워 얻는 열이 있다"로 둔다.
 
 기초 단계. $n = 0$이면 $v$는 빈 열이고 $V = \operatorname{span}(v) = \{0_V\}$이다. 빈 열은 일차독립이고 $V$를 생성하므로 [[basis-iff-independent-and-spanning|기저의 동치 조건]]에 의해 기저이다. $m = 0$으로 $u = v$를 잡는다.
 

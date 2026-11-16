@@ -7,7 +7,7 @@ field: linear-algebra
 msc: ["15A03"]
 level: undergrad
 summary: 길이 n ≥ 1 인 벡터의 열이 일차종속인 것은 정확히 어떤 항이 그 항을 지운 열의 일차결합일 때이다. 따라서 일차독립인 것은 어느 항도 나머지 항들의 일차결합이 아닐 때이다.
-requires: [real-number-arithmetic, vector-space, vector-space-basic-properties, finite-sum-of-vectors, linear-combination-and-span, linear-independence]
+requires: [real-number-arithmetic, vector-space, vector-space-basic-properties, finite-sum-of-vectors, linear-combination-and-span, linear-independence, negation-of-quantified-statements, contrapositive-law]
 proof: full
 sources:
   - ref: treil-linear-algebra-done-wrong
@@ -36,7 +36,7 @@ Let $V$ be a vector space and let $v_1, \dots, v_n$ be a sequence of vectors of 
 
 일차종속은 "계수를 하나라도 $0$이 아니게 쓰고 $0_V$로 돌아오는 방법이 있다"였습니다. 그 계수가 $0$이 아닌 막대 $v_k$를 한쪽으로 옮기면 $v_k$는 나머지 막대로 만들 수 있는 벡터가 됩니다. 반대로 어떤 막대가 나머지로 만들어지면 그 막대에 계수 $-1$을 주어 $0_V$로 돌아오는 방법을 얻습니다. 곧 일차종속은 "겹치는 막대가 있다"는 것입니다.
 
-주의할 점은 "어떤 $k$"입니다. 일차종속인 열에서 모든 항이 나머지의 일차결합이어야 하는 것은 아닙니다. 아래 반례에서 한 항은 나머지의 일차결합이 아니지만 열은 일차종속입니다. 증명에서 계수가 $0$이 아닌 자리를 $k$로 잡는 것이 이 때문입니다.
+주의할 점은 "어떤 $k$"입니다. 일차종속인 열에서 모든 항이 나머지의 일차결합이어야 하는 것은 아닙니다. 아래 반례에서 한 항은 나머지의 일차결합이 아니지만 열은 일차종속입니다. 증명은 $\alpha_k$로 나누어야 하므로 계수가 $0$이 아닌 자리를 $k$로 잡습니다. 반례의 $v_1$은 $0_V$를 만드는 어떤 계수의 열에서도 계수가 $0$이어서 이렇게 고를 수 없는 자리입니다.
 
 ## 증명
 
@@ -51,11 +51,11 @@ Let $V$ be a vector space and let $v_1, \dots, v_n$ be a sequence of vectors of 
 :::proof
 $n$을 $(n - 1) + 1$로 보고 [[finite-sum-of-vectors|(C5)]]를 쓴다. 아래에서 $c = c^{(k)}$로 쓴다.
 
-($\Rightarrow$) 열이 일차종속이라 하자. 정의에 의해 길이 $n$인 실수의 열 $\alpha$가 있어 $\alpha_1 v_1 + \cdots + \alpha_n v_n = 0_V$이고 $\alpha_k \ne 0$인 $k$가 있다. 이 $k$를 잡고 $\gamma$를 $\alpha$에서 $k$번째 항을 지운 길이 $n - 1$인 열이라 하자. (C5)의 둘째 주장에 의해 $0_V = (\gamma_1 c_1 + \cdots + \gamma_{n-1} c_{n-1}) + \alpha_k v_k$이다. $u = \gamma_1 c_1 + \cdots + \gamma_{n-1} c_{n-1}$이라 쓰면 $u + \alpha_k v_k = 0_V$이므로 [[vector-space-basic-properties|(B2)]]의 유일성에 의해 $\alpha_k v_k = -u$이고, [[vector-space-basic-properties|(B5)]]에 의해 $-u = (-1)u$이다. [[finite-sum-of-vectors|(C2)]]에 의해 $(-1)u = ((-1)\gamma_1) c_1 + \cdots + ((-1)\gamma_{n-1}) c_{n-1}$이다. $\alpha_k \ne 0$이므로 역수 $\alpha_k^{-1}$이 있다([[real-number-arithmetic|(K6)]]). 양변에 $\alpha_k^{-1}$를 곱하면, 왼쪽은 [[vector-space|(V6)]]과 (V5)에 의해 $\alpha_k^{-1}(\alpha_k v_k) = (\alpha_k^{-1}\alpha_k) v_k = 1 v_k = v_k$이고, 오른쪽은 (C2)에 의해 $\alpha_k^{-1}\bigl((-1)\gamma_1\bigr) c_1 + \cdots + \alpha_k^{-1}\bigl((-1)\gamma_{n-1}\bigr) c_{n-1}$이다. 따라서 $v_k = \beta_1 c_1 + \cdots + \beta_{n-1} c_{n-1}$ ($\beta_i = \alpha_k^{-1}\bigl((-1)\gamma_i\bigr)$)이므로 $v_k$는 $c$의 일차결합이다. ($n = 1$이면 $c$, $\gamma$, $\beta$가 빈 열이고 같은 계산이 $v_1 = 0_V$를 준다.)
+($\Rightarrow$) 열이 일차종속이라 하자. 정의에 의해 길이 $n$인 실수의 열 $\alpha$가 있어 $\alpha_1 v_1 + \cdots + \alpha_n v_n = 0_V$이고 $\alpha_k \ne 0$인 $k$가 있다. 이 $k$를 잡고 $\gamma$를 $\alpha$에서 $k$번째 항을 지운 길이 $n - 1$인 열이라 하자. (C5)의 둘째 주장에 의해 $0_V = (\gamma_1 c_1 + \cdots + \gamma_{n-1} c_{n-1}) + \alpha_k v_k$이다. $u = \gamma_1 c_1 + \cdots + \gamma_{n-1} c_{n-1}$이라 쓰면 $u + \alpha_k v_k = 0_V$이므로 [[vector-space-basic-properties|(B2)]]의 유일성에 의해 $\alpha_k v_k = -u$이고, [[vector-space-basic-properties|(B5)]]에 의해 $-u = (-1)u$이다. [[finite-sum-of-vectors|(C2)]]에 의해 $(-1)u = ((-1)\gamma_1) c_1 + \cdots + ((-1)\gamma_{n-1}) c_{n-1}$이다. $\alpha_k \ne 0$이므로 역수 $\alpha_k^{-1}$이 있다([[real-number-arithmetic|(K6)]]). 양변에 $\alpha_k^{-1}$를 곱하면, 왼쪽은 [[vector-space|(V6)]]과 (V5), [[real-number-arithmetic|(K1)]], (K6)에 의해 $\alpha_k^{-1}(\alpha_k v_k) = (\alpha_k^{-1}\alpha_k) v_k = 1 v_k = v_k$이고, 오른쪽은 (C2)에 의해 $\alpha_k^{-1}\bigl((-1)\gamma_1\bigr) c_1 + \cdots + \alpha_k^{-1}\bigl((-1)\gamma_{n-1}\bigr) c_{n-1}$이다. 따라서 $v_k = \beta_1 c_1 + \cdots + \beta_{n-1} c_{n-1}$ ($\beta_i = \alpha_k^{-1}\bigl((-1)\gamma_i\bigr)$)이므로 $v_k$는 $c$의 일차결합이다. ($n = 1$이면 $c$, $\gamma$, $\beta$가 빈 열이고 같은 계산이 $v_1 = 0_V$를 준다.)
 
 ($\Leftarrow$) 어떤 $k$에서 $v_k = \beta_1 c_1 + \cdots + \beta_{n-1} c_{n-1}$이라 하자. $\beta$의 $k$번째 자리에 $-1$을 끼워 넣은 길이 $n$인 실수의 열을 $\alpha$라 하자. (C5)에 의해 $\alpha_1 v_1 + \cdots + \alpha_n v_n = (\beta_1 c_1 + \cdots + \beta_{n-1} c_{n-1}) + (-1) v_k = v_k + (-1)v_k$이고, (B5)에 의해 $(-1)v_k = -v_k$이므로 (B2)에 의해 이것은 $0_V$이다. $\alpha_k = -1$이다. $-1 = 0$이라면 $1 = 1 + 0 = 1 + (-1) = 0$이 되어 (K4)의 $0 \ne 1$에 어긋나므로 $\alpha_k \ne 0$이다. 따라서 열은 일차종속이다.
 
-2는 1의 대우를 푼 것이다. 일차독립은 일차종속이 아닌 것이고, 1에서 "어떤 $k$에 대하여 $v_k \in \operatorname{span}(c^{(k)})$"의 부정은 "모든 $k$에 대하여 $v_k \notin \operatorname{span}(c^{(k)})$"이다.
+2는 1의 두 방향 조건문 각각의 대우([[contrapositive-law]])를 쓰면, 열이 일차종속이 아닌 것은 정확히 "어떤 $k$에 대하여 $v_k \in \operatorname{span}(c^{(k)})$"가 거짓일 때이다. [[negation-of-quantified-statements|한정 기호의 부정]]에 의해 그 부정은 "모든 $k$에 대하여 $v_k \notin \operatorname{span}(c^{(k)})$"이고, 일차종속이 아닌 것이 일차독립이다.
 :::
 
 ## 예시와 반례
@@ -70,8 +70,8 @@ $\mathbb{R}^2$의 열 $v_1 = (1, 0)$, $v_2 = (0, 1)$, $v_3 = (0, 2)$는 $v_3 = 2
 
 ## 확인 질문
 
-:::check[$\mathbb{R}^2$의 열 $(1, 0), (0, 1), (3, -2)$는 일차종속인가? 한 항을 나머지의 일차결합으로 쓰고, 그에 대응하는 $0_V$를 만드는 계수의 열을 말하라.]
-일차종속입니다. $3(1, 0) + (-2)(0, 1) = (3, 0) + (0, -2) = (3, -2)$이므로 $v_3$는 $v_1, v_2$의 일차결합입니다. 증명의 ($\Leftarrow$)을 따라 $v_3$의 계수를 $-1$로 두면 계수의 열 $(3, -2, -1)$이 $3(1, 0) + (-2)(0, 1) + (-1)(3, -2) = (3, -2) + (-3, 2) = (0, 0)$을 줍니다.
+:::check[계수의 열 $(2, -4, 2)$가 $\mathbb{R}^2$의 열 $(1, 1), (1, 2), (1, 3)$에서 $0_V$를 준다. 셋째 항을 나머지의 일차결합으로 써라.]
+확인하면 $2(1, 1) + (-4)(1, 2) + 2(1, 3) = (2, 2) + (-4, -8) + (2, 6) = (-2, -6) + (2, 6) = (0, 0)$입니다. 증명의 ($\Rightarrow$)을 따라 $k = 3$, $\alpha_3 = 2 \ne 0$으로 잡으면 $\beta_i = 2^{-1}\bigl((-1)\gamma_i\bigr)$이고 $\gamma = (2, -4)$이므로 $\beta = (-1, 2)$입니다. 실제로 $(-1)(1, 1) + 2(1, 2) = (-1, -1) + (2, 4) = (1, 3)$입니다.
 :::
 
 :::check[길이 $1$인 열 $v_1 = (0, 0)$에 이 판정을 적용하면 무엇을 말하는가?]

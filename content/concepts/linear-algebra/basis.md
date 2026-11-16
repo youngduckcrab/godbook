@@ -6,13 +6,13 @@ kind: definition
 field: linear-algebra
 msc: ["15A03"]
 level: undergrad
-summary: 벡터의 열이 벡터공간 V 의 기저인 것은 V 의 모든 벡터가 이 열의 일차결합으로 계수의 열이 하나뿐인 방식으로 표현될 때이다. 이 계수의 열이 좌표이고, 빈 열이 기저인 것은 정확히 V = {0_V} 일 때이다.
+summary: 벡터의 열이 벡터공간 V 의 기저인 것은 V 의 모든 벡터가 이 열의 일차결합으로 계수의 열이 하나뿐인 방식으로 표현될 때이다. 이 계수의 열이 좌표이고, 빈 열이 기저인 것은 정확히 V = {0_V} 일 때이며, 합과 스칼라배의 좌표는 좌표의 항별 합과 스칼라배이다.
 requires: [real-number-arithmetic, vector-space, vector-space-basic-properties, real-function-space, finite-sum-of-vectors, linear-combination-and-span]
 sources:
   - ref: treil-linear-algebra-done-wrong
     loc: 1장 2절, Definition 2.1, p.6
     checked: original
-    note: "출처는 Definition 2.1(p.6)에서 V 의 모든 벡터가 일차결합으로 '유일하게' 표현될 때 벡터의 계(system)를 기저라 하고 그 계수를 좌표(coordinates)라 부른다. 이 항목은 같은 정의를 벡터의 열에 대해 쓰고, 계수의 열이 하나뿐이라는 것을 '길이 n 인 실수의 열이 정확히 하나'로 풀어 쓴다. 출처는 길이 0 인 계를 기저로 정의하지 않는다. 이 항목은 빈 열을 허용하고 그것이 기저인 것은 V = {0_V} 일 때뿐임을 (Q1)로 증명한다. 출처는 기저가 일차독립이고 생성하는 계라는 것과 그 역을 Proposition 2.7(p.9)에서 말하는데, 이 항목은 그것을 증명하거나 쓰지 않는다. (Q1)과 증명, 예시와 반례와 확인 질문은 이 사이트가 썼다. 출처가 기저의 첫 예로 드는 표준기저(Example 2.2, p.6)는 이 항목에서 다루지 않는다."
+    note: "출처는 Definition 2.1(p.6)에서 V 의 모든 벡터가 일차결합으로 '유일하게' 표현될 때 벡터의 계(system)를 기저라 하고 그 계수를 좌표(coordinates)라 부른다. 이 항목은 같은 정의를 벡터의 열에 대해 쓰고, 계수의 열이 하나뿐이라는 것을 '길이 n 인 실수의 열이 정확히 하나'로 풀어 쓴다. 출처는 길이 0 인 계를 기저로 정의하지 않는다. 이 항목은 빈 열을 허용하고 그것이 기저인 것은 정확히 V = {0_V} 일 때임을 (Q1)로 증명한다. 출처의 Remark 2.4(p.7)는 기저가 있으면 벡터가 좌표로 정해지므로 좌표를 열로 쌓아 F^n 의 원소처럼 다룰 수 있다고 하고, v = Σα_k v_k, w = Σβ_k v_k 이면 v + w 의 좌표는 좌표의 합이고 αv 의 좌표는 좌표에 α 를 곱한 것이라고 적는다(합의 계산은 증명하지 않는다). 이 항목의 (Q2)는 그 내용을 finite-sum-of-vectors 의 (C1), (C2)와 좌표의 유일성으로 증명한 것이다. 출처는 기저가 일차독립이고 생성하는 계라는 것과 그 역을 Proposition 2.7(p.9)에서 말하는데, 이 항목은 그것을 증명하거나 쓰지 않는다. (Q1)과 증명, 예시와 반례와 확인 질문은 이 사이트가 썼다. 출처가 기저의 첫 예로 드는 표준기저(Example 2.2, p.6)는 이 항목에서 다루지 않는다."
 status: source-checked
 added: 2026-11-16
 ---
@@ -28,6 +28,8 @@ $$x = \alpha_1 v_1 + \cdots + \alpha_n v_n$$
 열이 기저일 때 $x \in V$를 표현하는 유일한 계수의 열 $\alpha_1, \dots, \alpha_n$을 이 기저에 관한 $x$의 **좌표**(coordinates)라 한다. 열이 기저이므로 $x$마다 좌표가 있고 하나로 정해진다.
 
 (Q1) 빈 열($n = 0$)이 $V$의 기저인 것은 정확히 $V = \{0_V\}$일 때이다. 특히 원소가 영벡터 하나뿐인 벡터공간 $V$에서 빈 열은 기저이다.
+
+(Q2) 열 $v_1, \dots, v_n$이 $V$의 기저이고 $x$, $y \in V$의 좌표가 각각 $\alpha_1, \dots, \alpha_n$과 $\beta_1, \dots, \beta_n$이면, $x + y$의 좌표는 $\alpha_1 + \beta_1, \dots, \alpha_n + \beta_n$이고 실수 $\gamma$에 대하여 $\gamma x$의 좌표는 $\gamma\alpha_1, \dots, \gamma\alpha_n$이다.
 :::
 
 :::english
@@ -41,6 +43,8 @@ That is, both of the following hold.
 When the sequence is a basis, the unique sequence of coefficients $\alpha_1, \dots, \alpha_n$ representing $x \in V$ is called the **coordinates** of $x$ with respect to this basis. Since the sequence is a basis, each $x$ has coordinates and they are uniquely determined.
 
 (Q1) The empty sequence ($n = 0$) is a basis of $V$ exactly when $V = \{0_V\}$. In particular, in a vector space $V$ whose only element is the zero vector, the empty sequence is a basis.
+
+(Q2) Let $v_1, \dots, v_n$ be a basis of $V$, and let $x, y \in V$ have coordinates $\alpha_1, \dots, \alpha_n$ and $\beta_1, \dots, \beta_n$ respectively. Then the coordinates of $x + y$ are $\alpha_1 + \beta_1, \dots, \alpha_n + \beta_n$, and for every real number $\gamma$ the coordinates of $\gamma x$ are $\gamma\alpha_1, \dots, \gamma\alpha_n$.
 :::
 
 ## 직관
@@ -49,7 +53,7 @@ When the sequence is a basis, the unique sequence of coefficients $\alpha_1, \do
 
 이 비유가 맞는 곳은 좌표가 벡터를 완전히 정한다는 점입니다. $x$의 좌표를 알면 $x = \alpha_1 v_1 + \cdots + \alpha_n v_n$으로 $x$를 되찾고, 거꾸로 $x$에서 좌표가 하나로 나옵니다. 틀리는 곳은 주소가 장소의 이름이 아니라 열 $v_1, \dots, v_n$을 골라야 의미가 있다는 점입니다. 같은 벡터의 좌표는 기저를 바꾸면 달라질 수 있습니다. 예를 들어 $(1, 1) = 1(1, 0) + 1(0, 1)$이지만, 아래 예시의 기저 $(1, 0), (1, 1)$에 관한 $(1, 1)$의 좌표는 $(0, 1)$입니다.
 
-존재는 [[linear-combination-and-span|생성]]의 조건입니다. 유일성은 같은 벡터를 표현하는 계수의 열이 둘이면 같다는 것이고, 기저인 것이 정확히 "일차독립이고 $V$를 생성한다"와 같다는 사실은 이 항목에서 증명하지 않고 뒤 항목에서 다룹니다.
+존재는 [[linear-combination-and-span|생성]]의 조건입니다. 유일성은 같은 벡터를 표현하는 계수의 열이 둘이면 같다는 것입니다. 기저인 것이 정확히 "일차독립이고 $V$를 생성한다"와 같다는 사실은 [[basis-iff-independent-and-spanning|기저의 동치 조건]]에서 증명합니다.
 
 (Q1)은 빈 열이 예외 없이 쓰인다는 것을 확인합니다. 영벡터만 있는 공간에서는 아무 벡터도 쓰지 않고 영벡터를 만들 수 있고(빈 합이 $0_V$), 그 방법이 하나뿐이므로 빈 열이 기저입니다.
 
@@ -57,6 +61,10 @@ When the sequence is a basis, the unique sequence of coefficients $\alpha_1, \do
 
 :::remark[(Q1)의 증명]
 길이 $0$인 실수의 열은 빈 열 하나뿐이고, 빈 열 $v$와 이 실수의 열에 대한 일차결합은 [[finite-sum-of-vectors|정의]]에 의해 $0_V$이다. ($\Rightarrow$) 빈 열이 $V$의 기저라 하자. $x \in V$를 잡는다. (존재)에 의해 $x$는 일차결합이고, 가능한 일차결합은 $0_V$뿐이므로 $x = 0_V$이다. 따라서 $V \subseteq \{0_V\}$이고, $0_V \in V$이므로 $V = \{0_V\}$이다. ($\Leftarrow$) $V = \{0_V\}$라 하자. 유일한 벡터 $x = 0_V$는 빈 실수의 열에 대한 일차결합 $0_V$이므로 (존재)가 성립한다. 길이 $0$인 실수의 열은 하나뿐이므로 두 열 $\alpha$, $\beta$는 같은 열이고 모든 $k$에서 $\alpha_k = \beta_k$가 공허하게 참이다. 따라서 (유일성)도 성립하고 빈 열은 기저이다.
+:::
+
+:::remark[(Q2)의 증명]
+$x$의 좌표가 $\alpha$, $y$의 좌표가 $\beta$이면 $x = \alpha_1 v_1 + \cdots + \alpha_n v_n$이고 $y = \beta_1 v_1 + \cdots + \beta_n v_n$이다. [[finite-sum-of-vectors|(C1)]]에 의해 $x + y = (\alpha_1 + \beta_1) v_1 + \cdots + (\alpha_n + \beta_n) v_n$이므로, $i$번째 값이 $\alpha_i + \beta_i$인 실수의 열이 $x + y$를 표현한다. 기저에서 $x + y$의 표현은 하나뿐이므로 이 열이 $x + y$의 좌표이다. 같은 방식으로 (C2)에 의해 $\gamma x = (\gamma\alpha_1) v_1 + \cdots + (\gamma\alpha_n) v_n$이므로 $\gamma x$의 좌표는 $\gamma\alpha_1, \dots, \gamma\alpha_n$이다.
 :::
 
 ## 예시와 반례
