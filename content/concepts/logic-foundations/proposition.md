@@ -25,7 +25,7 @@ added: 2026-11-16
 :::
 
 :::english
-A **statement** (also called a **proposition**) is a sentence or mathematical expression that is definitely determined to be exactly one of true or false.
+A **statement** (also called a **proposition**) is a sentence or mathematical expression that is definitely either true or false, and exactly one of the two.
 
 If a statement is true, its **truth value** is said to be true ($T$); if it is false, its truth value is said to be false ($F$).
 :::

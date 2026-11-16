@@ -25,7 +25,7 @@ $A$와 $B$가 논리적으로 동치일 때 $A \equiv B$로 쓴다.
 :::
 
 :::english
-Two statements built from statements, logical connectives, and conditional statements are **logically equivalent** if their truth values agree in **every row** of the truth table.
+Two statements built from given statements using the logical connectives and the conditional are **logically equivalent** if their truth values agree in **every row** of the truth table.
 
 When $A$ and $B$ are logically equivalent, we write $A \equiv B$.
 :::

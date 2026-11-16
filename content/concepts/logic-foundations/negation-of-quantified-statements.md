@@ -7,7 +7,7 @@ field: logic-foundations
 msc: ["03B10"]
 level: intro
 summary: "\"모든 x에 대하여 P\"의 부정은 \"P가 아닌 x가 존재한다\"이고, \"P인 x가 존재한다\"의 부정은 \"모든 x에 대하여 P가 아니다\"이다."
-requires: [quantifiers, open-sentence, logical-connectives, logical-equivalence]
+requires: [quantifiers, open-sentence, logical-connectives, logical-equivalence, set]
 proof: full
 sources:
   - ref: hammack-book-of-proof
@@ -19,7 +19,7 @@ added: 2026-11-16
 ---
 
 :::statement
-$X$가 [[set]]이고 $P(x)$가 $X$의 원소 $x$에 관한 [[open-sentence]]일 때, 다음 두 쌍의 명제는 각각 항상 같은 진릿값을 가진다(논리적으로 동치이다).
+$X$가 [[set]]이고 $P(x)$가 $X$의 원소 $x$에 관한 [[open-sentence]]일 때, 다음 두 쌍의 명제는 각각 같은 진릿값을 가진다. 여기서 $\equiv$는 $X$와 $P(x)$가 무엇이든 양쪽의 진릿값이 같다는 뜻으로, 진리표로 정의한 동치([[logical-equivalence]])를 한정 명제로 넓혀 쓴 것이다.
 
 1. $\lnot\bigl(\forall x \in X,\ P(x)\bigr) \equiv \exists x \in X,\ \lnot P(x)$
 2. $\lnot\bigl(\exists x \in X,\ P(x)\bigr) \equiv \forall x \in X,\ \lnot P(x)$
@@ -28,7 +28,7 @@ $X$가 [[set]]이고 $P(x)$가 $X$의 원소 $x$에 관한 [[open-sentence]]일 
 :::
 
 :::english
-Let $X$ be a set and let $P(x)$ be an open sentence about elements $x$ of $X$. Then each of the following pairs of statements always has the same truth value (the two statements are logically equivalent).
+Let $X$ be a set and let $P(x)$ be an open sentence about elements $x$ of $X$. Then each of the following pairs of statements has the same truth value. Here $\equiv$ means that the two sides have the same truth value whatever $X$ and $P(x)$ are; it extends to quantified statements the equivalence defined by truth tables.
 
 1. $\lnot\bigl(\forall x \in X,\ P(x)\bigr) \equiv \exists x \in X,\ \lnot P(x)$
 2. $\lnot\bigl(\exists x \in X,\ P(x)\bigr) \equiv \forall x \in X,\ \lnot P(x)$
@@ -42,7 +42,7 @@ Here $\lnot P(x)$ is the open sentence obtained by negating $P(x)$.
 
 둘째 규칙도 같은 이야기입니다. "합격한 학생이 있다"가 거짓이라는 것은, 모든 학생이 합격하지 못했다는 뜻입니다. 한 명도 예외가 없어야 합니다.
 
-[[de-morgan-laws-logic]]과 닮았다고 느낀 분이 있을 겁니다. $\forall$는 무한히 긴 "그리고", $\exists$는 무한히 긴 "또는"이므로, "그리고"의 부정이 "또는", "또는"의 부정이 "그리고"가 되는 드 모르간 법칙이 한정 기호로 옮겨진 모습입니다. 다만 이 항목의 증명은 이 닮음에 기대지 않고 한정 기호의 뜻에서 곧바로 출발합니다.
+[[de-morgan-laws-logic]]과 닮았다고 느낀 분이 있을 겁니다. $\forall$는 무한히 긴 "그리고", $\exists$는 무한히 긴 "또는"처럼 볼 수 있으므로, "그리고"의 부정이 "또는", "또는"의 부정이 "그리고"가 되는 드 모르간 법칙이 한정 기호로 옮겨진 모습이라고 할 수 있습니다. 다만 이 항목의 증명은 이 닮음에 기대지 않고 한정 기호의 뜻에서 곧바로 출발합니다.
 
 ## 증명
 
@@ -63,24 +63,28 @@ $\exists x \in X,\ P(x)$가 거짓이라는 것은 $P(x)$가 참인 원소가 �
 :::
 
 :::proof
-먼저 쓰는 사실을 정리한다. [[logical-connectives]]의 부정의 정의에 의해, $X$의 원소 $a$에 대하여 $\lnot P(a)$가 참인 것은 $P(a)$가 거짓인 것과 같고, $\lnot P(a)$가 거짓인 것은 $P(a)$가 참인 것과 같다. 또 [[quantifiers]]의 진술에 의해 다음이 성립한다.
+먼저 쓰는 사실을 정리한다. [[logical-connectives]]의 부정의 정의에 의해, $X$의 원소 $a$에 대하여 $\lnot P(a)$가 참인 것은 $P(a)$가 거짓인 것과 같고, $\lnot P(a)$가 거짓인 것은 $P(a)$가 참인 것과 같다. 또 [[quantifiers]]의 진술은 $\forall$와 $\exists$의 참·거짓을 "정확히 ~일 때"로 정한다. 곧 다음 네 가지가 성립한다.
 
-- $\forall x \in X,\ P(x)$는 모든 원소에서 $P$가 참이면 참이고, $P$가 거짓인 원소가 있으면 거짓이다. 이 명제의 부정은 이 명제가 거짓일 때 참이고 참일 때 거짓이다.
-- $\exists x \in X,\ P(x)$는 $P$가 참인 원소가 있으면 참이고, 그런 원소가 없으면 거짓이다.
+- (A1) $\forall x \in X,\ P(x)$가 참인 것은 $X$의 모든 원소에서 $P$가 참인 것과 같다.
+- (A2) $\forall x \in X,\ P(x)$가 거짓인 것은 $P$가 거짓인 원소가 적어도 하나 있는 것과 같다.
+- (E1) $\exists x \in X,\ P(x)$가 참인 것은 $P$가 참인 원소가 적어도 하나 있는 것과 같다.
+- (E2) $\exists x \in X,\ P(x)$가 거짓인 것은 $P$가 참인 원소가 하나도 없는 것과 같다.
+
+(A2)와 (E2)는 정의에서 "그렇지 않을 때 거짓"이라 한 부분이며, 참이 아닌 것은 거짓이므로 (A1), (E1)의 부정으로도 얻어진다. 이 논증은 $X$가 공집합인 경우에도 그대로 성립한다. 아래 증명 어디에서도 $X$에 원소가 있다고 가정하지 않는다.
 
 **규칙 1: $\lnot\bigl(\forall x \in X,\ P(x)\bigr) \equiv \exists x \in X,\ \lnot P(x)$.** 두 명제의 진릿값이 같음을 두 경우로 나누어 보인다.
 
-*경우 (가): $\forall x \in X,\ P(x)$가 참이다.* 그러면 왼쪽 명제 $\lnot\bigl(\forall x \in X,\ P(x)\bigr)$는 거짓이다. 한편 $X$의 모든 원소 $a$에서 $P(a)$가 참이므로 $\lnot P(a)$는 모두 거짓이다. 따라서 $\lnot P$가 참인 원소는 하나도 없고, 정의에 의해 $\exists x \in X,\ \lnot P(x)$는 거짓이다. 양쪽 모두 거짓이다.
+*경우 (가): $\forall x \in X,\ P(x)$가 참이다.* 그러면 왼쪽 명제는 이 명제의 부정이므로 거짓이다. 한편 (A1)에 의해 $X$의 모든 원소 $a$에서 $P(a)$가 참이므로 $\lnot P(a)$는 모두 거짓이다. 따라서 $\lnot P$가 참인 원소는 하나도 없고, (E1)에 의해 $\exists x \in X,\ \lnot P(x)$는 참이 아니므로 거짓이다. 양쪽 모두 거짓이다.
 
-*경우 (나): $\forall x \in X,\ P(x)$가 거짓이다.* 그러면 왼쪽 명제는 참이다. 한편 정의에 의해 $P(a)$가 거짓인 원소 $a \in X$가 적어도 하나 있다. 그 $a$에서 $\lnot P(a)$는 참이므로, 정의에 의해 $\exists x \in X,\ \lnot P(x)$는 참이다. 양쪽 모두 참이다.
+*경우 (나): $\forall x \in X,\ P(x)$가 거짓이다.* 그러면 왼쪽 명제는 참이다. 한편 (A2)에 의해 $P(a)$가 거짓인 원소 $a \in X$가 적어도 하나 있다. 그 $a$에서 $\lnot P(a)$는 참이므로, (E1)에 의해 $\exists x \in X,\ \lnot P(x)$는 참이다. 양쪽 모두 참이다.
 
 어느 경우에도 양쪽의 진릿값이 같으므로 규칙 1이 성립한다.
 
 **규칙 2: $\lnot\bigl(\exists x \in X,\ P(x)\bigr) \equiv \forall x \in X,\ \lnot P(x)$.**
 
-*경우 (가): $\exists x \in X,\ P(x)$가 참이다.* 그러면 왼쪽 명제 $\lnot\bigl(\exists x \in X,\ P(x)\bigr)$는 거짓이다. 한편 정의에 의해 $P(a)$가 참인 원소 $a \in X$가 적어도 하나 있다. 그 $a$에서 $\lnot P(a)$는 거짓이므로, $\lnot P$가 거짓인 원소가 있어서 정의에 의해 $\forall x \in X,\ \lnot P(x)$는 거짓이다. 양쪽 모두 거짓이다.
+*경우 (가): $\exists x \in X,\ P(x)$가 참이다.* 그러면 왼쪽 명제는 거짓이다. 한편 (E1)에 의해 $P(a)$가 참인 원소 $a \in X$가 적어도 하나 있다. 그 $a$에서 $\lnot P(a)$는 거짓이므로 $\lnot P$가 거짓인 원소가 존재하고, (A2)에 의해 $\forall x \in X,\ \lnot P(x)$는 거짓이다. 양쪽 모두 거짓이다.
 
-*경우 (나): $\exists x \in X,\ P(x)$가 거짓이다.* 그러면 왼쪽 명제는 참이다. 한편 정의에 의해 $P$가 참인 원소는 하나도 없으므로, $X$의 모든 원소 $a$에서 $P(a)$는 거짓이고 $\lnot P(a)$는 참이다. 따라서 정의에 의해 $\forall x \in X,\ \lnot P(x)$는 참이다. 양쪽 모두 참이다.
+*경우 (나): $\exists x \in X,\ P(x)$가 거짓이다.* 그러면 왼쪽 명제는 참이다. 한편 (E2)에 의해 $P$가 참인 원소는 하나도 없으므로, $X$의 모든 원소 $a$에서 $P(a)$는 거짓이고 $\lnot P(a)$는 참이다. 따라서 (A1)에 의해 $\forall x \in X,\ \lnot P(x)$는 참이다. 양쪽 모두 참이다.
 
 어느 경우에도 양쪽의 진릿값이 같으므로 규칙 2가 성립한다.
 :::
@@ -96,7 +100,7 @@ $S$를 $\exists x \in \mathbb{R},\ x^2 + 1 = 0$이라 합시다. 규칙 2에 의
 :::
 
 :::example[한정 기호가 겹친 경우]
-[[quantifiers]]의 예시 $\forall x \in \mathbb{Z},\ \exists y \in \mathbb{Z},\ x + y = 0$의 부정을 구해 봅시다. 규칙 1을 $P(x)$를 "$\exists y \in \mathbb{Z},\ x + y = 0$"으로 두고 적용하면 $\exists x \in \mathbb{Z},\ \lnot(\exists y \in \mathbb{Z},\ x + y = 0)$입니다. 이어서 이 $x$ 각각에 대해 규칙 2를 적용하면 안쪽이 $\forall y \in \mathbb{Z},\ x + y \ne 0$이 되어, 전체는 $\exists x \in \mathbb{Z},\ \forall y \in \mathbb{Z},\ x + y \ne 0$입니다. 안쪽을 바꾸어도 되는 까닭은, 각 $x$에서 두 안쪽 명제의 진릿값이 같으므로 "$P$가 참인 $x$가 있는가"라는 물음의 답이 변하지 않기 때문입니다. 한 번에 바깥 기호부터 하나씩 $\forall \leftrightarrow \exists$로 바꾸고 맨 끝을 부정하면 됩니다.
+[[quantifiers]]의 예시 $\forall x \in \mathbb{Z},\ \exists y \in \mathbb{Z},\ x + y = 0$의 부정을 구해 봅시다. 규칙 1을 $P(x)$를 "$\exists y \in \mathbb{Z},\ x + y = 0$"으로 두고 적용하면 $\exists x \in \mathbb{Z},\ \lnot(\exists y \in \mathbb{Z},\ x + y = 0)$입니다. 이어서 이 $x$ 각각에 대해 규칙 2를 적용하면 안쪽이 $\forall y \in \mathbb{Z},\ x + y \ne 0$이 되어, 전체는 $\exists x \in \mathbb{Z},\ \forall y \in \mathbb{Z},\ x + y \ne 0$입니다. 안쪽을 바꾸어도 되는 까닭은, 각 $x$에서 두 안쪽 명제의 진릿값이 같으므로 "$P$가 참인 $x$가 있는가"라는 물음의 답이 변하지 않기 때문입니다. 바깥 기호부터 차례로 $\forall$와 $\exists$를 맞바꾸고 맨 끝의 열린 문장을 부정하면 됩니다.
 
 이 부정은 거짓입니다. 어떤 정수 $x$를 잡아도 $y = -x$에서 $x + y = 0$이어서 "모든 $y$에서 $x + y \ne 0$"이 깨지기 때문입니다. 원래 명제가 참이라는 것과 일치합니다.
 :::
@@ -111,6 +115,6 @@ $\lnot\bigl(\forall x \in X,\ P(x)\bigr)$를 $\forall x \in X,\ \lnot P(x)$라�
 부정은 $\exists n \in \mathbb{N},\ \forall m \in \mathbb{N},\ m \le n$입니다. 원래 명제가 참입니다. 어떤 자연수 $n$이든 $m = n + 1$이 $m > n$을 만족하기 때문입니다. 따라서 부정은 거짓입니다.
 :::
 
-:::check["어떤 정수 $n$이 존재하여 $n^2 = 2$이다"의 부정을 쓰라.]
-$\exists n \in \mathbb{Z},\ n^2 = 2$의 부정은 규칙 2에 의해 $\forall n \in \mathbb{Z},\ n^2 \ne 2$, 곧 "모든 정수 $n$에 대하여 $n^2 \ne 2$이다"입니다. 이 부정은 참입니다. $n = 0, \pm 1$이면 $n^2 \in \{0, 1\}$이고, $|n| \ge 2$이면 $n^2 \ge 4$이어서 $2$가 되는 정수가 없기 때문입니다.
+:::check["어떤 정수 $n$이 존재하여 $2n = 7$이다"의 부정을 쓰라.]
+$\exists n \in \mathbb{Z},\ 2n = 7$의 부정은 규칙 2에 의해 $\forall n \in \mathbb{Z},\ 2n \ne 7$, 곧 "모든 정수 $n$에 대하여 $2n \ne 7$이다"입니다. 이 부정은 참입니다. $2n$은 정수 $n$이 무엇이든 짝수인데 $7$은 홀수여서 같아질 수 없기 때문입니다.
 :::

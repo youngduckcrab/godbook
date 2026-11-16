@@ -27,7 +27,7 @@ $A$와 $B$가 전체집합 $U$ 안의 [[set]]일 때 다음이 성립한다. 여
 :::
 
 :::english
-Let $A$ and $B$ be sets in a universal set $U$. Then the following hold, where $X^c = U - X$ denotes the complement.
+Let $A$ and $B$ be subsets of a universal set $U$. Then the following hold, where $X^c = U - X$ denotes the complement.
 
 1. $(A \cap B)^c = A^c \cup B^c$
 2. $(A \cup B)^c = A^c \cap B^c$
