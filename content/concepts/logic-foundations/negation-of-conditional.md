@@ -14,7 +14,8 @@ sources:
     loc: 2.10절 Negating Statements, 식 (2.10), p.61 (예 2.14와 2.15는 p.62)
     checked: original
     note: 출처는 "P⇒Q가 거짓이 되는 유일한 경우는 P가 참이고 Q가 거짓일 때"라는 말로 규칙을 보이고, 진리표 확인은 2.6절 연습문제 12번에 맡긴다. 아래는 진리표를 직접 그려 증명했다. 출처는 부정을 ∼ 로, 동치를 = 로 쓰고 이 사이트는 ¬ 와 ≡ 를 쓴다. 예시는 새로 만들었다.
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 2회. 변수가 정해지지 않아 답이 틀렸던 확인 질문과 예시를 교체."
 added: 2026-11-16
 ---
 

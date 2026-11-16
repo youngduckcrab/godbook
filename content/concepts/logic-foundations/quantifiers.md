@@ -13,7 +13,8 @@ sources:
     loc: 2.7절 Quantifiers, Definition 2.1, pp.53–55 (정의 p.53, ∀와 ∃가 쓰인 명제의 참·거짓 판정은 p.54, 한정 기호 순서와 일상어의 오용은 p.55)
     checked: original
     note: "출처는 부정을 ∼ 로 쓰고 이 사이트는 ¬ 로 쓴다. 한정 기호가 겹칠 때 순서가 뜻을 바꾼다는 점은 출처 p.55(예 2.7)가 다루는 내용이고, 이 항목의 예시는 새로 만들었다. 반례 '일상어의 부정'은 출처 p.55의 'All integers are not even / Not all integers are even'을 바탕으로 even을 3의 배수로 바꿔 쓴 것이다. 겹친 한정 명제를 안쪽 열린 문장에 대한 한정으로 푸는 설명과 공집합일 때의 설명은 출처 p.53–55에 없고 이 사이트에서 덧붙인 것이다. 직관 절의 무한 논리곱·논리합 설명은 출처 p.53의 동기 설명을 다시 쓴 것이다. ∀ 는 전칭, ∃ 는 존재라는 한국어 이름은 출처에 나오지 않는다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 2회. 참·거짓 조건을 양방향으로 고치고 공집합과 겹친 한정 기호의 뜻을 보완."
 added: 2026-11-16
 ---
 
@@ -30,7 +31,7 @@ $X$가 [[set]]이고 $P(x)$가 $X$의 원소 $x$에 관한 [[open-sentence]]일 
 
 한정 기호가 들어 있는 명제를 **한정 명제**(quantified statement)라 한다. 그 가운데 $\forall$로 시작하는 것을 전칭 명제(universally quantified statement), $\exists$로 시작하는 것을 존재 명제(existentially quantified statement)라 한다.
 
-한정 기호가 겹친 명제는 안쪽부터 열린 문장으로 읽는다. 예를 들어 $\forall x \in X,\ \exists y \in Y,\ P(x, y)$는, $x$에 관한 열린 문장 $Q(x)$를 "$\exists y \in Y,\ P(x, y)$"로 두었을 때의 $\forall x \in X,\ Q(x)$를 뜻한다. 한정 기호의 순서를 바꾸면 다른 명제가 되며, 참·거짓이 달라질 수도 있다.
+한정 기호가 겹친 명제는 안쪽부터 열린 문장으로 읽는다. 예를 들어 $Y$도 집합이고 $P(x, y)$가 $x \in X$, $y \in Y$에 관한 열린 문장일 때, $\forall x \in X,\ \exists y \in Y,\ P(x, y)$는, $x$에 관한 열린 문장 $Q(x)$를 "$\exists y \in Y,\ P(x, y)$"로 두었을 때의 $\forall x \in X,\ Q(x)$를 뜻한다. 한정 기호의 순서를 바꾸면 다른 명제가 되며, 참·거짓이 달라질 수도 있다.
 :::
 
 :::english
@@ -46,7 +47,7 @@ Let $X$ be a set and let $P(x)$ be an open sentence about elements $x$ of $X$. T
 
 A statement that contains a quantifier is called a **quantified statement**. Among these, one that begins with $\forall$ is called a universally quantified statement and one that begins with $\exists$ an existentially quantified statement.
 
-A statement with nested quantifiers is read from the inside out as an open sentence. For example, $\forall x \in X,\ \exists y \in Y,\ P(x, y)$ means $\forall x \in X,\ Q(x)$, where $Q(x)$ is the open sentence "$\exists y \in Y,\ P(x, y)$" about $x$. Changing the order of the quantifiers gives a different statement, and its truth value can change as well.
+A statement with nested quantifiers is read from the inside out as an open sentence. For example, if $Y$ is also a set and $P(x, y)$ is an open sentence about $x \in X$ and $y \in Y$, then $\forall x \in X,\ \exists y \in Y,\ P(x, y)$ means $\forall x \in X,\ Q(x)$, where $Q(x)$ is the open sentence "$\exists y \in Y,\ P(x, y)$" about $x$. Changing the order of the quantifiers gives a different statement, and its truth value can change as well.
 :::
 
 ## 직관
