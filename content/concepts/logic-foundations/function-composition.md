@@ -24,7 +24,7 @@ $$g \circ f = \{(x, g(f(x))) : x \in A\} \subseteq A \times C$$
 $$(g \circ f)(x) = g(f(x))$$
 이다. 이 식에서 먼저 $f$가 $x$에 적용되고, 그다음에 $g$가 $f(x)$에 적용된다. $g \circ f$를 "$g$ 합성 $f$"라고 읽고 $g$를 앞에 쓰지만 먼저 하는 것은 $f$이다.
 
-**공역이 다를 때.** $f$가 $A$에서 어떤 집합으로의 함수이고 $g$의 정의역이 $B'$이며, 모든 $x \in A$에 대하여 $f(x) \in B'$이면, [[function]]의 진술에 의해 같은 집합 $f$는 $A$에서 $B'$로의 함수이기도 하다. 이때는 $f$를 $f : A \to B'$로 선언하여 위의 합성 $g \circ f$를 정한다. 위의 식에는 공역이 나오지 않으므로 이렇게 정한 $g \circ f$는 선언한 공역과 무관하게 같은 집합이다. 어떤 $x \in A$에 대하여 $f(x)$가 $g$의 정의역에 속하지 않으면 $g \circ f$는 정의하지 않는다.
+**$f$의 공역이 $g$의 정의역과 다를 때.** $f$가 $A$에서 어떤 집합으로의 함수이고 $g$의 정의역이 $B'$이며, 모든 $x \in A$에 대하여 $f(x) \in B'$이면, [[function]]의 진술에 의해 같은 집합 $f$는 $A$에서 $B'$로의 함수이기도 하다. 이때는 $f$를 $f : A \to B'$로 선언하여 위의 합성 $g \circ f$를 정한다. 위의 식에는 공역이 나오지 않으므로 이렇게 정한 $g \circ f$는 선언한 공역과 무관하게 같은 집합이다. 어떤 $x \in A$에 대하여 $f(x)$가 $g$의 정의역에 속하지 않으면 $g \circ f$는 정의하지 않는다.
 :::
 
 :::english
@@ -34,7 +34,7 @@ It is a function $g \circ f : A \to C$. That is, for each element $x \in A$ ther
 $$(g \circ f)(x) = g(f(x)).$$
 In this formula $f$ is applied to $x$ first and then $g$ is applied to $f(x)$. We read $g \circ f$ as "$g$ composed with $f$" and write $g$ first, but the function applied first is $f$.
 
-**When the codomains differ.** Suppose $f$ is a function from $A$ to some set, the domain of $g$ is $B'$, and $f(x) \in B'$ for every $x \in A$. By the statement for functions, the same set $f$ is also a function from $A$ to $B'$. In this case we declare $f : A \to B'$ and form the composition $g \circ f$ above. Since the formula does not involve the codomain, the set $g \circ f$ obtained this way does not depend on the declared codomain. If $f(x)$ fails to belong to the domain of $g$ for some $x \in A$, the composition $g \circ f$ is not defined.
+**When the codomain of $f$ is not the domain of $g$.** Suppose $f$ is a function from $A$ to some set, the domain of $g$ is $B'$, and $f(x) \in B'$ for every $x \in A$. By the statement for functions, the same set $f$ is also a function from $A$ to $B'$. In this case we declare $f : A \to B'$ and form the composition $g \circ f$ above. Since the formula does not involve the codomain, the set $g \circ f$ obtained this way does not depend on the declared codomain. If $f(x)$ fails to belong to the domain of $g$ for some $x \in A$, the composition $g \circ f$ is not defined.
 :::
 
 ## 직관
