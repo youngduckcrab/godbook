@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadAll, url } from '../../lib/site';
+const { concepts, sources } = await loadAll();
+const TYPE = { book: '책', paper: '논문', 'lecture-notes': '강의록', web: '웹 문서', thesis: '학위논문' };
+const citing = (id) => concepts.filter((c) => c.data.sources.some((s) => s.ref === id)).sort((a, b) => a.data.title.localeCompare(b.data.title, 'ko'));
+const list = [...sources].sort((a, b) => citing(b.id).length - citing(a.id).length);
+---
+<Base title="출처" search={false}>
+  <h1>출처</h1>
+  <p class="lead">모든 항목은 아래 문헌 가운데 하나 이상을 근거로 합니다. 문장을 옮겨 적지 않고 내용을 다시 서술했습니다.</p>
+  {list.map((s) => (
+    <div class="card" id={s.id}>
+      <div class="badges"><span class="badge">{TYPE[s.data.type]}</span><span class="badge">{s.data.access === 'open' ? '공개 자료' : '비공개 자료'}</span>{s.data.license && <span class="badge">{s.data.license}</span>}</div>
+      <h3><a href={s.data.url} rel="noopener">{s.data.title}</a></h3>
+      <p class="small">{s.data.authors.join(', ')} · {[s.data.edition, s.data.publisher ?? s.data.journal, s.data.year].filter(Boolean).join(' · ')}</p>
+      {s.data.note && <p class="small muted">{s.data.note}</p>}
+      <p class="small muted">이 출처를 쓰는 항목 {citing(s.id).length}개: {citing(s.id).map((c, i) => <>{i > 0 && ', '}<a href={url(`/c/${c.id}/`)}>{c.data.title}</a></>)}</p>
+    </div>
+  ))}
+</Base>

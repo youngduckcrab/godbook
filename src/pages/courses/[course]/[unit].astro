@@ -1,0 +1,49 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { render, getEntry } from 'astro:content';
+import { loadAll, url, unitSlug, unitNo, KIND } from '../../../lib/site';
+export async function getStaticPaths() {
+  const { units } = await loadAll();
+  return units.map((u) => ({ params: { course: u.id.split('/')[0], unit: unitSlug(u.id) }, props: { unit: u } }));
+}
+const { unit } = Astro.props;
+const { byId, unitsOf, courses } = await loadAll();
+const courseId = unit.id.split('/')[0];
+const course = courses.find((c) => c.id === courseId);
+const siblings = unitsOf(courseId);
+const i = siblings.findIndex((u) => u.id === unit.id);
+const prev = siblings[i - 1], next = siblings[i + 1];
+const { Content } = await render(unit);
+const ex = await getEntry('exercises', unit.id);
+const Exercises = ex ? (await render(ex)).Content : null;
+const link = (u) => url(`/courses/${courseId}/${unitSlug(u.id)}/`);
+---
+<Base title={`${unit.data.title} · ${course.data.title}`} description={unit.data.summary}>
+  <p class="small"><a href={url('/courses/')}>강의</a> › <a href={url(`/courses/${courseId}/`)}>{course.data.title}</a> ›</p>
+  <h1>{unitNo(unit.id)}단원. {unit.data.title}</h1>
+  <p class="lead">{unit.data.summary}</p>
+  <div class="progress" data-progress={unit.data.concepts.join(',')}><i></i></div><span class="small muted" data-progress-label></span>
+  <div class="prose"><Content /></div>
+
+  <h2>이 단원에서 읽을 항목</h2>
+  <p class="small muted">위에서부터 순서대로 읽으세요. 각 항목 아래의 "다음" 버튼이 이 순서를 따라갑니다.</p>
+  <ol class="seq">
+    {unit.data.concepts.map((id) => (
+      <li data-concept={id}><a href={url(`/c/${id}/`)}><b>{byId.get(id)?.data.title}</b></a> <span class="badge kind">{KIND[byId.get(id)?.data.kind]}</span>
+        <div class="small muted">{byId.get(id)?.data.summary}</div></li>
+    ))}
+  </ol>
+
+  <h2>연습문제</h2>
+  {Exercises ? (
+    <>
+      <p class="small muted">작성: {ex.data.written_by} · {ex.data.status === 'reviewed' ? '풀이 재검토 완료' : '풀이 재검토 전'}</p>
+      <div class="prose"><Exercises /></div>
+    </>
+  ) : <p class="muted">이 단원의 연습문제는 아직 준비되지 않았습니다.</p>}
+
+  <div class="pager">
+    {prev ? <a href={link(prev)}><small>← 이전 단원</small>{prev.data.title}</a> : <span></span>}
+    {next ? <a class="next" href={link(next)}><small>다음 단원 →</small>{next.data.title}</a> : <span></span>}
+  </div>
+</Base>

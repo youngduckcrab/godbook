@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import { url } from '../../lib/site';
+---
+<Base title="검색" search={false}>
+  <h1>검색</h1>
+  <link rel="stylesheet" href={url('/pagefind/pagefind-ui.css')} />
+  <div id="search" style="--pagefind-ui-primary: var(--accent); --pagefind-ui-text: var(--ink); --pagefind-ui-background: var(--surface); --pagefind-ui-border: var(--line); --pagefind-ui-tag: var(--state); --pagefind-ui-font: inherit;"></div>
+  <p class="muted small" id="nosearch" hidden>검색 색인은 사이트를 빌드한 뒤에만 동작합니다.</p>
+  <script is:inline define:vars={{ src: url('/pagefind/pagefind-ui.js') }}>
+    var s = document.createElement('script'); s.src = src;
+    s.onload = function () { new PagefindUI({ element: '#search', showSubResults: false, showImages: false, autofocus: true,
+      translations: { placeholder: '정리 이름이나 용어로 검색', zero_results: '"[SEARCH_TERM]" 에 맞는 결과가 없습니다' } }); };
+    s.onerror = function () { document.getElementById('nosearch').hidden = false; };
+    document.head.appendChild(s);
+  </script>
+</Base>

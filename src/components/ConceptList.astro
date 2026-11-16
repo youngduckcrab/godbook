@@ -1,0 +1,15 @@
+---
+import { url, KIND, LEVEL, STATUS } from '../lib/site';
+const { concepts } = Astro.props;
+---
+<ul class="plain items">
+  {concepts.map((c) => (
+    <li data-concept={c.id} data-kind={c.data.kind} data-level={c.data.level} data-status={c.data.status} data-field={c.data.field}
+        data-text={`${c.data.title} ${c.data.title_en} ${c.data.aliases.join(' ')}`.toLowerCase()}>
+      <span class="badge kind">{KIND[c.data.kind]}</span>
+      <a class="t" href={url(`/c/${c.id}/`)}>{c.data.title} <span class="en small">{c.data.title_en}</span></a>
+      <span class="s">{c.data.summary}</span>
+      <span class="badges"><span class="badge">{LEVEL[c.data.level]}</span><span class={`badge ${c.data.status}`}>{STATUS[c.data.status].label}</span></span>
+    </li>
+  ))}
+</ul>

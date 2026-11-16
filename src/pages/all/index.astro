@@ -1,0 +1,35 @@
+---
+import Base from '../../layouts/Base.astro';
+import ConceptList from '../../components/ConceptList.astro';
+import { loadAll, KIND, LEVEL, STATUS, FIELDS } from '../../lib/site';
+const { concepts } = await loadAll();
+const list = [...concepts].sort((a, b) => a.data.title.localeCompare(b.data.title, 'ko'));
+const fields = [...new Set(list.map((c) => c.data.field))];
+---
+<Base title="전체 항목" search={false}>
+  <h1>전체 항목</h1>
+  <p class="muted small"><span id="count">{list.length}</span>개</p>
+  <div class="filters">
+    <input id="q" type="search" placeholder="이름으로 거르기" aria-label="이름으로 거르기" />
+    <select data-f="kind" aria-label="종류"><option value="">종류 전체</option>{Object.entries(KIND).map(([k, v]) => <option value={k}>{v}</option>)}</select>
+    <select data-f="field" aria-label="분야"><option value="">분야 전체</option>{fields.map((f) => <option value={f}>{FIELDS[f].title}</option>)}</select>
+    <select data-f="level" aria-label="난이도"><option value="">난이도 전체</option>{Object.entries(LEVEL).map(([k, v]) => <option value={k}>{v}</option>)}</select>
+    <select data-f="status" aria-label="검증 상태"><option value="">검증 상태 전체</option>{Object.entries(STATUS).map(([k, v]) => <option value={k}>{v.label}</option>)}</select>
+  </div>
+  <ConceptList concepts={list} />
+  <script is:inline>
+  (function () {
+    var q = document.getElementById('q'), sels = document.querySelectorAll('.filters select'), items = document.querySelectorAll('ul.items li');
+    function run() {
+      var n = 0, text = q.value.trim().toLowerCase();
+      items.forEach(function (li) {
+        var ok = !text || li.dataset.text.indexOf(text) >= 0;
+        sels.forEach(function (s) { if (s.value && li.dataset[s.dataset.f] !== s.value) ok = false; });
+        li.style.display = ok ? '' : 'none'; if (ok) n++;
+      });
+      document.getElementById('count').textContent = n;
+    }
+    q.addEventListener('input', run); sels.forEach(function (s) { s.addEventListener('change', run); });
+  })();
+  </script>
+</Base>

@@ -1,0 +1,17 @@
+# 분야 목록. id는 concepts의 폴더 이름과 field 값으로 쓴다. msc는 MSC 2020 대분류 코드.
+logic-foundations: { title: 논리와 기초, title_en: Mathematical logic and foundations, msc: "03" }
+combinatorics: { title: 조합론, title_en: Combinatorics, msc: "05" }
+number-theory: { title: 정수론, title_en: Number theory, msc: "11" }
+linear-algebra: { title: 선형대수, title_en: Linear and multilinear algebra, msc: "15" }
+group-theory: { title: 군론, title_en: Group theory, msc: "20" }
+ring-theory: { title: 환론, title_en: Rings and algebras, msc: "13/16" }
+field-theory: { title: 체론, title_en: Field theory, msc: "12" }
+real-analysis: { title: 실해석, title_en: Real functions, msc: "26" }
+measure-theory: { title: 측도와 적분, title_en: Measure and integration, msc: "28" }
+complex-analysis: { title: 복소해석, title_en: Functions of a complex variable, msc: "30" }
+functional-analysis: { title: 함수해석, title_en: Functional analysis, msc: "46" }
+topology: { title: 일반위상, title_en: General topology, msc: "54" }
+algebraic-topology: { title: 대수적 위상, title_en: Algebraic topology, msc: "55" }
+differential-geometry: { title: 미분기하, title_en: Differential geometry, msc: "53" }
+probability: { title: 확률론, title_en: Probability theory, msc: "60" }
+category-theory: { title: 범주론, title_en: Category theory, msc: "18" }

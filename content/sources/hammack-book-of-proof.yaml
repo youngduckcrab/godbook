@@ -1,0 +1,10 @@
+type: book
+authors: [Richard Hammack]
+title: Book of Proof
+edition: 3판 (Edition 3.4)
+year: 2018
+publisher: Richard Hammack (자체 출판)
+url: https://richardhammack.github.io/BookOfProof/
+access: open
+license: CC BY-NC-ND 4.0
+note: 저자가 PDF 전체를 무료로 공개한다. 쪽수는 책에 인쇄된 쪽 번호이며, PDF 파일의 쪽 번호는 여기에 12를 더한 값이다.

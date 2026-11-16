@@ -1,0 +1,39 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { render } from 'astro:content';
+import { loadAll, url, LEVEL, COURSE_STATUS, unitSlug, unitNo, KIND } from '../../../lib/site';
+export async function getStaticPaths() {
+  const { courses } = await loadAll();
+  return courses.filter((c) => c.data.status !== 'planned').map((c) => ({ params: { course: c.id }, props: { course: c } }));
+}
+const { course } = Astro.props;
+const { byId, unitsOf, sequence, courses } = await loadAll();
+const units = unitsOf(course.id);
+const ids = sequence(course.id).map((x) => x.id);
+const { Content } = await render(course);
+const title = (id) => courses.find((c) => c.id === id)?.data.title ?? id;
+---
+<Base title={course.data.title} description={course.data.summary}>
+  <p class="small"><a href={url('/courses/')}>강의</a> ›</p>
+  <h1>{course.data.title} <span class="en">{course.data.title_en}</span></h1>
+  <div class="badges"><span class={`badge ${course.data.status}`}>{COURSE_STATUS[course.data.status]}</span><span class="badge">{LEVEL[course.data.level]}</span>
+    {course.data.requires.length > 0 && <span class="badge">먼저: {course.data.requires.map(title).join(', ')}</span>}</div>
+  <p class="lead">{course.data.summary}</p>
+  <div class="progress" data-progress={ids.join(',')}><i></i></div><span class="small muted" data-progress-label></span>
+  <div class="prose"><Content /></div>
+
+  <h2>단원</h2>
+  {units.map((u) => (
+    <div class="card">
+      <h3><a href={url(`/courses/${course.id}/${unitSlug(u.id)}/`)}>{unitNo(u.id)}단원. {u.data.title}</a></h3>
+      <p class="small muted">{u.data.summary}</p>
+      <ol class="seq">
+        {u.data.concepts.map((id) => <li data-concept={id}><a href={url(`/c/${id}/`)}>{byId.get(id)?.data.title}</a> <span class="small muted">{KIND[byId.get(id)?.data.kind]}</span></li>)}
+      </ol>
+    </div>
+  ))}
+  {course.data.planned_units.length > 0 && (
+    <div class="card"><h3 class="muted">작성 예정인 단원</h3>
+      <ul class="small muted">{course.data.planned_units.map((t) => <li>{t}</li>)}</ul></div>
+  )}
+</Base>

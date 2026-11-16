@@ -1,0 +1,22 @@
+{
+  "name": "godbook",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "dev": "astro dev",
+    "build": "node scripts/check.mjs && astro build && pagefind --site dist",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/markdown-remark": "^7.3.9",
+    "astro": "^7.4.12",
+    "js-yaml": "^5.5.0",
+    "katex": "^0.19.1",
+    "pagefind": "^1.6.0",
+    "rehype-katex": "^7.0.1",
+    "remark-directive": "^4.0.0",
+    "remark-math": "^6.0.0",
+    "unist-util-visit": "^5.2.0"
+  }
+}

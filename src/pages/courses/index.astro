@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadAll, url, LEVEL, COURSE_STATUS } from '../../lib/site';
+const { courses, sequence, unitsOf } = await loadAll();
+---
+<Base title="강의" search={false}>
+  <h1>강의</h1>
+  <p class="lead">항목을 읽는 순서대로 엮은 학습 경로입니다. 읽은 항목은 이 브라우저에 기록됩니다.</p>
+  {courses.map((c) => {
+    const ids = sequence(c.id).map((x) => x.id);
+    return (
+      <div class="card">
+        <div class="badges"><span class={`badge ${c.data.status}`}>{COURSE_STATUS[c.data.status]}</span><span class="badge">{LEVEL[c.data.level]}</span><span class="badge">{c.data.track}</span></div>
+        <h3>{c.data.status === 'planned' ? c.data.title : <a href={url(`/courses/${c.id}/`)}>{c.data.title}</a>} <span class="en small">{c.data.title_en}</span></h3>
+        <p>{c.data.summary}</p>
+        {ids.length > 0 && <><div class="progress" data-progress={ids.join(',')}><i></i></div><span class="small muted" data-progress-label></span></>}
+        {c.data.status !== 'planned' && <p class="small muted">단원 {unitsOf(c.id).length}개 작성됨{c.data.planned_units.length > 0 && `, ${c.data.planned_units.length}개 예정`}</p>}
+      </div>
+    );
+  })}
+</Base>

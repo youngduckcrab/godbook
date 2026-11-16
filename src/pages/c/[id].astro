@@ -1,0 +1,86 @@
+---
+import Base from '../../layouts/Base.astro';
+import { render } from 'astro:content';
+import { loadAll, url, KIND, LEVEL, STATUS, CHECKED, FIELDS, prerequisiteOrder, unitSlug, unitNo } from '../../lib/site';
+export async function getStaticPaths() {
+  const { concepts } = await loadAll();
+  return concepts.map((c) => ({ params: { id: c.id }, props: { concept: c } }));
+}
+const { concept } = Astro.props;
+const d = concept.data;
+const { byId, usedBy, courses, sequence, sources } = await loadAll();
+const { Content } = await render(concept);
+const direct = d.requires.map((id) => byId.get(id)).filter(Boolean);
+const path = prerequisiteOrder(concept.id, byId);
+const users = (usedBy.get(concept.id) ?? []).sort((a, b) => a.data.title.localeCompare(b.data.title, 'ko'));
+const src = new Map(sources.map((s) => [s.id, s.data]));
+// Where this concept sits in each course that includes it.
+const places = courses.flatMap((course) => {
+  const seq = sequence(course.id);
+  const i = seq.findIndex((x) => x.id === concept.id);
+  if (i < 0) return [];
+  return [{ course, unit: seq[i].unit, i, n: seq.length, prev: byId.get(seq[i - 1]?.id), next: byId.get(seq[i + 1]?.id) }];
+});
+const main = places[0];
+const fmt = (x) => x.toISOString().slice(0, 10);
+const cite = (s) => `${s.authors.join(', ')}, ${s.title}${s.edition ? ` (${s.edition})` : ''}, ${s.publisher ?? s.journal ?? ''} ${s.year}`.replace(' ,', ',').replace(/,\s+(\d{4})$/, ', $1');
+---
+<Base title={d.title} description={d.summary}>
+  <p class="small"><a href={url('/fields/')}>분야</a> › <a href={url(`/fields/${d.field}/`)}>{FIELDS[d.field]?.title}</a> ›</p>
+  <h1>{d.title} <span class="en">{d.title_en}</span></h1>
+  <div class="badges">
+    <span class="badge kind">{KIND[d.kind]}</span><span class="badge">{LEVEL[d.level]}</span>
+    <span class={`badge ${d.status}`} title={STATUS[d.status].desc}>{STATUS[d.status].label}</span>
+    {d.aliases.length > 0 && <span class="muted">다른 이름: {d.aliases.join(', ')}</span>}
+  </div>
+  <p class="lead">{d.summary}</p>
+
+  {places.map((p) => (
+    <div class="coursebar" data-pagefind-ignore>
+      <span><a href={url(`/courses/${p.course.id}/`)}>{p.course.data.title}</a> › <a href={url(`/courses/${p.course.id}/${unitSlug(p.unit.id)}/`)}>{unitNo(p.unit.id)}단원 {p.unit.data.title}</a></span>
+      <span class="muted">{p.i + 1} / {p.n}</span>
+    </div>
+  ))}
+
+  {direct.length > 0 && (
+    <div class="card small" data-pagefind-ignore>
+      <b>먼저 알아야 할 것</b>: {direct.map((c, i) => <>{i > 0 && ', '}<a href={url(`/c/${c.id}/`)} data-concept={c.id}>{c.data.title}</a></>)}
+      {path.length > direct.length && (
+        <details><summary class="muted">처음부터 여기까지 오는 전체 경로 ({path.length}개)</summary>
+          <ol class="seq">{path.map((c) => <li data-concept={c.id}><a href={url(`/c/${c.id}/`)}>{c.data.title}</a></li>)}</ol>
+        </details>
+      )}
+    </div>
+  )}
+
+  <article class="prose"><Content /></article>
+
+  <p data-pagefind-ignore><button class="read" data-id={concept.id} aria-pressed="false">읽음으로 표시</button></p>
+
+  {main && (
+    <div class="pager" data-pagefind-ignore>
+      {main.prev ? <a href={url(`/c/${main.prev.id}/`)}><small>← 이전</small>{main.prev.data.title}</a> : <span></span>}
+      {main.next ? <a class="next" href={url(`/c/${main.next.id}/`)}><small>다음 →</small>{main.next.data.title}</a>
+        : <a class="next" href={url(`/courses/${main.course.id}/`)}><small>강의 목차로 →</small>{main.course.data.title}</a>}
+    </div>
+  )}
+
+  <section class="meta-panel" data-pagefind-ignore>
+    {users.length > 0 && (<><h2>이 항목을 쓰는 것</h2>
+      <ul>{users.map((c) => <li><a href={url(`/c/${c.id}/`)}>{c.data.title}</a> <span class="muted">{KIND[c.data.kind]}</span></li>)}</ul></>)}
+
+    <h2>출처</h2>
+    <ul>
+      {d.sources.map((s) => {
+        const b = src.get(s.ref);
+        return <li><a href={b.url} rel="noopener">{cite(b)}</a> — {s.loc} <span class="badge">{CHECKED[s.checked]}</span>{s.note && <div class="muted">{s.note}</div>}</li>;
+      })}
+    </ul>
+
+    <h2>검증 상태</h2>
+    <p><span class={`badge ${d.status}`}>{STATUS[d.status].label}</span> {STATUS[d.status].desc}</p>
+    {d.review_note && <p class="muted">검토 기록: {d.review_note}</p>}
+    {d.proof_note && <p class="muted">증명에 관해: {d.proof_note}</p>}
+    <p class="muted">추가 {fmt(d.added)}{d.updated && ` · 수정 ${fmt(d.updated)}`}{d.msc.length > 0 && ` · MSC ${d.msc.join(', ')}`}</p>
+  </section>
+</Base>

@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+import { loadAll, url, FIELDS } from '../../lib/site';
+const { concepts } = await loadAll();
+const count = (f) => concepts.filter((c) => c.data.field === f).length;
+---
+<Base title="분야" search={false}>
+  <h1>분야</h1>
+  <p class="lead">수학 분야 분류(MSC 2020)를 따라 항목을 나눕니다.</p>
+  <div class="grid">
+    {Object.entries(FIELDS).map(([id, f]) => (
+      <div class="card">
+        <h3>{count(id) ? <a href={url(`/fields/${id}/`)}>{f.title}</a> : <span class="muted">{f.title}</span>}</h3>
+        <p class="small muted">{f.title_en} · MSC {f.msc}</p>
+        <p class="small">{count(id) ? `항목 ${count(id)}개` : '아직 항목 없음'}</p>
+      </div>
+    ))}
+  </div>
+</Base>

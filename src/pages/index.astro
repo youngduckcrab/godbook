@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import ConceptList from '../components/ConceptList.astro';
+import { loadAll, url, LEVEL, COURSE_STATUS } from '../lib/site';
+const { concepts, courses, sequence, unitsOf, sources } = await loadAll();
+const recent = [...concepts].sort((a, b) => +b.data.added - +a.data.added || a.id.localeCompare(b.id)).slice(0, 8);
+const tracks = [...new Set(courses.map((c) => c.data.track))];
+const title = (id) => courses.find((c) => c.id === id)?.data.title ?? id;
+---
+<Base search={false}>
+  <h1>갓북 <span class="en">수학 정리 모음</span></h1>
+  <p class="lead">정의, 정리, 증명을 하나씩 출처와 함께 정리하고, 순서대로 읽으며 공부할 수 있게 강의로 엮습니다.</p>
+  <p class="muted small">항목 {concepts.length}개 · 강의 {courses.filter((c) => c.data.status !== 'planned').length}개 진행 · 출처 {sources.length}개</p>
+
+  <h2>강의 로드맵</h2>
+  <p class="muted small">위에서 아래로 갈수록 뒤에 배우는 내용입니다. "예정"인 강의는 아직 작성 전입니다.</p>
+  {tracks.map((track) => (
+    <>
+      <h3>{track}</h3>
+      <div class="grid">
+        {courses.filter((c) => c.data.track === track).map((c) => {
+          const ids = sequence(c.id).map((x) => x.id);
+          const total = unitsOf(c.id).length + c.data.planned_units.length;
+          return (
+            <div class="card">
+              <div class="badges"><span class={`badge ${c.data.status}`}>{COURSE_STATUS[c.data.status]}{c.data.status === 'in-progress' && ` · 단원 ${unitsOf(c.id).length}/${total}`}</span><span class="badge">{LEVEL[c.data.level]}</span></div>
+              <h3>{c.data.status === 'planned' ? c.data.title : <a href={url(`/courses/${c.id}/`)}>{c.data.title}</a>}</h3>
+              <p class="small muted">{c.data.summary}</p>
+              {c.data.requires.length > 0 && <p class="small muted">먼저: {c.data.requires.map(title).join(', ')}</p>}
+              {ids.length > 0 && <><div class="progress" data-progress={ids.join(',')}><i></i></div><span class="small muted" data-progress-label></span></>}
+            </div>
+          );
+        })}
+      </div>
+    </>
+  ))}
+
+  <h2>최근 추가된 항목</h2>
+  <ConceptList concepts={recent} />
+  <p><a href={url('/all/')}>전체 항목 보기 →</a></p>
+</Base>

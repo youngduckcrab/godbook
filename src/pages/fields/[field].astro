@@ -1,0 +1,18 @@
+---
+import Base from '../../layouts/Base.astro';
+import ConceptList from '../../components/ConceptList.astro';
+import { loadAll, url, FIELDS } from '../../lib/site';
+export async function getStaticPaths() {
+  const { concepts } = await loadAll();
+  return [...new Set(concepts.map((c) => c.data.field))].map((field) => ({ params: { field } }));
+}
+const { field } = Astro.params;
+const { concepts } = await loadAll();
+const list = concepts.filter((c) => c.data.field === field).sort((a, b) => a.data.title.localeCompare(b.data.title, 'ko'));
+---
+<Base title={FIELDS[field].title} search={false}>
+  <p class="small"><a href={url('/fields/')}>분야</a> ›</p>
+  <h1>{FIELDS[field].title} <span class="en">{FIELDS[field].title_en}</span></h1>
+  <p class="muted small">MSC {FIELDS[field].msc} · 항목 {list.length}개</p>
+  <ConceptList concepts={list} />
+</Base>

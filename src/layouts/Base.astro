@@ -1,0 +1,52 @@
+---
+import 'katex/dist/katex.min.css';
+import '../styles/global.css';
+import { url } from '../lib/site';
+const { title, description = '출처와 함께 정리하는 수학 정의·정리·증명', search = true } = Astro.props;
+const nav = [['/courses/', '강의'], ['/fields/', '분야'], ['/all/', '전체 항목'], ['/sources/', '출처'], ['/search/', '검색'], ['/about/', '소개']];
+const here = Astro.url.pathname;
+---
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{title ? `${title} · 갓북` : '갓북 · 수학 정리 모음'}</title>
+<meta name="description" content={description} />
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href={url('/')}>갓북 <span class="en small">Godbook</span></a>
+  <nav>{nav.map(([p, t]) => <a href={url(p)} aria-current={here.startsWith(url(p)) ? 'page' : undefined}>{t}</a>)}</nav>
+</div></header>
+<main><div class="wrap" {...(search ? { 'data-pagefind-body': '' } : { 'data-pagefind-ignore': '' })}><slot /></div></main>
+<footer class="site"><div class="wrap">모든 항목은 AI(Claude)가 출처를 대조해 작성했습니다. 사람의 검수를 거치지 않았으므로 각 페이지의 검증 상태와 출처를 함께 확인하세요.</div></footer>
+<script is:inline>
+(function () {
+  var KEY = 'godbook:read';
+  function load() { try { return new Set(JSON.parse(localStorage.getItem(KEY) || '[]')); } catch (e) { return new Set(); } }
+  function save(s) { try { localStorage.setItem(KEY, JSON.stringify(Array.from(s))); } catch (e) {} }
+  function paint() {
+    var read = load();
+    document.querySelectorAll('[data-concept]').forEach(function (el) { el.classList.toggle('done', read.has(el.dataset.concept)); });
+    document.querySelectorAll('[data-progress]').forEach(function (el) {
+      var ids = el.dataset.progress.split(',').filter(Boolean);
+      var n = ids.filter(function (i) { return read.has(i); }).length;
+      var bar = el.querySelector('i'); if (bar) bar.style.width = (ids.length ? (100 * n) / ids.length : 0) + '%';
+      var lab = el.parentElement.querySelector('[data-progress-label]'); if (lab) lab.textContent = n + ' / ' + ids.length + ' 읽음';
+    });
+    document.querySelectorAll('button.read').forEach(function (b) {
+      var on = read.has(b.dataset.id);
+      b.setAttribute('aria-pressed', on); b.textContent = on ? '✓ 읽음' : '읽음으로 표시';
+    });
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('button.read'); if (!b) return;
+    var read = load(); if (read.has(b.dataset.id)) read.delete(b.dataset.id); else read.add(b.dataset.id);
+    save(read); paint();
+  });
+  paint();
+})();
+</script>
+</body>
+</html>

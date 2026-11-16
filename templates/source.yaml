@@ -1,0 +1,11 @@
+type: book            # book | paper | lecture-notes | web | thesis
+authors: [이름]
+title: 제목
+edition: 3판          # 선택
+year: 2018
+publisher: 출판사      # 논문이면 journal
+url: https://example.org/
+# doi: / arxiv: / isbn:  (선택)
+access: open          # open | closed
+license: CC BY 4.0    # 선택
+note: 쪽수 기준 등 인용할 때 알아야 할 것. # 선택
