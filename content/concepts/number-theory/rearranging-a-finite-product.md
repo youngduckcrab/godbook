@@ -14,7 +14,8 @@ sources:
     loc: 2.1절, Theorem 2.1.20(Euler's Theorem)의 증명 p.27, Proposition 2.1.22(Wilson's Theorem)의 증명 p.28
     checked: original
     note: "출처는 오일러 정리의 증명(p.27)에서 'xP의 원소들의 법 n 환원은 P의 원소들의 환원과 같으므로 곱 ∏(xa)와 ∏a가 합동이다(the products are over the same numbers modulo n)'고 쓰고, 윌슨 정리의 증명(p.28)에서 원소를 역원끼리 짝지어 곱을 정리한다. 두 곳 모두 곱의 순서를 바꿔도 곱이 같다는 것을 말없이 쓰며 증명하지 않는다. 이 항목의 진술과 증명(k번째 인수를 맨 뒤로 보내는 보조 사실과 n에 대한 귀납법)은 출처에 없고 이 사이트가 썼다. 예시와 반례, 확인 질문은 이 사이트에서 새로 만들었다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 3회 통과. 증명에서 건너뛴 경우와 근거, 진술에 구성을 넣는 일, 출처 메모, 증명한 범위보다 넓은 설명 문장을 보완했다."
 added: 2026-11-16
 ---
 

@@ -6,15 +6,16 @@ kind: theorem
 field: logic-foundations
 msc: ["03E10"]
 level: intro
-summary: 원소를 n개 갖는 집합의 부분집합은 유한집합이고 원소의 개수는 n 이하이며, A ⊆ B이고 A ≠ B이면 n보다 작다. 따라서 그 집합에서 A ⊆ B, A ≠ B인 A로의 단사는 없다.
+summary: 원소를 n개 갖는 집합 B의 부분집합 A는 유한집합이고 원소의 개수는 n 이하이며, A ≠ B이면 n보다 작다. 따라서 B에서 그런 A로의 단사는 없다.
 requires: [set, subset, empty-set-is-subset, proof-by-contradiction, set-operations, function, injective-surjective-bijective, mathematical-induction, finite-set, adding-or-removing-an-element, pigeonhole-principle, number-of-elements-is-unique, prime-number, well-ordering-principle]
 proof: full
 sources:
   - ref: hammack-book-of-proof
     loc: 3.3절 The Addition and Subtraction Principles, Fact 3.3(p.76)
     checked: original
-    note: "출처의 뺄셈 원리(Fact 3.3)는 'X가 유한집합 U의 부분집합이면 |U − X| = |U| − |X|'라고 서술한다(p.76). 출처는 이 문장에서 X가 유한집합이라는 것이나 |X|가 |U| 이하라는 것을 따로 진술하거나 증명하지 않고 그대로 쓰며, 뺄셈 원리 자체도 증명하지 않는다. 이 항목의 진술(부분집합은 유한집합이고 개수는 n 이하이며 A ⊆ B이고 A ≠ B이면 n보다 작다)과 증명(원소를 n개 갖는 집합에 대한 n에 대한 귀납)은 출처에 없고 이 사이트의 것이다. 진술의 3(자기 자신의 A ⊆ B, A ≠ B인 A로의 단사가 없다)도 출처에 없다. 예시와 반례, 확인 질문은 이 사이트에서 새로 만들었다."
-status: source-checked
+    note: "출처의 뺄셈 원리(Fact 3.3)는 'X가 유한집합 U의 부분집합이면 |U − X| = |U| − |X|'라고 서술한다(p.76). 출처는 이 문장에서 X가 유한집합이라는 것이나 |X|가 |U| 이하라는 것을 따로 진술하거나 증명하지 않고 그대로 쓰며, 뺄셈 원리 자체도 증명하지 않는다. 이 항목의 진술(부분집합은 유한집합이고 개수는 n 이하이며 A ⊆ B이고 A ≠ B이면 n보다 작다)과 증명(원소를 n개 갖는 집합에 대한 n에 대한 귀납)은 출처에 없고 이 사이트의 것이다. 진술의 3(B에서 A ≠ B인 부분집합 A로의 단사가 없다)도 출처에 없다. 예시와 반례, 확인 질문은 이 사이트에서 새로 만들었다."
+status: reviewed
+review_note: "2026-11-16 독립 검토 3회 통과. 증명에서 건너뛴 경우와 근거, 진술에 구성을 넣는 일, 출처 메모, 증명한 범위보다 넓은 설명 문장을 보완했다."
 added: 2026-11-16
 ---
 
