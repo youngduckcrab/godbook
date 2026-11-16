@@ -18,7 +18,8 @@ sources:
     loc: 7.3절, 번호 없는 Proposition (정수 m이 d = gcd(a, b)의 배수인 것은 정확히 m = ax + by인 정수 x, y가 있을 때)과 그 증명의 둘째 문단, p.153
     checked: original
     note: "출처의 Proposition은 a, b가 자연수일 때 {ax + by}가 gcd(a, b)의 배수 전체라는 것이다. 증명은 베주 항등식(출처 Proposition 7.1)에서 gcd = ak + bℓ을 쓰고 gcd가 a와 b를 나눈다는 데서 나온다. 이 항목의 (1)의 계산 \"gcd = ax + by가 c의 배수\"는 같은 발상이다. 출처의 진술은 약수 관계가 아닌 {ax + by}의 특징이므로 이 항목의 진술과 같지는 않다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 3회. 수학적 오류 없음. 받아들이는 사실 (Z8)과 따름 사실 (L1)–(L3)을 진술에 명시, 거짓이던 예시 문장과 출처 쪽수 정정."
 added: 2026-11-16
 ---
 

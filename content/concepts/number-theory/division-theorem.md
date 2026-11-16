@@ -18,7 +18,8 @@ sources:
     loc: 1.1.2절, Algorithm 1.1.12 (Division Algorithm), p.5. 같은 진술의 증명은 Proposition 1.1.11, p.4
     checked: original
     note: "Stein은 b ≠ 0인 정수 a, b에 대해 0 ≤ r < |b|인 a = bq + r의 유일한 q, r이 있다는 Proposition 1.1.11(p.4)을 쓰고, Algorithm 1.1.12(p.5)는 같은 q, r을 구하는 알고리즘이라고만 하며 단계를 적지 않는다. 이 항목은 절댓값을 쓰지 않고 b > 0인 경우만 다룬다. Stein의 증명은 a, b가 둘 다 양수인 경우만 보이고 일반적인 경우를 독자에게 맡기며(p.4), 음이 아닌 정수 n 가운데 a − bn ≥ 0인 것의 집합의 최대 원소를 쓴다. 아래 증명은 그 경로를 따르지 않는다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 3회. 수학적 오류 없음. 받아들이는 사실 (Z8)과 따름 사실 (L1)–(L3)을 진술에 명시, 거짓이던 예시 문장과 출처 쪽수 정정."
 added: 2026-11-16
 ---
 

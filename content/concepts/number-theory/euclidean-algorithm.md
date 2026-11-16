@@ -17,7 +17,8 @@ sources:
     loc: 5장 연습문제 31 (p.136)과 그 풀이 (p.320)
     checked: original
     note: "Hammack에는 이 알고리즘의 서술이 없다. 연습문제 31이 나눗셈 정리 a = qb + r에서 gcd(a, b) = gcd(r, b)임을 보이라고 하며(한 단계의 등식), 풀이는 공약수가 서로 같은 쌍의 공약수임을 두 방향으로 보인다. 이 항목의 (가)는 이 등식을 gcd-subtract-multiple과 대칭성으로 얻는다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 3회. 수학적 오류 없음. 받아들이는 사실 (Z8)과 따름 사실 (L1)–(L3)을 진술에 명시, 거짓이던 예시 문장과 출처 쪽수 정정."
 added: 2026-11-16
 ---
 

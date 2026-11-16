@@ -17,7 +17,8 @@ sources:
     loc: 1.1.2절, Definition 1.1.8 (Greatest Common Divisor), p.3 (성질 (ii), (iii)은 Lemma 1.1.9, pp.3–4)
     checked: original
     note: "Stein은 gcd(a, b)를 {d ∈ Z : d | a이고 d | b}의 최대 원소로 정의하고 gcd(0, 0) = 0으로 둔다(p.3). 이 항목은 gcd(0, 0)을 정의하지 않는 쪽을 택했다(Hammack의 약속과 같다). Stein은 a ≠ 0이면 d | a에서 d ≤ |a|이고 양의 정수 가운데 |a| 이하인 것은 |a|개뿐이라는 세기 논증으로 존재를 설명하는데(p.3), 이 항목은 이를 따르지 않고 정렬 원리로 증명한다. Stein은 \"임의의 a에 대해 gcd(0, a) = gcd(a, 0) = a\"라고 쓰는데(p.3), 이것은 a < 0이면 틀린다(자신의 정의로 gcd(0, −3) = 3이다). 아래는 a > 0일 때만 이 등식을 보인다. 성질 (ii), (iii)에 해당하는 gcd(a, b) = gcd(b, a) = gcd(±a, ±b)는 Stein의 Lemma 1.1.9(p.3)에 진술되어 있고, 그 증명은 gcd(a, b) = gcd(a, b − a)만 보이고 나머지는 \"비슷하게 증명된다\"며 생략한다(pp.3–4). 아래는 직접 증명한다. Stein에서 coprime은 Algorithm 2.2.3(p.29)에 처음 나오며 정의되지 않는다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 3회. 수학적 오류 없음. 받아들이는 사실 (Z8)과 따름 사실 (L1)–(L3)을 진술에 명시, 거짓이던 예시 문장과 출처 쪽수 정정."
 added: 2026-11-16
 ---
 

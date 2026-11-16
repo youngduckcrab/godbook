@@ -18,7 +18,8 @@ sources:
     loc: 2.3.1절, Proposition 2.3.1 (Extended Euclidean Representation), p.32
     checked: original
     note: "Stein의 Proposition 2.3.1은 a, b ∈ Z이고 g = gcd(a, b)이면 ax + by = g인 x, y ∈ Z가 있다고 한다(p.32). Stein은 gcd(0, 0) = 0으로 두므로 a = b = 0인 경우도 포함하는데, 이 사이트는 그 경우를 정의하지 않으므로 둘 다 0은 아닌 경우만 진술한다. Stein의 증명은 gcd(a/g, b/g) = 1이라는 사실(증명 없음)과 합동식 (a/g)x ≡ 1 (mod b/g)의 풀이 가능성(Proposition 2.1.15)에 기대는데, 이 항목은 그 경로를 따르지 않는다. 이 이름(\"베주\")은 Stein에도 나오지 않는다. 같은 쪽 Remark 2.3.2는 gcd의 배수가 ax + by 꼴이라는 것이며 아래 증명에는 쓰지 않았다. 확인 질문 2는 Remark 2.3.2의 발상이다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 3회. 수학적 오류 없음. 받아들이는 사실 (Z8)과 따름 사실 (L1)–(L3)을 진술에 명시, 거짓이던 예시 문장과 출처 쪽수 정정."
 added: 2026-11-16
 ---
 
