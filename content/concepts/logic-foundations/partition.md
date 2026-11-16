@@ -23,7 +23,7 @@ $A$가 [[set]]일 때, $A$의 **분할**(partition)은 $A$의 부분집합들을
 
 1. $\mathcal{S}$의 모든 원소 $X$는 $A$의 [[subset]]이고 공집합이 아니다.
 2. $A$의 모든 원소 $x$에 대하여, $x \in X$인 $X \in \mathcal{S}$가 적어도 하나 있다.
-3. $\mathcal{S}$의 모든 원소 $X, Y$에 대하여, $X \ne Y$이면 $X \cap Y = \emptyset$이다. 여기서 $\cap$는 [[set-operations]]의 교집합이다.
+3. $\mathcal{S}$의 모든 원소 $X, Y$에 대하여, $X \ne Y$이면 $X \cap Y = \emptyset$이다. 여기서 $\cap$는 [[set-operations|집합 연산 항목]]의 교집합이다.
 
 $A = \emptyset$이면 조건 1에 맞는 $X$가 없으므로 $\mathcal{S} = \emptyset$ 하나만 분할이 될 수 있고, 이 $\mathcal{S}$는 세 조건을 모두 만족하므로 $\emptyset$의 분할이다.
 :::

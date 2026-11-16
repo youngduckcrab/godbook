@@ -97,7 +97,7 @@ For statements $P$ and $Q$, the following two logical equivalences hold.
 
 이 법칙의 이름은 수학자 오거스터스 드 모르간(Augustus De Morgan, 1806–1871)에게서 왔습니다. MacTutor 수학사 아카이브의 전기는 그가 이 법칙을 도입했으며, 그의 가장 큰 기여는 수리논리학을 개혁한 데 있다고 적고 있습니다.
 
-같은 모양의 법칙이 집합에 대해서도 성립합니다. [[de-morgan-laws-sets]]를 보세요.
+같은 모양의 법칙이 집합에 대해서도 성립합니다. [[de-morgan-laws-sets|집합의 드 모르간 법칙]]을 보세요.
 
 ## 확인 질문
 

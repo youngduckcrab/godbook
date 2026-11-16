@@ -19,7 +19,7 @@ added: 2026-11-16
 ---
 
 :::statement
-$A$가 [[set]]일 때, $A$ **위의 관계**(relation on $A$)는 [[cartesian-product]] $A \times A$의 [[subset]] $R$, 곧 $R \subseteq A \times A$이다.
+$A$가 [[set]]일 때, $A$ **위의 관계**(relation on $A$)는 [[cartesian-product|곱집합]] $A \times A$의 [[subset]] $R$, 곧 $R \subseteq A \times A$이다.
 
 $x, y \in A$에 대하여, $(x, y) \in R$인 것을 $x R y$로 쓰고 "$x$는 $y$와 $R$의 관계에 있다"고 읽는다. $(x, y) \notin R$인 것은 $x \not R\, y$로 쓴다. 따라서 $x, y \in A$에 대하여 $x R y$가 성립하는 것은 정확히 $(x, y) \in R$일 때이다.
 :::

@@ -44,7 +44,7 @@ Let $n$ be a natural number. Define a relation $R$ on $\mathbb{Z}$ by declaring,
 ## 증명
 
 :::idea
-각 성질을 [[direct-proof]]로 보인다. $x \equiv y \pmod n$은 $x - y = nc$인 정수 $c$가 있다는 뜻이므로, 이 식에서 출발해 필요한 결론의 식을 만든다.
+각 성질을 [[direct-proof]]으로 보인다. $x \equiv y \pmod n$은 $x - y = nc$인 정수 $c$가 있다는 뜻이므로, 이 식에서 출발해 필요한 결론의 식을 만든다.
 :::
 
 :::hint
@@ -60,7 +60,7 @@ Let $n$ be a natural number. Define a relation $R$ on $\mathbb{Z}$ by declaring,
 :::
 
 :::proof
-$n$을 자연수라 하자. [[congruence-modulo-n]]에 의해 정수 $x$, $y$에 대하여 $x \equiv y \pmod n$인 것은 정확히 $n \mid (x - y)$일 때이고, [[divisibility]]에 의해 이는 정확히 $x - y = nc$인 정수 $c$가 존재할 때이다. $R$이 반사적, 대칭적, 추이적임을 차례로 보인다.
+$n$을 자연수라 하자. [[congruence-modulo-n|합동]]에 의해 정수 $x$, $y$에 대하여 $x \equiv y \pmod n$인 것은 정확히 $n \mid (x - y)$일 때이고, [[divisibility|나누어떨어짐]]에 의해 이는 정확히 $x - y = nc$인 정수 $c$가 존재할 때이다. $R$이 반사적, 대칭적, 추이적임을 차례로 보인다.
 
 **반사성.** $x$를 임의의 정수라 하자. $x - x = 0 = n \cdot 0$이고 $0$은 정수이므로 $n \mid (x - x)$이다. 따라서 $x \equiv x \pmod n$이다. $x$가 임의의 정수였으므로 모든 정수 $x$에 대하여 $x \equiv x \pmod n$이고, $R$은 반사적이다.
 

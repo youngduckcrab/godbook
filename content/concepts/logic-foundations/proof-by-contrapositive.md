@@ -48,7 +48,7 @@ These three steps apply the form of a direct proof to the contrapositive $(\lnot
 
 [[contrapositive-law]]에 의해 $(P \Rightarrow Q) \equiv \bigl((\lnot Q) \Rightarrow (\lnot P)\bigr)$입니다. 곧 두 조건문은 진리표의 모든 줄에서 진릿값이 같으므로, 대우가 참이면 원래의 조건문도 참입니다.
 
-대우 $(\lnot Q) \Rightarrow (\lnot P)$는 $\lnot Q$를 가정으로, $\lnot P$를 결론으로 하는 조건문이므로 [[direct-proof]]로 증명할 수 있습니다. 직접 증명의 틀에서 $P$를 $\lnot Q$로, $Q$를 $\lnot P$로 바꾸면 위 틀의 세 단계가 그대로 나옵니다. 그래서 대우 증명은 새로운 논리가 아니라 같은 말을 한 번 바꾸어 쓴 뒤 직접 증명을 쓰는 것입니다. 출처도 같은 진리표를 근거로 이 틀을 제시합니다.
+대우 $(\lnot Q) \Rightarrow (\lnot P)$는 $\lnot Q$를 가정으로, $\lnot P$를 결론으로 하는 조건문이므로 [[direct-proof]]으로 증명할 수 있습니다. 직접 증명의 틀에서 $P$를 $\lnot Q$로, $Q$를 $\lnot P$로 바꾸면 위 틀의 세 단계가 그대로 나옵니다. 그래서 대우 증명은 새로운 논리가 아니라 같은 말을 한 번 바꾸어 쓴 뒤 직접 증명을 쓰는 것입니다. 출처도 같은 진리표를 근거로 이 틀을 제시합니다.
 
 변수가 있는 명제 "정수 $x$에 대하여 $P(x)$이면 $Q(x)$이다"에서도 $x$를 임의의 정수 하나로 두면 같은 설명이 적용됩니다. 이는 [[direct-proof]]의 "왜 올바른가"에서 본 것과 같습니다.
 
@@ -65,7 +65,7 @@ These three steps apply the form of a direct proof to the contrapositive $(\lnot
 :::counterexample[흔한 실수: 대우와 역·이를 혼동하기]
 정수 $n$에 대하여 "$n$이 $4$의 배수이면 $n$은 짝수이다"를 증명한다고 합시다. 올바른 대우는 "$n$이 짝수가 아니면 $n$은 $4$의 배수가 아니다"입니다. 자리만 바꾼 $Q \Rightarrow P$를 **역**(converse), 부정만 한 $(\lnot P) \Rightarrow (\lnot Q)$를 **이**(inverse)라 부릅니다.
 
-그런데 "$n$이 $4$의 배수가 아니라고 가정하고 $n$이 짝수가 아님을 보이자"고 하면, 이는 $(\lnot P) \Rightarrow (\lnot Q)$를 증명하려는 것이고 원래 명제와 같은 말이 아닙니다. 실제로 이 문장은 $n = 2$에서 거짓입니다. $2 = 4c$이면 $c = 0.5$이므로 $4 \nmid 2$인데 $2$는 짝수이기 때문입니다. 대우는 $P$와 $Q$의 자리를 **바꾸고 둘 다 부정**해야 합니다. 둘 중 하나만 하면 [[contrapositive-law]]가 보장하는 동치가 깨집니다.
+그런데 "$n$이 $4$의 배수가 아니라고 가정하고 $n$이 짝수가 아님을 보이자"고 하면, 이는 $(\lnot P) \Rightarrow (\lnot Q)$를 증명하려는 것이고 원래 명제와 같은 말이 아닙니다. 실제로 이 문장은 $n = 2$에서 거짓입니다. $2 = 4c$이면 $c = 0.5$이므로 $4 \nmid 2$인데 $2$는 짝수이기 때문입니다. 대우는 $P$와 $Q$의 자리를 **바꾸고 둘 다 부정**해야 합니다. 둘 중 하나만 하면 [[contrapositive-law]]이 보장하는 동치가 깨집니다.
 :::
 
 ## 확인 질문

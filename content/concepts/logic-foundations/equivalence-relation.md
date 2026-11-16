@@ -19,7 +19,7 @@ added: 2026-11-16
 ---
 
 :::statement
-집합 $A$ 위의 [[relation]] $R$이 **동치관계**(equivalence relation)라는 것은 정확히 $R$이 반사적이고, 대칭적이고, 추이적일 때이다. 곧 다음 세 조건이 모두 성립할 때이다. 각 성질의 뜻은 [[properties-of-relations]]에 따른다.
+집합 $A$ 위의 [[relation]] $R$이 **동치관계**(equivalence relation)라는 것은 정확히 $R$이 반사적이고, 대칭적이고, 추이적일 때이다. 곧 다음 세 조건이 모두 성립할 때이다. 각 성질의 뜻은 [[properties-of-relations|반사적, 대칭적, 추이적 관계 항목]]에 따른다.
 
 1. (반사성) 모든 $x \in A$에 대하여 $x R x$이다.
 2. (대칭성) 모든 $x, y \in A$에 대하여 $x R y$이면 $y R x$이다.

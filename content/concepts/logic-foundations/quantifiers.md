@@ -88,7 +88,7 @@ $\forall n \in \mathbb{N},\ n^2 > n$ 은 거짓입니다. $n = 1$에서 $1^2 = 1
 :::
 
 :::remark[공집합일 때]
-$X = \emptyset$이면 $\forall x \in X,\ P(x)$는 참이고 $\exists x \in X,\ P(x)$는 거짓입니다. $\forall$가 거짓이 되려면 $P(x)$가 거짓인 원소가 하나 있어야 하는데 원소가 아예 없고, $\exists$가 참이 되려면 $P(x)$가 참인 원소가 하나 있어야 하는데 역시 없기 때문입니다. [[empty-set-is-subset]]에서 "$x \in \emptyset$이면 $x \in B$이다"가 모든 $x$에서 참이었던 것과 같은 논리입니다. 반례가 될 원소가 없으면 "모든"은 성립합니다.
+$X = \emptyset$이면 $\forall x \in X,\ P(x)$는 참이고 $\exists x \in X,\ P(x)$는 거짓입니다. $\forall$가 거짓이 되려면 $P(x)$가 거짓인 원소가 하나 있어야 하는데 원소가 아예 없고, $\exists$가 참이 되려면 $P(x)$가 참인 원소가 하나 있어야 하는데 역시 없기 때문입니다. [[empty-set-is-subset|공집합이 모든 집합의 부분집합이라는 정리]]에서 "$x \in \emptyset$이면 $x \in B$이다"가 모든 $x$에서 참이었던 것과 같은 논리입니다. 반례가 될 원소가 없으면 "모든"은 성립합니다.
 :::
 
 ## 확인 질문

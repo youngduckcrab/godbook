@@ -35,7 +35,7 @@ Let $a$, $b$, and $c$ be integers. If $a \mid b$ and $b \mid c$, then $a \mid c$
 
 이처럼 $a$와 $b$ 사이, $b$와 $c$ 사이에 성립하는 관계가 $a$와 $c$ 사이로 넘어가는 성질을 **추이성**(transitivity)이라 부릅니다.
 
-[[direct-proof]]로 증명합니다. 가정 "$a \mid b$이고 $b \mid c$"를 [[divisibility]]의 정의로 풀어 쓰고, 결론 "$a \mid c$"가 되려면 $c = a \cdot (\text{정수})$ 꼴이어야 함을 보고 둘을 잇습니다.
+[[direct-proof]]으로 증명합니다. 가정 "$a \mid b$이고 $b \mid c$"를 [[divisibility|나누어떨어짐]]의 정의로 풀어 쓰고, 결론 "$a \mid c$"가 되려면 $c = a \cdot (\text{정수})$ 꼴이어야 함을 보고 둘을 잇습니다.
 
 ## 증명
 
@@ -54,7 +54,7 @@ $b = ad$와 $c = be$를 정의로 얻고, $b$를 $ad$로 바꿔 넣어 $c = a(de
 :::proof
 [[direct-proof]]의 틀에 따라 $a \mid b$이고 $b \mid c$라고 가정한다.
 
-$a \mid b$이므로 [[divisibility]]의 정의에 의해 $b = ad$인 정수 $d$가 있다. $b \mid c$이므로 같은 정의에 의해 $c = be$인 정수 $e$가 있다. 두 정수 $d$, $e$는 서로 다른 가정에서 따로 얻은 것이므로 다른 문자를 썼다.
+$a \mid b$이므로 [[divisibility|나누어떨어짐]]의 정의에 의해 $b = ad$인 정수 $d$가 있다. $b \mid c$이므로 같은 정의에 의해 $c = be$인 정수 $e$가 있다. 두 정수 $d$, $e$는 서로 다른 가정에서 따로 얻은 것이므로 다른 문자를 썼다.
 
 $c = be$의 $b$에 $b = ad$를 대입하면 $c = (ad)e$이다. 곱셈의 결합법칙에 의해 $(ad)e = a(de)$이므로 $c = a(de)$이다. $d$와 $e$가 정수이므로 정수의 합·곱은 정수라는 기본 성질([[even-and-odd]]에서 증명 없이 받아들임)에 의해 $de$는 정수이다. 따라서 $c = ax$이고 $x = de$는 정수이다. 정의에 의해 $a \mid c$이다. $\blacksquare$
 :::

@@ -19,13 +19,13 @@ added: 2026-11-16
 ---
 
 :::statement
-$R$이 집합 $A$ 위의 [[relation]]이라 하자. 다음 세 성질을 정의한다. 한정 기호의 뜻은 [[quantifiers]]를 따르며, $\forall x, y \in A$는 $\forall x \in A,\ \forall y \in A$를, $\forall x, y, z \in A$는 $\forall x \in A,\ \forall y \in A,\ \forall z \in A$를 줄여 쓴 것이다.
+$R$이 집합 $A$ 위의 [[relation]]라 하자. 다음 세 성질을 정의한다. 한정 기호의 뜻은 [[quantifiers]]를 따르며, $\forall x, y \in A$는 $\forall x \in A,\ \forall y \in A$를, $\forall x, y, z \in A$는 $\forall x \in A,\ \forall y \in A,\ \forall z \in A$를 줄여 쓴 것이다.
 
 1. $R$이 **반사적**(reflexive)이라는 것은 정확히 다음이 성립할 때이다: 모든 $x \in A$에 대하여 $x R x$이다. 곧 $\forall x \in A,\ x R x$.
 2. $R$이 **대칭적**(symmetric)이라는 것은 정확히 다음이 성립할 때이다: 모든 $x, y \in A$에 대하여 $x R y$이면 $y R x$이다. 곧 $\forall x, y \in A,\ (x R y) \Rightarrow (y R x)$.
 3. $R$이 **추이적**(transitive)이라는 것은 정확히 다음이 성립할 때이다: 모든 $x, y, z \in A$에 대하여 $x R y$이고 $y R z$이면 $x R z$이다. 곧 $\forall x, y, z \in A,\ \bigl((x R y) \land (y R z)\bigr) \Rightarrow (x R z)$.
 
-각 성질이 성립하지 않는 경우는 정의를 [[negation-of-quantified-statements]]와 [[negation-of-conditional]]에 의해 부정하여 얻는다.
+각 성질이 성립하지 않는 경우는 정의를 [[negation-of-quantified-statements]]과 [[negation-of-conditional]]에 의해 부정하여 얻는다.
 
 - $R$이 반사적이 아니라는 것은 정확히 $x R x$가 성립하지 않는 $x \in A$가 적어도 하나 있을 때이다.
 - $R$이 대칭적이 아니라는 것은 정확히 $x R y$이지만 $y R x$는 아닌 $x, y \in A$가 적어도 한 쌍 있을 때이다.

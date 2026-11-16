@@ -76,7 +76,7 @@ For a statement about an open sentence, such as "for an integer $x$, if $P(x)$ t
 
 **증명.** $x$가 짝수라고 가정한다. 짝수의 정의에 의해 $x = 2a$인 정수 $a$가 있다. 그러면 $x + 5 = 2a + 5 = 2(a + 2) + 1$이다. 정수의 합·곱은 정수라는 기본 성질([[even-and-odd]]에서 증명 없이 받아들임)에 의해 $a + 2$는 정수이므로, $b = a + 2$로 두면 $x + 5 = 2b + 1$이고 $b$는 정수이다. 홀수의 정의에 의해 $x + 5$는 홀수이다. $\blacksquare$
 
-이 증명의 첫 줄이 가정, 마지막 줄이 결론, 사이의 줄들이 정의와 계산으로 이어 가는 부분입니다. 같은 틀로 쓴 더 긴 증명은 [[odd-square-is-odd]]와 [[divisibility-is-transitive]]에서 볼 수 있습니다.
+이 증명의 첫 줄이 가정, 마지막 줄이 결론, 사이의 줄들이 정의와 계산으로 이어 가는 부분입니다. 같은 틀로 쓴 더 긴 증명은 [[odd-square-is-odd|홀수의 제곱이 홀수라는 명제]]와 [[divisibility-is-transitive]]에서 볼 수 있습니다.
 :::
 
 :::counterexample[흔한 실수: 결론을 가정하기]

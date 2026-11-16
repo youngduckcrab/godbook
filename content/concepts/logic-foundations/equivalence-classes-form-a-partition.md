@@ -20,7 +20,7 @@ added: 2026-11-16
 ---
 
 :::statement
-$R$이 집합 $A$ 위의 [[equivalence-relation]]이라 하자. $R$의 [[equivalence-class]] 전체의 집합
+$R$이 집합 $A$ 위의 [[equivalence-relation]]라 하자. $R$의 [[equivalence-class]] 전체의 집합
 $$\mathcal{C} = \{[a] : a \in A\}$$
 는 $A$의 [[partition]]이다. 곧 다음이 성립한다.
 
@@ -52,7 +52,7 @@ If $A = \emptyset$, then $\mathcal{C} = \emptyset$, which is a partition of $\em
 ## 증명
 
 :::idea
-분할의 세 조건을 하나씩 확인한다. 비어 있지 않음과 모든 원소가 어딘가에 속함은 반사성에서 나오고, 서로 다른 동치류가 겹치지 않음은 겹친다고 가정하면 [[equivalence-classes-equal-iff-related]]에 의해 두 동치류가 같아짐을 보여서 얻는다.
+분할의 세 조건을 하나씩 확인한다. 비어 있지 않음과 모든 원소가 어딘가에 속함은 반사성에서 나오고, 서로 다른 동치류가 겹치지 않음은 겹친다고 가정하면 [[equivalence-classes-equal-iff-related|두 동치류가 같을 조건에 관한 정리]]에 의해 두 동치류가 같아짐을 보여서 얻는다.
 :::
 
 :::hint
@@ -72,7 +72,7 @@ $[a]$의 정의에 의해 $A$의 원소 $x$에 대하여 $x \in [a]$인 것은 �
 
 **조건 3.** $X, Y$가 $\mathcal{C}$의 서로 다른 원소라 하자. $a, b \in A$가 있어 $X = [a]$, $Y = [b]$이다. $X \ne Y$이므로 $[a] \ne [b]$이다. $[a] \cap [b] = \emptyset$임을 보이기 위해 대우를 증명한다. 곧 $[a] \cap [b] \ne \emptyset$이면 $[a] = [b]$임을 보인다.
 
-$[a] \cap [b] \ne \emptyset$이라 하자. 교집합의 원소 $c$가 있다. $[a]$와 $[b]$는 $A$의 부분집합이므로 $c \in A$이다. $c \in [a]$이므로 $c R a$이고, $c \in [b]$이므로 $c R b$이다. $R$은 대칭적이고 $c, a \in A$이므로 $c R a$에서 $a R c$이다. $a R c$이고 $c R b$이며 $R$은 추이적이므로 $a R b$이다. [[equivalence-classes-equal-iff-related]]의 둘째 문장에 의해 $[a] = [b]$이다.
+$[a] \cap [b] \ne \emptyset$이라 하자. 교집합의 원소 $c$가 있다. $[a]$와 $[b]$는 $A$의 부분집합이므로 $c \in A$이다. $c \in [a]$이므로 $c R a$이고, $c \in [b]$이므로 $c R b$이다. $R$은 대칭적이고 $c, a \in A$이므로 $c R a$에서 $a R c$이다. $a R c$이고 $c R b$이며 $R$은 추이적이므로 $a R b$이다. [[equivalence-classes-equal-iff-related|두 동치류가 같을 조건에 관한 정리]]의 둘째 문장에 의해 $[a] = [b]$이다.
 
 이로써 대우가 증명되었으므로, $[a] \ne [b]$이면 $[a] \cap [b] = \emptyset$이다. 곧 $X \cap Y = \emptyset$이다.
 

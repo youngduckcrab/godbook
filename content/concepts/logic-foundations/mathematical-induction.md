@@ -22,7 +22,7 @@ added: 2026-11-16
 자연수 $n$마다 [[proposition]] $S_n$이 하나씩 있다고 하자. 곧 $S_n$은 자연수 $n$에 관한 [[open-sentence]]이고, 증명하려는 것은 $\forall n \in \mathbb{N},\ S_n$이다. 여기서 $\mathbb{N} = \{1, 2, 3, \dots\}$이다. **수학적 귀납법**(mathematical induction)의 틀은 다음과 같다.
 
 1. **기초 단계**(basis step): $S_1$이 참임을 보인다.
-2. **귀납 단계**(inductive step): 모든 자연수 $k$에 대하여 [[conditional-statement]] $S_k \Rightarrow S_{k+1}$이 참임을 보인다. 곧 $\forall k \in \mathbb{N},\ (S_k \Rightarrow S_{k+1})$를 증명한다. 보통 [[direct-proof]]를 쓴다. 임의의 자연수 $k$를 하나 잡고 $S_k$가 참이라고 **가정**(이를 **귀납 가정**(inductive hypothesis)이라 한다)한 뒤, 이로부터 $S_{k+1}$이 참임을 이끌어낸다.
+2. **귀납 단계**(inductive step): 모든 자연수 $k$에 대하여 [[conditional-statement]] $S_k \Rightarrow S_{k+1}$이 참임을 보인다. 곧 $\forall k \in \mathbb{N},\ (S_k \Rightarrow S_{k+1})$를 증명한다. 보통 [[direct-proof]]을 쓴다. 임의의 자연수 $k$를 하나 잡고 $S_k$가 참이라고 **가정**(이를 **귀납 가정**(inductive hypothesis)이라 한다)한 뒤, 이로부터 $S_{k+1}$이 참임을 이끌어낸다.
 3. 두 단계를 마치면 모든 자연수 $n$에 대하여 $S_n$이 참이라고 결론짓는다.
 
 **시작점이 다른 경우.** $m$이 정수이고 $n \ge m$인 정수 $n$마다 명제 $S_n$이 있을 때도 같은 틀을 쓴다. 기초 단계에서 $S_m$이 참임을 보이고, 귀납 단계에서 $k \ge m$인 모든 정수 $k$에 대하여 $S_k \Rightarrow S_{k+1}$이 참임을 보이면, $n \ge m$인 모든 정수 $n$에 대하여 $S_n$이 참이다. $m = 1$이면 위의 틀이다.
@@ -74,7 +74,7 @@ $$(k+1)^2 + (k+1) = k^2 + 2k + 1 + k + 1 = (k^2 + k) + 2(k+1) = 2a + 2(k+1) = 2\
 기초 단계와 귀납 단계에 의해 모든 자연수 $n$에 대하여 $n^2 + n$은 짝수이다. $\blacksquare$
 :::
 
-이 방법으로 증명한 더 긴 보기는 [[sum-of-first-odd-numbers]]와 [[bernoulli-inequality]]에서 볼 수 있습니다.
+이 방법으로 증명한 더 긴 보기는 [[sum-of-first-odd-numbers|홀수인 자연수 처음 n개의 합에 관한 정리]]와 [[bernoulli-inequality]]에서 볼 수 있습니다.
 
 :::counterexample[흔한 실수: 기초 단계를 빼먹기]
 $S_n$: "$n^2 + n$은 홀수이다"라는 문장을 생각합니다. 이 문장은 모든 자연수 $n$에서 거짓입니다. 그런데 귀납 단계만 보면 그럴듯하게 증명됩니다. $k^2 + k = 2a + 1$인 정수 $a$가 있다고 가정하면 $(k+1)^2 + (k+1) = (k^2 + k) + 2(k+1) = 2a + 1 + 2(k+1) = 2(a + k + 1) + 1$이므로 홀수입니다. 곧 모든 자연수 $k$에 대해 $S_k \Rightarrow S_{k+1}$은 **참**입니다.
