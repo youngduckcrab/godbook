@@ -14,7 +14,8 @@ sources:
     loc: 2.1.1절 Linear Equations Modulo n, p.24의 역원 설명과 Proposition 2.1.13 (Units), p.24. Proposition 2.1.15 (Solvability) 증명의 첫 문단, p.25. 2.3.1절 How to Solve ax ≡ 1 (mod n), Algorithm 2.3.8 (Inverse Modulo n), p.33–34, Example 2.3.9, p.34
     checked: original
     note: "Stein은 p.24에서 aa′ ≡ 1 (mod n)인 a′을 Z/nZ에서 a의 곱셈 역원이라 부른다. Proposition 2.1.13(p.24)은 gcd(a, n) = 1이면 ax ≡ b (mod n)의 해가 있고 법 n에 대해 유일하다고 일반의 b로 진술하며, 증명은 완전잉여계 R에 대해 aR도 완전잉여계라는 Lemma 2.1.12(증명이 원소의 개수 #aR = n에 기댄다)에서 나온다. 이 사이트에는 유한집합의 세기가 없으므로 따르지 않았고, 이 항목은 b = 1인 경우만 진술하며 존재는 베주 항등식으로, 유일성은 합동의 계산으로 직접 증명한다. 역 방향(역원이 있으면 gcd(a, n) = 1)을 Stein은 따로 진술하지 않는다. Proposition 2.1.15(p.25) 증명의 첫 문단의 논증(g | n, g | a이면 g | b)에 b = 1을 넣으면 g | 1이 나오며, 이 항목의 증명도 같은 발상이다. Algorithm 2.3.8(p.33)은 Algorithm 2.3.7로 ax + ny = 1인 x, y를 구하고 이 식을 n으로 줄이면 ax ≡ 1이라고 한다(증명은 p.34 첫머리). 이 항목의 (1)의 존재 증명이 그 생각이다. 이 사이트에는 Algorithm 2.3.7(확장 유클리드 호제법)에 해당하는 항목이 없으므로, 역원을 구하는 방법은 정리가 아니라 예시의 계산으로만 보였다. '역원'이라는 한국어 이름은 출처에 나오지 않는 이 사이트의 용어이고, 출처는 inverse라고 쓴다. 출처 Example 2.3.9(p.34)는 호제법의 각 나머지를 차례로 61과 17의 결합으로 적어 내려가고, 이 항목의 예시는 줄을 거꾸로 따라간다. 1을 두 수의 결합으로 쓰는 발상은 같다. 수(23, 100)와 반례의 수는 새로 골랐다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 2회 통과. 진술 틀과 인용 근거((Z1)–(Z5)), 출처 표기, 틀리게 읽히는 설명 문장을 보완했다."
 added: 2026-11-16
 ---
 

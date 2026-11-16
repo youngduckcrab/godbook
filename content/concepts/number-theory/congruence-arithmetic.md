@@ -18,7 +18,8 @@ sources:
     loc: 2.1절 Congruences Modulo n, Definition 2.1.4 (Integers Modulo n), p.22. 같은 절 p.23의 설명
     checked: original
     note: "Stein은 Z/nZ의 덧셈과 곱셈을 (a + nZ) + (b + nZ) = (a + b) + nZ, (a + nZ)·(b + nZ) = (ab) + nZ로 정의하고(p.22), 환을 아이디얼로 나눈 몫이어서 환의 구조가 따라온다고만 적는다(p.23). 이 정의가 대표의 선택과 무관하다는 것, 곧 합동식의 합·곱 계산이 가능하다는 것을 증명하는 문장은 이 쪽들에 없다(p.23에서 'arithmetic in Z/nZ is well defined'를 사실로 쓴다). 이 사이트는 환과 군의 언어를 쓰지 않고 합동 a ≡ b (mod n)의 언어로만 쓴다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 2회 통과. 진술 틀과 인용 근거((Z1)–(Z5)), 출처 표기, 틀리게 읽히는 설명 문장을 보완했다."
 added: 2026-11-16
 ---
 
@@ -133,7 +134,7 @@ $n = 2$로 두면 홀수 $a$에 대하여 $a = 2m + 1$인 정수 $m$이 있으�
 :::
 
 :::counterexample[나눗셈은 양립하지 않는다]
-$10 \equiv 4 \pmod 6$입니다. $10 - 4 = 6 = 6 \cdot 1$이기 때문입니다. 양변을 $2$로 나누면 $5$와 $2$인데, $5 - 2 = 3$이고 $3 = 6c$인 정수 $c$는 없습니다. [[prime-number]]의 (Z1)에 의해 정수 $c$는 $c \le 0$이거나 $c \ge 1$이고, $c \le 0$이면 (Z2)에 의해 $6c \le 0 < 3$, $c \ge 1$이면 (Z3)에 의해 $6c \ge 6 > 3$입니다. 따라서 $5 \not\equiv 2 \pmod 6$입니다. $2 \cdot 5 \equiv 2 \cdot 2 \pmod 6$에서 $2$를 지울 수 없습니다. 어떤 조건에서 지울 수 있는지는 뒤의 항목에서 다룹니다.
+$10 \equiv 4 \pmod 6$입니다. $10 - 4 = 6 = 6 \cdot 1$이기 때문입니다. 양변을 $2$로 나누면 $5$와 $2$인데, $5 - 2 = 3$이고 $3 = 6c$인 정수 $c$는 없습니다. [[well-ordering-principle]]의 (Z5)와 [[prime-number]]의 (Z1)에 의해 정수 $c$는 $c \le 0$이거나 $c \ge 1$이고, $c \le 0$이면 (Z2)에 의해 $6c \le 0 < 3$, $c \ge 1$이면 (Z3)에 의해 $6c \ge 6 > 3$입니다. 따라서 $5 \not\equiv 2 \pmod 6$입니다. $2 \cdot 5 \equiv 2 \cdot 2 \pmod 6$에서 $2$를 지울 수 없습니다. 어떤 조건에서 지울 수 있는지는 뒤의 항목에서 다룹니다.
 :::
 
 :::counterexample[지수에는 쓸 수 없다]

@@ -14,7 +14,8 @@ sources:
     loc: 2.1.1절 Linear Equations Modulo n, Proposition 2.1.10 (Cancellation), p.23
     checked: original
     note: "진술은 같다(출처는 gcd(c, n) = 1이고 ac ≡ bc (mod n)이면 a ≡ b (mod n)이라 적는다). 이 항목은 a, b, c가 정수이고 n이 자연수임을 밝혀 적었다. 출처의 증명은 n | ac − bc = (a − b)c를 쓰고 'Since gcd(n, c) = 1, it follows from Theorem 1.1.6 that n | a − b'(Theorem 1.1.6은 산술의 기본 정리)라고 한 줄로 넘어간다. 산술의 기본 정리에서 n | a − b가 어떻게 나오는지는 출처에 적혀 있지 않다. 이 항목은 소인수분해에 기대지 않고 서로소인 수에 관한 coprime-divides-product(베주 항등식에서 증명됨)를 쓴다. 증명 경로가 출처와 다르다. 반례와 예시, 확인 질문은 새로 만들었다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 2회 통과. 진술 틀과 인용 근거((Z1)–(Z5)), 출처 표기, 틀리게 읽히는 설명 문장을 보완했다."
 added: 2026-11-16
 ---
 
@@ -75,7 +76,7 @@ $n = 1$이면 모든 정수 쌍이 합동이므로 결론이 늘 참입니다. �
 :::
 
 :::counterexample[서로소가 아니면 깨진다]
-$n = 12$, $c = 4$, $a = 3$, $b = 0$이면 $ac = 12$, $bc = 0$이고 $12 - 0 = 12 = 12 \cdot 1$이므로 $3 \cdot 4 \equiv 0 \cdot 4 \pmod{12}$입니다. 그러나 $3 - 0 = 3$이고 $3 = 12m$인 정수 $m$이 없습니다. [[prime-number]]의 (Z1)에 의해 $m \le 0$이거나 $m \ge 1$이고, (Z2)에 의해 $m \le 0$이면 $12m \le 0 < 3$, (Z3)에 의해 $m \ge 1$이면 $12m \ge 12 > 3$이기 때문입니다. 따라서 $3 \not\equiv 0 \pmod{12}$입니다. $4$의 양의 약수는 $1, 2, 4$이고 $12$와 공통인 것은 $1, 2, 4$이므로 $\gcd(4, 12) = 4 \ne 1$입니다.
+$n = 12$, $c = 4$, $a = 3$, $b = 0$이면 $ac = 12$, $bc = 0$이고 $12 - 0 = 12 = 12 \cdot 1$이므로 $3 \cdot 4 \equiv 0 \cdot 4 \pmod{12}$입니다. 그러나 $3 - 0 = 3$이고 $3 = 12m$인 정수 $m$이 없습니다. [[well-ordering-principle]]의 (Z5)와 [[prime-number]]의 (Z1)에 의해 $m \le 0$이거나 $m \ge 1$이고, (Z2)에 의해 $m \le 0$이면 $12m \le 0 < 3$, (Z3)에 의해 $m \ge 1$이면 $12m \ge 12 > 3$이기 때문입니다. 따라서 $3 \not\equiv 0 \pmod{12}$입니다. $4$의 양의 약수는 $1, 2, 4$이고 $12$와 공통인 것은 $1, 2, 4$이므로 $\gcd(4, 12) = 4 \ne 1$입니다.
 
 증명이 막히는 곳은 마지막 단계입니다. $12 \mid 4 \cdot 3$이지만 $\gcd(12, 4) = 4$이므로 [[coprime-divides-product]]의 가정이 성립하지 않고, 실제로 $12 \nmid 3$입니다.
 :::
