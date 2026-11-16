@@ -26,6 +26,12 @@ $$A^c = U - A = \{x : x \in U \text{ 그리고 } x \notin A\}$$
 이다.
 :::
 
+:::english
+Fix a set $U$ containing all the objects under consideration, and call it the **universal set**. If a set $A$ is a subset of $U$ ($A \subseteq U$), the **complement** of $A$ is the set difference
+
+$$A^c = U - A = \{x : x \in U \text{ and } x \notin A\}.$$
+:::
+
 ## 직관
 
 "$A$에 속하지 않는 것 전부"를 모으고 싶을 때가 있습니다. 그런데 "짝수가 아닌 것 전부"라고만 하면 홀수뿐 아니라 $\tfrac12$, 삼각형, 함수까지 다 들어가 버립니다. 그래서 먼저 **어느 범위 안에서** 이야기하는지를 정해야 합니다. 그 범위가 전체집합 $U$입니다.

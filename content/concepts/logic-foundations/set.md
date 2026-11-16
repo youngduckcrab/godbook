@@ -30,6 +30,15 @@ added: 2026-11-16
 - 원소가 유한 개인 집합 $A$의 원소의 개수를 $|A|$로 쓴다.
 :::
 
+:::english
+A **set** is a collection of objects. Each object in a set is called an **element** of that set.
+
+- If $a$ is an element of a set $A$, we write $a \in A$; otherwise we write $a \notin A$.
+- Two sets are **equal** ($A = B$) if they have exactly the same elements.
+- The set with no elements is called the **empty set**, written $\emptyset$.
+- For a set $A$ with finitely many elements, the number of its elements is written $|A|$.
+:::
+
 ## 직관
 
 집합은 물건을 담은 상자와 비슷합니다. 다만 상자와 달리 **무엇이 들어 있는지**만 중요합니다. 어떤 순서로 넣었는지, 같은 것을 몇 번 적었는지는 따지지 않습니다. 그래서 $\{2, 4, 6, 8\} = \{4, 2, 8, 6\}$ 입니다.

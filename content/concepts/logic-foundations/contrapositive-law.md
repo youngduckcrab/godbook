@@ -26,6 +26,14 @@ $$(P \Rightarrow Q) \;\equiv\; \bigl((\lnot Q) \Rightarrow (\lnot P)\bigr)$$
 이다. 오른쪽 명제 $(\lnot Q) \Rightarrow (\lnot P)$를 [[conditional-statement]] $P \Rightarrow Q$의 **대우**(contrapositive)라 한다.
 :::
 
+:::english
+For statements $P$ and $Q$,
+
+$$(P \Rightarrow Q) \;\equiv\; \bigl((\lnot Q) \Rightarrow (\lnot P)\bigr).$$
+
+The statement on the right, $(\lnot Q) \Rightarrow (\lnot P)$, is called the **contrapositive** of the conditional statement $P \Rightarrow Q$.
+:::
+
 ## 직관
 
 "비가 오면 땅이 젖는다"가 참이라고 합시다. 그런데 땅이 젖어 있지 않다면? 비가 왔을 리 없습니다. 비가 왔다면 땅이 젖었을 것이기 때문입니다. 이것이 대우 "땅이 젖지 않았으면 비가 오지 않았다"입니다.

@@ -26,6 +26,14 @@ $A$와 $B$가 [[set]]일 때
 - **차집합**(difference): $A - B = \{x : x \in A \text{ 그리고 } x \notin B\}$
 :::
 
+:::english
+Let $A$ and $B$ be sets.
+
+- The **union** of $A$ and $B$: $A \cup B = \{x : x \in A \text{ or } x \in B\}$
+- The **intersection** of $A$ and $B$: $A \cap B = \{x : x \in A \text{ and } x \in B\}$
+- The **difference** of $A$ and $B$: $A - B = \{x : x \in A \text{ and } x \notin B\}$
+:::
+
 ## 직관
 
 수에 덧셈과 곱셈이 있듯이 집합에도 연산이 있습니다.

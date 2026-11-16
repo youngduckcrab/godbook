@@ -31,6 +31,19 @@ added: 2026-11-16
 이때 $P$를 **가정**(hypothesis), $Q$를 **결론**(conclusion)이라 한다.
 :::
 
+:::english
+For statements $P$ and $Q$, the **conditional statement** $P \Rightarrow Q$ ("if $P$, then $Q$") is the statement that is false only when $P$ is true and $Q$ is false, and true in the other three cases.
+
+| $P$ | $Q$ | $P \Rightarrow Q$ |
+|:---:|:---:|:---:|
+| $T$ | $T$ | $T$ |
+| $T$ | $F$ | $F$ |
+| $F$ | $T$ | $T$ |
+| $F$ | $F$ | $T$ |
+
+Here $P$ is called the **hypothesis** and $Q$ the **conclusion**.
+:::
+
 ## 직관
 
 $P \Rightarrow Q$를 **약속**으로 생각하면 표가 자연스러워집니다. 교수가 "기말시험에 합격하면 과목을 통과시켜 주겠다"고 약속했다고 합시다.

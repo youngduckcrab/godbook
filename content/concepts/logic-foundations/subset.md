@@ -23,6 +23,12 @@ $A$와 $B$가 [[set]]일 때, $A$의 **모든** 원소가 $B$의 원소이기도
 $A$가 $B$의 부분집합이 아니면 $A \nsubseteq B$로 쓴다. 이는 $A$의 원소 가운데 $B$의 원소가 아닌 것이 **적어도 하나** 있다는 뜻이다.
 :::
 
+:::english
+Let $A$ and $B$ be sets. If **every** element of $A$ is also an element of $B$, then $A$ is called a **subset** of $B$, and we write $A \subseteq B$. In other words, for every object $x$, the conditional statement "if $x \in A$, then $x \in B$" is true.
+
+If $A$ is not a subset of $B$, we write $A \nsubseteq B$. This means that **at least one** element of $A$ is not an element of $B$.
+:::
+
 ## 직관
 
 $A \subseteq B$는 "$A$가 $B$ 안에 통째로 들어 있다"는 말입니다. 정의의 둘째 문장처럼 조건문으로 읽을 수 있다는 점이 중요합니다. $x$가 $A$의 원소가 아닐 때는 조건문의 가정이 거짓이므로 따질 것이 없고, $x$가 $A$의 원소일 때만 실제로 확인할 일이 생깁니다.

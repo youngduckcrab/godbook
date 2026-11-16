@@ -25,6 +25,12 @@ $B$가 어떤 [[set]]이든 공집합은 $B$의 [[subset]]이다. 즉
 $$\emptyset \subseteq B.$$
 :::
 
+:::english
+For any set $B$, the empty set is a subset of $B$. That is,
+
+$$\emptyset \subseteq B.$$
+:::
+
 ## 직관
 
 $\emptyset \subseteq B$가 **거짓**이려면 무엇이 필요할까요? 공집합의 원소 가운데 $B$에 들어 있지 않은 것이 하나는 있어야 합니다. 그런데 공집합에는 원소가 아예 없습니다. 반례가 될 후보가 없으니 거짓일 수 없습니다.

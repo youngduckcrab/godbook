@@ -30,6 +30,13 @@ added: 2026-11-16
 2. $\lnot(P \lor Q) \equiv (\lnot P) \land (\lnot Q)$
 :::
 
+:::english
+For statements $P$ and $Q$, the following two logical equivalences hold.
+
+1. $\lnot(P \land Q) \equiv (\lnot P) \lor (\lnot Q)$
+2. $\lnot(P \lor Q) \equiv (\lnot P) \land (\lnot Q)$
+:::
+
 ## 직관
 
 첫째 법칙을 말로 풀어 봅시다. "$P$와 $Q$가 둘 다 참이다"가 **아니라는** 것은 무슨 뜻일까요? 둘 중 적어도 하나가 거짓이라는 뜻입니다. 즉 "$P$가 거짓이거나 $Q$가 거짓이다"입니다.
