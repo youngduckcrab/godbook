@@ -7,7 +7,7 @@ field: linear-algebra
 msc: ["15A03"]
 level: undergrad
 summary: 벡터공간의 두 부분공간 U, W의 합집합이 부분공간인 것은 정확히 한쪽이 다른 쪽에 포함될 때이다.
-requires: [set, subset, set-operations, proof-by-contradiction, vector-space, vector-space-basic-properties, subspace, subspace-intersection-and-sum, real-function-space, real-number-arithmetic]
+requires: [set, subset, set-operations, proof-by-contradiction, de-morgan-laws-logic, vector-space, vector-space-basic-properties, subspace, real-function-space, real-number-arithmetic]
 proof: full
 sources:
   - ref: treil-linear-algebra-done-wrong
@@ -30,7 +30,7 @@ Let $V$ be a vector space and let $U$ and $W$ be subspaces of $V$. The union $U 
 
 한쪽이 다른 쪽에 들어 있으면 합집합은 큰 쪽과 같으니 부분공간이라는 것은 당연합니다. 어려운 쪽은 반대입니다. 두 부분공간이 서로 상대방에 들어 있지 않으면, 한쪽에만 있는 벡터 $u$와 다른 쪽에만 있는 벡터 $w$가 하나씩 있습니다. 합집합이 부분공간이라면 $u + w$도 합집합에 있어야 하는데, 이것이 $U$에 있으면 $w$가 $U$에 있게 되고 $W$에 있으면 $u$가 $W$에 있게 되어 모순입니다.
 
-평면에서 원점을 지나는 두 직선을 생각하면 그림이 그려집니다. 두 직선이 서로 다르면, 한 직선 위의 벡터와 다른 직선 위의 벡터를 더한 결과는 두 직선 어디에도 없는 점입니다. 이 항목은 이것이 평면만의 일이 아니라고 말합니다. 한쪽이 다른 쪽에 들어 있지 않기만 하면 어느 벡터공간에서나 같은 일이 생깁니다.
+평면에서 원점을 지나는 두 직선을 생각하면 그림이 그려집니다. 영벡터 $(0, 0)$을 원점이라 부르면, 원점을 지나는 서로 다른 두 직선에서 원점이 아닌 벡터를 하나씩 골라 더하면 두 직선 어디에도 없는 점이 나옵니다. 이 항목은 이것이 평면만의 일이 아니라고 말합니다. 한쪽에만 있는 벡터를 하나씩 고를 수 있으면(곧 한쪽이 다른 쪽에 들어 있지 않으면) 어느 벡터공간에서나 같은 일이 생깁니다.
 
 ## 증명
 
@@ -49,7 +49,7 @@ $u + w \in U$라 하면 $w = (u + w) + (-u)$로 쓸 수 있습니다. 이 식이
 :::proof
 **($\Leftarrow$)** $U \subseteq W$라 하자. $x \in U \cup W$이면 $x \in U$이거나 $x \in W$인데, $x \in U$이면 $U \subseteq W$에 의해 $x \in W$이다. 어느 경우든 $x \in W$이므로 $U \cup W \subseteq W$이다. 거꾸로 $W \subseteq U \cup W$는 합집합의 정의에서 나오므로 $U \cup W = W$이다. $W$는 부분공간이므로 $U \cup W$도 부분공간이다. $W \subseteq U$인 경우는 $U$와 $W$의 역할을 바꾸면 같은 논증이 $U \cup W = U$를 준다.
 
-**($\Rightarrow$)** $U \cup W$가 부분공간이라 하고, $U \nsubseteq W$이고 $W \nsubseteq U$라고 가정하여 모순을 보인다([[proof-by-contradiction|귀류법]]).
+**($\Rightarrow$)** $U \cup W$가 부분공간이라 하고, 결론의 부정을 가정하여 모순을 보인다([[proof-by-contradiction|귀류법]]). "$U \subseteq W$이거나 $W \subseteq U$"의 부정은 [[de-morgan-laws-logic|드 모르간 법칙]]에 의해 "$U \nsubseteq W$이고 $W \nsubseteq U$"이다.
 
 **보조 주장.** $X$가 $V$의 부분공간이고 $x \in X$, $v \in V$, $v \notin X$이면 $x + v \notin X$이다. 이를 보이기 위해 $x + v \in X$라 하자. [[subspace]]의 (S3)에 의해 $(-1)x \in X$이고 [[vector-space-basic-properties|(B5)]]에 의해 $(-1)x = -x$이다. (S2)를 $x + v$와 $-x$에 적용하면 $(x + v) + (-x) \in X$이다. 그런데
 $$(x + v) + (-x) = (v + x) + (-x) = v + (x + (-x)) = v + 0_V = v$$
@@ -65,7 +65,7 @@ $V$의 부분공간 $W$와 $U = \{0_V\}$를 잡으면 [[subspace]]의 (P4)에 �
 :::
 
 :::counterexample[ℝ²의 두 좌표축]
-$U = \{x \in \mathbb{R}^2 : x_1 = 0\}$, $W = \{x \in \mathbb{R}^2 : x_2 = 0\}$이라 합시다. 둘 다 부분공간입니다. [[subspace-intersection-and-sum|교집합과 합]]의 예와 같이 (S1)–(S3)을 값마다 확인하면 되기 때문입니다. 영벡터의 첫째 값은 $0$이고, 첫째 값이 $0$인 두 벡터의 합과 실수배의 첫째 값도 $0$입니다((K4), (K9)). $(0, 1) \in U$인데 둘째 값이 $1 \ne 0$이므로 $(0, 1) \notin W$이고, $(1, 0) \in W$인데 첫째 값이 $1 \ne 0$이므로 $(1, 0) \notin U$입니다((K4)). 따라서 $U \nsubseteq W$이고 $W \nsubseteq U$입니다. 합 $(0, 1) + (1, 0) = (0 + 1, 1 + 0) = (1, 1)$((K1), (K4))의 첫째 값도 둘째 값도 $1 \ne 0$이므로 $(1, 1) \notin U \cup W$입니다. $(0, 1)$과 $(1, 0)$은 $U \cup W$의 원소이므로 $U \cup W$는 덧셈에 닫혀 있지 않아 부분공간이 아닙니다. 증명의 ($\Rightarrow$)에서 $u + w \notin U \cup W$를 이끌어 낸 계산이 $u = (0, 1)$, $w = (1, 0)$일 때 실제로 일어난 것입니다.
+$U = \{x \in \mathbb{R}^2 : x_1 = 0\}$, $W = \{x \in \mathbb{R}^2 : x_2 = 0\}$이라 합시다. 둘 다 부분공간입니다. (S1)–(S3)을 값마다 확인하면 되기 때문입니다. $U$의 경우, 영벡터의 첫째 값은 $0$이고, 첫째 값이 $0$인 두 벡터의 합과 스칼라배의 첫째 값도 $0$입니다((K4), (K9)). $W$도 둘째 값에 대해 같습니다. $(0, 1) \in U$인데 둘째 값이 $1 \ne 0$이므로 $(0, 1) \notin W$이고, $(1, 0) \in W$인데 첫째 값이 $1 \ne 0$이므로 $(1, 0) \notin U$입니다((K4)). 따라서 $U \nsubseteq W$이고 $W \nsubseteq U$입니다. 합 $(0, 1) + (1, 0) = (0 + 1, 1 + 0) = (1, 1)$((K1), (K4))의 첫째 값도 둘째 값도 $1 \ne 0$이므로 $(1, 1) \notin U \cup W$입니다. $(0, 1)$과 $(1, 0)$은 $U \cup W$의 원소이므로 $U \cup W$는 덧셈에 닫혀 있지 않아 부분공간이 아닙니다. 증명의 ($\Rightarrow$)에서 $u + w \notin U \cup W$를 이끌어 낸 계산이 $u = (0, 1)$, $w = (1, 0)$일 때 실제로 일어난 것입니다.
 :::
 
 ## 확인 질문
@@ -75,5 +75,5 @@ $U = \{x \in \mathbb{R}^2 : x_1 = 0\}$, $W = \{x \in \mathbb{R}^2 : x_2 = 0\}$�
 :::
 
 :::check[$U$, $W$가 $V$의 부분공간이고 $U \cup W = V$이면 $U = V$이거나 $W = V$인가?]
-그렇습니다. $U \cup W = V$는 부분공간이므로 정리에 의해 $U \subseteq W$이거나 $W \subseteq U$입니다. $U \subseteq W$이면 $V = U \cup W = W$이고, $W \subseteq U$이면 $V = U$입니다.
+그렇습니다. $U \cup W = V$는 [[subspace]]의 (P4)에 의해 $V$의 부분공간이므로 정리에 의해 $U \subseteq W$이거나 $W \subseteq U$입니다. $U \subseteq W$이면 $V = U \cup W = W$이고, $W \subseteq U$이면 $V = U$입니다.
 :::

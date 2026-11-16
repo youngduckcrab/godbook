@@ -6,7 +6,7 @@ kind: definition
 field: linear-algebra
 msc: ["15A03"]
 level: undergrad
-summary: 벡터공간 V의 부분집합 W가 부분공간인 것은 정확히 영벡터를 포함하고 덧셈과 스칼라배에 닫혀 있을 때이다. 이때 W는 V의 연산을 제한한 것으로 그 자체가 벡터공간이고, 판정 조건은 더 줄여 쓸 수 있다.
+summary: 벡터공간 V의 부분집합 W가 부분공간인 것은 정확히 영벡터를 포함하고 덧셈과 스칼라배에 닫혀 있을 때이다. 이때 W는 V의 연산을 제한한 것으로 그 자체가 벡터공간이고, 판정 조건은 더 줄여 쓸 수 있으며, W 안의 부분공간은 V의 부분공간과 같다.
 requires: [set, subset, function, cartesian-product, real-number-arithmetic, vector-space, vector-space-basic-properties, real-function-space]
 sources:
   - ref: treil-linear-algebra-done-wrong
@@ -32,6 +32,7 @@ $W$가 $V$의 **부분공간**(subspace)인 것은 정확히 다음 (S1)–(S3)�
 - (P2) $W$가 (S2)와 (S3)을 만족한다고 하자. 이때 $W$가 부분공간인 것은 정확히 $W \ne \emptyset$일 때이다. 곧 (S1)을 "$W$는 공집합이 아니다"로 바꿔도 같은 정의이다.
 - (P3) $W$가 부분공간인 것은 정확히 다음 두 조건이 모두 성립할 때이다. (S1′) $W \ne \emptyset$이다. (S4) 모든 $u$, $v \in W$와 모든 실수 $\alpha$, $\beta$에 대하여 $\alpha u + \beta v \in W$이다. ($u$와 $v$가 같은 원소여도 된다.)
 - (P4) $\{0_V\}$와 $V$는 $V$의 부분공간이다. 공집합은 부분공간이 아니다.
+- (P5) $W$가 $V$의 부분공간이고 $U \subseteq W$라 하자. 이때 $U$가 (P1)의 벡터공간 $W$의 부분공간인 것은 정확히 $U$가 $V$의 부분공간일 때이다.
 :::
 
 :::english
@@ -49,13 +50,14 @@ The following four statements hold.
 - (P2) Suppose $W$ satisfies (S2) and (S3). Then $W$ is a subspace exactly when $W \ne \emptyset$. That is, (S1) may be replaced by "$W$ is not empty" without changing the definition.
 - (P3) $W$ is a subspace exactly when both of the following hold. (S1′) $W \ne \emptyset$. (S4) For all $u$, $v \in W$ and all real numbers $\alpha$, $\beta$, we have $\alpha u + \beta v \in W$. ($u$ and $v$ may be the same element.)
 - (P4) $\{0_V\}$ and $V$ are subspaces of $V$. The empty set is not a subspace.
+- (P5) Let $W$ be a subspace of $V$ and let $U \subseteq W$. Then $U$ is a subspace of the vector space $W$ of (P1) exactly when $U$ is a subspace of $V$.
 :::
 
 ## 직관
 
 벡터공간에서는 벡터끼리 더하고 실수를 곱할 수 있습니다. 부분공간은 이 두 연산을 아무리 되풀이해도 **밖으로 나가지 않는** 부분집합입니다. 울타리를 친 놀이터에서 정해진 규칙대로만 움직이면 울타리 밖으로 나갈 수 없을 때, 그 놀이터는 그 자체로 하나의 작은 놀이터로 쓸 수 있습니다. (P1)이 말하는 것이 이것입니다. 연산을 제한해도 여덟 법칙은 그대로 남고, 새로 확인할 것은 영벡터와 덧셈 역원이 울타리 안에 있는지뿐인데, 그것은 (S1)과 (S3)이 보장합니다.
 
-비유가 어긋나는 곳이 있습니다. 놀이터는 어디에 쳐도 되지만 부분공간은 영벡터를 반드시 포함해야 합니다. 평면 $\mathbb{R}^2$에서 그림으로 생각하면 원점을 지나는 직선은 부분공간이지만 원점을 지나지 않는 직선은 아닙니다. (S1)은 (S3)에서 따라 나오는 것처럼 보이기도 합니다. $\alpha = 0$으로 두면 $0v = 0_V$가 나오기 때문입니다. 다만 그러려면 $W$에 벡터가 적어도 하나 있어야 하므로, (S1)을 "공집합이 아니다"로 바꿔도 같다는 것이 (P2)입니다. 공집합은 (S2)와 (S3)을 공허하게 만족하지만 영벡터가 없어서 부분공간이 아닙니다.
+비유가 어긋나는 곳이 있습니다. 놀이터는 어디에 쳐도 되지만 부분공간은 영벡터를 반드시 포함해야 합니다. 평면 $\mathbb{R}^2$를 그림으로 그리면 영벡터 $(0, 0)$이 원점입니다. 아래 예시의 $L$(곧 $\{(t, 2t) : t \in \mathbb{R}\}$)처럼 원점을 지나는 직선 모양의 집합은 부분공간이고, 반례의 $M$처럼 원점을 지나지 않는 것은 부분공간이 아닙니다. 이 그림은 이해를 돕는 비유일 뿐이고 증명에 쓰이지 않습니다. (S1)은 (S3)에서 따라 나오는 것처럼 보이기도 합니다. $\alpha = 0$으로 두면 $0v = 0_V$가 나오기 때문입니다. 다만 그러려면 $W$에 벡터가 적어도 하나 있어야 하므로, (S1)을 "공집합이 아니다"로 바꿔도 같다는 것이 (P2)입니다. 공집합은 (S2)와 (S3)을 공허하게 만족하지만 영벡터가 없어서 부분공간이 아닙니다.
 
 (S4)는 두 조건 (S2), (S3)을 한 줄로 합친 것입니다. 한 줄로 쓰면 확인할 것이 줄지만 $\alpha u + \beta v$에 $\alpha$, $\beta$를 바꿔 넣어 보는 한 단계가 더 필요합니다. $\alpha = \beta = 1$이면 덧셈, $\beta = 0$이면 스칼라배가 됩니다.
 
@@ -67,6 +69,8 @@ The following four statements hold.
 **(P3)의 증명.** ($\Rightarrow$) $W$가 부분공간이라 하자. (S1)에 의해 $0_V \in W$이므로 $W \ne \emptyset$이다. $u$, $v \in W$이고 $\alpha$, $\beta$가 실수이면 (S3)에 의해 $\alpha u \in W$이고 $\beta v \in W$이며, (S2)를 이 두 원소에 적용하면 $\alpha u + \beta v \in W$이다. ($\Leftarrow$) $W \ne \emptyset$이고 (S4)가 성립한다고 하자. 먼저 (S3)을 보인다. $v \in W$이고 $\alpha$가 실수이면 (S4)에서 $u = v$, $\beta = 0$으로 두어 $\alpha v + 0v \in W$를 얻는다. [[vector-space-basic-properties|(B3)]]에 의해 $0v = 0_V$이고, $0_V$는 영벡터이므로 $\alpha v + 0_V = \alpha v$이다. 따라서 $\alpha v \in W$이다. 다음으로 (S2)를 보인다. $u$, $v \in W$이면 (S4)에서 $\alpha = \beta = 1$로 두어 $1u + 1v \in W$를 얻고, [[vector-space|(V5)]]에 의해 $1u = u$, $1v = v$이므로 $u + v \in W$이다. 이제 $W$는 (S2), (S3)을 만족하고 공집합이 아니므로 (P2)에 의해 부분공간이다.
 
 **(P4)의 증명.** $\{0_V\}$: (S1)은 $0_V \in \{0_V\}$이다. (S2): $u$, $v \in \{0_V\}$이면 $u = v = 0_V$이고, $0_V$가 영벡터이므로 $0_V + 0_V = 0_V$이다(영벡터의 정의 "모든 $x$에서 $x + 0_V = x$"에서 $x = 0_V$). 따라서 $u + v = 0_V \in \{0_V\}$이다. (S3): $v \in \{0_V\}$이면 $v = 0_V$이고 [[vector-space-basic-properties|(B4)]]에 의해 $\alpha v = \alpha 0_V = 0_V \in \{0_V\}$이다. $V$: $0_V \in V$이고, $V$의 두 연산이 $V$의 원소를 값으로 가지므로([[vector-space|벡터공간의 정의]]에서 덧셈과 스칼라배는 $V \times V$, $\mathbb{R} \times V$에서 $V$로의 함수이다) (S2), (S3)이 성립한다. 공집합: $0_V \in \emptyset$은 거짓이므로 (S1)이 성립하지 않는다.
+
+**(P5)의 증명.** $W$가 부분공간이므로 (P1)에 의해 $W$는 제한한 연산 $+_W$, $\cdot_W$에 관하여 벡터공간이고, 그 영벡터는 $0_V$이며 $+_W$, $\cdot_W$의 값은 $V$에서의 값과 같다. $U \subseteq W$라 하자. 벡터공간 $W$의 부분집합 $U$가 $W$의 부분공간인 것은 (S1)–(S3)을 $W$에서 쓴 다음 세 조건이 성립할 때이다. (i) $W$의 영벡터 $0_V$가 $U$의 원소이다. (ii) $u$, $v \in U$이면 $u +_W v \in U$이다. (iii) $v \in U$이고 $\alpha$가 실수이면 $\alpha \cdot_W v \in U$이다. $u +_W v = u + v$이고 $\alpha \cdot_W v = \alpha v$이므로 (i)–(iii)은 $V$에서의 (S1)–(S3)과 글자 그대로 같은 조건이다. 따라서 $U$가 $W$의 부분공간인 것은 정확히 $U$가 $V$의 부분공간일 때이다.
 
 **(P1)의 증명.** $W$가 부분공간이라 하자. 함수 $+_W$, $\cdot_W$가 있다는 것과 값이 $V$에서의 값과 같다는 것은 진술에서 보였다. $W$의 원소는 $V$의 원소이고 $+_W$, $\cdot_W$의 값은 $V$에서의 합과 스칼라배이므로, $W$의 원소 $u$, $v$, $w$와 실수 $\alpha$, $\beta$에 대하여 각 법칙의 양변을 $W$의 연산으로 계산한 값은 $V$의 연산으로 계산한 값과 같다. 예를 들어 $(u +_W v) +_W w$는 $V$의 원소 $(u + v) + w$이고 $u +_W (v +_W w)$는 $u + (v + w)$이다. 그러므로 $V$에서 성립하는 법칙은 같은 식으로 $W$에서 성립한다.
 
@@ -106,6 +110,6 @@ $M = \{x \in \mathbb{R}^2 : x_1 + x_2 = 1\}$이라 합시다. $\mathbb{R}^2$의 
 그렇습니다. $u - v$는 $u + (-v)$이고, [[vector-space-basic-properties|(B5)]]에 의해 $-v = (-1)v$입니다. (S3)에서 $(-1)v \in W$이므로 (S2)를 $u$와 $(-1)v$에 적용하면 $u + (-v) \in W$입니다.
 :::
 
-:::check[$\mathbb{R}^2$의 부분집합 $D = \{x \in \mathbb{R}^2 : x_1 = x_2\}$는 부분공간인가?]
-그렇습니다. (S1): $0 = 0$이므로 $(0, 0) \in D$입니다. (S2): $x$, $y \in D$이면 $x_1 = x_2$, $y_1 = y_2$이므로 $x_1 + y_1 = x_2 + y_2$이고 $x + y \in D$입니다. (S3): $x \in D$이면 $\alpha x_1 = \alpha x_2$이므로 $\alpha x \in D$입니다.
+:::check[$\mathbb{R}^2$의 부분집합 $A = \{x \in \mathbb{R}^2 : x_1 x_2 = 0\}$은 부분공간인가?]
+아닙니다. $(1, 0) \in A$이고($1 \cdot 0 = 0$) $(0, 1) \in A$이지만($0 \cdot 1 = 0$, (K9)), 합 $(1, 0) + (0, 1) = (1, 1)$에서 $1 \cdot 1 = 1 \ne 0$이므로((K4)) $(1, 1) \notin A$입니다. (S2)가 성립하지 않습니다.
 :::
