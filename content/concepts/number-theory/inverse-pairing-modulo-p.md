@@ -14,7 +14,8 @@ sources:
     loc: 2.1.3절 Wilson's Theorem, Proposition 2.1.22의 증명, p.28 (줄 1340–1347의 "has a unique solution a′ ∈ {1, 2, …, p − 1}"과 짝짓기 단락)
     checked: original
     note: "출처는 윌슨 정리의 증명 안에서 '각 a ∈ {1, …, p − 1}에 대해 ax ≡ 1 (mod p)는 {1, …, p − 1} 안에 유일한 해 a′을 갖는다'고 쓰고 유일성의 근거를 적지 않는다(같은 책의 Proposition 2.1.13이 그 내용이고, 그 증명은 완전잉여계의 원소 개수를 센다). a = a′이면 a² ≡ 1이고 p | (a − 1)(a + 1)이므로 a ∈ {1, p − 1}이라고 적고, p | (a − 1)(a + 1)에서 p | (a − 1) 또는 p | (a + 1)로 넘어가는 것은 근거 없이 쓴다(유클리드 보조정리의 내용). 이 항목은 (1)–(3)을 이 사이트의 도구로 증명했다. 존재는 inverse-modulo-n의 1과 coprime-to-modulus의 4로, 유일성은 inverse-modulo-n의 2와 coprime-to-modulus의 5로 보이므로 세기를 쓰지 않는다. (a′)′ = a는 출처에 쓰여 있지 않고 이 사이트가 유일성에서 끌어냈다. 출처는 'We can thus pair off the elements of {2, 3, …, p − 2}, each with their inverse. Thus 2·3·…·(p − 2) ≡ 1 (mod p)'로 짝지은 곱이 1과 합동이라는 것을 한 줄로 넘어간다. 이 항목의 (4)가 그 단계를 원소의 개수에 대한 강한 귀납법으로 증명한 것이고 출처에는 없다. 예시와 반례의 수(p = 11, 13, 법 8)는 출처의 예(p = 17, Example 2.1.23)와 다르게 새로 골랐다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 3회 통과. 출처 메모의 틀린 서술, 예 하나에서 넘겨짚은 일반화, 가정이 쓰이는 단계에 관한 설명, 인용 근거를 보완했다."
 added: 2026-11-16
 ---
 

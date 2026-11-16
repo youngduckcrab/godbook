@@ -14,7 +14,8 @@ sources:
     loc: 2.1.2절 Euler's Theorem, Theorem 2.1.20, 진술 p.26, 증명 p.26–27 (군을 쓰지 않는 'elementary proof'는 p.27)
     checked: original
     note: "진술은 같다(출처는 gcd(x, n) = 1이면 x^ϕ(n) ≡ 1 (mod n)이라 적고, n이 자연수이고 x가 정수임은 문맥에서 읽힌다). 출처는 증명을 둘 준다. 하나는 (Z/nZ)*의 위수가 ϕ(n)이라는 것과 라그랑주 정리를 쓰는 군론적 증명이고 이 사이트는 따르지 않는다. 다른 하나(p.27)는 P = {a : 1 ≤ a ≤ n and gcd(a, n) = 1}에 대해 ∏_{a∈P}(xa) ≡ ∏_{a∈P} a를 'the products are over the same numbers modulo n'이라고만 쓰고 'cancel the a's'로 x^{#P} ≡ 1을 얻는다. 이 항목의 증명은 같은 발상이고 출처가 넘어간 곳을 메웠다. 곱이 나열의 순서에 상관없다는 것과 합동인 인수끼리의 곱의 합동은 multiplication-permutes-reduced-residues의 3(재배열 정리 포함)에서, ∏(xa) = x^{#P}·∏a는 finite-product-of-products의 2에서, 소거해도 되는 근거(곱 ∏a가 n과 서로소)는 coprime-to-modulus의 3에서, 소거는 congruence-cancellation에서 가져온다(출처는 소거의 근거를 쓰지 않는다). 출처는 #P = ϕ(n)이라고만 쓰고, 이 항목은 ϕ(n) ≥ 1이어서 거듭제곱이 뜻을 갖는다는 것을 euler-phi-function의 2로 밝힌다. 출처가 다루지 않는 n = 1은 따로 한 줄로 보인다. 원소의 위수는 이 항목에서 쓰지 않는다. 출처의 예(SAGE Example 2.1.21의 n = 20, Example 2.3.14의 7^91)는 쓰지 않았고 예시, 반례, 확인 질문의 수는 새로 골랐다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-16 독립 검토 3회 통과. 출처 메모의 틀린 서술, 예 하나에서 넘겨짚은 일반화, 가정이 쓰이는 단계에 관한 설명, 인용 근거를 보완했다."
 added: 2026-11-16
 ---
 
@@ -34,7 +35,7 @@ Here $\varphi(n)$ is Euler's phi function, and since $\varphi(n) \ge 1$ it is a 
 
 ## 직관
 
-시계의 눈금이 $n$칸이라 하고, 법 $n$과 서로소인 눈금 $a$만 모아 둡니다. 각 눈금 $a$를 $xa$의 눈금으로 옮기는 동작(곱하기 $x$)을 생각합시다. $x$가 $n$과 서로소이면 이 동작은 모아 둔 눈금들을 서로 바꾸기만 합니다([[multiplication-permutes-reduced-residues]]). 모아 둔 눈금이 $\varphi(n)$개이므로, 옮긴 눈금을 모두 곱한 수는 처음 눈금을 모두 곱한 수와 합동이고, 왼쪽에는 $x$가 $\varphi(n)$번 묶여 나옵니다. 그 묶음을 양변에서 지우면 $x$의 $\varphi(n)$제곱이 $1$과 합동이라는 결론이 남습니다. 이 비유가 맞아떨어지는 곳은 "곱하면 순서만 바뀌어서 전체의 곱이 변하지 않는다"는 점이고, 맞지 않는 곳은 더 작은 지수로도 $1$이 될 수 있다는 점입니다. 예를 들어 $4^3 = 64$이고 $64 - 1 = 63 = 9 \cdot 7$이므로 $4^3 \equiv 1 \pmod 9$인데 $\varphi(9) = 6$입니다. 이 정리는 $\varphi(n)$제곱이 $1$과 합동이라고만 말할 뿐 가장 작은 지수는 말하지 않습니다.
+시계의 눈금이 $n$칸이라 하고, 법 $n$과 서로소인 눈금 $a$만 모아 둡니다. 각 눈금 $a$를 $xa$의 눈금으로 옮기는 동작(곱하기 $x$)을 생각합시다. $x$가 $n$과 서로소이면 이 동작은 모아 둔 눈금들을 서로 바꾸기만 합니다([[multiplication-permutes-reduced-residues]]). 모아 둔 눈금이 $\varphi(n)$개이므로, 각 눈금에 $x$를 곱한 수 $xa$를 모두 곱하면 처음 눈금을 모두 곱한 수와 합동이고, 그 왼쪽에는 $x$가 $\varphi(n)$번 묶여 나옵니다. 그 묶음을 양변에서 지우면 $x$의 $\varphi(n)$제곱이 $1$과 합동이라는 결론이 남습니다. 이 비유가 맞아떨어지는 곳은 "곱하면 순서만 바뀌어서 전체의 곱이 변하지 않는다"는 점이고, 맞지 않는 곳은 더 작은 지수로도 $1$이 될 수 있다는 점입니다. 예를 들어 $4^3 = 64$이고 $64 - 1 = 63 = 9 \cdot 7$이므로 $4^3 \equiv 1 \pmod 9$인데 $\varphi(9) = 6$입니다. 이 정리는 $\varphi(n)$제곱이 $1$과 합동이라고만 말할 뿐 가장 작은 지수는 말하지 않습니다.
 
 $x$가 $n$과 서로소여야 한다는 조건은 [[multiplication-permutes-reduced-residues]]의 3을 쓰는 단계에서 쓰입니다. 마지막 소거에 필요한 것은 $P_n$의 원소들의 곱이 $n$과 서로소라는 것이고, 이는 $x$와 상관없이 [[coprime-to-modulus|법과 서로소인 수의 성질]]의 3에서 나옵니다. 지수 $\varphi(n)$ 자리에 $n - 1$을 넣은 것은 합성수 $9$에서 성립하지 않습니다. 반례에서 봅니다.
 
