@@ -1,0 +1,9 @@
+type: book
+authors: [Sergei Treil]
+title: Linear Algebra Done Wrong
+edition: 2021년 1월 11일 PDF (책 안에는 판 표시가 없다. 날짜는 파일 이름 LADW_2021_01-11.pdf 와 PDF 생성일에서 확인)
+year: 2017
+url: https://www.math.brown.edu/streil/papers/LADW/LADW_2021_01-11.pdf
+access: open
+license: CC BY-NC-ND 3.0
+note: 저자가 PDF 전체를 무료로 공개한다. 표지에는 저자의 소속(Department of Mathematics, Brown University)만 있고 출판사 표시는 없다. 판권면(PDF 2쪽)에 "Copyright © Sergei Treil, 2004, 2009, 2011, 2014, 2017"과 Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported 라이선스가 적혀 있어 year 는 판권면의 마지막 연도를 적었다. 쪽수는 책에 인쇄된 쪽 번호이며, 본문(아라비아 숫자 쪽)에서 PDF 파일의 쪽 번호는 여기에 10을 더한 값이다. 서문과 차례는 로마 숫자 쪽(iii–ix)이다. 스칼라는 실수 또는 복소수이며(1장 1절, p.2), 차원에 관한 사실은 2장에서 행 소거의 피벗을 세어 증명한다.
