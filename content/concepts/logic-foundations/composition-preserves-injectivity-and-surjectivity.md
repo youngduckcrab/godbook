@@ -19,7 +19,7 @@ added: 2026-11-16
 ---
 
 :::statement
-$f : A \to B$와 $g : B \to C$가 [[function]]이라 하자. 곧 $f$의 공역과 $g$의 정의역이 같은 $B$이다. 그러면 [[function-composition]] $g \circ f : A \to C$에 대하여 다음이 성립한다.
+$f : A \to B$와 $g : B \to C$가 [[function]]라 하자. 곧 $f$의 공역과 $g$의 정의역이 같은 $B$이다. 그러면 [[function-composition|합성]] $g \circ f : A \to C$에 대하여 다음이 성립한다.
 
 1. $f$와 $g$가 모두 단사이면 $g \circ f$는 단사이다.
 2. $f : A \to B$와 $g : B \to C$가 모두 전사이면 $g \circ f : A \to C$는 전사이다.
@@ -38,7 +38,7 @@ Let $f : A \to B$ and $g : B \to C$ be functions; that is, the codomain of $f$ a
 
 조립 라인 비유([[function-composition]])로 보면, 첫째 공정이 서로 다른 부품을 서로 다른 중간 제품으로 보내고, 둘째 공정도 서로 다른 중간 제품을 서로 다른 최종 제품으로 보내면, 라인 전체도 서로 다른 부품을 서로 다른 최종 제품으로 보냅니다. 또 첫째 공정이 중간 제품을 빠짐없이 만들고 둘째 공정이 최종 제품을 빠짐없이 만들면, 라인 전체도 최종 제품을 빠짐없이 만듭니다. 비유가 놓치는 점은 "빠짐없이"가 선언한 공역에 대한 말이라는 것입니다. 이 정리는 첫째 공정의 공역이 둘째 공정의 정의역과 같은 경우에만 전사를 말하며, 아래 반례에서 이 조건이 빠지면 거짓이 되는 것을 봅니다.
 
-증명은 두 부분 모두 정의를 순서대로 따라가는 것입니다. 단사는 $g$를 먼저 거꾸로 풀고 그다음 $f$를 거꾸로 풀며, 전사는 $c$에서 시작해 $g$로 $b$를 찾고 $f$로 $a$를 찾습니다.
+증명은 (1)과 (2) 모두 정의를 순서대로 따라가는 것입니다. 단사는 $g$를 먼저 거꾸로 풀고 그다음 $f$를 거꾸로 풀며, 전사는 $c$에서 시작해 $g$로 $b$를 찾고 $f$로 $a$를 찾습니다.
 
 ## 증명
 
@@ -55,9 +55,9 @@ Let $f : A \to B$ and $g : B \to C$ be functions; that is, the codomain of $f$ a
 :::
 
 :::proof
-**(1)** $f$와 $g$가 단사라 하자. [[injective-surjective-bijective]]의 진술에 의해 $g \circ f$가 단사인 것은 모든 $a, a' \in A$에 대하여 $(g \circ f)(a) = (g \circ f)(a')$이면 $a = a'$인 것과 같으므로 이를 보인다. $a, a' \in A$이고 $(g \circ f)(a) = (g \circ f)(a')$라 하자. [[function-composition]]의 진술에 의해 $g(f(a)) = g(f(a'))$이다. $f(a), f(a') \in B$이고 $g$가 단사이므로, 단사의 동치 꼴에 의해 $f(a) = f(a')$이다. $f$가 단사이므로 같은 동치 꼴에 의해 $a = a'$이다. 따라서 $g \circ f$는 단사이다.
+**(1)** $f$와 $g$가 단사라 하자. [[injective-surjective-bijective|단사의 정의]]에 의해 $g \circ f$가 단사인 것은 모든 $a, a' \in A$에 대하여 $(g \circ f)(a) = (g \circ f)(a')$이면 $a = a'$인 것과 같으므로 이를 보인다. $a, a' \in A$이고 $(g \circ f)(a) = (g \circ f)(a')$라 하자. [[function-composition]]의 진술에 의해 $g(f(a)) = g(f(a'))$이다. $f(a), f(a') \in B$이고 $g$가 단사이므로, 단사의 동치 꼴에 의해 $f(a) = f(a')$이다. $f$가 단사이므로 같은 동치 꼴에 의해 $a = a'$이다. 따라서 $g \circ f$는 단사이다.
 
-**(2)** $f : A \to B$와 $g : B \to C$가 전사라 하자. $g \circ f : A \to C$가 전사임을 보이려면 모든 $c \in C$에 대하여 $(g \circ f)(a) = c$인 $a \in A$가 있음을 보이면 된다. $c \in C$라 하자. $g$가 전사이므로 $g(b) = c$인 $b \in B$가 있다. $f$가 전사이므로 $f(a) = b$인 $a \in A$가 있다. 그러면 $(g \circ f)(a) = g(f(a)) = g(b) = c$이다. 따라서 $g \circ f : A \to C$는 전사이다.
+**(2)** $f : A \to B$와 $g : B \to C$가 전사라 하자. $g \circ f : A \to C$가 전사임을 보이려면 모든 $c \in C$에 대하여 $(g \circ f)(a) = c$인 $a \in A$가 있음을 보이면 된다. $c \in C$라 하자. $g : B \to C$가 전사이므로 $g(b) = c$인 $b \in B$가 있다. $f : A \to B$가 전사이므로 $f(a) = b$인 $a \in A$가 있다. 그러면 $(g \circ f)(a) = g(f(a)) = g(b) = c$이다. 따라서 $g \circ f : A \to C$는 전사이다.
 
 **(3)** $f : A \to B$와 $g : B \to C$가 전단사라 하자. 전단사의 정의에 의해 $f$, $g$는 단사이고 $f : A \to B$, $g : B \to C$는 전사이다. (1)에 의해 $g \circ f$가 단사이고 (2)에 의해 $g \circ f : A \to C$가 전사이므로, 전단사의 정의에 의해 $g \circ f : A \to C$는 전단사이다. $\blacksquare$
 :::
