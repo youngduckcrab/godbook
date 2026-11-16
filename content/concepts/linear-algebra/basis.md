@@ -6,13 +6,13 @@ kind: definition
 field: linear-algebra
 msc: ["15A03"]
 level: undergrad
-summary: 벡터의 열이 벡터공간 V 의 기저인 것은 V 의 모든 벡터가 이 열의 일차결합으로 계수의 열이 하나뿐인 방식으로 표현될 때이다. 이 계수의 열이 좌표이고, 빈 열이 기저인 것은 V = {0_V} 일 때뿐이다.
+summary: 벡터의 열이 벡터공간 V 의 기저인 것은 V 의 모든 벡터가 이 열의 일차결합으로 계수의 열이 하나뿐인 방식으로 표현될 때이다. 이 계수의 열이 좌표이고, 빈 열이 기저인 것은 정확히 V = {0_V} 일 때이다.
 requires: [real-number-arithmetic, vector-space, vector-space-basic-properties, real-function-space, finite-sum-of-vectors, linear-combination-and-span]
 sources:
   - ref: treil-linear-algebra-done-wrong
     loc: 1장 2절, Definition 2.1, p.6
     checked: original
-    note: "출처는 Definition 2.1(p.6)에서 V 의 모든 벡터가 일차결합으로 '유일하게' 표현될 때 벡터의 계(system)를 기저라 하고 그 계수를 좌표(coordinates)라 부른다. 이 항목은 같은 정의를 벡터의 열에 대해 쓰고, 계수의 열이 하나뿐이라는 것을 '길이 n 인 실수의 열이 정확히 하나'로 풀어 쓴다. 출처는 길이 0 인 계를 다루지 않는다. 이 항목은 빈 열을 허용하고 그것이 기저인 것은 V = {0_V} 일 때뿐임을 (Z1)로 증명한다. 출처는 기저가 일차독립이고 생성하는 계라는 것과 그 역을 Proposition 2.7(p.9)에서 말하는데, 이 항목은 그것을 증명하거나 쓰지 않는다. (Z1)과 증명, 예시와 반례와 확인 질문은 이 사이트가 썼다. 출처가 기저의 첫 예로 드는 표준기저(Example 2.2, p.6)는 이 항목에서 다루지 않는다."
+    note: "출처는 Definition 2.1(p.6)에서 V 의 모든 벡터가 일차결합으로 '유일하게' 표현될 때 벡터의 계(system)를 기저라 하고 그 계수를 좌표(coordinates)라 부른다. 이 항목은 같은 정의를 벡터의 열에 대해 쓰고, 계수의 열이 하나뿐이라는 것을 '길이 n 인 실수의 열이 정확히 하나'로 풀어 쓴다. 출처는 길이 0 인 계를 기저로 정의하지 않는다. 이 항목은 빈 열을 허용하고 그것이 기저인 것은 V = {0_V} 일 때뿐임을 (Q1)로 증명한다. 출처는 기저가 일차독립이고 생성하는 계라는 것과 그 역을 Proposition 2.7(p.9)에서 말하는데, 이 항목은 그것을 증명하거나 쓰지 않는다. (Q1)과 증명, 예시와 반례와 확인 질문은 이 사이트가 썼다. 출처가 기저의 첫 예로 드는 표준기저(Example 2.2, p.6)는 이 항목에서 다루지 않는다."
 status: source-checked
 added: 2026-11-16
 ---
@@ -27,7 +27,7 @@ $$x = \alpha_1 v_1 + \cdots + \alpha_n v_n$$
 
 열이 기저일 때 $x \in V$를 표현하는 유일한 계수의 열 $\alpha_1, \dots, \alpha_n$을 이 기저에 관한 $x$의 **좌표**(coordinates)라 한다. 열이 기저이므로 $x$마다 좌표가 있고 하나로 정해진다.
 
-(Z1) 빈 열($n = 0$)이 $V$의 기저인 것은 정확히 $V = \{0_V\}$일 때이다. 특히 원소가 영벡터 하나뿐인 벡터공간 $V$에서 빈 열은 기저이다.
+(Q1) 빈 열($n = 0$)이 $V$의 기저인 것은 정확히 $V = \{0_V\}$일 때이다. 특히 원소가 영벡터 하나뿐인 벡터공간 $V$에서 빈 열은 기저이다.
 :::
 
 :::english
@@ -40,39 +40,39 @@ That is, both of the following hold.
 
 When the sequence is a basis, the unique sequence of coefficients $\alpha_1, \dots, \alpha_n$ representing $x \in V$ is called the **coordinates** of $x$ with respect to this basis. Since the sequence is a basis, each $x$ has coordinates and they are uniquely determined.
 
-(Z1) The empty sequence ($n = 0$) is a basis of $V$ exactly when $V = \{0_V\}$. In particular, in a vector space $V$ whose only element is the zero vector, the empty sequence is a basis.
+(Q1) The empty sequence ($n = 0$) is a basis of $V$ exactly when $V = \{0_V\}$. In particular, in a vector space $V$ whose only element is the zero vector, the empty sequence is a basis.
 :::
 
 ## 직관
 
 도시에서 모든 장소에 주소가 하나씩 있다면, 주소는 장소를 정확히 가리킵니다. 기저는 벡터공간의 "주소 체계"입니다. 벡터 $v_1, \dots, v_n$이 기준점이고, 벡터 $x$의 주소가 계수의 열 $\alpha_1, \dots, \alpha_n$(좌표)입니다. 존재는 모든 장소에 주소가 적어도 하나 있다는 것이고, 유일성은 한 장소에 주소가 둘 이상 있지 않다는 것입니다. 한쪽만 성립하는 열은 기저가 아닙니다. 아래 반례에서 두 경우를 하나씩 봅니다.
 
-이 비유가 맞는 곳은 좌표가 벡터를 완전히 정한다는 점입니다. $x$의 좌표를 알면 $x = \alpha_1 v_1 + \cdots + \alpha_n v_n$으로 $x$를 되찾고, 거꾸로 $x$에서 좌표가 하나로 나옵니다. 틀리는 곳은 주소가 장소의 이름이 아니라 열 $v_1, \dots, v_n$을 골라야 의미가 있다는 점입니다. 같은 벡터도 기저를 바꾸면 좌표가 달라집니다.
+이 비유가 맞는 곳은 좌표가 벡터를 완전히 정한다는 점입니다. $x$의 좌표를 알면 $x = \alpha_1 v_1 + \cdots + \alpha_n v_n$으로 $x$를 되찾고, 거꾸로 $x$에서 좌표가 하나로 나옵니다. 틀리는 곳은 주소가 장소의 이름이 아니라 열 $v_1, \dots, v_n$을 골라야 의미가 있다는 점입니다. 같은 벡터의 좌표는 기저를 바꾸면 달라질 수 있습니다. 예를 들어 $(1, 1) = 1(1, 0) + 1(0, 1)$이지만, 아래 예시의 기저 $(1, 0), (1, 1)$에 관한 $(1, 1)$의 좌표는 $(0, 1)$입니다.
 
-존재와 유일성은 각각 앞의 두 항목과 이어집니다. 존재는 [[linear-combination-and-span|생성]]의 조건이고, 유일성은 [[linear-independence|일차독립]]과 관계가 있습니다. 기저인 것이 정확히 "일차독립이고 $V$를 생성한다"와 같다는 사실은 이 항목에서 증명하지 않고 뒤 항목에서 다룹니다. 이 항목에서 정의를 위의 두 조건으로 쓴 것은 출처가 그렇게 정의하기 때문이고, 이 사이트에서 뒤 항목의 증명이 쓰는 방향은 위의 (존재)와 (유일성) 그대로입니다.
+존재는 [[linear-combination-and-span|생성]]의 조건입니다. 유일성은 같은 벡터를 표현하는 계수의 열이 둘이면 같다는 것이고, 기저인 것이 정확히 "일차독립이고 $V$를 생성한다"와 같다는 사실은 이 항목에서 증명하지 않고 뒤 항목에서 다룹니다.
 
-(Z1)은 빈 열이 예외 없이 쓰인다는 것을 확인합니다. 영벡터만 있는 공간에서는 아무 벡터도 쓰지 않고 영벡터를 만들 수 있고(빈 합이 $0_V$), 그 방법이 하나뿐이므로 빈 열이 기저입니다.
+(Q1)은 빈 열이 예외 없이 쓰인다는 것을 확인합니다. 영벡터만 있는 공간에서는 아무 벡터도 쓰지 않고 영벡터를 만들 수 있고(빈 합이 $0_V$), 그 방법이 하나뿐이므로 빈 열이 기저입니다.
 
 ## 성질의 증명
 
-:::remark[(Z1)의 증명]
+:::remark[(Q1)의 증명]
 길이 $0$인 실수의 열은 빈 열 하나뿐이고, 빈 열 $v$와 이 실수의 열에 대한 일차결합은 [[finite-sum-of-vectors|정의]]에 의해 $0_V$이다. ($\Rightarrow$) 빈 열이 $V$의 기저라 하자. $x \in V$를 잡는다. (존재)에 의해 $x$는 일차결합이고, 가능한 일차결합은 $0_V$뿐이므로 $x = 0_V$이다. 따라서 $V \subseteq \{0_V\}$이고, $0_V \in V$이므로 $V = \{0_V\}$이다. ($\Leftarrow$) $V = \{0_V\}$라 하자. 유일한 벡터 $x = 0_V$는 빈 실수의 열에 대한 일차결합 $0_V$이므로 (존재)가 성립한다. 길이 $0$인 실수의 열은 하나뿐이므로 두 열 $\alpha$, $\beta$는 같은 열이고 모든 $k$에서 $\alpha_k = \beta_k$가 공허하게 참이다. 따라서 (유일성)도 성립하고 빈 열은 기저이다.
 :::
 
 ## 예시와 반례
 
 :::example[ℝ²의 한 기저와 좌표]
-$\mathbb{R}^2$([[real-function-space]]의 성분별 연산)에서 열 $v_1 = (1, 0)$, $v_2 = (1, 1)$이 기저임을 계산으로 확인합니다. $\alpha v_1 + \beta v_2 = (\alpha, 0) + (\beta, \beta) = (\alpha + \beta, \beta)$입니다([[finite-sum-of-vectors|(H0)]], (K4), [[real-number-arithmetic|(K9)]]).
+$\mathbb{R}^2$([[real-function-space]]의 성분별 연산)에서 열 $v_1 = (1, 0)$, $v_2 = (1, 1)$이 기저임을 계산으로 확인합니다. 계수의 열 $(\alpha, \beta)$에 대하여 $\alpha v_1 + \beta v_2 = (\alpha, 0) + (\beta, \beta) = (\alpha + \beta, \beta)$입니다([[finite-sum-of-vectors|(H0)]], (K4), [[real-number-arithmetic|(K9)]]).
 
 (존재) $x = (a, b)$가 주어지면 $\alpha = a - b$, $\beta = b$로 두어 $(\alpha + \beta, \beta) = ((a - b) + b, b) = (a, b)$입니다. 첫째 값은 $(a + (-b)) + b = a + ((-b) + b) = a + 0 = a$이기 때문입니다((K2), (K1), (K5), (K4)).
 
-(유일성) $\alpha v_1 + \beta v_2 = (a, b)$이면 성분별 같음에서 $\beta = b$이고 $\alpha + \beta = a$입니다. 둘째 식의 양변에 $-\beta$를 더하면 $\alpha = \alpha + (\beta + (-\beta)) = (\alpha + \beta) + (-\beta) = a + (-b) = a - b$입니다. 따라서 $(a, b)$의 좌표는 $(a - b,\ b)$로 하나뿐입니다.
+(유일성) $\alpha v_1 + \beta v_2 = (a, b)$이면 성분별 같음에서 $\beta = b$이고 $\alpha + \beta = a$입니다. 둘째 식의 양변에 $-\beta$를 더하면 $\alpha = \alpha + (\beta + (-\beta)) = (\alpha + \beta) + (-\beta) = a + (-b) = a - b$입니다. 따라서 $(a, b)$를 표현하는 계수의 열은 모두 $(a - b, b)$이므로 같은 벡터의 두 표현은 계수의 열이 같고, $(a, b)$의 좌표는 $(a - b,\ b)$로 하나뿐입니다.
 
 예를 들어 $(5, -2)$의 좌표는 $(7, -2)$이고 실제로 $7(1, 0) + (-2)(1, 1) = (7, 0) + (-2, -2) = (5, -2)$입니다.
 :::
 
 :::example[영벡터만 있는 공간의 빈 기저]
-$X = \emptyset$이면 [[real-function-space]]의 $\mathbb{R}^X$는 빈 함수 하나만을 원소로 갖는 벡터공간입니다. 그 원소가 영벡터이므로 (Z1)에 의해 빈 열이 이 공간의 기저입니다.
+$X = \emptyset$이면 [[real-function-space]]의 $\mathbb{R}^X$는 빈 함수 하나만을 원소로 갖는 벡터공간입니다. 그 원소가 영벡터이므로 (Q1)에 의해 빈 열이 이 공간의 기저입니다.
 :::
 
 :::counterexample[존재 또는 유일성이 깨지는 열]
@@ -83,10 +83,10 @@ $\mathbb{R}^2$의 길이 $1$인 열 $v_1 = (1, 0)$은 $\alpha v_1 = (\alpha, 0)$
 
 ## 확인 질문
 
-:::check[예시의 기저 $(1, 0), (1, 1)$에 관한 $(3, 8)$의 좌표를 구하고, 이 좌표로 $(3, 8)$이 다시 얻어지는지 확인하라.]
-좌표는 $(a - b, b) = (3 - 8, 8) = (-5, 8)$입니다. 확인하면 $(-5)(1, 0) + 8(1, 1) = (-5, 0) + (8, 8) = (3, 8)$입니다.
+:::check[$\mathbb{R}^2$의 열 $(1, 1), (1, -1)$이 기저라고 할 때 $(3, 1)$의 좌표는 무엇인가? (이 열이 기저인지는 묻지 않는다.)]
+$\alpha(1, 1) + \beta(1, -1) = (\alpha + \beta, \alpha - \beta) = (3, 1)$에서 $\alpha + \beta = 3$, $\alpha - \beta = 1$입니다. 두 식을 더하면 $2\alpha = 4$이고 $2 \ne 0$이므로 $\alpha = 2$, 그러면 $\beta = 1$입니다. 좌표는 $(2, 1)$이고 확인하면 $2(1, 1) + 1(1, -1) = (2, 2) + (1, -1) = (3, 1)$입니다.
 :::
 
 :::check[$\mathbb{R}^2$에서 빈 열은 기저인가?]
-아닙니다. (Z1)에 의해 빈 열이 기저일 필요충분조건은 $\mathbb{R}^2 = \{(0, 0)\}$인데, $(1, 0) \ne (0, 0)$이므로 $\mathbb{R}^2$의 원소가 영벡터 하나뿐이 아닙니다. 구체적으로 빈 열의 일차결합은 $(0, 0)$뿐이어서 $(1, 0)$을 표현하지 못합니다.
+아닙니다. (Q1)에 의해 빈 열이 기저일 필요충분조건은 $\mathbb{R}^2 = \{(0, 0)\}$인데, $(1, 0) \ne (0, 0)$이므로 $\mathbb{R}^2$의 원소가 영벡터 하나뿐이 아닙니다. 구체적으로 빈 열의 일차결합은 $(0, 0)$뿐이어서 $(1, 0)$을 표현하지 못합니다.
 :::

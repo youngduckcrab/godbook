@@ -7,12 +7,12 @@ field: linear-algebra
 msc: ["15A03"]
 level: undergrad
 summary: 벡터의 열이 일차독립인 것은 일차결합이 0_V 가 되는 계수의 열이 모든 계수가 0 인 것뿐일 때이다. 영벡터를 항으로 갖거나 같은 벡터가 두 자리에 있으면 일차종속이고, 일차독립인 열에서 항을 지워도 일차독립이다.
-requires: [real-number-arithmetic, vector-space, vector-space-basic-properties, real-function-space, finite-sum-of-vectors]
+requires: [real-number-arithmetic, vector-space, vector-space-basic-properties, real-function-space, finite-sum-of-vectors, linear-combination-and-span, negation-of-conditional, negation-of-quantified-statements, proof-by-contrapositive]
 sources:
   - ref: treil-linear-algebra-done-wrong
-    loc: 1장 2절, 번호 없는 정의 셋(자명한 일차결합, 일차독립, 일차종속), p.8; 연습문제 2.2, p.11
+    loc: 1장 2.1절, 번호 없는 정의 셋(자명한 일차결합, 일차독립, 일차종속), p.8; 연습문제 2.2, p.11
     checked: original
-    note: "출처는 모든 계수가 0 인 일차결합을 자명하다고 하고, 자명한 일차결합만이 0 과 같을 때 계(system)가 일차독립이라고 정의하며, 일차독립이 아니면 일차종속이라고 한다. 출처는 일차종속을 '0 을 자명하지 않은 일차결합으로 표현할 수 있다'는 말로 바꾸고 '자명하지 않다'를 절댓값의 합 Σ|α_k| ≠ 0 으로 쓴다. 이 사이트에는 절댓값이 없으므로 이 항목은 '0 이 아닌 계수 α_k 가 있다'로 쓴다. 이 항목은 벡터의 모임을 열로 다루고 길이 0 인 빈 열이 일차독립이라고 정한다. 출처의 연습문제 2.2 는 영벡터를 포함한 집합이 일차종속인지(a), 일차독립인 집합의 부분집합이 일차독립인지(d)를 참·거짓으로 묻는다. 이 항목의 (I1)과 (I3)은 같은 내용을 열의 꼴로 쓰고 증명한 것이고, (I2)와 (I4)와 증명은 이 사이트가 썼다. 예시와 반례와 확인 질문은 새로 만들었다."
+    note: "출처는 모든 계수가 0 인 일차결합을 자명하다고 하고, 자명한 일차결합만이 0 과 같을 때 계(system)가 일차독립이라고 정의하며, 일차독립이 아니면 일차종속이라고 한다. 출처는 '자명하지 않다'를 '적어도 하나의 계수 α_k 가 0 이 아니다'로 정의하고(p.8), 같은 조건을 절댓값의 합을 쓴 식으로도 적는다. 이 사이트에는 절댓값이 없으므로 이 항목은 앞의 말만 쓴다. 이 항목은 벡터의 모임을 열로 다루고 길이 0 인 빈 열이 일차독립이라고 정한다. 출처의 연습문제 2.2 는 영벡터를 포함한 집합이 일차종속인지(a), 일차독립인 집합의 부분집합이 일차독립인지(d)를 참·거짓으로 묻는다. 이 항목의 (I1)은 (a)를 열의 꼴로 쓰고 증명한 것이고, (I3)은 (d) 가운데 한 항을 지운 경우이다(여러 항을 지우는 것은 (I3)을 되풀이하면 된다). (I2)와 (I4)와 증명은 이 사이트가 썼다. 예시와 반례와 확인 질문은 새로 만들었다."
 status: source-checked
 added: 2026-11-16
 ---
@@ -28,7 +28,7 @@ $$\alpha_1 v_1 + \cdots + \alpha_n v_n = 0_V \quad \text{이면 모든 } k \in \
 
 - (I1) 어떤 $k$에서 $v_k = 0_V$이면 열은 일차종속이다.
 - (I2) 서로 다른 두 자리 $j \ne k$에서 $v_j = v_k$이면 열은 일차종속이다.
-- (I3) $n \ge 0$이고 $v_1, \dots, v_{n+1}$이 길이 $n + 1$인 일차독립인 열이며 $k \in \{1, \dots, n+1\}$이면, $k$번째 항을 뺀 길이 $n$인 열($c_i = v_i$ ($i < k$), $c_i = v_{i+1}$ ($k \le i \le n$). [[finite-sum-of-vectors|(H6)]])도 일차독립이다.
+- (I3) (이 성질에서만 길이를 $n + 1$로 쓴다.) $n \ge 0$이고 $v_1, \dots, v_{n+1}$이 길이 $n + 1$인 일차독립인 열이며 $k \in \{1, \dots, n+1\}$이면, $k$번째 항을 뺀 길이 $n$인 열($c_i = v_i$ ($i < k$), $c_i = v_{i+1}$ ($k \le i \le n$). [[finite-sum-of-vectors|(H6)]])도 일차독립이다.
 - (I4) 길이 $1$인 열 $v_1$이 일차독립인 것은 정확히 $v_1 \ne 0_V$일 때이다.
 :::
 
@@ -43,7 +43,7 @@ The following hold, where $v_1, \dots, v_n$ is a sequence of vectors of $V$.
 
 - (I1) If $v_k = 0_V$ for some $k$, then the sequence is linearly dependent.
 - (I2) If $v_j = v_k$ for two different positions $j \ne k$, then the sequence is linearly dependent.
-- (I3) Let $n \ge 0$, let $v_1, \dots, v_{n+1}$ be a linearly independent sequence of length $n + 1$, and let $k \in \{1, \dots, n+1\}$. Then the sequence of length $n$ with the $k$-th term removed ($c_i = v_i$ for $i < k$ and $c_i = v_{i+1}$ for $k \le i \le n$; see (H6)) is also linearly independent.
+- (I3) (Only in this property the length is written $n + 1$.) Let $n \ge 0$, let $v_1, \dots, v_{n+1}$ be a linearly independent sequence of length $n + 1$, and let $k \in \{1, \dots, n+1\}$. Then the sequence of length $n$ with the $k$-th term removed ($c_i = v_i$ for $i < k$ and $c_i = v_{i+1}$ for $k \le i \le n$; see (H6)) is also linearly independent.
 - (I4) A sequence $v_1$ of length $1$ is linearly independent exactly when $v_1 \ne 0_V$.
 :::
 
@@ -53,18 +53,16 @@ The following hold, where $v_1, \dots, v_n$ is a sequence of vectors of $V$.
 
 이 직관은 몇 가지 쉬운 경우로 확인됩니다. 영벡터는 쓰더라도 위치가 바뀌지 않으므로 계수를 마음대로 줄 수 있고(I1), 같은 벡터를 두 자리에 넣고 한쪽은 더하고 한쪽은 빼면 서로 지워집니다(I2). 일차독립인 열에서 막대를 하나 빼면 방법이 더 늘어날 이유가 없습니다(I3). 일차종속이면 한 벡터를 나머지의 일차결합으로 쓸 수 있다는 정리는 이 항목에서 다루지 않고 뒤에서 다룹니다.
 
-주의할 점은 일차독립이 열의 성질이라는 것입니다. 항이 같은 벡터를 한 번 쓴 열과 두 번 쓴 열은 다른 열이고, (I2)에 의해 두 번 쓴 열은 일차종속입니다. 일차종속의 정의에서 "0이 아닌 계수가 있다"는 출처가 절댓값의 합 $\sum|\alpha_k| \ne 0$으로 쓰는 조건과 같은 뜻이고, 이 사이트에는 절댓값이 없으므로 이렇게 풀어 씁니다.
+주의할 점은 일차독립이 열의 성질이라는 것입니다. 항이 같은 벡터를 한 번 쓴 열과 두 번 쓴 열은 다른 열이고, (I2)에 의해 두 번 쓴 열은 일차종속입니다. 출처도 "자명하지 않다"를 "적어도 하나의 계수가 0이 아니다"로 정의합니다(출처는 같은 조건을 절댓값을 써서 적기도 하는데, 이 사이트에는 절댓값이 없으므로 그 표기를 쓰지 않습니다).
 
 ## 성질의 증명
 
 :::remark[(I1)–(I4)의 증명]
 (I1) $v_k = 0_V$라 하고 $\alpha_k = 1$, $i \ne k$이면 $\alpha_i = 0$인 실수의 열을 잡는다. [[finite-sum-of-vectors|(C4)]]에 의해 $\alpha_1 v_1 + \cdots + \alpha_n v_n = \alpha_k v_k = 1 v_k = v_k = 0_V$이다(셋째 등호는 [[vector-space|(V5)]]). $\alpha_k = 1 \ne 0$([[real-number-arithmetic|(K4)]])이므로 일차종속이다.
 
-(I2) 두 자리를 $j < k$가 되도록 이름 붙인다(서로 다른 두 자리 가운데 작은 쪽을 $j$, 큰 쪽을 $k$라 하면 된다). $n \ge 2$이다. $\alpha_j = 1$, $\alpha_k = -1$, 나머지 $i$에서 $\alpha_i = 0$인 실수의 열을 잡고 $w_i = \alpha_i v_i$라 하자. $i \ne j, k$이면 [[vector-space-basic-properties|(B3)]]에 의해 $w_i = 0_V$이고, $w_j = 1 v_j = v_j$, $w_k = (-1) v_k = -v_k$([[vector-space-basic-properties|(B5)]])이다. [[finite-sum-of-vectors|(H6)]]을 열 $w_1, \dots, w_n$과 자리 $k$에 쓰면 $w_1 + \cdots + w_n = (c_1 + \cdots + c_{n-1}) + w_k$이다. 여기서 $c_i = w_i$ ($i < k$), $c_i = w_{i+1}$ ($k \le i \le n - 1$)이다. $c_j = w_j$($j < k$)이다. $i \ne j$이면 $c_i$는 $w_m$ ($m = i < k$ 또는 $m = i + 1 > k$)이고 $m \ne j$, $m \ne k$이므로 $c_i = 0_V$이다. 따라서 (H7)에 의해 $c_1 + \cdots + c_{n-1} = c_j = v_j$이다. 그러므로 $w_1 + \cdots + w_n = v_j + (-v_k) = v_j + (-v_j) = 0_V$이다(둘째 등호는 $v_j = v_k$, 셋째 등호는 [[vector-space-basic-properties|(B2)]]). $\alpha_j = 1 \ne 0$이므로 일차종속이다.
+(I2) 두 자리를 $j < k$가 되도록 이름 붙인다(서로 다른 두 자리 가운데 작은 쪽을 $j$, 큰 쪽을 $k$라 하면 된다). $n \ge 2$이다. $\alpha_j = 1$, $\alpha_k = -1$, 나머지 $i$에서 $\alpha_i = 0$인 실수의 열을 잡고 $w_i = \alpha_i v_i$라 하자. $i \ne j, k$이면 [[vector-space-basic-properties|(B3)]]에 의해 $w_i = 0_V$이고, $w_j = 1 v_j = v_j$([[vector-space|(V5)]]), $w_k = (-1) v_k = -v_k$([[vector-space-basic-properties|(B5)]])이다. [[finite-sum-of-vectors|(H6)]]을 열 $w_1, \dots, w_n$과 자리 $k$에 쓰면 $w_1 + \cdots + w_n = (c_1 + \cdots + c_{n-1}) + w_k$이다. 여기서 $c_i = w_i$ ($i < k$), $c_i = w_{i+1}$ ($k \le i \le n - 1$)이다. $c_j = w_j$($j < k$)이다. $i \ne j$이면 $c_i$는 $w_m$ ($m = i < k$ 또는 $m = i + 1 > k$)이고 $m \ne j$, $m \ne k$이므로 $c_i = 0_V$이다. $c$는 길이 $n - 1 = (n - 2) + 1$이고 $n - 2 \ge 0$이며, $j < k \le n$이므로 $j \in \{1, \dots, n - 1\}$이다. 따라서 (H7)에 의해 $c_1 + \cdots + c_{n-1} = c_j = v_j$이다. 그러므로 $w_1 + \cdots + w_n = v_j + (-v_k) = v_j + (-v_j) = 0_V$이다(둘째 등호는 $v_j = v_k$, 셋째 등호는 [[vector-space-basic-properties|(B2)]]). $\alpha_j = 1 \ne 0$이므로 일차종속이다.
 
-(I3) $v_1, \dots, v_{n+1}$이 일차독립이라 하고 $c$를 $k$번째 항을 뺀 열이라 하자. 길이 $n$인 실수의 열 $\gamma_1, \dots, \gamma_n$이 $\gamma_1 c_1 + \cdots + \gamma_n c_n = 0_V$를 만족한다고 하자. 길이 $n + 1$인 실수의 열 $\alpha$를 $\alpha_i = \gamma_i$ ($i < k$), $\alpha_k = 0$, $\alpha_i = \gamma_{i-1}$ ($k < i \le n + 1$)로 정하고 $w_i = \alpha_i v_i$라 하자. $w$에서 $k$번째 항을 뺀 열을 $c'$라 하면, $i < k$에서 $c'_i = w_i = \gamma_i v_i = \gamma_i c_i$이고 $k \le i \le n$에서 $c'_i = w_{i+1} = \alpha_{i+1} v_{i+1} = \gamma_i v_{i+1} = \gamma_i c_i$이다. 따라서 $c'$는 $i$번째 항이 $\gamma_i c_i$인 열이고, (H6)에 의해
-$$\alpha_1 v_1 + \cdots + \alpha_{n+1} v_{n+1} = (\gamma_1 c_1 + \cdots + \gamma_n c_n) + w_k = 0_V + 0 v_k = 0_V + 0_V = 0_V$$
-이다(셋째 등호는 (B3), 마지막은 영벡터의 정의). $v$가 일차독립이므로 모든 $i$에서 $\alpha_i = 0$이다. $\gamma_i$는 $\alpha_i$($i < k$) 또는 $\alpha_{i+1}$ ($k \le i \le n$)이므로 모든 $\gamma_i = 0$이다. 따라서 $c$는 일차독립이다. ($n = 0$이면 $c$는 빈 열이고 위 논증에서 $\gamma$가 없어 일차독립이다.)
+(I3) $v_1, \dots, v_{n+1}$이 일차독립이라 하고 $c$를 $k$번째 항을 지운 열이라 하자. 길이 $n$인 실수의 열 $\gamma_1, \dots, \gamma_n$이 $\gamma_1 c_1 + \cdots + \gamma_n c_n = 0_V$를 만족한다고 하자. $\gamma$의 $k$번째 자리에 $0$을 끼워 넣은 길이 $n + 1$인 실수의 열을 $\alpha$라 하면, [[finite-sum-of-vectors|(C5)]]에 의해 $\alpha_1 v_1 + \cdots + \alpha_{n+1} v_{n+1} = (\gamma_1 c_1 + \cdots + \gamma_n c_n) + 0 v_k = 0_V + 0_V = 0_V$이다(둘째 등호는 [[vector-space-basic-properties|(B3)]]와 가정, 마지막은 영벡터의 정의). $v$가 일차독립이므로 모든 $i$에서 $\alpha_i = 0$이다. $\gamma_i$는 $\alpha_i$ ($i < k$) 또는 $\alpha_{i+1}$ ($k \le i \le n$)이므로 모든 $\gamma_i = 0$이다. 따라서 $c$는 일차독립이다. ($n = 0$이면 $c$는 빈 열이고 일차독립이다.)
 
 (I4) ($\Rightarrow$) 대우를 보인다. $v_1 = 0_V$이면 (I1)에 의해 일차종속이다. ($\Leftarrow$) $v_1 \ne 0_V$라 하고 $\alpha_1 v_1 = 0_V$인 실수 $\alpha_1$을 잡는다(길이 $1$인 열의 합은 [[finite-sum-of-vectors|(H0)]]에 의해 $\alpha_1 v_1$이다). (B6)에 의해 $\alpha_1 = 0$이거나 $v_1 = 0_V$이고, $v_1 \ne 0_V$이므로 $\alpha_1 = 0$이다. 따라서 $v_1$은 일차독립이다.
 :::
