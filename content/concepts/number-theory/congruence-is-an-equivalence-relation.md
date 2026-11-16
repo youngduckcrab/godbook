@@ -20,7 +20,7 @@ added: 2026-11-16
 ---
 
 :::statement
-$n$이 자연수라 하자. 정수 $x$, $y$에 대하여 "$x R y$는 정확히 $x \equiv y \pmod n$일 때이다"로 $\mathbb{Z}$ 위의 [[relation]] $R$을 정한다([[congruence-modulo-n]]). 그러면 $R$은 $\mathbb{Z}$ 위의 [[equivalence-relation]]이다. 곧 다음이 성립한다.
+$n$이 자연수라 하자. 정수 $x$, $y$에 대하여 "$x R y$는 정확히 $x \equiv y \pmod n$일 때이다"로 $\mathbb{Z}$ 위의 [[relation]] $R$을 정한다([[congruence-modulo-n|합동의 정의]]). 그러면 $R$은 $\mathbb{Z}$ 위의 [[equivalence-relation]]이다. 곧 다음이 성립한다.
 
 1. (반사성) 모든 정수 $x$에 대하여 $x \equiv x \pmod n$이다.
 2. (대칭성) 모든 정수 $x, y$에 대하여 $x \equiv y \pmod n$이면 $y \equiv x \pmod n$이다.

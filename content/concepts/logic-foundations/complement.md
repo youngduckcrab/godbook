@@ -7,7 +7,7 @@ field: logic-foundations
 msc: ["03E20"]
 level: intro
 summary: 전체집합 U 안에서 A에 속하지 않는 원소 전체의 집합.
-requires: [set, subset, set-operations]
+requires: [set, subset, set-operations, logical-equivalence]
 sources:
   - ref: hammack-book-of-proof
     loc: 1.6절 Complement, Definition 1.6, p.20

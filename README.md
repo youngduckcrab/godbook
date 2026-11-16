@@ -4,7 +4,8 @@
 
 - 사이트: https://youngduckcrab.github.io/godbook/
 - 내용: `content/` (항목은 `content/concepts/`, 출처는 `content/sources/`, 강의는 `content/courses/`)
-- 작성 규칙과 추가 절차: [CLAUDE.md](CLAUDE.md)
+- 진행 절차: [CLAUDE.md](CLAUDE.md)
+- 역할별 지침: [작성](docs/writing.md), [검토](docs/reviewing.md), [출처 준비](docs/source-prep.md), [표기와 약속](docs/conventions.md)
 
 ## 내용 추가
 
