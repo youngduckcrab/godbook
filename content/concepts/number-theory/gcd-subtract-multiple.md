@@ -1,19 +1,23 @@
 ---
-title: 최대공약수는 배수를 빼도 변하지 않는다
-title_en: The Greatest Common Divisor Is Unchanged by Subtracting a Multiple
-aliases: [gcd(a, b) = gcd(a, b − an), 최대공약수의 뺄셈 성질, 최대공약수의 배수 감소]
+title: 한 수에서 다른 수의 배수를 빼도 최대공약수는 같다
+title_en: Subtracting a Multiple of One Number from the Other Does Not Change the Greatest Common Divisor
+aliases: [gcd(a, b) = gcd(a, b − an), 최대공약수의 뺄셈 성질]
 kind: proposition
 field: number-theory
 msc: ["11A05"]
 level: undergrad
-summary: 둘 다 0은 아닌 정수 a, b와 임의의 정수 n에 대하여 a와 b에서 a의 n배를 뺀 수의 최대공약수는 a와 b의 최대공약수와 같다.
-requires: [greatest-common-divisor, divisibility, even-and-odd]
+summary: 둘 다 0은 아닌 정수 a, b와 임의의 정수 n에 대하여 a와, b에서 a의 n배를 뺀 수의 최대공약수는 a와 b의 최대공약수와 같다.
+requires: [greatest-common-divisor, divisibility, even-and-odd, set, subset]
 proof: full
 sources:
   - ref: stein-elementary-number-theory
     loc: 1.1.2절, Lemma 1.1.10, p.4 (바로 앞의 Lemma 1.1.9, pp.3–4)
     checked: original
-    note: "Stein의 Lemma 1.1.10은 정수 a, b, n에 대해 gcd(a, b) = gcd(a, b − an)이라고 쓰고, Lemma 1.1.9(gcd(a, b) = gcd(a, b − a)를 포함)를 \"반복해서 적용하면\" gcd(a, b) = gcd(a, b − a) = gcd(a, b − 2a) = ⋯ = gcd(a, b − an)이라는 한 줄로 증명한다(p.4). 이 반복은 형식적인 귀납이 아니고 n이 음수인 경우를 다루지 않는다. 아래 증명은 Lemma 1.1.9에도 반복에도 기대지 않고, 두 쌍의 공약수의 집합이 같음을 두 방향의 포함으로 보이고 같은 집합의 최대 원소는 같다는 것으로 맺는다. 이 증명 방식은 이 사이트가 직접 쓴 것이다(Lemma 1.1.9의 증명(p.3)은 한쪽 방향의 포함만 직접 보이고 반대 방향은 a를 −a로 바꾼 같은 논증을 쓴다). Stein은 gcd(0, 0) = 0으로 정의하므로 a, b가 둘 다 0인 경우도 포함하지만, 이 사이트의 정의는 둘 다 0은 아닌 경우만 다루므로 아래 진술에는 그 가정과 b − an이 a와 함께 둘 다 0은 아니라는 결론(증명 첫 단계)이 더해졌다. 예시는 새로 만들었다."
+    note: "Stein의 Lemma 1.1.10은 정수 a, b, n에 대해 gcd(a, b) = gcd(a, b − an)이라고 쓰고, Lemma 1.1.9(gcd(a, b) = gcd(a, b − a), gcd(a, b + a) 등을 포함)를 \"반복해서 적용하면\" gcd(a, b) = gcd(a, b − a) = gcd(a, b − 2a) = ⋯ = gcd(a, b − an)이라는 한 줄로 증명한다(p.4). 이 사슬은 n에 대한 귀납으로 쓰이지 않았고, 음수 n은 gcd(a, b + a)를 되풀이해야 하는데 이를 적지 않는다. 아래 증명은 Lemma 1.1.9에도 반복에도 기대지 않는다. Lemma 1.1.9의 증명(pp.3–4)은 한쪽 방향의 포함만 직접 보이고, 반대 방향은 a를 −a로, b를 b − a로 바꾼 같은 논증과 gcd(±a, ±b)를 쓴다. Stein은 gcd(0, 0) = 0으로 정의하므로 a, b가 둘 다 0인 경우도 포함하지만, 이 사이트의 정의는 둘 다 0은 아닌 경우만 다루므로 아래 진술에는 그 가정과 b − an이 a와 함께 둘 다 0은 아니라는 결론(증명 첫 단계)이 더해졌다. 예시는 새로 만들었다."
+  - ref: hammack-book-of-proof
+    loc: 5장 연습문제 29, 31 (p.135)와 그 풀이 (p.320)
+    checked: original
+    note: "연습문제 29는 a, b가 둘 다 0은 아니면 gcd(a, b) = gcd(a − b, b)이고, 31은 a = qb + r이면 gcd(a, b) = gcd(r, b)이다(풀이는 a = dx, b = dy에서 r = d(x − qy)로 묶고, 반대쪽은 a = qb + r = e(qy + x)로 묶는다). 아래 증명은 이 풀이의 두 방향 논증과 같은 발상이다. 곧 한쪽 쌍의 공약수가 다른 쪽 쌍의 공약수이기도 함을 곱셈과 덧셈·뺄셈으로 보인다. 차이는 풀이가 gcd(a, b) ≤ gcd(a − b, b)와 그 반대의 두 부등식으로 맺는 데 비해, 아래는 공약수의 집합이 같음으로 맺고, 뺄셈의 횟수를 임의의 정수 n으로 일반화했다는 점이다. 출처의 이 연습문제들은 b − an 꼴의 진술은 아니다."
 status: source-checked
 added: 2026-11-16
 ---
@@ -51,11 +55,11 @@ $d \mid a$이고 $d \mid b$이면 $b - an$을 $d$로 묶어 쓸 수 있는지 �
 :::
 
 :::hint
-두 집합이 같다는 것은 한 집합의 모든 원소가 다른 집합의 원소이고, 그 반대도 성립한다는 것입니다. 방향마다 따로 증명하세요.
+두 집합이 같다는 것은 두 집합의 원소가 정확히 일치한다는 것이므로, 한 집합의 모든 원소가 다른 집합의 원소이고 그 반대도 성립함을 보이면 됩니다. 방향마다 따로 증명하세요.
 :::
 
 :::proof
-**$a$와 $b - an$이 둘 다 $0$은 아니다.** 둘 다 $0$이라고 하자. $a = 0$이므로 $an = 0 \cdot n = 0$이고 $b - an = b - 0 = b$이다. $b - an = 0$이므로 $b = 0$이다. 곧 $a = b = 0$이어서 $a$, $b$가 둘 다 $0$은 아니라는 가정에 어긋난다. 따라서 $a$와 $b - an$은 둘 다 $0$은 아니고, $\gcd(a, b - an)$이 [[greatest-common-divisor]]의 정의에 의해 정의된다. 또 $b - an$은 정수이다(정수의 합·곱은 정수라는 기본 성질, [[even-and-odd]]에서 증명 없이 받아들임).
+**$a$와 $b - an$이 둘 다 $0$은 아니다.** 둘 다 $0$이라고 하자. $a = 0$이므로 $an = 0 \cdot n = 0$이고 $b - an = b - 0 = b$이다. $b - an = 0$이므로 $b = 0$이다. 곧 $a = b = 0$이어서 $a$, $b$가 둘 다 $0$은 아니라는 가정에 어긋난다. 따라서 $a$와 $b - an$은 둘 다 $0$은 아니다. 또 $b - an$은 정수이다(정수의 합·곱은 정수라는 기본 성질, [[even-and-odd]]에서 증명 없이 받아들임). 그러므로 $\gcd(a, b - an)$이 [[greatest-common-divisor]]의 정의에 의해 정의된다.
 
 $a$와 $b$의 공약수의 집합을 $D(a, b)$, $a$와 $b - an$의 공약수의 집합을 $D(a, b - an)$이라 쓴다. 두 집합이 같음을 보인다.
 
@@ -67,7 +71,7 @@ $$b - an = de - (dc)n = d(e - cn)$$
 $$b = df + (dc)n = d(f + cn)$$
 이다. $f + cn$은 정수이므로 $d \mid b$이다. 또 $d \mid a$이므로 $d \in D(a, b)$이다.
 
-두 포함에 의해 $D(a, b) = D(a, b - an)$이다. 이제 $g = \gcd(a, b)$로 두자. [[greatest-common-divisor]]의 정의에 의해 $g$는 $D(a, b)$의 원소이고 $D(a, b)$의 모든 원소 $d$에 대해 $d \le g$이다. $D(a, b) = D(a, b - an)$이므로 $g$는 $a$와 $b - an$의 공약수이고, $a$와 $b - an$의 모든 공약수 $d$에 대해 $d \le g$이다. 이는 $g$가 $\gcd(a, b - an)$이 되는 두 조건과 정확히 같으므로 $g = \gcd(a, b - an)$이다. 곧 $\gcd(a, b) = \gcd(a, b - an)$이다. $\blacksquare$
+두 포함에 의해 두 집합의 원소가 정확히 일치하므로, [[set|집합]]의 같음의 뜻에 의해 $D(a, b) = D(a, b - an)$이다. 이제 $g = \gcd(a, b)$로 두자. [[greatest-common-divisor]]의 정의에 의해 $g$는 $D(a, b)$의 원소이고 $D(a, b)$의 모든 원소 $d$에 대해 $d \le g$이다. $D(a, b) = D(a, b - an)$이므로 $g$는 $a$와 $b - an$의 공약수이고, $a$와 $b - an$의 모든 공약수 $d$에 대해 $d \le g$이다. 이는 $g$가 $\gcd(a, b - an)$이 되는 두 조건과 정확히 같으므로 $g = \gcd(a, b - an)$이다. 곧 $\gcd(a, b) = \gcd(a, b - an)$이다. $\blacksquare$
 :::
 
 ## 예시와 반례
@@ -90,6 +94,6 @@ $a$의 **정수배**를 빼야 합니다. $a = 6$, $b = 4$에서 $\gcd(6, 4) = 2
 $b - an = 100 - 15 \cdot 6 = 100 - 90 = 10$입니다. 정리에 의해 $\gcd(15, 100) = \gcd(15, 10)$입니다. $15$의 양의 약수 $1, 3, 5, 15$ 가운데 $10$을 나누는 것은 $1, 5$이므로 $\gcd(15, 10) = 5$이고 $\gcd(15, 100) = 5$입니다.
 :::
 
-:::check[$n$을 어떻게 고르면 $b - an = 0$이 되는가? $a = 9$, $b = 54$에서 구하고 $\gcd(9, 54)$를 말하라.]
-$54 = 9 \cdot 6$이므로 $n = 6$이면 $b - an = 0$입니다. 정리에 의해 $\gcd(9, 54) = \gcd(9, 0)$이고, $9 > 0$이므로 [[greatest-common-divisor]]의 (iv)에 의해 $\gcd(9, 0) = 9$입니다. 따라서 $\gcd(9, 54) = 9$입니다.
+:::check[$a = 8$, $b = -20$일 때 $n = -3$이면 $b - an$은 얼마인가? 이 정리로 $\gcd(8, -20)$을 구하라.]
+$b - an = -20 - 8 \cdot (-3) = -20 + 24 = 4$입니다. 정리에 의해 $\gcd(8, -20) = \gcd(8, 4)$입니다. $4$의 양의 약수 $1, 2, 4$는 모두 $8$을 나누므로 $\gcd(8, 4) = 4$이고 $\gcd(8, -20) = 4$입니다. 직접 확인하면 $-20$의 약수는 $20$의 약수 $1, 2, 4, 5, 10, 20$과 부호만 다르고 $8$의 약수 $1, 2, 4, 8$과 공통인 양의 약수는 $1, 2, 4$이므로 $4$입니다.
 :::
