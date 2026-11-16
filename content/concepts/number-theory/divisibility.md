@@ -12,28 +12,28 @@ sources:
   - ref: hammack-book-of-proof
     loc: 4.2절 Definitions, Definition 4.4, p.116
     checked: original
-    note: 출처의 정의는 "b = ac인 c ∈ Z가 있으면"의 꼴이다. 같은 쪽 앞에서 정의는 쌍조건문으로 읽는다고 설명하므로 아래 진술은 "정확히 ~일 때"로 적었다. a = 0인 경우와 약수의 집합에 대한 설명은 출처의 예(p.116에서 0의 약수 집합이 Z라고 적음)를 확인하고 직접 풀어 쓴 것이다. 예시와 확인 질문은 새로 만들었다.
+    note: 출처의 정의는 "b = ac인 c ∈ Z가 있으면"의 꼴이다. 정의를 쌍조건문으로 읽는다는 설명은 앞 쪽(p.115)에 있으며, 이에 따라 아래 진술은 "정확히 ~일 때"로 적었다. 문장과 수의 구별(a | b는 문장, 몫은 수)은 출처 p.116의 설명을 바탕으로 했고 예는 새로 골랐다. a = 0인 경우의 설명은 출처가 p.116에서 0의 약수 집합이 Z라고 적은 것을 확인하고 정의에서 직접 풀어 쓴 것이다. 예시 중 −4 | 20, 6 ∤ 15는 출처 p.116의 예(−6 | 6, 6 ∤ 9)와 같은 꼴에 수를 바꾼 것이고, 나머지 예시와 확인 질문은 새로 만들었다.
 status: source-checked
 added: 2026-11-16
 ---
 
 :::statement
-$a$와 $b$가 정수일 때, $b = ac$인 정수 $c$가 **존재한다**($\exists c \in \mathbb{Z},\ b = ac$)는 것을 "$a$가 $b$를 **나눈다**(divides)"고 하고 $a \mid b$로 쓴다. 이 정의는 "정확히 ~일 때"로 읽는다. 이때 $a$를 $b$의 **약수**(divisor), $b$를 $a$의 **배수**(multiple)라고도 한다.
+$a$와 $b$가 정수일 때, 정확히 $b = ac$인 정수 $c$가 **존재할**($\exists c \in \mathbb{Z},\ b = ac$) 때 "$a$가 $b$를 **나눈다**(divides)"고 하고 $a \mid b$로 쓴다. 이때 $a$를 $b$의 **약수**(divisor), $b$를 $a$의 **배수**(multiple)라고도 한다.
 
 $a$가 $b$를 나누지 않으면 $a \nmid b$로 쓴다. 이는 $b = ac$를 만족하는 정수 $c$가 하나도 없다는 뜻이다.
 :::
 
 :::english
-Let $a$ and $b$ be integers. We say that $a$ **divides** $b$, and write $a \mid b$, if and only if there exists an integer $c$ with $b = ac$ ($\exists c \in \mathbb{Z},\ b = ac$). In this case $a$ is called a **divisor** of $b$, and $b$ is called a **multiple** of $a$.
+Let $a$ and $b$ be integers. We say that $a$ **divides** $b$, and write $a \mid b$, exactly when there exists an integer $c$ with $b = ac$ ($\exists c \in \mathbb{Z},\ b = ac$). In this case $a$ is also called a **divisor** of $b$, and $b$ is called a **multiple** of $a$.
 
 If $a$ does not divide $b$, we write $a \nmid b$. This means that there is no integer $c$ with $b = ac$.
 :::
 
 ## 직관
 
-"$a$가 $b$를 나눈다"는 $b$를 $a$씩 묶었을 때 남김없이 떨어진다는 말입니다. $b = ac$는 $b$가 $a$를 $c$번 더한 것(또는 $c$가 음수이면 그 부호를 바꾼 것)이라는 뜻이므로, $b$는 $a$의 정수배입니다. 약수와 배수는 같은 관계를 양쪽에서 부르는 이름입니다.
+$b = ac$는 $b$가 $a$의 정수배라는 뜻입니다. $a \ne 0$일 때는 "$b$를 $a$씩 묶으면 남김없이 떨어진다"는 그림으로 생각할 수 있습니다. $a = 0$인 경우는 아래 예시에서 따로 다룹니다. 약수와 배수는 같은 관계를 양쪽에서 부르는 이름입니다.
 
-$a \mid b$는 참인지 거짓인지 따질 수 있는 **문장**이고, $a/b$는 **수**입니다. $8 \mid 16$은 참이고 $8 \mid 20$은 거짓이지만, $8/16 = 0.5$와 $8/20 = 0.4$는 그냥 수입니다. 둘을 섞어 쓰지 않도록 주의합니다.
+$a \mid b$는 참인지 거짓인지 따질 수 있는 **문장**이고, 몫 $b/a$는 **수**입니다. $4 \mid 12$는 참인 명제이고 $12/4 = 3$은 수입니다. $4 \mid 10$은 거짓인 명제이지만 $10/4 = 2.5$는 여전히 수입니다. 둘을 섞어 쓰지 않도록 주의합니다.
 
 ## 예시와 반례
 
@@ -41,7 +41,7 @@ $a \mid b$는 참인지 거짓인지 따질 수 있는 **문장**이고, $a/b$�
 - $7 \mid 42$입니다. $42 = 7 \cdot 6$이고 $6$이 정수이기 때문입니다.
 - $-4 \mid 20$입니다. $20 = (-4) \cdot (-5)$이고 $-5$가 정수입니다. 약수가 음수여도 됩니다.
 - 모든 정수 $n$에 대해 $n \mid 0$입니다. $0 = n \cdot 0$이고 $0$은 정수이기 때문입니다.
-- $0 \mid b$는 $b = 0$일 때만 성립합니다. $b = 0 \cdot c$는 어떤 정수 $c$에 대해서도 $b = 0$이기 때문입니다.
+- 정수 $b$에 대하여 $0 \mid b$인 것은 정확히 $b = 0$일 때입니다. 모든 정수 $c$에 대해 $0 \cdot c = 0$이므로 $b = 0 \cdot c$이면 $b = 0$이고, 거꾸로 $0 = 0 \cdot 0$이므로 $0 \mid 0$입니다. $a \mid b$는 곱셈으로 정의되므로 $0 \mid 0$은 참이지만, 이것이 $0 \div 0$을 계산할 수 있다는 뜻은 아닙니다.
 :::
 
 :::counterexample
