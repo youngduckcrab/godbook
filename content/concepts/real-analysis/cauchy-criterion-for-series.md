@@ -13,8 +13,9 @@ sources:
   - ref: lebl-basic-analysis
     loc: 2.5.2절 Definition 2.5.7, 그 뒤 문단과 Proposition 2.5.8 (p.89)
     checked: original
-    note: "출처의 Definition 2.5.7(p.89)은 부분합 수열이 코시 수열인 급수를 Cauchy series 라 한다. 그 뒤 문단은 수열이 수렴하는 것은 정확히 코시일 때이므로 급수가 수렴하는 것은 정확히 코시일 때라고 하고, 코시 조건의 n ≥ M, k ≥ M 을 'Without loss of generality, we assume n < k' 로 줄인 뒤 첨자 n + 1 부터 k 까지의 합으로 쓰며, 'We have proved the following simple proposition' 이라며 Proposition 2.5.8 을 적는다. 이 항목은 유한 합 대신 s_k − s_n 으로 쓰고, n < k 로 줄이는 단계를 (Z5)로 세 경우를 나누어 보인다. 이 항목의 (1)은 Definition 2.5.7 과 그 뒤 문단의 첫 결론이고, (2)는 Proposition 2.5.8 에 수렴과의 동치를 합친 것이다. (3)은 출처의 Proposition 2.5.9 의 증명(p.90)이 코시 조건에서 k = n + 1 로 두는 것과 같다. 출처는 그것으로 항이 0 으로 감을 증명하고, 이 사이트는 그 사실을 terms-of-convergent-series-tend-to-zero 에서 코시 없이 증명했다. 반례(조화급수에서 k = n + 1 만으로는 부족하다)의 생각은 출처 p.85(Remark 2.4.6 뒤 문단)가 조화급수의 부분합을 예로 이웃한 두 항의 차가 0 으로 가도 코시가 아닐 수 있다고 적는 것과 같다. 확인 질문은 출처에 없다(검색한 범위)."
-status: source-checked
+    note: "출처의 Definition 2.5.7(p.89)은 부분합 수열이 코시 수열인 급수를 Cauchy series 라 한다. 그 뒤 문단은 수열이 수렴하는 것은 정확히 코시일 때이므로 급수가 수렴하는 것은 정확히 코시일 때라고 하고, 코시 조건의 n ≥ M, k ≥ M 을 'Without loss of generality, we assume n < k' 로 줄인 뒤 첨자 n + 1 부터 k 까지의 합으로 쓰며, 'We have proved the following simple proposition' 이라며 Proposition 2.5.8 을 적는다. 이 항목은 유한 합 대신 s_k − s_n 으로 쓰고, n < k 로 줄이는 단계를 (Z5)로 세 경우를 나누어 보인다. 이 항목의 (1)은 Definition 2.5.7 과 그 뒤 문단의 첫 결론이고, (2)는 Proposition 2.5.8 에 수렴과의 동치를 합친 것이다. (3)은 출처의 Proposition 2.5.9 의 증명(p.90)이 코시 조건에서 k = n + 1 로 두는 것과 같다. 출처는 그것으로 항이 0 으로 감을 증명하고, 이 사이트는 그 사실을 terms-of-convergent-series-tend-to-zero 에서 코시 없이 증명했다. 반례(조화급수에서 k = n + 1 만으로는 부족하다)의 생각은 출처 p.85(Remark 2.4.6 뒤 문단)가 조화급수의 부분합을 예로 이웃한 두 항의 차가 0 으로 가도 코시가 아닐 수 있다고 적는 것과 같다. 확인 질문 1 은 같은 p.85 문단과 연습문제 2.5.12(p.98)가 고정된 j 에서 |x_{n+j} − x_n| → 0 이라고 하는 것의 j = 2 인 경우이다. 확인 질문 2 는 출처에 없다(검색한 범위)."
+status: reviewed
+review_note: "2026-11-17 독립 검토 2회(전반 1회, 후반과 전반 재확인 1회). 증명의 수학 오류 없음. Σ 와 유한 합 없이 재귀로 정한 부분합으로 증명. 첫째 항이 0 인 경우를 빼먹은 설명 문장과 출처 메모를 고침"
 added: 2026-11-17
 ---
 
