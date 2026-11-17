@@ -185,7 +185,7 @@ src/                        Astro 사이트 (화면). 내용 추가 때는 건�
 - 완성된 강의: 수학의 언어 (9개 단원, 65개 항목). 연습문제는 아직 없다.
 - 완성된 강의: 정수론 입문 (5개 단원, 32개 항목). 연습문제는 아직 없다. 4단원은 수학의 언어 9단원(유한집합과 세기)을 선행으로 한다.
 - 완성된 강의: 선형대수 (8개 단원, 64개 항목. 출처 Treil). 연습문제는 아직 없다. 행렬식, 특성다항식, 복소수는 다루지 않았다. 스크래치패드의 출처 요약(sources/linear-algebra*.md)에 미룬 것과 그 까닭이 있다.
-- 진행 중: 해석학 입문 (출처 Lebl, Basic Analysis I. 8개 단원 계획 가운데 1단원 9개 항목 완료). 실수는 계산 법칙 (K), 순서 (W1)–(W4), 최소상계 성질 (U)를 받아들인 것으로 다루고, 선형대수의 `real-number-arithmetic`과 정수론 입문의 `well-ordering-principle`만 다른 강의에서 빌린다. 리만 적분은 계획에 넣지 않았다(실수의 유한 합과 분할의 도구가 없다). 공통 지시는 스크래치패드의 analysis-writer-protocol.md, analysis-reviewer-protocol.md, 출처 요약은 sources/analysis-intro.md.
+- 진행 중: 해석학 입문 (출처 Lebl, Basic Analysis I. 8개 단원 계획 가운데 1~2단원 18개 항목 완료). 실수는 계산 법칙 (K), 순서 (W1)–(W4), 최소상계 성질 (U)를 받아들인 것으로 다루고, 선형대수의 `real-number-arithmetic`과 정수론 입문의 `well-ordering-principle`만 다른 강의에서 빌린다. 리만 적분은 계획에 넣지 않았다(실수의 유한 합과 분할의 도구가 없다). 공통 지시는 스크래치패드의 analysis-writer-protocol.md, analysis-reviewer-protocol.md, 출처 요약은 sources/analysis-intro.md.
 
 ## 주간 자동 추가 (아직 하지 않음)
 

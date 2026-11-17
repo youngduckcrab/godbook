@@ -14,7 +14,8 @@ sources:
     loc: 2.1절 Definition 2.1.2 (p.52), Proposition 2.1.6 (p.53)
     checked: original
     note: "출처의 Proposition 2.1.6(p.53)은 '수렴하는 수열은 극한이 하나뿐이다'이고, 출처는 극한 x, y 와 ε 에 대해 |x_n − x| < ε/2 인 M_1, |x_n − y| < ε/2 인 M_2 를 잡고, n ≥ M_1 이고 n ≥ M_2 인 n 에서 |y − x| ≤ |x_n − x| + |x_n − y| < ε 을 얻은 뒤 '모든 ε > 0 에 대해 |y − x| < ε 이므로 |y − x| = 0' 으로 끝낸다. 이 항목의 증명은 같은 경로이며, n 을 max{M_1, M_2} 로 정하고(출처는 그런 n 을 잡는다고만 쓴다), ε/2 + ε/2 = ε 의 계산과 마지막 단계의 근거(order-properties-of-reals 의 (9))를 적었다. 기호 lim_{n→∞} x_n 은 출처가 Definition 2.1.2(p.52)에서 유일성을 뒤에서 증명한다고 미리 밝히고 도입하는 기호이다. 이 항목은 유일성을 증명한 뒤에 도입한다. 출처는 lim_{n→∞} x_n = x 라고 쓰면 수렴한다는 것과 극한이 x 라는 것 두 가지를 말한다고 적는다(p.53). 이 항목의 기호 문단은 같은 내용이다. 'x_n → L' 같은 다른 기호는 출처의 2.1절에 없어(검색한 범위) 쓰지 않는다. 예시, 반례, 확인 질문은 출처에 없다(검색한 범위)."
-status: source-checked
+status: reviewed
+review_note: "2026-11-17 독립 검토 2회(전반 1회, 후반과 전반 재확인 1회). 수학 오류 없음. 출처 메모 보완, 수열 (1)의 전제를 좁힘, 근거 인용 보완"
 added: 2026-11-17
 ---
 
@@ -71,7 +72,7 @@ $n = \max\{M_1, M_2\}$로 둔다. 절댓값 (10)에 의해 $n$은 $M_1$이거나
 $$
 |L - L'| \le |x_n - L| + |x_n - L'|
 $$
-이다. 순서 성질 (2)의 (iv)를 $|x_n - L| < \varepsilon/2$와 $|x_n - L'| \le \varepsilon/2$에 쓰면 $|x_n - L| + |x_n - L'| < \varepsilon/2 + \varepsilon/2$이다. (K4), (K3), (K7)의 $1 + 1 = 2$, (K8)의 (iii)(정수 $2$는 (K7)에 의해 $0$이 아니다)에 의해 $\varepsilon \cdot 2^{-1} + \varepsilon \cdot 2^{-1} = \varepsilon \cdot (2^{-1} \cdot 1 + 2^{-1} \cdot 1) = \varepsilon \cdot (2^{-1} \cdot 2) = \varepsilon \cdot 1 = \varepsilon$이다((K1)로 곱의 순서를 바꾼다). 순서 성질 (1)의 (v)에 의해 $|L - L'| < \varepsilon$이고, 따라서 $|L - L'| \le \varepsilon$이다.
+이다. 순서 성질 (2)의 (iv)를 $|x_n - L| < \varepsilon/2$와 $|x_n - L'| \le \varepsilon/2$에 쓰면 $|x_n - L| + |x_n - L'| < \varepsilon/2 + \varepsilon/2$이다. (K4), (K3), (K7)의 $1 + 1 = 2$, (K8)의 (iii)(정수 $2$는 (K7)에 의해 $0$이 아니다)에 의해 $\varepsilon \cdot 2^{-1} + \varepsilon \cdot 2^{-1} = \varepsilon \cdot (2^{-1} + 2^{-1}) = \varepsilon \cdot (2^{-1} \cdot 1 + 2^{-1} \cdot 1) = \varepsilon \cdot (2^{-1}(1 + 1)) = \varepsilon \cdot (2^{-1} \cdot 2) = \varepsilon \cdot 1 = \varepsilon$이다((K1)로 곱의 순서를 바꾼다). 순서 성질 (1)의 (v)에 의해 $|L - L'| < \varepsilon$이고, 따라서 $|L - L'| \le \varepsilon$이다.
 
 $\varepsilon$은 임의의 양의 실수였으므로 모든 양의 실수 $\varepsilon$에 대하여 $|L - L'| \le \varepsilon$이다. 순서 성질 (9)에 의해 $|L - L'| \le 0$이고, 절댓값 (2)에 의해 $0 \le |L - L'|$이므로 같은 (9)의 둘째 문장에 의해 $|L - L'| = 0$이다. 절댓값 (2)에 의해 $L - L' = 0$이고, (K12)의 (v)에 의해 $L = L'$이다.
 

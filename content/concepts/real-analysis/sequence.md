@@ -13,7 +13,8 @@ sources:
     loc: 2.1절 Definition 2.1.1 과 그 뒤 문단 (p.51), Definition 2.1.9 (p.55), Theorem 2.1.10 의 증명과 그 뒤 문단 (p.55–56)
     checked: original
     note: "출처의 Definition 2.1.1(p.51)은 수열을 함수 x : ℕ → ℝ 로 정의하고 x(n) 대신 x_n 을, 수열 전체를 {x_n}_{n=1}^∞ 으로 쓴다. 출처의 각주는 (x_n)_{n=1}^∞ 으로 쓰는 책도 있다고 적는다. 이 항목은 집합 기호와 겹치지 않도록 (x_n) 을 쓴다. 출처는 수열이 유계인 것을 '바탕의 함수가 유계', 곧 모든 n 에서 |x_n| ≤ B 인 B ∈ ℝ 가 있는 것으로 정의하고, 'In other words' 로 집합 {x_n : n ∈ ℕ} 이 유계인 것과 같다고 한 뒤 위로 유계와 아래로 유계를 '비슷하게 정의한다'고만 적는다. 이 항목은 위로 유계와 아래로 유계를 따로 적고, 값의 집합과의 관계 (2)와 '유계인 것은 정확히 위로도 아래로도 유계일 때' (3)을 증명한다. 출처는 수열을 n 의 식으로 주는 일이 많다고 적고, 그런 식이 함수를 정한다는 것은 따로 말하지 않는다. (1)은 그것을 함수의 정의로 보인 것이다. 단조증가·단조감소·단조의 정의는 출처의 Definition 2.1.9(p.55)와 같다. (4)는 출처가 Theorem 2.1.10 의 증명(p.55)에서 '단조증가이므로 n ≥ M 인 모든 n 에서 x_n ≥ x_M 임을 (귀납으로) 쉽게 볼 수 있다'고 넘기는 것을 진술로 올려 증명한 것이다. 선형대수·정수론 입문의 '열'과 구별하는 문장은 이 사이트가 덧붙였다. 예시 '번갈아 바뀌는 수열과 그 값의 집합'의 첫 수열은 출처 p.51 의 수열 {(−1)ⁿ}(값의 집합이 {−1, 1})과 같은 수열이며, 이 사이트에 실수의 거듭제곱이 없으므로 홀짝으로 정의했다. 같은 값의 집합을 갖는 둘째 수열을 함께 드는 것은 출처에 없다(검색한 범위). 출처는 p.55 에서 {1/n} 이 단조감소라고 하며, 예시 '1 − 1/n'은 그것과 같은 발상이다. 반례 '−n'은 출처 p.51 의 수열 {n}(유계가 아니다, why?)과 같은 발상이다. 확인 질문 1 은 출처 p.55 의 '상수 수열 {1} 은 단조증가이자 단조감소'와 같은 내용이고, 확인 질문 2 는 출처 p.56 의 '단조증가 수열은 x_1 이 하계이므로 아래로 유계'와 같은 내용이다. 예시의 '(a_n) 은 단조가 아니다'와 확인 질문 2 의 '{n} 은 단조증가'는 출처 p.55 의 예(Definition 2.1.9 바로 뒤)이고, 확인 질문 2 의 '{n} 은 위로 유계가 아니다'는 p.51 의 예와 같다. 예시 '1 − 1/n'은 출처의 연습문제 2.1.10(p.59, {(n+1)/n} 이 단조이고 유계임을 보여라)과도 같은 발상이다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-17 독립 검토 2회(전반 1회, 후반과 전반 재확인 1회). 수학 오류 없음. 출처 메모 보완, 수열 (1)의 전제를 좁힘, 근거 인용 보완"
 added: 2026-11-17
 ---
 
@@ -22,7 +23,7 @@ added: 2026-11-17
 
 수열 $(x_n)$의 **값의 집합**은 $\{x_n : n \in \mathbb{N}\}$, 곧 함수 $x$의 치역이다. 수열은 순서쌍 $(n, x_n)$의 집합이고 값의 집합은 실수를 모은 집합이다. 이 사이트는 둘을 구별해 쓴다(같은 값의 집합을 갖는 서로 다른 수열이 있다. 아래 예시).
 
-**값으로 정한 수열.** 각 자연수 $n$마다 실수 $r_n$이 하나씩 정해져 있으면(예: $r_n = n^{-1}$), 아래 (1)에 의해 집합 $\{(n, r_n) : n \in \mathbb{N}\}$은 수열이고 그 $n$번째 항은 $r_n$이다. 이 수열을 "$n$번째 항이 $r_n$인 수열"이라 부른다. 여기서 "정해져 있다"는 $r_n$이 $n$에 대한 식이나 이미 정해진 대상으로 주어진다는 뜻이다. 각 $n$마다 어떤 조건을 만족하는 수 가운데 하나를 고르는 것은 이 진술에 들어가지 않는다. 고르는 방식으로 만드는 수열과 재귀로 정하는 수열은 뒤 단원에서 따로 다룬다. 실수 $c$에 대하여 모든 항이 $c$인 수열을 **상수 수열**(constant sequence)이라 한다.
+**값으로 정한 수열.** 각 자연수 $n$마다 실수 $r_n$이 하나씩 정해져 있으면(예: $r_n = n^{-1}$), 아래 (1)에 의해 집합 $\{(n, r_n) : n \in \mathbb{N}\}$은 수열이고 그 $n$번째 항은 $r_n$이다. 이 수열을 "$n$번째 항이 $r_n$인 수열"이라 부른다. 여기서 "정해져 있다"는 $r_n$이 $n$에 대한 식이나 이미 정해진 대상으로 주어진다는 뜻이다. 각 $n$마다 어떤 조건을 만족하는 수 가운데 하나를 고르는 것은 이 진술에 들어가지 않는다. 그래서 고르는 방식으로 만드는 수열과 재귀로 정하는 수열은 (1)로 정당화되지 않는다. 실수 $c$에 대하여 모든 항이 $c$인 수열을 **상수 수열**(constant sequence)이라 한다.
 
 **유계.** 절댓값은 [[absolute-value]]의 것이다. 수열 $(x_n)$이
 
@@ -45,7 +46,7 @@ added: 2026-11-17
 
 The **set of values** of a sequence $(x_n)$ is $\{x_n : n \in \mathbb{N}\}$, that is, the range of the function $x$. A sequence is a set of ordered pairs $(n, x_n)$, while its set of values is a set collecting real numbers. This site keeps the two apart (different sequences can have the same set of values; see the example below).
 
-**Sequences given by values.** If a real number $r_n$ is specified for each natural number $n$ (for example $r_n = n^{-1}$), then by (1) below the set $\{(n, r_n) : n \in \mathbb{N}\}$ is a sequence whose $n$th term is $r_n$. We call it "the sequence whose $n$th term is $r_n$". Here "specified" means that $r_n$ is given by a formula in $n$ or by objects already defined. Choosing, for each $n$, one of the numbers satisfying some condition is not covered by this statement. Sequences made by such choices and sequences defined recursively are treated separately in later units. For a real number $c$, the sequence all of whose terms equal $c$ is called the **constant sequence**.
+**Sequences given by values.** If a real number $r_n$ is specified for each natural number $n$ (for example $r_n = n^{-1}$), then by (1) below the set $\{(n, r_n) : n \in \mathbb{N}\}$ is a sequence whose $n$th term is $r_n$. We call it "the sequence whose $n$th term is $r_n$". Here "specified" means that $r_n$ is given by a formula in $n$ or by objects already defined. Choosing, for each $n$, one of the numbers satisfying some condition is not covered by this statement. Hence sequences made by such choices and sequences defined recursively are not justified by (1). For a real number $c$, the sequence all of whose terms equal $c$ is called the **constant sequence**.
 
 **Boundedness.** The absolute value is the one in the entry on absolute value. A sequence $(x_n)$ is
 
