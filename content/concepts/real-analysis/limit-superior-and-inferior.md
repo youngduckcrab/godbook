@@ -7,12 +7,12 @@ field: real-analysis
 msc: ["40A05", "26A03"]
 level: undergrad
 summary: 유계인 수열 (x_n) 에 대하여 a_n 을 n 번째 항부터의 값의 상한, b_n 을 하한으로 두면 (a_n) 은 단조감소, (b_n) 은 단조증가이고 유계이다. 그 극한을 상극한, 하극한이라 하며 하극한은 상극한 이하이다.
-requires: [subset, natural-numbers-are-infinite, well-ordering-principle, even-and-odd, real-number-arithmetic, order-properties-of-reals, upper-bound-and-supremum, least-upper-bound-property, infimum-exists, archimedean-property, absolute-value, sequence, limit-of-sequence, limit-is-unique, basic-limits, monotone-convergence-theorem, limits-preserve-inequalities, subsequence]
+requires: [subset, natural-numbers-are-infinite, prime-number, well-ordering-principle, even-and-odd, real-number-arithmetic, order-properties-of-reals, upper-bound-and-supremum, least-upper-bound-property, infimum-exists, archimedean-property, absolute-value, sequence, limit-of-sequence, limit-is-unique, basic-limits, monotone-convergence-theorem, limits-preserve-inequalities, subsequence]
 sources:
   - ref: lebl-basic-analysis
     loc: 2.3.1절 Definition 2.3.1, Proposition 2.3.2 와 그 증명 (p.73–74), Example 2.3.3 (p.74–75), 연습문제 2.3.1, 2.3.2 (p.80)
     checked: original
-    note: "출처의 Definition 2.3.1(p.73)은 유계인 수열 {x_n} 에 대해 a_n := sup{x_k : k ≥ n}, b_n := inf{x_k : k ≥ n} 으로 두고, 극한이 있으면 lim sup x_n := lim a_n, lim inf x_n := lim b_n 으로 정의한다. 출처는 그 앞 문단에서 {x_k : k ≥ n} 이 유계인 집합의 부분집합이므로 유계라고 적는다. 이 항목은 그 집합을 S_n 으로 쓰고, a_n 과 b_n 이 실수 하나로 정해지므로 sequence 의 (1)로 수열이 된다는 것을 밝혔다. 출처의 Proposition 2.3.2(p.73)는 (i) {a_n} 은 유계이고 단조감소, {b_n} 은 유계이고 단조증가이며 따라서 두 극한이 있다, (ii) lim sup x_n = inf{a_n : n ∈ ℕ}, lim inf x_n = sup{b_n : n ∈ ℕ}, (iii) lim inf x_n ≤ lim sup x_n 이다. 이 항목의 (3), (4), (5)이다. 출처는 (a_n) 의 단조감소만 증명하고 (b_n) 의 단조증가는 '비슷하게(연습문제)'(연습문제 2.3.2), 두 수열의 유계는 연습문제(연습문제 2.3.1)로 둔다. 이 항목은 둘 다 증명했다. 출처는 (iii)을 b_n ≤ a_n('공집합이 아닌 집합의 inf 는 sup 이하')과 Lemma 2.2.3 으로 증명하며, 이 항목도 같은 경로(limits-preserve-inequalities)이다. (1)과 (2)(b_n ≤ x_k ≤ a_n)는 출처에 명제로 없다(검색한 범위). 출처는 Proposition 2.3.5 의 증명(p.77)에서 b_n ≤ x_n ≤ a_n 을 쓴다. (4)의 '모든 j 에서 b_j ≤ 하극한, 상극한 ≤ a_j'는 monotone-convergence-theorem 의 (1), (2)에서 온다. 출처는 확장 실수를 쓰는 경우를 2.3.4절에서 다루지만, 이 항목은 유계인 수열에만 정의한다. 예시 '번갈아 바뀌는 수열'은 출처 Example 2.3.3(홀수 번째가 (n+1)/n, 짝수 번째가 0 인 수열의 하극한 0, 상극한 1)과 '수렴하지 않는 수열의 상극한과 하극한을 구한다'는 발상이 같고, 수열은 basic-limits 의 (3)의 것이다. 출처의 연습문제 2.3.5 a)는 (−1)ⁿ/n 의 상극한과 하극한을 구하라는 것이다. 예시 'n⁻¹'의 b_n = 0 과 '(b_n) 은 부분수열이 아니다'는 출처 p.75 의 문장('{a_n}, {b_n} 은 부분수열이 아니고 같은 수로 이루어질 필요도 없다. 수열이 {1/n} 이면 모든 n 에서 b_n = 0')과 같은 내용이다. 반례 '유계가 아닌 수열'과 확인 질문은 출처에 없다(검색한 범위)."
+    note: "출처의 Definition 2.3.1(p.73)은 유계인 수열 {x_n} 에 대해 a_n := sup{x_k : k ≥ n}, b_n := inf{x_k : k ≥ n} 으로 두고, 극한이 있으면 lim sup x_n := lim a_n, lim inf x_n := lim b_n 으로 정의한다. 출처는 그 앞 문단에서 {x_k : k ≥ n} 이 유계인 집합의 부분집합이므로 유계라고 적는다. 이 항목은 그 집합을 S_n 으로 쓰고, a_n 과 b_n 이 실수 하나로 정해지므로 sequence 의 (1)로 수열이 된다는 것을 밝혔다. 출처의 Proposition 2.3.2(p.73)는 (i) {a_n} 은 유계이고 단조감소, {b_n} 은 유계이고 단조증가이며 따라서 두 극한이 있다, (ii) lim sup x_n = inf{a_n : n ∈ ℕ}, lim inf x_n = sup{b_n : n ∈ ℕ}, (iii) lim inf x_n ≤ lim sup x_n 이다. 이 항목의 (3), (4), (5)이다. 출처는 (a_n) 의 단조감소만 증명하고 (b_n) 의 단조증가는 '비슷하게(연습문제)'(연습문제 2.3.2), 두 수열의 유계는 연습문제(연습문제 2.3.1)로 둔다. 이 항목은 둘 다 증명했다. 출처는 (iii)을 b_n ≤ a_n('공집합이 아닌 집합의 inf 는 sup 이하')과 Lemma 2.2.3 으로 증명하며, 이 항목도 같은 경로(limits-preserve-inequalities)이다. (1)과 (2)(b_n ≤ x_k ≤ a_n)는 출처에 명제로 없다(검색한 범위). 출처는 Proposition 2.3.5 의 증명(p.77)에서 b_n ≤ x_n ≤ a_n 을 쓴다. (4)의 '모든 j 에서 b_j ≤ 하극한, 상극한 ≤ a_j'는 monotone-convergence-theorem 의 (1), (2)에서 온다. 출처는 확장 실수를 쓰는 경우를 2.3.4절에서 다루지만, 이 항목은 유계인 수열에만 정의한다. 출처는 2.3절 첫머리(p.73)에서 {(−1)ⁿ} 을 유계이지만 발산하는 수열로 들고 그래도 어떤 극한은 계산할 수 있다고 이어 간다. 예시 '번갈아 바뀌는 수열'은 그 문장을 이 수열에서 구체화한 것이고, 출처 Example 2.3.3(홀수 번째가 (n+1)/n, 짝수 번째가 0 인 수열의 하극한 0, 상극한 1)과 '수렴하지 않는 수열의 상극한과 하극한을 구한다'는 발상이 같고, 수열은 basic-limits 의 (3)의 것이다. 출처의 연습문제 2.3.5 a)는 (−1)ⁿ/n 의 상극한과 하극한을 구하라는 것이다. 예시 'n⁻¹'의 b_n = 0 과 '(b_n) 은 부분수열이 아니다'는 출처 p.75 의 문장('{a_n}, {b_n} 은 부분수열이 아니고 같은 수로 이루어질 필요도 없다. 수열이 {1/n} 이면 모든 n 에서 b_n = 0')과 같은 내용이다. 반례 '유계가 아닌 수열'은 출처 Example 2.3.14(p.80; 홀수 번째 0, 짝수 번째 n 인 수열에서 a_n = ∞, b_n = 0)와 같은 발상이다. 출처는 확장 실수로 a_n = ∞ 라 쓰고, 이 항목은 상한이 없다고 쓴다. 확인 질문은 출처에 없다(검색한 범위)."
 status: source-checked
 added: 2026-11-17
 ---
@@ -30,7 +30,7 @@ $$
 $$
 a_n = \sup S_n = \sup\{x_k : k \in \mathbb{N},\ k \ge n\}, \qquad b_n = \inf S_n = \inf\{x_k : k \in \mathbb{N},\ k \ge n\}
 $$
-으로 두면, [[sequence]]의 (1)(값으로 정한 수열)에 의해 $(a_n)$과 $(b_n)$은 수열이다. 아래 (4)에 의해 두 수열은 수렴한다. $(a_n)$의 극한을 $(x_n)$의 **상극한**(limit superior), $(b_n)$의 극한을 $(x_n)$의 **하극한**(limit inferior)이라 하고
+으로 두면, [[sequence]]의 (1)(값으로 정한 수열)에 의해 $(a_n)$과 $(b_n)$은 수열이다($a_n$, $b_n$은 정확히 하나로 정해진 실수이므로 그 진술의 "이미 정해진 대상"이다). 아래 (4)에 의해 두 수열은 수렴한다. $(a_n)$의 극한을 $(x_n)$의 **상극한**(limit superior), $(b_n)$의 극한을 $(x_n)$의 **하극한**(limit inferior)이라 하고
 $$
 \limsup_{n \to \infty} x_n = \lim_{n \to \infty} a_n, \qquad \liminf_{n \to \infty} x_n = \lim_{n \to \infty} b_n
 $$
@@ -62,7 +62,7 @@ That is, a real number $y$ belongs to $S_n$ exactly when there is a natural numb
 $$
 a_n = \sup S_n = \sup\{x_k : k \in \mathbb{N},\ k \ge n\}, \qquad b_n = \inf S_n = \inf\{x_k : k \in \mathbb{N},\ k \ge n\};
 $$
-then $(a_n)$ and $(b_n)$ are sequences by item (1) (sequences defined by their values) of the entry on sequences. By (4) below, both sequences converge. The limit of $(a_n)$ is called the **limit superior** of $(x_n)$ and the limit of $(b_n)$ the **limit inferior** of $(x_n)$, and we write
+then $(a_n)$ and $(b_n)$ are sequences by item (1) (sequences defined by their values) of the entry on sequences ($a_n$ and $b_n$ are uniquely determined real numbers, so they are "already determined objects" in the sense of that statement). By (4) below, both sequences converge. The limit of $(a_n)$ is called the **limit superior** of $(x_n)$ and the limit of $(b_n)$ the **limit inferior** of $(x_n)$, and we write
 $$
 \limsup_{n \to \infty} x_n = \lim_{n \to \infty} a_n, \qquad \liminf_{n \to \infty} x_n = \lim_{n \to \infty} b_n.
 $$
@@ -114,7 +114,7 @@ $n \le m$이면 수열 (4)에 의해 $a_m \le a_n$이고 $b_n \le b_m$이다. (2
 ## 예시와 반례
 
 :::example[번갈아 바뀌는 수열]
-[[basic-limits]]의 (3)의 수열, 곧 $n$이 짝수이면 $x_n = 1$, 홀수이면 $x_n = -1$인 수열 $(x_n)$을 생각합니다. 모든 $n$에서 $|x_n| = 1$이므로 유계입니다. 자연수 $n$에 대하여 $S_n = \{-1, 1\}$임을 봅니다. $S_n$의 원소는 어떤 항 $x_k$이므로 $-1$이거나 $1$입니다. 거꾸로 $0 < n$과 [[well-ordering-principle]]의 (Z7)에 의해 $2n = n + n \ge n$이고 $2n$은 짝수이므로 $1 = x_{2n} \in S_n$이고, 같은 (Z7)에 의해 $2n + 1 \ge 2n \ge n$이고 $2n + 1$은 홀수이므로 $-1 = x_{2n+1} \in S_n$입니다.
+[[basic-limits]]의 (3)의 수열, 곧 $n$이 짝수이면 $x_n = 1$, 홀수이면 $x_n = -1$인 수열 $(x_n)$을 생각합니다. 모든 $n$에서 $|x_n| = 1$이므로 유계입니다. 자연수 $n$에 대하여 $S_n = \{-1, 1\}$임을 봅니다. $S_n$의 원소는 어떤 항 $x_k$이므로 $-1$이거나 $1$입니다. 거꾸로 $0 < n$과 [[well-ordering-principle]]의 (Z7)에 의해 $2n = n + n \ge n$이고 $2n$은 짝수이므로([[even-and-odd]]의 정의) $1 = x_{2n} \in S_n$이고, 같은 (Z7)에 의해 $2n + 1 \ge 2n \ge n$이고 $2n + 1$은 홀수이므로 $-1 = x_{2n+1} \in S_n$입니다.
 
 [[absolute-value|절댓값]]의 (11)에 의해 $\sup\{-1, 1\} = \max\{-1, 1\} = 1$이고 $\inf\{-1, 1\} = \min\{-1, 1\} = -1$입니다($-1 < 1$). 그래서 모든 $n$에서 $a_n = 1$, $b_n = -1$이고, [[basic-limits]]의 (1)에 의해
 $$
@@ -124,11 +124,11 @@ $$
 :::
 
 :::example[$n^{-1}$: 바닥이 어느 항과도 같지 않은 경우]
-$x_n = n^{-1}$인 수열을 생각합니다. [[order-properties-of-reals]]의 (10)에 의해 $0 < n^{-1}$이고, $1 \le n$이므로 그 항목의 (6)의 (ii)에 의해 $n^{-1} \le 1$이어서($n = 1$이면 등호) 모든 $n$에서 $|x_n| \le 1$, 곧 유계입니다. 자연수 $k \ge n$이면 $k = n$이거나 $n < k$이고, 뒤의 경우 그 항목의 (6)의 (ii)에 의해 $k^{-1} < n^{-1}$이므로 $S_n$의 모든 원소는 $n^{-1}$ 이하입니다. $n^{-1} = x_n \in S_n$이므로 $n^{-1}$은 $S_n$의 최댓값이고, [[upper-bound-and-supremum]]의 (2)에 의해 $a_n = n^{-1}$입니다.
+$x_n = n^{-1}$인 수열을 생각합니다. [[order-properties-of-reals]]의 (10)에 의해 $0 < n^{-1}$이고, [[prime-number]]의 (Z1)에 의해 $1 \le n$이므로 그 항목의 (6)의 (ii)에 의해 $n^{-1} \le 1$이어서($n = 1$이면 등호) 모든 $n$에서 $|x_n| \le 1$, 곧 유계입니다. 자연수 $k \ge n$이면 $\le$의 뜻([[well-ordering-principle]])에 의해 $k = n$이거나 $n < k$이고, 뒤의 경우 그 항목의 (6)의 (ii)에 의해 $k^{-1} < n^{-1}$이므로 $S_n$의 모든 원소는 $n^{-1}$ 이하입니다. $n^{-1} = x_n \in S_n$이므로 $n^{-1}$은 $S_n$의 최댓값이고, [[upper-bound-and-supremum]]의 (2)에 의해 $a_n = n^{-1}$입니다.
 
 $b_n = 0$임을 봅니다. $S_n$의 원소는 양수이므로 $0$은 $S_n$의 하계입니다. 양수 $c$가 주어지면 [[archimedean-property|아르키메데스 성질]]의 (3)에 의해 $N$ 이상인 모든 자연수 $m$에서 $m^{-1} < c$인 자연수 $N$이 있고, $k = \max\{N, n\}$은 [[absolute-value|절댓값]]의 (10)에 의해 $N$이거나 $n$이어서 자연수이며 $k \ge n$, $k \ge N$이므로 $k^{-1} \in S_n$이고 $k^{-1} < c$입니다. 곧 양수는 $S_n$의 하계가 아니므로, [[order-properties-of-reals]]의 (1)의 (iii)에 의해 $S_n$의 하계는 모두 $0$ 이하이고, $0$은 하계이므로 $\inf S_n = 0$입니다. 따라서 $\limsup_{n \to \infty} x_n = \lim_{n \to \infty} n^{-1} = 0$이고 $\liminf_{n \to \infty} x_n = 0$입니다([[basic-limits]]의 (1), (2)).
 
-$(b_n)$의 항 $0$은 $(x_n)$의 어느 항과도 같지 않으므로, $(b_n)$은 $(x_n)$의 [[subsequence|부분수열]]이 아닙니다. 첨자열 $(n_i)$로 $b_i = x_{n_i}$라면 $0 = b_1 = n_1^{-1} > 0$이 되기 때문입니다.
+$(b_n)$의 항 $0$은 $(x_n)$의 어느 항과도 같지 않으므로, $(b_n)$은 $(x_n)$의 [[subsequence|부분수열]]이 아닙니다. 첨자열 $(p_i)$로 $b_i = x_{p_i}$라면 $0 = b_1 = x_{p_1} = p_1^{-1} > 0$이 되기 때문입니다.
 :::
 
 :::counterexample[유계가 아닌 수열]
