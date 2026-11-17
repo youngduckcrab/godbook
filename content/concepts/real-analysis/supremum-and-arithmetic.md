@@ -14,7 +14,8 @@ sources:
     loc: 1.2.3절 Using supremum and infimum, Proposition 1.2.6 (진술 p.32, 증명 p.33), Proposition 1.2.7, 1.2.8 (p.33), 연습문제 1.1.4 (p.27), 1.2.3, 1.2.12 (p.34–35)
     checked: original
     note: "x + A, xA 의 정의와 이 항목의 (1)–(3)은 출처의 Proposition 1.2.6 (i)–(vi)과 같다. 출처는 (i)(이 항목의 (1)의 첫 문장)만 증명하고 나머지는 연습문제 1.2.3 으로 돌린다. 이 항목은 모두 증명하며, (3)은 infimum-exists 의 −A 를 거쳐 (2)로 돌린다. 출처는 진술에서 x + A, xA 가 공집합이 아니고 유계라는 것을 '그 상한이 있다는 진술이 함의한다'고 말하고, 이 항목은 그것을 각 진술에 적었다. (4)는 출처 연습문제 1.1.4(inf B ≤ inf A ≤ sup A ≤ sup B)의 일부이다. (5)는 출처의 Proposition 1.2.7 이고 증명의 경로가 같다. 출처는 A 가 위로 유계라는 것과 inf B 가 있다는 것을 증명에서 따로 적지 않는다. (6)은 출처의 Proposition 1.2.8 이고, 출처는 증명을 독자에게 맡기며(연습문제 1.2.12) 하한에 대해 비슷한 결과가 성립한다고만 한다. 이 항목은 (6)을 upper-bound-and-supremum 의 (4)에서 끌어낸다. 반례는 출처 p.33 의 A = {0}, B = {1/n : n ∈ ℕ}(모든 원소가 엄격히 작아도 sup A < inf B 는 아니다)과 같은 발상이고, B 를 양의 실수 전체로 바꾸었다. 예시는 출처 p.32 의 A = {1, 2, 3}, 5 + A, 3A 와 다른 집합(upper-bound-and-supremum 의 예시의 집합)을 썼다. 확인 질문은 새로 만들었다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-17 작성자의 자기 검토 뒤 독립 검토 통과(전반 2회, 후반 1회). 정수와 실수의 순서를 잇는 진술의 범위, 인용 근거, 번호 표기, 출처 메모를 보완했다. 마지막 수정은 지휘자가 변경분을 확인했다."
 added: 2026-11-17
 ---
 
@@ -26,8 +27,8 @@ $$x + A = \{x + a : a \in A\}, \qquad xA = \{xa : a \in A\}$$
 1. (평행이동) $A$가 위로 유계이면 $x + A$는 위로 유계이고 $\sup(x + A) = x + \sup A$이다. $A$가 아래로 유계이면 $x + A$는 아래로 유계이고 $\inf(x + A) = x + \inf A$이다.
 2. (양수배) $0 < x$라 하자. $A$가 위로 유계이면 $xA$는 위로 유계이고 $\sup(xA) = x \sup A$이다. $A$가 아래로 유계이면 $xA$는 아래로 유계이고 $\inf(xA) = x \inf A$이다.
 3. (음수배) $x < 0$이라 하자. $A$가 아래로 유계이면 $xA$는 위로 유계이고 $\sup(xA) = x \inf A$이다. $A$가 위로 유계이면 $xA$는 아래로 유계이고 $\inf(xA) = x \sup A$이다.
-4. (부분집합) $A \subseteq B \subseteq \mathbb{R}$라 하자. $B$가 위로 유계이면 $\sup A \le \sup B$이다. $B$가 아래로 유계이면 $\inf B \le \inf A$이다.
-5. (두 집합) $B$도 $\mathbb{R}$의 공집합이 아닌 부분집합이고 $A$의 모든 원소 $a$와 $B$의 모든 원소 $b$에 대하여 $a \le b$이면, $A$는 위로 유계이고 $B$는 아래로 유계이며 $\sup A \le \inf B$이다.
+4. (부분집합) $A \subseteq B \subseteq \mathbb{R}$라 하자. $B$가 위로 유계이면 $\sup A$와 $\sup B$가 있고 $\sup A \le \sup B$이다. $B$가 아래로 유계이면 $\inf A$와 $\inf B$가 있고 $\inf B \le \inf A$이다.
+5. (두 집합) $B$도 $\mathbb{R}$의 공집합이 아닌 부분집합이고 $A$의 모든 원소 $a$와 $B$의 모든 원소 $b$에 대하여 $a \le b$이면, $A$는 위로 유계이고 $B$는 아래로 유계이며, $\sup A$와 $\inf B$가 있고 $\sup A \le \inf B$이다.
 6. (상한의 근사) $A$가 위로 유계이면 모든 양수 $\varepsilon$에 대하여 $\sup A - \varepsilon < a \le \sup A$인 $a \in A$가 있다. $A$가 아래로 유계이면 모든 양수 $\varepsilon$에 대하여 $\inf A \le a < \inf A + \varepsilon$인 $a \in A$가 있다.
 :::
 
@@ -39,8 +40,8 @@ That is, a real number $y$ is an element of $x + A$ exactly when $y = x + a$ for
 1. (Translation) If $A$ is bounded above, then $x + A$ is bounded above and $\sup(x + A) = x + \sup A$. If $A$ is bounded below, then $x + A$ is bounded below and $\inf(x + A) = x + \inf A$.
 2. (Positive multiples) Let $0 < x$. If $A$ is bounded above, then $xA$ is bounded above and $\sup(xA) = x \sup A$. If $A$ is bounded below, then $xA$ is bounded below and $\inf(xA) = x \inf A$.
 3. (Negative multiples) Let $x < 0$. If $A$ is bounded below, then $xA$ is bounded above and $\sup(xA) = x \inf A$. If $A$ is bounded above, then $xA$ is bounded below and $\inf(xA) = x \sup A$.
-4. (Subsets) Let $A \subseteq B \subseteq \mathbb{R}$. If $B$ is bounded above, then $\sup A \le \sup B$. If $B$ is bounded below, then $\inf B \le \inf A$.
-5. (Two sets) If $B$ is also a nonempty subset of $\mathbb{R}$ and $a \le b$ for every element $a$ of $A$ and every element $b$ of $B$, then $A$ is bounded above, $B$ is bounded below, and $\sup A \le \inf B$.
+4. (Subsets) Let $A \subseteq B \subseteq \mathbb{R}$. If $B$ is bounded above, then $\sup A$ and $\sup B$ exist and $\sup A \le \sup B$. If $B$ is bounded below, then $\inf A$ and $\inf B$ exist and $\inf B \le \inf A$.
+5. (Two sets) If $B$ is also a nonempty subset of $\mathbb{R}$ and $a \le b$ for every element $a$ of $A$ and every element $b$ of $B$, then $A$ is bounded above, $B$ is bounded below, $\sup A$ and $\inf B$ exist, and $\sup A \le \inf B$.
 6. (Approximation of the supremum) If $A$ is bounded above, then for every positive $\varepsilon$ there is an $a \in A$ with $\sup A - \varepsilon < a \le \sup A$. If $A$ is bounded below, then for every positive $\varepsilon$ there is an $a \in A$ with $\inf A \le a < \inf A + \varepsilon$.
 :::
 

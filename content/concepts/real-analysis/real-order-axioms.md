@@ -13,7 +13,8 @@ sources:
     loc: 1.1절 Basic properties, Definition 1.1.1 (p.23), Definition 1.1.7 (p.25)
     checked: original
     note: "출처는 순서집합(ordered set, Definition 1.1.1)과 순서체(ordered field, Definition 1.1.7)를 일반의 집합과 체에 대해 정의하고, 실수가 최소상계 성질을 가진 순서체라는 것은 1.2절의 Theorem 1.2.1 로 들인다. 이 항목은 그 가운데 순서에 관한 네 조건만 ℝ 에 대해 받아들인다. (W1), (W2)는 Definition 1.1.1 의 (i) trichotomy 와 (ii) transitivity 이고, (W3), (W4)는 Definition 1.1.7 의 (i), (ii)이다. 출처는 (W4)를 'x > 0 이고 y > 0 이면 xy > 0'으로 적는다. 번호 (W1)–(W4)와 항목의 이름은 이 사이트의 것이다. ≤ 의 정의는 출처와 같고, 출처는 > 와 ≥ 를 'in the obvious way'로 정한다고만 적는다. 출처는 양수, 음수에 더해 nonnegative(x ≥ 0), nonpositive(x ≤ 0)도 정의하는데, 이 항목은 그 두 용어를 두지 않는다. a < b < c 같은 이어 쓴 부등식은 출처가 정의 없이 쓴다(예: Proposition 1.1.8 (v)의 0 < x < y). 체의 공리는 출처의 Definition 1.1.5 이고, 이 사이트는 그것 대신 real-number-arithmetic 의 (K1)–(K7)을 쓴다. 예시, 반례, 확인 질문은 새로 만들었다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-17 작성자의 자기 검토 뒤 독립 검토 통과(전반 2회, 후반 1회). 정수와 실수의 순서를 잇는 진술의 범위, 인용 근거, 번호 표기, 출처 메모를 보완했다. 마지막 수정은 지휘자가 변경분을 확인했다."
 added: 2026-11-17
 ---
 
