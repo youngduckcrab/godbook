@@ -10,9 +10,9 @@ summary: ℝ 의 부분집합 S 에서 ℝ 로의 함수를 S 위의 실함수�
 requires: [set, subset, set-operations, function, inverse-function, adding-or-removing-an-element, recursion-theorem, real-number-arithmetic, real-order-axioms, order-properties-of-reals, absolute-value, interval]
 sources:
   - ref: lebl-basic-analysis
-    loc: 0.3절 Definition 0.3.11 (p.14); 3.1절 Corollary 3.1.10 앞 문단 (p.117), Corollary 3.1.12 (p.118), Definition 3.1.14 (p.118); 3.2절 Proposition 3.2.5 (p.124)
+    loc: 0.3절 Definition 0.3.11 (p.14); 1.3절 연습문제 1.3.8, 1.3.9 (p.40); 3.1절 Corollary 3.1.10 앞 문단 (p.117), Corollary 3.1.12 (p.118), Definition 3.1.14 (p.118); 3.2절 Proposition 3.2.5 (p.124)
     checked: original
-    note: "출처의 Definition 0.3.11(p.14)은 함수 f : A → B 를 A × B 의 부분집합으로 정의하고, 같은 쪽에서 함수의 정의역이 대개 공집합이 아니라고 가정한다고 적는다. 출처는 3장에서 S ⊂ ℝ 와 f : S → ℝ 를 이름 없이 쓰며, 이 항목의 '실함수'라는 이름은 3장에 나오지 않는다(3장을 검색한 범위). 출처는 함수를 f(x) := x² 같은 식이나 경우 나누기로 정하고 그것이 함수임을 따로 정당화하지 않는다. 이 항목은 (1)을 recursion-theorem 의 (1)로 정당화한다. 상수함수는 출처가 Corollary 3.1.10 앞 문단(p.117)에서 'constant functions 를 적용하면'이라고 쓰고, 합·차·곱·몫은 출처가 Corollary 3.1.12(p.118)에서 f(x) + g(x) 등의 극한으로, Proposition 3.2.5(p.124)에서 'h(x) := f(x) + g(x) 로 정한 h : S → ℝ' 꼴로 그때그때 쓴다. 출처의 Corollary 3.1.12 (iv)는 S \\ {c} 의 모든 x 에서 g(x) ≠ 0 이라고 가정하고 f(x)/g(x) 의 극한을 말하며, Proposition 3.2.5 (iv)는 S 의 모든 x 에서 g(x) ≠ 0 일 때 h(x) := f(x)/g(x) 로 정한 h : S → ℝ 를 말한다. 이 항목은 몫 f/g 를 언제나 g 가 0 이 아닌 점들의 집합 위의 함수로 정한다. 제한은 출처의 Definition 3.1.14(p.118)이고 이 사이트에서는 adding-or-removing-an-element 의 진술에서 이미 정의했다. (6)의 제한과 연산의 관계는 출처에 없다(검색한 범위). 예시, 반례, 확인 질문은 출처에 없다(검색한 범위)."
+    note: "출처의 Definition 0.3.11(p.14)은 함수 f : A → B 를 A × B 의 부분집합으로 정의하고, 같은 쪽에서 함수의 정의역이 대개 공집합이 아니라고 가정한다고 적는다. 출처는 3장에서 S ⊂ ℝ 와 f : S → ℝ 를 이름 없이 쓰며, 이 항목의 '실함수'라는 이름은 3장에 나오지 않는다(3장을 검색한 범위). 출처는 함수를 f(x) := x² 같은 식이나 경우 나누기로 정하고 그것이 함수임을 따로 정당화하지 않는다. 이 항목은 (1)을 recursion-theorem 의 (1)로 정당화한다. 상수함수는 출처가 Corollary 3.1.10 앞 문단(p.117)에서 'constant functions 를 적용하면'이라고 쓰고, 합과 상수배는 출처가 연습문제 1.3.8(p.40)에서 공집합이 아닌 D 위의 함수에 대해 (f + g)(x) := f(x) + g(x), (αf)(x) := αf(x) 로 정의하고 연습문제 1.3.9(p.40)에서 그 뜻을 다시 쓴다. 차·곱·몫은 출처가 Corollary 3.1.12(p.118)에서 f(x) + g(x) 등의 극한으로, Proposition 3.2.5(p.124)에서 'h(x) := f(x) + g(x) 로 정한 h : S → ℝ' 꼴로 그때그때 쓴다. 출처의 Corollary 3.1.12 (iv)는 S \\ {c} 의 모든 x 에서 g(x) ≠ 0 이라고 가정하고 f(x)/g(x) 의 극한을 말하며, Proposition 3.2.5 (iv)는 S 의 모든 x 에서 g(x) ≠ 0 일 때 h(x) := f(x)/g(x) 로 정한 h : S → ℝ 를 말한다. 이 항목은 몫 f/g 를 언제나 g 가 0 이 아닌 점들의 집합 위의 함수로 정한다. 제한은 출처의 Definition 3.1.14(p.118)이고 이 사이트에서는 adding-or-removing-an-element 의 진술에서 이미 정의했다. (6)의 제한과 연산의 관계는 출처에 없다(검색한 범위). 예시, 반례, 확인 질문은 출처에 없다(검색한 범위)."
 status: source-checked
 added: 2026-11-17
 ---
@@ -30,6 +30,8 @@ added: 2026-11-17
 4. (합, 차, 곱, 상수배, 절댓값) 다음 함수들을 (1)로 정한다. 각각은 $S$ 위의 실함수이다.
    - $f + g$: $(f + g)(x) = f(x) + g(x)$, $\quad f - g$: $(f - g)(x) = f(x) - g(x)$,
    - $fg$: $(fg)(x) = f(x)\,g(x)$, $\quad kf$: $(kf)(x) = k\,f(x)$, $\quad |f|$: $|f|(x) = |f(x)|$.
+
+   함수에 붙은 막대 $|f|$는 함수의 절댓값, 곧 $x$에서의 값이 $|f(x)|$인 함수이고, 집합으로서의 $f$의 원소의 개수가 아니다.
 5. (몫) $Z = \{x \in S : g(x) \ne 0\}$로 두자. 몫 $f/g$는 $(f/g)(x) = f(x)/g(x)$로 정한 함수 $f/g : Z \to \mathbb{R}$이고, $1/g$는 $(1/g)(x) = g(x)^{-1}$로 정한 함수 $1/g : Z \to \mathbb{R}$이다. 곧 $f/g$의 정의역은 $S$가 아니라 $g$가 $0$이 아닌 점들의 집합 $Z$이고, $Z \subseteq S$이다. $S$의 모든 원소 $x$에서 $g(x) \ne 0$이면 $Z = S$이다.
 6. (제한과 연산) $A \subseteq S$이면 제한 $f|_A$([[adding-or-removing-an-element]]의 진술)는 $A$ 위의 실함수이고 모든 $x \in A$에서 $f|_A(x) = f(x)$이다. 또
    $$
@@ -51,6 +53,8 @@ The following hold. Below, $f$ and $g$ are real-valued functions on $S$ and $k$ 
 4. (Sum, difference, product, scalar multiple, absolute value) The following functions are defined by (1). Each is a real-valued function on $S$.
    - $f + g$: $(f + g)(x) = f(x) + g(x)$, $\quad f - g$: $(f - g)(x) = f(x) - g(x)$,
    - $fg$: $(fg)(x) = f(x)\,g(x)$, $\quad kf$: $(kf)(x) = k\,f(x)$, $\quad |f|$: $|f|(x) = |f(x)|$.
+
+   The bars in $|f|$ attached to a function denote the absolute value of the function, that is, the function whose value at $x$ is $|f(x)|$; they do not denote the number of elements of $f$ as a set.
 5. (Quotient) Let $Z = \{x \in S : g(x) \ne 0\}$. The quotient $f/g$ is the function $f/g : Z \to \mathbb{R}$ defined by $(f/g)(x) = f(x)/g(x)$, and $1/g$ is the function $1/g : Z \to \mathbb{R}$ defined by $(1/g)(x) = g(x)^{-1}$. That is, the domain of $f/g$ is not $S$ but the set $Z$ of points where $g$ is not $0$, and $Z \subseteq S$. If $g(x) \ne 0$ for every element $x$ of $S$, then $Z = S$.
 6. (Restrictions and operations) If $A \subseteq S$, the restriction $f|_A$ (from the entry on adding or removing an element) is a real-valued function on $A$, and $f|_A(x) = f(x)$ for all $x \in A$. Moreover,
    $$
@@ -71,7 +75,7 @@ The following hold. Below, $f$ and $g$ are real-valued functions on $S$ and $k$ 
 :::proof
 (K…)는 [[real-number-arithmetic]]의 진술이다.
 
-**1의 증명.** [[recursion-theorem]]의 (1)을 $A = S$, $B = \mathbb{R}$로 쓰면 $\{(x, r(x)) : x \in S\}$는 $S$에서 $\mathbb{R}$로의 함수이고 $x$에서의 값은 $r(x)$이다. 경우를 나누어 정할 때, $S$의 각 원소 $x$가 정확히 한 경우에 들면 그 경우의 식이 $x$에 대한 식으로 $r(x)$를 하나 준다. 예의 경우 나눔에서는 [[order-properties-of-reals]]의 (1)의 (iii)에 의해 모든 실수 $x$가 $0 \le x$와 $x < 0$ 가운데 정확히 하나를 만족한다.
+**1의 증명.** [[recursion-theorem]]의 (1)을 $A = S$, $B = \mathbb{R}$로 쓰면 $\{(x, r(x)) : x \in S\}$는 $S$에서 $\mathbb{R}$로의 함수이고 $x$에서의 값은 $r(x)$이다. 경우를 나누어 정할 때 $r(x)$는 "($x$가 첫째 경우에 들고 $y$가 첫째 식의 값) 또는 ($x$가 둘째 경우에 들고 $y$가 둘째 식의 값)"을 만족하는 실수 $y$이고, $x$가 정확히 한 경우에 들므로 그런 $y$는 정확히 하나이다. 따라서 $r(x)$는 [[recursion-theorem]]의 (1)의 "이미 정해진 대상"에 든다. 예의 경우 나눔에서는 [[order-properties-of-reals]]의 (1)의 (iii)에 의해 모든 실수 $x$가 $0 \le x$와 $x < 0$ 가운데 정확히 하나를 만족한다.
 
 **2의 증명.** $f$와 $g$는 정의역이 $S$로 같은 두 함수이므로 [[function]]의 함수의 같음에 의해 그렇다.
 
@@ -93,7 +97,7 @@ $$
 :::example[경우로 정한 함수를 연산으로 다시 쓰기]
 $h(x) = x$ ($0 \le x$일 때), $h(x) = 0$ ($x < 0$일 때)로 정한 함수 $h : \mathbb{R} \to \mathbb{R}$를 생각합니다. 모든 실수는 두 경우 가운데 정확히 하나에 들므로 (1)에 의해 $h$는 실함수입니다. 이제 $i = i_{\mathbb{R}}$로 두고 $u = 2^{-1}(i + |i|)$를 (3), (4)로 정합니다. $u(x) = 2^{-1}(x + |x|)$입니다.
 
-- $0 \le x$이면 [[absolute-value|절댓값]]의 (1)에 의해 $|x| = x$이므로 $u(x) = 2^{-1}(x + x) = 2^{-1} \cdot 2 \cdot x = x = h(x)$입니다((K3), (K4), (K7)의 $1 + 1 = 2$, (K8)의 (iii)).
+- $0 \le x$이면 [[absolute-value|절댓값]]의 (1)에 의해 $|x| = x$이므로 $u(x) = 2^{-1}(x + x) = 2^{-1} \cdot 2 \cdot x = x = h(x)$입니다((K1), (K2), (K3), (K4), (K7)의 $1 + 1 = 2$, (K8)의 (iii)).
 - $x < 0$이면 $|x| = -x$이므로 $u(x) = 2^{-1}(x + (-x)) = 2^{-1} \cdot 0 = 0 = h(x)$입니다((K8)의 (ii), (K9)).
 
 모든 $x$에서 값이 같으므로 (2)에 의해 $u = h$입니다. 경우로 정한 함수와 연산으로 만든 함수가 같은 집합이라는 것을 값을 비교해 확인했습니다.
@@ -105,7 +109,7 @@ $i = i_{\mathbb{R}}$에 대하여 몫 $i/i$를 생각합니다. (5)의 $Z$는 $\
 
 ## 확인 질문
 
-:::check[닫힌구간 $S$를 $0$부터 $1$까지로 두고, $f(x) = 1$, $g(x) = 2x - 1$로 정한 $S$ 위의 실함수 $f$, $g$를 생각한다. $f/g$의 정의역은 무엇인가?]
+:::check[$S = \{x \in \mathbb{R} : 0 \le x \le 1\}$로 두고, $f(x) = 1$, $g(x) = 2x - 1$로 정한 $S$ 위의 실함수 $f$, $g$를 생각한다. $f/g$의 정의역은 무엇인가?]
 $S = [0, 1]$입니다. $g(x) = 0$인 것은 정확히 $2x = 1$, 곧 $x = 2^{-1}$일 때입니다((K12)의 (v), (K7)의 $2 \ne 0$, (K8)의 (iii), (K11)). [[order-properties-of-reals]]의 (8)에 의해 $0 < 2^{-1} < 1$이므로 $2^{-1} \in S$이고, 정의역은 $Z = [0, 1] - \{2^{-1}\}$입니다. $0$과 $1$은 $Z$의 원소이고 그 사이의 $2^{-1}$은 $Z$에 속하지 않으므로, $Z$는 [[interval|구간]]이 아닙니다.
 :::
 

@@ -13,35 +13,41 @@ sources:
   - ref: lebl-basic-analysis
     loc: 3.1.3절 Corollary 3.1.11 앞 문단, Corollary 3.1.12, 3.1.13 (p.118), 연습문제 3.1.4, 3.1.16 (p.120–121); 4.1절 Example 4.1.2 (p.156)
     checked: original
-    note: "출처의 Corollary 3.1.12(p.118)는 c 가 S 의 집적점이고 f, g 의 극한이 있을 때 (i) 합, (ii) 차, (iii) 곱의 극한이 극한의 합, 차, 곱이고, (iv) lim g ≠ 0 이고 S \\ {c} 의 모든 x 에서 g(x) ≠ 0 이면 f(x)/g(x) 의 극한이 극한의 몫이라는 것이다. 이 항목의 (3), (4), (5), (8)이다. Corollary 3.1.13(p.118)은 |f(x)| 의 극한이 극한의 절댓값이라는 것이고, 이 항목의 (7)이다. 출처는 3.1.12 를 'Lemma 3.1.7(수열로 본 극한)을 같은 방식으로 쓰면' 얻는다고 하고 증명을 연습문제 3.1.4(p.120)로 두며, 3.1.13 의 증명은 연습문제 3.1.16 a)(p.121)로 둔다. 이 항목은 모두 ε–δ 로 직접 증명한다. 출처의 (iv)는 g(x) ≠ 0 을 S \\ {c} 에서만 가정하므로 c ∈ S 이고 g(c) = 0 이면 f(x)/g(x) 로 정한 S 위의 함수가 없다. 이 항목은 몫을 g 가 0 이 아닌 점들의 집합 Z 위의 함수로 정하고(real-valued-function 의 (5)), c 가 Z 의 집적점임을 (2)로 증명한다. 이 꼴에서는 S \\ {c} 에서 g ≠ 0 이라는 가정을 따로 두지 않는다. 상수배 (6), c 가까이에서 유계 (1), 분모가 0 에서 떨어진다는 (2)는 출처에 명제로 없다(검색한 범위). 예시 '약분'은 출처의 Example 4.1.2(p.156)에서 (x² − c²)/(x − c) = x + c 로 바꾸어 극한을 구하는 것과 같은 계산이다. 반례 '분모의 극한이 0 이면'은 출처의 Example 3.3.5(p.131)가 (0, 1) 위의 1/x 에 대해 '0 에 다가가면 값이 유계가 아니다'라고 적는 것과 같은 함수, 같은 발상이고, 이 항목은 그것을 (1)과 귀류법으로 증명했다. 예시 '분모가 0 이 되지 않는 몫'과 확인 질문은 출처에 없다(검색한 범위). 출처는 x² + 1 을 Example 3.3.3(p.131)에서 최댓값·최솟값의 예로, p.134 에서 실근이 없는 다항식의 예로 쓴다."
+    note: "출처의 Corollary 3.1.12(p.118)는 c 가 S 의 집적점이고 f, g 의 극한이 있을 때 (i) 합, (ii) 차, (iii) 곱의 극한이 극한의 합, 차, 곱이고, (iv) lim g ≠ 0 이고 S \\ {c} 의 모든 x 에서 g(x) ≠ 0 이면 f(x)/g(x) 의 극한이 극한의 몫이라는 것이다. 이 항목의 (3), (4), (5), (8)이다. Corollary 3.1.13(p.118)은 |f(x)| 의 극한이 극한의 절댓값이라는 것이고, 이 항목의 (7)이다. 출처는 3.1.12 를 'Lemma 3.1.7(수열로 본 극한)을 같은 방식으로 쓰면' 얻는다고 하고 증명을 연습문제 3.1.4(p.120)로 두며, 3.1.13 의 증명은 연습문제 3.1.16 a)(p.121)로 둔다. 이 항목은 모두 ε–δ 로 직접 증명한다. 출처의 (iv)는 lim g ≠ 0 과 S \\ {c} 의 모든 x 에서 g(x) ≠ 0 을 가정한다. 이 항목은 몫을 g 가 0 이 아닌 점들의 집합 Z 위의 함수로 정하고(real-valued-function 의 (5)), c 가 Z 의 집적점임을 (2)로 증명한다. 이 꼴에서는 S \\ {c} 에서 g ≠ 0 이라는 가정을 따로 두지 않는다. 상수배 (6), c 가까이에서 유계 (1), 분모가 0 에서 떨어진다는 (2)는 출처에 명제로 없다(검색한 범위). 예시 '약분'은 출처의 Example 4.1.2(p.156)에서 (x² − c²)/(x − c) = x + c 로 바꾸어 극한을 구하는 것과 같은 계산이다. 반례 '분모의 극한이 0 이면'은 출처의 Example 3.3.5(p.132)가 (0, 1) 위의 1/x 에 대해 '0 에 다가가면 값이 유계가 아니다'라고 적는 것과 같은 식(정의역은 다르다), 같은 발상이고, 이 항목은 그것을 (1)과 귀류법으로 증명했다. 예시 '분모가 0 이 되지 않는 몫'과 확인 질문은 출처에 없다(검색한 범위). 출처는 x² + 1 을 Example 3.3.3(p.131)에서 최댓값·최솟값의 예로, p.134 에서 실근이 없는 다항식의 예로 쓴다."
 status: source-checked
 added: 2026-11-17
 ---
 
 :::statement
-실함수와 그 합 $f + g$, 차 $f - g$, 곱 $fg$, 상수배 $kf$, 절댓값 $|f|$, 몫 $f/g$, $1/g$는 [[real-valued-function]]의 것이고, 집적점은 [[cluster-point]]의 것이며, 수렴, "$c$ 가까이에서 성립한다", 기호 $\lim_{x \to c}$는 [[limit-of-a-function]]의 것이다. $S$를 $\mathbb{R}$의 부분집합, $c$를 $S$의 집적점, $k$를 실수라 하고, $S$ 위의 실함수 $f$, $g$가 $c$에서 각각 $L_1$, $L_2$로 수렴한다고 하자.
+실함수와 그 합 $f + g$, 차 $f - g$, 곱 $fg$, 상수배 $kf$, 절댓값 $|f|$, 몫 $f/g$, $1/g$는 [[real-valued-function]]의 것이고, 집적점은 [[cluster-point]]의 것이며, 수렴, "$c$ 가까이에서 성립한다", 기호 $\lim_{x \to c}$는 [[limit-of-a-function]]의 것이다. $S$를 $\mathbb{R}$의 부분집합, $c$를 $S$의 집적점, $k$를 실수, $f$, $g$를 $S$ 위의 실함수라 하자. 각 번호는 거기 적은 함수의 수렴만 가정한다.
 
-1. ($c$ 가까이에서 유계) "$|f(x)| < |L_1| + 1$"이 $c$ 가까이에서 성립한다. 특히 어떤 양의 실수 $B$가 있어 "$|f(x)| \le B$"가 $c$ 가까이에서 성립한다.
-2. (분모가 $0$에서 떨어진다) $L_2 \ne 0$이면 "$2^{-1}|L_2| < |g(x)|$"가 $c$ 가까이에서 성립하고, 특히 "$g(x) \ne 0$"이 $c$ 가까이에서 성립한다.
+1. ($c$ 가까이에서 유계) $f$가 $c$에서 $L_1$로 수렴하면 "$|f(x)| < |L_1| + 1$"이 $c$ 가까이에서 성립한다. 특히 어떤 양의 실수 $B$가 있어 "$|f(x)| \le B$"가 $c$ 가까이에서 성립한다.
+2. (분모가 $0$에서 떨어진다) $g$가 $c$에서 $L_2$로 수렴하고 $L_2 \ne 0$이면 "$2^{-1}|L_2| < |g(x)|$"가 $c$ 가까이에서 성립하고, 특히 "$g(x) \ne 0$"이 $c$ 가까이에서 성립한다.
+
+아래 (3)–(5)에서는 $f$, $g$가 $c$에서 각각 $L_1$, $L_2$로 수렴한다고 하고, (6), (7)에서는 $f$가 $c$에서 $L_1$로 수렴한다고 한다.
+
 3. (합) $f + g$는 $c$에서 $L_1 + L_2$로 수렴한다. 곧 $\lim_{x \to c} (f(x) + g(x)) = L_1 + L_2$이다.
 4. (차) $f - g$는 $c$에서 $L_1 - L_2$로 수렴한다.
 5. (곱) $fg$는 $c$에서 $L_1 L_2$로 수렴한다.
 6. (상수배) $kf$는 $c$에서 $k L_1$로 수렴한다.
 7. (절댓값) $|f|$는 $c$에서 $|L_1|$로 수렴한다.
-8. (몫) $L_2 \ne 0$이라 하고 $Z = \{x \in S : g(x) \ne 0\}$으로 두자. 그러면 $c$는 $Z$의 집적점이고, $1/g : Z \to \mathbb{R}$는 $c$에서 $L_2^{-1}$로, $f/g : Z \to \mathbb{R}$는 $c$에서 $L_1 / L_2$로 수렴한다. $S$의 모든 원소 $x$에서 $g(x) \ne 0$이면 $Z = S$이다.
+8. (몫) $g$가 $c$에서 $L_2$로 수렴하고 $L_2 \ne 0$이라 하며, $Z = \{x \in S : g(x) \ne 0\}$으로 두자. 그러면 $c$는 $Z$의 집적점이고, $1/g : Z \to \mathbb{R}$는 $c$에서 $L_2^{-1}$로 수렴한다. 또 $f$가 $c$에서 $L_1$로 수렴하면 $f/g : Z \to \mathbb{R}$는 $c$에서 $L_1 / L_2$로 수렴한다. $S$의 모든 원소 $x$에서 $g(x) \ne 0$이면 $Z = S$이다.
 :::
 
 :::english
-Real-valued functions and their sum $f + g$, difference $f - g$, product $fg$, scalar multiple $kf$, absolute value $|f|$, and quotients $f/g$, $1/g$ are those of the entry on real-valued functions; cluster points are those of the entry on cluster points; and convergence, "holds near $c$", and the symbol $\lim_{x \to c}$ are those of the entry on the limit of a function. Let $S$ be a subset of $\mathbb{R}$, $c$ a cluster point of $S$, and $k$ a real number, and suppose that real-valued functions $f$, $g$ on $S$ converge at $c$ to $L_1$ and $L_2$ respectively.
+Real-valued functions and their sum $f + g$, difference $f - g$, product $fg$, scalar multiple $kf$, absolute value $|f|$, and quotients $f/g$, $1/g$ are those of the entry on real-valued functions; cluster points are those of the entry on cluster points; and convergence, "holds near $c$", and the symbol $\lim_{x \to c}$ are those of the entry on the limit of a function. Let $S$ be a subset of $\mathbb{R}$, $c$ a cluster point of $S$, $k$ a real number, and $f$, $g$ real-valued functions on $S$. Each item assumes only the convergence of the functions named in it.
 
-1. (Bounded near $c$) "$|f(x)| < |L_1| + 1$" holds near $c$. In particular, there is a positive real number $B$ such that "$|f(x)| \le B$" holds near $c$.
-2. (The denominator stays away from $0$) If $L_2 \ne 0$, then "$2^{-1}|L_2| < |g(x)|$" holds near $c$; in particular, "$g(x) \ne 0$" holds near $c$.
+1. (Bounded near $c$) If $f$ converges to $L_1$ at $c$, then "$|f(x)| < |L_1| + 1$" holds near $c$. In particular, there is a positive real number $B$ such that "$|f(x)| \le B$" holds near $c$.
+2. (The denominator stays away from $0$) If $g$ converges to $L_2$ at $c$ and $L_2 \ne 0$, then "$2^{-1}|L_2| < |g(x)|$" holds near $c$; in particular, "$g(x) \ne 0$" holds near $c$.
+
+In (3)–(5) below, $f$ and $g$ converge at $c$ to $L_1$ and $L_2$ respectively, and in (6) and (7), $f$ converges to $L_1$ at $c$.
+
 3. (Sum) $f + g$ converges to $L_1 + L_2$ at $c$. That is, $\lim_{x \to c} (f(x) + g(x)) = L_1 + L_2$.
 4. (Difference) $f - g$ converges to $L_1 - L_2$ at $c$.
 5. (Product) $fg$ converges to $L_1 L_2$ at $c$.
 6. (Scalar multiple) $kf$ converges to $k L_1$ at $c$.
 7. (Absolute value) $|f|$ converges to $|L_1|$ at $c$.
-8. (Quotient) Suppose $L_2 \ne 0$ and let $Z = \{x \in S : g(x) \ne 0\}$. Then $c$ is a cluster point of $Z$, $1/g : Z \to \mathbb{R}$ converges to $L_2^{-1}$ at $c$, and $f/g : Z \to \mathbb{R}$ converges to $L_1 / L_2$ at $c$. If $g(x) \ne 0$ for every element $x$ of $S$, then $Z = S$.
+8. (Quotient) Suppose $g$ converges to $L_2$ at $c$ with $L_2 \ne 0$, and let $Z = \{x \in S : g(x) \ne 0\}$. Then $c$ is a cluster point of $Z$ and $1/g : Z \to \mathbb{R}$ converges to $L_2^{-1}$ at $c$. If moreover $f$ converges to $L_1$ at $c$, then $f/g : Z \to \mathbb{R}$ converges to $L_1 / L_2$ at $c$. If $g(x) \ne 0$ for every element $x$ of $S$, then $Z = S$.
 :::
 
 ## 직관
@@ -125,7 +131,7 @@ $$
 $$
 \bigl|(1/g)(x) - L_2^{-1}\bigr| = |g(x) - L_2|\,|L_2|^{-1}\,|g(x)|^{-1}
 $$
-이다. 순서 성질 (6)의 (i)에 의해 $|L_2|^{-1}$은 양수이고 $|g(x) - L_2|$는 $0$ 이상이므로, 순서 성질 (4)의 (iii)에 의해 오른쪽은 $|g(x) - L_2|\,|L_2|^{-1}\,\eta^{-1}$ 이하이다. 또 $|L_2|^{-1}\eta^{-1}$은 양수이므로 순서 성질 (4)의 (i)에 의해 이것은 $\varepsilon_3\,|L_2|^{-1}\eta^{-1}$보다 작다. (K1), (K2), (K8)의 (iii), (K4)에 의해 $\varepsilon_3\,|L_2|^{-1}\eta^{-1} = \varepsilon\,(\eta\,\eta^{-1})(|L_2|\,|L_2|^{-1}) = \varepsilon$이다. 순서 성질 (1)의 (v)에 의해 $|(1/g)(x) - L_2^{-1}| < \varepsilon$이다. 따라서 $1/g$는 $c$에서 $L_2^{-1}$로 수렴한다.
+이다. 순서 성질 (6)의 (i)에 의해 $|L_2|^{-1}$은 양수이고 $|g(x) - L_2|$는 $0$ 이상이므로 순서 성질 (4)의 (iv)에 의해 $|g(x) - L_2|\,|L_2|^{-1} \ge 0$이고, 순서 성질 (4)의 (iii)에 의해 오른쪽은 $|g(x) - L_2|\,|L_2|^{-1}\,\eta^{-1}$ 이하이다. 또 $|L_2|^{-1}\eta^{-1}$은 양수이므로 순서 성질 (4)의 (i)에 의해 이것은 $\varepsilon_3\,|L_2|^{-1}\eta^{-1}$보다 작다. (K1), (K2), (K8)의 (iii), (K4)에 의해 $\varepsilon_3\,|L_2|^{-1}\eta^{-1} = \varepsilon\,(\eta\,\eta^{-1})(|L_2|\,|L_2|^{-1}) = \varepsilon$이다. 순서 성질 (1)의 (v)에 의해 $|(1/g)(x) - L_2^{-1}| < \varepsilon$이다. 따라서 $1/g$는 $c$에서 $L_2^{-1}$로 수렴한다.
 
 $f/g$의 극한. $c$가 $Z$의 집적점이고 $Z \subseteq S$이므로, 극한 (7)에 의해 제한 $f|_Z$는 $c$에서 $L_1$로 수렴한다. $Z$ 위의 두 실함수 $f|_Z$와 $1/g$에 대하여, 모든 $x \in Z$에서 실함수 (6)에 의해 $(f|_Z \cdot (1/g))(x) = f(x)\,g(x)^{-1} = (f/g)(x)$이므로 실함수 (2)에 의해 $f|_Z \cdot (1/g) = f/g$이다. 이 항목의 (5)를 $S$ 대신 $Z$에, $f$ 대신 $f|_Z$에, $g$ 대신 $1/g$에 쓰면 $f/g$는 $c$에서 $L_1 L_2^{-1} = L_1/L_2$로 수렴한다. $\blacksquare$
 :::
@@ -147,7 +153,7 @@ $x \in Z$이면 (K1)–(K3), (K12)로 전개해 $x x - 1 = (x + 1)(x - 1)$이고
 :::counterexample[분모의 극한이 $0$이면 몫이 수렴하지 않을 수 있다]
 $f$를 $\mathbb{R}$ 위의 값이 $1$인 상수함수, $g = i_{\mathbb{R}}$이라 합시다. $g$는 $0$에서 $0$으로 수렴하고, $1/g$의 정의역은 $Z = \{x \in \mathbb{R} : x \ne 0\}$이며 $(1/g)(x) = x^{-1}$입니다. 위의 예시와 같은 이유로 $0$은 $Z$의 집적점입니다. $1/g$가 $0$에서 어떤 실수 $L$로 수렴한다고 하고 모순을 끌어냅니다([[proof-by-contradiction|귀류법]]).
 
-(1)을 $Z$ 위의 $1/g$에 쓰면, $x \in Z$, $|x - 0| < \delta_0$인 모든 $x$에서 $|x^{-1}| < B$인 양수 $\delta_0$이 있습니다. 여기서 $B = |L| + 1$입니다. $x = \min\{2^{-1}\delta_0, B^{-1}\}$로 두면 $x$는 양수이고([[absolute-value|절댓값]]의 (10), [[order-properties-of-reals]]의 (8), (6)의 (i)) $x \le 2^{-1}\delta_0 < \delta_0$이므로 $x \in Z$이고 $|x - 0| < \delta_0$입니다. 그런데 $0 < x \le B^{-1}$이므로 $x = B^{-1}$이면 $x^{-1} = B$이고, $x < B^{-1}$이면 그 항목의 (6)의 (ii)에 의해 $B < x^{-1}$입니다. 어느 쪽이든 $|x^{-1}| = x^{-1} \ge B$이어서 $|x^{-1}| < B$와 어긋납니다. 따라서 $1/g$는 $0$에서 수렴하지 않습니다.
+(1)을 $Z$ 위의 $1/g$에 쓰면, $x \in Z$, $|x - 0| < \delta_0$인 모든 $x$에서 $|x^{-1}| < B$인 양수 $\delta_0$이 있습니다. 여기서 $B = |L| + 1$입니다. $x = \min\{2^{-1}\delta_0, B^{-1}\}$로 두면 $x$는 양수이고([[absolute-value|절댓값]]의 (10), [[order-properties-of-reals]]의 (8), (6)의 (i)) $x \le 2^{-1}\delta_0 < \delta_0$이므로 $x \in Z$이고 $|x - 0| < \delta_0$입니다. 그런데 $0 < x \le B^{-1}$이므로 $x = B^{-1}$이면 $x^{-1} = B$이고((K8)의 (iii)의 유일성), $x < B^{-1}$이면 그 항목의 (6)의 (ii)에 의해 $B < x^{-1}$입니다. 어느 쪽이든 $|x^{-1}| = x^{-1} \ge B$이어서 $|x^{-1}| < B$와 어긋납니다. 따라서 $1/g$는 $0$에서 수렴하지 않습니다.
 :::
 
 ## 확인 질문

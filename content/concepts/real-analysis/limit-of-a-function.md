@@ -10,9 +10,9 @@ summary: c 가 S 의 집적점일 때 실함수 f 가 c 에서 L 로 수렴한�
 requires: [set, subset, set-operations, open-sentence, quantifiers, negation-of-quantified-statements, negation-of-conditional, conditional-statement, logical-connectives, natural-numbers-are-infinite, prime-number, real-number-arithmetic, real-order-axioms, order-properties-of-reals, absolute-value, triangle-inequality, interval, real-valued-function, cluster-point]
 sources:
   - ref: lebl-basic-analysis
-    loc: 3.1.2절 첫 문단, Definition 3.1.3, Proposition 3.1.4, Example 3.1.5, 3.1.6 (p.114–115); 3.1.4절 Definition 3.1.14 (p.118), Proposition 3.1.15 (p.119), p.119 의 한쪽 극한 예; 연습문제 3.1.6, 3.1.7, 3.1.15 (p.120–121)
+    loc: 3.1.2절 첫 문단, Definition 3.1.3, Proposition 3.1.4, Example 3.1.5, 3.1.6 (p.114–115); 3.1.3절 Lemma 3.1.7 의 증명 (p.116); 3.1.4절 Definition 3.1.14 (p.118), Proposition 3.1.15 (p.119), p.119 의 한쪽 극한 예; 연습문제 3.1.6, 3.1.7, 3.1.15 (p.120–121)
     checked: original
-    note: "출처의 Definition 3.1.3(p.114)은 c 가 S 의 집적점일 때 'L ∈ ℝ 가 있고 모든 ε > 0 에 대해 δ > 0 이 있어 x ∈ S \\ {c} 이고 |x − c| < δ 이면 |f(x) − L| < ε' 이면 f(x) 가 L 로 수렴한다고 하고, f(x) → L 과 lim_{x→c} f(x) := L 로 쓴다. 출처는 L 이 하나뿐이라는 것을 바로 뒤 Proposition 3.1.4(p.114)로 증명하며 기호는 그것을 미리 가정한다고 적는다. 이 항목은 'L 로 수렴한다'를 먼저 정의하고 유일성 (3)을 증명한 뒤에 lim 기호를 도입하며, 화살표 표기는 쓰지 않는다. 출처의 3.1.4 증명은 δ := min{δ₁, δ₂} 와 집적점에서 얻는 x 하나로 |L₁ − L₂| < ε 을 보이고, 이 항목의 증명도 같은 경로이다. 출처는 집적점 조건이 유일성에 필요하다고 적고(p.114) 연습문제 3.1.15(p.121)에서 집적점이 아닌 점에서는 모든 L 이 정의의 조건을 만족함을 보이라고 한다. 반례 '집적점이 아닌 점'은 그 연습문제의 발상을 한 집합에서 보인 것이다. 출처는 3.1.2절 첫 문단(p.114)에서 f 가 c 에서 정의되었는지는 극한의 정의와 상관없다고 적는다. (5), (6)은 이것을 명제로 적은 것이며 출처에 명제로는 없다(검색한 범위). (1)의 부정의 꼴은 출처가 Lemma 3.1.7 의 증명(p.116)에서 'The negation of the definition is ...'로 적는 것과 같은 내용이다. (2)와 '가까이에서'라는 말은 출처에 없다(검색한 범위). (4)의 상수함수와 항등함수의 극한은 출처에 명제로 없다(검색한 범위). (7)은 출처의 연습문제 3.1.6(p.120)이다(출처는 c 가 S 의 집적점이라는 것도 가정하는데, 그것은 cluster-point 의 (4)에서 나온다). (8)은 출처의 Proposition 3.1.15(p.119)에서 A 를 S ∩ (c − α, c + α) 로 둔 경우이고, 증명 경로(δ := min{δ′, α})도 같다. 제한 f|_A 는 출처의 Definition 3.1.14(p.118)이다. 예시 '제곱의 극한'은 출처의 Example 3.1.5(p.115)와 같은 함수, 같은 δ = min{1, ε/(2|c| + 1)} 이다. 예시 '극한과 함숫값이 다르다'는 출처의 Example 3.1.6(p.115; [0, 1) 에서 x > 0 이면 x, f(0) = 1)과 같은 발상이다. 반례 '계단 함수'는 출처 p.119 에서 한쪽 극한은 있지만 극한이 없는 예로 드는 함수(x < 0 이면 1, x ≥ 0 이면 0)와 같은 꼴이다. 확인 질문 2 는 출처의 연습문제 3.1.7(p.120; 제한의 극한은 있지만 원래 함수의 극한은 없는 예)과 같은 발상이다. 확인 질문 1 은 출처에 없다(검색한 범위)."
+    note: "출처의 Definition 3.1.3(p.114)은 c 가 S 의 집적점일 때 'L ∈ ℝ 가 있고 모든 ε > 0 에 대해 δ > 0 이 있어 x ∈ S \\ {c} 이고 |x − c| < δ 이면 |f(x) − L| < ε' 이면 f(x) 가 L 로 수렴한다고 하고, f(x) → L 과 lim_{x→c} f(x) := L 로 쓴다. 출처는 L 이 하나뿐이라는 것을 바로 뒤 Proposition 3.1.4(p.114)로 증명하며 기호는 그것을 미리 가정한다고 적는다. 이 항목은 'L 로 수렴한다'를 먼저 정의하고 유일성 (3)을 증명한 뒤에 lim 기호를 도입하며, 화살표 표기는 쓰지 않는다. 출처의 Proposition 3.1.4 의 증명은 δ := min{δ₁, δ₂} 와 집적점에서 얻는 x 하나로 |L₁ − L₂| < ε 을 보이고, 이 항목의 증명도 같은 경로이다. 출처는 집적점 조건이 유일성에 필요하다고 적고(p.114) 연습문제 3.1.15(p.121)에서 집적점이 아닌 점에서는 모든 L 이 정의의 조건을 만족함을 보이라고 한다. 반례 '집적점이 아닌 점'은 그 연습문제의 발상을 한 집합에서 보인 것이다. 출처는 3.1.2절 첫 문단(p.114)에서 f 가 c 에서 정의되었는지는 극한의 정의와 상관없다고 적는다. (5), (6)은 이것을 명제로 적은 것이며 출처에 명제로는 없다(검색한 범위). (1)의 부정의 꼴은 출처가 Lemma 3.1.7 의 증명(p.116)에서 'The negation of the definition is ...'로 적는 것과 같은 내용이다. (2)와 정의된 용어 'c 가까이에서 성립한다'는 출처에 없다(검색한 범위. 출처는 p.118 에서 'arbitrarily near c' 를 비형식적으로 쓴다). (4)의 상수함수와 항등함수의 극한은 출처에 명제로 없다(검색한 범위). (7)은 출처의 연습문제 3.1.6(p.120)이다(출처는 c 가 S 의 집적점이라는 것도 가정하는데, 그것은 cluster-point 의 (4)에서 나온다). (8)은 출처의 Proposition 3.1.15(p.119)에서 A 를 S ∩ (c − α, c + α) 로 둔 경우이고, 증명 경로(δ := min{δ′, α})도 같다. 제한 f|_A 는 출처의 Definition 3.1.14(p.118)이다. 예시 '제곱의 극한'은 출처의 Example 3.1.5(p.115)와 같은 함수, 같은 δ = min{1, ε/(2|c| + 1)} 이다. 예시 '극한과 함숫값이 다르다'는 출처의 Example 3.1.6(p.115; [0, 1) 에서 x > 0 이면 x, f(0) = 1)과 같은 발상이다. 반례 '계단 함수'는 출처 p.119 에서 한쪽 극한은 있지만 극한이 없는 예로 드는 함수(x < 0 이면 1, x ≥ 0 이면 0)와 같은 꼴이다. 확인 질문 2 는 출처의 연습문제 3.1.7(p.120; 제한의 극한은 있지만 원래 함수의 극한은 없는 예)과 같은 발상이다. 확인 질문 1 은 출처에 없다(검색한 범위)."
 status: source-checked
 added: 2026-11-17
 ---
@@ -45,7 +45,7 @@ $$
 $$
 \lim_{x \to c} f(x)
 $$
-로 쓴다. 실수 $L$에 대하여 "$\lim_{x \to c} f(x) = L$"은 정확히 $f$가 $c$에서 $L$로 수렴한다는 뜻이다. $f$가 식 $f(x) = r(x)$로 정한 함수([[real-valued-function]]의 (1))이면 $\lim_{x \to c} r(x)$로도 쓴다. 발산할 때는 이 기호를 쓰지 않는다.
+로 쓴다. 실수 $L$에 대하여 "$\lim_{x \to c} f(x) = L$"은 정확히 $f$가 $c$에서 $L$로 수렴한다는 뜻이다. $f$가 식 $f(x) = r(x)$로 정한 함수([[real-valued-function]]의 (1))이면 $\lim_{x \to c} r(x)$로도 쓴다. 발산할 때는 이 기호를 쓰지 않는다. 기호 $\lim_{x \to c} f(x)$에는 정의역이 보이지 않는다. 어느 집합 위의 함수인지는 문맥에서 밝히며, 같은 식이라도 정의역이 다르면 극한이 달라질 수 있다(아래 확인 질문 2 의 $H$와 그 제한).
 
 다음도 성립한다. 아래에서 $k$는 실수이다.
 
@@ -84,7 +84,7 @@ The following hold.
 $$
 \lim_{x \to c} f(x).
 $$
-For a real number $L$, "$\lim_{x \to c} f(x) = L$" means exactly that $f$ converges to $L$ at $c$. If $f$ is the function defined by a formula $f(x) = r(x)$ (item (1) of the entry on real-valued functions), we also write $\lim_{x \to c} r(x)$. The symbol is not used when $f$ diverges.
+For a real number $L$, "$\lim_{x \to c} f(x) = L$" means exactly that $f$ converges to $L$ at $c$. If $f$ is the function defined by a formula $f(x) = r(x)$ (item (1) of the entry on real-valued functions), we also write $\lim_{x \to c} r(x)$. The symbol is not used when $f$ diverges. The symbol $\lim_{x \to c} f(x)$ does not display the domain. The set on which the function is defined is made clear from the context, and even for the same formula the limit may differ when the domain differs (see $H$ and its restriction in the second check question below).
 
 The following also hold. Below, $k$ is a real number.
 

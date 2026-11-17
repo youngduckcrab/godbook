@@ -1,6 +1,6 @@
 ---
 title: 함수의 극한과 연속
-summary: 구간과 실함수의 연산, 집적점을 정의하고, 함수의 극한을 ε–δ 로 정의한 뒤 유일성, 제한과 국소성, 극한과 부등식, 조임 정리, 극한의 사칙연산을 증명한다.
+summary: 구간과 실함수의 연산, 집적점을 정의하고, 함수의 극한과 연속을 ε–δ 로 정의한 뒤 극한의 성질과 사칙연산, 연속함수의 합·곱·몫과 합성, 거듭제곱 함수와 제곱근 함수의 연속, 수열로 본 극한과 연속을 증명한다.
 concepts:
   - interval
   - real-valued-function
@@ -8,6 +8,11 @@ concepts:
   - limit-of-a-function
   - limits-of-functions-and-inequalities
   - limit-laws-for-functions
+  - continuous-function
+  - continuity-of-sum-and-product
+  - power-function-is-continuous
+  - composition-of-continuous-functions
+  - sequences-and-continuity
 ---
 
 2단원과 3단원에서는 자연수 번호가 커질 때 수열의 항이 어디로 가는지를 다루었습니다. 이 단원은 실수 $x$가 한 점 $c$에 가까워질 때 함숫값 $f(x)$가 어디로 가는지를 다룹니다. 이 단원은 3단원까지의 항목과 "수학의 언어"의 항목만 쓰고, 4단원과 5단원은 쓰지 않습니다.
@@ -17,3 +22,7 @@ concepts:
 [[cluster-point|집적점]]은 "$c$ 바로 옆에 $c$가 아닌 정의역의 점이 얼마든지 가까이 있다"는 것을 정확히 한 말이고, 함수의 극한은 정의역의 집적점에서만 정의됩니다. 구간의 모든 점이 그 구간의 집적점이라는 것도 이 항목에서 보입니다. [[limit-of-a-function|함수의 극한]]은 수열의 극한에서 번호 $M$이 하던 일을 $c$와의 거리 $\delta$가 하게 한 정의입니다. 그 항목에서 극한의 유일성을 증명한 뒤에 기호 $\lim_{x \to c}$를 쓰고, $c$에서의 함숫값이 극한과 상관없다는 것, $c$가 줄인 정의역의 집적점이면 그 위로 제한한 함수도 같은 극한을 갖는다는 것을 함께 증명합니다.
 
 마지막 두 항목은 극한을 계산하고 비교하는 도구입니다. [[limits-of-functions-and-inequalities|함수의 극한과 부등식]]은 함숫값 사이의 "$\le$"가 극한에서도 유지된다는 것과 조임 정리를, [[limit-laws-for-functions|함수의 극한의 사칙연산]]은 합, 차, 곱, 몫, 절댓값의 극한을 다룹니다. 이 강의는 이 성질들을 수열을 거치지 않고 모두 $\varepsilon$과 $\delta$로 직접 증명합니다.
+
+후반의 다섯 항목은 연속을 다룹니다. [[continuous-function|연속함수]]는 극한의 정의에서 $x = c$를 빼지 않고 극한 자리에 $f(c)$를 둔 정의입니다. 정의역의 집적점에서는 연속인 것이 극한이 $f(c)$인 것과 같고, 집적점이 아닌 점에서는 어떤 함수든 연속이라는 것을 그 항목에서 보입니다. [[continuity-of-sum-and-product|연속함수의 합·곱·몫]]은 이 두 경우를 나누어 극한의 사칙연산에서 얻고, [[power-function-is-continuous|거듭제곱 함수와 제곱근 함수의 연속]]은 곱의 연속과 귀납법으로 $x^n$의 연속을 보인 뒤 제곱근 함수를 직접 다룹니다. 이 강의는 일반의 다항식을 정의하지 않으므로, 구체적인 다항식 꼴의 함수는 합·곱·상수배의 연속을 하나씩 따라가 다룹니다. [[composition-of-continuous-functions|연속함수의 합성]]은 두 연속함수를 이어 붙여도 연속이라는 것입니다.
+
+마지막 [[sequences-and-continuity|수열로 본 극한과 연속]]은 함수의 극한이나 연속이 있으면 수열을 따라가며 읽은 함숫값도 같은 곳으로 간다는 것입니다. 이 항목은 이 방향만 싣고, 주로 그 대우, 곧 수열 하나나 둘로 불연속이나 극한이 없음을 보이는 데 씁니다.
