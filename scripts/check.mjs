@@ -142,6 +142,7 @@ function lintBody(file, body, requires, self) {
     if (n % 2 === 1) warn(file, `본문 ${i + 1}번째 줄의 $ 가 홀수 개다(${n}개). 수식을 여닫는 $ 가 빠졌는지 본다`);
   });
   for (const sym of UNDEFINED_SYMBOLS) if (text.includes(sym)) warn(file, `정의하지 않은 기호 ${sym} 를 쓴다. 문장으로 풀어 쓴다`);
+  if (text.includes('\\tag')) warn(file, '\\tag 를 쓴다. 꼬리표가 식 바로 뒤에 붙어 곱처럼 읽힌다. 식에 문장으로 이름을 붙인다');
   if (/(위|아래|앞|뒤|끝)의?\s*remark|remark\s*(에서|참조|에 의해)/.test(text)) warn(file, '본문에서 "remark" 라는 낱말로 블록을 가리킨다. 블록의 제목으로 가리킨다');
   if (requires) {
     // requires 는 진술·증명·예시·확인 질문이 쓰는 항목이다. 블록 밖 산문(직관, 역사)의 안내 링크는 보지 않는다.

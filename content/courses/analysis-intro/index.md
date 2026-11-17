@@ -8,7 +8,6 @@ track: 해석
 requires: [language-of-math]
 status: in-progress
 planned_units:
-  - 부분수열과 코시 수열
   - 급수
   - 함수의 극한과 연속
   - 닫힌 구간 위의 연속함수
