@@ -14,26 +14,27 @@ sources:
     loc: 4.2.1절 Definition 4.2.1, Lemma 4.2.2 와 그 증명, 그 뒤 문단 (p.162–163)
     checked: original
     note: "출처의 Definition 4.2.1(p.162)은 S ⊂ ℝ, f : S → ℝ 에 대하여 어떤 δ > 0 이 있어 |x − c| < δ 인 모든 x ∈ S 에서 f(x) ≤ f(c) 이면 f 가 c ∈ S 에서 relative maximum 을 갖는다고 하고, relative minimum 도 같다고 한다. 이 항목의 정의는 같고, relative maximum 을 극대, relative minimum 을 극소로 옮겼다. 출처의 Lemma 4.2.2(p.162)는 f : (a, b) → ℝ 가 c ∈ (a, b) 에서 미분가능하고 c 에서 극대 또는 극소이면 f′(c) = 0 이라는 것이다. 이 항목의 (3)은 정의역을 구간 I 로 두고 c 의 양쪽에 I 의 점 a, b 가 있다는 조건으로 진술한다. I = (a, b) 이면 출처의 진술이다. 출처는 c 의 오른쪽과 왼쪽의 차분몫의 부호를 보고, c 로 수렴하는 수열 {x_n}, {y_n} 을 잡아 그 수열을 따라 극한을 계산한다(p.162–163). 이 항목은 수열을 쓰지 않고, f′(c) 가 양수이면 limits-of-functions-and-inequalities 의 (1)로 c 가까이에서 차분몫이 양수라는 것과 식으로 준 한 점의 차분몫이 0 이하라는 것이 어긋남을 보인다(음수도 같다). 출처는 극소를 −f 로 다루고, 이 항목의 (2)와 증명도 그렇게 한다. (1)(최댓값을 갖는 점은 극대)은 출처에 명제로 없다(검색한 범위). 출처는 그 뒤 문단(p.163)에서 이 정리가 구간의 안쪽 점에 대한 것이라고 적는다. 반례 '끝점에서는'과 '역은 성립하지 않는다'는 출처에 이 꼴로 없다(검색한 범위). 출처는 x³ 이 0 에서 미분계수 0 이라는 것을 Proposition 4.2.8 뒤(p.166)에서 다른 목적(순증가의 예)으로 적는다. 확인 질문은 출처에 없다(검색한 범위)."
-status: source-checked
+status: reviewed
+review_note: "2026-11-17 독립 검토 2회(전반 1회, 후반과 전반 재확인 1회). 증명의 수학 오류 없음. 수열을 따라 극한을 계산하는 길 없이 증명. 절댓값 함수의 미분가능성을 진술로 올림, 반례 제목의 일반화와 출처 메모를 고침"
 added: 2026-11-17
 ---
 
 :::statement
 실함수와 그 상수배 $kf$는 [[real-valued-function]]의 것이고, 절댓값은 [[absolute-value]]의 것이며, 최댓값과 최솟값을 갖는다는 말은 [[extreme-value-theorem|최대·최소 정리]]의 것이고, 구간, 미분가능, 미분계수는 [[derivative]]의 것이다.
 
-**극대와 극소.** $S$를 $\mathbb{R}$의 부분집합, $f : S \to \mathbb{R}$를 $S$ 위의 실함수, $c$를 $S$의 원소라 하자. $f$가 $c$에서 **극대**(relative maximum)라는 것은 정확히, 어떤 양의 실수 $\delta$가 있어 $x \in S$이고 $|x - c| < \delta$인 모든 $x$에서 $f(x) \le f(c)$일 때이다. $f$가 $c$에서 **극소**(relative minimum)라는 것은 정확히, 어떤 양의 실수 $\delta$가 있어 $x \in S$이고 $|x - c| < \delta$인 모든 $x$에서 $f(c) \le f(x)$일 때이다.
+**극대와 극소.** $S$를 $\mathbb{R}$의 부분집합, $f : S \to \mathbb{R}$를 $S$ 위의 실함수, $c$를 $S$의 원소라 하자. $f$가 $c$에서 **극대**(relative maximum)라는 것은 정확히, 어떤 양의 실수 $\delta$가 있어 $x \in S$이고 $|x - c| < \delta$인 모든 $x$에서 $f(x) \le f(c)$일 때이다. $f$가 $c$에서 **극소**(relative minimum)라는 것은 정확히, 어떤 양의 실수 $\delta$가 있어 $x \in S$이고 $|x - c| < \delta$인 모든 $x$에서 $f(c) \le f(x)$일 때이다. $f$가 $c$에서 극대이거나 극소일 때 $f$가 $c$에서 **극값**(relative extremum)을 갖는다고 한다.
 
 다음이 성립한다.
 
 1. (최댓값과 극대) $f$가 $c$에서 최댓값을 가지면 $f$는 $c$에서 극대이다. $f$가 $c$에서 최솟값을 가지면 $f$는 $c$에서 극소이다.
 2. (극소와 $-1$배) $f$가 $c$에서 극소인 것은 정확히 $(-1)f$가 $c$에서 극대일 때이다.
-3. (**극값에서 미분계수는 $0$**) $I$를 구간, $f : I \to \mathbb{R}$를 $I$ 위의 실함수, $c$를 $I$의 원소라 하고, $a < c < b$인 $I$의 원소 $a$, $b$가 있다고 하자. $f$가 $c$에서 미분가능하고 $c$에서 극대이거나 극소이면 $f'(c) = 0$이다.
+3. (**극값을 갖는 점에서 미분계수는 $0$**) $I$를 구간, $f : I \to \mathbb{R}$를 $I$ 위의 실함수, $c$를 $I$의 원소라 하고, $a < c < b$인 $I$의 원소 $a$, $b$가 있다고 하자. $f$가 $c$에서 미분가능하고 $c$에서 극대이거나 극소이면 $f'(c) = 0$이다.
 :::
 
 :::english
 Real-valued functions and the scalar multiple $kf$ are those of the entry on real-valued functions, absolute values are those of the entry on absolute value, attaining an absolute maximum or minimum is that of the entry on the extreme value theorem, and intervals, differentiability and derivatives are those of the entry on derivatives.
 
-**Relative maximum and minimum.** Let $S$ be a subset of $\mathbb{R}$, $f : S \to \mathbb{R}$ a real-valued function on $S$, and $c$ an element of $S$. We say $f$ has a **relative maximum** at $c$ exactly when there is a positive real number $\delta$ such that $f(x) \le f(c)$ for all $x \in S$ with $|x - c| < \delta$. We say $f$ has a **relative minimum** at $c$ exactly when there is a positive real number $\delta$ such that $f(c) \le f(x)$ for all $x \in S$ with $|x - c| < \delta$.
+**Relative maximum and minimum.** Let $S$ be a subset of $\mathbb{R}$, $f : S \to \mathbb{R}$ a real-valued function on $S$, and $c$ an element of $S$. We say $f$ has a **relative maximum** at $c$ exactly when there is a positive real number $\delta$ such that $f(x) \le f(c)$ for all $x \in S$ with $|x - c| < \delta$. We say $f$ has a **relative minimum** at $c$ exactly when there is a positive real number $\delta$ such that $f(c) \le f(x)$ for all $x \in S$ with $|x - c| < \delta$. When $f$ has a relative maximum or a relative minimum at $c$, we say $f$ has a **relative extremum** at $c$.
 
 The following hold.
 
