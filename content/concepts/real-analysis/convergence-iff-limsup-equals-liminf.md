@@ -7,14 +7,15 @@ field: real-analysis
 msc: ["40A05", "26A03"]
 level: undergrad
 summary: 유계인 수열이 수렴하는 것은 정확히 하극한과 상극한이 같을 때이고, 그때 극한은 그 값이다. 부분수열의 하극한과 상극한은 원래 수열의 하극한과 상극한 사이에 있고, 유계인 수열이 L 로 수렴하는 것은 정확히 수렴하는 부분수열이 모두 L 로 수렴할 때이다.
-requires: [natural-numbers-are-infinite, well-ordering-principle, even-and-odd, real-number-arithmetic, order-properties-of-reals, archimedean-property, absolute-value, sequence, limit-of-sequence, limit-is-unique, basic-limits, convergent-sequence-is-bounded, squeeze-lemma, limits-preserve-inequalities, limit-of-sum-and-product, subsequence, limit-superior-and-inferior, subsequence-converging-to-limsup]
+requires: [natural-numbers-are-infinite, prime-number, well-ordering-principle, even-and-odd, real-number-arithmetic, order-properties-of-reals, archimedean-property, absolute-value, sequence, limit-of-sequence, limit-is-unique, basic-limits, convergent-sequence-is-bounded, squeeze-lemma, limits-preserve-inequalities, limit-of-sum-and-product, subsequence, limit-superior-and-inferior, subsequence-converging-to-limsup]
 proof: full
 sources:
   - ref: lebl-basic-analysis
     loc: 2.3.2절 Proposition 2.3.5 와 그 증명 (p.76–77), Proposition 2.3.6 과 그 증명 (p.77), Proposition 2.3.7 (p.77), 연습문제 2.3.3, 2.3.4 (p.80)
     checked: original
-    note: "출처의 Proposition 2.3.5(p.76)는 유계인 수열이 수렴하는 것은 정확히 lim inf = lim sup 일 때이고, 수렴하면 lim = lim inf = lim sup 이라는 것이다. 이 항목의 (1)이고 증명의 경로(b_n ≤ x_n ≤ a_n 과 조임 정리, Theorem 2.3.4 와 Proposition 2.1.17)는 출처와 같다. 출처는 하극한 쪽을 'Similarly' 로 넘긴다. 이 항목은 subsequence-converging-to-limsup 의 (2)로 직접 썼다. (1)의 첫 문장(수렴하는 수열은 유계이므로 상극한과 하극한이 있다)은 이 항목이 덧붙였다. 출처의 Proposition 2.3.6(p.77)은 유계인 수열과 그 부분수열 {x_{n_k}} 에 대해 lim inf x_n ≤ lim inf x_{n_k} ≤ lim sup x_{n_k} ≤ lim sup x_n 이라는 것이고 이 항목의 (2)이다. 출처는 가운데 부등식을 '이미 증명했다'고 하고, 셋째 부등식을 c_n := sup{x_{n_k} : k ≥ n}, n_k ≥ k 로 얻는 포함 관계, '부분집합의 상한은 집합의 상한 이하', Lemma 2.2.3 으로 증명하며, 첫째 부등식은 연습문제(연습문제 2.3.3)로 둔다. 이 항목은 셋째 부등식을 같은 경로로, 첫째 부등식도 하한으로 증명했다. 출처는 부분수열이 유계라는 것을 따로 말하지 않는다. 이 항목은 subsequence 의 (6)을 인용했다. (2)의 둘째 문장(수렴하는 부분수열의 극한은 하극한과 상극한 사이)은 출처가 Proposition 2.3.6 뒤(p.77)에 적는 문장이다. 출처의 Proposition 2.3.7(p.77)은 '유계인 수열이 수렴하고 x 로 수렴하는 것은 정확히 수렴하는 모든 부분수열이 x 로 수렴할 때'이고, 증명은 연습문제(연습문제 2.3.4)로 둔다. 이 항목의 (3)이고 증명은 이 항목의 것이다. 이 항목은 출처의 첨자열 n_k 대신 p_k 를 쓰고, 부분수열에 대한 상한·하한의 수열을 c_j, d_j 로 썼다. 예시 '부호가 번갈아 바뀌는 n⁻¹'의 수열은 출처의 연습문제 2.3.5 a)((−1)ⁿ/n 의 상극한과 하극한을 구하라)와 같은 수열이다. 반례 '유계라는 가정을 빼면'의 수열은 출처 Example 2.3.14(p.80; 홀수 번째 0, 짝수 번째 n)와 홀짝만 바꾼 수열이고, 출처는 그 예에서 상극한이 ∞ 임을 보인다. 이 반례의 결론(수렴하는 부분수열은 모두 0 으로 수렴하지만 수열은 발산한다)은 출처에 없다(검색한 범위). 출처의 연습문제 2.3.11 은 (3)의 '유계' 가정을 '모든 부분수열이 x 로 수렴하는 부분수열을 갖는다'로 바꾼 강한 판이다. 확인 질문은 출처에 없다(검색한 범위)."
-status: source-checked
+    note: "출처의 Proposition 2.3.5(p.76)는 유계인 수열이 수렴하는 것은 정확히 lim inf = lim sup 일 때이고, 수렴하면 lim = lim inf = lim sup 이라는 것이다. 이 항목의 (1)이고 증명의 경로(b_n ≤ x_n ≤ a_n 과 조임 정리, Theorem 2.3.4 와 Proposition 2.1.17)는 출처와 같다. 출처는 하극한 쪽을 'Similarly' 로 넘긴다. 이 항목은 subsequence-converging-to-limsup 의 (2)로 직접 썼다. (1)의 첫 문장(수렴하는 수열은 유계이므로 상극한과 하극한이 있다)은 이 항목이 덧붙였다. 출처의 Proposition 2.3.6(p.77)은 유계인 수열과 그 부분수열 {x_{n_k}} 에 대해 lim inf x_n ≤ lim inf x_{n_k} ≤ lim sup x_{n_k} ≤ lim sup x_n 이라는 것이고 이 항목의 (2)이다. 출처는 가운데 부등식을 '이미 증명했다'고 하고, 셋째 부등식을 c_n := sup{x_{n_k} : k ≥ n}, n_k ≥ k 로 얻는 포함 관계, '부분집합의 상한은 집합의 상한 이하', Lemma 2.2.3 으로 증명하며, 첫째 부등식은 연습문제(연습문제 2.3.3)로 둔다. 이 항목은 셋째 부등식을 같은 경로로, 첫째 부등식도 하한으로 증명했다. 출처는 부분수열이 유계라는 것을 따로 말하지 않는다. 이 항목은 subsequence 의 (6)을 인용했다. (2)의 둘째 문장(수렴하는 부분수열의 극한은 하극한과 상극한 사이)은 출처가 Proposition 2.3.6 뒤(p.77)에 적는 문장이다. 출처의 Proposition 2.3.7(p.77)은 '유계인 수열이 수렴하고 x 로 수렴하는 것은 정확히 수렴하는 모든 부분수열이 x 로 수렴할 때'이고, 증명은 연습문제(연습문제 2.3.4)로 둔다. 이 항목의 (3)이고 증명은 이 항목의 것이다. 이 항목은 출처의 첨자열 n_k 대신 p_k 를 쓰고, 부분수열에 대한 상한·하한의 수열을 c_j, d_j 로 썼다. 예시 '부호가 번갈아 바뀌는 n⁻¹'의 수열은 출처의 연습문제 2.3.5 a)((−1)ⁿ/n 의 상극한과 하극한을 구하라)와 같은 수열이다. 반례 '유계라는 가정을 빼면'의 수열은 출처 Example 2.3.14(p.80; 홀수 번째 0, 짝수 번째 n)와 홀짝만 바꾼 수열이고, 출처는 그 예에서 상극한이 ∞ 임을 보인다. 이 반례의 결론(수렴하는 부분수열은 모두 0 으로 수렴하지만 수열은 발산한다)은 출처에 없다(검색한 범위). 출처의 연습문제 2.1.15(p.59)는 홀수 번째 n, 짝수 번째 1/n 인 수열이 유계인지, 수렴하는 부분수열이 있는지 묻는데, 이 반례의 수열(홀수 번째 n, 짝수 번째 0)과 거의 같은 수열이다. 출처의 연습문제 2.3.11 은 (3)의 '유계' 가정을 '모든 부분수열이 x 로 수렴하는 부분수열을 갖는다'로 바꾼 강한 판이다. 확인 질문은 출처에 없다(검색한 범위)."
+status: reviewed
+review_note: "2026-11-17 독립 검토 2회(전반 1회, 후반과 전반 재확인 1회). 증명의 수학 오류 없음. 가산 선택 없이 가장 작은 첨자와 재귀 정리로 부분수열을 만든다. 출처 메모, 근거 인용, 완비성이라는 이름을 고침"
 added: 2026-11-17
 ---
 
@@ -55,7 +56,7 @@ In particular, if $(x_{p_k})$ converges, then $\liminf_{n \to \infty} x_n \le \l
 
 부분수열은 원래 수열의 항 가운데 일부만 남긴 것이고, $j$번째 이후의 부분수열의 항은 원래 수열의 $j$번째 이후의 항입니다([[subsequence|부분수열]]의 (1)). 그래서 부분수열의 천장은 원래 수열의 천장보다 높을 수 없고, 바닥은 낮을 수 없습니다. 이것이 (2)입니다. 상극한과 하극한은 부분수열이 가질 수 있는 극한 가운데 가장 큰 것과 가장 작은 것입니다.
 
-(3)은 (1)과 (2)를 합친 것입니다. 수렴하는 부분수열이 모두 $L$로 가면, 상극한과 하극한으로 수렴하는 부분수열도 $L$로 가므로 둘 다 $L$이고 (1)에 의해 수열이 수렴합니다. 이 방향에서 유계라는 가정은 상극한과 하극한이 있다는 데에서 쓰이고, 빼면 결론이 깨집니다(아래 반례).
+(3)은 (1)과 상극한·하극한으로 수렴하는 부분수열을 합친 것입니다. 수렴하는 부분수열이 모두 $L$로 가면, 상극한과 하극한으로 수렴하는 부분수열도 $L$로 가므로 둘 다 $L$이고 (1)에 의해 수열이 수렴합니다. 이 방향에서 유계라는 가정은 상극한과 하극한이 있다는 데에서 쓰이고, 빼면 결론이 깨집니다(아래 반례).
 
 ## 증명
 
@@ -104,7 +105,7 @@ $(y_k)$가 수렴하면, $(y_k)$는 유계이므로 이 항목의 (1)을 $(y_k)$
 ## 예시와 반례
 
 :::example[부호가 번갈아 바뀌는 $n^{-1}$]
-$n$이 짝수이면 $x_n = n^{-1}$, 홀수이면 $x_n = -n^{-1}$인 수열을 생각합니다([[even-and-odd]]에서 받아들인 사실에 의해 각 항이 하나로 정해집니다). [[order-properties-of-reals]]의 (10)과 (3)의 (ii)에 의해 $-k^{-1} < 0 < k^{-1}$이므로 모든 $k$에서 $-k^{-1} \le x_k \le k^{-1}$이고, 특히 $|x_k| = k^{-1} \le 1$이어서 유계입니다.
+$n$이 짝수이면 $x_n = n^{-1}$, 홀수이면 $x_n = -n^{-1}$인 수열을 생각합니다([[even-and-odd]]에서 받아들인 사실에 의해 각 항이 하나로 정해집니다). [[order-properties-of-reals]]의 (10)과 (3)의 (ii)에 의해 $-k^{-1} < 0 < k^{-1}$이므로 모든 $k$에서 $-k^{-1} \le x_k \le k^{-1}$이고, 특히 $|x_k| = k^{-1}$이고, [[prime-number]]의 (Z1)에 의해 $1 \le k$이므로 그 항목의 (6)의 (ii)에 의해 $k^{-1} \le 1$($k = 1$이면 등호)이어서 유계입니다.
 
 자연수 $n$과 $k \ge n$에 대하여, $k = n$이면 $k^{-1} = n^{-1}$이고 $n < k$이면 그 항목의 (6)의 (ii)에 의해 $k^{-1} < n^{-1}$이므로 $k^{-1} \le n^{-1}$이고, 그 항목의 (3)의 (iii)에 의해 $-n^{-1} \le -k^{-1}$입니다. 따라서 $-n^{-1} \le x_k \le n^{-1}$입니다. 곧 $n^{-1}$은 $S_n$의 상계이고($S_n$, $a_n$, $b_n$은 [[limit-superior-and-inferior]]의 것) $-n^{-1}$은 $S_n$의 하계이므로 $a_n \le n^{-1}$이고 $-n^{-1} \le b_n$입니다.
 
@@ -112,7 +113,7 @@ $n$이 짝수이면 $x_n = n^{-1}$, 홀수이면 $x_n = -n^{-1}$인 수열을 �
 :::
 
 :::counterexample[유계라는 가정을 빼면]
-$n$이 홀수이면 $x_n = n$, 짝수이면 $x_n = 0$인 수열을 생각합니다. 짝수 번째 항으로 얻은 부분수열은 모든 항이 $0$이므로 $0$으로 수렴합니다. 이 수열의 수렴하는 부분수열은 모두 $0$으로 수렴하지만 수열은 발산합니다. 그래서 (3)에서 유계라는 가정은 뺄 수 없습니다.
+$n$이 홀수이면 $x_n = n$, 짝수이면 $x_n = 0$인 수열을 생각합니다. $k$에서의 값이 $2k$인 함수는 $2(k + 1) = 2k + 2 > 2k$이므로 [[subsequence]]의 (2)에 의해 첨자열이고, 그것으로 얻은 짝수 번째 항의 부분수열은 모든 항이 $0$이므로 $0$으로 수렴합니다. 이 수열의 수렴하는 부분수열은 모두 $0$으로 수렴하지만 수열은 발산합니다. 그래서 (3)에서 유계라는 가정은 뺄 수 없습니다.
 
 수렴하는 부분수열 $(x_{p_k})$의 극한을 $L'$이라 하고, [[convergent-sequence-is-bounded|수렴하는 수열은 유계라는 정리]]의 (2)에 의해 모든 $k$에서 $|x_{p_k}| \le B$인 실수 $B$를 잡습니다. 먼저 모든 자연수 $K$에 대하여 $k \ge K$이고 $p_k$가 짝수인 자연수 $k$가 있음을 봅니다. 어떤 $K$에서 그런 $k$가 없다고 하면, [[archimedean-property|아르키메데스 성질]]의 (1)로 $B < k_0$인 자연수 $k_0$을 잡고 $k = \max\{k_0, K\}$로 둘 때 $p_k$는 홀수이므로 [[subsequence]]의 (1)에 의해 $x_{p_k} = p_k \ge k \ge k_0 > B$인데, $x_{p_k} = |x_{p_k}| \le B$이어서 모순입니다. 이제 양수 $\varepsilon$에 대하여 $k \ge M$이면 $|x_{p_k} - L'| < \varepsilon$인 자연수 $M$을 잡고, $k \ge M$이고 $p_k$가 짝수인 $k$를 잡으면 $x_{p_k} = 0$이므로 $|L'| = |0 - L'| < \varepsilon$입니다. [[order-properties-of-reals]]의 (9)에 의해 $|L'| \le 0$이고, [[absolute-value|절댓값]]의 (2)에 의해 $L' = 0$입니다.
 

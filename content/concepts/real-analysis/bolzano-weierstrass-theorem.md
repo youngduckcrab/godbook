@@ -7,14 +7,15 @@ field: real-analysis
 msc: ["40A05", "26A03"]
 level: undergrad
 summary: 유계인 실수열은 수렴하는 부분수열을 갖는다. 모든 항이 a 이상 b 이하이면 수렴하는 부분수열의 극한도 a 이상 b 이하이다.
-requires: [even-and-odd, order-properties-of-reals, archimedean-property, absolute-value, sequence, limit-of-sequence, limit-is-unique, basic-limits, convergent-sequence-is-bounded, limits-preserve-inequalities, limit-of-sum-and-product, subsequence, subsequence-converging-to-limsup]
+requires: [prime-number, even-and-odd, order-properties-of-reals, archimedean-property, absolute-value, sequence, limit-of-sequence, limit-is-unique, basic-limits, convergent-sequence-is-bounded, limits-preserve-inequalities, limit-of-sum-and-product, subsequence, subsequence-converging-to-limsup]
 proof: full
 sources:
   - ref: lebl-basic-analysis
     loc: 2.3.3절 Theorem 2.3.8 과 그 증명 (p.78)
     checked: original
     note: "출처의 Theorem 2.3.8(p.78)은 유계인 실수열에 수렴하는 부분수열이 있다는 것(이 항목의 (1))이고, 증명은 'Theorem 2.3.4 가 상극한으로 수렴하는 부분수열을 준다'는 한 줄이다. 이 항목도 같은 증명이다. 출처는 이어서 이분법을 쓰는 다른 증명(p.78–79)을 싣고, 모든 수열이 단조인 부분수열을 갖는다는 것으로 증명하는 길을 연습문제 2.3.10 으로 둔다. 이 항목은 둘 다 싣지 않았다. (2)(모든 항이 a 이상 b 이하이면 수렴하는 부분수열의 극한도 그렇다)는 출처에 이 정리의 일부로 없다(검색한 범위). 출처는 3.3절의 증명(p.130–131)에서 a ≤ x_n ≤ b 인 수열에 이 정리를 쓰고, 'a ≤ x_{n_i} ≤ b 이므로 a ≤ x ≤ b'라고 적는다. 이 항목은 그것을 진술에 올리고 limits-preserve-inequalities 의 (3)으로 증명했다. 예시, 반례, 확인 질문은 출처에 없다(검색한 범위). 확인 질문 1 의 '엄격한 부등식은 극한에서 유지되지 않는다'는 출처가 p.62 에서 −1/n 과 1/n 으로 보이는 것과 같은 발상이다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-17 독립 검토 2회(전반 1회, 후반과 전반 재확인 1회). 증명의 수학 오류 없음. 가산 선택 없이 가장 작은 첨자와 재귀 정리로 부분수열을 만든다. 출처 메모, 근거 인용, 완비성이라는 이름을 고침"
 added: 2026-11-17
 ---
 
@@ -65,9 +66,9 @@ $(x_{p_k})$가 $(x_n)$의 수렴하는 부분수열이라 하자. 부분수열 (
 ## 예시와 반례
 
 :::example[두 값 근처를 오가는 수열]
-$n$이 짝수이면 $x_n = 2 + n^{-1}$, 홀수이면 $x_n = -n^{-1}$인 수열을 생각합니다([[even-and-odd]]에서 받아들인 사실로 각 항이 하나로 정해집니다). [[order-properties-of-reals]]의 (10)과 (6)의 (ii)에 의해 $0 < n^{-1} \le 1$이므로 짝수 번째 항은 $2$보다 크고 $3$ 이하이며, 홀수 번째 항은 $-1$ 이상이고 $0$보다 작습니다. 따라서 모든 $n$에서 $-1 \le x_n \le 3$이고, (2)에 의해 이 수열은 유계이며 수렴하는 부분수열의 극한은 모두 $-1$ 이상 $3$ 이하입니다.
+$n$이 짝수이면 $x_n = 2 + n^{-1}$, 홀수이면 $x_n = -n^{-1}$인 수열을 생각합니다([[even-and-odd]]에서 받아들인 사실로 각 항이 하나로 정해집니다). [[order-properties-of-reals]]의 (10)에 의해 $0 < n^{-1}$이고, [[prime-number]]의 (Z1)에 의해 $1 \le n$이므로 그 항목의 (6)의 (ii)에 의해 $n^{-1} \le 1$($n = 1$이면 등호)이어서 짝수 번째 항은 $2$보다 크고 $3$ 이하이며, 홀수 번째 항은 $-1$ 이상이고 $0$보다 작습니다. 따라서 모든 $n$에서 $-1 \le x_n \le 3$이고, (2)에 의해 이 수열은 유계이며 수렴하는 부분수열의 극한은 모두 $-1$ 이상 $3$ 이하입니다.
 
-실제로 두 부분수열을 찾을 수 있습니다. $k$에서의 값이 $2k$인 첨자열로 얻은 부분수열의 $k$번째 항은 $2 + (2k)^{-1}$입니다. $k$번째 항이 $(2k)^{-1}$인 수열은 $n^{-1}$인 수열의 부분수열이므로 [[subsequence]]의 (3)과 [[basic-limits]]의 (2)에 의해 $0$으로 수렴하고, [[limit-of-sum-and-product|극한의 사칙연산]]의 (5)에 의해 $2 + (2k)^{-1}$은 $2$로 수렴합니다. 같은 방법으로 $2k - 1$로 얻은 부분수열의 $k$번째 항 $-(2k - 1)^{-1}$은, $(2k - 1)^{-1}$이 $n^{-1}$의 부분수열이어서 $0$으로 수렴하므로 (5)를 $c = -1$로 써서 $0$으로 수렴합니다. 두 극한 $2$와 $0$은 모두 $-1$ 이상 $3$ 이하입니다. 극한이 다른 두 부분수열이 있으므로 [[subsequence]]의 (3)과 [[limit-is-unique]]에 의해 수열 자체는 발산합니다.
+실제로 두 부분수열을 찾을 수 있습니다. $k$에서의 값이 $2k$인 함수는 $2(k + 1) = 2k + 2 > 2k$이므로 [[subsequence]]의 (2)에 의해 첨자열이고, 그것으로 얻은 부분수열의 $k$번째 항은 $2 + (2k)^{-1}$입니다. $k$번째 항이 $(2k)^{-1}$인 수열은 $n^{-1}$인 수열의 부분수열이므로 [[subsequence]]의 (3)과 [[basic-limits]]의 (2)에 의해 $0$으로 수렴하고, [[limit-of-sum-and-product|극한의 사칙연산]]의 (5)에 의해 $2 + (2k)^{-1}$은 $2$로 수렴합니다. 또 $2k - 1 = k + (k - 1) \ge k \ge 1$은 자연수이고 $2(k + 1) - 1 = (2k - 1) + 2 > 2k - 1$이므로 $k$에서의 값이 $2k - 1$인 함수도 [[subsequence]]의 (2)에 의해 첨자열입니다. 그것으로 얻은 부분수열의 $k$번째 항 $-(2k - 1)^{-1}$은, $(2k - 1)^{-1}$이 $n^{-1}$의 부분수열이어서 $0$으로 수렴하므로 (5)를 $c = -1$로 써서 $0$으로 수렴합니다. 두 극한 $2$와 $0$은 모두 $-1$ 이상 $3$ 이하입니다. 극한이 다른 두 부분수열이 있으므로 [[subsequence]]의 (3)과 [[limit-is-unique]]에 의해 수열 자체는 발산합니다.
 
 이 정리는 수렴하는 부분수열이 있다는 것만 말하고, 어느 부분수열인지나 극한이 무엇인지는 말하지 않습니다.
 :::
@@ -79,7 +80,7 @@ $n$이 짝수이면 $x_n = n$, 홀수이면 $x_n = -n$인 수열에는 수렴하
 ## 확인 질문
 
 :::check[(2)에서 모든 $n$에서 $a < x_n < b$이면, 수렴하는 부분수열의 극한 $L$은 언제나 $a < L < b$인가?]
-아닙니다. $x_n = n^{-1}$이면 모든 $n$에서 $0 < x_n < 2$입니다([[order-properties-of-reals]]의 (10), (6)의 (ii)). 그러나 [[subsequence]]의 (3)과 [[basic-limits]]의 (2)에 의해 모든 부분수열이 $0$으로 수렴하고, $0 < 0$은 성립하지 않습니다. (2)가 말하는 것은 $a \le L \le b$까지입니다.
+아닙니다. $x_n = n^{-1}$이면 모든 $n$에서 $0 < x_n < 2$입니다. [[order-properties-of-reals]]의 (10)에 의해 $0 < n^{-1}$이고, [[prime-number]]의 (Z1)에 의해 $1 \le n$이므로 그 항목의 (6)의 (ii)에 의해 $n^{-1} \le 1 < 2$입니다. 그러나 [[subsequence]]의 (3)과 [[basic-limits]]의 (2)에 의해 모든 부분수열이 $0$으로 수렴하고, $0 < 0$은 성립하지 않습니다. (2)가 말하는 것은 $a \le L \le b$까지입니다.
 :::
 
 :::check[유계인 수열의 부분수열은 모두 수렴하는가?]
