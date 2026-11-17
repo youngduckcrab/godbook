@@ -12,8 +12,9 @@ sources:
   - ref: lebl-basic-analysis
     loc: 3.2.1절 Definition 3.2.1 과 그 뒤 두 문단 (p.122), Proposition 3.2.2 (i), (ii)와 그 증명 (p.122–123), Example 3.2.10 (p.125–126), Example 3.2.13 (p.127), 연습문제 3.2.7, 3.2.8, 3.2.11 (p.128)
     checked: original
-    note: "출처의 Definition 3.2.1(p.122)은 c ∈ S 에서 '모든 ε > 0 에 대해 δ > 0 이 있어 x ∈ S 이고 |x − c| < δ 이면 |f(x) − f(c)| < ε' 일 때 f 가 c 에서 연속이라 하고, 모든 c ∈ S 에서 연속이면 연속함수, 모든 c ∈ A 에서 연속이면 A 에서 연속이라 한다. 출처는 δ 가 ε 뿐 아니라 c 에도 기댄다고 적는다. 이 항목의 정의는 같다. 출처는 불연속(discontinuous)을 3.2.3절(p.125)에서 정의한다. (1)의 부정의 꼴은 출처가 Proposition 3.2.2 (iii)의 증명(p.123)에서 적는 것과 같은 내용이다. (2), (3)은 출처의 Proposition 3.2.2 (i), (ii)(p.122–123)이고 증명 경로도 같다. 출처는 (i)을 'S ∩ (c − δ, c + δ) = {c} 인 δ' 로 쓰고 이 항목은 cluster-point 의 (2)의 꼴로 쓴다. Proposition 3.2.2 (iii)(수열로 본 연속)은 sequences-and-continuity 에서 한 방향만 다룬다. (4)는 출처에 명제로 없다(검색한 범위). (5)의 둘째 문장은 출처의 연습문제 3.2.7(p.128)이고, 출처는 p.122 에서 'A 에서 연속이면 f|_A 가 연속이지만 그 역은 성립하지 않는다(Example 3.2.13)'고 적는다. 반례 '한 점으로의 제한'은 출처의 Example 3.2.13(p.127; g(x) = 0 (x ≠ 0), g(0) = 1, A = {0})과 같은 함수, 같은 A 이다. (6)의 ⇐ 방향은 출처의 연습문제 3.2.8(p.128; (c − α, c + α) ⊂ S 일 때 f|_A 가 c 에서 연속이면 f 도 그렇다)을 일반의 S 로 넓힌 것이다. (7)은 출처의 연습문제 3.2.11(p.128; f : ℝ → ℝ 가 연속이고 f(c) > 0 이면 c 의 어떤 열린구간에서 f > 0)을 일반의 S 와 수 a, b 로 넓힌 것이다. (8)은 출처에 명제로 없다(검색한 범위). 예시 '계단 함수'는 출처의 Example 3.2.10(p.125; x < 0 이면 −1, x ≥ 0 이면 1)과 같은 꼴의 함수이고, 출처는 수열 −1/n 으로 불연속을 보이며 이 항목은 (1)로 보인다. 확인 질문은 출처에 없다(검색한 범위)."
-status: source-checked
+    note: "출처의 Definition 3.2.1(p.122)은 c ∈ S 에서 '모든 ε > 0 에 대해 δ > 0 이 있어 x ∈ S 이고 |x − c| < δ 이면 |f(x) − f(c)| < ε' 일 때 f 가 c 에서 연속이라 하고, 모든 c ∈ S 에서 연속이면 연속함수, 모든 c ∈ A 에서 연속이면 A 에서 연속이라 한다. 출처는 δ 가 ε 뿐 아니라 c 에도 기댄다고 적는다. 이 항목의 정의는 같다. 출처는 불연속(discontinuous)을 3.2.3절(p.125)에서 정의한다. (1)의 부정의 꼴은 출처가 Proposition 3.2.2 (iii)의 증명(p.123)에서 적는 것과 같은 내용이다. (2), (3)은 출처의 Proposition 3.2.2 (i), (ii)(p.122–123)이고 증명 경로도 같다. 출처는 (i)을 'S ∩ (c − δ, c + δ) = {c} 인 δ' 로 쓰고 이 항목은 cluster-point 의 (2)의 꼴로 쓴다. Proposition 3.2.2 (iii)(수열로 본 연속)은 sequences-and-continuity 에서 한 방향만 다룬다. (4)는 S = ℝ 이면 출처의 Proposition 3.2.4 의 특수한 경우이고, 일반의 S 에 대한 명제로는 출처에 없다(검색한 범위). (5)의 둘째 문장은 출처의 연습문제 3.2.7(p.128)이고, 출처는 p.122 에서 'A 에서 연속이면 f|_A 가 연속이지만 그 역은 성립하지 않는다(Example 3.2.13)'고 적는다. 반례 '한 점으로의 제한'은 출처의 Example 3.2.13(p.127; g(x) = 0 (x ≠ 0), g(0) = 1, A = {0})과 같은 함수, 같은 A 이다. (6)의 ⇐ 방향은 출처의 연습문제 3.2.8(p.128; (c − α, c + α) ⊂ S 일 때 f|_A 가 c 에서 연속이면 f 도 그렇다)을 일반의 S 로 넓힌 것이다. (7)은 출처의 연습문제 3.2.11(p.128; f : ℝ → ℝ 가 연속이고 f(c) > 0 이면 c 의 어떤 열린구간에서 f > 0)을 일반의 S 와 수 a, b 로 넓힌 것이다. (8)은 출처에 명제로 없다(검색한 범위). 예시 '계단 함수'는 출처의 Example 3.2.10(p.125; x < 0 이면 −1, x ≥ 0 이면 1)과 같은 꼴의 함수이고, 출처는 수열 −1/n 으로 불연속을 보이며 이 항목은 (1)로 보인다. 확인 질문 2 는 출처의 연습문제 3.2.12(p.128; ℤ 위의 모든 함수는 연속)와 같은 발상이다. 확인 질문 1 은 출처에 없다(검색한 범위)."
+status: reviewed
+review_note: "2026-11-17 독립 검토 2회(전반 1회, 후반과 전반 재확인 1회). 증명의 수학 오류 없음. 가산 선택 없이 ε–δ 로 직접 증명. 출처 쪽수와 메모, 기호 |f| 와 'c 가까이에서'의 구별을 고침"
 added: 2026-11-17
 ---
 
@@ -26,7 +27,7 @@ $$
 $$
 가 참일 때이다. $\delta$는 $\varepsilon$과 $c$마다 따로 골라도 된다. $f$가 $c$에서 **불연속**(discontinuous at $c$)이라는 것은 정확히 $f$가 $c$에서 연속이 아닐 때이다. $A \subseteq S$일 때 $f$가 **$A$에서 연속**인 것은 정확히 $A$의 모든 원소에서 $f$가 연속일 때이고, $f$가 $S$에서 연속일 때 $f$를 **연속함수**(continuous function)라 한다. 연속은 정의역의 점에서만 말한다.
 
-다음이 성립한다.
+다음이 성립한다. (7), (8)의 "$|x - c| < \delta$인 모든 $x \in S$"에는 $c$ 자신도 포함된다. [[limit-of-a-function]]의 "$c$ 가까이에서 성립한다"는 $c$를 뺀 꼴이므로 그것과 다르다.
 
 1. (연속이 아니라는 것) $f$가 $c$에서 불연속인 것은 정확히
    $$
@@ -38,8 +39,8 @@ $$
 4. (상수함수와 항등함수) $S$ 위의 상수함수와 항등함수 $i_S$는 연속함수이다.
 5. (제한) $A \subseteq S$이고 $c \in A$이며 $f$가 $c$에서 연속이면, $f|_A$도 $c$에서 연속이다. 따라서 $f$가 $A$에서 연속이면 $f|_A$는 연속함수이고, 특히 연속함수의 제한은 연속함수이다.
 6. (국소성) $\delta_0$이 양의 실수이고 $A = \{x \in S : |x - c| < \delta_0\}$이면, $c \in A$이고, $f$가 $c$에서 연속인 것은 정확히 $f|_A$가 $c$에서 연속일 때이다.
-7. ($c$ 가까이의 값) $f$가 $c$에서 연속이라 하자. 실수 $a$가 $a < f(c)$이면 어떤 양의 실수 $\delta$가 있어 $x \in S$이고 $|x - c| < \delta$인 모든 $x$에서 $a < f(x)$이다. 실수 $b$가 $f(c) < b$이면 같은 꼴로 $f(x) < b$인 $\delta$가 있다. 특히 $0 < f(c)$이면 어떤 양의 실수 $\delta$가 있어 $x \in S$, $|x - c| < \delta$인 모든 $x$에서 $0 < f(x)$이고, $f(c) \ne 0$이면 같은 꼴로 $f(x) \ne 0$인 $\delta$가 있다.
-8. ($c$ 가까이에서 유계) $f$가 $c$에서 연속이면 어떤 양의 실수 $\delta$가 있어 $x \in S$이고 $|x - c| < \delta$인 모든 $x$에서 $|f(x)| < |f(c)| + 1$이다.
+7. ($c$를 포함하는 근방의 값) $f$가 $c$에서 연속이라 하자. 실수 $a$가 $a < f(c)$이면 어떤 양의 실수 $\delta$가 있어 $x \in S$이고 $|x - c| < \delta$인 모든 $x$에서 $a < f(x)$이다. 실수 $b$가 $f(c) < b$이면 같은 꼴로 $f(x) < b$인 $\delta$가 있다. 특히 $0 < f(c)$이면 어떤 양의 실수 $\delta$가 있어 $x \in S$, $|x - c| < \delta$인 모든 $x$에서 $0 < f(x)$이고, $f(c) \ne 0$이면 같은 꼴로 $f(x) \ne 0$인 $\delta$가 있다.
+8. ($c$를 포함하는 근방에서 유계) $f$가 $c$에서 연속이면 어떤 양의 실수 $\delta$가 있어 $x \in S$이고 $|x - c| < \delta$인 모든 $x$에서 $|f(x)| < |f(c)| + 1$이다.
 :::
 
 :::english
@@ -51,7 +52,7 @@ $$
 $$
 is true. $\delta$ may be chosen separately for each $\varepsilon$ and each $c$. $f$ is **discontinuous at** $c$ exactly when $f$ is not continuous at $c$. For $A \subseteq S$, $f$ is **continuous on** $A$ exactly when $f$ is continuous at every element of $A$, and when $f$ is continuous on $S$ we call $f$ a **continuous function**. Continuity is spoken of only at points of the domain.
 
-The following hold.
+The following hold. In (7) and (8), "every $x \in S$ with $|x - c| < \delta$" includes $c$ itself. This differs from "holds near $c$" in the entry on the limit of a function, which excludes $c$.
 
 1. (Not being continuous) $f$ is discontinuous at $c$ exactly when
    $$
@@ -63,8 +64,8 @@ The following hold.
 4. (Constant functions and the identity function) Constant functions on $S$ and the identity function $i_S$ are continuous functions.
 5. (Restrictions) If $A \subseteq S$, $c \in A$, and $f$ is continuous at $c$, then $f|_A$ is also continuous at $c$. Hence if $f$ is continuous on $A$, then $f|_A$ is a continuous function; in particular, the restriction of a continuous function is a continuous function.
 6. (Locality) If $\delta_0$ is a positive real number and $A = \{x \in S : |x - c| < \delta_0\}$, then $c \in A$, and $f$ is continuous at $c$ exactly when $f|_A$ is continuous at $c$.
-7. (Values near $c$) Suppose $f$ is continuous at $c$. If a real number $a$ satisfies $a < f(c)$, then there is a positive real number $\delta$ such that $a < f(x)$ for every $x$ with $x \in S$ and $|x - c| < \delta$. If a real number $b$ satisfies $f(c) < b$, then there is $\delta$ of the same kind with $f(x) < b$. In particular, if $0 < f(c)$ there is a positive real number $\delta$ such that $0 < f(x)$ for every $x \in S$ with $|x - c| < \delta$, and if $f(c) \ne 0$ there is $\delta$ of the same kind with $f(x) \ne 0$.
-8. (Bounded near $c$) If $f$ is continuous at $c$, then there is a positive real number $\delta$ such that $|f(x)| < |f(c)| + 1$ for every $x$ with $x \in S$ and $|x - c| < \delta$.
+7. (Values on a neighbourhood containing $c$) Suppose $f$ is continuous at $c$. If a real number $a$ satisfies $a < f(c)$, then there is a positive real number $\delta$ such that $a < f(x)$ for every $x$ with $x \in S$ and $|x - c| < \delta$. If a real number $b$ satisfies $f(c) < b$, then there is $\delta$ of the same kind with $f(x) < b$. In particular, if $0 < f(c)$ there is a positive real number $\delta$ such that $0 < f(x)$ for every $x \in S$ with $|x - c| < \delta$, and if $f(c) \ne 0$ there is $\delta$ of the same kind with $f(x) \ne 0$.
+8. (Bounded on a neighbourhood containing $c$) If $f$ is continuous at $c$, then there is a positive real number $\delta$ such that $|f(x)| < |f(c)| + 1$ for every $x$ with $x \in S$ and $|x - c| < \delta$.
 :::
 
 ## 직관
