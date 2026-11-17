@@ -12,7 +12,7 @@ sources:
   - ref: lebl-basic-analysis
     loc: 2.5.1절 Definition 2.5.1 과 그 뒤 문단 (p.87), Remark 2.5.2 (p.87), Remark 2.5.3 과 Example 2.5.4 (p.88)
     checked: original
-    note: "출처의 Definition 2.5.1(p.87)은 수열 {x_n} 에 대해 형식적 대상 Σ_{n=1}^∞ x_n 을 series 라 하고, s_k = Σ_{n=1}^k x_n = x_1 + x_2 + ⋯ + x_k 로 정한 수열 {s_k} 가 수렴하면 급수가 수렴한다고 하며, s_k 를 partial sums 라 부르고, 그때 Σ_{n=1}^∞ x_n = lim s_k 로 쓴다('we cheat a little and treat Σ x_n as a number'). 출처는 유한 합 자체를 정의하지 않는다. 이 항목은 부분합 수열을 recursion-theorem 으로 재귀적으로 정의하고, 급수를 별도의 대상으로 두지 않은 채 '(x_n) 의 급수가 수렴한다'를 부분합 수열이 수렴한다는 말로 정의한다. 출처는 같은 쪽에서 Σ x_n 이 급수 자체와 부분합의 극한이라는 두 뜻으로 쓰이니 문맥으로 구별하라고 적고, Remark 2.5.3(p.88)에서 x_1 + x_2 + x_3 + ⋯ 꼴은 증명에서 실수를 부르는 비형식적 표기라며 쓰지 않는다고 적는다. 이 항목도 그 꼴과 기호 Σ 를 쓰지 않는다. Remark 2.5.2(p.87)는 첨자를 1 이 아닌 수에서 시작하는 급수(0 부터의 rⁿ)를 쓰기도 한다고 적는다. 이 사이트는 첨자를 언제나 1 부터 쓴다. Example 2.5.4(p.88)는 1/2ⁿ 의 급수에서 부분합에 관한 등식을 'follows by induction, which we leave to the reader'라고 귀납에 맡긴 뒤 |1 − s_k| = 1/2^k 으로 수렴을 보인다. 이 항목의 (1)은 이처럼 부분합이 어떤 식과 같음을 귀납으로 확인하는 일을 재귀 정리의 유일성으로 정당화한 것이다. (2)–(6)은 출처가 유한 합의 성질로 증명 없이 쓰는 것을 부분합으로 진술해 증명한 것이다. (2)의 첫 식은 Proposition 2.5.9 의 증명(p.90)의 'Σ_{i=n+1}^{n+1} x_i = x_{n+1}'에, 둘째 식은 Proposition 2.6.2 의 증명(p.101)에서 이웃한 두 항을 묶는 것에 해당한다. (3)은 p.92 의 '항이 0 이상이면 부분합 수열은 단조증가'(Proposition 2.5.13 앞 문단)이고, (4)는 Example 2.5.11(p.90)이 묶음 하나를 아래에서 누르는 계산, (5)는 Proposition 2.5.16 의 증명(p.93)의 식 (2.1), (6)은 Proposition 2.5.15 의 증명(p.92)이 쓰는 'triangle inequality for a finite sum'에 해당한다. 출처는 이것들을 따로 명제로 진술하지 않는다(검색한 범위). 예시 '모든 항이 같은 수열'은 출처에 없다(2.5절과 그 연습문제에서 찾은 범위). 예시 'n⁻¹ − (n+2)⁻¹'의 앞뒤 항이 지워지는 발상은 출처의 연습문제 2.5.1(p.97, k 번째 부분합이 k/(k+1) 인 급수의 항을 찾는 것), 2.5.3 d)(p.97, 1/(n(n+1)) 의 급수), 5.5.3 b)(p.224, 1/(n(n+1)) 의 급수, 'The sum telescopes')와 같다. 반례의 (−1)ⁿ 의 급수는 출처 Example 2.5.10(p.90)이 공비가 −1 인 등비급수로서 발산을 보이는 급수이고, 연습문제 2.5.13 b)(p.98, 짝수 번째 부분합의 극한은 있지만 항이 0 으로 가지 않는 예를 찾는 것)의 답이 될 수 있으며, 연습문제 2.6.11 b)(p.111)도 같은 급수를 쓴다. 확인 질문 1 은 부분합에서 항을 구하는 질문으로 출처 연습문제 2.5.1 과 같은 종류이다. 다른 강의의 유한 합과의 관계를 밝힌 참고 블록은 이 사이트가 덧붙였다."
+    note: "출처의 Definition 2.5.1(p.87)은 수열 {x_n} 에 대해 형식적 대상 Σ_{n=1}^∞ x_n 을 series 라 하고, s_k = Σ_{n=1}^k x_n = x_1 + x_2 + ⋯ + x_k 로 정한 수열 {s_k} 가 수렴하면 급수가 수렴한다고 하며, s_k 를 partial sums 라 부르고, 그때 Σ_{n=1}^∞ x_n = lim s_k 로 쓴다('we cheat a little and treat Σ x_n as a number'). 출처는 유한 합 자체를 정의하지 않는다. 이 항목은 부분합 수열을 recursion-theorem 으로 재귀적으로 정의하고, 급수를 별도의 대상으로 두지 않은 채 '(x_n) 의 급수가 수렴한다'를 부분합 수열이 수렴한다는 말로 정의한다. 출처는 같은 쪽에서 Σ x_n 이 급수 자체와 부분합의 극한이라는 두 뜻으로 쓰이니 문맥으로 구별하라고 적고, Remark 2.5.3(p.88)에서 x_1 + x_2 + x_3 + ⋯ 꼴은 증명에서 실수를 부르는 비형식적 표기라며 쓰지 않는다고 적는다. 이 항목도 그 꼴과 기호 Σ 를 쓰지 않는다. Remark 2.5.2(p.87)는 첨자를 1 이 아닌 수에서 시작하는 급수(0 부터의 rⁿ)를 쓰기도 한다고 적는다. 이 사이트는 첨자를 언제나 1 부터 쓴다. Example 2.5.4(p.88)는 1/2ⁿ 의 급수에서 부분합에 관한 등식을 'follows by induction, which we leave to the reader'라고 귀납에 맡긴 뒤 |1 − s_k| = 1/2^k 으로 수렴을 보인다. 이 항목의 (1)은 이처럼 부분합이 어떤 식과 같음을 귀납으로 확인하는 일을 재귀 정리의 유일성으로 정당화한 것이다. (2)–(6)은 출처가 유한 합의 성질로 증명 없이 쓰는 것을 부분합으로 진술해 증명한 것이다. (2)의 첫 식은 Proposition 2.5.9 의 증명(p.90)이 |Σ_{i=n+1}^{n+1} x_i| = |x_{n+1}| 로 쓰는, 항 하나짜리 합이 그 항이라는 것에, 둘째 식은 Proposition 2.6.2 의 증명(p.101)에서 이웃한 두 항을 묶는 것에 해당한다. (3)은 p.92 의 '항이 0 이상이면 부분합 수열은 단조증가'(Proposition 2.5.13 앞 문단)이고, (4)는 Example 2.5.11(p.90)이 묶음 하나를 아래에서 누르는 계산, (5)는 Proposition 2.5.16 의 증명(p.93)의 식 (2.1), (6)은 Proposition 2.5.15 의 증명(p.92)이 쓰는 'triangle inequality for a finite sum'에 해당한다. 출처는 이것들을 따로 명제로 진술하지 않는다(검색한 범위). 예시 '모든 항이 같은 수열'의 c = 1 인 경우는 출처 Example 2.5.10(p.90)의 r = 1 인 등비급수이다(출처는 |rⁿ| ≥ 1 로 발산을 보인다). 일반 c 와 부분합 nc 의 계산은 출처에 없다(검색한 범위). 예시 'n⁻¹ − (n+2)⁻¹'의 앞뒤 항이 지워지는 발상은 출처의 연습문제 2.5.1(p.97, k 번째 부분합이 k/(k+1) 인 급수의 항을 찾는 것), 2.5.3 d)(p.97, 1/(n(n+1)) 의 급수), 5.5.3 b)(p.224, 1/(n(n+1)) 의 급수, 'The sum telescopes')와 같다. 반례의 수열 (−1)ⁿ(항이 −1, 1, −1, …)은 출처 Example 2.5.10(p.90)의 r = −1 인 급수(첨자 0 부터의 (−1)ⁿ, 항이 1, −1, 1, …)의 항에 −1 을 곱한 것이고, 연습문제 2.5.13 b)(p.98, 짝수 번째 부분합의 극한은 있지만 항이 0 으로 가지 않는 예를 찾는 것)의 답이 될 수 있으며, 연습문제 2.6.11 b)(p.111)도 같은 급수를 쓴다. 확인 질문 1 은 부분합에서 항을 구하는 질문으로 출처 연습문제 2.5.1 과 같은 종류이다. 다른 강의의 유한 합과의 관계를 밝힌 참고 블록은 이 사이트가 덧붙였다."
 status: source-checked
 added: 2026-11-17
 ---
@@ -32,7 +32,7 @@ $$
 - $(x_n)$의 급수가 **발산한다**(diverges)는 것은 정확히 $(s_n)$이 발산할 때이다.
 - $x_n$을 $(x_n)$의 급수의 $n$번째 **항**(term)이라 한다.
 
-"$(x_n)$의 급수"라는 말은 이 세 문장처럼 수렴, 발산, 합, 항을 말할 때와, "$(x_n)$의 급수의 부분합(부분합 수열)"이라는 말로 $(x_n)$의 부분합(부분합 수열)을 가리킬 때만 쓴다. 이 사이트는 급수를 수열 $(x_n)$이나 부분합 수열과 다른 별도의 대상으로 정의하지 않고, 급수를 나타내는 기호를 두지 않는다. 급수의 합은 $\lim_{n \to \infty} s_n$으로 쓰거나 글자로 이름을 붙여 쓴다.
+"$(x_n)$의 급수"라는 말은 이 세 문장처럼 수렴, 발산, 합, 항을 말할 때와, "$(x_n)$의 급수의 부분합(부분합 수열)"이라는 말로 $(x_n)$의 부분합(부분합 수열)을 가리킬 때만 쓴다. "$(x_n)$의 급수"에 대해 말하는 그 밖의 문장(예: "$(x_n)$의 급수는 등비급수이다", "항이 음이 아닌 급수")은 수열 $(x_n)$이 그런 수열이라는 뜻이다. 이 사이트는 급수를 수열 $(x_n)$이나 부분합 수열과 다른 별도의 대상으로 정의하지 않고, 급수를 나타내는 기호를 두지 않는다. 급수의 합은 $\lim_{n \to \infty} s_n$으로 쓰거나 글자로 이름을 붙여 쓴다.
 
 다음이 성립한다. 아래에서 $(y_n)$도 수열이고 $(t_n)$은 $(y_n)$의 부분합 수열이며, $(u_n)$은 $n$번째 항이 $|x_n|$인 수열([[sequence]]의 (1))의 부분합 수열이다. 세 수의 합 $a + b + c$는 $(a + b) + c$를 뜻한다.
 
@@ -61,7 +61,7 @@ This sequence is called the **sequence of partial sums** of $(x_n)$, and $s_n$ i
 - The series of $(x_n)$ **diverges** exactly when $(s_n)$ diverges.
 - $x_n$ is called the $n$th **term** of the series of $(x_n)$.
 
-The phrase "the series of $(x_n)$" is used only, as in these three sentences, to speak of convergence, divergence, the sum and the terms, and in "the partial sums (sequence of partial sums) of the series of $(x_n)$", which means the partial sums (sequence of partial sums) of $(x_n)$. This site does not define a series as a separate object, different from the sequence $(x_n)$ or its sequence of partial sums, and assigns no symbol to a series. The sum of a series is written $\lim_{n \to \infty} s_n$ or given a letter as a name.
+The phrase "the series of $(x_n)$" is used only, as in these three sentences, to speak of convergence, divergence, the sum and the terms, and in "the partial sums (sequence of partial sums) of the series of $(x_n)$", which means the partial sums (sequence of partial sums) of $(x_n)$. Any other sentence about "the series of $(x_n)$" (for example, "the series of $(x_n)$ is a geometric series", "a series with nonnegative terms") means that the sequence $(x_n)$ is such a sequence. This site does not define a series as a separate object, different from the sequence $(x_n)$ or its sequence of partial sums, and assigns no symbol to a series. The sum of a series is written $\lim_{n \to \infty} s_n$ or given a letter as a name.
 
 The following hold. Below, $(y_n)$ is also a sequence and $(t_n)$ is the sequence of partial sums of $(y_n)$, and $(u_n)$ is the sequence of partial sums of the sequence whose $n$th term is $|x_n|$ (item (1) of the entry on sequences). A sum of three numbers $a + b + c$ means $(a + b) + c$.
 
@@ -109,14 +109,14 @@ The following hold. Below, $(y_n)$ is also a sequence and $(t_n)$ is the sequenc
 $$
 (j - n)a + a \le (s_j - s_n) + (s_{j+1} - s_j)
 $$
-이다. 왼쪽은 (K4)와 (K12)의 (i)에 의해 $((j - n) + 1)a$이고, 정수의 계산으로 $(j - n) + 1 = (j + 1) - n$이다. 오른쪽은 (K1)과 (ㄴ)에 의해 $(s_{j+1} - s_j) + (s_j - s_n) = s_{j+1} - s_n$이다. 따라서 $P_{j+1}$이 참이다.
+이다. 왼쪽은 (K1), (K4)와 (K12)의 (i)에 의해 $((j - n) + 1)a$이고, 정수의 계산으로 $(j - n) + 1 = (j + 1) - n$이다. 오른쪽은 (K1)과 (ㄴ)에 의해 $(s_{j+1} - s_j) + (s_j - s_n) = s_{j+1} - s_n$이다. 따라서 $P_{j+1}$이 참이다.
 
 $n + 1 \le k$이고 $k \le k$이므로 $P_k$에서 $(k - n)a \le s_k - s_n$이다.
 
 (ii) $n + 1$ 이상인 정수 $j$에 대한 명제 $Q_j$를 "$j \le k$이면 $s_j - s_n \le (j - n)b$"로 둔다.
 
 - 기초 단계: $n + 1 \le k$라 하자. (L3)에 의해 $i = n + 1$은 $n < i \le k$를 만족하므로 가정에 의해 $x_{n+1} \le b$이고, (2)와 $((n + 1) - n)b = 1 \cdot b = b$에 의해 $s_{n+1} - s_n \le ((n + 1) - n)b$이다.
-- 귀납 단계: $j \ge n + 1$인 정수 $j$에 대하여 $Q_j$를 가정하고 $j + 1 \le k$라 하자. (L3)과 (Z6)에 의해 $j \le k$이고 $n < j + 1$이므로, $Q_j$에 의해 $s_j - s_n \le (j - n)b$이고, 가정과 (2)에 의해 $s_{j+1} - s_j = x_{j+1} \le b$이다. 순서 성질 (2)의 (iii)으로 더하면 $(s_j - s_n) + (s_{j+1} - s_j) \le (j - n)b + b$이다. (K1)과 (ㄴ)에 의해 왼쪽은 $s_{j+1} - s_n$이고, (K4)와 (K12)의 (i), 정수의 계산에 의해 오른쪽은 $((j + 1) - n)b$이다. 따라서 $Q_{j+1}$이 참이다.
+- 귀납 단계: $j \ge n + 1$인 정수 $j$에 대하여 $Q_j$를 가정하고 $j + 1 \le k$라 하자. (L3)과 (Z6)에 의해 $j \le k$이고 $n < j + 1$이므로, $Q_j$에 의해 $s_j - s_n \le (j - n)b$이고, 가정과 (2)에 의해 $s_{j+1} - s_j = x_{j+1} \le b$이다. 순서 성질 (2)의 (iii)으로 더하면 $(s_j - s_n) + (s_{j+1} - s_j) \le (j - n)b + b$이다. (K1)과 (ㄴ)에 의해 왼쪽은 $s_{j+1} - s_n$이고, (K1), (K4)와 (K12)의 (i), 정수의 계산에 의해 오른쪽은 $((j + 1) - n)b$이다. 따라서 $Q_{j+1}$이 참이다.
 
 $n + 1 \le k$이고 $k \le k$이므로 $Q_k$에서 $s_k - s_n \le (k - n)b$이다.
 
@@ -165,7 +165,7 @@ $$
 :::counterexample[부분합 수열이 유계여도 급수는 발산할 수 있다]
 $x_n = (-1)^n$인 수열([[power-of-a-real-number|실수의 거듭제곱]])의 급수를 봅니다. [[even-and-odd]]에서 받아들인 대로 모든 자연수는 짝수이거나 홀수이고 둘 다는 아니므로, $n$이 홀수이면 $v_n = -1$, 짝수이면 $v_n = 0$으로 수열 $(v_n)$을 정할 수 있습니다([[sequence]]의 (1)). 거듭제곱의 (1)에 의해 $v_1 = -1 = (-1)^1 = x_1$입니다. $n$이 홀수이면 $n = 2m + 1$에서 $n + 1 = 2(m + 1)$이 짝수이므로 거듭제곱의 (5)에 의해 $v_n + x_{n+1} = -1 + 1 = 0 = v_{n+1}$이고, $n$이 짝수이면 $n = 2m$에서 $n + 1 = 2m + 1$이 홀수이므로 $v_n + x_{n+1} = 0 + (-1) = -1 = v_{n+1}$입니다. 이 항목의 (1)에 의해 부분합은 $s_n = v_n$이고, 모든 $n$에서 $|s_n| \le 1$이므로 $(s_n)$은 유계입니다.
 
-그러나 급수는 발산합니다. [[basic-limits]]의 (3)의 수열 $(a_n)$($n$이 짝수이면 $1$, 홀수이면 $-1$)은 모든 $n$에서 $a_n = 2s_n + 1$입니다($2 \cdot 0 + 1 = 1$, $2 \cdot (-1) + 1 = -1$). $(s_n)$이 수렴한다면 [[limit-of-sum-and-product|극한의 사칙연산]]의 (5)를 두 번 써서 $(a_n)$도 수렴하게 되어 [[basic-limits]]의 (3)에 어긋납니다. 부분합이 유계라는 것만으로는 수렴하지 않습니다.
+그러나 급수는 발산합니다. [[basic-limits]]의 (3)의 수열 $(a_n)$($n$이 짝수이면 $1$, 홀수이면 $-1$)은 모든 $n$에서 $a_n = 2s_n + 1$입니다($2 \cdot 0 + 1 = 1$, $2 \cdot (-1) + 1 = -1$). $(s_n)$이 수렴한다면 [[limit-of-sum-and-product|극한의 사칙연산]]의 (5)를 두 번 써서 $(a_n)$도 수렴하게 되어 [[basic-limits]]의 (3)에 어긋납니다. 부분합 수열이 유계라는 것만으로는 급수가 수렴한다고 할 수 없습니다.
 :::
 
 ## 확인 질문
