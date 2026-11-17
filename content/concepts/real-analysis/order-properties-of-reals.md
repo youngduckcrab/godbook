@@ -6,14 +6,14 @@ kind: proposition
 field: real-analysis
 msc: ["12J15"]
 level: undergrad
-summary: 부등식을 다루는 기본 규칙(≤ 와 < 의 논리, 부등식의 덧셈, 양수·음수를 곱할 때, 제곱과 역수의 부호, 두 수의 평균, ε 논법, 정수의 순서와의 일치)을 실수의 순서 공리와 계산 법칙에서 증명한다.
-requires: [real-order-axioms, real-number-arithmetic, proof-by-contradiction, mathematical-induction, prime-number, well-ordering-principle, even-and-odd]
+summary: 부등식을 다루는 기본 규칙(≤ 와 < 의 논리, 부등식의 덧셈, 양수·음수를 곱할 때, 제곱과 역수의 부호, 두 수의 평균, ε 논법, 정수의 순서와의 일치, 음이 아닌 수끼리의 곱)을 실수의 순서 공리와 계산 법칙에서 증명한다.
+requires: [real-order-axioms, real-number-arithmetic, proof-by-contradiction, mathematical-induction, prime-number, well-ordering-principle, even-and-odd, natural-numbers-are-infinite]
 proof: full
 sources:
   - ref: lebl-basic-analysis
     loc: 1.1절 Proposition 1.1.8, Proposition 1.1.9 (p.26), 연습문제 1.1.1, 1.1.3 (p.27), 1.1.11 (p.28); 1.2절 Theorem 1.2.1 뒤의 문단, Proposition 1.2.2 와 그 뒤 두 문단 (p.29), 연습문제 1.2.4 (p.34)
     checked: original
-    note: "출처의 Proposition 1.1.8 은 일반의 순서체에서 (i) x > 0 이면 −x < 0 이고 그 역, (ii) x > 0, y < z 이면 xy < xz, (iii) x < 0, y < z 이면 xy > xz, (iv) x ≠ 0 이면 x² > 0, (v) 0 < x < y 이면 0 < 1/y < 1/x, (vi) 0 < x < y 이면 x² < y², (vii) x ≤ y, z ≤ w 이면 x + z ≤ y + w 를 진술하고, (iv) 뒤에 '특히 1 > 0'이라고 적는다(p.26). 차례로 이 항목의 (3)의 (ii), (4)의 (i), (4)의 (ii), (5)의 (i), (6)의 (ii), (7)의 (i), (2)의 (iii)에 해당하고, '1 > 0'은 (5)의 (ii)이다. 출처는 (iii), (vi), (vii)을 연습문제 1.1.1, 1.1.3, 1.1.11 (a)로 돌리고, (i)의 역은 'similar calculation'이라고만 한다. (2)의 (iv)는 연습문제 1.1.11 (b)이다. (7)의 (i)은 출처의 (vi)을 0 ≤ a 로 넓혀 적은 것이다. (6)의 (i)의 첫 문장은 출처가 (v)의 증명 안에서 보이고, p.29 에서 'n > 0 이면 1/n > 0'으로 다시 언급한다. (6)의 (iii)은 출처의 Proposition 1.1.9 이고, 출처는 대우와 'Without loss of generality'로 증명하며 이 항목은 네 경우를 모두 적는다. (6)의 (iv)의 한 방향은 출처 p.29 의 'm < k 이면 m/n < k/n'과 같은 꼴이다. (5)의 (iv)는 출처 연습문제 1.2.4 이다. (8)은 출처 p.29 의 'c = (a+b)/2 (why?)'이고, (9)는 출처의 Proposition 1.2.2 와 바로 뒤 문단의 'x ≥ 0 이면 x = 0'이다. 출처는 Proposition 1.2.2 를 '0 < x/2 < x (why?)'와 ε = x/2 로 한 줄에 증명하며 이 항목의 증명도 같은 경로이다. (10)에 관해 출처는 Theorem 1.2.1 에서 ℚ ⊂ ℝ 를 받아들이고, ℕ ⊂ ℚ 라는 것과 '귀납법으로 모든 자연수 n 에 대해 n > 0 임을 증명할 수 있다(exercise)'를 적는다(p.29). 그 연습문제에는 번호가 없다. 정수로서의 순서와 실수로서의 순서가 일치한다는 진술은 출처에 없다(1.1–1.2절을 읽은 범위). (1), (2)의 (i), (ii), (3)의 (i), (iii), (4)의 (iii), (iv), (5)의 (iii), (6)의 (i)의 둘째 문장, (7)의 (ii)–(iv)는 출처에 명제로 적혀 있지 않다. 그 가운데 (3)의 (i)은 출처가 Proposition 1.1.8 (ii)의 증명에서, (3)의 (iii)의 ≤ 꼴은 Proposition 1.1.11 의 증명에서, (4)의 (iv)의 둘째 문장은 Proposition 1.1.9 의 증명에서 쓴다. 증명은 이 사이트가 (K1)–(K12)와 (W1)–(W4)를 인용하며 쓴 것이다. (5)의 (i)(양수와 음수로 나누기)과 (6)의 (ii)(두 역수의 곱을 곱하기)의 증명 경로는 출처와 같다. 예시, 반례, 확인 질문은 새로 만들었다."
+    note: "출처의 Proposition 1.1.8 은 일반의 순서체에서 (i) x > 0 이면 −x < 0 이고 그 역, (ii) x > 0, y < z 이면 xy < xz, (iii) x < 0, y < z 이면 xy > xz, (iv) x ≠ 0 이면 x² > 0, (v) 0 < x < y 이면 0 < 1/y < 1/x, (vi) 0 < x < y 이면 x² < y², (vii) x ≤ y, z ≤ w 이면 x + z ≤ y + w 를 진술하고, (iv) 뒤에 '특히 1 > 0'이라고 적는다(p.26). 차례로 이 항목의 (3)의 (ii), (4)의 (i), (4)의 (ii), (5)의 (i), (6)의 (ii), (7)의 (i), (2)의 (iii)에 해당하고, '1 > 0'은 (5)의 (ii)이다. 출처는 (iii), (vi), (vii)을 연습문제 1.1.1, 1.1.3, 1.1.11 (a)로 돌리고, (i)의 역은 'similar calculation'이라고만 한다. (2)의 (iv)는 연습문제 1.1.11 (b)이다. (7)의 (i)은 출처의 (vi)을 0 ≤ a 로 넓혀 적은 것이다. (6)의 (i)의 첫 문장은 출처가 (v)의 증명 안에서 보이고, p.29 에서 'n > 0 이면 1/n > 0'으로 다시 언급한다. (6)의 (iii)은 출처의 Proposition 1.1.9 이고, 출처는 대우와 'Without loss of generality'로 증명하며 이 항목은 네 경우를 모두 적는다. (6)의 (iv)의 한 방향은 출처 p.29 의 'm < k 이면 m/n < k/n'과 같은 꼴이다. (5)의 (iv)는 출처 연습문제 1.2.4 이다. (8)은 출처 p.29 의 'c = (a+b)/2 (why?)'이고, (9)는 출처의 Proposition 1.2.2 와 바로 뒤 문단의 'x ≥ 0 이면 x = 0'이다. 출처는 Proposition 1.2.2 를 '0 < x/2 < x (why?)'와 ε = x/2 로 한 줄에 증명하며 이 항목의 증명도 같은 경로이다. (10)에 관해 출처는 Theorem 1.2.1 에서 ℚ ⊂ ℝ 를 받아들이고, ℕ ⊂ ℚ 라는 것과 '귀납법으로 모든 자연수 n 에 대해 n > 0 임을 증명할 수 있다(exercise)'를 적는다(p.29). 그 연습문제에는 번호가 없다. 정수로서의 순서와 실수로서의 순서가 일치한다는 진술은 출처에 없다(1.1–1.2절을 읽은 범위). (1), (2)의 (i), (ii), (3)의 (i), (iii), (4)의 (iii), (iv), (5)의 (iii), (6)의 (i)의 둘째 문장, (7)의 (ii)–(iv), (11)은 출처에 명제로 적혀 있지 않다(검색한 범위). 그 가운데 (3)의 (i)은 출처가 Proposition 1.1.8 (ii)의 증명에서, (3)의 (iii)의 ≤ 꼴은 Proposition 1.1.11 의 증명에서, (4)의 (iv)의 둘째 문장은 Proposition 1.1.9 의 증명에서 쓴다. 증명은 이 사이트가 (K1)–(K12)와 (W1)–(W4)를 인용하며 쓴 것이다. (5)의 (i)(양수와 음수로 나누기)과 (6)의 (ii)(두 역수의 곱을 곱하기)의 증명 경로는 출처와 같다. 예시, 반례, 확인 질문은 새로 만들었다."
 status: source-checked
 added: 2026-11-17
 ---
@@ -58,7 +58,10 @@ added: 2026-11-17
    - (iv) $aa = bb$이면 $a = b$이다.
 8. (두 수의 평균) $a < b$이면 $a < \dfrac{a + b}{2} < b$이다. 특히 $0 < c$이면 $0 < \dfrac{c}{2} < c$이다.
 9. (모든 양수 이하인 수) 실수 $x$가 모든 양수 $\varepsilon$에 대하여 $x \le \varepsilon$을 만족하면, 곧 $\forall \varepsilon \in \mathbb{R},\ (0 < \varepsilon \Rightarrow x \le \varepsilon)$이면 $x \le 0$이다. 이때 $0 \le x$이기도 하면 $x = 0$이다.
-10. (정수의 순서와의 일치) 정수 $a$, $b$에 대하여, 정수로서 $a < b$인 것([[prime-number]]와 [[well-ordering-principle]]의 순서)은 정확히 실수로서 $a < b$일 때이다. 따라서 정수 사이의 $\le$, $>$, $\ge$도 두 뜻이 같고, (Z1)–(Z8), (L1)–(L3)을 정수에 대해 쓴 진술과 [[well-ordering-principle]]의 정리들은 그 안의 부등호를 실수의 순서로 읽어도 그대로 성립하며, 구체적인 정수 사이의 부등식(예: $0 < 2$)도 실수의 부등식으로 쓸 수 있다. 특히 모든 자연수 $n$은 양의 실수이고 $0 < n^{-1}$이다.
+10. (정수의 순서와의 일치) 정수 $a$, $b$에 대하여, 정수로서 $a < b$인 것([[prime-number]] 항목과 [[well-ordering-principle]] 항목에서 받아들인 정수의 순서)은 정확히 실수로서 $a < b$일 때이고, 정수로서 $a \le b$인 것은 정확히 실수로서 $a \le b$일 때이다. 따라서 정수와 그 합·차·곱·음수, 그리고 부등호 $<$, $\le$, $>$, $\ge$로 이루어진 진술은 정수의 순서로 읽으나 실수의 순서로 읽으나 뜻이 같다. 그래서 정수의 순서에 관해 받아들이거나 증명한 사실((Z1)–(Z8), (L1)–(L3), [[well-ordering-principle]]의 정리들, [[mathematical-induction]]의 시작점이 $m$인 꼴의 "$n \ge m$" 등)과 구체적인 정수 사이의 부등식(예: $0 < 2$)을 실수의 부등식으로 써도 된다. 특히 모든 자연수 $n$은 양의 실수이고 $0 < n^{-1}$이다.
+11. (음이 아닌 수끼리의 곱) $0 \le a$이고 $0 \le c$라 하자.
+   - (i) $a \le b$이고 $c \le d$이면 $ac \le bd$이다.
+   - (ii) $a < b$이고 $c < d$이면 $ac < bd$이다.
 :::
 
 :::english
@@ -101,7 +104,10 @@ The order $<$, $\le$ and the notions positive and negative are those of the entr
    - (iv) If $aa = bb$, then $a = b$.
 8. (Average of two numbers) If $a < b$, then $a < \dfrac{a + b}{2} < b$. In particular, if $0 < c$, then $0 < \dfrac{c}{2} < c$.
 9. (A number below every positive number) If a real number $x$ satisfies $x \le \varepsilon$ for every positive $\varepsilon$, that is, $\forall \varepsilon \in \mathbb{R},\ (0 < \varepsilon \Rightarrow x \le \varepsilon)$, then $x \le 0$. If moreover $0 \le x$, then $x = 0$.
-10. (Agreement with the order of the integers) For integers $a$ and $b$, $a < b$ holds as integers (the order used in the entries on prime numbers and on the well-ordering principle) exactly when $a < b$ holds as real numbers. Hence $\le$, $>$, $\ge$ between integers also have the same meaning in both senses; the statements (Z1)–(Z8), (L1)–(L3) applied to integers and the theorems of the well-ordering principle remain true when their inequality signs are read in the order of the real numbers; and concrete inequalities between integers (for example $0 < 2$) may be used as inequalities of real numbers. In particular, every natural number $n$ is a positive real number and $0 < n^{-1}$.
+10. (Agreement with the order of the integers) For integers $a$ and $b$, $a < b$ holds as integers (the order of the integers accepted in the entries on prime numbers and on the well-ordering principle) exactly when $a < b$ holds as real numbers, and $a \le b$ holds as integers exactly when $a \le b$ holds as real numbers. Hence a statement built from integers, their sums, differences, products, and negatives, and the inequality signs $<$, $\le$, $>$, $\ge$ has the same meaning whether it is read in the order of the integers or in the order of the real numbers. So the facts accepted or proved about the order of the integers ((Z1)–(Z8), (L1)–(L3), the theorems of the well-ordering principle, the "$n \ge m$" in the form of mathematical induction with starting point $m$, and so on) and concrete inequalities between integers (for example $0 < 2$) may be used as inequalities of real numbers. In particular, every natural number $n$ is a positive real number and $0 < n^{-1}$.
+11. (Products of nonnegative numbers) Suppose $0 \le a$ and $0 \le c$.
+   - (i) If $a \le b$ and $c \le d$, then $ac \le bd$.
+   - (ii) If $a < b$ and $c < d$, then $ac < bd$.
 :::
 
 ## 직관
@@ -110,7 +116,7 @@ The order $<$, $\le$ and the notions positive and negative are those of the entr
 
 $-1$을 곱하는 것은 수직선을 $0$을 중심으로 뒤집는 것과 같습니다. 뒤집으면 왼쪽과 오른쪽이 바뀌므로 $a < b$가 $-b < -a$로 바뀝니다((3)의 (iii)). 음수 $c$를 곱하면 부등호가 뒤집히는 것((4)의 (ii))도 증명에서는 $-c$가 양수라는 것과 이 뒤집기를 이어서 얻습니다. 비유가 맞지 않는 곳도 있습니다. 양수 $c$를 곱하는 것은 뒤집기가 아니라 $0$을 중심으로 늘이거나 줄이는 것이며, 순서가 유지된다는 것은 그림이 아니라 (W4)에서 나옵니다.
 
-공리 가운데 곱셈을 말하는 것은 (W4) 하나뿐입니다. 그래서 곱이 들어간 (4)–(8)은 모두 (W4)에 기댑니다. 경우를 나누는 곳(어떤 수가 양수인지, $0$인지, 음수인지)의 근거는 (W1)이거나 $\le$의 정의입니다. 마지막 (10)은 정수에 두 가지 순서가 있는 것처럼 보이는 문제를 정리합니다. [[prime-number]]와 [[well-ordering-principle]]에서 받아들인 정수의 순서와 이 강의의 실수의 순서가 정수 위에서는 같은 것이므로, 앞으로는 $0 < 2$ 같은 정수의 부등식을 실수의 부등식으로 그대로 씁니다.
+순서 공리 (W1)–(W4) 가운데 곱셈을 말하는 것은 (W4) 하나뿐입니다. 그래서 곱이 들어간 (4)–(8)과 (11)은 모두 (W4)에 기댑니다. 경우를 나누는 곳(어떤 수가 양수인지, $0$인지, 음수인지)의 근거는 (W1)이거나 $\le$의 정의입니다. 마지막 (10)은 정수에 두 가지 순서가 있는 것처럼 보이는 문제를 정리합니다. [[prime-number]]와 [[well-ordering-principle]]에서 받아들인 정수의 순서와 이 강의의 실수의 순서가 정수 위에서는 같은 것이므로, 앞으로는 $0 < 2$ 같은 정수의 부등식을 실수의 부등식으로 그대로 씁니다.
 
 ## 증명
 
@@ -199,7 +205,7 @@ $$b + c = b + ((-b) + (-a)) = (b + (-b)) + (-a) = 0 + (-a) = -a$$
 
 **(9)의 증명.** $x$가 모든 양수 $\varepsilon$에 대하여 $x \le \varepsilon$을 만족한다고 하자. [[proof-by-contradiction]]으로 $x \le 0$을 보인다. $x \le 0$이 성립하지 않는다고 하면 (1)의 (iii)에 의해 $0 < x$이다. (8)에 의해 $0 < \dfrac{x}{2} < x$이다. $\varepsilon = \dfrac{x}{2}$는 양수이므로 가정에 의해 $x \le \dfrac{x}{2}$이다. 그러나 $\dfrac{x}{2} < x$와 $x \le \dfrac{x}{2}$는 (1)의 (i)에 의해 함께 성립하지 않는다. 모순이므로 $x \le 0$이다. 이때 $0 \le x$이기도 하면 (1)의 (ii)에 의해 $x = 0$이다.
 
-**(10)의 증명.** 이 증명에서 "정수로서 $a < b$"는 [[prime-number]]와 [[well-ordering-principle]]에서 받아들인 정수의 순서를 뜻하고, 그 순서에 대한 $\le$도 [[well-ordering-principle]]의 정의를 따른다. 정수끼리의 합, 차가 정수라는 것은 [[even-and-odd]]에서 받아들인 사실이다. (K7)에 의해 정수는 실수이고, 두 정수의 합은 정수로서 계산하든 실수로서 계산하든 같으며, 정수 $a$의 정수로서의 음수 $-a$는 실수로서의 $-a$와 같다. 따라서 정수 $a$, $b$의 차 $b - a$도 정수로서 계산하든 실수로서 $b + (-a)$로 계산하든 같은 수이다.
+**(10)의 증명.** 이 증명에서 "정수로서 $a < b$"는 [[prime-number]] 항목과 [[well-ordering-principle]] 항목에서 받아들인 정수의 순서를 뜻하고, 그 순서에 대한 $\le$도 [[well-ordering-principle]]의 정의를 따른다. 정수끼리의 합, 차가 정수라는 것은 [[even-and-odd]]에서 받아들인 사실이다. (K7)에 의해 정수는 실수이고, 두 정수의 합은 정수로서 계산하든 실수로서 계산하든 같으며, 정수 $a$의 정수로서의 음수 $-a$는 실수로서의 $-a$와 같다. 따라서 정수 $a$, $b$의 차 $b - a$도 정수로서 계산하든 실수로서 $b + (-a)$로 계산하든 같은 수이다.
 
 *1단계: $1$ 이상인 정수는 실수로서 양수이다.* 정수로서 $n \ge 1$인 정수 $n$마다 명제 $S_n$을 "실수로서 $0 < n$이다"로 두고, 시작점이 $1$인 [[mathematical-induction]]으로 보인다. 기초 단계: (K7)에 의해 정수 $1$은 (K4)의 실수 $1$이고, (5)의 (ii)에 의해 $0 < 1$이므로 $S_1$이 참이다. 귀납 단계: 정수로서 $k \ge 1$인 정수 $k$에 대하여 $S_k$, 곧 실수로서 $0 < k$라고 가정한다. (W3)으로 양변에 $1$을 더하면 $0 + 1 < k + 1$이고, $0 + 1 = 1$이므로 $1 < k + 1$이다. 여기서 $k + 1$은 (K7)에 의해 정수로서의 합과 같은 수이다. $0 < 1$과 $1 < k + 1$에서 (W2)에 의해 $0 < k + 1$이므로 $S_{k+1}$이 참이다. 귀납법에 의해 $1$ 이상인 모든 정수 $n$에 대하여 실수로서 $0 < n$이다.
 
@@ -207,7 +213,9 @@ $$b + c = b + ((-b) + (-a)) = (b + (-b)) + (-a) = 0 + (-a) = -a$$
 
 *3단계: 실수로서 $a < b$이면 정수로서 $a < b$이다.* 실수로서 $a < b$라 하자. (Z5)에 의해 정수로서 $a < b$, $a = b$, $b < a$ 가운데 하나가 성립한다. $a = b$이면 실수로서 $a < b$와 $a = b$가 함께 성립하여 (W1)에 어긋난다. 정수로서 $b < a$이면 2단계에 의해 실수로서 $b < a$이고, 이것은 실수로서 $a < b$와 함께 (W1)에 어긋난다. 따라서 정수로서 $a < b$이다.
 
-*나머지.* 2단계와 3단계에 의해 두 정수 사이의 $<$는 두 뜻이 같다. $\le$는 "$<$ 또는 $=$"이고 $>$, $\ge$는 순서를 바꾼 것이므로 이것들도 두 뜻이 같다. (Z1)–(Z8), (L1)–(L3)과 [[well-ordering-principle]]의 정리들은 정수와 그 합·차·곱과 부등호로 이루어진 진술이다. 정수의 합·곱·음수는 (K7)에 의해 실수로서의 것과 같고 부등호는 방금 보인 대로 두 뜻이 같으므로, 그 진술들은 부등호를 실수의 순서로 읽어도 같은 진술이다. 구체적인 정수 사이의 부등식은 정수로서의 부등식이므로 방금 보인 것에 의해 실수의 부등식이기도 하다. 끝으로 자연수 $n$은 양의 정수이므로 (Z1)에 의해 정수로서 $1 \le n$이고, 1단계에 의해 실수로서 $0 < n$이다. (6)의 (i)에 의해 $0 < n^{-1}$이다. $\blacksquare$
+*나머지.* 2단계와 3단계에 의해 두 정수 사이의 $<$는 두 뜻이 같다. $\le$는 "$<$ 또는 $=$"이고 등호는 순서와 관계가 없으므로 $\le$도 두 뜻이 같고, $>$, $\ge$는 두 수의 자리를 바꾼 $<$, $\le$이므로 역시 두 뜻이 같다. 정수와 그 합·차·곱·음수로 만든 식은 (K7)에 의해 정수로서 계산하든 실수로서 계산하든 같은 수이다(차 $b - a$는 위에서 본 대로). 그런 두 식을 $<$, $\le$, $>$, $\ge$로 비교한 문장은 방금 본 것에 의해 두 읽기에서 참·거짓이 같고, 이런 문장을 "그리고", "또는", "아니다", "이면"과 정수에 대한 한정 기호로 묶은 진술도 참·거짓이 같다. (Z1)–(Z8), (L1)–(L3), [[well-ordering-principle]]의 정리들(최소 원소, 최대 원소, 유계를 정의하는 부등식 포함), [[mathematical-induction]]의 "$n \ge m$", 구체적인 정수 사이의 부등식은 모두 이런 진술이다. 끝으로 [[natural-numbers-are-infinite|자연수의 집합이 무한집합이라는 정리]]의 진술에 의해 $\mathbb{N} = \{1, 2, 3, \dots\}$은 양의 정수의 집합이므로, 자연수 $n$은 정수로서 $0 < n$이고 (Z1)에 의해 $1 \le n$이며, 1단계에 의해 실수로서 $0 < n$이다. (6)의 (i)에 의해 $0 < n^{-1}$이다.
+
+**(11)의 증명.** $0 \le a$, $0 \le c$이다. (i) $a \le b$, $c \le d$라 하자. $0 \le a$이고 $a \le b$이므로 (1)의 (v)에 의해 $0 \le b$이다. (4)의 (iii)의 첫째 문장을 $0 \le c$와 $a \le b$에 쓰면 $ac \le bc$이다. 같은 문장을 $0 \le b$와 $c \le d$에 쓰면 $cb \le db$이고, (K1)에 의해 $bc \le bd$이다. (1)의 (v)에 의해 $ac \le bd$이다. (ii) $a < b$, $c < d$라 하자. $0 \le a < b$이므로 (1)의 (v)에 의해 $0 < b$이다. (4)의 (iii)의 첫째 문장을 $0 \le c$와 $a \le b$($a < b$에서)에 쓰면 $ac \le bc$이다. (4)의 (i)을 $0 < b$와 $c < d$에 쓰면 $cb < db$이고, (K1)에 의해 $bc < bd$이다. (1)의 (v)에 의해 $ac < bd$이다. $\blacksquare$
 :::
 
 :::remark[다른 항목이 받아들였던 사실과의 관계]
@@ -215,14 +223,14 @@ $$b + c = b + ((-b) + (-a)) = (b + (-b)) + (-a) = 0 + (-a) = -a$$
 
 수학의 언어 강의의 "베르누이 부등식" 항목은 증명 첫머리에 그 항목만의 목록 (R1)–(R6)을 두었습니다. 그 가운데 순서에 관한 것은 이 항목에서 증명됩니다. (R3) "$a \ge b$이면 $a + c \ge b + c$ ($>$에서도 같다)"는 (2)의 (i)과 (W3), (R4) "$a \ge b$이고 $c > 0$이면 $ac \ge bc$"는 (4)의 (iii), (R5) "$a \ge b$이고 $b \ge c$이면 $a \ge c$"는 (1)의 (v), (R6) "$a^2 \ge 0$이다. 또 $a > 0$이고 $b \ge 0$이면 $ab \ge 0$이다"는 $a^2$을 (R2)에 따라 $aa$로 읽으면 (5)의 (iii)과 (4)의 (iv)입니다. (R1)은 계산 법칙이고 (R2)는 거듭제곱의 뜻이어서 이 항목이 다루지 않습니다. 두 항목은 고치지 않고 그대로 둡니다.
 
-[[prime-number]]의 (Z2) "양수와 $0$ 이하인 수의 곱은 $0$ 이하", (Z3) "$a \le b$이고 $c > 0$이면 $ac \le bc$" 등은 수를 "정수 또는 실수"라고 적은 목록에 들어 있습니다. 실수에 대한 그 내용은 (4)의 (iv)와 (iii)으로 증명됩니다.
+[[prime-number]]의 목록 (Z1)–(Z4)는 앞머리에서 수를 "정수 또는 실수"라고 적었고, 그 가운데 순서에 관한 것으로 실수에도 걸리는 것은 (Z2) "양수와 $0$ 이하인 수의 곱은 $0$ 이하"와 (Z3) "$a \le b$이고 $c > 0$이면 $ac \le bc$ …"입니다. (Z2)를 실수에 대해 읽은 것은 (4)의 (iv)의 넷째 문장으로, (Z3)을 실수에 대해 읽은 것은 (4)의 (iii)의 첫째 문장으로 증명됩니다. 같은 목록의 (Z4)는 순서가 아니라 계산에 관한 것으로, 실수에 대해서는 (K11)과 (K4)에서 나옵니다.
 :::
 
 ## 예시와 반례
 
 :::example[분모를 없애 두 분수 비교하기]
 $\dfrac{2}{3} = 2 \cdot 3^{-1}$과 $\dfrac{3}{4} = 3 \cdot 4^{-1}$을 비교해 봅시다. (10)에 의해 정수의 부등식 $0 < 12$는 실수의 부등식이므로, (6)의 (iv)에 의해 두 수에 $12$를 곱한 것을 비교하면 됩니다. (K7)의 $12 = 3 \cdot 4$와 (K1), (K2), (K8)의 (iii), (K4)에 의해
-$$(2 \cdot 3^{-1}) \cdot 12 = 2 \cdot (3^{-1} \cdot 3) \cdot 4 = 2 \cdot 4 = 8, \qquad (3 \cdot 4^{-1}) \cdot 12 = 3 \cdot 3 \cdot (4^{-1} \cdot 4) = 9$$
+$$(2 \cdot 3^{-1}) \cdot (3 \cdot 4) = (2 \cdot (3^{-1} \cdot 3)) \cdot 4 = 2 \cdot 4 = 8, \qquad (3 \cdot 4^{-1}) \cdot (3 \cdot 4) = (3 \cdot 3) \cdot (4^{-1} \cdot 4) = 9$$
 입니다. $8 < 9$도 (10)에 의해 실수의 부등식이므로, (6)의 (iv)에 의해 $\dfrac{2}{3} < \dfrac{3}{4}$입니다.
 :::
 
@@ -231,7 +239,7 @@ $a < b$이고 $c < d$라고 해서 $ac < bd$인 것은 아닙니다. $a = -2$, $
 :::
 
 :::counterexample[(7)의 (i)에서 $0 \le a$를 뺄 수 없다]
-$a = -3$, $b = 2$로 두면 $a < b$이지만 $aa = 9$, $bb = 4$이고, (10)에 의해 $4 < 9$이므로 (W1)에 의해 $9 < 4$는 성립하지 않습니다. 증명에서 $0 \le a$는 "$aa \le ab$"를 얻을 때, 곧 $a$를 곱해도 부등호가 유지된다고 할 때 쓰였습니다. $a = -3$이면 그 단계가 $9 \le -6$이 되어 깨집니다.
+$a = -3$, $b = 2$로 두면 $a < b$이지만 $aa = 9$, $bb = 4$이고, (10)에 의해 $4 < 9$이므로 (W1)에 의해 $9 < 4$는 성립하지 않습니다. 증명에서 $0 \le a$는 두 곳에 쓰였습니다. $0 < b$를 얻을 때와 "$aa \le ab$"를 얻을 때입니다. $a = -3$, $b = 2$이면 앞의 것($0 < 2$)은 여전히 성립하지만 뒤의 것이 $9 \le -6$이 되어 깨집니다.
 :::
 
 ## 확인 질문
@@ -241,5 +249,5 @@ $a = -3$, $b = 2$로 두면 $a < b$이지만 $aa = 9$, $bb = 4$이고, (10)에 �
 :::
 
 :::check[실수 $x$가 $-1 < x < 1$을 만족하면 $xx < 1$인가?]
-그렇습니다. (1)의 (iv)에 의해 $0 \le x$이거나 $x \le 0$입니다. $0 \le x$이면 $0 \le x < 1$이므로 (7)의 (i)에 의해 $xx < 1 \cdot 1 = 1$입니다. $x \le 0$이면 $-1 < x$에서 (3)의 (iii)에 의해 $-x < -(-1) = 1$이고((K9)의 $-(-a) = a$), $x \le 0$에서 (3)의 (iii)에 의해 $-0 \le -x$, 곧 $0 \le -x$입니다($-0 = 0$은 $0 + 0 = 0$과 (K8)의 (ii)에서 나옵니다). 따라서 $0 \le -x < 1$이고, (7)의 (i)에 의해 $(-x)(-x) < 1$입니다. (K12)의 (iii)에 의해 $(-x)(-x) = xx$이므로 $xx < 1$입니다.
+그렇습니다. (1)의 (iv)에 의해 $0 \le x$이거나 $x \le 0$입니다. $0 \le x$이면 $0 \le x < 1$이고 (5)의 (ii)에 의해 $0 \le 1$이므로 (7)의 (i)에 의해 $xx < 1 \cdot 1 = 1$입니다. $x \le 0$이면 $-1 < x$에서 (3)의 (iii)에 의해 $-x < -(-1) = 1$이고((K9)의 $-(-a) = a$), $x \le 0$에서 (3)의 (iii)에 의해 $-0 \le -x$, 곧 $0 \le -x$입니다($-0 = 0$은 $0 + 0 = 0$과 (K8)의 (ii)에서 나옵니다). 따라서 $0 \le -x < 1$이고 $0 \le 1$이므로, (7)의 (i)에 의해 $(-x)(-x) < 1$입니다. (K12)의 (iii)에 의해 $(-x)(-x) = xx$이므로 $xx < 1$입니다.
 :::
