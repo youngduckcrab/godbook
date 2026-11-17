@@ -14,7 +14,8 @@ sources:
     loc: 2.2.4절 Proposition 2.2.11 과 그 증명 (p.68)
     checked: original
     note: "출처의 Proposition 2.2.11(p.68)은 c > 0 일 때 (i) c < 1 이면 lim cⁿ = 0, (ii) c > 1 이면 {cⁿ} 이 유계가 아니라는 것이다. 출처는 c > 0 인 경우만 다루고, 이 항목은 c ≤ 0 과 c = ±1 을 더해 모든 실수 c 로 넓혔다. 음의 공비와 c = 0 은 |cⁿ| = |c|ⁿ(power-of-a-real-number 의 (4))과 comparison-with-null-sequence 의 (2)로, c = −1 은 power-of-a-real-number 의 (5)와 basic-limits 의 (3)으로 다룬다. (1)의 0 < c < 1 인 경우의 증명은 출처와 같은 경로(cⁿ > 0 과 c^{n+1} < cⁿ, 단조수렴정리, 1-꼬리, x = cx)이다. 출처는 cⁿ > 0 을 '귀납법으로'라고만 하는데, 이 항목은 power-of-a-real-number 의 (6)을 인용한다. (3)의 |c| > 1 인 경우도 출처처럼 (1/c)ⁿ = 1/cⁿ 이 0 으로 감을 쓰지만, 출처는 B > 0 인 상계만 보고 이 항목은 상계 B 가 |c| 이상이어서 양수임을 먼저 보인다. 유계가 아니면 발산한다는 것은 convergent-sequence-is-bounded 의 (2)이다. 직관의 'c = 2 에서도 x = cx 를 풀면 x = 0 이 나온다'는 경고는 출처 Example 2.2.9(p.67, 극한이 있다고 함부로 가정하면 안 된다)와 같은 취지이다. 예시와 확인 질문은 출처에 없다(검색한 범위). 출처의 연습문제 2.1.4({2^{−n}} 의 수렴)와 확인 질문 '(2⁻¹)ⁿ + (3⁻¹)ⁿ'은 1 보다 작은 양수의 거듭제곱을 보는 같은 종류이다."
-status: source-checked
+status: reviewed
+review_note: "2026-11-17 독립 검토 2회(전반 1회, 후반과 전반 재확인 1회), 비 판정법 (3)은 3차 확인. 증명의 수학 오류 없음. 거듭제곱 직관의 n ≥ 1 누락과 출처 메모를 고침"
 added: 2026-11-17
 ---
 
