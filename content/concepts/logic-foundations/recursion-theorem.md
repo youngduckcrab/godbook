@@ -13,7 +13,7 @@ sources:
   - ref: lebl-basic-analysis
     loc: 2.2.3절 첫 문단과 Example 2.2.8 (p.66), Theorem 2.3.4 의 증명 (p.75), Lemma 3.3.7 의 증명 (p.132)
     checked: original
-    note: "출처는 재귀 정의의 정당성을 진술하거나 증명하지 않는다. 진술과 증명은 이 사이트의 것이다. 출처는 2.2절 첫머리(p.61)에 '재귀로 정의된 수열은 건너뛰어도 된다'고 적고, 2.2.3절(p.66)에서 재귀로 정의된 수열을 '다음 항을 앞의 정해진 개수의 항에서 식으로 계산하는 수열'이라고 설명한다. 같은 쪽의 Example 2.2.8 은 x_1 = 2 와 x_{n+1} = x_n − (x_n² − 2)/(2x_n) 으로 수열을 정하면서, 0 으로 나누지 않는다는 것을 먼저 보여야 한다고 적고 '모든 n 에서 x_n 이 존재하고 x_n > 0'을 귀납법으로 보인다. Theorem 2.3.4 의 증명(p.75)은 'We define the subsequence inductively'라고 하며 첨자를 차례로 고르고, Lemma 3.3.7 의 증명(p.132)은 두 수열 a_n, b_n 을 함께 'inductively' 정의한다. 그 밖에 Theorem 1.4.2 의 증명(p.42)과 Theorem 2.3.8 의 다른 증명(p.78)도 수열을 'inductively' 정의한다. 'recurs'를 검색하면 2.2절의 세 곳(p.61 의 메모, p.66 의 절 제목과 설명)만 나온다. 이 항목은 바로 앞의 항 하나와 번호 n 에 기대는 꼴만 진술한다. 출처의 설명처럼 앞의 여러 항에 기대는 재귀는 진술하지 않는다. (1)(값으로 정한 함수)은 sequence 의 (1)을 정의역과 공역이 임의의 집합인 경우로 옮긴 것이고, (2)는 출처가 Lemma 3.3.7 에서 두 수열을 함께 정하는 것을 진술로 만든 것이다. 출처의 Definition 2.1.16(p.58)은 자연수의 수열 {n_i} 가 strictly increasing 인 것을 '모든 i 에서 n_i < n_{i+1}'로 쓴다. 이 항목의 (4)는 순증가를 'n < m 이면 f(n) < f(m)'으로 정의하고, 이웃한 두 값의 부등식에서 이것을 귀납법으로 얻는다. (4)의 x(k) ≥ k 는 출처가 Proposition 2.1.17 의 증명(p.58)에서 '귀납법으로 증명하기 어렵지 않다(do it!)'고만 하는 n_i ≥ i 와 같은 꼴이다. 예시와 반례의 수열은 출처에 없다(검색한 범위). 반례 '값이 정해지지 않는 규칙'은 Example 2.2.8 의 '0 으로 나누지 않음을 먼저 보여야 한다'와 같은 취지이다."
+    note: "출처는 재귀 정의의 정당성을 진술하거나 증명하지 않는다. 진술과 증명은 이 사이트의 것이다. 출처는 2.2절 첫머리(p.61)에 '재귀로 정의된 수열은 건너뛰어도 된다'고 적고, 2.2.3절(p.66)에서 재귀로 정의된 수열을 '다음 항을 앞의 정해진 개수의 항에서 식으로 계산하는 수열'이라고 설명한다. 같은 쪽의 Example 2.2.8 은 x_1 = 2 와 x_{n+1} = x_n − (x_n² − 2)/(2x_n) 으로 수열을 정하면서, 0 으로 나누지 않는다는 것을 먼저 보여야 한다고 적고 '모든 n 에서 x_n 이 존재하고 x_n > 0'을 귀납법으로 보인다. Theorem 2.3.4 의 증명(p.75)은 'We define the subsequence inductively'라고 하며 첨자를 차례로 고르고, Lemma 3.3.7 의 증명(p.132)은 두 수열 a_n, b_n 을 함께 'inductively' 정의한다. 그 밖에도 예컨대 Theorem 1.4.2 의 증명(p.42), 1.5절의 소수 전개(p.45), Theorem 2.3.8 의 다른 증명(p.78)이 수열을 'inductively' 정의한다. 'recurs'를 검색하면 2.2절의 세 곳(p.61 의 메모, p.66 의 절 제목과 설명)만 나온다. 이 항목은 바로 앞의 항 하나와 번호 n 에 기대는 꼴만 진술한다. 출처의 설명처럼 앞의 여러 항에 기대는 재귀는 진술하지 않는다. (1)(값으로 정한 함수)은 sequence 의 (1)을 정의역과 공역이 임의의 집합인 경우로 옮긴 것이고, (2)는 출처가 Lemma 3.3.7 에서 두 수열을 함께 정하는 것을 진술로 만든 것이다. 출처의 Definition 2.1.16(p.58)은 자연수의 수열 {n_i} 가 strictly increasing 인 것을 '모든 i 에서 n_i < n_{i+1}'로 쓴다. 이 항목의 (4)는 순증가를 'n < m 이면 f(n) < f(m)'으로 정의하고, 이웃한 두 값의 부등식에서 이것을 귀납법으로 얻는다. (4)의 x(k) ≥ k 는 출처가 Proposition 2.1.17 의 증명(p.58)에서 '귀납법으로 증명하기 어렵지 않다(do it!)'고만 하는 n_i ≥ i 와 같은 꼴이다. 예시와 반례의 수열은 출처에 없다(검색한 범위). 반례 '값이 정해지지 않는 규칙'은 Example 2.2.8 의 '0 으로 나누지 않음을 먼저 보여야 한다'와 같은 취지이다."
 status: source-checked
 added: 2026-11-17
 ---
@@ -29,12 +29,12 @@ $$
 
 다음이 성립한다.
 
-1. (값으로 정한 함수) $A$, $B$가 집합이고, $A$의 각 원소 $u$마다 $B$의 원소 $r(u)$가 하나씩 정해져 있으면, 집합 $\{(u, r(u)) : u \in A\}$는 $A$에서 $B$로의 함수이고 $u$에서의 값은 $r(u)$이다. 여기서 "정해져 있다"는 $r(u)$가 $u$에 대한 식이나 이미 정해진 대상으로 주어진다는 뜻이다. 각 $u$마다 어떤 조건을 만족하는 원소 가운데 하나를 고르는 것은 이 진술에 들어가지 않는다. 재귀 정리의 함수 $g$를 식으로 줄 때 이 (1)을 쓴다.
+1. (값으로 정한 함수) $A$, $B$가 집합이고, $A$의 각 원소 $u$마다 $B$의 원소 $r(u)$가 하나씩 정해져 있으면, 집합 $\{(u, r(u)) : u \in A\}$는 $A$에서 $B$로의 함수이고 $u$에서의 값은 $r(u)$이다. 여기서 "정해져 있다"는 $r(u)$가 $u$에 대한 식이나 이미 정해진 대상으로 주어진다는 뜻이다. 어떤 조건을 만족하는 $B$의 원소가 정확히 하나임이 증명되어 있을 때 그 원소를 $r(u)$로 쓰는 것(예: [[well-ordering-principle|정렬 원리]]가 주는 가장 작은 원소)은 "이미 정해진 대상"에 들어간다. 들어가지 않는 것은 각 $u$마다 조건을 만족하는 여러 원소 가운데 하나를 고르는 것이다. 재귀 정리의 함수 $g$를 식으로 줄 때 이 (1)을 쓴다.
 2. (두 함수를 함께 정하기) $Y$, $Z$가 집합이고 $b \in Y$, $c \in Z$이며 $p : \mathbb{N} \times (Y \times Z) \to Y$와 $q : \mathbb{N} \times (Y \times Z) \to Z$가 함수이면, 두 함수 $y : \mathbb{N} \to Y$, $z : \mathbb{N} \to Z$로서 $y(1) = b$, $z(1) = c$이고 모든 자연수 $n$에서
 $$
 y(n+1) = p\bigl(n, (y(n), z(n))\bigr), \qquad z(n+1) = q\bigl(n, (y(n), z(n))\bigr)
 $$
-인 것이 정확히 한 쌍 있다. 곧 이런 $y$, $z$가 있고, $y'$, $z'$도 이 조건을 만족하면 $y' = y$이고 $z' = z$이다.
+인 것이 정확히 한 쌍 있다. 곧 이런 $y$, $z$가 있고, 함수 $y' : \mathbb{N} \to Y$, $z' : \mathbb{N} \to Z$도 이 조건을 만족하면 $y' = y$이고 $z' = z$이다.
 3. (재귀로 정하는 수열) $X = \mathbb{R}$이면 재귀 정리의 $x$는 [[sequence]]의 뜻의 수열이다. $X$가 $\mathbb{R}$의 부분집합이면 $x$는 모든 항이 $X$에 속하는 수열이다. 재귀로 정하는 수열은 [[sequence]]의 (1)(값으로 정한 수열)로 정당화되지 않고 이 정리로 정당화된다. 이 정리를 쓰려면 $g$의 값이 모든 자연수 $n$과 $X$의 모든 원소 $t$에서 정해지고 $X$에 속한다는 것, 곧 $g$가 $\mathbb{N} \times X$에서 $X$로의 함수라는 것을 먼저 확인해야 한다.
 4. (자연수 값을 갖는 순증가 함수) 함수 $f : \mathbb{N} \to \mathbb{N}$이 **순증가**(strictly increasing)인 것은 정확히 $n < m$인 모든 자연수 $n$, $m$에서 $f(n) < f(m)$일 때이다(부등호는 정수의 순서). $X = \mathbb{N}$이고 모든 자연수 $k$, $n$에서 $g(k, n) > n$이면, 재귀 정리의 $x : \mathbb{N} \to \mathbb{N}$은 순증가이고 모든 자연수 $k$에서 $x(k) \ge k$이다.
 :::
@@ -50,12 +50,12 @@ This function $x$ is called the function **defined recursively** by $x(1) = a$, 
 
 The following hold.
 
-1. (Functions given by values) If $A$ and $B$ are sets and an element $r(u)$ of $B$ is specified for each element $u$ of $A$, then the set $\{(u, r(u)) : u \in A\}$ is a function from $A$ to $B$ whose value at $u$ is $r(u)$. Here "specified" means that $r(u)$ is given by a formula in $u$ or by objects already defined. Choosing, for each $u$, one of the elements satisfying some condition is not covered by this statement. We use this item (1) when the function $g$ of the recursion theorem is given by a formula.
+1. (Functions given by values) If $A$ and $B$ are sets and an element $r(u)$ of $B$ is specified for each element $u$ of $A$, then the set $\{(u, r(u)) : u \in A\}$ is a function from $A$ to $B$ whose value at $u$ is $r(u)$. Here "specified" means that $r(u)$ is given by a formula in $u$ or by objects already defined. When it has been proved that exactly one element of $B$ satisfies some condition, taking that element as $r(u)$ (for example, the least element given by the well-ordering principle) counts as "objects already defined". What is not covered is choosing, for each $u$, one of several elements satisfying some condition. We use this item (1) when the function $g$ of the recursion theorem is given by a formula.
 2. (Defining two functions together) If $Y$ and $Z$ are sets, $b \in Y$, $c \in Z$, and $p : \mathbb{N} \times (Y \times Z) \to Y$ and $q : \mathbb{N} \times (Y \times Z) \to Z$ are functions, then there is exactly one pair of functions $y : \mathbb{N} \to Y$, $z : \mathbb{N} \to Z$ such that $y(1) = b$, $z(1) = c$, and for every natural number $n$
 $$
 y(n+1) = p\bigl(n, (y(n), z(n))\bigr), \qquad z(n+1) = q\bigl(n, (y(n), z(n))\bigr).
 $$
-That is, such $y$ and $z$ exist, and if $y'$ and $z'$ also satisfy these conditions, then $y' = y$ and $z' = z$.
+That is, such $y$ and $z$ exist, and if functions $y' : \mathbb{N} \to Y$ and $z' : \mathbb{N} \to Z$ also satisfy these conditions, then $y' = y$ and $z' = z$.
 3. (Recursively defined sequences) If $X = \mathbb{R}$, the function $x$ of the recursion theorem is a sequence in the sense of the entry on sequences. If $X$ is a subset of $\mathbb{R}$, then $x$ is a sequence all of whose terms belong to $X$. Recursively defined sequences are justified not by item (1) of the entry on sequences (sequences given by values) but by this theorem. To apply the theorem one must first check that the value of $g$ is specified at every natural number $n$ and every element $t$ of $X$ and belongs to $X$, that is, that $g$ is a function from $\mathbb{N} \times X$ to $X$.
 4. (Strictly increasing functions with natural number values) A function $f : \mathbb{N} \to \mathbb{N}$ is **strictly increasing** exactly when $f(n) < f(m)$ for all natural numbers $n$, $m$ with $n < m$ (the inequality is the order of the integers). If $X = \mathbb{N}$ and $g(k, n) > n$ for all natural numbers $k$, $n$, then the function $x : \mathbb{N} \to \mathbb{N}$ of the recursion theorem is strictly increasing and $x(k) \ge k$ for every natural number $k$.
 :::
@@ -176,7 +176,7 @@ $y_1 = 1$, $z_1 = 0$이고 모든 자연수 $n$에서 $y_{n+1} = y_n + z_n$, $z_
 :::counterexample[값이 정해지지 않는 규칙]
 "$x_1 = 2$이고 $x_{n+1} = (x_n - 1)^{-1}$"이라는 규칙을 생각합니다. $1 \cdot 1 = 1$이므로 [[real-number-arithmetic|실수의 계산 법칙]]의 (K8)의 (iii)에 의해 $x_2 = (2 - 1)^{-1} = 1^{-1} = 1$이고, 그다음은 $(1 - 1)^{-1} = 0^{-1}$이어야 합니다. 그러나 (K9)에 의해 모든 실수 $t$에서 $0 \cdot t = 0$이고 (K4)에 의해 $0 \ne 1$이므로 $0 \cdot t = 1$인 실수 $t$는 없고, $0$의 역수는 없습니다. 따라서 이 규칙을 모두 만족하는 수열은 없습니다. 만약 그런 수열 $(x_n)$이 있다면 $x_3 = (x_2 - 1)^{-1}$이 뜻을 가져야 하는데 $x_2 = 1$이어서 $x_2 - 1 = 0$이기 때문입니다.
 
-재귀 정리를 쓰지 못하는 까닭은 식 $(t - 1)^{-1}$이 $t = 1$에서 정해지지 않아, 이 식으로 $\mathbb{N} \times \mathbb{R}$에서 $\mathbb{R}$로의 함수 $g$를 만들 수 없기 때문입니다. 재귀로 수열을 정할 때는 (3)의 마지막 문장대로 $g$가 $\mathbb{N} \times X$의 모든 원소에서 정해지고 값이 $X$에 들어가는 집합 $X$를 먼저 찾아야 합니다.
+재귀 정리를 쓰지 못하는 까닭은 식 $(t - 1)^{-1}$이 $t = 1$에서 정해지지 않아, 이 식으로 $\mathbb{N} \times \mathbb{R}$에서 $\mathbb{R}$로의 함수 $g$를 만들 수 없기 때문입니다. 재귀로 수열을 정할 때는 (3)의 마지막 문장대로 $g$가 $\mathbb{N} \times X$의 모든 원소에서 정해지고 값이 $X$에 들어가는 집합 $X$를 먼저 찾아야 합니다. 예컨대 $X$를 $1$이 아닌 실수 전체로 줄이면 식 $(t - 1)^{-1}$은 $\mathbb{N} \times X$의 모든 원소에서 정해지지만, $t = 2$에서 $(2 - 1)^{-1} = 1$이고 $1$은 $X$에 속하지 않으므로, 이번에는 $g$의 공역이 $X$라는 조건이 깨집니다.
 :::
 
 ## 확인 질문
