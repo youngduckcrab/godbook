@@ -8,7 +8,6 @@ track: 해석
 requires: [language-of-math]
 status: in-progress
 planned_units:
-  - 절댓값과 수열의 극한
   - 극한의 성질
   - 부분수열과 코시 수열
   - 급수

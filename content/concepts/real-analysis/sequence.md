@@ -12,7 +12,7 @@ sources:
   - ref: lebl-basic-analysis
     loc: 2.1절 Definition 2.1.1 과 그 뒤 문단 (p.51), Definition 2.1.9 (p.55), Theorem 2.1.10 의 증명과 그 뒤 문단 (p.55–56)
     checked: original
-    note: "출처의 Definition 2.1.1(p.51)은 수열을 함수 x : ℕ → ℝ 로 정의하고 x(n) 대신 x_n 을, 수열 전체를 {x_n}_{n=1}^∞ 으로 쓴다. 출처의 각주는 (x_n)_{n=1}^∞ 으로 쓰는 책도 있다고 적는다. 이 항목은 집합 기호와 겹치지 않도록 (x_n) 을 쓴다. 출처는 수열이 유계인 것을 '바탕의 함수가 유계', 곧 모든 n 에서 |x_n| ≤ B 인 B ∈ ℝ 가 있는 것으로 정의하고, 'In other words' 로 집합 {x_n : n ∈ ℕ} 이 유계인 것과 같다고 한 뒤 위로 유계와 아래로 유계를 '비슷하게 정의한다'고만 적는다. 이 항목은 위로 유계와 아래로 유계를 따로 적고, 값의 집합과의 관계 (2)와 '유계인 것은 정확히 위로도 아래로도 유계일 때' (3)을 증명한다. 출처는 수열을 n 의 식으로 주는 일이 많다고 적고, 그런 식이 함수를 정한다는 것은 따로 말하지 않는다. (1)은 그것을 함수의 정의로 보인 것이다. 단조증가·단조감소·단조의 정의는 출처의 Definition 2.1.9(p.55)와 같다. (4)는 출처가 Theorem 2.1.10 의 증명(p.55)에서 '단조증가이므로 n ≥ M 인 모든 n 에서 x_n ≥ x_M 임을 (귀납으로) 쉽게 볼 수 있다'고 넘기는 것을 진술로 올려 증명한 것이다. 선형대수·정수론 입문의 '열'과 구별하는 문장은 이 사이트가 덧붙였다. 예시 '번갈아 바뀌는 수열과 그 값의 집합'의 첫 수열은 출처 p.51 의 수열 {(−1)ⁿ}(값의 집합이 {−1, 1})과 같은 수열이며, 이 사이트에 실수의 거듭제곱이 없으므로 홀짝으로 정의했다. 같은 값의 집합을 갖는 둘째 수열을 함께 드는 것은 출처에 없다(검색한 범위). 출처는 p.55 에서 {1/n} 이 단조감소라고 하며, 예시 '1 − 1/n'은 그것과 같은 발상이다. 반례 '−n'은 출처 p.51 의 수열 {n}(유계가 아니다, why?)과 같은 발상이다. 확인 질문 1 은 출처 p.55 의 '상수 수열 {1} 은 단조증가이자 단조감소'와 같은 내용이고, 확인 질문 2 는 출처 p.56 의 '단조증가 수열은 x_1 이 하계이므로 아래로 유계'와 같은 내용이다."
+    note: "출처의 Definition 2.1.1(p.51)은 수열을 함수 x : ℕ → ℝ 로 정의하고 x(n) 대신 x_n 을, 수열 전체를 {x_n}_{n=1}^∞ 으로 쓴다. 출처의 각주는 (x_n)_{n=1}^∞ 으로 쓰는 책도 있다고 적는다. 이 항목은 집합 기호와 겹치지 않도록 (x_n) 을 쓴다. 출처는 수열이 유계인 것을 '바탕의 함수가 유계', 곧 모든 n 에서 |x_n| ≤ B 인 B ∈ ℝ 가 있는 것으로 정의하고, 'In other words' 로 집합 {x_n : n ∈ ℕ} 이 유계인 것과 같다고 한 뒤 위로 유계와 아래로 유계를 '비슷하게 정의한다'고만 적는다. 이 항목은 위로 유계와 아래로 유계를 따로 적고, 값의 집합과의 관계 (2)와 '유계인 것은 정확히 위로도 아래로도 유계일 때' (3)을 증명한다. 출처는 수열을 n 의 식으로 주는 일이 많다고 적고, 그런 식이 함수를 정한다는 것은 따로 말하지 않는다. (1)은 그것을 함수의 정의로 보인 것이다. 단조증가·단조감소·단조의 정의는 출처의 Definition 2.1.9(p.55)와 같다. (4)는 출처가 Theorem 2.1.10 의 증명(p.55)에서 '단조증가이므로 n ≥ M 인 모든 n 에서 x_n ≥ x_M 임을 (귀납으로) 쉽게 볼 수 있다'고 넘기는 것을 진술로 올려 증명한 것이다. 선형대수·정수론 입문의 '열'과 구별하는 문장은 이 사이트가 덧붙였다. 예시 '번갈아 바뀌는 수열과 그 값의 집합'의 첫 수열은 출처 p.51 의 수열 {(−1)ⁿ}(값의 집합이 {−1, 1})과 같은 수열이며, 이 사이트에 실수의 거듭제곱이 없으므로 홀짝으로 정의했다. 같은 값의 집합을 갖는 둘째 수열을 함께 드는 것은 출처에 없다(검색한 범위). 출처는 p.55 에서 {1/n} 이 단조감소라고 하며, 예시 '1 − 1/n'은 그것과 같은 발상이다. 반례 '−n'은 출처 p.51 의 수열 {n}(유계가 아니다, why?)과 같은 발상이다. 확인 질문 1 은 출처 p.55 의 '상수 수열 {1} 은 단조증가이자 단조감소'와 같은 내용이고, 확인 질문 2 는 출처 p.56 의 '단조증가 수열은 x_1 이 하계이므로 아래로 유계'와 같은 내용이다. 예시의 '(a_n) 은 단조가 아니다'와 확인 질문 2 의 '{n} 은 단조증가'는 출처 p.55 의 예(Definition 2.1.9 바로 뒤)이고, 확인 질문 2 의 '{n} 은 위로 유계가 아니다'는 p.51 의 예와 같다. 예시 '1 − 1/n'은 출처의 연습문제 2.1.10(p.59, {(n+1)/n} 이 단조이고 유계임을 보여라)과도 같은 발상이다."
 status: source-checked
 added: 2026-11-17
 ---
@@ -20,9 +20,9 @@ added: 2026-11-17
 :::statement
 **수열.** **수열**(sequence of real numbers)은 [[function|함수]] $x : \mathbb{N} \to \mathbb{R}$이다. 자연수 $n$에서의 값 $x(n)$을 $x_n$으로 쓰고 수열의 $n$번째 **항**(term)이라 하며, 수열 $x$를 $(x_n)$으로 나타낸다. 선형대수와 정수론 입문에서 쓴 "열"(정수론 입문에서는 유한수열이라고도 불렀다)은 정의역이 $\{1, \dots, n\}$인 함수였고, 이 강의의 수열은 정의역이 $\mathbb{N}$ 전체인 함수이다. 두 수열 $(x_n)$, $(y_n)$은 정의역이 모두 $\mathbb{N}$이므로, [[function]]의 함수의 같음에 의해 $(x_n) = (y_n)$인 것은 정확히 모든 자연수 $n$에서 $x_n = y_n$일 때이다.
 
-수열 $(x_n)$의 **값의 집합**은 $\{x_n : n \in \mathbb{N}\}$, 곧 함수 $x$의 치역이다. 수열은 순서쌍 $(n, x_n)$의 집합이고 값의 집합은 실수의 집합이므로, 둘은 다른 대상이다.
+수열 $(x_n)$의 **값의 집합**은 $\{x_n : n \in \mathbb{N}\}$, 곧 함수 $x$의 치역이다. 수열은 순서쌍 $(n, x_n)$의 집합이고 값의 집합은 실수를 모은 집합이다. 이 사이트는 둘을 구별해 쓴다(같은 값의 집합을 갖는 서로 다른 수열이 있다. 아래 예시).
 
-**값으로 정한 수열.** 각 자연수 $n$마다 실수 $r_n$이 하나씩 정해져 있으면(예: $r_n = n^{-1}$), 아래 (1)에 의해 집합 $\{(n, r_n) : n \in \mathbb{N}\}$은 수열이고 그 $n$번째 항은 $r_n$이다. 이 수열을 "$n$번째 항이 $r_n$인 수열"이라 부른다. 실수 $c$에 대하여 모든 항이 $c$인 수열을 **상수 수열**(constant sequence)이라 한다.
+**값으로 정한 수열.** 각 자연수 $n$마다 실수 $r_n$이 하나씩 정해져 있으면(예: $r_n = n^{-1}$), 아래 (1)에 의해 집합 $\{(n, r_n) : n \in \mathbb{N}\}$은 수열이고 그 $n$번째 항은 $r_n$이다. 이 수열을 "$n$번째 항이 $r_n$인 수열"이라 부른다. 여기서 "정해져 있다"는 $r_n$이 $n$에 대한 식이나 이미 정해진 대상으로 주어진다는 뜻이다. 각 $n$마다 어떤 조건을 만족하는 수 가운데 하나를 고르는 것은 이 진술에 들어가지 않는다. 고르는 방식으로 만드는 수열과 재귀로 정하는 수열은 뒤 단원에서 따로 다룬다. 실수 $c$에 대하여 모든 항이 $c$인 수열을 **상수 수열**(constant sequence)이라 한다.
 
 **유계.** 절댓값은 [[absolute-value]]의 것이다. 수열 $(x_n)$이
 
@@ -34,7 +34,7 @@ added: 2026-11-17
 
 다음이 성립한다. 아래에서 $(x_n)$은 수열이고 $E = \{x_n : n \in \mathbb{N}\}$은 그 값의 집합이다.
 
-1. (값으로 정한 수열) 각 자연수 $n$마다 실수 $r_n$이 하나씩 정해져 있으면, 집합 $\{(n, r_n) : n \in \mathbb{N}\}$은 $\mathbb{N}$에서 $\mathbb{R}$로의 함수이고 $n$에서의 값은 $r_n$이다.
+1. (값으로 정한 수열) 각 자연수 $n$마다 실수 $r_n$이 위의 뜻으로 하나씩 정해져 있으면, 집합 $\{(n, r_n) : n \in \mathbb{N}\}$은 $\mathbb{N}$에서 $\mathbb{R}$로의 함수이고 $n$에서의 값은 $r_n$이다.
 2. (값의 집합과의 관계) $x_1 \in E$이므로 $E$는 공집합이 아니다. 실수 $B$가 $E$의 상계([[upper-bound-and-supremum]])인 것은 정확히 모든 자연수 $n$에서 $x_n \le B$일 때이고, $E$의 하계인 것은 정확히 모든 자연수 $n$에서 $B \le x_n$일 때이다. 따라서 $(x_n)$이 위로 유계인 것은 정확히 $E$가 그 항목의 뜻으로 위로 유계일 때이고, $(x_n)$이 아래로 유계인 것은 정확히 $E$가 그 항목의 뜻으로 아래로 유계일 때이다.
 3. (유계) $(x_n)$이 유계인 것은 정확히 $(x_n)$이 위로 유계이고 아래로 유계일 때이다. 따라서 (2)에 의해 $(x_n)$이 유계인 것은 정확히 $E$가 [[upper-bound-and-supremum]]의 뜻으로 유계일 때이다.
 4. (단조와 떨어진 두 항) $(x_n)$이 단조증가이면 $n \le m$인 모든 자연수 $n$, $m$에 대하여 $x_n \le x_m$이다. $(x_n)$이 단조감소이면 $n \le m$인 모든 자연수 $n$, $m$에 대하여 $x_m \le x_n$이다.
@@ -43,9 +43,9 @@ added: 2026-11-17
 :::english
 **Sequences.** A **sequence** (of real numbers) is a function $x : \mathbb{N} \to \mathbb{R}$. The value $x(n)$ at a natural number $n$ is written $x_n$ and called the $n$th **term** of the sequence, and the sequence $x$ is denoted $(x_n)$. The "lists" used in the linear algebra and number theory courses (the number theory course also called them finite sequences) were functions with domain $\{1, \dots, n\}$; a sequence in this course is a function whose domain is all of $\mathbb{N}$. Since two sequences $(x_n)$ and $(y_n)$ both have domain $\mathbb{N}$, by equality of functions $(x_n) = (y_n)$ exactly when $x_n = y_n$ for every natural number $n$.
 
-The **set of values** of a sequence $(x_n)$ is $\{x_n : n \in \mathbb{N}\}$, that is, the range of the function $x$. A sequence is a set of ordered pairs $(n, x_n)$ while its set of values is a set of real numbers, so they are different objects.
+The **set of values** of a sequence $(x_n)$ is $\{x_n : n \in \mathbb{N}\}$, that is, the range of the function $x$. A sequence is a set of ordered pairs $(n, x_n)$, while its set of values is a set collecting real numbers. This site keeps the two apart (different sequences can have the same set of values; see the example below).
 
-**Sequences given by values.** If a real number $r_n$ is specified for each natural number $n$ (for example $r_n = n^{-1}$), then by (1) below the set $\{(n, r_n) : n \in \mathbb{N}\}$ is a sequence whose $n$th term is $r_n$. We call it "the sequence whose $n$th term is $r_n$". For a real number $c$, the sequence all of whose terms equal $c$ is called the **constant sequence**.
+**Sequences given by values.** If a real number $r_n$ is specified for each natural number $n$ (for example $r_n = n^{-1}$), then by (1) below the set $\{(n, r_n) : n \in \mathbb{N}\}$ is a sequence whose $n$th term is $r_n$. We call it "the sequence whose $n$th term is $r_n$". Here "specified" means that $r_n$ is given by a formula in $n$ or by objects already defined. Choosing, for each $n$, one of the numbers satisfying some condition is not covered by this statement. Sequences made by such choices and sequences defined recursively are treated separately in later units. For a real number $c$, the sequence all of whose terms equal $c$ is called the **constant sequence**.
 
 **Boundedness.** The absolute value is the one in the entry on absolute value. A sequence $(x_n)$ is
 
@@ -57,7 +57,7 @@ The **set of values** of a sequence $(x_n)$ is $\{x_n : n \in \mathbb{N}\}$, tha
 
 The following hold, where $(x_n)$ is a sequence and $E = \{x_n : n \in \mathbb{N}\}$ is its set of values.
 
-1. (Sequences given by values) If a real number $r_n$ is specified for each natural number $n$, then the set $\{(n, r_n) : n \in \mathbb{N}\}$ is a function from $\mathbb{N}$ to $\mathbb{R}$ whose value at $n$ is $r_n$.
+1. (Sequences given by values) If a real number $r_n$ is specified for each natural number $n$ in the above sense, then the set $\{(n, r_n) : n \in \mathbb{N}\}$ is a function from $\mathbb{N}$ to $\mathbb{R}$ whose value at $n$ is $r_n$.
 2. (Relation to the set of values) Since $x_1 \in E$, the set $E$ is nonempty. A real number $B$ is an upper bound of $E$ (in the sense of the entry on upper bounds and suprema) exactly when $x_n \le B$ for every natural number $n$, and $B$ is a lower bound of $E$ exactly when $B \le x_n$ for every natural number $n$. Hence $(x_n)$ is bounded above exactly when $E$ is bounded above in the sense of that entry, and $(x_n)$ is bounded below exactly when $E$ is bounded below in that sense.
 3. (Boundedness) $(x_n)$ is bounded exactly when $(x_n)$ is bounded above and bounded below. Hence, by (2), $(x_n)$ is bounded exactly when $E$ is bounded in the sense of the entry on upper bounds and suprema.
 4. (Monotonicity and distant terms) If $(x_n)$ is monotone increasing, then $x_n \le x_m$ for all natural numbers $n$, $m$ with $n \le m$. If $(x_n)$ is monotone decreasing, then $x_m \le x_n$ for all natural numbers $n$, $m$ with $n \le m$.

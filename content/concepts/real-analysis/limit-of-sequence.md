@@ -7,7 +7,7 @@ field: real-analysis
 msc: ["40A05", "26A03"]
 level: undergrad
 summary: 수열이 실수 L 로 수렴한다는 것은 모든 양수 ε 에 대하여 자연수 M 이 있어 M 이상의 모든 n 에서 |x_n − L| < ε 인 것이다. 이를 한정 기호로 쓰고, 그 부정(L 로 수렴하지 않는다, 발산한다)을 같은 꼴로 풀어 적는다.
-requires: [quantifiers, negation-of-quantified-statements, negation-of-conditional, natural-numbers-are-infinite, well-ordering-principle, even-and-odd, real-number-arithmetic, real-order-axioms, order-properties-of-reals, archimedean-property, absolute-value, sequence]
+requires: [conditional-statement, logical-connectives, quantifiers, negation-of-quantified-statements, negation-of-conditional, natural-numbers-are-infinite, well-ordering-principle, even-and-odd, real-number-arithmetic, real-order-axioms, order-properties-of-reals, archimedean-property, absolute-value, sequence]
 sources:
   - ref: lebl-basic-analysis
     loc: 2.1절 Definition 2.1.2 와 그 뒤 설명 (p.52–53), Example 2.1.3, 2.1.4, 2.1.5 (p.53); 1.2절의 ε 에 관한 약속 (p.29)
@@ -74,9 +74,9 @@ The following hold.
 :::proof
 (K…)는 [[real-number-arithmetic]], (W…)는 [[real-order-axioms]]의 진술이다. "순서 성질 (1)의 (iii)"처럼 쓴 것은 [[order-properties-of-reals]]의 번호, "절댓값 (8)"처럼 쓴 것은 [[absolute-value]]의 번호, "이 항목의 (2)"는 위 진술의 번호이다.
 
-**1의 증명.** 절댓값 (8)의 첫 문장을 $x = L$, $y = x_n$에 쓰면, $|x_n - L| < \varepsilon$인 것은 정확히 $L - \varepsilon < x_n < L + \varepsilon$일 때이다. 정의의 "$|x_n - L| < \varepsilon$"을 이것으로 바꾸면 둘째 문장을 얻는다. 한정 명제의 참·거짓은 [[quantifiers]]의 규칙에 의해 안쪽의 열린 문장이 각 값에서 갖는 진릿값으로만 정해지므로, 모든 값에서 진릿값이 같은 열린 문장으로 바꾸어도 전체의 진릿값은 바뀌지 않는다.
+**1의 증명.** 절댓값 (8)의 첫 문장을 $x = L$, $y = x_n$에 쓰면, $|x_n - L| < \varepsilon$인 것은 정확히 $L - \varepsilon < x_n < L + \varepsilon$일 때이다. 정의의 "$|x_n - L| < \varepsilon$"을 이것으로 바꾸면 둘째 문장을 얻는다. 한정 명제의 참·거짓은 [[quantifiers]]의 규칙에 의해 안쪽의 열린 문장이 각 값에서 갖는 진릿값으로만 정해지고, $\Rightarrow$, $\land$, $\lnot$으로 만든 명제의 참·거짓은 진리표([[conditional-statement]], [[logical-connectives]])에 의해 각 부분의 진릿값으로만 정해진다. 따라서 명제의 한 부분을 모든 값에서 진릿값이 같은 열린 문장으로 바꾸어도 전체의 진릿값은 바뀌지 않는다.
 
-**2의 증명.** 정의의 명제를 바깥부터 차례로 부정한다. 각 단계에서 바꾸는 것은 안쪽의 열린 문장이고, 1의 증명에서 말한 이유로 전체의 진릿값은 그대로이다. $\varepsilon$, $M$, $n$을 정해 두었을 때 다음과 같다.
+**2의 증명.** 정의의 명제를 바깥부터 차례로 부정한다. 각 단계에서 바꾸는 것은 명제의 한 부분(한정 기호 밑이나 $\Rightarrow$, $\land$, $\lnot$의 안에 든 열린 문장)이고, 1의 증명에서 말한 이유로 전체의 진릿값은 그대로이다. $\varepsilon$, $M$, $n$을 정해 두었을 때 다음과 같다.
 
 - [[negation-of-quantified-statements]]의 1에 의해, "$\forall \varepsilon \in \mathbb{R},\ (\varepsilon > 0 \Rightarrow \cdots)$"의 부정은 "$\exists \varepsilon \in \mathbb{R},\ \lnot(\varepsilon > 0 \Rightarrow \cdots)$"와 진릿값이 같다.
 - [[negation-of-conditional]]에 의해, "$\lnot(\varepsilon > 0 \Rightarrow \exists M \in \mathbb{N},\ \cdots)$"는 "$\varepsilon > 0 \land \lnot(\exists M \in \mathbb{N},\ \cdots)$"와 진릿값이 같다.
@@ -93,7 +93,7 @@ The following hold.
 ## 예시와 반례
 
 :::example[상수 수열은 그 값으로 수렴한다]
-실수 $c$의 상수 수열은 $c$로 수렴합니다. 양의 실수 $\varepsilon$이 주어지면 $M = 1$로 둡니다. $1 \le n$인 모든 자연수 $n$에서 $x_n = c$이고, $-c$의 정의((K8)의 (ii))에 의해 $c - c = 0$이며, [[absolute-value|절댓값]]의 (1)에 의해 $|0| = 0$이므로 $|x_n - c| = 0 < \varepsilon$입니다. 여기서는 어떤 $\varepsilon$에 대해서도 같은 $M = 1$이 통합니다.
+실수 $c$의 상수 수열은 $c$로 수렴합니다. 양의 실수 $\varepsilon$이 주어지면 $M = 1$로 둡니다. $1 \le n$인 모든 자연수 $n$에서 $x_n = c$이고, $-c$의 정의((K8)의 (ii))에 의해 $c - c = 0$이며, [[absolute-value|절댓값]]의 (2)에 의해 $|0| = 0$이므로 $|x_n - c| = 0 < \varepsilon$입니다. 여기서는 어떤 $\varepsilon$에 대해서도 같은 $M = 1$이 통합니다.
 :::
 
 :::example[$n$번째 항이 $n^{-1}$인 수열은 $0$으로 수렴한다]
@@ -124,7 +124,7 @@ $$
 ## 확인 질문
 
 :::check[$n$번째 항이 $2n^{-1}$인 수열은 $0$으로 수렴하는가? 주어진 $\varepsilon$에 대해 $M$을 어떻게 고르는가?]
-수렴합니다. 양의 실수 $\varepsilon$이 주어지면 [[order-properties-of-reals]]의 (8)에 의해 $0 < \dfrac{\varepsilon}{2}$이므로, [[archimedean-property]]의 (3)을 $\dfrac{\varepsilon}{2}$에 써서 $M$ 이상인 모든 자연수 $n$에서 $\dfrac{1}{n} < \dfrac{\varepsilon}{2}$인 자연수 $M$을 고릅니다. (K1), (K4)에 의해 $\dfrac{1}{n} = n^{-1}$입니다. $n \ge M$이면 [[order-properties-of-reals]]의 (10)에 의해 $0 < 2$이고 $0 < n^{-1}$이므로 (W4)에 의해 $0 < 2n^{-1}$이고, [[order-properties-of-reals]]의 (4)의 (i)에 의해 $n^{-1} \cdot 2 < \dfrac{\varepsilon}{2} \cdot 2 = \varepsilon$입니다((K2), (K1), (K8)의 (iii), (K4)로 $(\varepsilon \cdot 2^{-1}) \cdot 2 = \varepsilon$). $-0 = 0$이므로 [[absolute-value|절댓값]]의 (1)에 의해 $|2n^{-1} - 0| = 2n^{-1} < \varepsilon$입니다. 곧 $\varepsilon$의 절반에 대해 아르키메데스 성질이 주는 $M$을 고르면 됩니다.
+수렴합니다. 양의 실수 $\varepsilon$이 주어지면 [[order-properties-of-reals]]의 (8)에 의해 $0 < \dfrac{\varepsilon}{2}$이므로, [[archimedean-property]]의 (3)을 $\dfrac{\varepsilon}{2}$에 써서 $M$ 이상인 모든 자연수 $n$에서 $\dfrac{1}{n} < \dfrac{\varepsilon}{2}$인 자연수 $M$을 고릅니다. (K1), (K4)에 의해 $\dfrac{1}{n} = n^{-1}$입니다. $n \ge M$이면 [[order-properties-of-reals]]의 (10)에 의해 $0 < 2$이고 $0 < n^{-1}$이므로 (W4)에 의해 $0 < 2n^{-1}$이고, [[order-properties-of-reals]]의 (4)의 (i)과 (K1)에 의해 $2n^{-1} = n^{-1} \cdot 2 < \dfrac{\varepsilon}{2} \cdot 2 = \varepsilon$입니다((K2), (K1), (K8)의 (iii), (K4)로 $(\varepsilon \cdot 2^{-1}) \cdot 2 = \varepsilon$). $-0 = 0$이므로 [[absolute-value|절댓값]]의 (1)에 의해 $|2n^{-1} - 0| = 2n^{-1} < \varepsilon$입니다. 곧 $\varepsilon$의 절반에 대해 아르키메데스 성질이 주는 $M$을 고르면 됩니다.
 :::
 
 :::check[모든 항이 $5$인 상수 수열은 $6$으로 수렴하는가?]

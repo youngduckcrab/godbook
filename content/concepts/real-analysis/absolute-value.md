@@ -1,7 +1,7 @@
 ---
 title: 절댓값
 title_en: Absolute Value
-aliases: [절대값, absolute value, 두 수의 최대, 두 수의 최소, max, min, 최댓값, 최솟값]
+aliases: [절대값, absolute value, 두 수의 최대, 두 수의 최소, max, min]
 kind: definition
 field: real-analysis
 msc: ["26A03"]
@@ -24,7 +24,7 @@ added: 2026-11-17
 $$
 |x| = \begin{cases} x & (0 \le x \text{ 일 때}) \\ -x & (x < 0 \text{ 일 때}) \end{cases}
 $$
-(W1)에서 나온 [[order-properties-of-reals]]의 (1)의 (iii)에 의해 모든 실수 $x$는 $0 \le x$와 $x < 0$ 가운데 정확히 하나를 만족하므로, $|x|$는 실수 하나로 정해진다.
+(W1)에서 나온 [[order-properties-of-reals]]의 (1)의 (iii)에 의해 모든 실수 $x$는 $0 \le x$와 $x < 0$ 가운데 정확히 하나를 만족하므로, $|x|$는 실수 하나로 정해진다. 막대 기호는 집합 $A$의 원소의 개수 $|A|$에도 쓰이지만 그것과는 다른 쓰임이며, 막대 안에 든 것이 실수인지 집합인지로 구별한다.
 
 **두 수의 최대와 최소.** 실수 $a$, $b$에 대하여 $a$와 $b$의 **최대** $\max\{a, b\}$와 **최소** $\min\{a, b\}$를 다음과 같이 정한다.
 $$
@@ -56,7 +56,7 @@ The order $<$, $\le$ is the one in the entry on the order of the real numbers, a
 $$
 |x| = \begin{cases} x & (\text{if } 0 \le x) \\ -x & (\text{if } x < 0) \end{cases}
 $$
-By item (1)(iii) of the entry on properties of the order, which follows from (W1), every real number $x$ satisfies exactly one of $0 \le x$ and $x < 0$, so $|x|$ is a well-defined real number.
+By item (1)(iii) of the entry on properties of the order, which follows from (W1), every real number $x$ satisfies exactly one of $0 \le x$ and $x < 0$, so $|x|$ is a well-defined real number. The bars are also used for the number of elements $|A|$ of a set $A$, but that is a different use of the symbol; the two are told apart by whether what stands between the bars is a real number or a set.
 
 **Maximum and minimum of two numbers.** For real numbers $a$ and $b$, the **maximum** $\max\{a, b\}$ and the **minimum** $\min\{a, b\}$ of $a$ and $b$ are defined by
 $$
@@ -122,9 +122,9 @@ $a$, $b$가 실수이면 (나)에 의해 $a - b = -(b - a)$이므로, 방금 보
 
 **5의 증명.** 이 항목의 (4)에 의해 $|x|\,|x| = |xx|$이다. 순서 성질 (5)의 (iii)에 의해 $0 \le xx$이므로 이 항목의 (1)에 의해 $|xx| = xx$이다.
 
-**6의 증명.** $0 \le x$이면 $|x| = x$이므로 $x \le |x|$이다. 순서 성질 (3)의 (iii)을 $0 \le x$에 적용하면 $-x \le -0$이고 (가)에 의해 $-|x| = -x \le 0$이다. $0 \le x$와 순서 성질 (1)의 (v)에 의해 $-|x| \le x$이다.
+**6의 증명.** $0 \le x$이면 $|x| = x$이므로 순서 성질 (1)의 (iv)에 의해 $x \le |x|$이다. 순서 성질 (3)의 (iii)을 $0 \le x$에 적용하면 $-x \le -0$이고 (가)에 의해 $-|x| = -x \le 0$이다. $0 \le x$와 순서 성질 (1)의 (v)에 의해 $-|x| \le x$이다.
 
-$x < 0$이면 $|x| = -x$이고, (K9)에 의해 $-|x| = -(-x) = x$이므로 $-|x| \le x$이다. 또 순서 성질 (3)의 (ii)에 의해 $0 < -x = |x|$이고, $x < 0$과 (W2)에 의해 $x < |x|$이므로 $x \le |x|$이다.
+$x < 0$이면 $|x| = -x$이고, (K9)에 의해 $-|x| = -(-x) = x$이므로 순서 성질 (1)의 (iv)에 의해 $-|x| \le x$이다. 또 순서 성질 (3)의 (ii)에 의해 $0 < -x = |x|$이고, $x < 0$과 (W2)에 의해 $x < |x|$이므로 $x \le |x|$이다.
 
 **7의 증명.** $|x| \le y$라 하자. 이 항목의 (6)의 $x \le |x|$와 순서 성질 (1)의 (v)에 의해 $x \le y$이다. 순서 성질 (3)의 (iii)을 $|x| \le y$에 적용하면 $-y \le -|x|$이고, 이 항목의 (6)의 $-|x| \le x$와 순서 성질 (1)의 (v)에 의해 $-y \le x$이다. 따라서 $-y \le x \le y$이다.
 
@@ -161,7 +161,7 @@ $a \le c$이고 $b \le c$라 하자. $\max\{a, b\}$는 $a$이거나 $b$이므로
 :::example[3과의 거리가 2보다 작은 수]
 실수 $t$에 대하여 $|t - 3| < 2$인 것은 정확히 $1 < t < 5$일 때입니다. 이 항목의 (8)을 $x = 3$, $y = t$, $\varepsilon = 2$로 쓰면 $|t - 3| < 2$인 것은 정확히 $3 - 2 < t < 3 + 2$일 때이고, 정수의 계산((K7))으로 $3 - 2 = 1$, $3 + 2 = 5$입니다.
 
-끝점 $t = 1$은 들어가지 않습니다. $1 - 3 = -2$이고 $-2 < 0$이므로 정의와 (K9)에 의해 $|-2| = -(-2) = 2$인데, (W1)에 의해 $2 < 2$는 성립하지 않습니다. 같은 수에 대해 $\le$의 경우를 쓰면 $|t - 3| \le 2$인 것은 정확히 $1 \le t \le 5$일 때이고, 이때는 $t = 1$과 $t = 5$가 들어갑니다.
+끝점 $t = 1$은 들어가지 않습니다. $1 - 3 = -2$이고 [[order-properties-of-reals]]의 (10)과 (3)의 (ii)에 의해 $-2 < 0$이므로 정의와 (K9)에 의해 $|-2| = -(-2) = 2$인데, (W1)에 의해 $2 < 2$는 성립하지 않습니다. 같은 수에 대해 $\le$의 경우를 쓰면 $|t - 3| \le 2$인 것은 정확히 $1 \le t \le 5$일 때이고, 이때는 $t = 1$과 $t = 5$가 들어갑니다.
 :::
 
 :::example[절댓값은 $x$와 $-x$ 가운데 큰 쪽이다]
