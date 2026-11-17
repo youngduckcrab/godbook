@@ -1,0 +1,9 @@
+type: book
+authors: [Jiří Lebl]
+title: "Basic Analysis I: Introduction to Real Analysis, Volume I"
+edition: version 6.3 (2026년 5월 15일)
+year: 2026
+url: https://www.jirka.org/ra/realanal.pdf
+access: open
+license: CC BY-NC-SA 4.0 또는 CC BY-SA 4.0 (이중 라이선스)
+note: 저자가 PDF 전체를 무료로 공개한다. 표지(PDF 1쪽)에 제목 "Basic Analysis I", 부제 "Introduction to Real Analysis, Volume I", 저자, 날짜 May 15, 2026 과 "(version 6.3)"이 있고, 판권면(PDF 2쪽)에 "Copyright ©2009–2026 Jiří Lebl"과 Creative Commons Attribution-Noncommercial-Share Alike 4.0 International 및 Attribution-Share Alike 4.0 International 의 이중 라이선스가 적혀 있다. 출판사 표시는 없다. year 는 판권면의 마지막 연도이다. 쪽수는 책에 인쇄된 쪽 번호이며 PDF 파일의 쪽 번호와 같다(차례 1–4쪽, 본문 5쪽부터). 실수는 1.2절에서 "최소상계 성질을 가진 순서체 ℝ 가 존재한다"(Theorem 1.2.1)를 증명 없이 받아들여 들인다. 큰 절댓값 막대(|…|)는 pdftotext 로 뽑은 텍스트에서 빠지는 일이 있으므로 수식은 PDF 에서 확인한다.

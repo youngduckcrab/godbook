@@ -95,6 +95,8 @@
 | 벡터의 유한 합의 재귀 정의가 모든 길이와 모든 열에 값을 하나 정한다 | `finite-sum-of-vectors` 진술 |
 | "항을 m 개 지워 얻는 열"의 재귀 정의가 모든 m 과 모든 열에 뜻을 정한다 | `spanning-list-contains-basis` 진술 |
 | (Y1) 실수 a, b 에 대하여 aa + bb = 0 이면 a = 0 이고 b = 0 (실수의 순서에서 나오는 사실. 이 강의는 순서를 다루지 않으므로 받아들인다) | `eigenvalue-examples` 진술 |
+| (W1)–(W4) 실수의 순서: 삼분법, 추이성, 덧셈과 순서, 양수의 곱은 양수 | `real-order-axioms` 진술 |
+| (U) 최소상계 성질: ℝ 의 공집합이 아니고 위로 유계인 부분집합은 ℝ 안에 상한을 갖는다 | `least-upper-bound-property` 진술 |
 | 수학적 귀납법의 원리 (시작점이 정수 m 인 꼴 포함) | `mathematical-induction` 진술 |
 | 유리수는 분자와 분모가 둘 다 짝수는 아닌 분수로 쓸 수 있다 | `rational-and-irrational-numbers` 진술 |
 | 제곱하여 2가 되는 양의 실수가 꼭 하나 있다 | `sqrt2-is-irrational` 진술 |
@@ -110,7 +112,11 @@
 
 선형대수에서 증명되어 진술을 번호로 인용하는 것: `real-number-arithmetic`의 (K8)–(K12) (0, 1, −a, a⁻¹ 의 유일성, 0·a = 0 과 부호 규칙, ab = 0 이면 a = 0 이거나 b = 0, 소거, 오른쪽 분배, (ab)⁻¹ = a⁻¹b⁻¹ 등); `vector-space`의 공리 (V1)–(V8); `vector-space-basic-properties`의 (B1)–(B12); `real-function-space`의 (G) (값으로 함수 정하기: 각 x ∈ X 에 Y 의 원소 r(x) 가 정해져 있으면 {(x, r(x))} 는 X 에서 Y 로의 함수); `subspace`의 (S1)–(S3), (P1)–(P5); `finite-sum-of-vectors`의 (H0)–(H7) (합의 성질, k 번째 항 떼어 내기)과 (C1)–(C6) (계수의 열에 관한 성질, 계수 끼워 넣기, 차의 규칙); `linear-combination-and-span`의 (N1)–(N4); `linear-independence`의 (I1)–(I4); `basis`의 (Q1) (빈 열이 기저인 것은 정확히 V = {0_V} 일 때), (Q2) (x + y 와 γx 의 좌표); `standard-basis`의 (1) (ℝ^X 에서 유한 합의 값은 값들의 유한 합); `linear-map`의 두 조건 (T-합), (T-배)와 성질 (T1)–(T5); `matrix`의 (7) (행렬의 크기는 하나로 정해진다); `exchange-lemma`의 (X1) (일차독립인 열의 계수는 하나뿐이다), (X2) ((μ_1 + ⋯ + μ_n)x = μ_1 x + ⋯ + μ_n x); `sequences-in-a-subspace`의 (J1)–(J4) (부분공간 W 에서 계산한 합·일차결합·생성·일차독립이 V 에서와 같다. W 의 기저인 것은 정확히 V 에서 일차독립이고 생성이 W 일 때); `dimension-of-subspace`의 (5) (부분공간 U ⊆ W 이고 W 가 유한차원이면 dim U ≤ dim W, 같으면 U = W. 부분공간의 부분공간으로 다시 제한한 구조를 거치지 않는다).
 
-번호의 글자는 강의를 넘어 겹치지 않게 한다. 이미 쓴 글자: Z, L, F, P, D, O, A, R, K, V, B, G, E, S, H, C, N, I, Q, T, X, J, Y. (7~8단원의 항목은 새 글자를 쓰지 않고 "[[항목]]의 (n)"으로 인용한다.) 새 번호를 붙일 때는 이 문서와 `grep -rn "(X1)" content/` 로 확인한다.
+번호의 글자는 강의를 넘어 겹치지 않게 한다. 이미 쓴 글자: Z, L, F, P, D, O, A, R, K, V, B, G, E, S, H, C, N, I, Q, T, X, J, Y, W, U. 남은 글자는 M 뿐이고 쓰지 않는다(출처들이 다른 뜻으로 쓴다). (7~8단원의 항목은 새 글자를 쓰지 않고 "[[항목]]의 (n)"으로 인용한다.) 새 번호를 붙일 때는 이 문서와 `grep -rn "(X1)" content/` 로 확인한다.
+
+해석학 입문에서 실수는 (K1)–(K7), (W1)–(W4), (U)를 받아들인 것(완비 순서체)이고 구성은 다루지 않는다. 그 강의의 항목은 선형대수의 `real-number-arithmetic`과 정수론 입문의 `well-ordering-principle`만 다른 강의에서 빌려 쓴다. 증명되어 번호로 인용하는 것: `order-properties-of-reals`의 (1)–(11) (그 가운데 (10): 정수로서의 순서와 실수로서의 순서가 일치하므로 (Z…), (L…), 정렬 원리, 귀납법의 n ≥ m 을 실수의 부등식으로 써도 된다), `upper-bound-and-supremum`의 (1)–(5), `infimum-exists`, `archimedean-property`의 (1)–(4), `rationals-are-dense`(유리수끼리의 계산은 유리수 포함), `square-root-exists`(√a, 유리수 전체는 최소상계 성질을 갖지 않는다), `supremum-and-arithmetic`.
+
+앞에서 받아들였다가 해석학 입문 1단원에서 증명된 것(기존 항목의 문구는 그대로 둔다): (Y1) → `order-properties-of-reals`의 (5); `bernoulli-inequality`의 순서 사실 (R3)–(R6) → 같은 항목; `prime-number`의 (Z2), (Z3)의 실수판 → 같은 항목의 (4); "제곱하여 2 가 되는 양의 실수가 꼭 하나 있다" → `square-root-exists`의 (1). 해석학 입문의 항목은 이 받아들인 사실들을 인용하지 않고 증명된 쪽을 인용한다.
 
 강한 귀납법은 받아들인 원리가 아니다. `strong-induction`이 보통의 귀납법에서 끌어낸다.
 
@@ -120,10 +126,10 @@
 
 - 법 n 의 잉여류가 정확히 n 개라는 것(세기가 없다. `residues-modulo-n`은 "0 부터 n − 1 가운데 정확히 하나와 합동"까지만 말한다), 일차 합동식의 해의 개수, 원소의 위수, 원시근.
 - 지수법칙. 거듭제곱 a^k 는 뜻만 정해져 있다.
-- 절댓값. 지금까지는 쓰지 않고 피했다(나눗셈 정리는 나누는 수가 양수인 판, 최대공약수는 둘 다 0 은 아닌 정수에 대해 정의).
+- 절댓값(해석학 입문 2단원 예정). 정수론과 선형대수는 쓰지 않고 피했다(나눗셈 정리는 나누는 수가 양수인 판, 최대공약수는 둘 다 0 은 아닌 정수에 대해 정의).
 - 이항계수, 유한집합의 합집합·곱집합·멱집합의 원소 개수(세는 공식), 전사에 관한 비둘기집 원리.
 - 빈 곱, 합의 재배열.
-- 실수의 순서에 관한 법칙(선형대수는 쓰지 않는다. `bernoulli-inequality`의 (R1)–(R6)은 그 항목만의 목록), 완비성, 극한, 무한 합, 제곱근의 존재.
+- 극한, 연속, 미분, 급수(해석학 입문 2단원 이후 예정), 리만 적분(계획에 없다), 실수의 거듭제곱과 지수법칙, 공집합이 아닌 유한한 실수 집합의 최댓값, 실수의 유한 합(선형대수의 `finite-sum-of-vectors`에만 있고 해석학 입문은 쓰지 않는다), 가산 선택, 실수의 구성. 선형대수는 실수의 순서를 쓰지 않는다.
 - 복소수, 체 일반, 다항식, 행렬식, 특성다항식. 고윳값이 있는지를 일반적으로 판정하거나 구하는 방법.
 - 행렬과 선형사상의 거듭제곱(재귀 정의를 받아들이지 않았다. AA 는 곱으로 쓴다), 대각합, 부분공간의 합과 교집합의 차원 공식, 고유공간들의 기저를 이어 붙이는 것(중복도), 기약 사다리꼴의 유일성, 크기 0 인 행렬과 ℝ⁰.
 - 곱집합의 원소 개수(그래서 dim M_{m×n} = mn 을 말하지 않는다).
@@ -138,6 +144,7 @@
 | `hammack-book-of-proof` | Hammack, *Book of Proof* 3판 (Edition 3.4), 공개 | PDF 쪽 = 인쇄 쪽 + 12. 1, 2, 4, 5, 6, 8, 10, 11, 12, 14장의 일부를 썼다. 3장(세기), 7장, 9장, 13장과 2.4, 2.8, 2.9, 2.11, 10.3, 10.5, 11.5, 12.3, 14.4절 등은 아직 쓰지 않았다 |
 | `stein-elementary-number-theory` | Stein, *Elementary Number Theory: Primes, Congruences, and Secrets* (2017-01-23 판), 저자 공개 PDF | PDF 쪽 = 인쇄 쪽 + 7. PDF 에 저작권·라이선스 표시가 없어 license 를 비워 두었다. 1장과 2.1~2.3절을 쓴다. 환과 군의 언어로 쓴 부분은 합동의 언어로 바꿔 쓰고, 세기에 기대는 증명은 따르지 않는다. "gcd(0, a) = a"(p.3)는 a < 0 이면 틀리다 |
 | `treil-linear-algebra-done-wrong` | Treil, *Linear Algebra Done Wrong* (2021-01-11 PDF), CC BY-NC-ND 3.0 | PDF 쪽 = 인쇄 쪽 + 10. 스칼라를 ℝ 또는 ℂ 로 두지만 이 사이트는 ℝ 만 쓴다. 유한 합과 Σ 를 정의 없이 쓰고, 기본 성질 여럿을 연습문제로 돌린다. 차원은 피벗을 세어 증명하므로 그 경로는 따르지 않는다. 일차종속의 정의에 절댓값의 합을 쓰는데 "0 이 아닌 계수가 있다"로 바꿔 쓴다 |
+| `lebl-basic-analysis` | Lebl, *Basic Analysis I* (version 6.3), CC BY-SA 4.0 / CC BY-NC-SA 4.0 | PDF 쪽 = 인쇄 쪽. pdftotext 결과에서 큰 절댓값 막대와 일부 수식 기호가 빠지므로 수식은 `pdftoppm` 으로 그 쪽을 그림으로 만들어 확인한다. 실수의 존재(Theorem 1.2.1)는 증명 없이 진술한다. 공집합의 상한을 −∞ 로 두고 유한집합의 최댓값·가산 선택을 말없이 쓰는 곳이 있다. 여러 사실을 Example 과 연습문제로 둔다 |
 | `mactutor-de-morgan`, `mactutor-boole` | MacTutor 전기 | 역사 서술용 |
 | `sep-settheory-early` | 스탠퍼드 철학 백과 "The Early Development of Set Theory" | 역사 서술용 |
 
