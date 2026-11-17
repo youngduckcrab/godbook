@@ -13,13 +13,13 @@ sources:
   - ref: lebl-basic-analysis
     loc: 3.3.2절, Lemma 3.3.7 과 그 증명 (p.132–133), Theorem 3.3.8 과 그 증명과 뒤 문단 (p.133), Example 3.3.9 와 뒤 문단 (p.134), Corollary 3.3.13 (p.135)
     checked: original
-    note: "(1)은 출처의 Theorem 3.3.8(p.133)과 같다. 출처는 먼저 Lemma 3.3.7(p.132; f(a) < 0 < f(b) 이면 f(c) = 0 인 c ∈ (a, b) 가 있다)을 이분법으로 증명한다. a_1 = a, b_1 = b 에서 시작해 중점에서 f 의 값이 0 이상이면 오른쪽 끝을, 음수이면 왼쪽 끝을 중점으로 바꾸는 두 수열을 귀납적으로 정의하고, 두 수열이 단조이고 유계라 수렴하며 b_n − a_n = 2^{1−n}(b − a) 이므로 극한이 같고, f(a_n) < 0 ≤ f(b_n) 에서 극한을 취해 f(c) = 0 을 얻는다. Theorem 3.3.8 은 g(x) = f(x) − y 또는 y − f(x) 에 보조정리를 쓴다. 이 항목은 이분법을 증명으로 싣지 않고 상한으로 증명하며, 반대 방향은 −f 에 앞의 경우를 쓴다. (2)는 출처에 진술로 없다(검색한 범위). (3)은 출처가 Theorem 3.3.8 뒤 문단(p.133)에서 '연속함수의 제한은 연속이므로 큰 집합 위의 연속함수에 정리를 쓴다'고 적는 것을 진술로 올렸다. (4)는 출처의 Corollary 3.3.13(p.135)과 같고, 출처는 증명을 연습문제 3.3.7(p.136)로 둔다. 이분법이라는 이름은 출처 p.133 에 있다. 예시 '이분법'의 함수 x³ − 2x² + x − 1 과 1, 3/2, 7/4, 15/8 에서의 계산은 출처의 Example 3.3.9(p.134)를 따랐고, 값은 분수로 다시 계산했다(출처는 f(1.5) = −0.625, f(1.75) ≈ −0.016, f(1.875) ≈ 0.44 로 적는다). 출처는 p.134 에서 f(c) = y 인 c 가 여럿일 수 있다고 적지만 예를 들지 않는다. 예시 '세 점'의 함수는 새로 골랐다(검색한 범위). 반례 '계단 함수'는 출처의 연습문제 3.3.1(p.136; 사잇값 정리의 결론이 성립하지 않는 불연속함수 [0, 1] → ℝ 를 찾으라)의 답이 될 수 있는 것이다. 확인 질문 2 는 출처의 연습문제 3.3.15 a)(p.137; f(c) f(−c) < 0 이면 근이 있다)와 가까운 발상이다. 확인 질문 1 은 출처에 없다(검색한 범위)."
+    note: "(1)은 출처의 Theorem 3.3.8(p.133)과 같다. 출처는 먼저 Lemma 3.3.7(p.132; f(a) < 0 < f(b) 이면 f(c) = 0 인 c ∈ (a, b) 가 있다)을 이분법으로 증명한다. a_1 = a, b_1 = b 에서 시작해 중점에서 f 의 값이 0 이상이면 오른쪽 끝을, 음수이면 왼쪽 끝을 중점으로 바꾸는 두 수열을 귀납적으로 정의하고, 두 수열이 단조이고 유계라 수렴하며 b_n − a_n = 2^{1−n}(b − a) 이므로 극한이 같고, f(a_n) < 0 ≤ f(b_n) 에서 극한을 취해 f(c) = 0 을 얻는다. Theorem 3.3.8 은 g(x) = f(x) − y 또는 y − f(x) 에 보조정리를 쓴다. 이 항목은 이분법을 증명으로 싣지 않고 상한으로 증명하며, 반대 방향은 −f 에 앞의 경우를 쓴다. (2)는 출처에 진술로 없다(검색한 범위). (3)은 출처가 Theorem 3.3.8 뒤 문단(p.133)에서 '연속함수의 제한은 연속이므로 큰 집합 위의 연속함수에 정리를 쓴다'고 적는 것을 진술로 올렸다. (4)는 출처의 Corollary 3.3.13(p.135)과 같고, 출처는 증명을 연습문제 3.3.7(p.136)로 둔다. 이분법이라는 이름은 출처 p.133 에 있다. 예시 '이분법'의 함수 x³ − 2x² + x − 1 과 1, 3/2, 7/4, 15/8 에서의 계산은 출처의 Example 3.3.9(p.134)를 따랐고, 값은 분수로 다시 계산했다(출처는 f(1.5) = −0.625, f(1.75) ≈ −0.016, f(1.875) ≈ 0.44 로 적는다). 출처는 p.134 에서 f(c) = y 인 c 가 여럿일 수 있다고 적지만 예를 들지 않는다. 예시 'c 가 여럿인 경우'의 함수는 새로 골랐다(검색한 범위). 반례 '계단 함수'는 출처의 연습문제 3.3.1(p.136; 사잇값 정리의 결론이 성립하지 않는 불연속함수 [0, 1] → ℝ 를 찾으라)의 답이 될 수 있는 것이다. 확인 질문 2 는 출처의 연습문제 3.3.15 a)(p.137; f(c) f(−c) < 0 이면 근이 있다)와 가까운 발상이다. 확인 질문 1 은 출처에 없다(검색한 범위)."
 status: source-checked
 added: 2026-11-17
 ---
 
 :::statement
-닫힌구간 $[a, b]$와 열린구간 $(a, b)$는 [[interval]]의 것이고, 실함수와 제한은 [[real-valued-function]]의 것이며, 연속은 [[continuous-function]]의 것이고, 상 $f([a, b])$는 [[image-and-preimage]]의 것이며, 최댓값과 최솟값은 [[extreme-value-theorem|최대·최소 정리]] 항목의 것이다. $a < b$인 실수 $a$, $b$와 연속함수 $f : [a, b] \to \mathbb{R}$, 실수 $y$에 대하여 다음이 성립한다.
+닫힌구간 $[a, b]$와 열린구간 $(a, b)$는 [[interval]]의 것이고, 실함수와 제한은 [[real-valued-function]]의 것이며, 연속은 [[continuous-function]]의 것이고, 상 $f([a, b])$는 [[image-and-preimage]]의 것이며, 함수의 최댓값과 최솟값은 [[extreme-value-theorem|최대·최소 정리]] 항목의 것이고, 집합의 $\min$, $\max$는 [[upper-bound-and-supremum]]의 것이다. $a < b$인 실수 $a$, $b$와 연속함수 $f : [a, b] \to \mathbb{R}$, 실수 $y$에 대하여 다음이 성립한다.
 
 1. (**사잇값 정리**) $f(a) < y < f(b)$이거나 $f(b) < y < f(a)$이면, $f(c) = y$인 $c \in (a, b)$가 있다. 곧 $a < c < b$이고 $f(c) = y$인 실수 $c$가 있다.
 2. (닫힌 꼴) $f(a) \le y \le f(b)$이거나 $f(b) \le y \le f(a)$이면, $f(c) = y$인 $c \in [a, b]$가 있다.
@@ -28,7 +28,7 @@ added: 2026-11-17
 :::
 
 :::english
-The closed interval $[a, b]$ and the open interval $(a, b)$ are those of the entry on intervals; real-valued functions and restrictions are those of the entry on real-valued functions; continuity is that of the entry on continuous functions; the image $f([a, b])$ is that of the entry on images and preimages; and the absolute maximum and minimum are those of the entry on the extreme value theorem. For real numbers $a$, $b$ with $a < b$, a continuous function $f : [a, b] \to \mathbb{R}$, and a real number $y$, the following hold.
+The closed interval $[a, b]$ and the open interval $(a, b)$ are those of the entry on intervals; real-valued functions and restrictions are those of the entry on real-valued functions; continuity is that of the entry on continuous functions; the image $f([a, b])$ is that of the entry on images and preimages; the absolute maximum and minimum of a function are those of the entry on the extreme value theorem, and $\min$, $\max$ of a set are those of the entry on upper bounds and suprema. For real numbers $a$, $b$ with $a < b$, a continuous function $f : [a, b] \to \mathbb{R}$, and a real number $y$, the following hold.
 
 1. (**Intermediate value theorem**) If $f(a) < y < f(b)$ or $f(b) < y < f(a)$, then there is a $c \in (a, b)$ with $f(c) = y$; that is, there is a real number $c$ with $a < c < b$ and $f(c) = y$.
 2. (Closed form) If $f(a) \le y \le f(b)$ or $f(b) \le y \le f(a)$, then there is a $c \in [a, b]$ with $f(c) = y$.
@@ -38,7 +38,7 @@ The closed interval $[a, b]$ and the open interval $(a, b)$ are those of the ent
 
 ## 직관
 
-해수면보다 낮은 골짜기에서 출발해 해수면보다 높은 언덕 꼭대기까지 끊기지 않는 길로 걸어가면, 어딘가에서 꼭 해수면 높이를 지납니다. 고도가 길을 따라 연속으로 변하고 출발점과 도착점이 해수면의 양쪽에 있다는 것이 이 정리의 두 가정에 해당하고, "해수면 높이를 지나는 지점"이 $c$입니다. 비유가 맞지 않는 곳은 실제 길에서는 "지난다"는 것을 당연하게 여기지만, 수학에서는 그것이 증명할 내용이고 증명에 [[least-upper-bound-property|최소상계 성질]]이 쓰인다는 점입니다. 유리수만 생각하면 결론이 깨집니다. 값이 $x\,x - 2$인 함수는 $0$에서 음수, $2$에서 양수이지만, 값이 $0$이 되는 유리수 $x$는 없습니다.
+해수면보다 낮은 골짜기에서 출발해 해수면보다 높은 언덕 꼭대기까지 끊기지 않는 길로 걸어가면, 어딘가에서 꼭 해수면 높이를 지납니다. 고도가 길을 따라 연속으로 변하고 출발점과 도착점이 해수면의 양쪽에 있다는 것이 이 정리의 두 가정에 해당하고, "해수면 높이를 지나는 지점"이 $c$입니다. 비유가 맞지 않는 곳은 실제 길에서는 "지난다"는 것을 당연하게 여기지만, 수학에서는 그것이 증명할 내용이고 증명에 [[least-upper-bound-property|최소상계 성질]]이 쓰인다는 점입니다.
 
 이 항목의 증명은 상한으로 합니다. $f(a) < y < f(b)$일 때 "$f(x) < y$인 점들"의 상한 $c$를 잡습니다. $f(c) < y$라면 연속이므로 $c$ 조금 오른쪽에도 $f(x) < y$인 점이 있어 $c$가 상계라는 데 어긋나고, $f(c) > y$라면 $c$ 조금 왼쪽의 점들이 모두 $f(x) > y$여서 $c$보다 작은 상계가 생겨 어긋납니다. 남는 것은 $f(c) = y$입니다.
 
@@ -94,7 +94,7 @@ $m < M$이라 하자. $z \in f([a, b])$이면 $z = f(x)$인 $x \in [a, b]$가 �
 
 어느 경우든 $x \in [a, b]$이고 $f(x) = z$이므로 $z \in f([a, b])$이다. 두 집합의 원소가 일치하므로 $f([a, b]) = [m, M]$이다.
 
-마지막 문장은 $m \le M$이므로 $m < M$이거나 $m = M$이고, $m < M$이면 구간 (1)에 의해 $[m, M]$이 닫힌구간이라는 데서 나온다. $\blacksquare$
+마지막 문장을 보인다. $a \in [a, b]$에서 $m \le f(a) \le M$이므로 순서 성질 (1)의 (v)에 의해 $m \le M$이고, 따라서 $m < M$이거나 $m = M$이다. $m < M$이면 구간 (1)에 의해 $[m, M]$은 닫힌구간이다. $\blacksquare$
 :::
 
 ## 예시와 반례
@@ -111,7 +111,7 @@ $h(1) = 1 - 2 + 1 - 1 = -1$이고 $h(2) = 8 - 8 + 2 - 1 = 1$이므로 $h(1) < 0 
 세 단계 만에 근이 있는 구간의 길이가 $1$에서 $\tfrac{1}{8}$로 줄었습니다. 이 계산은 근이 그 구간에 적어도 하나 있다는 것만 말하고, 근이 그 구간에 하나뿐인지는 말하지 않습니다.
 :::
 
-:::example[$c$가 세 개인 경우]
+:::example[$c$가 여럿인 경우]
 $q(x) = x^3 - x$로 정한 $q : \mathbb{R} \to \mathbb{R}$는 위 예시와 같은 이유로 연속함수입니다($q = p_3 - p_1$). $[-2, 2]$에서 $q(-2) = -8 + 2 = -6$이고 $q(2) = 8 - 2 = 6$이므로 $q(-2) < 0 < q(2)$이고, (3)과 (1)에 의해 $q(c) = 0$인 $c \in (-2, 2)$가 있습니다. 실제로 $q(-1) = -1 + 1 = 0$, $q(0) = 0$, $q(1) = 1 - 1 = 0$이므로 $-1$, $0$, $1$이 모두 그런 $c$입니다. 정리는 $c$가 적어도 하나 있다는 것만 말하며, $c$는 하나가 아닐 수 있습니다.
 :::
 
