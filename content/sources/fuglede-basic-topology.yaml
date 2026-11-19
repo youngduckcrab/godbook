@@ -1,0 +1,9 @@
+type: lecture-notes
+authors: [Søren Fuglede Jørgensen]
+title: "Basic topology: Lecture notes for a 2015 Uppsala University course"
+edition: GitHub 저장소 fuglede/basic-topology 의 커밋 81faf0deaa462e5d563a542e361d0a9de6f04e36 에 있는 LaTeX 원본
+year: 2015
+url: https://github.com/fuglede/basic-topology
+access: open
+license: "CC BY-SA 4.0 (본문 머리말 content/preface.tex) / MIT (저장소의 LICENSE 파일)"
+note: "저자가 LaTeX 원본만 공개하고 PDF 는 저장소에 없다. 위 url 의 저장소를 커밋 81faf0deaa462e5d563a542e361d0a9de6f04e36 에서 받은 원본을 기준으로 한다. 표지(content/frontpage.tex)에 제목 'Basic topology', 부제 'Lecture notes for a 2015 Uppsala University course', 저자 Søren Fuglede Jørgensen 이 있고, 판 날짜는 따로 적혀 있지 않다(컴파일한 날짜가 찍힌다). year 는 부제의 강의 연도이다. 머리말(content/preface.tex)은 2015년 봄 웁살라 대학교 강의를 위해 쓴 노트이며 강의의 완전한 참고서가 아니고 강의는 참고문헌 [Mun] 과 [Fje] 를 따른다고 적는다. 라이선스는 두 군데에 적혀 있다. 머리말의 'Terms of use' 는 'Whenever applicable' 이 글을 Creative Commons Attribution-ShareAlike 4.0 International License 로 허락한다고 하고, 일부는 다른 출처에서 왔으며 그 경우 해당 조건을 함께 실었다고 적는다. 저장소 최상위의 LICENSE 파일은 'MIT License, Copyright (c) 2014- Søren Fuglede Jørgensen' 이다. 저장소의 README 는 첫 줄에 이 저장소가 https://codeberg.org/fuglede/basic-topology 로 옮겨졌다고 적는다. 옮겨 간 곳의 판이 위 커밋과 같은지는 확인하지 않았다. 쪽 번호가 없으므로 이 사이트의 loc 는 절 제목과 원본 파일의 줄(content/<파일>.tex:<줄>)로 적는다. 정리 번호는 컴파일하지 않아 확정되지 않으므로 쓰지 않는다."
