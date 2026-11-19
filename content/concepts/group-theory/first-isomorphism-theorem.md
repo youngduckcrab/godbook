@@ -23,8 +23,8 @@ added: 2026-11-19
 $(G, \ast)$와 $(G', \ast')$이 [[group|군]]이고 $e$, $e'$이 각각 그 항등원이며, $\varphi : G \to G'$이 [[group-homomorphism|군 준동형]]이라 하자. 핵 $\operatorname{Ker} \varphi$와 상 $\varphi(G)$는 [[homomorphism-kernel-and-image|준동형의 핵과 상]]의 것이고, 그 항목의 (4)에 의해 $\varphi(G)$는 $G'$의 부분군이므로 [[subgroup|부분군]]의 뜻으로 $G'$의 연산을 제한한 군이다. 동형사상과 $\cong$은 [[group-isomorphism|군의 동형]]의 것이다. $K = \operatorname{Ker} \varphi$라 하자. [[normal-subgroup|정규부분군]]의 (4)에 의해 $K$는 $G$의 정규부분군이므로 [[quotient-group|몫군]] $G/K$와 [[canonical-homomorphism|표준 준동형]] $\pi : G \to G/K$, $\pi(a) = aK$가 있다.
 
 1. (제1 동형 정리) 함수 $\eta : G/K \to \varphi(G)$로서 모든 $a \in G$에서
-$$\eta(aK) = \varphi(a)$$
-인 것이 정확히 하나 있고, $\eta$는 군 $G/K$에서 군 $\varphi(G)$로의 동형사상이다. 따라서 $G/\operatorname{Ker} \varphi \cong \varphi(G)$이다.
+   $$\eta(aK) = \varphi(a)$$
+   인 것이 정확히 하나 있고, $\eta$는 군 $G/K$에서 군 $\varphi(G)$로의 동형사상이다. 따라서 $G/\operatorname{Ker} \varphi \cong \varphi(G)$이다.
 2. (표준 준동형과의 관계) 모든 $a \in G$에서 $\eta(\pi(a)) = \varphi(a)$이다. 곧 $\iota : \varphi(G) \to G'$이 포함 함수(모든 $y \in \varphi(G)$에서 $\iota(y) = y$)이면 $\varphi = \iota \circ \eta \circ \pi$이다.
 3. (전사인 경우) $\varphi : G \to G'$이 전사이면 $\varphi(G) = G'$이고, $\eta$는 군 $G/K$에서 군 $G'$으로의 동형사상이다. 따라서 $G/\operatorname{Ker} \varphi \cong G'$이다.
 4. (따름) 
@@ -38,8 +38,8 @@ $G$가 [[number-groups|수로 이루어진 군]]의 덧셈 표기로 쓰는 아�
 Let $(G, \ast)$ and $(G', \ast')$ be groups with identities $e$ and $e'$ respectively, and let $\varphi : G \to G'$ be a group homomorphism. The kernel $\operatorname{Ker} \varphi$ and the image $\varphi(G)$ are those of the entry on kernels and images of homomorphisms; by item (4) of that entry $\varphi(G)$ is a subgroup of $G'$, hence a group under the restriction of the operation of $G'$ in the sense of the entry on subgroups. Isomorphisms and $\cong$ are those of the entry on isomorphisms of groups. Let $K = \operatorname{Ker} \varphi$. By item (4) of the entry on normal subgroups, $K$ is a normal subgroup of $G$, so there are the quotient group $G/K$ and the canonical homomorphism $\pi : G \to G/K$, $\pi(a) = aK$.
 
 1. (First isomorphism theorem) There is exactly one function $\eta : G/K \to \varphi(G)$ such that
-$$\eta(aK) = \varphi(a)$$
-for all $a \in G$, and $\eta$ is an isomorphism from the group $G/K$ to the group $\varphi(G)$. Hence $G/\operatorname{Ker} \varphi \cong \varphi(G)$.
+   $$\eta(aK) = \varphi(a)$$
+   for all $a \in G$, and $\eta$ is an isomorphism from the group $G/K$ to the group $\varphi(G)$. Hence $G/\operatorname{Ker} \varphi \cong \varphi(G)$.
 2. (Relation to the canonical homomorphism) $\eta(\pi(a)) = \varphi(a)$ for all $a \in G$. That is, if $\iota : \varphi(G) \to G'$ is the inclusion ($\iota(y) = y$ for all $y \in \varphi(G)$), then $\varphi = \iota \circ \eta \circ \pi$.
 3. (The surjective case) If $\varphi : G \to G'$ is surjective, then $\varphi(G) = G'$ and $\eta$ is an isomorphism from the group $G/K$ to the group $G'$. Hence $G/\operatorname{Ker} \varphi \cong G'$.
 4. (Consequences)

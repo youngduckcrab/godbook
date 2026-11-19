@@ -27,14 +27,14 @@ $G$가 [[group|군]]이고 $e$가 그 항등원이며 $N$이 $G$의 [[subgroup|�
 (2)–(6)에서 $N$은 $G$의 정규부분군이다.
 
 2. (몫군) $G/N$ 위의 이항연산으로서 모든 $a, b \in G$에서 $aN$과 $bN$에서의 값이 $(ab)N$인 것이 정확히 하나 있다. 이 값을 $(aN)(bN)$으로 쓴다. 곧
-$$(aN)(bN) = (ab)N$$
-이다. 이 연산은 [[operation-on-equivalence-classes|동치류 위의 연산]]의 (2)에서 $G$의 연산이 $G/{\sim_N} = G/N$에 정하는 연산이다. 이 연산으로 $G/N$은 군이고, 이 군을 $N$에 대한 $G$의 **몫군**(quotient group)이라 하며 "군 $G/N$"이라 부른다. 그 항등원은 $eN = N$이고, $a \in G$이면 $aN$의 역원은 $a^{-1}N$이다. 곱 $(aN)(bN)$은 이 연산의 값이고, 두 부분집합의 원소끼리의 곱을 모은 집합이 아니다. 이 강의는 부분집합끼리의 곱을 정의하지 않는다.
+   $$(aN)(bN) = (ab)N$$
+   이다. 이 연산은 [[operation-on-equivalence-classes|동치류 위의 연산]]의 (2)에서 $G$의 연산이 $G/{\sim_N} = G/N$에 정하는 연산이다. 이 연산으로 $G/N$은 군이고, 이 군을 $N$에 대한 $G$의 **몫군**(quotient group)이라 하며 "군 $G/N$"이라 부른다. 그 항등원은 $eN = N$이고, $a \in G$이면 $aN$의 역원은 $a^{-1}N$이다. 곱 $(aN)(bN)$은 이 연산의 값이고, 두 부분집합의 원소끼리의 곱을 모은 집합이 아니다. 이 강의는 부분집합끼리의 곱을 정의하지 않는다.
 3. (거듭제곱) $a \in G$이고 $k$가 정수이면, 군 $G/N$에서의 [[power-in-a-group|거듭제곱]] $(aN)^k$는 $a^kN$이다.
 4. (아벨군과 순환군) $G$가 아벨군이면 $G/N$도 아벨군이다. $G$가 [[cyclic-subgroup|순환군]]이고 $a$가 그 생성원이면 $G/N$도 순환군이고 $aN$은 그 생성원이다.
 5. (원소의 개수) $N$의 [[lagrange-theorem|지표]]가 유한하면 $G/N$은 유한군이고 $|G/N| = [G : N]$이다. $G$가 유한군이면 $N$의 지표는 유한하고 $G/N$은 유한군이며 $|G| = |G/N| \cdot |N|$이다.
 6. (덧셈 표기와 정수의 덧셈군) $G$가 [[number-groups|수로 이루어진 군]]의 덧셈 표기로 쓰는 아벨군이면, $G$의 모든 부분군은 정규부분군이고([[normal-subgroup|정규부분군]]의 (3)), 몫군 $G/N$은 아벨군이며 덧셈 표기로 쓴다. 곧 $a, b \in G$와 정수 $k$에 대하여
-$$(a + N) + (b + N) = (a + b) + N, \qquad -(a + N) = (-a) + N, \qquad k \cdot (a + N) = (k \cdot a) + N$$
-이고 항등원은 $0 + N = N$이다. 특히 $n$이 자연수이면 $(\mathbb{Z}, +)$의 몫군 $\mathbb{Z}/n\mathbb{Z}$는 [[number-groups|수로 이루어진 군]]의 (4)의 군 $(\mathbb{Z}_n, +)$와 같은 군이다. 곧 집합으로 $\mathbb{Z}/n\mathbb{Z} = \mathbb{Z}_n$이고([[left-coset|잉여류]]의 (8)), 모든 정수 $a$, $b$에서 몫군의 합 $(a + n\mathbb{Z}) + (b + n\mathbb{Z})$와 [[integers-modulo-n|법 n의 정수]]의 합 $[a] + [b]$는 같은 원소 $[a + b]$이므로 두 연산은 [[binary-operation|이항연산]]의 뜻으로 같다.
+   $$(a + N) + (b + N) = (a + b) + N, \qquad -(a + N) = (-a) + N, \qquad k \cdot (a + N) = (k \cdot a) + N$$
+   이고 항등원은 $0 + N = N$이다. 특히 $n$이 자연수이면 $(\mathbb{Z}, +)$의 몫군 $\mathbb{Z}/n\mathbb{Z}$는 [[number-groups|수로 이루어진 군]]의 (4)의 군 $(\mathbb{Z}_n, +)$와 같은 군이다. 곧 집합으로 $\mathbb{Z}/n\mathbb{Z} = \mathbb{Z}_n$이고([[left-coset|잉여류]]의 (8)), 모든 정수 $a$, $b$에서 몫군의 합 $(a + n\mathbb{Z}) + (b + n\mathbb{Z})$와 [[integers-modulo-n|법 n의 정수]]의 합 $[a] + [b]$는 같은 원소 $[a + b]$이므로 두 연산은 [[binary-operation|이항연산]]의 뜻으로 같다.
 
 끝으로 $N$이 $G$ 자신이거나 $\{e\}$인 경우이다.
 
@@ -49,14 +49,14 @@ Let $G$ be a group with identity $e$, and let $N$ be a subgroup of $G$. The rela
 In (2)–(6), $N$ is a normal subgroup of $G$.
 
 2. (The quotient group) There is exactly one binary operation on $G/N$ whose value at $aN$ and $bN$ is $(ab)N$ for all $a, b \in G$. This value is written $(aN)(bN)$; that is,
-$$(aN)(bN) = (ab)N.$$
-This operation is the operation induced on $G/{\sim_N} = G/N$ by the operation of $G$, in the sense of item (2) of the entry on operations on equivalence classes. With this operation $G/N$ is a group, called the **quotient group** of $G$ by $N$ and referred to as "the group $G/N$". Its identity is $eN = N$, and for $a \in G$ the inverse of $aN$ is $a^{-1}N$. The product $(aN)(bN)$ is a value of this operation, not the set of products of elements of two subsets; this course does not define products of subsets.
+   $$(aN)(bN) = (ab)N.$$
+   This operation is the operation induced on $G/{\sim_N} = G/N$ by the operation of $G$, in the sense of item (2) of the entry on operations on equivalence classes. With this operation $G/N$ is a group, called the **quotient group** of $G$ by $N$ and referred to as "the group $G/N$". Its identity is $eN = N$, and for $a \in G$ the inverse of $aN$ is $a^{-1}N$. The product $(aN)(bN)$ is a value of this operation, not the set of products of elements of two subsets; this course does not define products of subsets.
 3. (Powers) If $a \in G$ and $k$ is an integer, then the power $(aN)^k$ in the group $G/N$ is $a^kN$.
 4. (Abelian and cyclic groups) If $G$ is abelian, then so is $G/N$. If $G$ is cyclic with generator $a$, then $G/N$ is cyclic and $aN$ is a generator of it.
 5. (Number of elements) If $N$ has finite index, then $G/N$ is a finite group and $|G/N| = [G : N]$. If $G$ is a finite group, then $N$ has finite index, $G/N$ is a finite group, and $|G| = |G/N| \cdot |N|$.
 6. (Additive notation and the additive group of integers) If $G$ is an abelian group written in the additive notation of the entry on groups of numbers, then every subgroup of $G$ is normal (item (3) of the entry on normal subgroups), and the quotient group $G/N$ is abelian and is written additively. That is, for $a, b \in G$ and an integer $k$,
-$$(a + N) + (b + N) = (a + b) + N, \qquad -(a + N) = (-a) + N, \qquad k \cdot (a + N) = (k \cdot a) + N,$$
-and the identity is $0 + N = N$. In particular, if $n$ is a natural number, then the quotient group $\mathbb{Z}/n\mathbb{Z}$ of $(\mathbb{Z}, +)$ is the same group as the group $(\mathbb{Z}_n, +)$ of item (4) of the entry on groups of numbers. Namely, $\mathbb{Z}/n\mathbb{Z} = \mathbb{Z}_n$ as sets (item (8) of the entry on cosets), and for all integers $a$ and $b$ the sum $(a + n\mathbb{Z}) + (b + n\mathbb{Z})$ in the quotient group and the sum $[a] + [b]$ in the integers modulo $n$ are the same element $[a + b]$, so the two operations are equal as binary operations.
+   $$(a + N) + (b + N) = (a + b) + N, \qquad -(a + N) = (-a) + N, \qquad k \cdot (a + N) = (k \cdot a) + N,$$
+   and the identity is $0 + N = N$. In particular, if $n$ is a natural number, then the quotient group $\mathbb{Z}/n\mathbb{Z}$ of $(\mathbb{Z}, +)$ is the same group as the group $(\mathbb{Z}_n, +)$ of item (4) of the entry on groups of numbers. Namely, $\mathbb{Z}/n\mathbb{Z} = \mathbb{Z}_n$ as sets (item (8) of the entry on cosets), and for all integers $a$ and $b$ the sum $(a + n\mathbb{Z}) + (b + n\mathbb{Z})$ in the quotient group and the sum $[a] + [b]$ in the integers modulo $n$ are the same element $[a + b]$, so the two operations are equal as binary operations.
 
 Finally, the cases $N = G$ and $N = \{e\}$.
 

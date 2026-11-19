@@ -24,10 +24,10 @@ added: 2026-11-19
 
 1. (부분족의 합집합) $U \subseteq X$에 대하여, $U \in \mathcal{T}_{\mathcal{B}}$인 것은 정확히 $U = \bigcup \mathcal{C}$인 부분족 $\mathcal{C} \subseteq \mathcal{B}$가 있을 때이다. 이때 $\mathcal{C} = \{B \in \mathcal{B} : B \subseteq U\}$로 잡을 수 있다. $\mathcal{C} = \emptyset$이면 $\bigcup \mathcal{C} = \emptyset$이다.
 2. (집합 등식) 식으로 정한 집합족으로 읽은
-$$
-\Bigl\{\bigcup \mathcal{C} : \mathcal{C} \in \mathscr{P}(\mathcal{B})\Bigr\} = \Bigl\{U \in \mathscr{P}(X) : \text{어떤 } \mathcal{C} \in \mathscr{P}(\mathcal{B}) \text{에 대하여 } U = \bigcup \mathcal{C}\Bigr\}
-$$
-에 대하여 $\mathcal{T}_{\mathcal{B}} = \bigl\{\bigcup \mathcal{C} : \mathcal{C} \in \mathscr{P}(\mathcal{B})\bigr\}$이다. 곧 $\mathcal{T}_{\mathcal{B}}$는 $\mathcal{B}$의 부분족의 합집합 전체이다. (1)과 (2)는 $\mathcal{B}$가 위상의 기저가 아니어도 성립한다.
+   $$
+   \Bigl\{\bigcup \mathcal{C} : \mathcal{C} \in \mathscr{P}(\mathcal{B})\Bigr\} = \Bigl\{U \in \mathscr{P}(X) : \text{어떤 } \mathcal{C} \in \mathscr{P}(\mathcal{B}) \text{에 대하여 } U = \bigcup \mathcal{C}\Bigr\}
+   $$
+   에 대하여 $\mathcal{T}_{\mathcal{B}} = \bigl\{\bigcup \mathcal{C} : \mathcal{C} \in \mathscr{P}(\mathcal{B})\bigr\}$이다. 곧 $\mathcal{T}_{\mathcal{B}}$는 $\mathcal{B}$의 부분족의 합집합 전체이다. (1)과 (2)는 $\mathcal{B}$가 위상의 기저가 아니어도 성립한다.
 3. (가장 거친 위상) $\mathcal{T}$가 $X$ 위의 위상이고 $\mathcal{B} \subseteq \mathcal{T}$이면 $\mathcal{T}_{\mathcal{B}} \subseteq \mathcal{T}$이다. 따라서 $\mathcal{B}$가 위상의 기저이면 $\mathcal{T}_{\mathcal{B}}$는 $\mathcal{B}$를 포함하는 위상이고, $\mathcal{B}$를 포함하는 $X$ 위의 모든 위상보다 거칠다.
 4. (위상이 될 조건) $\mathcal{T}_{\mathcal{B}}$가 $X$ 위의 위상인 것은 정확히 $\mathcal{B}$가 $X$ 위의 위상의 기저일 때이다.
 :::
@@ -37,10 +37,10 @@ Topologies and their conditions (i)–(iii) are as in the entry on topological s
 
 1. (Unions of subfamilies) For $U \subseteq X$, we have $U \in \mathcal{T}_{\mathcal{B}}$ exactly when there is a subfamily $\mathcal{C} \subseteq \mathcal{B}$ with $U = \bigcup \mathcal{C}$. In that case one can take $\mathcal{C} = \{B \in \mathcal{B} : B \subseteq U\}$. If $\mathcal{C} = \emptyset$, then $\bigcup \mathcal{C} = \emptyset$.
 2. (As an equality of sets) Reading
-$$
-\Bigl\{\bigcup \mathcal{C} : \mathcal{C} \in \mathscr{P}(\mathcal{B})\Bigr\} = \Bigl\{U \in \mathscr{P}(X) : U = \bigcup \mathcal{C} \text{ for some } \mathcal{C} \in \mathscr{P}(\mathcal{B})\Bigr\}
-$$
-as a family given by an expression, we have $\mathcal{T}_{\mathcal{B}} = \bigl\{\bigcup \mathcal{C} : \mathcal{C} \in \mathscr{P}(\mathcal{B})\bigr\}$. That is, $\mathcal{T}_{\mathcal{B}}$ consists of all unions of subfamilies of $\mathcal{B}$. Items (1) and (2) hold even if $\mathcal{B}$ is not a basis for a topology.
+   $$
+   \Bigl\{\bigcup \mathcal{C} : \mathcal{C} \in \mathscr{P}(\mathcal{B})\Bigr\} = \Bigl\{U \in \mathscr{P}(X) : U = \bigcup \mathcal{C} \text{ for some } \mathcal{C} \in \mathscr{P}(\mathcal{B})\Bigr\}
+   $$
+   as a family given by an expression, we have $\mathcal{T}_{\mathcal{B}} = \bigl\{\bigcup \mathcal{C} : \mathcal{C} \in \mathscr{P}(\mathcal{B})\bigr\}$. That is, $\mathcal{T}_{\mathcal{B}}$ consists of all unions of subfamilies of $\mathcal{B}$. Items (1) and (2) hold even if $\mathcal{B}$ is not a basis for a topology.
 3. (The coarsest topology) If $\mathcal{T}$ is a topology on $X$ and $\mathcal{B} \subseteq \mathcal{T}$, then $\mathcal{T}_{\mathcal{B}} \subseteq \mathcal{T}$. Hence, if $\mathcal{B}$ is a basis for a topology, then $\mathcal{T}_{\mathcal{B}}$ is a topology containing $\mathcal{B}$ and is coarser than every topology on $X$ containing $\mathcal{B}$.
 4. (When it is a topology) $\mathcal{T}_{\mathcal{B}}$ is a topology on $X$ exactly when $\mathcal{B}$ is a basis for a topology on $X$.
 :::

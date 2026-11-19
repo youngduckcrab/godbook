@@ -25,10 +25,10 @@ added: 2026-11-17
 **등비급수.** $a$, $r$을 실수라 하자. 자연수 $n$에 대하여 $n - 1$은 $0$ 이상인 정수이므로 $r^{n-1}$이 정해지고($r^0 = 1$, 특히 $0^0 = 1$), [[sequence]]의 (1)에 의해 $n$번째 항이 $a r^{n-1}$인 수열이 있다. 이 수열의 첫째 항은 $a r^0 = a$이다. 이 수열의 급수를 첫째 항이 $a$이고 **공비**(common ratio)가 $r$인 **등비급수**(geometric series)라 한다. 그 부분합 수열을 $(s_n)$이라 하자.
 
 1. (부분합) $r \ne 1$이면 모든 자연수 $n$에서
-$$
-s_n = \frac{a(1 - r^n)}{1 - r}
-$$
-이다. $r = 1$이면 모든 자연수 $n$에서 $s_n = na$이다.
+   $$
+   s_n = \frac{a(1 - r^n)}{1 - r}
+   $$
+   이다. $r = 1$이면 모든 자연수 $n$에서 $s_n = na$이다.
 2. (수렴과 합) $|r| < 1$이면 등비급수는 수렴하고, 그 합은 $\dfrac{a}{1 - r}$이다.
 3. (등비급수의 꼬리) 자연수 $K$에 대하여, $n$번째 항이 $a r^{n-1}$인 수열의 $K$-꼬리는 $n$번째 항이 $(a r^K) r^{n-1}$인 수열이다. 곧 $K$-꼬리의 급수는 첫째 항이 $a r^K$이고 공비가 $r$인 등비급수이다. 따라서 $|r| < 1$이면 $K$-꼬리의 급수는 수렴하고, 그 합은 $\dfrac{a r^K}{1 - r}$이다.
 :::
@@ -39,10 +39,10 @@ Sequences, convergence and the symbol $\lim_{n \to \infty}$ are those of the ent
 **Geometric series.** Let $a$ and $r$ be real numbers. For each natural number $n$, the number $n - 1$ is an integer at least $0$, so $r^{n-1}$ is defined ($r^0 = 1$, in particular $0^0 = 1$), and by item (1) of the entry on sequences there is a sequence whose $n$th term is $a r^{n-1}$. The first term of this sequence is $a r^0 = a$. The series of this sequence is called the **geometric series** with first term $a$ and **common ratio** $r$. Let $(s_n)$ be its sequence of partial sums.
 
 1. (Partial sums) If $r \ne 1$, then for every natural number $n$
-$$
-s_n = \frac{a(1 - r^n)}{1 - r}.
-$$
-If $r = 1$, then $s_n = na$ for every natural number $n$.
+   $$
+   s_n = \frac{a(1 - r^n)}{1 - r}.
+   $$
+   If $r = 1$, then $s_n = na$ for every natural number $n$.
 2. (Convergence and sum) If $|r| < 1$, the geometric series converges, and its sum is $\dfrac{a}{1 - r}$.
 3. (Tails of a geometric series) For a natural number $K$, the $K$-tail of the sequence whose $n$th term is $a r^{n-1}$ is the sequence whose $n$th term is $(a r^K) r^{n-1}$. That is, the series of the $K$-tail is the geometric series with first term $a r^K$ and common ratio $r$. Hence if $|r| < 1$, the series of the $K$-tail converges, and its sum is $\dfrac{a r^K}{1 - r}$.
 :::

@@ -23,15 +23,15 @@ added: 2026-11-17
 수열과 유계는 [[sequence]]의 것이고, 수렴과 기호 $\lim$은 [[limit-of-sequence]]과 [[limit-is-unique]]의 것이며, 첨자열과 부분수열은 [[subsequence]]의 것이고, 상극한과 하극한은 [[limit-superior-and-inferior]]의 것이다. $(x_n)$을 수열이라 하자.
 
 1. (수렴과 상극한·하극한) $(x_n)$이 수렴하면 [[convergent-sequence-is-bounded|수렴하는 수열은 유계라는 정리]]의 (2)에 의해 유계이므로 상극한과 하극한이 있다. $(x_n)$이 유계일 때, $(x_n)$이 수렴하는 것은 정확히 $\liminf_{n \to \infty} x_n = \limsup_{n \to \infty} x_n$일 때이다. 이때
-$$
-\lim_{n \to \infty} x_n = \liminf_{n \to \infty} x_n = \limsup_{n \to \infty} x_n
-$$
-이다.
+   $$
+   \lim_{n \to \infty} x_n = \liminf_{n \to \infty} x_n = \limsup_{n \to \infty} x_n
+   $$
+   이다.
 2. (부분수열의 상극한·하극한) $(x_n)$이 유계이고 $(p_k)$가 첨자열이라 하자. 그러면 부분수열 $(x_{p_k})$는 유계이고
-$$
-\liminf_{n \to \infty} x_n \le \liminf_{k \to \infty} x_{p_k} \le \limsup_{k \to \infty} x_{p_k} \le \limsup_{n \to \infty} x_n
-$$
-이다. 특히 $(x_{p_k})$가 수렴하면 $\liminf_{n \to \infty} x_n \le \lim_{k \to \infty} x_{p_k} \le \limsup_{n \to \infty} x_n$이다.
+   $$
+   \liminf_{n \to \infty} x_n \le \liminf_{k \to \infty} x_{p_k} \le \limsup_{k \to \infty} x_{p_k} \le \limsup_{n \to \infty} x_n
+   $$
+   이다. 특히 $(x_{p_k})$가 수렴하면 $\liminf_{n \to \infty} x_n \le \lim_{k \to \infty} x_{p_k} \le \limsup_{n \to \infty} x_n$이다.
 3. (수렴하는 부분수열로 판정하기) $(x_n)$이 유계이고 $L$이 실수일 때, $(x_n)$이 $L$로 수렴하는 것은 정확히 $(x_n)$의 수렴하는 부분수열이 모두 $L$로 수렴할 때이다.
 :::
 
@@ -39,14 +39,14 @@ $$
 Sequences and boundedness are those of the entry on sequences, convergence and the symbol $\lim$ are those of the entries on the limit of a sequence and on uniqueness of limits, index sequences and subsequences are those of the entry on subsequences, and the limit superior and limit inferior are those of the entry on them. Let $(x_n)$ be a sequence.
 
 1. (Convergence and the limit superior and inferior) If $(x_n)$ converges, then it is bounded by item (2) of the entry stating that convergent sequences are bounded, so it has a limit superior and a limit inferior. When $(x_n)$ is bounded, $(x_n)$ converges exactly when $\liminf_{n \to \infty} x_n = \limsup_{n \to \infty} x_n$. In that case
-$$
-\lim_{n \to \infty} x_n = \liminf_{n \to \infty} x_n = \limsup_{n \to \infty} x_n.
-$$
+   $$
+   \lim_{n \to \infty} x_n = \liminf_{n \to \infty} x_n = \limsup_{n \to \infty} x_n.
+   $$
 2. (Limit superior and inferior of a subsequence) Let $(x_n)$ be bounded and $(p_k)$ an index sequence. Then the subsequence $(x_{p_k})$ is bounded and
-$$
-\liminf_{n \to \infty} x_n \le \liminf_{k \to \infty} x_{p_k} \le \limsup_{k \to \infty} x_{p_k} \le \limsup_{n \to \infty} x_n.
-$$
-In particular, if $(x_{p_k})$ converges, then $\liminf_{n \to \infty} x_n \le \lim_{k \to \infty} x_{p_k} \le \limsup_{n \to \infty} x_n$.
+   $$
+   \liminf_{n \to \infty} x_n \le \liminf_{k \to \infty} x_{p_k} \le \limsup_{k \to \infty} x_{p_k} \le \limsup_{n \to \infty} x_n.
+   $$
+   In particular, if $(x_{p_k})$ converges, then $\liminf_{n \to \infty} x_n \le \lim_{k \to \infty} x_{p_k} \le \limsup_{n \to \infty} x_n$.
 3. (A test by convergent subsequences) When $(x_n)$ is bounded and $L$ is a real number, $(x_n)$ converges to $L$ exactly when every convergent subsequence of $(x_n)$ converges to $L$.
 :::
 

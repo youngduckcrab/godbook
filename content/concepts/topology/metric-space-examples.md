@@ -30,24 +30,24 @@ added: 2026-11-19
 2. (이산 거리) $X$가 집합이고 $X$의 점 $x$, $y$에 대하여 $x = y$이면 $d(x, y) = 0$, $x \ne y$이면 $d(x, y) = 1$로 정하면 $(X, d)$는 거리공간이다. 이 거리를 $X$ 위의 **이산 거리**(discrete metric)라 한다.
 3. (부분공간 거리) $(X, d)$가 거리공간이고 $Y \subseteq X$이면 $Y \times Y \subseteq X \times X$이고, $d$를 $Y \times Y$로 제한한 함수 $d_Y = d|_{Y \times Y} : Y \times Y \to \mathbb{R}$([[adding-or-removing-an-element]]의 함수의 제한)에 대하여 $(Y, d_Y)$는 거리공간이다. $Y$의 점 $y$, $y'$에서 $d_Y(y, y') = d(y, y')$이다. $d_Y$를 $Y$ 위의 **부분공간 거리**(subspace metric)라 한다. $\mathbb{R}$의 부분집합을 거리를 밝히지 않고 거리공간이라 하면 보통 거리의 부분공간 거리를 준 것이다.
 4. (곱집합 위의 최대 거리와 합 거리) $(X_1, d_1)$, $(X_2, d_2)$가 거리공간이라 하자. 곱집합 $X_1 \times X_2$의 점 $p = (p_1, p_2)$, $q = (q_1, q_2)$에 대하여
-$$
-d_{\max}(p, q) = \max\{d_1(p_1, q_1),\ d_2(p_2, q_2)\}, \qquad d_{\mathrm{sum}}(p, q) = d_1(p_1, q_1) + d_2(p_2, q_2)
-$$
-로 정하면 $(X_1 \times X_2, d_{\max})$와 $(X_1 \times X_2, d_{\mathrm{sum}})$은 거리공간이다. $d_{\max}$를 **최대 거리**(max metric), $d_{\mathrm{sum}}$을 **합 거리**(sum metric)라 한다.
+   $$
+   d_{\max}(p, q) = \max\{d_1(p_1, q_1),\ d_2(p_2, q_2)\}, \qquad d_{\mathrm{sum}}(p, q) = d_1(p_1, q_1) + d_2(p_2, q_2)
+   $$
+   로 정하면 $(X_1 \times X_2, d_{\max})$와 $(X_1 \times X_2, d_{\mathrm{sum}})$은 거리공간이다. $d_{\max}$를 **최대 거리**(max metric), $d_{\mathrm{sum}}$을 **합 거리**(sum metric)라 한다.
 5. (곱집합 $\mathbb{R} \times \mathbb{R}$ 위의 세 거리) 곱집합 $\mathbb{R} \times \mathbb{R}$의 점 $p = (p_1, p_2)$, $q = (q_1, q_2)$에 대하여 (4)를 두 보통 거리에 쓰면
-$$
-d_{\max}(p, q) = \max\{|p_1 - q_1|,\ |p_2 - q_2|\}, \qquad d_{\mathrm{sum}}(p, q) = |p_1 - q_1| + |p_2 - q_2|
-$$
-는 $\mathbb{R} \times \mathbb{R}$ 위의 거리이다. $d_{\mathrm{sum}}$을 **택시 거리**(taxicab metric)라고도 한다. 또
-$$
-d_E(p, q) = \sqrt{(p_1 - q_1)^2 + (p_2 - q_2)^2}
-$$
-로 정하면 $(\mathbb{R} \times \mathbb{R}, d_E)$도 거리공간이다. $d_E$를 **유클리드 거리**(euclidean metric)라 한다. 세 거리 가운데 어느 것을 주었는지는 늘 밝힌다.
+   $$
+   d_{\max}(p, q) = \max\{|p_1 - q_1|,\ |p_2 - q_2|\}, \qquad d_{\mathrm{sum}}(p, q) = |p_1 - q_1| + |p_2 - q_2|
+   $$
+   는 $\mathbb{R} \times \mathbb{R}$ 위의 거리이다. $d_{\mathrm{sum}}$을 **택시 거리**(taxicab metric)라고도 한다. 또
+   $$
+   d_E(p, q) = \sqrt{(p_1 - q_1)^2 + (p_2 - q_2)^2}
+   $$
+   로 정하면 $(\mathbb{R} \times \mathbb{R}, d_E)$도 거리공간이다. $d_E$를 **유클리드 거리**(euclidean metric)라 한다. 세 거리 가운데 어느 것을 주었는지는 늘 밝힌다.
 6. (두 항의 코시–슈바르츠 부등식) 실수 $a_1$, $a_2$, $b_1$, $b_2$에 대하여
-$$
-a_1 b_1 + a_2 b_2 \le |a_1 b_1 + a_2 b_2| \le \sqrt{a_1^2 + a_2^2}\,\sqrt{b_1^2 + b_2^2}
-$$
-이다.
+   $$
+   a_1 b_1 + a_2 b_2 \le |a_1 b_1 + a_2 b_2| \le \sqrt{a_1^2 + a_2^2}\,\sqrt{b_1^2 + b_2^2}
+   $$
+   이다.
 7. (세 거리의 비교) $\mathbb{R} \times \mathbb{R}$의 모든 점 $p$, $q$에서 $d_{\max}(p, q) \le d_E(p, q) \le d_{\mathrm{sum}}(p, q) \le 2\, d_{\max}(p, q)$이다.
 :::
 
@@ -58,23 +58,23 @@ Metric spaces are as in the entry on metric spaces. The absolute value and the m
 2. (Discrete metric) If $X$ is a set and for points $x$, $y$ of $X$ we put $d(x, y) = 0$ if $x = y$ and $d(x, y) = 1$ if $x \ne y$, then $(X, d)$ is a metric space. This metric is called the **discrete metric** on $X$.
 3. (Subspace metric) If $(X, d)$ is a metric space and $Y \subseteq X$, then $Y \times Y \subseteq X \times X$, and for the restriction $d_Y = d|_{Y \times Y} : Y \times Y \to \mathbb{R}$ of $d$ to $Y \times Y$, the pair $(Y, d_Y)$ is a metric space. For points $y$, $y'$ of $Y$ we have $d_Y(y, y') = d(y, y')$. The metric $d_Y$ is called the **subspace metric** on $Y$. When a subset of $\mathbb{R}$ is called a metric space without mention of a metric, it carries the subspace metric of the standard metric.
 4. (Max metric and sum metric on a product) Let $(X_1, d_1)$ and $(X_2, d_2)$ be metric spaces. For points $p = (p_1, p_2)$ and $q = (q_1, q_2)$ of the Cartesian product $X_1 \times X_2$, put
-$$
-d_{\max}(p, q) = \max\{d_1(p_1, q_1),\ d_2(p_2, q_2)\}, \qquad d_{\mathrm{sum}}(p, q) = d_1(p_1, q_1) + d_2(p_2, q_2).
-$$
-Then $(X_1 \times X_2, d_{\max})$ and $(X_1 \times X_2, d_{\mathrm{sum}})$ are metric spaces. The metric $d_{\max}$ is called the **max metric** and $d_{\mathrm{sum}}$ the **sum metric**.
+   $$
+   d_{\max}(p, q) = \max\{d_1(p_1, q_1),\ d_2(p_2, q_2)\}, \qquad d_{\mathrm{sum}}(p, q) = d_1(p_1, q_1) + d_2(p_2, q_2).
+   $$
+   Then $(X_1 \times X_2, d_{\max})$ and $(X_1 \times X_2, d_{\mathrm{sum}})$ are metric spaces. The metric $d_{\max}$ is called the **max metric** and $d_{\mathrm{sum}}$ the **sum metric**.
 5. (Three metrics on $\mathbb{R} \times \mathbb{R}$) For points $p = (p_1, p_2)$ and $q = (q_1, q_2)$ of $\mathbb{R} \times \mathbb{R}$, applying (4) to two copies of the standard metric shows that
-$$
-d_{\max}(p, q) = \max\{|p_1 - q_1|,\ |p_2 - q_2|\}, \qquad d_{\mathrm{sum}}(p, q) = |p_1 - q_1| + |p_2 - q_2|
-$$
-are metrics on $\mathbb{R} \times \mathbb{R}$. The metric $d_{\mathrm{sum}}$ is also called the **taxicab metric**. Moreover, with
-$$
-d_E(p, q) = \sqrt{(p_1 - q_1)^2 + (p_2 - q_2)^2},
-$$
-$(\mathbb{R} \times \mathbb{R}, d_E)$ is a metric space as well. The metric $d_E$ is called the **euclidean metric**. We always say which of the three metrics is meant.
+   $$
+   d_{\max}(p, q) = \max\{|p_1 - q_1|,\ |p_2 - q_2|\}, \qquad d_{\mathrm{sum}}(p, q) = |p_1 - q_1| + |p_2 - q_2|
+   $$
+   are metrics on $\mathbb{R} \times \mathbb{R}$. The metric $d_{\mathrm{sum}}$ is also called the **taxicab metric**. Moreover, with
+   $$
+   d_E(p, q) = \sqrt{(p_1 - q_1)^2 + (p_2 - q_2)^2},
+   $$
+   $(\mathbb{R} \times \mathbb{R}, d_E)$ is a metric space as well. The metric $d_E$ is called the **euclidean metric**. We always say which of the three metrics is meant.
 6. (Cauchy–Schwarz inequality for two terms) For real numbers $a_1$, $a_2$, $b_1$, $b_2$,
-$$
-a_1 b_1 + a_2 b_2 \le |a_1 b_1 + a_2 b_2| \le \sqrt{a_1^2 + a_2^2}\,\sqrt{b_1^2 + b_2^2}.
-$$
+   $$
+   a_1 b_1 + a_2 b_2 \le |a_1 b_1 + a_2 b_2| \le \sqrt{a_1^2 + a_2^2}\,\sqrt{b_1^2 + b_2^2}.
+   $$
 7. (Comparing the three metrics) For all points $p$, $q$ of $\mathbb{R} \times \mathbb{R}$, $d_{\max}(p, q) \le d_E(p, q) \le d_{\mathrm{sum}}(p, q) \le 2\, d_{\max}(p, q)$.
 :::
 

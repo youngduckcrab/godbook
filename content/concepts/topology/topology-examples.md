@@ -30,17 +30,17 @@ added: 2026-11-19
 2. (밀착위상) $\{\emptyset, X\}$는 $X$ 위의 위상이다. 이것을 $X$ 위의 **밀착위상**(indiscrete topology, trivial topology)이라 한다.
 3. (두 위상이 같아지는 경우) $X = \emptyset$이거나 어떤 대상 $p$에 대하여 $X = \{p\}$이면 이산위상과 밀착위상은 같은 집합족이다. $X$에 서로 다른 두 점 $a$, $b$가 있으면 $\{a\}$는 이산위상의 원소이고 밀착위상의 원소가 아니므로 두 위상은 다르다.
 4. (거리위상) $(X, d)$가 거리공간이면
-$$
-\mathcal{T}_d = \{U \in \mathscr{P}(X) : U \text{는 } (X, d) \text{에서 열린집합}\}
-$$
-는 $X$ 위의 위상이다. 이것을 $d$의 **거리위상**(metric topology)이라 한다. $U \subseteq X$에 대하여 $U \in \mathcal{T}_d$인 것은 정확히 $U$가 $(X, d)$에서 열린집합일 때이므로, "$(X, d)$에서 열린"과 "$(X, \mathcal{T}_d)$에서 열린"은 같은 말이다. 특히 모든 열린 공 $B(x, r)$은 $\mathcal{T}_d$의 원소이다. 거리공간을 위상공간으로 볼 때 위상을 따로 밝히지 않으면 거리위상을 준 것이다.
+   $$
+   \mathcal{T}_d = \{U \in \mathscr{P}(X) : U \text{는 } (X, d) \text{에서 열린집합}\}
+   $$
+   는 $X$ 위의 위상이다. 이것을 $d$의 **거리위상**(metric topology)이라 한다. $U \subseteq X$에 대하여 $U \in \mathcal{T}_d$인 것은 정확히 $U$가 $(X, d)$에서 열린집합일 때이므로, "$(X, d)$에서 열린"과 "$(X, \mathcal{T}_d)$에서 열린"은 같은 말이다. 특히 모든 열린 공 $B(x, r)$은 $\mathcal{T}_d$의 원소이다. 거리공간을 위상공간으로 볼 때 위상을 따로 밝히지 않으면 거리위상을 준 것이다.
 5. (이산 거리의 거리위상) $d$가 $X$ 위의 이산 거리이면 $\mathcal{T}_d$는 이산위상 $\mathscr{P}(X)$이다.
 6. (밀착위상과 거리위상) $X$에 서로 다른 두 점 $a$, $b$가 있으면, $X$ 위의 어떤 거리 $d$에 대해서도 $\mathcal{T}_d$는 밀착위상이 아니다. $X$에 서로 다른 두 점이 없으면(곧 (3)의 앞 문장의 경우) 밀착위상은 $X$ 위의 이산 거리의 거리위상이다.
 7. (원소 둘인 집합 위의 위상) $a \ne b$이고 $X = \{a, b\}$이면 $X$ 위의 위상은 정확히 다음 넷이다.
-$$
-\{\emptyset, X\}, \qquad \{\emptyset, \{a\}, X\}, \qquad \{\emptyset, \{b\}, X\}, \qquad \mathscr{P}(X) = \{\emptyset, \{a\}, \{b\}, X\}.
-$$
-따라서 예컨대 $\{\{a\}, X\}$와 $\{\emptyset, \{a\}\}$는 $X$ 위의 위상이 아니다.
+   $$
+   \{\emptyset, X\}, \qquad \{\emptyset, \{a\}, X\}, \qquad \{\emptyset, \{b\}, X\}, \qquad \mathscr{P}(X) = \{\emptyset, \{a\}, \{b\}, X\}.
+   $$
+   따라서 예컨대 $\{\{a\}, X\}$와 $\{\emptyset, \{a\}\}$는 $X$ 위의 위상이 아니다.
 8. (세 점 위의 위상) $X = \{1, 2, 3\}$이면 다음 둘은 $X$ 위의 위상이다.
    - (i) $\{\emptyset, \{1\}, \{1, 2\}, X\}$
    - (ii) $\{\emptyset, \{2\}, \{1, 2\}, \{2, 3\}, X\}$
@@ -54,17 +54,17 @@ Topologies and topological spaces are as in the entry on topological spaces, and
 2. (The indiscrete topology) $\{\emptyset, X\}$ is a topology on $X$, called the **indiscrete topology** (or trivial topology) on $X$.
 3. (When the two coincide) If $X = \emptyset$, or $X = \{p\}$ for some object $p$, then the discrete and the indiscrete topology are the same family. If $X$ has two distinct points $a$ and $b$, then $\{a\}$ belongs to the discrete topology but not to the indiscrete topology, so the two topologies are different.
 4. (The metric topology) If $(X, d)$ is a metric space, then
-$$
-\mathcal{T}_d = \{U \in \mathscr{P}(X) : U \text{ is open in } (X, d)\}
-$$
-is a topology on $X$, called the **metric topology** of $d$. For $U \subseteq X$ we have $U \in \mathcal{T}_d$ exactly when $U$ is open in $(X, d)$, so "open in $(X, d)$" and "open in $(X, \mathcal{T}_d)$" mean the same thing. In particular every open ball $B(x, r)$ belongs to $\mathcal{T}_d$. When a metric space is regarded as a topological space and no topology is named, it carries the metric topology.
+   $$
+   \mathcal{T}_d = \{U \in \mathscr{P}(X) : U \text{ is open in } (X, d)\}
+   $$
+   is a topology on $X$, called the **metric topology** of $d$. For $U \subseteq X$ we have $U \in \mathcal{T}_d$ exactly when $U$ is open in $(X, d)$, so "open in $(X, d)$" and "open in $(X, \mathcal{T}_d)$" mean the same thing. In particular every open ball $B(x, r)$ belongs to $\mathcal{T}_d$. When a metric space is regarded as a topological space and no topology is named, it carries the metric topology.
 5. (The metric topology of the discrete metric) If $d$ is the discrete metric on $X$, then $\mathcal{T}_d$ is the discrete topology $\mathscr{P}(X)$.
 6. (The indiscrete topology and metric topologies) If $X$ has two distinct points $a$ and $b$, then for no metric $d$ on $X$ is $\mathcal{T}_d$ the indiscrete topology. If $X$ does not have two distinct points (that is, in the case of the first sentence of (3)), then the indiscrete topology is the metric topology of the discrete metric on $X$.
 7. (Topologies on a two-element set) If $a \ne b$ and $X = \{a, b\}$, then the topologies on $X$ are exactly the following four.
-$$
-\{\emptyset, X\}, \qquad \{\emptyset, \{a\}, X\}, \qquad \{\emptyset, \{b\}, X\}, \qquad \mathscr{P}(X) = \{\emptyset, \{a\}, \{b\}, X\}.
-$$
-Hence, for example, $\{\{a\}, X\}$ and $\{\emptyset, \{a\}\}$ are not topologies on $X$.
+   $$
+   \{\emptyset, X\}, \qquad \{\emptyset, \{a\}, X\}, \qquad \{\emptyset, \{b\}, X\}, \qquad \mathscr{P}(X) = \{\emptyset, \{a\}, \{b\}, X\}.
+   $$
+   Hence, for example, $\{\{a\}, X\}$ and $\{\emptyset, \{a\}\}$ are not topologies on $X$.
 8. (Topologies on three points) If $X = \{1, 2, 3\}$, then the following two are topologies on $X$.
    - (i) $\{\emptyset, \{1\}, \{1, 2\}, X\}$
    - (ii) $\{\emptyset, \{2\}, \{1, 2\}, \{2, 3\}, X\}$

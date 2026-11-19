@@ -8,8 +8,6 @@ track: 해석
 requires: [language-of-math, analysis-intro]
 status: in-progress
 planned_units:
-  - 부분공간과 두 공간의 곱
-  - 하우스도르프 공간과 수열
   - 연결성
   - 콤팩트성
 ---

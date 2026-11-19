@@ -23,11 +23,11 @@ added: 2026-11-16
 $n$이 자연수이고 $a_1, \dots, a_n$이 정수의 열일 때, 전단사 $\sigma : \{1, \dots, n\} \to \{1, \dots, n\}$에 대하여 열 $a_{\sigma(1)}, a_{\sigma(2)}, \dots, a_{\sigma(n)}$을 $a$와 $\sigma$의 [[function-composition|합성]] $a \circ \sigma$로 정한 길이 $n$인 열이라 한다. [[finite-product|유한 곱]]에 대해 다음이 성립한다.
 
 1. (보조: $k$번째 인수를 맨 뒤로) $n \ge 1$이고 $b_1, \dots, b_{n+1}$이 길이 $n + 1$인 정수의 열이며 $k \in \{1, \dots, n+1\}$이라 하자. 길이 $n$인 열 $c_1, \dots, c_n$을 $c_i = b_i$ ($i < k$), $c_i = b_{i+1}$ ($k \le i \le n$)로 정하면
-$$b_1 b_2 \cdots b_{n+1} = (c_1 c_2 \cdots c_n) \cdot b_k$$
-이다.
+   $$b_1 b_2 \cdots b_{n+1} = (c_1 c_2 \cdots c_n) \cdot b_k$$
+   이다.
 2. (재배열) $\sigma$가 $\{1, \dots, n\}$에서 $\{1, \dots, n\}$으로의 전단사이면
-$$a_{\sigma(1)} a_{\sigma(2)} \cdots a_{\sigma(n)} = a_1 a_2 \cdots a_n$$
-이다.
+   $$a_{\sigma(1)} a_{\sigma(2)} \cdots a_{\sigma(n)} = a_1 a_2 \cdots a_n$$
+   이다.
 
 정수의 곱셈의 교환법칙과 결합법칙은 [[well-ordering-principle]]의 진술에서 받아들인 계산 법칙으로 쓰고, 정수와 부등식에 관한 성질은 [[prime-number]]의 (Z1)과 [[well-ordering-principle]]의 (Z5)–(Z8), (L1)–(L3)을 인용한다. 증명에서는 [[finite-set]]의 (F1)을 쓴다.
 :::
@@ -36,9 +36,9 @@ $$a_{\sigma(1)} a_{\sigma(2)} \cdots a_{\sigma(n)} = a_1 a_2 \cdots a_n$$
 Let $n$ be a natural number and $a_1, \dots, a_n$ a sequence of integers. For a bijection $\sigma : \{1, \dots, n\} \to \{1, \dots, n\}$, the sequence $a_{\sigma(1)}, a_{\sigma(2)}, \dots, a_{\sigma(n)}$ means the sequence of length $n$ given by the composition $a \circ \sigma$. For finite products the following hold.
 
 1. (Auxiliary: moving the $k$-th factor to the end) Let $n \ge 1$, let $b_1, \dots, b_{n+1}$ be a sequence of integers of length $n + 1$, and let $k \in \{1, \dots, n+1\}$. Define the sequence $c_1, \dots, c_n$ of length $n$ by $c_i = b_i$ for $i < k$ and $c_i = b_{i+1}$ for $k \le i \le n$. Then
-$$b_1 b_2 \cdots b_{n+1} = (c_1 c_2 \cdots c_n) \cdot b_k.$$
+   $$b_1 b_2 \cdots b_{n+1} = (c_1 c_2 \cdots c_n) \cdot b_k.$$
 2. (Rearrangement) If $\sigma$ is a bijection from $\{1, \dots, n\}$ to $\{1, \dots, n\}$, then
-$$a_{\sigma(1)} a_{\sigma(2)} \cdots a_{\sigma(n)} = a_1 a_2 \cdots a_n.$$
+   $$a_{\sigma(1)} a_{\sigma(2)} \cdots a_{\sigma(n)} = a_1 a_2 \cdots a_n.$$
 
 The commutative and associative laws of integer multiplication are the computational laws accepted in the entry on the well-ordering principle. For integers and inequalities we cite (Z1) of the entry on prime numbers and (Z5)–(Z8), (L1)–(L3) of the entry on the well-ordering principle. In the proof we use (F1) of the entry on finite sets.
 :::

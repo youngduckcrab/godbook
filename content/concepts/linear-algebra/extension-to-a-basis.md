@@ -23,8 +23,8 @@ added: 2026-11-16
 $V$가 [[vector-space|벡터공간]]이라 하자. $r \ge 0$, $s \ge 0$이 정수이고 $v_1, \dots, v_r$과 $x_1, \dots, x_s$가 $V$의 벡터의 열일 때, [[finite-sum-of-vectors|(H2)]]에서처럼 두 열을 차례로 늘어놓은 길이 $r + s$인 열 $c$, 곧 $c_i = v_i$ ($1 \le i \le r$), $c_{r+j} = x_j$ ($1 \le j \le s$)인 열을 $v$와 $x$를 **이어 붙인 열**(concatenation)이라 하고 $v_1, \dots, v_r, x_1, \dots, x_s$로 쓴다. 실수의 열도 같은 방식으로 이어 붙인다.
 
 1. (이어 붙인 열의 일차결합) $\alpha_1, \dots, \alpha_r$과 $\beta_1, \dots, \beta_s$가 실수의 열이고 $\gamma$가 이 둘을 이어 붙인 길이 $r + s$인 실수의 열이면
-$$\gamma_1 c_1 + \cdots + \gamma_{r+s} c_{r+s} = (\alpha_1 v_1 + \cdots + \alpha_r v_r) + (\beta_1 x_1 + \cdots + \beta_s x_s)$$
-이다. 거꾸로 길이 $r + s$인 임의의 실수의 열 $\gamma$는 $\alpha_i = \gamma_i$ ($1 \le i \le r$), $\beta_j = \gamma_{r+j}$ ($1 \le j \le s$)로 정한 두 열 $\alpha$, $\beta$를 이어 붙인 열이므로 같은 등식이 성립한다.
+   $$\gamma_1 c_1 + \cdots + \gamma_{r+s} c_{r+s} = (\alpha_1 v_1 + \cdots + \alpha_r v_r) + (\beta_1 x_1 + \cdots + \beta_s x_s)$$
+   이다. 거꾸로 길이 $r + s$인 임의의 실수의 열 $\gamma$는 $\alpha_i = \gamma_i$ ($1 \le i \le r$), $\beta_j = \gamma_{r+j}$ ($1 \le j \le s$)로 정한 두 열 $\alpha$, $\beta$를 이어 붙인 열이므로 같은 등식이 성립한다.
 2. (기저로 늘리기) $V$가 [[dimension|유한차원]]이고 $\dim V = d$이며 $v_1, \dots, v_r$이 [[linear-independence|일차독립]]인 열이라 하자. 그러면 $r \le d$이고, 길이 $d - r$인 $V$의 벡터의 열 $x_1, \dots, x_{d-r}$이 있어 $v$와 $x$를 이어 붙인 길이 $d$인 열 $v_1, \dots, v_r, x_1, \dots, x_{d-r}$이 $V$의 [[basis|기저]]이다. ($r = d$이면 $x$는 빈 열이고 $v$ 자신이 기저이다.)
 :::
 
@@ -32,8 +32,8 @@ $$\gamma_1 c_1 + \cdots + \gamma_{r+s} c_{r+s} = (\alpha_1 v_1 + \cdots + \alpha
 Let $V$ be a vector space. For integers $r \ge 0$, $s \ge 0$ and sequences of vectors $v_1, \dots, v_r$ and $x_1, \dots, x_s$ of $V$, the sequence $c$ of length $r + s$ obtained by listing the two in order as in (H2), that is, $c_i = v_i$ ($1 \le i \le r$) and $c_{r+j} = x_j$ ($1 \le j \le s$), is called the **concatenation** of $v$ and $x$ and is written $v_1, \dots, v_r, x_1, \dots, x_s$. Sequences of real numbers are concatenated in the same way.
 
 1. (Linear combinations of a concatenation) If $\alpha_1, \dots, \alpha_r$ and $\beta_1, \dots, \beta_s$ are sequences of real numbers and $\gamma$ is their concatenation, of length $r + s$, then
-$$\gamma_1 c_1 + \cdots + \gamma_{r+s} c_{r+s} = (\alpha_1 v_1 + \cdots + \alpha_r v_r) + (\beta_1 x_1 + \cdots + \beta_s x_s).$$
-Conversely, every sequence of real numbers $\gamma$ of length $r + s$ is the concatenation of the two sequences $\alpha$, $\beta$ defined by $\alpha_i = \gamma_i$ ($1 \le i \le r$) and $\beta_j = \gamma_{r+j}$ ($1 \le j \le s$), so the same identity holds.
+   $$\gamma_1 c_1 + \cdots + \gamma_{r+s} c_{r+s} = (\alpha_1 v_1 + \cdots + \alpha_r v_r) + (\beta_1 x_1 + \cdots + \beta_s x_s).$$
+   Conversely, every sequence of real numbers $\gamma$ of length $r + s$ is the concatenation of the two sequences $\alpha$, $\beta$ defined by $\alpha_i = \gamma_i$ ($1 \le i \le r$) and $\beta_j = \gamma_{r+j}$ ($1 \le j \le s$), so the same identity holds.
 2. (Extension to a basis) Suppose $V$ is finite-dimensional with $\dim V = d$, and $v_1, \dots, v_r$ is a linearly independent sequence. Then $r \le d$, and there is a sequence of vectors $x_1, \dots, x_{d-r}$ of $V$ of length $d - r$ such that the concatenation $v_1, \dots, v_r, x_1, \dots, x_{d-r}$ of $v$ and $x$, of length $d$, is a basis of $V$. (If $r = d$, then $x$ is the empty sequence and $v$ itself is a basis.)
 :::
 

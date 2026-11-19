@@ -30,10 +30,10 @@ $$
 다음이 성립한다.
 
 1. (코시 수열이 아니라는 것) $(x_n)$이 코시 수열이 아닌 것은 정확히
-$$
-\exists \varepsilon \in \mathbb{R},\ \Bigl(\varepsilon > 0 \land \bigl(\forall M \in \mathbb{N},\ \exists n \in \mathbb{N},\ \exists k \in \mathbb{N},\ (n \ge M \land k \ge M \land |x_n - x_k| \ge \varepsilon)\bigr)\Bigr)
-$$
-가 참일 때이다. 곧 어떤 양의 실수 $\varepsilon$이 있어, 모든 자연수 $M$에 대하여 $n \ge M$, $k \ge M$이고 $|x_n - x_k| \ge \varepsilon$인 자연수 $n$, $k$가 있을 때이다.
+   $$
+   \exists \varepsilon \in \mathbb{R},\ \Bigl(\varepsilon > 0 \land \bigl(\forall M \in \mathbb{N},\ \exists n \in \mathbb{N},\ \exists k \in \mathbb{N},\ (n \ge M \land k \ge M \land |x_n - x_k| \ge \varepsilon)\bigr)\Bigr)
+   $$
+   가 참일 때이다. 곧 어떤 양의 실수 $\varepsilon$이 있어, 모든 자연수 $M$에 대하여 $n \ge M$, $k \ge M$이고 $|x_n - x_k| \ge \varepsilon$인 자연수 $n$, $k$가 있을 때이다.
 2. (코시 수열은 유계이다) $(x_n)$이 코시 수열이면 $(x_n)$은 유계이다. 더 자세히, $M$이 "$n \ge M$이고 $k \ge M$이면 $|x_n - x_k| < 1$"을 만족하는 자연수이고 $B_M$이 [[convergent-sequence-is-bounded|수렴하는 수열은 유계라는 정리]]의 (1)에서 $k = M$으로 얻은 실수이면, 모든 자연수 $n$에서 $|x_n| \le \max\{B_M, 1 + |x_M|\}$이다.
 3. (수렴하는 수열은 코시 수열이다) $(x_n)$이 수렴하면 $(x_n)$은 코시 수열이다.
 :::
@@ -50,10 +50,10 @@ is true. Unlike the limit of a sequence, this definition involves no candidate f
 The following hold.
 
 1. (Not being a Cauchy sequence) $(x_n)$ is not a Cauchy sequence exactly when
-$$
-\exists \varepsilon \in \mathbb{R},\ \Bigl(\varepsilon > 0 \land \bigl(\forall M \in \mathbb{N},\ \exists n \in \mathbb{N},\ \exists k \in \mathbb{N},\ (n \ge M \land k \ge M \land |x_n - x_k| \ge \varepsilon)\bigr)\Bigr)
-$$
-is true. That is, when there is a positive real number $\varepsilon$ such that for every natural number $M$ there are natural numbers $n$, $k$ with $n \ge M$, $k \ge M$ and $|x_n - x_k| \ge \varepsilon$.
+   $$
+   \exists \varepsilon \in \mathbb{R},\ \Bigl(\varepsilon > 0 \land \bigl(\forall M \in \mathbb{N},\ \exists n \in \mathbb{N},\ \exists k \in \mathbb{N},\ (n \ge M \land k \ge M \land |x_n - x_k| \ge \varepsilon)\bigr)\Bigr)
+   $$
+   is true. That is, when there is a positive real number $\varepsilon$ such that for every natural number $M$ there are natural numbers $n$, $k$ with $n \ge M$, $k \ge M$ and $|x_n - x_k| \ge \varepsilon$.
 2. (Cauchy sequences are bounded) If $(x_n)$ is a Cauchy sequence, then $(x_n)$ is bounded. More precisely, if $M$ is a natural number such that $|x_n - x_k| < 1$ whenever $n \ge M$ and $k \ge M$, and $B_M$ is the real number obtained from item (1) of the entry stating that convergent sequences are bounded with $k = M$, then $|x_n| \le \max\{B_M, 1 + |x_M|\}$ for every natural number $n$.
 3. (Convergent sequences are Cauchy sequences) If $(x_n)$ converges, then $(x_n)$ is a Cauchy sequence.
 :::

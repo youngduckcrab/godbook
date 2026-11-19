@@ -27,18 +27,18 @@ added: 2026-11-19
 거리공간과 그 예(보통 거리, 이산 거리, $d_{\max}$, $d_{\mathrm{sum}}$, $d_E$)는 [[metric-space]], [[metric-space-examples]]의 것이고, 열린 공은 [[open-ball]]의 것이다. 거리위상 $\mathcal{T}_d$는 [[topology-examples]]의 것이고, 위상의 기저와 $\mathcal{T}_{\mathcal{B}}$, "위상 $\mathcal{T}$의 기저"는 [[basis-for-a-topology]], [[basis-of-a-given-topology]]의 것이다. 열린구간 $(a, b)$는 [[interval]]의 것이다($a < b$일 때만 쓴다). 아래에서 $P = \{r \in \mathbb{R} : 0 < r\}$이다.
 
 1. (열린 공 전체는 거리위상의 기저이다) $(X, d)$가 거리공간이면 열린 공 전체의 집합족
-$$
-\mathcal{B}_d = \{B_d(x, r) : (x, r) \in X \times P\}
-$$
-(식으로 정한 집합족)은 위상의 기저이고 거리위상 $\mathcal{T}_d$의 기저이다. 곧 $\mathcal{T}_{\mathcal{B}_d} = \mathcal{T}_d$이다.
+   $$
+   \mathcal{B}_d = \{B_d(x, r) : (x, r) \in X \times P\}
+   $$
+   (식으로 정한 집합족)은 위상의 기저이고 거리위상 $\mathcal{T}_d$의 기저이다. 곧 $\mathcal{T}_{\mathcal{B}_d} = \mathcal{T}_d$이다.
 2. (거리의 비교) $d$, $d'$이 집합 $X$ 위의 거리이고 실수 $c > 0$이 $X$의 모든 점 $x$, $y$에서 $d(x, y) \le c\, d'(x, y)$를 만족하면 $\mathcal{T}_d \subseteq \mathcal{T}_{d'}$이다. 따라서 양수 $c$, $c'$이 모든 $x$, $y$에서 $d(x, y) \le c\, d'(x, y)$와 $d'(x, y) \le c'\, d(x, y)$를 만족하면 $\mathcal{T}_d = \mathcal{T}_{d'}$이다.
 3. (양수배) $d$가 집합 $X$ 위의 거리이고 $c > 0$이면, $X$의 점 $x$, $y$에서 값이 $c\, d(x, y)$인 함수 $cd : X \times X \to \mathbb{R}$는 $X$ 위의 거리이고 $\mathcal{T}_{cd} = \mathcal{T}_d$이다.
 4. ($\mathbb{R} \times \mathbb{R}$의 세 거리) 곱집합 $\mathbb{R} \times \mathbb{R}$ 위의 최대 거리 $d_{\max}$, 합 거리 $d_{\mathrm{sum}}$, 유클리드 거리 $d_E$의 거리위상은 모두 같다.
 5. (실수의 보통 위상) $d$가 $\mathbb{R}$의 보통 거리이고
-$$
-\mathcal{J} = \{I \in \mathscr{P}(\mathbb{R}) : a < b \text{이고 } I = (a, b) \text{인 실수 } a, b \text{가 있다}\}
-$$
-가 열린구간 전체의 집합족이면 $\mathcal{J} = \mathcal{B}_d$이다. 따라서 $\mathcal{J}$는 위상의 기저이고 $\mathcal{T}_{\mathcal{J}} = \mathcal{T}_d$이다. 이 위상을 **$\mathbb{R}$의 보통 위상**(standard topology)이라 한다. 위상을 밝히지 않고 $\mathbb{R}$을 위상공간이라 하면 보통 위상을 준 것이다. $U \subseteq \mathbb{R}$이 보통 위상에서 열린집합인 것은 정확히 $U$가 $(\mathbb{R}, d)$에서 열린집합일 때이고, 또 정확히 $U = \bigcup \mathcal{D}$인 부분족 $\mathcal{D} \subseteq \mathcal{J}$가 있을 때이다.
+   $$
+   \mathcal{J} = \{I \in \mathscr{P}(\mathbb{R}) : a < b \text{이고 } I = (a, b) \text{인 실수 } a, b \text{가 있다}\}
+   $$
+   가 열린구간 전체의 집합족이면 $\mathcal{J} = \mathcal{B}_d$이다. 따라서 $\mathcal{J}$는 위상의 기저이고 $\mathcal{T}_{\mathcal{J}} = \mathcal{T}_d$이다. 이 위상을 **$\mathbb{R}$의 보통 위상**(standard topology)이라 한다. 위상을 밝히지 않고 $\mathbb{R}$을 위상공간이라 하면 보통 위상을 준 것이다. $U \subseteq \mathbb{R}$이 보통 위상에서 열린집합인 것은 정확히 $U$가 $(\mathbb{R}, d)$에서 열린집합일 때이고, 또 정확히 $U = \bigcup \mathcal{D}$인 부분족 $\mathcal{D} \subseteq \mathcal{J}$가 있을 때이다.
 6. (같은 위상을 주는 거리와 다른 위상을 주는 거리) 같은 집합 위의 서로 다른 두 거리가 같은 거리위상을 줄 수 있다. 예컨대 $\mathbb{R}$의 보통 거리 $d$와 $2d$는 서로 다른 함수이고 거리위상이 같다. 다른 거리위상을 줄 수도 있다. $\mathbb{R}$ 위의 이산 거리의 거리위상은 보통 위상과 다르다.
 :::
 
@@ -46,18 +46,18 @@ $$
 Metric spaces and their examples (the standard metric, the discrete metric, $d_{\max}$, $d_{\mathrm{sum}}$, $d_E$) are as in the earlier entries, and open balls are as in the entry on open balls. The metric topology $\mathcal{T}_d$ is as in the entry on examples of topologies, and bases for a topology, $\mathcal{T}_{\mathcal{B}}$ and "a basis for the topology $\mathcal{T}$" are as in the entries on bases. Open intervals $(a, b)$ are as in the entry on intervals (written only when $a < b$). Throughout, $P = \{r \in \mathbb{R} : 0 < r\}$.
 
 1. (The open balls form a basis for the metric topology) If $(X, d)$ is a metric space, then the family of all open balls
-$$
-\mathcal{B}_d = \{B_d(x, r) : (x, r) \in X \times P\}
-$$
-(a family given by an expression) is a basis for a topology and a basis for the metric topology $\mathcal{T}_d$. That is, $\mathcal{T}_{\mathcal{B}_d} = \mathcal{T}_d$.
+   $$
+   \mathcal{B}_d = \{B_d(x, r) : (x, r) \in X \times P\}
+   $$
+   (a family given by an expression) is a basis for a topology and a basis for the metric topology $\mathcal{T}_d$. That is, $\mathcal{T}_{\mathcal{B}_d} = \mathcal{T}_d$.
 2. (Comparing metrics) If $d$ and $d'$ are metrics on a set $X$ and a real number $c > 0$ satisfies $d(x, y) \le c\, d'(x, y)$ for all points $x$, $y$ of $X$, then $\mathcal{T}_d \subseteq \mathcal{T}_{d'}$. Hence, if positive numbers $c$, $c'$ satisfy $d(x, y) \le c\, d'(x, y)$ and $d'(x, y) \le c'\, d(x, y)$ for all $x$, $y$, then $\mathcal{T}_d = \mathcal{T}_{d'}$.
 3. (Positive multiples) If $d$ is a metric on a set $X$ and $c > 0$, then the function $cd : X \times X \to \mathbb{R}$ whose value at points $x$, $y$ of $X$ is $c\, d(x, y)$ is a metric on $X$, and $\mathcal{T}_{cd} = \mathcal{T}_d$.
 4. (Three metrics on $\mathbb{R} \times \mathbb{R}$) The max metric $d_{\max}$, the sum metric $d_{\mathrm{sum}}$ and the euclidean metric $d_E$ on the Cartesian product $\mathbb{R} \times \mathbb{R}$ all have the same metric topology.
 5. (The standard topology on the reals) If $d$ is the standard metric on $\mathbb{R}$ and
-$$
-\mathcal{J} = \{I \in \mathscr{P}(\mathbb{R}) : \text{there are real numbers } a, b \text{ with } a < b \text{ and } I = (a, b)\}
-$$
-is the family of all open intervals, then $\mathcal{J} = \mathcal{B}_d$. Hence $\mathcal{J}$ is a basis for a topology and $\mathcal{T}_{\mathcal{J}} = \mathcal{T}_d$. This topology is called the **standard topology** on $\mathbb{R}$. When $\mathbb{R}$ is called a topological space without naming a topology, it carries the standard topology. A set $U \subseteq \mathbb{R}$ is open in the standard topology exactly when $U$ is open in $(\mathbb{R}, d)$, and also exactly when $U = \bigcup \mathcal{D}$ for some subfamily $\mathcal{D} \subseteq \mathcal{J}$.
+   $$
+   \mathcal{J} = \{I \in \mathscr{P}(\mathbb{R}) : \text{there are real numbers } a, b \text{ with } a < b \text{ and } I = (a, b)\}
+   $$
+   is the family of all open intervals, then $\mathcal{J} = \mathcal{B}_d$. Hence $\mathcal{J}$ is a basis for a topology and $\mathcal{T}_{\mathcal{J}} = \mathcal{T}_d$. This topology is called the **standard topology** on $\mathbb{R}$. When $\mathbb{R}$ is called a topological space without naming a topology, it carries the standard topology. A set $U \subseteq \mathbb{R}$ is open in the standard topology exactly when $U$ is open in $(\mathbb{R}, d)$, and also exactly when $U = \bigcup \mathcal{D}$ for some subfamily $\mathcal{D} \subseteq \mathcal{J}$.
 6. (Metrics giving the same topology and metrics giving different ones) Two different metrics on the same set may give the same metric topology. For example, the standard metric $d$ on $\mathbb{R}$ and $2d$ are different functions with the same metric topology. They may also give different metric topologies: the metric topology of the discrete metric on $\mathbb{R}$ is different from the standard topology.
 :::
 

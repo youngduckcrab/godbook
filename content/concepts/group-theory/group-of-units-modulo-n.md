@@ -23,8 +23,8 @@ added: 2026-11-19
 $n$이 자연수라 하자. $\mathbb{Z}_n$, 동치류 $[a]$, $\mathbb{Z}_n$의 곱셈 $[a][b] = [ab]$는 [[integers-modulo-n|법 n의 정수]]의 것이고, $\gcd$와 서로소는 [[greatest-common-divisor|최대공약수]]의 것이다.
 
 1. (서로소인 동치류) 정수 $a$, $a'$이 $[a] = [a']$이면 $\gcd(a, n) = 1$인 것은 정확히 $\gcd(a', n) = 1$일 때이다. 따라서
-$$U(n) = \{[a] : a \in \mathbb{Z},\ \gcd(a, n) = 1\}$$
-로 정하면, 모든 정수 $a$에 대하여 $[a] \in U(n)$인 것은 정확히 $\gcd(a, n) = 1$일 때이다.
+   $$U(n) = \{[a] : a \in \mathbb{Z},\ \gcd(a, n) = 1\}$$
+   로 정하면, 모든 정수 $a$에 대하여 $[a] \in U(n)$인 것은 정확히 $\gcd(a, n) = 1$일 때이다.
 2. (군) $U(n)$은 $\mathbb{Z}_n$의 곱셈에 대해 닫혀 있고, 곱셈을 $U(n)$으로 제한한 연산으로 $U(n)$은 아벨군이다. 이 군을 **법 $n$의 단원군**(group of units modulo $n$)이라 한다. 항등원은 $[1]$이다. $[a] \in U(n)$이고 $b$가 법 $n$에 대한 $a$의 [[inverse-modulo-n|역원]], 곧 $ab \equiv 1 \pmod n$인 정수이면 $[b] \in U(n)$이고, 이 군에서 $[a]$의 역원은 $[b]$이다.
 3. (곱셈 역원을 갖는 원소) $P \in \mathbb{Z}_n$에 대하여 $PQ = [1]$이고 $QP = [1]$인 $Q \in \mathbb{Z}_n$이 있는 것은 정확히 $P \in U(n)$일 때이다.
 4. ($n = 1$) $U(1) = \mathbb{Z}_1 = \{[0]\}$이다.
@@ -36,8 +36,8 @@ $$U(n) = \{[a] : a \in \mathbb{Z},\ \gcd(a, n) = 1\}$$
 Let $n$ be a natural number. $\mathbb{Z}_n$, the classes $[a]$ and the multiplication $[a][b] = [ab]$ of $\mathbb{Z}_n$ are as in the entry on the integers modulo $n$, and $\gcd$ and coprimality are as in the entry on the greatest common divisor.
 
 1. (Coprime classes) If integers $a$, $a'$ satisfy $[a] = [a']$, then $\gcd(a, n) = 1$ exactly when $\gcd(a', n) = 1$. Hence if we put
-$$U(n) = \{[a] : a \in \mathbb{Z},\ \gcd(a, n) = 1\},$$
-then for every integer $a$ we have $[a] \in U(n)$ exactly when $\gcd(a, n) = 1$.
+   $$U(n) = \{[a] : a \in \mathbb{Z},\ \gcd(a, n) = 1\},$$
+   then for every integer $a$ we have $[a] \in U(n)$ exactly when $\gcd(a, n) = 1$.
 2. (Group) $U(n)$ is closed under the multiplication of $\mathbb{Z}_n$, and with the restriction of multiplication to $U(n)$, $U(n)$ is an abelian group. It is called the **group of units modulo $n$**. Its identity is $[1]$. If $[a] \in U(n)$ and $b$ is an inverse of $a$ modulo $n$, that is, an integer with $ab \equiv 1 \pmod n$, then $[b] \in U(n)$ and the inverse of $[a]$ in this group is $[b]$.
 3. (Elements with a multiplicative inverse) For $P \in \mathbb{Z}_n$, there is $Q \in \mathbb{Z}_n$ with $PQ = [1]$ and $QP = [1]$ exactly when $P \in U(n)$.
 4. ($n = 1$) $U(1) = \mathbb{Z}_1 = \{[0]\}$.

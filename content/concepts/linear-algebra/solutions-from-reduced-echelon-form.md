@@ -27,8 +27,8 @@ $$N = \{k \in \{1, \dots, n\} : 1 \le j \le r \text{인 모든 } j \text{에서 
 1. (피벗 자리의 계산) 모든 $x \in \mathbb{R}^n$과 $r < i \le m$인 모든 $i$에서 $Ux$의 $i$번째 값은 $0$이다. $w \in \mathbb{R}^n$이 모든 $k \in N$에서 $w_k = 0$이면, $1 \le i \le r$인 모든 $i$에서 $Uw$의 $i$번째 값은 $w_{\ell_i}$이다.
 2. (해가 있을 조건) $Ux = c$의 해가 있는 것은 정확히 $r < i \le m$인 모든 $i$에서 $c_i = 0$일 때이다.
 3. (해를 정하는 자유 자리의 값) $Ux = c$의 해가 있다고 하자. 함수 $f : N \to \mathbb{R}$마다, 모든 $k \in N$에서 $x_k = f(k)$인 해 $x$가 정확히 하나 있다. $k \in N$이면 $k$번째 값이 $f(k)$이고 $k \notin N$이면 $0$인 $\mathbb{R}^n$의 원소를 $f'$이라 하면, 이 해의 피벗 자리의 값은 $1 \le j \le r$에서
-$$x_{\ell_j} = c_j - (u_{j,1} f'_1 + \cdots + u_{j,n} f'_n)$$
-이다. ($N = \emptyset$이면 $f$는 빈 함수이고, 해는 정확히 하나이다.)
+   $$x_{\ell_j} = c_j - (u_{j,1} f'_1 + \cdots + u_{j,n} f'_n)$$
+   이다. ($N = \emptyset$이면 $f$는 빈 함수이고, 해는 정확히 하나이다.)
 4. (해가 하나뿐일 조건) $Ux = c$의 해가 있을 때, 해가 하나뿐인 것은 정확히 $r = n$일 때이다.
 5. (모든 우변에 해가 있을 조건) 모든 $c \in \mathbb{R}^m$에서 $Ux = c$의 해가 있는 것은 정확히 $r = m$일 때이다.
 6. (첨가행렬로 판정하기) $B$가 $m \times n$ 행렬이고 $d \in \mathbb{R}^m$이며 첨가행렬 $(B \mid d)$가 기약 사다리꼴이면, $B$도 기약 사다리꼴이고, $Bx = d$의 해가 있는 것은 정확히 $n + 1$이 $(B \mid d)$의 자유 열의 번호일 때, 곧 $(B \mid d)$의 마지막 열이 피벗 열이 아닐 때이다.
@@ -43,8 +43,8 @@ for the set of all free column indices. Let $c = (c_1, \dots, c_m) \in \mathbb{R
 1. (Computation at pivot positions) For every $x \in \mathbb{R}^n$ and every $i$ with $r < i \le m$, the $i$-th value of $Ux$ is $0$. If $w \in \mathbb{R}^n$ satisfies $w_k = 0$ for every $k \in N$, then for every $i$ with $1 \le i \le r$ the $i$-th value of $Uw$ is $w_{\ell_i}$.
 2. (Condition for a solution) $Ux = c$ has a solution exactly when $c_i = 0$ for every $i$ with $r < i \le m$.
 3. (Free values determine the solution) Suppose $Ux = c$ has a solution. For each function $f : N \to \mathbb{R}$ there is exactly one solution $x$ with $x_k = f(k)$ for every $k \in N$. If $f'$ is the element of $\mathbb{R}^n$ whose $k$-th value is $f(k)$ for $k \in N$ and $0$ for $k \notin N$, then the values of this solution at the pivot positions are, for $1 \le j \le r$,
-$$x_{\ell_j} = c_j - (u_{j,1} f'_1 + \cdots + u_{j,n} f'_n).$$
-(If $N = \emptyset$, then $f$ is the empty function and there is exactly one solution.)
+   $$x_{\ell_j} = c_j - (u_{j,1} f'_1 + \cdots + u_{j,n} f'_n).$$
+   (If $N = \emptyset$, then $f$ is the empty function and there is exactly one solution.)
 4. (Condition for uniqueness) When $Ux = c$ has a solution, the solution is unique exactly when $r = n$.
 5. (Condition for a solution for every right side) $Ux = c$ has a solution for every $c \in \mathbb{R}^m$ exactly when $r = m$.
 6. (Test by the augmented matrix) If $B$ is an $m \times n$ matrix, $d \in \mathbb{R}^m$, and the augmented matrix $(B \mid d)$ is in reduced echelon form, then $B$ is in reduced echelon form, and $Bx = d$ has a solution exactly when $n + 1$ is a free column index of $(B \mid d)$, that is, when the last column of $(B \mid d)$ is not a pivot column.

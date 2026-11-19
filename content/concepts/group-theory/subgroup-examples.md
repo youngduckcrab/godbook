@@ -27,8 +27,8 @@ added: 2026-11-19
 3. (실수의 군 안에서) $\mathbb{Z}$는 $(\mathbb{R}, +)$의 부분군이고, 실수의 덧셈을 $\mathbb{Z}$로 제한한 연산은 정수의 덧셈이다. 곧 이 부분군은 군 $(\mathbb{Z}, +)$이다. 또 $\{1, -1\}$은 $(\mathbb{R} - \{0\}, \cdot)$의 부분군이다.
 4. (교집합과 합집합) $H$와 $K$가 군 $G$의 부분군이라 하자. $H \cap K$는 $G$의 부분군이다. $H \cup K$가 $G$의 부분군인 것은 정확히 $H \subseteq K$이거나 $K \subseteq H$일 때이다. 특히 $2\mathbb{Z} \cup 3\mathbb{Z}$는 $(\mathbb{Z}, +)$의 부분군이 아니다.
 5. (중심) 군 $G$에 대하여
-$$Z(G) = \{a \in G : \text{모든 } g \in G \text{에 대하여 } ag = ga\}$$
-는 $G$의 부분군이다. 이것을 $G$의 **중심**(center)이라 한다. $Z(G) = G$인 것은 정확히 $G$가 아벨군일 때이다.
+   $$Z(G) = \{a \in G : \text{모든 } g \in G \text{에 대하여 } ag = ga\}$$
+   는 $G$의 부분군이다. 이것을 $G$의 **중심**(center)이라 한다. $Z(G) = G$인 것은 정확히 $G$가 아벨군일 때이다.
 6. (한 점을 고정하는 치환) $X$가 집합이고 $x_0 \in X$이면 $\{f \in S_X : f(x_0) = x_0\}$은 [[symmetric-group|대칭군]] $S_X$의 부분군이다.
 7. (스칼라 행렬) $n$이 자연수이면 $\{cI_n : c \in \mathbb{R},\ c \ne 0\}$은 [[general-linear-group|일반선형군]] $GL_n(\mathbb{R})$의 부분군이다. $c \ne 0$이면 이 군에서 $cI_n$의 역원은 $c^{-1}I_n$이다.
 8. (단원군 안에서) $n$이 자연수이면 [[group-of-units-modulo-n|법 n의 단원군]]에서 $[-1] \in U(n)$이고, $\{[1], [-1]\}$은 $U(n)$의 부분군이다. $n = 1$이나 $n = 2$이면 $[-1] = [1]$이다.
@@ -42,8 +42,8 @@ Below we use the notation of the entry on groups, and subgroups are meant in the
 3. (Inside the groups of real numbers) $\mathbb{Z}$ is a subgroup of $(\mathbb{R}, +)$, and the restriction of the addition of real numbers to $\mathbb{Z}$ is the addition of integers; that is, this subgroup is the group $(\mathbb{Z}, +)$. Also, $\{1, -1\}$ is a subgroup of $(\mathbb{R} - \{0\}, \cdot)$.
 4. (Intersections and unions) Let $H$ and $K$ be subgroups of a group $G$. Then $H \cap K$ is a subgroup of $G$. $H \cup K$ is a subgroup of $G$ exactly when $H \subseteq K$ or $K \subseteq H$. In particular, $2\mathbb{Z} \cup 3\mathbb{Z}$ is not a subgroup of $(\mathbb{Z}, +)$.
 5. (The center) For a group $G$,
-$$Z(G) = \{a \in G : ag = ga \text{ for all } g \in G\}$$
-is a subgroup of $G$, called the **center** of $G$. $Z(G) = G$ exactly when $G$ is abelian.
+   $$Z(G) = \{a \in G : ag = ga \text{ for all } g \in G\}$$
+   is a subgroup of $G$, called the **center** of $G$. $Z(G) = G$ exactly when $G$ is abelian.
 6. (Permutations fixing a point) If $X$ is a set and $x_0 \in X$, then $\{f \in S_X : f(x_0) = x_0\}$ is a subgroup of the symmetric group $S_X$.
 7. (Scalar matrices) If $n$ is a natural number, then $\{cI_n : c \in \mathbb{R},\ c \ne 0\}$ is a subgroup of the general linear group $GL_n(\mathbb{R})$. For $c \ne 0$, the inverse of $cI_n$ in this group is $c^{-1}I_n$.
 8. (Inside the group of units) If $n$ is a natural number, then in the group of units modulo $n$ we have $[-1] \in U(n)$, and $\{[1], [-1]\}$ is a subgroup of $U(n)$. If $n = 1$ or $n = 2$, then $[-1] = [1]$.

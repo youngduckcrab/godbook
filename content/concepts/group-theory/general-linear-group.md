@@ -24,8 +24,8 @@ $n$이 자연수라 하자. $M_{n \times n}$, 성분 $a_{j,k}$, 단위행렬 $I_
 
 1. (행렬의 곱) $A, B \in M_{n \times n}$에 곱 $AB \in M_{n \times n}$을 대응시키는 것은 $M_{n \times n}$ 위의 [[binary-operation|이항연산]]이다. 이 연산은 결합법칙을 만족하고 $I_n$이 그 항등원이다.
 2. (일반선형군) $n \times n$ 가역행렬 전체의 집합을
-$$GL_n(\mathbb{R}) = \{A \in M_{n \times n} : A \text{는 가역}\}$$
-으로 쓴다. $GL_n(\mathbb{R})$은 행렬의 곱에 대해 닫혀 있고, 행렬의 곱을 $GL_n(\mathbb{R})$로 제한한 연산으로 [[group|군]]이다. 이 군을 **일반선형군**(general linear group)이라 한다. 항등원은 $I_n$이고, $A \in GL_n(\mathbb{R})$의 역원은 역행렬 $A^{-1}$이다. 곧 두 기호 $A^{-1}$은 같은 행렬을 가리킨다.
+   $$GL_n(\mathbb{R}) = \{A \in M_{n \times n} : A \text{는 가역}\}$$
+   으로 쓴다. $GL_n(\mathbb{R})$은 행렬의 곱에 대해 닫혀 있고, 행렬의 곱을 $GL_n(\mathbb{R})$로 제한한 연산으로 [[group|군]]이다. 이 군을 **일반선형군**(general linear group)이라 한다. 항등원은 $I_n$이고, $A \in GL_n(\mathbb{R})$의 역원은 역행렬 $A^{-1}$이다. 곧 두 기호 $A^{-1}$은 같은 행렬을 가리킨다.
 3. ($n \ge 2$) $n \ge 2$이면 $GL_n(\mathbb{R})$은 아벨군이 아니다.
 4. ($n = 1$) $1 \times 1$ 행렬 $A$, $B$에 대하여 $(AB)_{1,1} = a_{1,1} b_{1,1}$이다. $1 \times 1$ 행렬 $A$가 가역인 것은 정확히 $a_{1,1} \ne 0$일 때이고, 이때 $(A^{-1})_{1,1} = (a_{1,1})^{-1}$이다. $GL_1(\mathbb{R})$은 아벨군이다. $GL_1(\mathbb{R})$의 각 $A$에 실수 $a_{1,1}$을 대응시키는 것은 $GL_1(\mathbb{R})$에서 $\mathbb{R} - \{0\}$으로의 전단사이다.
 :::
@@ -35,8 +35,8 @@ Let $n$ be a natural number. $M_{n \times n}$, the entries $a_{j,k}$ and the ide
 
 1. (Matrix product) Assigning to $A, B \in M_{n \times n}$ their product $AB \in M_{n \times n}$ is a binary operation on $M_{n \times n}$. This operation is associative and $I_n$ is its identity element.
 2. (General linear group) The set of all invertible $n \times n$ matrices is written
-$$GL_n(\mathbb{R}) = \{A \in M_{n \times n} : A \text{ is invertible}\}.$$
-$GL_n(\mathbb{R})$ is closed under the matrix product, and with the restriction of the matrix product to $GL_n(\mathbb{R})$ it is a group, called the **general linear group**. Its identity is $I_n$, and the inverse of $A \in GL_n(\mathbb{R})$ is the inverse matrix $A^{-1}$. That is, the two symbols $A^{-1}$ denote the same matrix.
+   $$GL_n(\mathbb{R}) = \{A \in M_{n \times n} : A \text{ is invertible}\}.$$
+   $GL_n(\mathbb{R})$ is closed under the matrix product, and with the restriction of the matrix product to $GL_n(\mathbb{R})$ it is a group, called the **general linear group**. Its identity is $I_n$, and the inverse of $A \in GL_n(\mathbb{R})$ is the inverse matrix $A^{-1}$. That is, the two symbols $A^{-1}$ denote the same matrix.
 3. ($n \ge 2$) If $n \ge 2$, then $GL_n(\mathbb{R})$ is not abelian.
 4. ($n = 1$) For $1 \times 1$ matrices $A$, $B$ we have $(AB)_{1,1} = a_{1,1} b_{1,1}$. A $1 \times 1$ matrix $A$ is invertible exactly when $a_{1,1} \ne 0$, and then $(A^{-1})_{1,1} = (a_{1,1})^{-1}$. $GL_1(\mathbb{R})$ is abelian. Assigning to each $A \in GL_1(\mathbb{R})$ the real number $a_{1,1}$ is a bijection from $GL_1(\mathbb{R})$ to $\mathbb{R} - \{0\}$.
 :::
