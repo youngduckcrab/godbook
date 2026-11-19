@@ -8,7 +8,6 @@ track: 대수
 requires: [language-of-math, number-theory-intro]
 status: in-progress
 planned_units:
-  - 부분군과 거듭제곱
   - 순환군과 원소의 위수
   - 잉여류와 라그랑주 정리
   - 준동형과 동형
