@@ -6,10 +6,8 @@ level: undergrad
 order: 3
 track: 해석
 requires: [language-of-math, analysis-intro]
-status: in-progress
-planned_units:
-  - 연결성
-  - 콤팩트성
+status: complete
+planned_units: []
 ---
 
 해석학 입문에서는 실수의 극한과 연속을 절댓값 $|x - y|$, 곧 두 실수 사이의 거리로 정의했습니다. 이 강의는 그 거리를 아무 집합 위로 옮긴 거리공간에서 출발하고, 거리공간의 열린집합이 갖는 성질을 공리로 삼아 위상공간을 정의합니다. 그 위에서 위상의 기저, 폐포와 내부와 경계, 연속함수와 위상동형, 부분공간 위상과 두 공간의 곱, 하우스도르프 공간과 수열의 수렴, 연결성, 콤팩트성을 다룹니다.
