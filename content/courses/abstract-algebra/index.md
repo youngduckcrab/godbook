@@ -8,8 +8,6 @@ track: 대수
 requires: [language-of-math, number-theory-intro]
 status: in-progress
 planned_units:
-  - 정규부분군과 몫군
-  - 환, 정역, 체
   - 아이디얼과 몫환
 ---
 
