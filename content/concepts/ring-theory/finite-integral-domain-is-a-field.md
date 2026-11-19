@@ -7,15 +7,15 @@ field: ring-theory
 msc: ["13", "12"]
 level: undergrad
 summary: 원소가 유한 개인 정역은 체이다. 따라서 n ≥ 2일 때 n이 소수인 것, ℤ_n이 정역인 것, ℤ_n이 체인 것은 모두 같고, 소수 p에 대하여 ℤ_p는 원소가 p개인 체이다. 무한 정역은 체가 아닐 수 있다.
-requires: [ring, ring-basic-properties, ring-examples, integral-domain, field, function, injective-surjective-bijective, finite-set, subset-of-finite-set, number-of-elements-is-unique, recursion-theorem, integers-modulo-n, prime-number, well-ordering-principle]
+requires: [ring, ring-basic-properties, ring-examples, integral-domain, field, function, injective-surjective-bijective, finite-set, subset-of-finite-set, number-of-elements-is-unique, recursion-theorem, integers-modulo-n, equivalence-classes-equal-iff-related, congruence-modulo-n, division-theorem, prime-number, well-ordering-principle]
 proof: full
 sources:
   - ref: judson-abstract-algebra
     loc: 16.2절 Theorem 16.16 p.194, Example 16.17 p.194–195, 16.4절 Example 16.39 p.199
     checked: original
-    note: "(1)은 출처 Theorem 16.16(p.194)과 같은 진술이다. 출처는 0 이 아닌 원소 전체 D* 위의 λ_a(d) = ad 가 단사임을 보이고 'D* 가 유한집합이므로 λ_a 는 전사여야 한다'고 근거 없이 쓴다. 이 항목은 R 전체 위의 함수 x ↦ ax 의 치역 T 가 R 과 다르면 유한집합의 부분집합의 (3)에 어긋난다는 것으로 보인다(2단원 부분군 판정법의 (4)의 증명과 같은 논법이고, 그 증명은 인용할 수 없으므로 여기서 다시 썼다). 출처는 이 정리를 'due to Wedderburn' 이라 적는데 이 항목은 역사 서술을 하지 않는다. (2)는 출처 Example 16.17(p.194–195, ℤ_p 는 체 — 명제 3.4 에 의해)과 Example 16.39(p.199, 'ℤ/nℤ ≅ ℤ_n 은 n 이 소수일 때만 정역이고, 실은 체')를 모은 것이다. 출처는 이 동치를 정리로 모으지 않는다. (3)은 Example 16.17 의 앞부분과 같다. (4)는 출처 Example 16.2(p.191)와 p.225 의 '정수 ℤ 는 정역이지만 체가 아니다'와 같다. 예시(ℤ₇ 에서 [3] 의 역원을 대응표로 찾기)는 출처 연습문제 16.3(c)(p.204, ℤ₇ 의 단원, 힌트 p.329 {1, …, 6})와 같은 대상이다. 반례(ℤ₆ 에서 [2] 를 곱하는 대응)는 출처에서 찾지 못했다. 첫째 확인 질문(원소가 둘인 정역)과 둘째 확인 질문(ℤ₁₁)은 출처에서 찾지 못했다(16장에서 'Z11' 0건). 출처 연습문제 16.34(p.206)는 '모든 유한 정역은 ℤ_p 와 동형인가'를 묻는데 이 항목은 다루지 않는다."
+    note: "(1)은 출처 Theorem 16.16(p.194)과 같은 진술이다. 출처는 0 이 아닌 원소 전체 D* 위의 λ_a(d) = ad 가 단사임을 보이고 'D* 가 유한집합이므로 λ_a 는 전사여야 한다'고 쓰며 그 근거를 적지 않는다. 이 항목은 R 전체 위의 함수 x ↦ ax 의 치역 T 가 R 과 다르면 유한집합의 부분집합의 (3)에 어긋난다는 것으로 보인다(2단원 부분군 판정법의 (4)의 증명과 같은 논법이고, 그 증명은 인용할 수 없으므로 여기서 다시 썼다). 출처는 이 정리를 'due to Wedderburn' 이라 적는데 이 항목은 역사 서술을 하지 않는다. (2)는 출처 Example 16.17(p.194–195, ℤ_p 는 체 — 명제 3.4 에 의해)과 Example 16.39(p.199, 'ℤ/nℤ ≅ ℤ_n 은 n 이 소수일 때만 정역이고, 실은 체')를 모은 것이다. (3)은 Example 16.17 의 앞부분과 같다. (4)는 출처 Example 16.2(p.191)와 p.225 의 '정수 ℤ 는 정역이지만 체가 아니다'와 같다. 예시(ℤ₇ 에서 [3] 의 역원을 대응표로 찾기)는 출처 연습문제 16.3(c)(p.204, ℤ₇ 의 단원, 힌트 p.329 {1, …, 6})와 같은 대상이고, 출처 연습문제 3.1(a)(p.40, 3x ≡ 2 (mod 7))도 법 7 에서 3 을 곱하는 일차 합동식이다. 반례(ℤ₆ 에서 [2] 를 곱하는 대응)는 출처 Example 3.11(p.34–35)이 2 에 곱셈의 역원이 없음을 보이려고 0·2 = 0, 1·2 = 2, 2·2 = 4, 3·2 = 0, 4·2 = 2, 5·2 = 4 를 나열한 것과 같다. 이 항목은 그것을 (1)의 논법에서 단사가 깨지는 곳으로 읽는다. 첫째 확인 질문의 ℤ₂ 는 출처가 21장(p.261)에서 체로 쓴다. 출처 연습문제 16.34(p.206)는 '모든 유한 정역은 ℤ_p 와 동형인가'를 묻는데 이 항목은 다루지 않는다."
 status: reviewed
-review_note: "2026-11-19 자기 검토(docs/self-review.md)와 지휘자의 표본 검사. 독립 검토는 거치지 않았다. 경계 경우(영환, 소수의 1·p 분해)에서 거짓이 되는 문장과 근거 누락을 고침"
+review_note: "2026-11-19 자기 검토(docs/self-review.md)와 지휘자의 표본 검사. 올린 뒤 표본 독립 검토 1회(수학 오류 0건)의 지적을 고쳤다. 경계 경우(영환, 소수의 1·p 분해)에서 거짓이 되는 문장과 근거 누락을 고침"
 added: 2026-11-19
 ---
 
@@ -87,10 +87,10 @@ $1 \in R = T$이므로 $ax = 1$인 $x \in R$이 있다. $R$은 가환환이므�
 
 ## 확인 질문
 
-:::check[원소가 둘인 정역은 무엇이 있는가? 그것은 체인가?]
-정역 $R$에는 서로 다른 $0$과 $1$이 있으므로([[ring-basic-properties|환의 기본 성질]]의 (7)) 원소가 둘이면 $R = \{0, 1\}$입니다. (1)에 의해 $R$은 체입니다. 예를 들어 $\mathbb{Z}_2$가 그렇습니다((3)).
+:::check[원소가 둘인 정역은 체인가?]
+체입니다. 원소가 둘인 집합은 유한집합이므로 (1)에 의해 그 정역은 체입니다. 예를 들어 $\mathbb{Z}_2$가 그렇습니다((3)).
 :::
 
 :::check[$\mathbb{Z}_{11}$에서 $[0]$이 아닌 모든 원소가 가역원인 까닭을 이 항목의 번호로 말하라.]
-$2$부터 $10$까지의 정수는 $11$을 나누지 않고([[prime-number|소수]]의 진술에 의해 양의 약수는 $1$ 이상 $11$ 이하) $11$의 양의 약수는 $1$과 $11$뿐이므로 $11$은 소수이고, (3)에 의해 $\mathbb{Z}_{11}$은 체입니다. 체의 정의에 의해 $[0]$이 아닌 모든 원소가 가역원입니다.
+[[prime-number|소수]]의 진술에 의해 $11$의 양의 약수 $d$는 $1 \le d \le 11$입니다. $11 = 2 \cdot 5 + 1 = 3 \cdot 3 + 2 = 4 \cdot 2 + 3 = 5 \cdot 2 + 1$이고, $6 \le d \le 10$이면 정수 $c$에 대하여 $c \le 1$이면 $dc \le d < 11$이고 $c \ge 2$이면 $dc \ge 2d \ge 12$이므로((Z3), (Z5), (Z1)) $11 = dc$가 될 수 없습니다. 나머지가 $0$이 아니므로 [[division-theorem|나눗셈 정리]]의 유일성에 의해 $2$부터 $5$까지도 $11$을 나누지 않습니다. 따라서 $11$의 양의 약수는 $1$과 $11$뿐이므로 $11$은 소수이고, (3)에 의해 $\mathbb{Z}_{11}$은 체입니다. 체의 정의에 의해 $[0]$이 아닌 모든 원소가 가역원입니다.
 :::
