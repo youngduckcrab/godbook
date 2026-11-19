@@ -154,6 +154,35 @@ function lintBody(file, body, requires, self) {
   }
 }
 for (const c of concepts) lintBody(c.file, c.body, new Set([c.id, ...closure(c.id)]), c.id);
+
+// 번호 글자 인용: 본문에 쓴 (Z1), (K9) 같은 번호는 그 번호를 진술에서 정한 항목이 requires(거쳐 오는 것 포함)에 있어야 한다.
+// 번호를 정한 항목 = :::statement 에 그 번호가 있고, 자기 선행 항목들의 진술에는 그 번호가 없는 항목.
+const LABEL = /\(([A-Z])(\d+)\)/g;
+const stmtOf = (body) => [...body.matchAll(/^:::statement[^\n]*\n([\s\S]*?)\n:::\s*$/gm)].map((m) => m[1]).join('\n');
+const stmtLabels = new Map(concepts.map((c) => [c.id, new Set([...stmtOf(c.body).matchAll(LABEL)].map((m) => m[1] + m[2]))]));
+const definers = new Map();
+for (const c of concepts) for (const lab of stmtLabels.get(c.id)) {
+  if ([...closure(c.id)].some((r) => stmtLabels.get(r)?.has(lab))) continue;
+  if (!definers.has(lab)) definers.set(lab, []);
+  definers.get(lab).push(c.id);
+}
+for (const c of concepts) {
+  const reach = new Set([c.id, ...closure(c.id)]);
+  // 증명·예시·반례·확인 질문 블록만 본다(산문과 참고에서 다른 강의의 번호를 글로 가리키는 것은 허용).
+  const text = [...c.body.matchAll(/^:::(?:proof|example|counterexample|check)[^\n]*\n([\s\S]*?)\n:::\s*$/gm)].map((m) => m[1]).join('\n');
+  const miss = new Map();
+  for (const m of text.matchAll(LABEL)) {
+    const lab = m[1] + m[2];
+    const defs = definers.get(lab);
+    if (!defs || defs.length !== 1) continue; // 정한 곳이 없거나 둘 이상이면 판단하지 않는다
+    if (!reach.has(defs[0])) miss.set(defs[0], [...(miss.get(defs[0]) ?? []), `(${lab})`]);
+  }
+  for (const [id, labs] of miss) warn(c.file, `${[...new Set(labs)].join(', ')} 를 쓰지만 그것을 정한 항목 ${id} 가 requires 에 없다`);
+}
+// 강의 소개 글의 낡은 안내: 작성 예정 단원이 없는데 "작성 예정"을 말한다.
+for (const course of courses) {
+  if ((course.data?.planned_units ?? []).length === 0 && /작성 예정/.test(course.body ?? '')) warn(course.file ?? course.id, '작성 예정인 단원이 없는데 본문이 "작성 예정"을 말한다');
+}
 for (const course of courses) for (const u of course.units) lintBody(u.file, u.body, null);
 
 if (warns.length && !process.argv.includes('--quiet')) {
