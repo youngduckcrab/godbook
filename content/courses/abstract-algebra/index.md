@@ -8,9 +8,6 @@ track: 대수
 requires: [language-of-math, number-theory-intro]
 status: in-progress
 planned_units:
-  - 순환군과 원소의 위수
-  - 잉여류와 라그랑주 정리
-  - 준동형과 동형
   - 정규부분군과 몫군
   - 환, 정역, 체
   - 아이디얼과 몫환
