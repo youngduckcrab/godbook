@@ -8,8 +8,6 @@ track: 해석
 requires: [language-of-math, analysis-intro]
 status: in-progress
 planned_units:
-  - 폐포, 내부, 경계
-  - 연속함수와 위상동형
   - 부분공간과 두 공간의 곱
   - 하우스도르프 공간과 수열
   - 연결성
