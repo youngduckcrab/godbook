@@ -192,7 +192,7 @@ src/                        Astro 사이트 (화면). 내용 추가 때는 건�
 - 완성된 강의: 선형대수 (8개 단원, 64개 항목. 출처 Treil). 연습문제는 아직 없다. 행렬식, 특성다항식, 복소수는 다루지 않았다. 스크래치패드의 출처 요약(sources/linear-algebra*.md)에 미룬 것과 그 까닭이 있다.
 - 완성된 강의: 해석학 입문 (8개 단원, 72개 항목. 출처 Lebl, Basic Analysis I). 연습문제는 아직 없다. 실수는 계산 법칙 (K), 순서 (W1)–(W4), 최소상계 성질 (U)를 받아들인 것으로 다루고, 다른 강의에서는 선형대수의 `real-number-arithmetic`과 정수론 입문의 `well-ordering-principle`만 빌린다. 가산 선택, 실수의 유한 합과 Σ, 일반 다항식을 쓰지 않았다(4단원은 가장 작은 첨자와 재귀 정리, 6단원은 ε–δ 직접 증명, 7단원은 상한 논법, 5단원은 재귀로 정한 부분합). 리만 적분은 다루지 않았다(분할과 공통 세분, 유한 합의 쪼개기 도구가 없다. 넣으려면 단원 하나 분량의 준비가 필요하다). 공통 지시는 스크래치패드의 analysis-writer-protocol.md, analysis-reviewer-protocol.md, 출처 요약은 sources/analysis-intro*.md.
 
-- 진행 중: 추상대수 (출처 Judson, Abstract Algebra: Theory and Applications 2022판. 텍스트는 스크래치패드 src/judson/, 인쇄 쪽 = PDF 쪽 − 12. 8개 단원 계획 가운데 1~5단원 31개 항목 완료). **독립 검토 없이 자기 검토 + 지휘자 표본 검사로 진행한다.** 공통 지시는 스크래치패드의 algebra-writer-protocol.md, 출처 요약은 sources/abstract-algebra.md, 색인은 sources/judson-index.md. 1단원의 표본 검사 두 번에서 각각 한 건(일반 제목 1, 좁은 검색어의 "찾지 못했다" 1)이 나왔고, 다시 확인시키니 같은 종류가 더 나왔다(일반 문장 2+7건, 출처 주장 3건). 표본에서 하나라도 나오면 그 종류 전부를 다시 하게 하는 규칙이 효과가 있었다.
+- 진행 중: 추상대수 (출처 Judson, Abstract Algebra: Theory and Applications 2022판. 텍스트는 스크래치패드 src/judson/, 인쇄 쪽 = PDF 쪽 − 12. 8개 단원 계획 가운데 1~6단원 36개 항목 완료). **독립 검토 없이 자기 검토 + 지휘자 표본 검사로 진행한다.** 공통 지시는 스크래치패드의 algebra-writer-protocol.md, 출처 요약은 sources/abstract-algebra.md, 색인은 sources/judson-index.md. 1단원의 표본 검사 두 번에서 각각 한 건(일반 제목 1, 좁은 검색어의 "찾지 못했다" 1)이 나왔고, 다시 확인시키니 같은 종류가 더 나왔다(일반 문장 2+7건, 출처 주장 3건). 표본에서 하나라도 나오면 그 종류 전부를 다시 하게 하는 규칙이 효과가 있었다.
 
 ## 주간 자동 추가 (아직 하지 않음)
 
