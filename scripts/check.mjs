@@ -117,6 +117,17 @@ const closure = (id, seen = new Set()) => {
   return seen;
 };
 function lintBody(file, body, requires, self) {
+  // 블록 제목 안의 대괄호가 짝이 맞지 않으면(예: 반열린구간 [0, 1)) 제목이 깨져 ":::check[" 가 화면에 그대로 보인다.
+  for (const m of body.matchAll(/^:::[a-z]+\[(.*)$/gm)) {
+    const rest = m[1];
+    let depth = 1, end = -1;
+    for (let i = 0; i < rest.length; i++) {
+      if (rest[i] === '[') depth++;
+      else if (rest[i] === ']') { depth--; if (depth === 0) { end = i; break; } }
+    }
+    if (end === -1 || rest.slice(end + 1).trim() !== '')
+      warn(file, `블록 제목의 대괄호 짝이 맞지 않는다: "${rest.slice(0, 40)}". 반열린구간은 집합 표기나 말로 쓴다`);
+  }
   const text = body.replace(/^:::english\s*\n[\s\S]*?\n:::\s*$/m, '');
   for (const m of text.matchAll(/\[\[([a-z0-9-]+)(?:\|([^\]]+))?\]\]([가-힣]{0,2})/g)) {
     const [, id, label, after] = m;
