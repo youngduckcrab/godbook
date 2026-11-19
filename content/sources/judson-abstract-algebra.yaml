@@ -1,0 +1,9 @@
+type: book
+authors: [Thomas W. Judson]
+title: "Abstract Algebra: Theory and Applications"
+edition: Annual Edition 2022 (2022년 7월 28일)
+year: 2022
+url: https://github.com/twjudson/aata
+access: open
+license: GNU Free Documentation License 1.2 이상 (불변 부분, 앞표지 문구, 뒤표지 문구 없음)
+note: "2022-07-28 판 PDF(aata-20220728.pdf)를 기준으로 한다. 이 PDF 는 저자의 저장소(위 url)에 있는 사이트 사본의 내려받기 목록에서 받았다. 저장소에는 더 새 판(Annual Edition 2026)의 원본도 있으나 이 사이트의 장·절·번호·쪽은 모두 2022 판 PDF 의 것이다. 속표지(PDF 2쪽)에 저자 Thomas W. Judson 과 날짜 July 28, 2022, 'Sage Exercises for Abstract Algebra' 의 저자 Robert A. Beezer 가 적혀 있고, 판권면(PDF 3쪽)에 'Edition: Annual Edition 2022', '©1997–2022 Thomas W. Judson, Robert A. Beezer' 와 GNU Free Documentation License 1.2 이상(불변 부분, 앞표지 문구, 뒤표지 문구 없음)의 허락 문구가 있다. 출판사 표시는 없다. 쪽수는 책에 인쇄된 쪽 번호이며, 본문에서 PDF 파일의 쪽 번호는 여기에 12 를 더한 값이다. 정의에는 번호가 없고, 정리·예·그림이 장마다 한 번호 체계(예 Proposition 3.17, Figure 3.10)를 쓴다. 출처는 군의 연산을 ◦ 로 쓰고, 동치류 [a] 와 정수 a 를 같은 글자로 쓰며, 원소의 위수와 군의 원소의 개수를 같은 기호 |·| 로 쓴다."

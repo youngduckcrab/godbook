@@ -9,18 +9,22 @@ if (!file || nArg === undefined || !pattern) { console.error('사용: node scrip
 const N = Number(nArg), ctx = Number(ctxArg ?? 70);
 const raw = readFileSync(file, 'utf8');
 // 이어 붙인 글과, 그 글의 각 글자가 원문의 어느 위치에서 왔는지의 표를 함께 만든다.
-let joined = '', map = [];
+// 조각을 배열에 모았다가 한 번에 붙인다(큰 책에서 문자열을 한 글자씩 붙이면 매우 느리다).
+const parts = [], map = [];
+let lastSpace = false;
 for (let i = 0; i < raw.length; i++) {
   const ch = raw[i];
-  if (ch === '-' && raw[i + 1] === '\n' && /[a-z]/.test(raw[i + 2] ?? '')) { i++; while (/[ \t]/.test(raw[i + 1] ?? '')) i++; continue; }
-  if (/\s/.test(ch)) { if (joined.endsWith(' ')) continue; joined += ' '; map.push(i); continue; }
-  joined += ch; map.push(i);
+  if (ch === '-' && raw[i + 1] === '\n' && /[a-z]/.test(raw[i + 2] ?? '')) { i++; while (raw[i + 1] === ' ' || raw[i + 1] === '\t') i++; continue; }
+  if (ch === ' ' || ch === '\n' || ch === '\t' || ch === '\f' || ch === '\r') { if (lastSpace) continue; parts.push(' '); map.push(i); lastSpace = true; continue; }
+  parts.push(ch); map.push(i); lastSpace = false;
 }
-const lineStart = [0], pageAt = [];
-let page = 1;
-for (let i = 0; i < raw.length; i++) { if (raw[i] === '\f') page++; if (raw[i] === '\n') lineStart.push(i + 1); }
-const pos2line = (p) => { let lo = 0, hi = lineStart.length - 1; while (lo < hi) { const mid = (lo + hi + 1) >> 1; if (lineStart[mid] <= p) lo = mid; else hi = mid - 1; } return lo + 1; };
-const pos2page = (p) => { let n = 1; for (let i = 0; i < p; i++) if (raw.charCodeAt(i) === 12) n++; return n - N; };
+const joined = parts.join('');
+// 줄의 시작 위치와 쪽이 바뀌는 위치를 미리 구해 둔다.
+const lineStart = [0], pageStart = [0];
+for (let i = 0; i < raw.length; i++) { if (raw[i] === '\f') pageStart.push(i); if (raw[i] === '\n') lineStart.push(i + 1); }
+const upper = (arr, p) => { let lo = 0, hi = arr.length - 1; while (lo < hi) { const mid = (lo + hi + 1) >> 1; if (arr[mid] <= p) lo = mid; else hi = mid - 1; } return lo; };
+const pos2line = (p) => upper(lineStart, p) + 1;
+const pos2page = (p) => upper(pageStart, p) + 1 - N;
 const re = new RegExp(pattern, 'gi');
 let count = 0;
 for (const m of joined.matchAll(re)) {
