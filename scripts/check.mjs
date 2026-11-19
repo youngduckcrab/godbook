@@ -185,6 +185,17 @@ for (const course of courses) {
 }
 for (const course of courses) for (const u of course.units) lintBody(u.file, u.body, null);
 
+// 수식의 HTML 을 만드는 KaTeX(rehype-katex 가 쓰는 것)와 CSS 를 주는 KaTeX 의 버전이 다르면
+// 윗줄(\\overline), 부정 기호(\\ne) 같은 것이 화면에서 사라지거나 어긋난다.
+{
+  const ver = (p) => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8')).version; } catch { return null; } };
+  const cssVer = ver('node_modules/katex/package.json');
+  const renderVer = ver('node_modules/rehype-katex/node_modules/katex/package.json') ?? cssVer;
+  if (cssVer && renderVer && cssVer !== renderVer) {
+    err('package.json', `katex CSS 의 버전(${cssVer})이 rehype-katex 가 쓰는 katex(${renderVer})와 다르다. package.json 의 katex 를 ${renderVer} 로 맞춘다`);
+  }
+}
+
 if (warns.length && !process.argv.includes('--quiet')) {
   console.warn(`경고 ${warns.length}건 (빌드는 계속된다)\n` + warns.map((e) => '  - ' + e).join('\n'));
 }
