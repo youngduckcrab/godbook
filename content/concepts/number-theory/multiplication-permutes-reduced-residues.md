@@ -25,8 +25,8 @@ $n \ge 2$인 자연수이고 $x$가 $\gcd(x, n) = 1$인 정수라 하자. $P_n$�
 1. 모든 $a \in P_n$에 대하여 $\mu_x(a) \in P_n$이고 $xa \equiv \mu_x(a) \pmod n$이다. 따라서 $\mu_x$는 $P_n$에서 $P_n$으로의 [[function|함수]] $\mu_x : P_n \to P_n$이다.
 2. $\mu_x : P_n \to P_n$은 [[injective-surjective-bijective|전단사]]이다.
 3. $k = \varphi(n)$(자연수이다)이고 $b : \{1, \dots, k\} \to P_n$이 전단사, 곧 $P_n$의 모든 원소를 한 번씩 늘어놓은 열 $b_1, \dots, b_k$라 하자. $c_i = \mu_x(b_i)$로 정하면 $c : \{1, \dots, k\} \to P_n$도 전단사이고, 모든 $i \in \{1, \dots, k\}$에 대하여 $x b_i \equiv c_i \pmod n$이다. 또 [[finite-product|유한 곱]]에 대하여
-$$(x b_1)(x b_2) \cdots (x b_k) \equiv b_1 b_2 \cdots b_k \pmod n$$
-이다.
+   $$(x b_1)(x b_2) \cdots (x b_k) \equiv b_1 b_2 \cdots b_k \pmod n$$
+   이다.
 
 $n = 1$은 이 항목에서 다루지 않는다. $n = 1$이면 $P_1 = \{1\}$이고 $x \cdot 1$을 $1$로 나눈 나머지가 $0$이어서 $0 \notin P_1$이므로 1이 성립하지 않는다.
 
@@ -39,7 +39,7 @@ Let $n \ge 2$ be a natural number and let $x$ be an integer with $\gcd(x, n) = 1
 1. For every $a \in P_n$ we have $\mu_x(a) \in P_n$ and $xa \equiv \mu_x(a) \pmod n$. Hence $\mu_x$ is a function $\mu_x : P_n \to P_n$.
 2. The function $\mu_x : P_n \to P_n$ is a bijection.
 3. Let $k = \varphi(n)$ (a natural number) and let $b : \{1, \dots, k\} \to P_n$ be a bijection, that is, a list $b_1, \dots, b_k$ that contains every element of $P_n$ exactly once. Put $c_i = \mu_x(b_i)$. Then $c : \{1, \dots, k\} \to P_n$ is also a bijection, $x b_i \equiv c_i \pmod n$ for every $i \in \{1, \dots, k\}$, and the finite products satisfy
-$$(x b_1)(x b_2) \cdots (x b_k) \equiv b_1 b_2 \cdots b_k \pmod n.$$
+   $$(x b_1)(x b_2) \cdots (x b_k) \equiv b_1 b_2 \cdots b_k \pmod n.$$
 
 The case $n = 1$ is not treated here. If $n = 1$, then $P_1 = \{1\}$ and the remainder of $x \cdot 1$ upon division by $1$ is $0$, which is not in $P_1$, so part 1 fails.
 :::

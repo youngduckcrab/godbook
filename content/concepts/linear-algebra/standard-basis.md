@@ -23,8 +23,8 @@ added: 2026-11-16
 $n$이 자연수이고 $k \in \{1, \dots, n\}$이라 하자. 각 $i \in \{1, \dots, n\}$에 실수($i = k$이면 $1$, $i \ne k$이면 $0$)가 하나씩 정해지므로 [[real-function-space|(G)]]에 의해 $\mathbb{R}^n$의 원소 $e_k$가 있다. 곧 $e_k$는 $k$에서의 값이 $1$이고 나머지 자리에서의 값이 $0$인 함수, $e_k = (0, \dots, 0, 1, 0, \dots, 0)$이다.
 
 1. (함수들의 합의 값) $X$가 집합이고 $m \ge 0$인 정수이며 $f_1, \dots, f_m \in \mathbb{R}^X$, $x \in X$이면
-$$(f_1 + \cdots + f_m)(x) = f_1(x) + \cdots + f_m(x)$$
-이다. 왼쪽의 합은 벡터공간 $\mathbb{R}^X$에서의 [[finite-sum-of-vectors|합]]이고 오른쪽은 실수의 열 $f_1(x), \dots, f_m(x)$의 합이다.
+   $$(f_1 + \cdots + f_m)(x) = f_1(x) + \cdots + f_m(x)$$
+   이다. 왼쪽의 합은 벡터공간 $\mathbb{R}^X$에서의 [[finite-sum-of-vectors|합]]이고 오른쪽은 실수의 열 $f_1(x), \dots, f_m(x)$의 합이다.
 2. 열 $e_1, \dots, e_n$은 $\mathbb{R}^n$의 [[basis|기저]]이다. 이 기저를 **표준기저**(standard basis)라 한다.
 3. $x = (x_1, \dots, x_n) \in \mathbb{R}^n$의 이 기저에 관한 좌표는 $x_1, \dots, x_n$이다. 곧 $x = x_1 e_1 + \cdots + x_n e_n$이고, $x = \alpha_1 e_1 + \cdots + \alpha_n e_n$이면 모든 $j$에서 $\alpha_j = x_j$이다.
 :::
@@ -33,8 +33,8 @@ $$(f_1 + \cdots + f_m)(x) = f_1(x) + \cdots + f_m(x)$$
 Let $n$ be a natural number and $k \in \{1, \dots, n\}$. A real number ($1$ if $i = k$ and $0$ if $i \ne k$) is assigned to each $i \in \{1, \dots, n\}$, so by (G) there is an element $e_k$ of $\mathbb{R}^n$. That is, $e_k$ is the function whose value at $k$ is $1$ and whose value at every other position is $0$, $e_k = (0, \dots, 0, 1, 0, \dots, 0)$.
 
 1. (Value of a sum of functions) If $X$ is a set, $m \ge 0$ is an integer, $f_1, \dots, f_m \in \mathbb{R}^X$ and $x \in X$, then
-$$(f_1 + \cdots + f_m)(x) = f_1(x) + \cdots + f_m(x).$$
-The sum on the left is the sum in the vector space $\mathbb{R}^X$, and the right-hand side is the sum of the sequence of real numbers $f_1(x), \dots, f_m(x)$.
+   $$(f_1 + \cdots + f_m)(x) = f_1(x) + \cdots + f_m(x).$$
+   The sum on the left is the sum in the vector space $\mathbb{R}^X$, and the right-hand side is the sum of the sequence of real numbers $f_1(x), \dots, f_m(x)$.
 2. The sequence $e_1, \dots, e_n$ is a basis of $\mathbb{R}^n$. This basis is called the **standard basis**.
 3. The coordinates of $x = (x_1, \dots, x_n) \in \mathbb{R}^n$ with respect to this basis are $x_1, \dots, x_n$. That is, $x = x_1 e_1 + \cdots + x_n e_n$, and if $x = \alpha_1 e_1 + \cdots + \alpha_n e_n$, then $\alpha_j = x_j$ for every $j$.
 :::

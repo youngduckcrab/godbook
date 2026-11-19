@@ -28,8 +28,8 @@ $$\{x \in \mathbb{R}^n : Ax = b\}$$
 다음이 성립한다. $x = (x_1, \dots, x_n) \in \mathbb{R}^n$이고 $b = (b_1, \dots, b_m)$이다.
 
 1. (성분으로 쓴 식) $x$가 $Ax = b$의 해인 것은 정확히 모든 $j \in \{1, \dots, m\}$에서
-$$a_{j,1} x_1 + \cdots + a_{j,n} x_n = b_j$$
-일 때이다. 왼쪽은 $k$번째 항이 $a_{j,k} x_k$인 실수의 열의 합이다.
+   $$a_{j,1} x_1 + \cdots + a_{j,n} x_n = b_j$$
+   일 때이다. 왼쪽은 $k$번째 항이 $a_{j,k} x_k$인 실수의 열의 합이다.
 2. (해집합의 꼴) 동차 연립일차방정식 $Ax = 0$의 해집합은 $\operatorname{Ker} T_A$이고 $\mathbb{R}^n$의 [[subspace|부분공간]]이다. $Ax = b$의 해가 있는 것은 정확히 $b \in \operatorname{Ran} T_A = \operatorname{span}(\mathbf{a}_1, \dots, \mathbf{a}_n)$일 때이다. $u \in \mathbb{R}^n$이 $Ax = b$의 해이면 해집합은 $\{u + h : h \in \operatorname{Ker} T_A\}$이다. ($T_A$는 행렬과 벡터의 곱의 (2)의 [[linear-map|선형사상]]이다.)
 3. (이어 붙인 행렬의 성분과 분해) $(A \mid B)$의 $(j, k)$ 성분은 $k \le n$이면 $a_{j,k}$이고 $k \ge n + 1$이면 $b_{j,k-n}$이다. 특히 $(A \mid b)$의 $(j, n + 1)$ 성분은 $b_j$이다. $A'$이 $m \times n$ 행렬이고 $B'$이 $m \times p$ 행렬이며 $(A \mid B) = (A' \mid B')$이면 $A = A'$이고 $B = B'$이다. 특히 $b' \in \mathbb{R}^m$이고 $(A \mid b) = (A' \mid b')$이면 $A = A'$이고 $b = b'$이다. 또 모든 $m \times (n + p)$ 행렬 $M$은, 처음 $n$개의 열 $\mathbf{m}_1, \dots, \mathbf{m}_n$으로 된 $m \times n$ 행렬을 $A'$, $k$번째 열이 $\mathbf{m}_{n+k}$ ($1 \le k \le p$)인 $m \times p$ 행렬을 $B'$이라 하면 $M = (A' \mid B')$이다. 특히 모든 $m \times (n + 1)$ 행렬 $M$은 $M = (A' \mid \mathbf{m}_{n+1})$이다.
 4. (왼쪽에 곱하기) $q$가 자연수이고 $E$가 $q \times m$ 행렬이면 $E(A \mid B) = (EA \mid EB)$이고 $E(A \mid b) = (EA \mid Eb)$이다.
@@ -45,8 +45,8 @@ is called the **solution set**. Here $Ax$ is the matrix–vector product. When $
 The following hold. Here $x = (x_1, \dots, x_n) \in \mathbb{R}^n$ and $b = (b_1, \dots, b_m)$.
 
 1. (Equations in entries) $x$ is a solution of $Ax = b$ exactly when, for every $j \in \{1, \dots, m\}$,
-$$a_{j,1} x_1 + \cdots + a_{j,n} x_n = b_j.$$
-The left side is the sum of the sequence of reals whose $k$-th term is $a_{j,k} x_k$.
+   $$a_{j,1} x_1 + \cdots + a_{j,n} x_n = b_j.$$
+   The left side is the sum of the sequence of reals whose $k$-th term is $a_{j,k} x_k$.
 2. (Shape of the solution set) The solution set of the homogeneous system $Ax = 0$ is $\operatorname{Ker} T_A$, and it is a subspace of $\mathbb{R}^n$. The system $Ax = b$ has a solution exactly when $b \in \operatorname{Ran} T_A = \operatorname{span}(\mathbf{a}_1, \dots, \mathbf{a}_n)$. If $u \in \mathbb{R}^n$ is a solution of $Ax = b$, then the solution set is $\{u + h : h \in \operatorname{Ker} T_A\}$. ($T_A$ is the linear map of (2) of the entry on the matrix–vector product.)
 3. (Entries and splitting of juxtaposed matrices) The $(j, k)$ entry of $(A \mid B)$ is $a_{j,k}$ if $k \le n$ and $b_{j,k-n}$ if $k \ge n + 1$. In particular, the $(j, n + 1)$ entry of $(A \mid b)$ is $b_j$. If $A'$ is an $m \times n$ matrix, $B'$ is an $m \times p$ matrix, and $(A \mid B) = (A' \mid B')$, then $A = A'$ and $B = B'$. In particular, if $b' \in \mathbb{R}^m$ and $(A \mid b) = (A' \mid b')$, then $A = A'$ and $b = b'$. Moreover, every $m \times (n + p)$ matrix $M$ satisfies $M = (A' \mid B')$, where $A'$ is the $m \times n$ matrix formed by the first $n$ columns $\mathbf{m}_1, \dots, \mathbf{m}_n$ and $B'$ is the $m \times p$ matrix whose $k$-th column is $\mathbf{m}_{n+k}$ ($1 \le k \le p$). In particular, every $m \times (n + 1)$ matrix $M$ satisfies $M = (A' \mid \mathbf{m}_{n+1})$.
 4. (Multiplying on the left) If $q$ is a natural number and $E$ is a $q \times m$ matrix, then $E(A \mid B) = (EA \mid EB)$ and $E(A \mid b) = (EA \mid Eb)$.

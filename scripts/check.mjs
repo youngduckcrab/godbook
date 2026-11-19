@@ -117,6 +117,16 @@ const closure = (id, seen = new Set()) => {
   return seen;
 };
 function lintBody(file, body, requires, self) {
+  // 번호 목록의 항목 안에 줄 수식($$)을 들여쓰지 않고 쓰면 목록이 거기서 끊겨 뒤 번호가 한 문단에 글자로 붙어 보인다.
+  {
+    const lines = body.split('\n');
+    for (let i = 0; i < lines.length; i++) {
+      if (!/^\d+\. /.test(lines[i])) continue;
+      for (let j = i + 1; j < lines.length && lines[j].trim() !== '' && !/^(\d+\. |:::|#)/.test(lines[j]); j++) {
+        if (lines[j].startsWith('$$')) { warn(file, `번호 목록 ${lines[i].slice(0, 12)}… 안의 줄 수식($$)을 들여쓰지 않았다. $$ 블록과 이어지는 문장을 공백 3칸으로 들여쓴다`); break; }
+      }
+    }
+  }
   // 블록 제목 안의 대괄호가 짝이 맞지 않으면(예: 반열린구간 [0, 1)) 제목이 깨져 ":::check[" 가 화면에 그대로 보인다.
   for (const m of body.matchAll(/^:::[a-z]+\[(.*)$/gm)) {
     const rest = m[1];

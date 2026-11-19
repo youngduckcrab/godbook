@@ -31,13 +31,13 @@ added: 2026-11-19
 3. (합집합의 내부) $\operatorname{Int} A \cup \operatorname{Int} B \subseteq \operatorname{Int}(A \cup B)$이다.
 4. (교집합의 내부) $\operatorname{Int}(A \cap B) = \operatorname{Int} A \cap \operatorname{Int} B$이다.
 5. (집합족) 식으로 정한 집합족 $\{\overline{A} : A \in \mathcal{A}\}$와 $\{\operatorname{Int} A : A \in \mathcal{A}\}$에 대하여
-$$
-\bigcup \{\overline{A} : A \in \mathcal{A}\} \subseteq \overline{\bigcup \mathcal{A}}, \qquad \overline{\bigcap \mathcal{A}} \subseteq \bigcap \{\overline{A} : A \in \mathcal{A}\},
-$$
-$$
-\bigcup \{\operatorname{Int} A : A \in \mathcal{A}\} \subseteq \operatorname{Int}\Bigl(\bigcup \mathcal{A}\Bigr), \qquad \operatorname{Int}\Bigl(\bigcap \mathcal{A}\Bigr) \subseteq \bigcap \{\operatorname{Int} A : A \in \mathcal{A}\}
-$$
-이다. $\mathcal{A} = \emptyset$이어도 성립한다.
+   $$
+   \bigcup \{\overline{A} : A \in \mathcal{A}\} \subseteq \overline{\bigcup \mathcal{A}}, \qquad \overline{\bigcap \mathcal{A}} \subseteq \bigcap \{\overline{A} : A \in \mathcal{A}\},
+   $$
+   $$
+   \bigcup \{\operatorname{Int} A : A \in \mathcal{A}\} \subseteq \operatorname{Int}\Bigl(\bigcup \mathcal{A}\Bigr), \qquad \operatorname{Int}\Bigl(\bigcap \mathcal{A}\Bigr) \subseteq \bigcap \{\operatorname{Int} A : A \in \mathcal{A}\}
+   $$
+   이다. $\mathcal{A} = \emptyset$이어도 성립한다.
 :::
 
 :::english
@@ -48,13 +48,13 @@ Topological spaces and open sets, closed sets, and interior and closure are as i
 3. (Interior of a union) $\operatorname{Int} A \cup \operatorname{Int} B \subseteq \operatorname{Int}(A \cup B)$.
 4. (Interior of an intersection) $\operatorname{Int}(A \cap B) = \operatorname{Int} A \cap \operatorname{Int} B$.
 5. (Families) For the families $\{\overline{A} : A \in \mathcal{A}\}$ and $\{\operatorname{Int} A : A \in \mathcal{A}\}$ defined by expressions,
-$$
-\bigcup \{\overline{A} : A \in \mathcal{A}\} \subseteq \overline{\bigcup \mathcal{A}}, \qquad \overline{\bigcap \mathcal{A}} \subseteq \bigcap \{\overline{A} : A \in \mathcal{A}\},
-$$
-$$
-\bigcup \{\operatorname{Int} A : A \in \mathcal{A}\} \subseteq \operatorname{Int}\Bigl(\bigcup \mathcal{A}\Bigr), \qquad \operatorname{Int}\Bigl(\bigcap \mathcal{A}\Bigr) \subseteq \bigcap \{\operatorname{Int} A : A \in \mathcal{A}\}.
-$$
-This also holds when $\mathcal{A} = \emptyset$.
+   $$
+   \bigcup \{\overline{A} : A \in \mathcal{A}\} \subseteq \overline{\bigcup \mathcal{A}}, \qquad \overline{\bigcap \mathcal{A}} \subseteq \bigcap \{\overline{A} : A \in \mathcal{A}\},
+   $$
+   $$
+   \bigcup \{\operatorname{Int} A : A \in \mathcal{A}\} \subseteq \operatorname{Int}\Bigl(\bigcup \mathcal{A}\Bigr), \qquad \operatorname{Int}\Bigl(\bigcap \mathcal{A}\Bigr) \subseteq \bigcap \{\operatorname{Int} A : A \in \mathcal{A}\}.
+   $$
+   This also holds when $\mathcal{A} = \emptyset$.
 :::
 
 ## 직관

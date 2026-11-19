@@ -43,10 +43,10 @@ $$
 2. (항과의 비교) 자연수 $n$, $k$가 $k \ge n$이면 $b_n \le x_k \le a_n$이다. 특히 모든 자연수 $n$에서 $b_n \le x_n \le a_n$이다.
 3. (단조와 유계) $(a_n)$은 단조감소이고 $(b_n)$은 단조증가이다. 따라서 자연수 $n$, $m$이 $n \le m$이면 $b_n \le b_m \le a_m \le a_n$이다. 또 실수 $B$가 모든 자연수 $n$에서 $|x_n| \le B$를 만족하면, 모든 자연수 $n$에서 $-B \le b_n \le a_n \le B$이고 $|a_n| \le B$, $|b_n| \le B$이다. 따라서 $(a_n)$과 $(b_n)$은 유계이다.
 4. (극한의 존재) $(a_n)$은 $\inf\{a_n : n \in \mathbb{N}\}$으로 수렴하고 $(b_n)$은 $\sup\{b_n : n \in \mathbb{N}\}$으로 수렴한다. 곧
-$$
-\limsup_{n \to \infty} x_n = \inf\{a_n : n \in \mathbb{N}\}, \qquad \liminf_{n \to \infty} x_n = \sup\{b_n : n \in \mathbb{N}\}
-$$
-이다. 특히 모든 자연수 $j$에서 $b_j \le \liminf_{n \to \infty} x_n$이고 $\limsup_{n \to \infty} x_n \le a_j$이다.
+   $$
+   \limsup_{n \to \infty} x_n = \inf\{a_n : n \in \mathbb{N}\}, \qquad \liminf_{n \to \infty} x_n = \sup\{b_n : n \in \mathbb{N}\}
+   $$
+   이다. 특히 모든 자연수 $j$에서 $b_j \le \liminf_{n \to \infty} x_n$이고 $\limsup_{n \to \infty} x_n \le a_j$이다.
 5. (대소) $\liminf_{n \to \infty} x_n \le \limsup_{n \to \infty} x_n$이다.
 :::
 
@@ -75,10 +75,10 @@ The following hold.
 2. (Comparison with the terms) For natural numbers $n$, $k$ with $k \ge n$, $b_n \le x_k \le a_n$. In particular, $b_n \le x_n \le a_n$ for every natural number $n$.
 3. (Monotonicity and boundedness) $(a_n)$ is monotone decreasing and $(b_n)$ is monotone increasing. Hence, for natural numbers $n$, $m$ with $n \le m$, $b_n \le b_m \le a_m \le a_n$. Moreover, if a real number $B$ satisfies $|x_n| \le B$ for every natural number $n$, then $-B \le b_n \le a_n \le B$ and $|a_n| \le B$, $|b_n| \le B$ for every natural number $n$. Hence $(a_n)$ and $(b_n)$ are bounded.
 4. (Existence of the limits) $(a_n)$ converges to $\inf\{a_n : n \in \mathbb{N}\}$ and $(b_n)$ converges to $\sup\{b_n : n \in \mathbb{N}\}$. That is,
-$$
-\limsup_{n \to \infty} x_n = \inf\{a_n : n \in \mathbb{N}\}, \qquad \liminf_{n \to \infty} x_n = \sup\{b_n : n \in \mathbb{N}\}.
-$$
-In particular, $b_j \le \liminf_{n \to \infty} x_n$ and $\limsup_{n \to \infty} x_n \le a_j$ for every natural number $j$.
+   $$
+   \limsup_{n \to \infty} x_n = \inf\{a_n : n \in \mathbb{N}\}, \qquad \liminf_{n \to \infty} x_n = \sup\{b_n : n \in \mathbb{N}\}.
+   $$
+   In particular, $b_j \le \liminf_{n \to \infty} x_n$ and $\limsup_{n \to \infty} x_n \le a_j$ for every natural number $j$.
 5. (Comparison) $\liminf_{n \to \infty} x_n \le \limsup_{n \to \infty} x_n$.
 :::
 

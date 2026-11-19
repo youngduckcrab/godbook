@@ -31,11 +31,11 @@ $m$이 자연수라 하자. 아래에서 행렬의 성분을 정할 때마다, $
 
 1. (벡터에 곱하기) 모든 $p \in \{1, \dots, m\}$에서 $P_{j,k}x$의 $p$번째 값은 $x_{\tau(p)}$이다. 곧 $P_{j,k}x$의 $j$번째 값은 $x_k$, $k$번째 값은 $x_j$이고, $j$도 $k$도 아닌 $p$번째 값은 $x_p$이다. $D_k(c)x$의 $k$번째 값은 $c x_k$이고, $p \ne k$인 $p$번째 값은 $x_p$이다. $R_{k,j}(c)x$의 $k$번째 값은 $x_k + c x_j$이고, $p \ne k$인 $p$번째 값은 $x_p$이다.
 2. (행렬에 곱하기) 모든 $p \in \{1, \dots, m\}$와 $q \in \{1, \dots, n\}$에서
-$$(P_{j,k}A)_{p,q} = a_{\tau(p),q}$$
-이다. $(D_k(c)A)_{k,q} = c\, a_{k,q}$이고 $p \ne k$이면 $(D_k(c)A)_{p,q} = a_{p,q}$이다. $(R_{k,j}(c)A)_{k,q} = a_{k,q} + c\, a_{j,q}$이고 $p \ne k$이면 $(R_{k,j}(c)A)_{p,q} = a_{p,q}$이다. 곧 $P_{j,k}A$는 $A$의 $j$번째 행과 $k$번째 행을 맞바꾼 행렬, $D_k(c)A$는 $A$의 $k$번째 행에 $c$를 곱한 행렬, $R_{k,j}(c)A$는 $A$의 $k$번째 행에 $j$번째 행의 $c$배를 더한 행렬이고, 그 밖의 행은 $A$의 것과 같다.
+   $$(P_{j,k}A)_{p,q} = a_{\tau(p),q}$$
+   이다. $(D_k(c)A)_{k,q} = c\, a_{k,q}$이고 $p \ne k$이면 $(D_k(c)A)_{p,q} = a_{p,q}$이다. $(R_{k,j}(c)A)_{k,q} = a_{k,q} + c\, a_{j,q}$이고 $p \ne k$이면 $(R_{k,j}(c)A)_{p,q} = a_{p,q}$이다. 곧 $P_{j,k}A$는 $A$의 $j$번째 행과 $k$번째 행을 맞바꾼 행렬, $D_k(c)A$는 $A$의 $k$번째 행에 $c$를 곱한 행렬, $R_{k,j}(c)A$는 $A$의 $k$번째 행에 $j$번째 행의 $c$배를 더한 행렬이고, 그 밖의 행은 $A$의 것과 같다.
 3. (역행렬) 상수배 꼴의 $c$는 $0$이 아니므로 $c^{-1}$이 있고 $c^{-1} \ne 0$이다. 또
-$$P_{j,k}P_{j,k} = I_m, \qquad D_k(c)D_k(c^{-1}) = D_k(c^{-1})D_k(c) = I_m, \qquad R_{k,j}(c)R_{k,j}(-c) = R_{k,j}(-c)R_{k,j}(c) = I_m$$
-이다. 따라서 모든 기본행렬은 [[invertible-matrix|가역]]이고, $P_{j,k}^{-1} = P_{j,k}$, $D_k(c)^{-1} = D_k(c^{-1})$, $R_{k,j}(c)^{-1} = R_{k,j}(-c)$이다. 특히 기본행렬의 역행렬은 같은 꼴의 기본행렬이다.
+   $$P_{j,k}P_{j,k} = I_m, \qquad D_k(c)D_k(c^{-1}) = D_k(c^{-1})D_k(c) = I_m, \qquad R_{k,j}(c)R_{k,j}(-c) = R_{k,j}(-c)R_{k,j}(c) = I_m$$
+   이다. 따라서 모든 기본행렬은 [[invertible-matrix|가역]]이고, $P_{j,k}^{-1} = P_{j,k}$, $D_k(c)^{-1} = D_k(c^{-1})$, $R_{k,j}(c)^{-1} = R_{k,j}(-c)$이다. 특히 기본행렬의 역행렬은 같은 꼴의 기본행렬이다.
 4. ($m = 1$) $m = 1$이면 $j \ne k$인 $j$, $k \in \{1\}$이 없으므로 $P_{j,k}$와 $R_{k,j}(c)$는 없다. $1 \times 1$ 기본행렬은 $0$이 아닌 실수 $c$에 대한 $D_1(c) = \begin{pmatrix} c \end{pmatrix}$뿐이다.
 5. (표준기저 벡터에 곱하기) $q \in \{1, \dots, m\}$이고 $e_q \in \mathbb{R}^m$이 [[standard-basis|표준기저]]의 벡터이면 $P_{j,k}e_q = e_{\tau(q)}$이다. $D_k(c)e_k = c e_k$이고, $q \ne k$이면 $D_k(c)e_q = e_q$이다. $R_{k,j}(c)e_j = e_j + c e_k$이고, $q \ne j$이면 $R_{k,j}(c)e_q = e_q$이다.
 :::
@@ -53,11 +53,11 @@ The following hold. Here $x = (x_1, \dots, x_m) \in \mathbb{R}^m$, $n$ is a natu
 
 1. (Multiplying a vector) For every $p \in \{1, \dots, m\}$, the $p$-th value of $P_{j,k}x$ is $x_{\tau(p)}$. That is, the $j$-th value of $P_{j,k}x$ is $x_k$, its $k$-th value is $x_j$, and its $p$-th value for $p$ equal to neither $j$ nor $k$ is $x_p$. The $k$-th value of $D_k(c)x$ is $c x_k$, and its $p$-th value for $p \ne k$ is $x_p$. The $k$-th value of $R_{k,j}(c)x$ is $x_k + c x_j$, and its $p$-th value for $p \ne k$ is $x_p$.
 2. (Multiplying a matrix) For all $p \in \{1, \dots, m\}$ and $q \in \{1, \dots, n\}$,
-$$(P_{j,k}A)_{p,q} = a_{\tau(p),q}.$$
-Also $(D_k(c)A)_{k,q} = c\, a_{k,q}$, and $(D_k(c)A)_{p,q} = a_{p,q}$ if $p \ne k$. Also $(R_{k,j}(c)A)_{k,q} = a_{k,q} + c\, a_{j,q}$, and $(R_{k,j}(c)A)_{p,q} = a_{p,q}$ if $p \ne k$. That is, $P_{j,k}A$ is $A$ with its $j$-th and $k$-th rows exchanged, $D_k(c)A$ is $A$ with its $k$-th row multiplied by $c$, and $R_{k,j}(c)A$ is $A$ with $c$ times its $j$-th row added to its $k$-th row; the other rows are those of $A$.
+   $$(P_{j,k}A)_{p,q} = a_{\tau(p),q}.$$
+   Also $(D_k(c)A)_{k,q} = c\, a_{k,q}$, and $(D_k(c)A)_{p,q} = a_{p,q}$ if $p \ne k$. Also $(R_{k,j}(c)A)_{k,q} = a_{k,q} + c\, a_{j,q}$, and $(R_{k,j}(c)A)_{p,q} = a_{p,q}$ if $p \ne k$. That is, $P_{j,k}A$ is $A$ with its $j$-th and $k$-th rows exchanged, $D_k(c)A$ is $A$ with its $k$-th row multiplied by $c$, and $R_{k,j}(c)A$ is $A$ with $c$ times its $j$-th row added to its $k$-th row; the other rows are those of $A$.
 3. (Inverses) Since $c$ in the scaling form is nonzero, $c^{-1}$ exists and $c^{-1} \ne 0$. Moreover,
-$$P_{j,k}P_{j,k} = I_m, \qquad D_k(c)D_k(c^{-1}) = D_k(c^{-1})D_k(c) = I_m, \qquad R_{k,j}(c)R_{k,j}(-c) = R_{k,j}(-c)R_{k,j}(c) = I_m.$$
-Hence every elementary matrix is invertible, and $P_{j,k}^{-1} = P_{j,k}$, $D_k(c)^{-1} = D_k(c^{-1})$, $R_{k,j}(c)^{-1} = R_{k,j}(-c)$. In particular, the inverse of an elementary matrix is an elementary matrix of the same form.
+   $$P_{j,k}P_{j,k} = I_m, \qquad D_k(c)D_k(c^{-1}) = D_k(c^{-1})D_k(c) = I_m, \qquad R_{k,j}(c)R_{k,j}(-c) = R_{k,j}(-c)R_{k,j}(c) = I_m.$$
+   Hence every elementary matrix is invertible, and $P_{j,k}^{-1} = P_{j,k}$, $D_k(c)^{-1} = D_k(c^{-1})$, $R_{k,j}(c)^{-1} = R_{k,j}(-c)$. In particular, the inverse of an elementary matrix is an elementary matrix of the same form.
 4. ($m = 1$) If $m = 1$, there are no $j$, $k \in \{1\}$ with $j \ne k$, so there is no $P_{j,k}$ and no $R_{k,j}(c)$. The $1 \times 1$ elementary matrices are exactly the matrices $D_1(c) = \begin{pmatrix} c \end{pmatrix}$ with $c$ a nonzero real number.
 5. (Multiplying standard basis vectors) If $q \in \{1, \dots, m\}$ and $e_q \in \mathbb{R}^m$ is a vector of the standard basis, then $P_{j,k}e_q = e_{\tau(q)}$. Also $D_k(c)e_k = c e_k$, and $D_k(c)e_q = e_q$ if $q \ne k$. Also $R_{k,j}(c)e_j = e_j + c e_k$, and $R_{k,j}(c)e_q = e_q$ if $q \ne j$.
 :::

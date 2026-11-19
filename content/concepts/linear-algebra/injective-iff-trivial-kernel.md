@@ -24,8 +24,8 @@ $V$, $W$가 [[vector-space|벡터공간]]이고 $T : V \to W$가 [[linear-map|�
 
 1. $T$가 [[injective-surjective-bijective|단사]]인 것은 정확히 $\operatorname{Ker} T = \{0_V\}$일 때이다. ([[kernel-and-range|핵]] $\operatorname{Ker} T$는 $\{v \in V : Tv = 0_W\}$이다.)
 2. $b \in W$이고 $Tx_1 = b$인 $x_1 \in V$가 있으면 방정식 $Tx = b$의 해 전체의 집합은 $\{x_1 + h : h \in \operatorname{Ker} T\}$이다. 곧
-$$\{x \in V : Tx = b\} = \{x_1 + h : h \in \operatorname{Ker} T\}$$
-이다.
+   $$\{x \in V : Tx = b\} = \{x_1 + h : h \in \operatorname{Ker} T\}$$
+   이다.
 :::
 
 :::english
@@ -33,7 +33,7 @@ Let $V$, $W$ be vector spaces and $T : V \to W$ a linear map.
 
 1. $T$ is injective exactly when $\operatorname{Ker} T = \{0_V\}$. (The kernel $\operatorname{Ker} T$ is $\{v \in V : Tv = 0_W\}$.)
 2. If $b \in W$ and there is an $x_1 \in V$ with $Tx_1 = b$, then the set of all solutions of the equation $Tx = b$ is $\{x_1 + h : h \in \operatorname{Ker} T\}$. That is,
-$$\{x \in V : Tx = b\} = \{x_1 + h : h \in \operatorname{Ker} T\}.$$
+   $$\{x \in V : Tx = b\} = \{x_1 + h : h \in \operatorname{Ker} T\}.$$
 :::
 
 ## 직관

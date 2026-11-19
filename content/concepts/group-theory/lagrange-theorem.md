@@ -27,12 +27,12 @@ $G$가 [[group|군]]이고 $e$가 그 항등원이며 $H$가 $G$의 [[subgroup|�
 다음이 성립한다.
 
 1. (라그랑주 정리) $G$가 유한군이면 $H$는 유한집합이고 $|H| \ge 1$이며, $G/H$는 유한집합이고
-$$|G| = [G : H] \cdot |H|$$
-이다. 따라서 $|H|$는 $|G|$를 나누고([[divisibility|나누어떨어짐]]) $[G : H]$도 $|G|$를 나눈다. 또 $[G : H]$는 정수 $x$에 대한 등식 $|G| = x \cdot |H|$를 만족하는 유일한 정수이다.
+   $$|G| = [G : H] \cdot |H|$$
+   이다. 따라서 $|H|$는 $|G|$를 나누고([[divisibility|나누어떨어짐]]) $[G : H]$도 $|G|$를 나눈다. 또 $[G : H]$는 정수 $x$에 대한 등식 $|G| = x \cdot |H|$를 만족하는 유일한 정수이다.
 2. (두 극단) $G/G = \{G\}$이고 $[G : G] = 1$이다. $G/\{e\} = \{\{a\} : a \in G\}$이고, $G$가 유한군이면 $[G : \{e\}] = |G|$이다.
 3. (탑 공식) $G$가 유한군이고 $K$가 $G$의 부분군이며 $K \subseteq H$이면, $K$는 군 $H$의 부분군이고
-$$[G : K] = [G : H] \cdot [H : K]$$
-이다. 여기서 $[H : K]$는 군 $H$에서 $K$의 지표이다.
+   $$[G : K] = [G : H] \cdot [H : K]$$
+   이다. 여기서 $[H : K]$는 군 $H$에서 $K$의 지표이다.
 4. (오른쪽 잉여류의 개수) 오른쪽 잉여류 전체의 집합 $\{Ha : a \in G\}$를 이 항목에서 $\mathcal{R}$로 쓴다. 모든 $a \in G$에서 $aH$를 $Ha^{-1}$로 보내는 함수 $\psi : G/H \to \mathcal{R}$가 정확히 하나 있고, $\psi$는 [[injective-surjective-bijective|전단사]]이다. 따라서 $G/H$와 $\mathcal{R}$는 [[equal-cardinality|크기가 같고]], $G/H$가 유한집합인 것은 정확히 $\mathcal{R}$가 유한집합일 때이며, 그때 $|\mathcal{R}| = [G : H]$이다. 특히 $G$가 유한군이면 $\mathcal{R}$는 유한집합이고 $|\mathcal{R}| = [G : H]$이다.
 5. (정수의 덧셈군) $n$이 자연수이면 $(\mathbb{Z}, +)$에서 $n\mathbb{Z}$의 지표는 유한하고 $[\mathbb{Z} : n\mathbb{Z}] = n$이다.
 
@@ -47,12 +47,12 @@ Let $G$ be a group with identity $e$ and let $H$ be a subgroup of $G$. Left cose
 Then the following hold.
 
 1. (Lagrange's theorem) If $G$ is a finite group, then $H$ is a finite set with $|H| \ge 1$, $G/H$ is a finite set, and
-$$|G| = [G : H] \cdot |H|.$$
-Hence $|H|$ divides $|G|$, and $[G : H]$ also divides $|G|$. Moreover $[G : H]$ is the unique integer $x$ satisfying $|G| = x \cdot |H|$.
+   $$|G| = [G : H] \cdot |H|.$$
+   Hence $|H|$ divides $|G|$, and $[G : H]$ also divides $|G|$. Moreover $[G : H]$ is the unique integer $x$ satisfying $|G| = x \cdot |H|$.
 2. (The two extremes) $G/G = \{G\}$ and $[G : G] = 1$. $G/\{e\} = \{\{a\} : a \in G\}$, and if $G$ is a finite group, then $[G : \{e\}] = |G|$.
 3. (Tower formula) If $G$ is a finite group, $K$ is a subgroup of $G$ and $K \subseteq H$, then $K$ is a subgroup of the group $H$ and
-$$[G : K] = [G : H] \cdot [H : K].$$
-Here $[H : K]$ is the index of $K$ in the group $H$.
+   $$[G : K] = [G : H] \cdot [H : K].$$
+   Here $[H : K]$ is the index of $K$ in the group $H$.
 4. (Number of right cosets) In this entry we write $\mathcal{R}$ for the set $\{Ha : a \in G\}$ of all right cosets. There is exactly one function $\psi : G/H \to \mathcal{R}$ sending $aH$ to $Ha^{-1}$ for every $a \in G$, and $\psi$ is a bijection. Hence $G/H$ and $\mathcal{R}$ have the same cardinality, $G/H$ is a finite set exactly when $\mathcal{R}$ is a finite set, and in that case $|\mathcal{R}| = [G : H]$. In particular, if $G$ is a finite group, then $\mathcal{R}$ is a finite set and $|\mathcal{R}| = [G : H]$.
 5. (The additive group of integers) If $n$ is a natural number, then $n\mathbb{Z}$ has finite index in $(\mathbb{Z}, +)$ and $[\mathbb{Z} : n\mathbb{Z}] = n$.
 

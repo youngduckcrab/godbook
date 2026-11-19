@@ -32,10 +32,10 @@ $$
 
 1. (값으로 정한 함수) $A$, $B$가 집합이고, $A$의 각 원소 $u$마다 $B$의 원소 $r(u)$가 하나씩 정해져 있으면, 집합 $\{(u, r(u)) : u \in A\}$는 $A$에서 $B$로의 함수이고 $u$에서의 값은 $r(u)$이다. 여기서 "정해져 있다"는 $r(u)$가 $u$에 대한 식이나 이미 정해진 대상으로 주어진다는 뜻이다. 어떤 조건을 만족하는 $B$의 원소가 정확히 하나임이 증명되어 있을 때 그 원소를 $r(u)$로 쓰는 것(예: [[well-ordering-principle|정렬 원리]]가 주는 가장 작은 원소)은 "이미 정해진 대상"에 들어간다. 들어가지 않는 것은 각 $u$마다 조건을 만족하는 여러 원소 가운데 하나를 고르는 것이다. 재귀 정리의 함수 $g$를 식으로 줄 때 이 (1)을 쓴다.
 2. (두 함수를 함께 정하기) $Y$, $Z$가 집합이고 $b \in Y$, $c \in Z$이며 $p : \mathbb{N} \times (Y \times Z) \to Y$와 $q : \mathbb{N} \times (Y \times Z) \to Z$가 함수이면, 두 함수 $y : \mathbb{N} \to Y$, $z : \mathbb{N} \to Z$로서 $y(1) = b$, $z(1) = c$이고 모든 자연수 $n$에서
-$$
-y(n+1) = p\bigl(n, (y(n), z(n))\bigr), \qquad z(n+1) = q\bigl(n, (y(n), z(n))\bigr)
-$$
-인 것이 정확히 한 쌍 있다. 곧 이런 $y$, $z$가 있고, 함수 $y' : \mathbb{N} \to Y$, $z' : \mathbb{N} \to Z$도 이 조건을 만족하면 $y' = y$이고 $z' = z$이다.
+   $$
+   y(n+1) = p\bigl(n, (y(n), z(n))\bigr), \qquad z(n+1) = q\bigl(n, (y(n), z(n))\bigr)
+   $$
+   인 것이 정확히 한 쌍 있다. 곧 이런 $y$, $z$가 있고, 함수 $y' : \mathbb{N} \to Y$, $z' : \mathbb{N} \to Z$도 이 조건을 만족하면 $y' = y$이고 $z' = z$이다.
 3. (재귀로 정하는 수열) $X = \mathbb{R}$이면 재귀 정리의 $x$는 [[sequence]]의 뜻의 수열이다. $X$가 $\mathbb{R}$의 부분집합이면 $x$는 모든 항이 $X$에 속하는 수열이다. 재귀로 정하는 수열은 [[sequence]]의 (1)(값으로 정한 수열)로 정당화되지 않고 이 정리로 정당화된다. 이 정리를 쓰려면 $g$의 값이 모든 자연수 $n$과 $X$의 모든 원소 $t$에서 정해지고 $X$에 속한다는 것, 곧 $g$가 $\mathbb{N} \times X$에서 $X$로의 함수라는 것을 먼저 확인해야 한다.
 4. (자연수 값을 갖는 순증가 함수) 함수 $f : \mathbb{N} \to \mathbb{N}$이 **순증가**(strictly increasing)인 것은 정확히 $n < m$인 모든 자연수 $n$, $m$에서 $f(n) < f(m)$일 때이다(부등호는 정수의 순서). $X = \mathbb{N}$이고 모든 자연수 $k$, $n$에서 $g(k, n) > n$이면, 재귀 정리의 $x : \mathbb{N} \to \mathbb{N}$은 순증가이고 모든 자연수 $k$에서 $x(k) \ge k$이다.
 :::
@@ -53,10 +53,10 @@ The following hold.
 
 1. (Functions given by values) If $A$ and $B$ are sets and an element $r(u)$ of $B$ is specified for each element $u$ of $A$, then the set $\{(u, r(u)) : u \in A\}$ is a function from $A$ to $B$ whose value at $u$ is $r(u)$. Here "specified" means that $r(u)$ is given by a formula in $u$ or by objects already defined. When it has been proved that exactly one element of $B$ satisfies some condition, taking that element as $r(u)$ (for example, the least element given by the well-ordering principle) counts as "objects already defined". What is not covered is choosing, for each $u$, one of several elements satisfying some condition. We use this item (1) when the function $g$ of the recursion theorem is given by a formula.
 2. (Defining two functions together) If $Y$ and $Z$ are sets, $b \in Y$, $c \in Z$, and $p : \mathbb{N} \times (Y \times Z) \to Y$ and $q : \mathbb{N} \times (Y \times Z) \to Z$ are functions, then there is exactly one pair of functions $y : \mathbb{N} \to Y$, $z : \mathbb{N} \to Z$ such that $y(1) = b$, $z(1) = c$, and for every natural number $n$
-$$
-y(n+1) = p\bigl(n, (y(n), z(n))\bigr), \qquad z(n+1) = q\bigl(n, (y(n), z(n))\bigr).
-$$
-That is, such $y$ and $z$ exist, and if functions $y' : \mathbb{N} \to Y$ and $z' : \mathbb{N} \to Z$ also satisfy these conditions, then $y' = y$ and $z' = z$.
+   $$
+   y(n+1) = p\bigl(n, (y(n), z(n))\bigr), \qquad z(n+1) = q\bigl(n, (y(n), z(n))\bigr).
+   $$
+   That is, such $y$ and $z$ exist, and if functions $y' : \mathbb{N} \to Y$ and $z' : \mathbb{N} \to Z$ also satisfy these conditions, then $y' = y$ and $z' = z$.
 3. (Recursively defined sequences) If $X = \mathbb{R}$, the function $x$ of the recursion theorem is a sequence in the sense of the entry on sequences. If $X$ is a subset of $\mathbb{R}$, then $x$ is a sequence all of whose terms belong to $X$. Recursively defined sequences are justified not by item (1) of the entry on sequences (sequences given by values) but by this theorem. To apply the theorem one must first check that the value of $g$ is specified at every natural number $n$ and every element $t$ of $X$ and belongs to $X$, that is, that $g$ is a function from $\mathbb{N} \times X$ to $X$.
 4. (Strictly increasing functions with natural number values) A function $f : \mathbb{N} \to \mathbb{N}$ is **strictly increasing** exactly when $f(n) < f(m)$ for all natural numbers $n$, $m$ with $n < m$ (the inequality is the order of the integers). If $X = \mathbb{N}$ and $g(k, n) > n$ for all natural numbers $k$, $n$, then the function $x : \mathbb{N} \to \mathbb{N}$ of the recursion theorem is strictly increasing and $x(k) \ge k$ for every natural number $k$.
 :::

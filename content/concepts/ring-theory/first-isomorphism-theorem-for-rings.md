@@ -23,8 +23,8 @@ added: 2026-11-19
 $(R, +, \cdot)$와 $(R', +', \cdot')$이 [[ring|환]]이고 $\varphi : R \to R'$이 [[ring-homomorphism|환 준동형]]이라 하자. 핵 $\operatorname{Ker} \varphi$, 상 $\varphi(R)$, 환 동형사상과 $\cong$은 그 항목의 것이고, 그 항목의 (3)의 (i)에 의해 $\varphi(R)$은 $R'$의 [[subring|부분환]]이므로 $R'$의 두 연산을 제한한 환이다. $K = \operatorname{Ker} \varphi$라 하자. [[ideal|아이디얼]]의 (5)에 의해 $K$는 $R$의 아이디얼이므로 [[quotient-ring|몫환]] $R/K$와 표준 준동형 $\pi : R \to R/K$, $\pi(a) = a + K$가 있다.
 
 1. (환의 제1 동형 정리) 함수 $\eta : R/K \to \varphi(R)$로서 모든 $a \in R$에서
-$$\eta(a + K) = \varphi(a)$$
-인 것이 정확히 하나 있고, $\eta$는 환 $R/K$에서 환 $\varphi(R)$로의 환 동형사상이다. 따라서 $R/\operatorname{Ker} \varphi \cong \varphi(R)$이다.
+   $$\eta(a + K) = \varphi(a)$$
+   인 것이 정확히 하나 있고, $\eta$는 환 $R/K$에서 환 $\varphi(R)$로의 환 동형사상이다. 따라서 $R/\operatorname{Ker} \varphi \cong \varphi(R)$이다.
 2. (표준 준동형과의 관계) 모든 $a \in R$에서 $\eta(\pi(a)) = \varphi(a)$이다. 곧 $\iota : \varphi(R) \to R'$이 포함 함수(모든 $y \in \varphi(R)$에서 $\iota(y) = y$)이면 $\varphi = \iota \circ \eta \circ \pi$이다.
 3. (전사인 경우) $\varphi : R \to R'$이 전사이면 $\varphi(R) = R'$이고 $\eta$는 환 $R/K$에서 환 $R'$으로의 환 동형사상이다. 따라서 $R/\operatorname{Ker} \varphi \cong R'$이다.
 4. (따름)
@@ -37,8 +37,8 @@ $$\eta(a + K) = \varphi(a)$$
 Let $(R, +, \cdot)$ and $(R', +', \cdot')$ be rings and $\varphi : R \to R'$ a ring homomorphism. The kernel $\operatorname{Ker} \varphi$, the image $\varphi(R)$, ring isomorphisms and $\cong$ are as in the entry on ring homomorphisms; by item (3)(i) of that entry, $\varphi(R)$ is a subring of $R'$, hence a ring with the two operations of $R'$ restricted. Let $K = \operatorname{Ker} \varphi$. By item (5) of the entry on ideals, $K$ is an ideal of $R$, so there are the quotient ring $R/K$ and the canonical homomorphism $\pi : R \to R/K$, $\pi(a) = a + K$.
 
 1. (First isomorphism theorem for rings) There is exactly one function $\eta : R/K \to \varphi(R)$ such that, for all $a \in R$,
-$$\eta(a + K) = \varphi(a),$$
-and $\eta$ is a ring isomorphism from the ring $R/K$ to the ring $\varphi(R)$. Hence $R/\operatorname{Ker} \varphi \cong \varphi(R)$.
+   $$\eta(a + K) = \varphi(a),$$
+   and $\eta$ is a ring isomorphism from the ring $R/K$ to the ring $\varphi(R)$. Hence $R/\operatorname{Ker} \varphi \cong \varphi(R)$.
 2. (Relation to the canonical homomorphism) $\eta(\pi(a)) = \varphi(a)$ for all $a \in R$. That is, if $\iota : \varphi(R) \to R'$ is the inclusion ($\iota(y) = y$ for all $y \in \varphi(R)$), then $\varphi = \iota \circ \eta \circ \pi$.
 3. (The surjective case) If $\varphi : R \to R'$ is surjective, then $\varphi(R) = R'$ and $\eta$ is a ring isomorphism from the ring $R/K$ to the ring $R'$. Hence $R/\operatorname{Ker} \varphi \cong R'$.
 4. (Consequences)

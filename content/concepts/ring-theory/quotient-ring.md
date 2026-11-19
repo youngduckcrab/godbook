@@ -32,8 +32,8 @@ $$(a + I) + (b + I) = (a + b) + I$$
 (2)–(6)에서 $I$는 $R$의 아이디얼이다.
 
 2. (몫환) $R/I$ 위의 이항연산으로서 모든 $a, b \in R$에서 $a + I$와 $b + I$에서의 값이 $ab + I$인 것이 정확히 하나 있다. 이 값을 $(a + I)(b + I)$로 쓴다. 곧
-$$(a + I)(b + I) = ab + I$$
-이다. 이 연산은 동치류 위의 연산의 (2)에서 $R$의 곱셈이 $R/{\sim_I} = R/I$에 정하는 연산이다. 위의 덧셈과 이 곱셈으로 $(R/I, +, \cdot)$는 환이고, 이 환을 $I$에 대한 $R$의 **몫환**(quotient ring)이라 하며 "환 $R/I$"라 부른다. 곱 $(a + I)(b + I)$는 이 연산의 값이고, 두 잉여류의 원소끼리의 곱을 모은 집합이 아니다.
+   $$(a + I)(b + I) = ab + I$$
+   이다. 이 연산은 동치류 위의 연산의 (2)에서 $R$의 곱셈이 $R/{\sim_I} = R/I$에 정하는 연산이다. 위의 덧셈과 이 곱셈으로 $(R/I, +, \cdot)$는 환이고, 이 환을 $I$에 대한 $R$의 **몫환**(quotient ring)이라 하며 "환 $R/I$"라 부른다. 곱 $(a + I)(b + I)$는 이 연산의 값이고, 두 잉여류의 원소끼리의 곱을 모은 집합이 아니다.
 3. (영, 덧셈의 역원, 같을 조건) $a, b \in R$이고 $k$가 정수이면 다음이 성립한다. 환 $R/I$의 $0$은 $0 + I = I$이고, $-(a + I) = (-a) + I$, $(a + I) - (b + I) = (a - b) + I$, $k \cdot (a + I) = (k \cdot a) + I$이다. 또 $a + I = b + I$인 것은 정확히 $a - b \in I$일 때이고, 특히 $a + I = 0 + I$인 것은 정확히 $a \in I$일 때이다.
 4. (가환환과 단위원) 
    - (i) $R$이 가환환이면 $R/I$도 가환환이다.
@@ -56,8 +56,8 @@ and this addition is the operation induced on $R/{\sim_I} = R/I$ by the addition
 In (2)–(6), $I$ is an ideal of $R$.
 
 2. (The quotient ring) There is exactly one binary operation on $R/I$ whose value at $a + I$ and $b + I$ is $ab + I$ for all $a, b \in R$. This value is written $(a + I)(b + I)$; that is,
-$$(a + I)(b + I) = ab + I.$$
-This operation is the operation induced on $R/{\sim_I} = R/I$ by the multiplication of $R$ in the sense of item (2) of the entry on operations on equivalence classes. With the addition above and this multiplication, $(R/I, +, \cdot)$ is a ring, called the **quotient ring** of $R$ by $I$ and referred to as "the ring $R/I$". The product $(a + I)(b + I)$ is a value of this operation, not the set of products of elements of the two cosets.
+   $$(a + I)(b + I) = ab + I.$$
+   This operation is the operation induced on $R/{\sim_I} = R/I$ by the multiplication of $R$ in the sense of item (2) of the entry on operations on equivalence classes. With the addition above and this multiplication, $(R/I, +, \cdot)$ is a ring, called the **quotient ring** of $R$ by $I$ and referred to as "the ring $R/I$". The product $(a + I)(b + I)$ is a value of this operation, not the set of products of elements of the two cosets.
 3. (Zero, additive inverses, equality) For $a, b \in R$ and an integer $k$: the $0$ of the ring $R/I$ is $0 + I = I$, $-(a + I) = (-a) + I$, $(a + I) - (b + I) = (a - b) + I$ and $k \cdot (a + I) = (k \cdot a) + I$. Moreover, $a + I = b + I$ exactly when $a - b \in I$; in particular, $a + I = 0 + I$ exactly when $a \in I$.
 4. (Commutativity and unity)
    - (i) If $R$ is a commutative ring, then so is $R/I$.

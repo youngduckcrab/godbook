@@ -34,10 +34,10 @@ added: 2026-11-19
    - (v) $f^{-1}(Y \cap Z) = f^{-1}(Y) \cap f^{-1}(Z)$
    - (vi) $f(f^{-1}(Y)) \subseteq Y$
 2. (집합족의 역상) $\mathcal{A}$가 $B$의 집합족이면 $\{f^{-1}(V) : V \in \mathcal{A}\}$는 $A$의 집합족이고
-$$
-f^{-1}\Bigl(\bigcup \mathcal{A}\Bigr) = \bigcup \{f^{-1}(V) : V \in \mathcal{A}\}, \qquad f^{-1}\Bigl(\bigcap \mathcal{A}\Bigr) = \bigcap \{f^{-1}(V) : V \in \mathcal{A}\}
-$$
-이다. 둘째 등식에서 왼쪽의 $\bigcap \mathcal{A}$는 $B$의 집합족으로 본 교집합이고, 오른쪽은 $A$의 집합족으로 본 교집합이다. 두 등식은 $\mathcal{A} = \emptyset$일 때에도 성립한다. 이때 첫째 등식의 양쪽은 $\emptyset$이고, 둘째 등식의 양쪽은 $A$이다.
+   $$
+   f^{-1}\Bigl(\bigcup \mathcal{A}\Bigr) = \bigcup \{f^{-1}(V) : V \in \mathcal{A}\}, \qquad f^{-1}\Bigl(\bigcap \mathcal{A}\Bigr) = \bigcap \{f^{-1}(V) : V \in \mathcal{A}\}
+   $$
+   이다. 둘째 등식에서 왼쪽의 $\bigcap \mathcal{A}$는 $B$의 집합족으로 본 교집합이고, 오른쪽은 $A$의 집합족으로 본 교집합이다. 두 등식은 $\mathcal{A} = \emptyset$일 때에도 성립한다. 이때 첫째 등식의 양쪽은 $\emptyset$이고, 둘째 등식의 양쪽은 $A$이다.
 3. (차집합) $V$, $W$가 $B$의 부분집합이면 $f^{-1}(V - W) = f^{-1}(V) - f^{-1}(W)$이다. 특히 $f^{-1}(B - W) = A - f^{-1}(W)$이다.
 4. (합성) $g : B \to D$가 함수이면, $E \subseteq D$에 대하여 $(g \circ f)^{-1}(E) = f^{-1}(g^{-1}(E))$이고, $X \subseteq A$에 대하여 $(g \circ f)(X) = g(f(X))$이다.
 5. (집합족의 상) $\mathcal{C}$가 $A$의 집합족이면 $\{f(S) : S \in \mathcal{C}\}$는 $B$의 집합족이고 $f\bigl(\bigcup \mathcal{C}\bigr) = \bigcup \{f(S) : S \in \mathcal{C}\}$이다. $\mathcal{C} = \emptyset$이면 이 등식은 $f(\emptyset) = \emptyset$이다.
@@ -59,10 +59,10 @@ Images and preimages, families of sets with their unions and intersections, fami
    - (v) $f^{-1}(Y \cap Z) = f^{-1}(Y) \cap f^{-1}(Z)$
    - (vi) $f(f^{-1}(Y)) \subseteq Y$
 2. (Preimage of a family) If $\mathcal{A}$ is a family of subsets of $B$, then $\{f^{-1}(V) : V \in \mathcal{A}\}$ is a family of subsets of $A$, and
-$$
-f^{-1}\Bigl(\bigcup \mathcal{A}\Bigr) = \bigcup \{f^{-1}(V) : V \in \mathcal{A}\}, \qquad f^{-1}\Bigl(\bigcap \mathcal{A}\Bigr) = \bigcap \{f^{-1}(V) : V \in \mathcal{A}\}.
-$$
-In the second equality, $\bigcap \mathcal{A}$ on the left is the intersection of $\mathcal{A}$ regarded as a family of subsets of $B$, and the right-hand side is an intersection regarded as a family of subsets of $A$. Both equalities also hold when $\mathcal{A} = \emptyset$; then both sides of the first equality are $\emptyset$ and both sides of the second are $A$.
+   $$
+   f^{-1}\Bigl(\bigcup \mathcal{A}\Bigr) = \bigcup \{f^{-1}(V) : V \in \mathcal{A}\}, \qquad f^{-1}\Bigl(\bigcap \mathcal{A}\Bigr) = \bigcap \{f^{-1}(V) : V \in \mathcal{A}\}.
+   $$
+   In the second equality, $\bigcap \mathcal{A}$ on the left is the intersection of $\mathcal{A}$ regarded as a family of subsets of $B$, and the right-hand side is an intersection regarded as a family of subsets of $A$. Both equalities also hold when $\mathcal{A} = \emptyset$; then both sides of the first equality are $\emptyset$ and both sides of the second are $A$.
 3. (Differences) If $V$ and $W$ are subsets of $B$, then $f^{-1}(V - W) = f^{-1}(V) - f^{-1}(W)$. In particular, $f^{-1}(B - W) = A - f^{-1}(W)$.
 4. (Composition) If $g : B \to D$ is a function, then $(g \circ f)^{-1}(E) = f^{-1}(g^{-1}(E))$ for $E \subseteq D$, and $(g \circ f)(X) = g(f(X))$ for $X \subseteq A$.
 5. (Image of a family) If $\mathcal{C}$ is a family of subsets of $A$, then $\{f(S) : S \in \mathcal{C}\}$ is a family of subsets of $B$, and $f\bigl(\bigcup \mathcal{C}\bigr) = \bigcup \{f(S) : S \in \mathcal{C}\}$. When $\mathcal{C} = \emptyset$, this equality reads $f(\emptyset) = \emptyset$.
