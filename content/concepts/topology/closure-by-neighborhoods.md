@@ -11,9 +11,9 @@ requires: [set, subset, set-operations, topological-space, closed-set, neighborh
 proof: full
 sources:
   - ref: fuglede-basic-topology
-    loc: "Interior, closure, boundary, and limit points 절, Theorem relations-closure-boundary 뒤의 문장과 Proposition closures-of-products 의 증명, content/topological-spaces.tex:624, 636"
+    loc: "Interior, closure, boundary, and limit points 절, Theorem relations-closure-boundary 뒤의 문장과 Proposition closures-of-products 의 증명, content/topological-spaces.tex:624, 636; Basis for a topology 절, ℝ_l 과 ℝ_K 를 비교하는 Lemma 의 증명, 187"
     checked: original
-    note: "(1)은 출처가 624줄에서 Theorem relations-closure-boundary 의 (ii)(Y 의 폐포 = Y ∪ ∂Y)에서 읽어 내는 '폐포의 유용한 특징'과 같은 진술이다. 출처는 그것을 그 정리의 따름으로 한 줄에 적고, 이 항목은 폐포의 정의(닫힌집합 전체의 교집합)에서 바로 증명한다. 그래서 이 항목은 3단원의 경계와 집적점의 관계보다 앞에 온다. (2)의 기저 원소로 읽는 꼴은 출처가 closures-of-products 의 증명(636)에서 곱위상의 기저 원소 U 가 x 를 원소로 가질 때 U 가 A 와 만나는지를 보는 방식과 같다. 예시 '세 점 위의 위상에서 폐포 구하기'의 위상은 topology-examples 의 (8)의 (i)의 것이고 출처 연습문제 1.2(content/exercises.tex:13, X = {a, b, c} 위의 위상을 모두 기술하라)의 답에 드는 위상이다. 확인 질문 '두 점 위의 위상에서 조밀한 집합'의 위상은 출처의 예 two-point-topologies(18–28)의 𝒯₂ 와 같다."
+    note: "(1)은 출처가 624줄에서 Theorem relations-closure-boundary 로부터 읽어 내는 '폐포의 유용한 특징'과 같은 진술이다. 출처는 정리의 어느 부분을 쓰는지 밝히지 않고 그것을 그 정리의 따름으로 한 줄에 적고, 이 항목은 폐포의 정의(닫힌집합 전체의 교집합)에서 바로 증명한다. 그래서 이 항목은 3단원의 경계와 집적점의 관계보다 앞에 온다. (2)의 기저 원소로 읽는 꼴은 출처가 closures-of-products 의 증명(636)에서 곱위상의 기저 원소 U 가 x 를 원소로 가질 때 U 가 A 와 만나는지를 보는 방식과 같다. 예시 '세 점 위의 위상에서 폐포 구하기'의 위상은 topology-examples 의 (8)의 (i)의 것이고 출처 연습문제 1.2(content/exercises.tex:13, X = {a, b, c} 위의 위상을 모두 기술하라)의 답에 드는 위상이다. 확인 질문 '두 점 위의 위상에서 조밀한 집합'의 위상은 출처의 예 two-point-topologies(18–28)의 𝒯₂ 와 같다. 예시 '아래끝 위상에서 열린구간의 폐포'와 확인 질문 'ℝ_l 에서 1 은 반열린구간 [0, 1) 의 폐포에 드는가'가 쓰는 근방 [1, 2) 는 출처가 ℝ_l 과 ℝ_K 를 비교하는 Lemma 의 증명 끝(187)에서 𝒯_l 의 원소로 드는 집합과 같다."
   - ref: lebl-basic-analysis
     loc: "7.2.3절 Closure and boundary, Proposition 7.2.22 (p.270)"
     checked: original

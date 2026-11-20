@@ -14,7 +14,7 @@ sources:
     checked: original
     note: "정의는 출처(45–47, 'A ⊆ X 는 Aᶜ 가 열려 있으면 closed')와 같다. (1)–(4)는 출처 Proposition prop-closed 의 (T1′) ∅ 과 X 가 닫혀 있다, (T2′) 첨수가 붙은 임의의 교집합 ⋂_{i∈I} C_i 가 닫혀 있다, (T3′) 유한 개 C_1 ∪ ⋯ ∪ C_n 이 닫혀 있다에 해당하고, 출처는 이 명제를 증명 없이 적는다. 이 항목은 (T2′)를 집합족 꼴(빈 족 포함)로, (T3′)를 두 집합의 경우 (3)과 유한 집합족의 경우 (4)로 나누어 쓰고, 집합족의 드 모르간 법칙과 원소의 개수에 대한 귀납으로 증명한다. 출처의 번호 (T1′)–(T3′)은 쓰지 않는다. 예시 '세 점 위의 위상의 닫힌집합'의 위상은 출처 연습문제 1.2(content/exercises.tex:13, X = {a, b, c} 위의 위상을 모두 기술하라)의 답에 드는 것이다. 확인 질문 '{∅, {a}, X} 에서 {b}'의 위상은 출처의 예 two-point-topologies 의 𝒯₂ 와 같다."
   - ref: lebl-basic-analysis
-    loc: "7.2.1절 Topology, Definition 7.2.4 (p.264), Proposition 7.2.8 (p.266), 연습문제 7.2.1 (p.272)"
+    loc: "7.2.1절 Topology, Definition 7.2.4 (p.264), Example 7.2.7, Proposition 7.2.8 (p.266); 7.2.4절 연습문제 7.2.1 (p.272)"
     checked: original
     note: "(1)–(4)는 출처 Proposition 7.2.8(거리공간의 닫힌집합에 대해 ∅ 과 X, 임의의 교집합, 유한 개의 합집합)과 같은 꼴이고, 출처는 그 증명을 연습문제 7.2.1 로 두며 '여집합에 Proposition 7.2.6 을 쓰라'고 힌트를 준다. 이 항목의 증명은 그 힌트의 길을 위상의 조건으로 쓴 것이다. (6)이 가리키는 거리공간의 닫힌집합은 출처 Definition 7.2.4 의 것이다. 반례 '닫힌집합 무한히 많은 것의 합집합'은 출처 Example 7.2.7(p.266, ⋂(−1/n, 1/n) = {0} 은 열려 있지 않다)과 같은 발상을 여집합으로 옮긴 것이고, 1단원 open-sets-of-a-metric-space 의 (7)의 집합족을 쓴다."
 status: reviewed

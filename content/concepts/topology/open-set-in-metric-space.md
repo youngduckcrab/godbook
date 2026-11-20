@@ -10,7 +10,7 @@ summary: 거리공간의 부분집합이 그 모든 점에서 그 점을 중심�
 requires: [metric-space, metric-space-examples, open-ball, subset, set-operations, negation-of-quantified-statements, interval, real-number-arithmetic, real-order-axioms, order-properties-of-reals, absolute-value, prime-number]
 sources:
   - ref: lebl-basic-analysis
-    loc: "7.2.1절 Topology, Definition 7.2.4 와 그 뒤 문단 (p.264), Example 7.2.5 (p.265), Example 7.4.15 (p.285)"
+    loc: "7.2.1절 Topology, Definition 7.2.4 와 그 뒤 문단 (p.264), Example 7.2.5 (p.265), Proposition 7.2.9 뒤 문단 (p.266); 7.4.2절 Compactness, Example 7.4.15 (p.285)"
     checked: original
     note: "열린집합과 닫힌집합의 정의, '공간을 밝혀 X 에서 열린(닫힌)이라고 말한다'는 약속은 출처 Definition 7.2.4 와 같다. 출처는 그 뒤 문단에서 대부분의 집합은 열린집합도 닫힌집합도 아니라고 적는다. 출처 Example 7.2.5 는 (0, ∞) 가 열려 있고 [0, ∞) 가 닫혀 있으며 [0, 1) 이 어느 쪽도 아님을 보이고, 한 점 집합이 닫혀 있음은 연습으로 두며, {0} ⊂ ℝ 은 열려 있지 않고 X = {x} 이면 {x} 가 열려 있다고 적는다. 이 항목의 (4)의 (ii)는 출처의 [0, 1) 과 같은 집합을 같은 두 점(0 과 1)에서 따진 것이고, (5)는 출처가 연습으로 둔 것을 증명한 것이며, (6)의 'ℝ 에서 {0} 은 열려 있지 않다'는 출처의 같은 예이다. (6)의 정수의 부분공간은 출처가 같은 예 다음 쪽(p.266)에서 [0, 1/2) 이 [0, 1] 에서는 열려 있고 ℝ 에서는 아니라고 적는 것과 같은 발상이다. 예시 '0 을 뺀 실수 전체'는 출처 Example 7.2.5 의 (0, ∞) 와 같은 발상(점마다 그 점과 경계점의 거리를 반지름으로 잡는다)이고, 반례 '열린집합의 부분집합'은 같은 예의 {0} ⊂ ℝ 을 쓴다. 확인 질문 '원소가 하나인 집합'은 같은 예의 'X = {x} 이면 {x} 는 열려 있다'와 같은 물음이고, 확인 질문 '{1, 2} 는 닫힌집합인가'는 같은 예가 연습으로 두는 '한 점 집합은 닫혀 있다'를 두 점으로 넓힌 물음이다. (3)은 출처가 Definition 7.2.4 뒤 문단(p.264)에서 닫힌집합을 'E 밖의 모든 것이 E 에서 어느 거리만큼 떨어져 있는 집합'이라고 설명하는 것을 판정법으로 쓴 것이고, 직관의 '움직일 여유'는 같은 문단의 직관('wiggle')과 같다. (4)의 (iii)의 '모든 부분집합은 닫혀 있다'는 출처 Example 7.4.15 의 (ii)(p.285, 무한집합 위의 이산 거리)가 적는 것이다."
   - ref: fuglede-basic-topology

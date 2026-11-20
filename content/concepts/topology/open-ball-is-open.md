@@ -11,13 +11,13 @@ requires: [metric-space, open-ball, open-set-in-metric-space, set-operations, re
 proof: full
 sources:
   - ref: lebl-basic-analysis
-    loc: "7.2.1절 Topology, Proposition 7.2.9 와 그 증명 (p.266), 연습문제 7.2.2 (p.272)"
+    loc: "7.2.1절 Topology, Proposition 7.2.9 와 그 앞 문장, 그 증명 (p.266); 7.2.2절 Connected sets, Example 7.2.17 (p.269); 7.2.4절 연습문제 7.2.2 (p.272)"
     checked: original
-    note: "진술 (1), (2)는 출처 Proposition 7.2.9 이다. 출처는 열린 공 쪽을 α = δ − d(x, y) 로 두고 삼각부등식으로 증명하며, 이 항목의 (1)의 증명은 그 계산을 열린 공 항목의 (3)으로 인용한 것이다. 출처는 닫힌 공 쪽의 증명을 연습문제 7.2.2 로 둔다. 이 항목은 열린 공 항목의 (4)로 증명한다. 출처는 Proposition 7.2.9 바로 앞에서 '이름과 달리 열린 공이 열려 있고 닫힌 공이 닫혀 있다는 것은 아직 보이지 않았다'고 적는다. 반례 '닫힌 공이 열려 있을 수도 있다'의 이산 거리 공간은 출처가 Example 7.2.17(p.269)에서 쓰는 원소 둘인 이산 거리공간과 같은 종류의 대상이다."
+    note: "진술 (1), (2)는 출처 Proposition 7.2.9 이다. 출처는 열린 공 쪽을 α = δ − d(x, y) 로 두고 삼각부등식으로 증명하며, 이 항목의 (1)의 증명은 그 계산을 열린 공 항목의 (3)으로 인용한 것이다. 출처는 닫힌 공 쪽의 증명을 연습문제 7.2.2 로 둔다. 이 항목은 열린 공 항목의 (4)로 증명한다. 출처는 Proposition 7.2.9 바로 앞에서 '이름과 달리 열린 공이 열려 있고 닫힌 공이 닫혀 있다는 것은 아직 보이지 않았다'고 적는다. 반례 '닫힌 공이 열린집합일 수도 있다'의 이산 거리 공간은 출처가 Example 7.2.17(p.269)에서 쓰는 원소 둘인 이산 거리공간과 같은 종류의 대상이다."
   - ref: fuglede-basic-topology
     loc: "Metric spaces 절, Proposition (label metric-basis) 의 증명과 Remark (label remark-def-open-balls), content/topological-spaces.tex:209–244"
     checked: original
-    note: "출처는 열린 공 전체가 위상의 기저임을 보이는 증명(220–233)과 Remark(239–241)에서 이 항목의 (1)과 같은 계산(반지름을 r − d(x, y) 꼴로 잡는다)을 쓴다. 닫힌 공은 출처에 정의되어 있지 않다."
+    note: "출처는 열린 공 전체가 위상의 기저임을 보이는 증명(220–233)과 Remark(239–241)에서 이 항목의 (1)과 같은 계산(반지름을 r − d(x, y) 꼴로 잡는다)을 쓴다. 출처는 거리공간의 닫힌 공을 정의하지 않는다(검색어 'closed ball' 은 content/*.tex 에서 0건)."
 status: reviewed
 review_note: "2026-11-19 자기 검토(docs/self-review.md)와 지휘자의 표본 검사를 거쳤다. 독립 검토는 거치지 않았다. 자기 검토에서 출처 메모의 틀린 주장 1건과 다른 항목의 예를 근거로 삼은 예를 고쳤다."
 added: 2026-11-19

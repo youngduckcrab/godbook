@@ -10,13 +10,13 @@ summary: 위상공간의 부분집합의 폐포가 전체이면 그 부분집합
 requires: [set, subset, set-operations, topological-space, topology-examples, closed-set, interior-and-closure, metric-space-examples, interval, order-properties-of-reals]
 sources:
   - ref: fuglede-basic-topology
-    loc: "Interior, closure, boundary, and limit points 절의 Definition (iii), content/topological-spaces.tex:543"
+    loc: "Interior, closure, boundary, and limit points 절의 Definition (iii), content/topological-spaces.tex:543; 연습문제 3.10 (content/exercises.tex:124–137)"
     checked: original
-    note: "정의는 출처 Definition (iii)(543, 'Y 의 폐포가 X 이면 Y 를 X 에서 dense 라 한다')과 같다. (1)–(3)은 두 출처에 명제로 없다(검색어 dense 로 두 출처 전체의 모든 건(Fuglede 6줄, Lebl 8줄)을 읽었고, everywhere, '폐포 = X'의 식 꼴, X ⊂ S 의 폐포 꼴로도 찾았다). 예시 '세 점 위의 위상에서 조밀한 집합'의 위상은 topology-examples 의 (8)의 (i)의 것이고 출처 연습문제 1.2(content/exercises.tex:13, X = {a, b, c} 위의 위상을 모두 기술하라)의 답에 드는 위상이다. 확인 질문 '두 점 위의 위상에서 조밀한 집합'의 위상은 출처의 예 two-point-topologies(18–28)의 𝒯₂ 와 같다."
+    note: "정의는 출처 Definition (iii)(543, 'Y 의 폐포가 X 이면 Y 를 X 에서 dense 라 한다')과 같다. (1)–(3)은 두 출처에 명제로 없다(검색어 dense 로 두 출처 전체의 모든 건(Fuglede 6줄, Lebl 8줄)을 읽었고, everywhere, '폐포 = X'의 식 꼴, X ⊂ S 의 폐포 꼴로도 찾았다). 예시 '세 점 위의 위상에서 조밀한 집합'의 위상은 topology-examples 의 (8)의 (i)의 것이고 출처 연습문제 1.2(content/exercises.tex:13, X = {a, b, c} 위의 위상을 모두 기술하라)의 답에 드는 위상이다. 확인 질문 '두 점 위의 위상에서 조밀한 집합'의 위상은 출처의 예 two-point-topologies(18–28)의 𝒯₂ 와 같다. 반례 '조밀한 두 집합의 교집합은 조밀하지 않을 수 있다'는 출처 연습문제 3.10(exercises.tex:124–137)과 같은 주제(조밀한 집합의 교집합)를 다룬다. 그 연습문제는 열린 조밀 집합들의 가산 교집합이 조밀함(베르 범주 정리)을 보이게 한 뒤 임의 개수의 족으로 바꾸면 어떻게 되는지 묻는다."
   - ref: lebl-basic-analysis
-    loc: "7.3.4절 Exercises, 연습문제 7.3.7 (p.277)"
+    loc: "7.1절, Example 7.1.7 (p.259), Definition 7.1.12 뒤 문단 (p.261); 7.2.3절 Closure and boundary, Example 7.2.25 (p.271); 7.3.4절 Exercises, 연습문제 7.3.7 (p.277)"
     checked: original
-    note: "출처 연습문제 7.3.7(p.277)은 거리공간에서 'X ⊂ S 의 폐포이면 S 를 X 에서 dense 라 한다'고 정의하고(그림으로 대조했다), 이것을 'X 의 모든 점 p 에 S 의 점으로 이루어지고 p 로 수렴하는 수열이 있다'로 바꿔 말한 뒤 ℝⁿ 에 가산인 조밀한 부분집합이 있음을 보이라고 한다. 이 항목의 정의는 앞의 폐포 꼴이다(폐포는 X 의 부분집합이므로 X ⊂ 폐포는 폐포 = X 와 같다). 수열 꼴은 싣지 않는다."
+    note: "출처 연습문제 7.3.7(p.277)은 거리공간에서 'X ⊂ S 의 폐포이면 S 를 X 에서 dense 라 한다'고 정의하고(그림으로 대조했다), 이것을 'X 의 모든 점 p 에 S 의 점으로 이루어지고 p 로 수렴하는 수열이 있다'로 바꿔 말한 뒤 ℝⁿ 에 가산인 조밀한 부분집합이 있음을 보이라고 한다. 이 항목의 정의는 앞의 폐포 꼴이다(폐포는 X 의 부분집합이므로 X ⊂ 폐포는 폐포 = X 와 같다). 수열 꼴은 싣지 않는다. (2)의 이산위상의 경우는 출처 Example 7.2.25(p.271, 이산 거리를 준 X = {a, b} 에서 {a} 의 폐포는 {a})에서 한 예를 볼 수 있다. 확인 질문 'ℝ 에 이산 거리의 거리위상을 주면 열린구간 (0, 1) 은 조밀한가'의 공간은 출처 Example 7.1.7(p.259)과 Definition 7.1.12 뒤 문단(p.261)이 말하는 실수 위의 이산 거리와 같은 대상이다."
 status: reviewed
 review_note: "2026-11-19 자기 검토(docs/self-review.md)와 지휘자의 표본 검사를 거쳤다. 독립 검토는 거치지 않았다. 자기 검토에서 경계 경우(A = ∅, X = ∅, 밀착위상)에서 거짓이던 직관 문장 3건과 출처 메모의 주장 4건을 고쳤다."
 added: 2026-11-19

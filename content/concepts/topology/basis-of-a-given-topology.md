@@ -11,9 +11,9 @@ requires: [set, subset, family-of-sets, topological-space, topology-examples, ba
 proof: full
 sources:
   - ref: fuglede-basic-topology
-    loc: "Basis for a topology 절의 셋째 Lemma 와 그 증명, content/topological-spaces.tex:109–119"
+    loc: "Basis for a topology 절의 셋째 Lemma 와 그 앞 문장, 그 증명, content/topological-spaces.tex:109–119, 예 example-discrete-topology 121–128"
     checked: original
-    note: "(1)은 출처의 Lemma(110–112, 위상공간 (X, 𝒯) 의 𝒞 ⊆ 𝒯 가 '각 U ∈ 𝒯 와 x ∈ U 에 x ∈ C ⊆ U 인 C ∈ 𝒞 가 있다'를 만족하면 𝒞 는 𝒯 의 기저이다)와 같다. 출처는 증명(113–119)에서 (B1)을 U = X 로, (B2)를 C₁ ∩ C₂ 가 열려 있다는 것으로 보이고, 𝒯_𝒞 ⊆ 𝒯 는 Lemma genereated-by-unions 와 (T2)로 보인다. 이 항목의 증명도 같은 길이며, Lemma genereated-by-unions 는 고르기 없이 쓴 basis-generates-by-unions 의 (1)로 인용한다. 출처는 '𝒞 는 𝒯 의 기저(a basis for 𝒯)'라는 말을 정의하지 않고 쓴다. 이 항목은 그 말을 '위상의 기저이고 𝒯_𝒞 = 𝒯'로 정의하고, (2)의 거꾸로 방향과 (3)을 더한다. (4)의 (ii)의 한 점 집합들의 집합족은 출처의 예 example-discrete-topology(121–128)와 같은 대상이다. 예시와 확인 질문의 위상은 출처 연습문제 1.2(content/exercises.tex:13, X = {a, b, c} 위의 위상을 모두 기술하라)의 답에 드는 것이다."
+    note: "(1)은 출처의 Lemma(110–112, 위상공간 (X, 𝒯) 의 𝒞 ⊆ 𝒯 가 '각 U ∈ 𝒯 와 x ∈ U 에 x ∈ C ⊆ U 인 C ∈ 𝒞 가 있다'를 만족하면 𝒞 는 𝒯 의 기저이다)와 같다. 출처는 증명(113–119)에서 (B1)을 U = X 로, (B2)를 C₁ ∩ C₂ 가 열려 있다는 것으로 보이고, 𝒯_𝒞 ⊆ 𝒯 는 Lemma genereated-by-unions 와 (T2)로 보인다. 이 항목의 증명도 같은 길이며, Lemma genereated-by-unions 는 고르기 없이 쓴 basis-generates-by-unions 의 (1)로 인용한다. 출처는 '𝒞 는 𝒯 의 기저(a basis for 𝒯)'라는 말을 정의 환경으로 두지 않고, Lemma 바로 앞(109)에서 '주어진(given) 위상을 생성하는 기저'라고 말한 뒤 Lemma 에서 쓴다. 이 항목은 그 말을 '위상의 기저이고 𝒯_𝒞 = 𝒯'로 정의하고, (2)의 거꾸로 방향과 (3)을 더한다. (4)의 (ii)의 한 점 집합들의 집합족은 출처의 예 example-discrete-topology(121–128)와 같은 대상이고, 확인 질문 '이산위상의 기저는 모든 한 점 집합을 원소로 가져야 하는가'도 같은 대상을 다룬다. 예시와 확인 질문의 위상은 출처 연습문제 1.2(content/exercises.tex:13, X = {a, b, c} 위의 위상을 모두 기술하라)의 답에 드는 것이다."
 status: reviewed
 review_note: "2026-11-19 자기 검토(docs/self-review.md)와 지휘자의 표본 검사를 거쳤다. 독립 검토는 거치지 않았다. 자기 검토에서 다른 항목의 예를 근거로 삼은 예 2건과 근거 없는 주장을 고쳤다."
 added: 2026-11-19

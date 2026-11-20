@@ -11,9 +11,9 @@ requires: [metric-space, open-ball, open-set-in-metric-space, open-ball-is-open,
 proof: full
 sources:
   - ref: lebl-basic-analysis
-    loc: "7.2.1절 Topology, Proposition 7.2.6 (pp.265–266), Example 7.2.7, Proposition 7.2.8 (p.266), 연습문제 7.2.1 (p.272)"
+    loc: "3.1.1절 Cluster points, 예 (i) (p.113); 7.2.1절 Topology, Example 7.2.5 (p.265), Proposition 7.2.6 (pp.265–266), Example 7.2.7, Proposition 7.2.8 (p.266); 7.2.4절 연습문제 7.2.1 (p.272); 7.4.3절 연습문제 7.4.2 (p.285)"
     checked: original
-    note: "(1), (2), (4)는 출처 Proposition 7.2.6 의 (i), (iii), (ii)이고 (5)는 Proposition 7.2.8 이다. 출처는 (ii)를 유한 개 V_1, …, V_k 에 대해 각 j 마다 δ_j 를 잡고 δ = min{δ_1, …, δ_k} 로 증명한다. 이 사이트에는 유한 개 실수의 최솟값이 없으므로, 이 항목은 두 집합의 경우 (3)을 두 수의 min 으로 보이고 유한 집합족의 경우 (4)를 원소의 개수에 대한 귀납으로 얻는다. 출처의 (iii)은 첨수가 붙은 꼴 {V_λ}_{λ∈I} 이고, 이 항목은 집합족의 꼴로 쓰며 빈 족을 포함한다. 출처는 Proposition 7.2.8 의 증명을 연습문제 7.2.1 로 두고 '여집합에 Proposition 7.2.6 을 쓰라'고 힌트를 준다. 이 항목의 (5)는 그 길로 집합족 항목의 (5)(드 모르간 법칙)를 쓴다. (7)의 '무한히 많은 열린집합의 교집합은 열려 있지 않을 수 있다'는 출처 Example 7.2.7(⋂(−1/n, 1/n) = {0} 은 열려 있지 않다)과 같은 발상이고, 이 항목은 다른 족 {x : −1/n < x < 1} 을 쓴다. 반례 '닫힌집합 무한히 많은 것의 합집합'은 그 닫힌집합판이다."
+    note: "(1), (2), (4)는 출처 Proposition 7.2.6 의 (i), (iii), (ii)이고 (5)는 Proposition 7.2.8 이다. 출처는 (ii)를 유한 개 V_1, …, V_k 에 대해 각 j 마다 δ_j 를 잡고 δ = min{δ_1, …, δ_k} 로 증명한다. 이 사이트에는 유한 개 실수의 최솟값이 없으므로, 이 항목은 두 집합의 경우 (3)을 두 수의 min 으로 보이고 유한 집합족의 경우 (4)를 원소의 개수에 대한 귀납으로 얻는다. 출처의 (iii)은 첨수가 붙은 꼴 {V_λ}_{λ∈I} 이고, 이 항목은 집합족의 꼴로 쓰며 빈 족을 포함한다. 출처는 Proposition 7.2.8 의 증명을 연습문제 7.2.1 로 두고 '여집합에 Proposition 7.2.6 을 쓰라'고 힌트를 준다. 이 항목의 (5)는 그 길로 집합족 항목의 (5)(드 모르간 법칙)를 쓴다. (7)의 '무한히 많은 열린집합의 교집합은 열려 있지 않을 수 있다'는 출처 Example 7.2.7(⋂(−1/n, 1/n) = {0} 은 열려 있지 않다)과 같은 발상이고, 이 항목은 다른 족 {x : −1/n < x < 1} 을 쓴다. 반례 '닫힌집합 무한히 많은 것의 합집합은 닫혀 있지 않을 수 있다'는 그 닫힌집합판이고, 그 집합 {1/n : n ∈ ℕ} 은 출처 p.113 의 예 (i)(이 집합의 cluster point 는 0 하나뿐이다)과 연습문제 7.4.2(p.285, 이 집합은 콤팩트가 아니고 0 을 더하면 콤팩트이다)의 집합과 같은 대상이다. 0 이 이 집합의 점에 얼마든지 가깝다는 것은 그 예 (i)과 같은 결론이다. 확인 질문 'ℝ(보통 거리)에서 {1, 2, 3} 은 닫힌집합인가'는 출처 Example 7.2.5(p.265)가 연습으로 두는 '한 점 집합은 닫혀 있다'에 Proposition 7.2.8 의 (iii)을 쓰는 것과 같은 길이다."
   - ref: fuglede-basic-topology
     loc: "Definitions and first examples 절의 위상의 정의 (content/topological-spaces.tex:7–15), Proposition (label prop-closed) (48–56), 위상의 기저 절의 Lemma 와 Lemma (label genereated-by-unions) (73–108)"
     checked: original

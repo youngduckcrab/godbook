@@ -11,13 +11,13 @@ requires: [set, subset, set-operations, rational-and-irrational-numbers, rationa
 proof: full
 sources:
   - ref: fuglede-basic-topology
-    loc: "Interior, closure, boundary, and limit points 절의 예(ℚ 는 ℝ 에서 조밀하다), content/topological-spaces.tex:625–627"
+    loc: "Interior, closure, boundary, and limit points 절의 예(ℚ 는 ℝ 에서 조밀하다), content/topological-spaces.tex:625–627; 연습문제 3.10 (content/exercises.tex:124–137)"
     checked: original
-    note: "(2)의 'ℚ 는 조밀하다'와 (3)의 'ℚ 의 경계는 ℝ'은 출처의 예(625–627)와 같은 대상의 같은 결론이다. 출처는 'U 같은 열린집합은 구간 몇 개의 합집합이고 모든 구간은 유리수와 무리수를 함께 품는다'로 보이며, 이 항목은 (1)(열린구간 전체가 보통 위상의 기저라는 것과 closure-by-neighborhoods 의 (4))로 보인다. 확인 질문 '정수가 아닌 실수 전체'는 출처의 그 예와 같은 발상(구간마다 무리수가 있다)을 쓴다."
+    note: "(2)의 'ℚ 는 조밀하다'와 (3)의 'ℚ 의 경계는 ℝ'은 출처의 예(625–627)와 같은 대상의 같은 결론이다. 출처는 'U 같은 열린집합은 구간 몇 개의 합집합이고 모든 구간은 유리수와 무리수를 함께 품는다'로 보이며, 이 항목은 (1)(열린구간 전체가 보통 위상의 기저라는 것과 closure-by-neighborhoods 의 (4))로 보인다. 확인 질문 '정수가 아닌 실수 전체'는 출처의 그 예와 같은 발상(구간마다 무리수가 있다)을 쓴다. 반례 '조밀한 두 집합이 서로소일 수 있다'와 예시 '0 을 뺀 실수'(조밀하면서 열린 집합)는 출처 연습문제 3.10(exercises.tex:124–137, 열린 조밀 집합들의 교집합이 조밀한지 묻는다)과 같은 주제를 다룬다."
   - ref: lebl-basic-analysis
-    loc: "1.2.2절 Archimedean property, Theorem 1.2.4 (ii) (p.31); 1.2.5절 연습문제 1.2.8 (p.34); 7.3.4절 연습문제 7.3.7 (p.277)"
+    loc: "1.2.2절 Archimedean property, Theorem 1.2.4 (ii) (p.31); 1.2.5절 연습문제 1.2.8 (p.34); 3.1.1절 Cluster points, 예 (iii) (p.113); 7.3.4절 연습문제 7.3.7 (p.277)"
     checked: original
-    note: "(1)의 오른쪽 조건은 출처 Theorem 1.2.4 (ii)(p.31, 'ℚ is dense in ℝ': x < y 이면 x < r < y 인 r ∈ ℚ 가 있다)가 '조밀하다'고 부르는 성질이다. 이 사이트에서 그것은 해석학 입문 rationals-are-dense 의 (2)이고, 이 항목의 (1)은 그 이름이 위상의 '조밀하다'와 같은 뜻이라는 것이다. (2)의 무리수 쪽은 출처 연습문제 1.2.8(p.34, x < y 이면 x < s < y 인 무리수 s 가 있다)의 결론을 쓴 것이고, 이 사이트에서는 open-and-closed-sets-of-reals 의 (6)의 (i)이다. 확인 질문 '정수가 아닌 실수 전체'도 같은 결론을 쓴다. 출처 연습문제 7.3.7(p.277)은 거리공간에서 조밀을 폐포로 정의하고 ℝⁿ 의 가산 조밀 부분집합을 묻는다. 이 항목은 가산성을 다루지 않는다."
+    note: "(1)의 오른쪽 조건은 출처 Theorem 1.2.4 (ii)(p.31, 'ℚ is dense in ℝ': x < y 이면 x < r < y 인 r ∈ ℚ 가 있다)가 '조밀하다'고 부르는 성질이다. 이 사이트에서 그것은 해석학 입문 rationals-are-dense 의 (2)이고, 이 항목의 (1)은 그 이름이 위상의 '조밀하다'와 같은 뜻이라는 것이다. (2)의 무리수 쪽은 출처 연습문제 1.2.8(p.34, x < y 이면 x < s < y 인 무리수 s 가 있다)의 결론을 쓴 것이고, 이 사이트에서는 open-and-closed-sets-of-reals 의 (6)의 (i)이다. 확인 질문 '정수가 아닌 실수 전체'도 같은 결론을 쓴다. 출처 연습문제 7.3.7(p.277)은 거리공간에서 조밀을 폐포로 정의하고 ℝⁿ 의 가산 조밀 부분집합을 묻는다. 이 항목은 가산성을 다루지 않는다. (2)의 ℚ 는 출처 p.113 의 예 (iii)(ℚ 의 cluster point 전체는 ℝ 이다)과 같은 대상이다."
 status: reviewed
 review_note: "2026-11-19 자기 검토(docs/self-review.md)와 지휘자의 표본 검사를 거쳤다. 독립 검토는 거치지 않았다. 자기 검토에서 틀린 근거 1건, 부정확한 직관과 단원 글 문장, 블록 제목이 깨지는 화면 오류를 고쳤다."
 added: 2026-11-19

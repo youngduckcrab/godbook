@@ -13,7 +13,7 @@ sources:
   - ref: fuglede-basic-topology
     loc: "Basis for a topology 절의 예 lower-limit-topology 와 그 뒤의 Lemma 와 증명, content/topological-spaces.tex:166–188"
     checked: original
-    note: "기저 ℬ_l (출처 168–171, 실수 a, b 에 대한 {x : a ≤ x < b} 꼴의 집합 전체), 이름 'lower limit topology', 기호 ℝ_l (172)은 출처의 것이다. 출처는 a, b 가 '변한다'고만 적고 a < b 를 따로 적지 않는다. 이 항목은 interval 의 약속대로 a < b 인 [a, b) 만 모은다. 출처는 ℬ_l 이 기저라는 것을 증명하지 않고, 이 항목의 (1)이 그 증명이다. (2)는 출처 Lemma(179–181)의 ℝ_l 부분이고, 출처의 증명(183)과 같이 Lemma compare-bases 에 [x, b) ⊆ (a, b) 를 넣어 보이며, 진짜로 더 섬세하다는 것은 출처가 '[x, b) 를 포함하는 열린구간 B 로 x ∈ B ⊆ [x, b) 인 것이 없다'고 적는 것을 1단원 open-and-closed-sets-of-reals 의 (3)으로 대신한다. '아래끝 위상'은 이 사이트가 lower limit topology 에 붙인 번역어이다(출처의 스웨덴어 번역어 자리는 '?' 로 비어 있다)."
+    note: "기저 ℬ_l (출처 168–171, 실수 a, b 에 대한 {x : a ≤ x < b} 꼴의 집합 전체), 이름 'lower limit topology', 기호 ℝ_l (172)은 출처의 것이다. 출처는 a, b 가 '변한다'고만 적고 a < b 를 따로 적지 않는다. 이 항목은 interval 의 약속대로 a < b 인 [a, b) 만 모은다. 출처는 ℬ_l 이 기저라는 것을 증명하지 않고, 이 항목의 (1)이 그 증명이다. (2)는 출처 Lemma(179–181)의 ℝ_l 부분이고, 출처의 증명(183)과 같이 Lemma compare-bases 에 [x, b) ⊆ (a, b) 를 넣어 보이며, 진짜로 더 섬세하다는 것은 출처가 증명(183)에서 'x ∈ B ⊆ [x, b) 인 열린구간 B 가 없다'고 적는 것을 1단원 open-and-closed-sets-of-reals 의 (3)으로 대신한다. '아래끝 위상'은 이 사이트가 lower limit topology 에 붙인 번역어이다(출처의 스웨덴어 번역어 자리는 '?' 로 비어 있다)."
 status: reviewed
 review_note: "2026-11-19 자기 검토(docs/self-review.md)와 지휘자의 표본 검사를 거쳤다. 독립 검토는 거치지 않았다. 자기 검토에서 다른 항목의 예를 근거로 삼은 예 2건과 근거 없는 주장을 고쳤다."
 added: 2026-11-19
