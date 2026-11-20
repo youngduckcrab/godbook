@@ -8,7 +8,6 @@ track: 해석
 requires: [language-of-math, analysis-intro]
 status: in-progress
 planned_units:
-  - 리만 적분과 적분가능한 함수
   - 적분의 성질
   - 불연속점이 있는 함수의 적분
   - 미적분의 기본정리
