@@ -78,7 +78,11 @@ $$
 
 **3의 증명.** $x \in \mathbb{R}_{>0}$을 고정하고, $0$ 이상인 정수 $n$에 대한 명제 "$\ln(x^n) = n \ln x$"를 시작점이 $0$인 [[mathematical-induction|수학적 귀납법]]으로 보인다. $n = 0$이면 거듭제곱의 정의에 의해 $x^0 = 1$이고 자연로그 (1)과 (K9)에 의해 $\ln(x^0) = 0 = 0 \cdot \ln x$이다. $0$ 이상인 정수 $k$에서 $\ln(x^k) = k \ln x$라 하자. 거듭제곱의 정의에 의해 $x^{k+1} = x^k x$이고 $x^k \in \mathbb{R}_{>0}$이므로, 1과 귀납 가정, (K4), (K12)의 (i)에 의해
 $$
-\ln(x^{k+1}) = \ln(x^k) + \ln x = k \ln x + 1 \cdot \ln x = (k + 1) \ln x
+\begin{aligned}
+\ln(x^{k+1}) &= \ln(x^k) + \ln x \\
+&= k \ln x + 1 \cdot \ln x \\
+&= (k + 1) \ln x
+\end{aligned}
 $$
 이다. 따라서 $0$ 이상인 모든 정수 $n$에서 $\ln(x^n) = n \ln x$이다.
 
