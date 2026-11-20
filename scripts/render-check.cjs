@@ -1,5 +1,6 @@
 // 빌드된 사이트의 모든 항목 페이지를 열어 화면에 보이는 문제를 찾는다.
 // 쓰는 법:  npm run build && (npx astro preview --port 4321 &) && sleep 4 && node scripts/render-check.cjs
+// WIDE=1 을 붙이면 390px 에서 상자보다 넓은 줄 수식(접힌 증명 안 포함)의 개수도 항목별로 알려 준다.
 // Playwright 가 설치된 환경에서만 돈다 (Claude Code 클라우드 세션에는 설치되어 있다).
 const { chromium } = require('playwright');
 const fs = require('fs');
@@ -31,6 +32,7 @@ const ROOT = path.join(__dirname, '..', 'content', 'concepts');
         missing: document.querySelectorAll('a.wikilink.missing').length,
         head: (document.querySelector('h1')?.innerText ?? '') + ' ' + (document.querySelector('p.lead')?.innerText ?? ''),
         english: document.querySelectorAll('.box-english').length,
+        wide: (() => { document.querySelectorAll('details').forEach((d) => { d.open = true; }); return [...document.querySelectorAll('.katex-display')].filter((e) => e.scrollWidth - e.clientWidth > 2).length; })(),
       };
     });
     if (info.katex) problems.push(`${id}: 수식 오류 ${info.katex}개`);
@@ -41,6 +43,8 @@ const ROOT = path.join(__dirname, '..', 'content', 'concepts');
     if (info.missing) problems.push(`${id}: 대상이 없는 링크 ${info.missing}개`);
     if (/[$\\]/.test(info.head)) problems.push(`${id}: 제목이나 요약에 수식이 글자로 보인다`);
     if (info.english !== 1) problems.push(`${id}: 영어 진술 상자가 ${info.english}개`);
+    // 줄 수식이 상자보다 넓으면 가로로 밀어야 보인다. 오류는 아니므로 WIDE=1 일 때만 알린다(새 항목을 쓸 때 본다).
+    if (process.env.WIDE && info.wide) console.log(`  (넓은 줄 수식) ${id}: ${info.wide}개`);
   }
   await browser.close();
   console.log(`항목 페이지 ${ids.length}개 확인`);
