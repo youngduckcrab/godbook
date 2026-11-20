@@ -11,13 +11,13 @@ requires: [set, subset, set-operations, cartesian-product, topological-space, cl
 proof: full
 sources:
   - ref: fuglede-basic-topology
-    loc: "Interior, closure, boundary, and limit points 절의 Proposition closures-of-products, content/topological-spaces.tex:628–639; Homeomorphisms 장 The quotient topology 절의 사각형 예, content/homeomorphisms.tex:236"
+    loc: "Interior, closure, boundary, and limit points 절의 Proposition closures-of-products, content/topological-spaces.tex:628–639; ℚ 가 조밀하다는 예, content/topological-spaces.tex:625–627; Homeomorphisms 장 The quotient topology 절의 사각형 예, content/homeomorphisms.tex:236"
     checked: original
-    note: "(1)은 출처 Proposition closures-of-products(임의 개수의 곱에서 ∏ Ā_i = closure(∏ A_i))를 두 공간으로 좁힌 것이다. 출처의 증명(635–639)은 앞 방향에서 모든 i 에 대하여 y_i ∈ U_i ∩ A_i 를 잡고, 뒤 방향에서 π_i⁻¹(V_i) 를 근방으로 쓴다. 이 항목은 앞 방향을 곱집합 등식 (U × V) ∩ (A × B) = (U ∩ A) × (V ∩ B) 와 '곱이 공집합인 것은 한쪽이 공집합일 때'로 보이고, 뒤 방향은 U × X₂ 꼴의 기저 원소로 보인다. (2)–(4)의 증명은 이 항목이 쓴 것이다. 반례 '경계가 경계의 곱과 다른 예'의 정사각형 [0, 1] × [0, 1] 은 출처 homeomorphisms.tex:236 이 마주 보는 변을 붙이는 데 쓰는 사각형 X = [0, 1] × [0, 1] 과 같은 대상이다."
+    note: "(1)은 출처 Proposition closures-of-products(임의 개수의 곱에서 ∏ Ā_i = closure(∏ A_i))를 두 공간으로 좁힌 것이다. 출처의 증명(635–639)은 앞 방향에서 모든 i 에 대하여 y_i ∈ U_i ∩ A_i 를 잡고, 뒤 방향에서 π_i⁻¹(V_i) 를 근방으로 쓴다. 이 항목은 앞 방향을 곱집합 등식 (U × V) ∩ (A × B) = (U ∩ A) × (V ∩ B) 와 '곱이 공집합인 것은 한쪽이 공집합일 때'로 보이고, 뒤 방향은 U × X₂ 꼴의 기저 원소로 보인다. (2)–(4)의 증명은 이 항목이 쓴 것이다. 반례 '경계가 경계의 곱과 다른 예'의 정사각형 [0, 1] × [0, 1] 은 출처 homeomorphisms.tex:236 이 마주 보는 변을 붙이는 데 쓰는 사각형 X = [0, 1] × [0, 1] 과 같은 대상이다. 확인 질문 'ℚ × ℝ 은 조밀한가'가 쓰는 'ℚ 의 폐포는 ℝ 이다'는 출처의 예(625–627, ℚ 는 ℝ 에서 조밀하다)와 같은 결론이다."
   - ref: lebl-basic-analysis
-    loc: "0.3절 Definition 0.3.10 과 그 아래 예, p.14"
+    loc: "0.3절 Definition 0.3.10 과 그 아래 예, p.14; 7.2.3절 Example 7.2.20, 7.2.24, p.270; 7.4.2절 Theorem 7.4.14 의 증명, p.284"
     checked: original
-    note: "출처는 곱집합의 예로 [0, 1] × [0, 1] 을 '꼭짓점이 (0, 0), (0, 1), (1, 0), (1, 1) 인 정사각형으로 둘러싸인 평면의 부분집합'이라 적는다. 반례 '경계가 경계의 곱과 다른 예'는 같은 대상이다."
+    note: "출처는 곱집합의 예로 [0, 1] × [0, 1] 을 '꼭짓점이 (0, 0), (0, 1), (1, 0), (1, 1) 인 정사각형으로 둘러싸인 평면의 부분집합'이라 적는다. 반례 '경계가 경계의 곱과 다른 예'는 같은 대상이다. 출처 Example 7.2.20(p.270)은 ℝ 에서 (0, 1) 의 폐포가 [0, 1] 이라고, Example 7.2.24(p.270)는 A = (0, 1] 의 폐포가 [0, 1], 내부가 (0, 1), 경계가 {0, 1} 이라고 적는다. (5)와 예시 '한쪽이 닫혀 있지 않은 곱'은 이 구간의 계산을 곱에 쓴 것과 같은 발상이다. (5)의 I′ × J′ 은 출처 Theorem 7.4.14 의 증명(p.284)이 쓰는 B = [a, b] × [c, d] 와 같은 꼴의 집합이다."
 status: reviewed
 review_note: "2026-11-19 자기 검토(docs/self-review.md)와 지휘자의 표본 검사를 거쳤다. 독립 검토는 거치지 않았다. 표본 검사에서 일반 문장으로 읽히는 반례 제목이 나와 같은 종류를 전부 다시 보고 6건을 고쳤다."
 added: 2026-11-19
