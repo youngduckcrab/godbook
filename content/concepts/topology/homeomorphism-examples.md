@@ -11,9 +11,9 @@ requires: [set, subset, function, function-composition, bijective-iff-inverse-is
 proof: full
 sources:
   - ref: fuglede-basic-topology
-    loc: "Homeomorphisms 절의 예, content/homeomorphisms.tex:22–28, 36–53; Constructing topologies 앞의 lower limit topology 의 예, content/topological-spaces.tex:180–183"
+    loc: "Homeomorphisms 절의 예, content/homeomorphisms.tex:3–8, 20, 22–28, 36–53; Topological invariants 절의 첫 문단, content/homeomorphisms.tex:63; ℝ 위의 위상을 비교하는 Lemma 와 그 증명, content/topological-spaces.tex:179–188"
     checked: original
-    note: "(2)는 출처의 예 open-ball-homeomorphism(36–53)을 n = 1 로 둔 것과 같은 함수이다. 출처는 B(0, 1) ⊆ ℝⁿ 에서 f(x) = x/(1 − ‖x‖) 가 연속인 전단사이고 역함수가 x/(1 + ‖x‖) 라고 적고, 그림(images/homeointerval)으로 n = 1 의 그래프를 보인다. 출처는 계산과 연속의 근거를 적지 않는다. 출처는 그 앞의 예(22–28)에서 (−1, 1) 과 ℝ 이 위상동형이라는 같은 결론을 삼각함수로 보인다. (5)에서 쓰는 '아래끝 위상은 보통 위상보다 진짜로 더 섬세하다'는 출처 content/topological-spaces.tex:180–183 이 적는 것이다. 확인 질문 '이산위상의 {1, 2, 3} 과 밀착위상의 {4, 5, 6}' 은 출처 content/homeomorphisms.tex:63 이 X = {a, b} 에 이산위상과 밀착위상을 주면 위상동형이 아니라고 적는 것과 같은 종류의 결론을 세 점에서 묻는다. 반례 '원소의 개수가 같아도 위상동형이 아닐 수 있다' 의 두 위상은 출처의 예 two-point-topologies(content/topological-spaces.tex:18–28)의 𝒯₄ 와 𝒯₂ 이다."
+    note: "(2)는 출처의 예 open-ball-homeomorphism(36–53)을 n = 1 로 둔 것과 같은 함수이다. 출처는 B(0, 1) ⊆ ℝⁿ 에서 f(x) = x/(1 − ‖x‖) 가 연속인 전단사이고 역함수가 x/(1 + ‖x‖) 라고 적고, 그림(images/homeointerval)으로 n = 1 의 그래프를 보인다. 출처는 계산과 연속의 근거를 적지 않는다. 출처는 그 앞의 예(22–28)에서 (−1, 1) 과 ℝ 이 위상동형이라는 같은 결론을 삼각함수로 보인다. (5)에서 쓰는 '아래끝 위상은 보통 위상보다 진짜로 더 섬세하다'는 출처 content/topological-spaces.tex:180–183 이 적는 것이다. 확인 질문 '이산위상의 {1, 2, 3} 과 밀착위상의 {4, 5, 6}' 은 출처 content/homeomorphisms.tex:63 이 X = {a, b} 에 이산위상과 밀착위상을 주면 위상동형이 아니라고 적는 것과 같은 종류의 결론을 세 점에서 묻는다. 두 집합 {1, 2, 3} 과 {4, 5, 6} 은 출처 절 첫머리의 예(content/homeomorphisms.tex:3–8, 20)의 두 집합과 같고, 출처는 거기서 두 집합에 서로 대응하는 위상을 주어 위상동형이라고 적는다. 반례 '원소의 개수가 같아도 위상동형이 아닐 수 있다' 의 두 위상은 출처의 예 two-point-topologies(content/topological-spaces.tex:18–28)의 𝒯₄ 와 𝒯₂ 이다."
   - ref: lebl-basic-analysis
     loc: "3.6.2절, Proposition 3.6.6 (p.152); 7.3절 연습문제 7.3.10 (p.278)"
     checked: original

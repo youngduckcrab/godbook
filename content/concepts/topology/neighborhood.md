@@ -10,11 +10,11 @@ summary: 위상공간의 점 x 를 원소로 갖는 열린집합을 x 의 근방
 requires: [set, subset, set-operations, metric-space, metric-space-examples, open-ball, open-set-in-metric-space, open-and-closed-sets-of-reals, interval, topological-space, topology-examples]
 sources:
   - ref: fuglede-basic-topology
-    loc: "Interior, closure, boundary, and limit points 절, 경계의 정의 바로 앞 문장, content/topological-spaces.tex:575. Remark remark-def-open-balls, 235–244"
+    loc: "Interior, closure, boundary, and limit points 절, 경계의 정의 바로 앞 문장, content/topological-spaces.tex:575. Metric spaces 절의 Remark remark-def-open-balls, 235–244. Sequences and convergence 절의 Proposition metric-convergence 의 증명, 717"
     checked: original
     note: "정의는 출처 575줄의 문장('U 가 열려 있고 x ∈ U 이면 U 를 점 x 의 neighbourhood 라 한다')과 같다. 출처는 이 문장을 정의 환경 없이 본문에 적는다. (3)은 topological-space 의 (3)의 (a)와 (b)가 같다는 것을 근방의 말로 다시 적은 것이고, 출처는 content/compactness.tex:49 에서 '모든 점이 그 집합 안에 든 열린 근방을 가짐을 보여 Aᶜ = Int Aᶜ 를 얻는 늘 쓰는 수법'이라고 부른다. (4)의 (b)는 출처 Remark remark-def-open-balls(235–244, 거리위상에서 열린 U 와 x ∈ U 에 대해 B_d(x, r) ⊆ U 인 r > 0 이 있다)를 근방의 말로 쓴 것이고, 출처는 717줄의 증명에서 그 Remark 를 'x 의 근방 U 에 대해 B_d(x, ε) ⊆ U 인 ε 이 있다'로 인용한다. 예시 '세 점 위의 위상에서의 근방'의 위상은 topology-examples 의 (8)의 (i)의 것이고 출처 연습문제 1.2(content/exercises.tex:13, X = {a, b, c} 위의 위상을 모두 기술하라)의 답에 드는 위상이다. 확인 질문 '두 점 위의 위상에서의 근방'의 위상은 출처의 예 two-point-topologies(18–28)의 𝒯₂ 와 같다."
   - ref: lebl-basic-analysis
-    loc: "7.2.1절 Topology, Definition 7.2.4 (p.264); 7.3.2절, Proposition 7.3.11 의 증명 (p.276)"
+    loc: "7.2.1절 Topology, Definition 7.2.4 (p.264); 7.3.3절 Convergence and topology, Proposition 7.3.11 의 증명 (p.276)"
     checked: original
     note: "출처 Definition 7.2.4 의 끝(p.264)은 거리공간에서 x ∈ V 이고 V 가 열려 있으면 V 를 x 의 open neighborhood(때로는 그냥 neighborhood)라 부른다고 적는다. 이 항목은 이것을 위상공간에서 '근방'으로 쓴다. (4)의 (b)는 출처 Proposition 7.3.11 의 증명(p.276)이 'U 가 p 의 open neighborhood 이면 B(p, ε) ⊂ U 인 ε > 0 이 있다'로 쓰는 단계와 같고, 그 증명의 다른 방향은 B(p, ε) 를 p 의 neighborhood 로 쓴다((4)의 (a))."
 status: reviewed

@@ -12,11 +12,11 @@ sources:
   - ref: fuglede-basic-topology
     loc: "Definitions and first examples 절의 finer·coarser 의 정의와 그 뒤의 예, content/topological-spaces.tex:38–43"
     checked: original
-    note: "정의는 출처(38–40)와 같다. 출처는 𝒯 ⊆ 𝒯′ 이면 𝒯 가 𝒯′ 보다 coarser, 𝒯′ 가 𝒯 보다 finer 라 하고, 진부분집합이면 strictly coarser, strictly finer, 어느 한쪽이 다른 쪽에 포함되면 comparable 이라 한다. 이 사이트는 진부분집합 기호를 쓰지 않고 '𝒯 ⊆ 𝒯′ 이고 𝒯 ≠ 𝒯′' 로 쓰며, finer 를 '섬세하다', coarser 를 '거칠다'로 옮긴다. (4)는 출처의 예(41–43)와 같다. 출처는 원소 둘인 집합 위의 𝒯₂ = {∅, {a}, X} 가 𝒯₄ = 𝒫(X) 보다 strictly coarser 이고 𝒯₂ 와 𝒯₃ = {∅, {b}, X} 는 비교할 수 없으며 밀착위상은 이산위상보다 늘 coarser 라고 적는다. (3)의 앞 문장은 그 마지막 문장과 같은 내용을 모든 위상으로 넓힌 것이다. 확인 질문 '{∅, {a}, X} 와 비교할 수 있는 위상'은 출처의 이 예와 같은 대상을 묻는다. 예시 '세 점 위의 사슬'의 위상은 출처 연습문제 1.2(content/exercises.tex:13, X = {a, b, c} 위의 위상을 모두 기술하라)의 답에 드는 것이다."
+    note: "정의는 출처(38–40)와 같다. 출처는 𝒯 ⊆ 𝒯′ 이면 𝒯 가 𝒯′ 보다 coarser, 𝒯′ 가 𝒯 보다 finer 라 하고, 진부분집합이면 strictly coarser, strictly finer, 어느 한쪽이 다른 쪽에 포함되면 comparable 이라 한다. 이 사이트는 진부분집합 기호를 쓰지 않고 '𝒯 ⊆ 𝒯′ 이고 𝒯 ≠ 𝒯′' 로 쓰며, finer 를 '섬세하다', coarser 를 '거칠다'로 옮긴다. (4)는 출처의 예(41–43)와 같다. 출처는 원소 둘인 집합 위의 𝒯₂ = {∅, {a}, X} 가 𝒯₄ = 𝒫(X) 보다 strictly coarser 이고 𝒯₂ 와 𝒯₃ = {∅, {b}, X} 는 비교할 수 없으며 밀착위상은 이산위상보다 늘 coarser 라고 적는다. (3)의 앞 문장은 그 마지막 문장과 같은 내용을 모든 위상으로 넓힌 것이다. 확인 질문 '{∅, {a}, X} 와 비교할 수 있는 위상'은 출처의 이 예와 같은 대상을 묻는다. 예시 '세 점 위의 사슬'의 위상은 출처 연습문제 1.2(content/exercises.tex:13, X = {a, b, c} 위의 위상을 모두 기술하라)의 답에 드는 것이다. 반례 '원소가 더 많은 위상이 더 섬세하지 않을 수 있다'의 두 위상도 같은 연습문제 1.2 의 답에 드는 것이다."
   - ref: lebl-basic-analysis
-    loc: "7.1절, Example 7.1.7 과 그 뒤 문단 (p.259), 7.2.1절 Example 7.2.5 (p.265)"
+    loc: "7.1절, Example 7.1.7 (p.259), Definition 7.1.12 뒤 문단 (p.261); 7.2.1절 Example 7.2.5 (p.265)"
     checked: original
-    note: "(5)의 ℝ 위의 이산 거리는 출처 Example 7.1.7 뒤 문단(p.259)이 말하는 '실수 위의 이산 거리'와 같은 대상이고, 보통 거리에서 {0} 이 열려 있지 않다는 것은 출처 Example 7.2.5(p.265)가 적는 것이다."
+    note: "(5)의 ℝ 위의 이산 거리는 출처 Example 7.1.7(p.259, 실수처럼 무한집합에 이산 거리를 주는 경우)과 Definition 7.1.12 뒤 문단(p.261)이 말하는 실수 위의 이산 거리와 같은 대상이고, 보통 거리에서 {0} 이 열려 있지 않다는 것은 출처 Example 7.2.5(p.265)가 적는 것이다."
 status: reviewed
 review_note: "2026-11-19 자기 검토(docs/self-review.md)와 지휘자의 표본 검사를 거쳤다. 독립 검토는 거치지 않았다. 자기 검토에서 다른 항목의 예·증명 속 사실을 근거로 삼은 반례 2건과 경계 경우의 직관 문장을 고쳤다."
 added: 2026-11-19

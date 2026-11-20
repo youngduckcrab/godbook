@@ -13,11 +13,11 @@ sources:
   - ref: fuglede-basic-topology
     loc: "Continuous functions 절의 Theorem continuous-props 의 (ii)(iii)과 그 증명, content/topological-spaces.tex:302–317; 곱의 연속에 관한 증명, content/topological-spaces.tex:531"
     checked: original
-    note: "(1)과 (2)는 출처 continuous-props 의 (ii), (iii)과 같은 진술이다. 출처는 (ii)의 한 방향을 여집합으로 보이고 다른 방향은 'similar' 라고 적는다(314). (iii)의 앞 방향에서 출처는 V = f⁻¹(U) 로 두고 f(V) = U 라고 적는다(316). 이 항목은 f(f⁻¹(V)) ⊆ V (preimage-and-set-operations 의 (1)의 (vi))를 쓴다. (iii)의 뒤 방향에서 출처는 f⁻¹(U) 의 점 x 마다 V_x 를 잡아 f⁻¹(U) = ⋃_{x ∈ f⁻¹(U)} V_x 로 쓴다(316). 이 항목은 점마다 무엇을 잡지 않고 topological-space 의 (3)(열린집합의 국소 판정)으로 증명한다. (4)의 (i)은 출처가 곱으로 가는 함수의 연속을 보이며(531) 부분기저 원소의 역상이 열려 있으면 일반의 열린집합은 preimage-props 에서 따라 나온다고 적는 것과 같은 발상이다. (3)의 근방의 말과 (4)의 (ii), (5)는 출처의 continuous-props 에 없다. 확인 질문 '두 점 공간으로 가는 함수'의 공역 {a, b} 와 그 위상은 출처의 예 two-point-topologies(content/topological-spaces.tex:18–28)의 𝒯₂ 와 같다."
+    note: "(1)과 (2)는 출처 continuous-props 의 (ii), (iii)과 같은 진술이다. 출처는 (ii)의 한 방향을 여집합으로 보이고 다른 방향은 'similar' 라고 적는다(314). (iii)의 앞 방향에서 출처는 V = f⁻¹(U) 로 두고 f(V) = U 라고 적는다(316). 이 항목은 f(f⁻¹(V)) ⊆ V (preimage-and-set-operations 의 (1)의 (vi))를 쓴다. (iii)의 뒤 방향에서 출처는 f⁻¹(U) 의 점 x 마다 V_x 를 잡아 f⁻¹(U) = ⋃_{x ∈ f⁻¹(U)} V_x 로 쓴다(316). 이 항목은 점마다 무엇을 잡지 않고 topological-space 의 (3)(열린집합의 국소 판정)으로 증명한다. (4)의 (i)은 출처가 곱으로 가는 함수의 연속을 보이며(531) 부분기저 원소의 역상이 열려 있으면 일반의 열린집합은 preimage-props 에서 따라 나온다고 적는 것과 같은 발상이다. (3)의 근방의 말과 (4)의 (ii), (5)는 출처의 continuous-props 에 없다. 확인 질문 '두 점 공간으로 가는 함수'의 공역 {a, b} 와 그 위상은 출처의 예 two-point-topologies(content/topological-spaces.tex:18–28)의 𝒯₂ 와 같다. 반례 '폐포의 상이 상의 폐포를 벗어나는 경우'의 Y 의 위상도 같은 𝒯₂ 이고, X 의 위상 {∅, {1}, {1, 2}, X} 는 출처 연습문제 1.2(content/exercises.tex:13, {a, b, c} 위의 위상을 모두 기술하라)의 답에 드는 위상이다."
   - ref: lebl-basic-analysis
     loc: "7.5.3절, Lemma 7.5.7 (p.290), Theorem 7.5.8 과 Example 7.5.9 (p.291); 7.5.6절 연습문제 7.5.3 (p.294)"
     checked: original
-    note: "출처 Lemma 7.5.7(p.290)은 거리공간에서 'f 가 c 에서 연속인 것은 f(c) 의 모든 열린 근방 U 에 대하여 f⁻¹(U) 가 c 의 열린 근방을 포함할 때'라고 적는다. (3)의 (iii)은 이것을 위상공간에서 쓴 꼴이다. 출처 Example 7.5.9(p.291)는 연속함수에서 닫힌집합 E 의 역상이 f⁻¹(E) = X − f⁻¹(Eᶜ) 로 닫혀 있다고 적는데, (1)의 앞 방향과 같은 계산이다. (5)의 앞 방향은 출처 연습문제 7.5.3 a(p.294, 거리공간에서 연속이면 f(Ā) ⊆ closure of f(A))를 위상공간에서 쓴 것이다."
+    note: "출처 Lemma 7.5.7(p.290)은 거리공간에서 'f 가 c 에서 연속인 것은 f(c) 의 모든 열린 근방 U 에 대하여 f⁻¹(U) 가 c 의 열린 근방을 포함할 때'라고 적는다. (3)의 (ii)와 (iv)가 같다는 것은 이것을 위상공간에서 쓴 꼴이다. 출처 Example 7.5.9(p.291)는 연속함수에서 닫힌집합 E 의 역상이 f⁻¹(E) = X − f⁻¹(Eᶜ) 로 닫혀 있다고 적는데, (1)의 앞 방향과 같은 계산이다. (5)의 앞 방향은 출처 연습문제 7.5.3 a(p.294, 거리공간에서 연속이면 f(Ā) ⊆ closure of f(A))를 위상공간에서 쓴 것이다."
 status: reviewed
 review_note: "2026-11-19 자기 검토(docs/self-review.md)와 지휘자의 표본 검사를 거쳤다. 독립 검토는 거치지 않았다. 자기 검토에서 경계 경우에서 거짓이던 반례 제목과 단원 글 문장, 인용 번호를 고쳤다."
 added: 2026-11-19

@@ -11,9 +11,9 @@ requires: [set, subset, power-set, empty-set-is-subset, family-of-sets, topologi
 proof: full
 sources:
   - ref: fuglede-basic-topology
-    loc: "Basis for a topology 절의 Lemma genereated-by-unions 와 그 증명, content/topological-spaces.tex:95–108"
+    loc: "Basis for a topology 절의 Lemma genereated-by-unions 와 그 증명, content/topological-spaces.tex:95–108; The product topology 절의 부분기저의 정의, 507; Separation axioms and Hausdorff spaces 절 첫 문단, 643; 연습문제 2.2 (content/exercises.tex:76)"
     checked: original
-    note: "(1)은 출처 Lemma genereated-by-unions(96–99, 'U ∈ 𝒯_ℬ 인 것은 정확히 어떤 B_i ∈ ℬ 들에 대하여 U = ⋃_{i∈I} B_i 일 때')를 첨수 없이 부분족 𝒞 ⊆ ℬ 의 합집합으로 쓴 것이고, (2)는 같은 Lemma 의 둘째 문장('𝒯_ℬ 는 ℬ 의 원소들의 합집합 전체')을 집합 등식으로 쓴 것이다. 출처는 그 증명(100–108)에서 공집합을 '관례상 빈 합집합'으로 따로 두고, 거꾸로 방향에서 각 x ∈ U 마다 x ∈ B_x ⊆ U 인 기저 원소 B_x 를 골라(105) U = ⋃_{x∈U} B_x 로 보인다. 이 항목은 고르지 않고 부분족 {B ∈ ℬ : B ⊆ U} 를 쓰며(basis-for-a-topology 의 (3)), 빈 부분족을 다른 부분족과 같이 다룬다. 출처의 Lemma 는 ℬ 가 기저라고 가정하지만 (1), (2)는 ℬ 가 X 의 아무 집합족이어도 성립하므로 이 항목은 그렇게 진술한다. (3)의 '가장 거친 위상'은 출처 63줄이 기저를 '위상에 넣고 싶은 집합들을 적은 뒤 (T1)–(T3)에 필요한 집합을 더해 위상을 얻는 방법'으로 설명하는 것을 명제로 적은 것이다. 예시 '분할이 생성하는 위상'과 같은 꼴(서로 겹치지 않는 집합들이 생성하는 위상)은 출처 643줄의 위상 {∅, {a}, {b, c}, X} 이다."
+    note: "(1)은 출처 Lemma genereated-by-unions(96–99, 'U ∈ 𝒯_ℬ 인 것은 정확히 어떤 B_i ∈ ℬ 들에 대하여 U = ⋃_{i∈I} B_i 일 때')를 첨수 없이 부분족 𝒞 ⊆ ℬ 의 합집합으로 쓴 것이고, (2)는 같은 Lemma 의 둘째 문장('𝒯_ℬ 는 ℬ 의 원소들의 합집합 전체')을 집합 등식으로 쓴 것이다. 출처는 그 증명(100–108)에서 공집합을 '관례상 빈 합집합'으로 따로 두고, 거꾸로 방향에서 각 x ∈ U 마다 x ∈ B_x ⊆ U 인 기저 원소 B_x 를 골라(105) U = ⋃_{x∈U} B_x 로 보인다. 이 항목은 고르지 않고 부분족 {B ∈ ℬ : B ⊆ U} 를 쓰며(basis-for-a-topology 의 (3)), 빈 부분족을 다른 부분족과 같이 다룬다. 출처의 Lemma 는 ℬ 가 기저라고 가정하지만 (1), (2)는 ℬ 가 X 의 아무 집합족이어도 성립하므로 이 항목은 그렇게 진술한다. (3)의 '가장 거친 위상'은 출처 63줄이 기저를 '위상에 넣고 싶은 집합들을 적은 뒤 (T1)–(T3)에 필요한 집합을 더해 위상을 얻는 방법'으로 설명하는 것을 명제로 적은 것이다. 출처는 부분기저의 정의(507)에서 부분기저 𝒞 가 생성한 위상(유한 교집합들의 합집합 전체)을 '𝒞 를 포함하는 가장 거친 위상'이라고 증명 없이 적으며, 이것은 (3)과 같은 꼴의 문장이다. 예시 '분할이 생성하는 위상'과 같은 꼴(서로 겹치지 않는 집합들이 생성하는 위상)은 출처 643줄의 위상 {∅, {a}, {b, c}, X} 와 출처 연습문제 2.2(content/exercises.tex:76)의 위상 {∅, {a, b}, {c}, {a, b, c}} 이다."
 status: reviewed
 review_note: "2026-11-19 자기 검토(docs/self-review.md)와 지휘자의 표본 검사를 거쳤다. 독립 검토는 거치지 않았다. 자기 검토에서 다른 항목의 예를 근거로 삼은 예 2건과 근거 없는 주장을 고쳤다."
 added: 2026-11-19

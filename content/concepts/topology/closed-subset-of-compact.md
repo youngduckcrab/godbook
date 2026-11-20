@@ -11,9 +11,9 @@ requires: [set, subset, set-operations, power-set, family-of-sets, finite-set, a
 proof: full
 sources:
   - ref: fuglede-basic-topology
-    loc: "Compactness 절의 Theorem closed-in-compact 와 증명, content/compactness.tex:37–43; 예 23–28"
+    loc: "Compactness 절의 Theorem closed-in-compact 와 증명, content/compactness.tex:37–43; 예 23–28; Local compactness and one-point compactification 절의 닫힌 부분공간에 관한 Proposition 증명, 361; 부분공간 위상의 예, content/topological-spaces.tex:402–404"
     checked: original
-    note: "(1)은 출처의 Theorem closed-in-compact(37–40, '콤팩트 공간의 닫힌 부분공간은 콤팩트이다')와 같다. 출처의 증명(41–43)은 A 의 열린 덮개 {U_i} 의 각 U_i 마다 U_i = A ∩ V_i 인 X 의 열린 V_i 를 두고 {V_i} ∪ {Aᶜ} 의 유한 부분덮개에서 A 의 덮개로 돌아간다. 이 항목은 compact-space 의 (3)(바깥 공간의 열린집합으로 판정)을 써서, X 의 열린집합들의 집합족 𝒱 에 X − F 를 더한 덮개의 유한 부분덮개에서 X − F 를 빼는 것으로 증명한다. (2)는 이 항목이 (1)과 부분공간 위상으로 덧붙인 진술이다. (3)의 공간은 이 항목이 둔 것이다. 콤팩트 공간 안에 닫혀 있지 않고 콤팩트가 아닌 부분집합이 있다는 같은 현상을 출처의 두 예(23–28, A = {1/n} 은 콤팩트가 아니고 A ∪ {0} 은 콤팩트이다)가 보인다. 예시 '콤팩트가 아닌 공간의 닫힌집합'의 ℤ 가 이산위상을 갖는다는 것은 출처 content/topological-spaces.tex:402–404 와 같은 대상, 같은 결론이다."
+    note: "(1)은 출처의 Theorem closed-in-compact(37–40, '콤팩트 공간의 닫힌 부분공간은 콤팩트이다')와 같다. 출처의 증명(41–43)은 A 의 열린 덮개 {U_i} 의 각 U_i 마다 U_i = A ∩ V_i 인 X 의 열린 V_i 를 두고 {V_i} ∪ {Aᶜ} 의 유한 부분덮개에서 A 의 덮개로 돌아간다. 이 항목은 compact-space 의 (3)(바깥 공간의 열린집합으로 판정)을 써서, X 의 열린집합들의 집합족 𝒱 에 X − F 를 더한 덮개의 유한 부분덮개에서 X − F 를 빼는 것으로 증명한다. (2)의 K ∩ F 는 출처가 국소 콤팩트에 관한 Proposition 의 증명(361: A 가 닫혀 있으면 A ∩ K 는 닫혀 있으므로 Theorem closed-in-compact 로 콤팩트이다)에서 쓰는 꼴이고, 이 항목은 그것을 (1)과 부분공간 위상으로 증명해 진술에 둔다. (3)에 대해서는, 콤팩트 공간 안에 닫혀 있지 않고 콤팩트가 아닌 부분집합이 있다는 같은 현상을 출처의 두 예(23–28, A = {1/n} 은 콤팩트가 아니고 A ∪ {0} 은 콤팩트이다)가 보인다. 예시 '콤팩트가 아닌 공간의 닫힌집합'의 ℤ 가 이산위상을 갖는다는 것은 출처 content/topological-spaces.tex:402–404 와 같은 대상, 같은 결론이다."
   - ref: lebl-basic-analysis
     loc: "7.4.2절 Proposition 7.4.13 과 그 아래 문장, 증명 (p.284)"
     checked: original

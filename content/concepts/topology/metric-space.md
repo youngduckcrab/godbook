@@ -10,9 +10,9 @@ summary: 집합과 그 위의 실숫값 함수 d 의 순서쌍으로서, d 가 �
 requires: [set, function, cartesian-product, quantifiers, real-number-arithmetic, real-order-axioms, order-properties-of-reals, absolute-value]
 sources:
   - ref: lebl-basic-analysis
-    loc: 7.1절 Metric spaces, Definition 7.1.1 (p.255), 연습문제 7.1.2 (p.261), 7.1.4 (p.262), 7.5.10 (p.294)
+    loc: 7.1절 Metric spaces, Definition 7.1.1 (p.255), 연습문제 7.1.2 (p.261), 7.1.4 (p.262); 7.5.6절 연습문제 7.5.10 (p.294)
     checked: original
-    note: "정의의 네 조건 (i)–(iv)와 그 차례, '거리공간'과 '거리(거리함수)'라는 이름, 거리가 분명하면 X 만 쓰는 줄임은 출처의 Definition 7.1.1 과 같다. 출처는 X 가 공집합인 경우를 정의에서 따로 말하지 않고, 연습문제 7.1.9(p.262)와 7.2.4(p.272)에서 'nonempty metric space' 라고 조건을 붙인다. 이 항목은 X = ∅ 이 정의를 만족함을 진술에 적는다. 출처 연습문제 7.5.10(p.294)의 a), b)는 x 에서 d(x, p) 로의 함수와 (최대 거리를 준 X × X 위의) d 의 연속성을 묻고, (2)와 (4)는 그 증명에 쓰이는 부등식이다. 출처의 Definition 7.1.1 에서 (iv)의 이름은 'triangle inequality' 이고, 이 사이트는 해석학 입문의 실수의 삼각부등식과 구별하려고 '거리의 삼각부등식'이라 부른다. 예시 '세 점 위의 거리'와 반례 '삼각부등식이 깨지는 세 점'은 출처 연습문제 7.1.4(세 건물 사이의 걷는 시간이 거리인지 묻는다)와 같은 발상이다(원소가 셋인 집합 위의 함수가 거리인지 따진다). 확인 질문 '원소가 하나인 집합 위의 거리'는 출처 연습문제 7.1.2 와 같은 물음이다."
+    note: "정의의 네 조건 (i)–(iv)와 그 차례, '거리공간'과 '거리(거리함수)'라는 이름, 거리가 분명하면 X 만 쓰는 줄임은 출처의 Definition 7.1.1 과 같다. 출처는 X 가 공집합인 경우를 정의에서 따로 말하지 않고, 연습문제 7.1.9(p.262)와 7.2.4(p.272)에서 'nonempty metric space' 라고 조건을 붙인다. 이 항목은 X = ∅ 이 정의를 만족함을 진술에 적는다. 출처 연습문제 7.5.10(p.294)의 a), b)는 x 에서 d(x, p) 로의 함수와 (최대 거리를 준 X × X 위의) d 의 연속성을 묻고, (2)와 (4)는 그 증명에 쓰이는 부등식이다. 출처의 Definition 7.1.1 에서 (iv)의 이름은 'triangle inequality' 이고, 이 사이트는 해석학 입문의 실수의 삼각부등식과 구별하려고 '거리의 삼각부등식'이라 부른다. 예시 '세 점 위의 거리'와 반례 '세 점 사이의 거리를 아무렇게나 정하면 삼각부등식이 깨질 수 있다'은 출처 연습문제 7.1.4(세 건물 사이의 걷는 시간이 거리인지 묻는다)와 같은 발상이다(원소가 셋인 집합 위의 함수가 거리인지 따진다). 확인 질문 '원소가 하나인 집합 X = {p} 위의 거리는 몇 개인가'는 출처 연습문제 7.1.2(X = {0} 을 거리공간으로 만들 수 있는가)와 같은 대상을 묻는다."
   - ref: fuglede-basic-topology
     loc: "Metric spaces 절의 정의, content/topological-spaces.tex:190–202"
     checked: original

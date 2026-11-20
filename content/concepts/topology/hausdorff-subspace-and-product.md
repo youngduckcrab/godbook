@@ -11,7 +11,7 @@ requires: [set, subset, set-operations, cartesian-product, topological-space, to
 proof: full
 sources:
   - ref: fuglede-basic-topology
-    loc: "Separation -- part 2 절의 Theorem 과 그 증명 (content/separation.tex:69–76), 연습문제 subspace-Hausdorff, products-Hausdorff 와 그 다음 연습문제 (content/exercises.tex:34, 36, 38–42)"
+    loc: "Separation -- part 2 절의 Theorem 과 그 증명의 하우스도르프 부분 (content/separation.tex:69–75), 연습문제 subspace-Hausdorff, products-Hausdorff 와 그 다음 연습문제 (content/exercises.tex:34, 36, 38–42)"
     checked: original
     note: "(1)의 하우스도르프 부분과 (2)의 (i)은 출처 Theorem(separation.tex:70)의 첫 문장(하우스도르프 공간의 부분공간과 하우스도르프 공간들의 곱은 하우스도르프이다)과 같다. 출처는 부분공간의 경우를 연습문제 subspace-Hausdorff(exercises.tex:34)로 두고, 곱은 연습문제 products-Hausdorff(36)에서 두 공간으로 묻고 Theorem 의 증명(separation.tex:75)에서 임의 개수의 곱에 대해 사영의 역상 π_i⁻¹(U), π_i⁻¹(V) 로 증명한다. 이 항목은 두 공간의 곱만 다루고, 사영의 연속을 쓰지 않고 product-topology 의 (4)의 열린집합 U × X₂ 로 증명한다. (3)은 출처 연습문제(exercises.tex:38–42: X 가 하우스도르프인 것은 정확히 대각선 Δ = {(x, x) ∈ X × X | x ∈ X} 가 곱위상에서 닫혀 있을 때이다)와 같다. 이 항목은 Δ 를 조건으로 정한 부분집합 {(a, b) ∈ X × X : a = b} 로 쓴다. 반례 '밀착위상의 대각선'의 위상은 출처의 예 two-point-topologies(content/topological-spaces.tex:18–28)의 𝒯₁ 이다."
 status: reviewed

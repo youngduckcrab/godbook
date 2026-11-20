@@ -11,9 +11,9 @@ requires: [set, subset, set-operations, function, injective-surjective-bijective
 proof: full
 sources:
   - ref: fuglede-basic-topology
-    loc: "Connectedness 절의 Theorem images-of-connected 와 증명 (content/connectedness.tex:79–85), 그 다음 Corollary(locally constant)와 증명 (86–91)"
+    loc: "Connectedness 절의 Theorem images-of-connected 와 증명 (content/connectedness.tex:79–85), 그 다음 Corollary(locally constant)와 증명 (86–91); 연습문제 1.3 (content/exercises.tex:14); 예 two-point-topologies (content/topological-spaces.tex:18–28), 부분공간 위상의 예 (402–404)"
     checked: original
-    note: "(1)은 출처 Theorem images-of-connected(79–85)이다. 출처는 f(X) 의 부분공간 위상에서의 분리 U, V 의 역상이 X 의 분리라고 하여 증명하고, 이 항목은 connected-space 의 (2)로 Y 의 열린집합 U, V 를 잡아 그 역상으로 증명한다. (3)의 (i)은 출처의 Corollary(86–91)와 같은 꼴이다. 출처는 국소 상수(locally constant) 함수 f : X → Y (Y 는 집합)가 상수임을, Y 에 이산위상을 주면 f 가 연속이라는 것과 Theorem images-of-connected, 예 discrete-connectedness 로 보인다. 이 항목은 국소 상수라는 말을 쓰지 않고 이산공간으로 가는 연속함수에 대해 진술한다. 반례 '연속이 아니면 상이 연결이 아닐 수 있는 예'의 두 위상은 출처의 예 two-point-topologies(topological-spaces.tex:18–28)의 𝒯₁ 과 𝒯₄ 이다."
+    note: "(1)은 출처 Theorem images-of-connected(79–85)이다. 출처는 f(X) 의 부분공간 위상에서의 분리 U, V 의 역상이 X 의 분리라고 하여 증명하고, 이 항목은 connected-space 의 (2)로 Y 의 열린집합 U, V 를 잡아 그 역상으로 증명한다. (3)의 (i)은 출처의 Corollary(86–91)와 같은 꼴이다. 출처는 국소 상수(locally constant) 함수 f : X → Y (Y 는 집합)가 상수임을, Y 에 이산위상을 주면 f 가 연속이라는 것과 Theorem images-of-connected, 예 discrete-connectedness 로 보인다. 이 항목은 국소 상수라는 말을 쓰지 않고 이산공간으로 가는 연속함수에 대해 진술한다. 반례 '연속이 아니면 상이 연결이 아닐 수 있는 예'의 두 위상은 출처의 예 two-point-topologies(topological-spaces.tex:18–28)의 𝒯₁ 과 𝒯₄ 이고, 이 반례의 항등함수가 연속인지는 출처 연습문제 1.3(exercises.tex:14: 두 위상 사이의 항등함수가 언제 연속인가)과 같은 물음이다. 예시 '정수 값만 갖는 연속 실함수'가 쓰는 'ℤ 의 부분공간 위상은 이산위상'은 출처 topological-spaces.tex:402–404 와 같은 대상, 같은 결론이다."
   - ref: lebl-basic-analysis
     loc: "7.5.6절 연습문제 7.5.1 (p.293), 7.5.5 (p.294)"
     checked: original
