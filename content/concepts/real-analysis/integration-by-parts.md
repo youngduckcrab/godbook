@@ -11,9 +11,9 @@ requires: [real-number-arithmetic, power-of-a-real-number, interval, real-valued
 proof: full
 sources:
   - ref: lebl-basic-analysis
-    loc: 5.3절(5.3.4 소절) 연습문제 5.3.5 (p.205)
+    loc: 5.3절(5.3.4 소절) 연습문제 5.3.5 (p.205); 4.1절(4.1.3 소절) 연습문제 4.1.8 (p.160)
     checked: original
-    note: "출처는 부분적분을 연습문제 5.3.5(p.205)로 둔다: F, G 가 [a, b] 위의 연속미분가능한 함수이면 ∫_a^b F(x)G′(x) dx = F(b)G(b) − F(a)G(a) − ∫_a^b F′(x)G(x) dx 를 증명하라는 것이고, 출처에 증명은 없다. 이 항목의 (1)은 이 진술과 같고, 증명은 곱의 법칙(continuously-differentiable 의 (3)), 미적분의 기본정리 (첫째 꼴)의 (2), 적분의 선형성(linearity-of-the-integral 의 (6))으로 이 사이트가 썼다. (2)의 방향 있는 꼴은 같은 증명을 구간 위의 두 점에 쓴 것이다. 확인 질문 1 의 ∫ F F′ 은 출처 연습문제 4.1.8(p.160; (fⁿ)′ = n fⁿ⁻¹ f′)의 n = 2 를 적분으로 옮긴 것과 같은 식이다."
+    note: "출처는 부분적분을 연습문제 5.3.5(p.205)로 둔다: F, G 가 [a, b] 위의 연속미분가능한 함수이면 ∫_a^b F(x)G′(x) dx = F(b)G(b) − F(a)G(a) − ∫_a^b F′(x)G(x) dx 를 증명하라는 것이고, 출처에 증명은 없다. 이 항목의 (1)은 이 진술과 같고, 증명은 곱의 법칙(continuously-differentiable 의 (3)), 미적분의 기본정리 (첫째 꼴)의 (2), 적분의 선형성(linearity-of-the-integral 의 (6))으로 이 사이트가 썼다. (2)의 방향 있는 꼴은 같은 증명을 구간 위의 두 점에 쓴 것이다. 확인 질문 1 의 ∫ F F′ 은 출처 연습문제 4.1.8(4.1.3 소절, p.160; (fⁿ)′ = n fⁿ⁻¹ f′)의 n = 2 를 적분으로 옮긴 것과 같은 식이다."
 status: reviewed
 review_note: "2026-11-20 자기 검토(docs/self-review.md)와 지휘자의 표본 검사를 거쳤다. 본문의 독립 검토는 거치지 않았다. 자기 검토에서 넘겨짚은 일반 문장 1건, 근거 없는 까닭 문장 1건, 섞이기 쉬운 이름(평균값 정리)을 고쳤다."
 added: 2026-11-20
