@@ -11,9 +11,9 @@ requires: [even-and-odd, prime-number, well-ordering-principle, mathematical-ind
 proof: full
 sources:
   - ref: lebl-basic-analysis
-    loc: 5.1절(5.1.1 소절) Proposition 5.1.2 의 증명 (p.182), 5.1.2 소절 Example 5.1.14 (p.187–188); 5.3절(5.3.1 소절) Theorem 5.3.1 의 증명 (p.201); 5.5절 연습문제 5.5.3 b) (5.5.2 Exercises, p.224)
+    loc: 0.3절 연습문제 0.3.13 (0.3.6 Exercises, p.21); 5.1절(5.1.1 소절) Proposition 5.1.2 의 증명 (p.182), Proposition 5.1.7 의 증명 (p.183), 5.1.2 소절 Example 5.1.14 (p.187–188); 5.3절(5.3.1 소절) Theorem 5.3.1 의 증명 (p.201); 5.5절 연습문제 5.5.3 b) (5.5.2 Exercises, p.224)
     checked: original
-    note: "출처는 망원 합을 명제로 진술하지 않고 말로만 쓴다. Example 5.1.14(p.188)는 1/(1 + x) 의 하합과 상합의 차를 계산하며 'The sum telescopes—the terms successively cancel each other, something we have seen before'라고 적고, Theorem 5.3.1 의 증명(p.201)은 Σ(F(x_i) − F(x_{i−1})) 에 대해 'all the terms except the first and last cancel'이라고 적어 F(b) − F(a) 를 얻으며, 연습문제 5.5.3 b)(p.224)의 힌트도 'The sum telescopes'이다. Proposition 5.1.2 의 증명(p.182)은 Σ_{i=1}^n Δx_i = b − a 를 근거 없이 쓴다. 이 항목은 이 쓰임들을 0 부터 번호가 붙은 실수 c_0, …, c_n 에 대한 진술로 올리고 끝 번호에 대한 귀납법으로 증명했다. '망원 합'이라는 이름은 출처의 'telescopes'를 옮긴 것이다. 예시 '네 점 사이의 간격'은 출처 Proposition 5.1.2 의 Σ Δx_i = b − a 를 구체적인 수로 쓴 것과 같은 발상이다."
+    note: "출처는 망원 합을 명제로 진술하지 않고 말로만 쓴다. Example 5.1.14(p.188)는 1/(1 + x) 의 하합과 상합의 차를 계산하며 'The sum telescopes—the terms successively cancel each other, something we have seen before'라고 적고, Theorem 5.3.1 의 증명(p.201)은 Σ(F(x_i) − F(x_{i−1})) 에 대해 'all the terms except the first and last cancel'이라고 적어 F(b) − F(a) 를 얻으며, 연습문제 5.5.3 b)(p.224)의 힌트도 'The sum telescopes'이다. Proposition 5.1.2 의 증명(p.182)은 Σ_{i=1}^n Δx_i = b − a 를 근거 없이 쓰고, Proposition 5.1.7 의 증명(p.183)은 Δx_i = x̃_{k_i} − x̃_{k_{i−1}} = Σ_{q=k_{i−1}+1}^{k_i} (x̃_q − x̃_{q−1}) 로 이 항목 (1)의 j, k 꼴을 근거 없이 쓴다. 출처 연습문제 0.3.13(0.3.6 소절, p.21, 1/(1·2) + 1/(2·3) + ⋯ + 1/(n(n+1)) = n/(n+1) 을 보이라)의 합은 1/(i(i+1)) = 1/i − 1/(i+1) 로 쓰면 망원 합이 되는 합이고(출처는 귀납법으로 묻는다), 연습문제 5.5.3 b) 의 급수의 부분합과 같은 합이다. 이 항목은 이 쓰임들을 0 부터 번호가 붙은 실수 c_0, …, c_n 에 대한 진술로 올리고 끝 번호에 대한 귀납법으로 증명했다. '망원 합'이라는 이름은 출처의 'telescopes'를 옮긴 것이다. 예시 '네 점 사이의 간격'은 출처 Proposition 5.1.2 의 Σ Δx_i = b − a 를 구체적인 수로 쓴 것과 같은 발상이다."
 status: reviewed
 review_note: "2026-11-20 자기 검토(docs/self-review.md)와 지휘자의 표본 검사를 거쳤다. 본문의 독립 검토는 거치지 않았다. 자기 검토에서 엉킨 증명 근거 1건과 모호하거나 근거 없는 설명 문장 5건을 고쳤다."
 added: 2026-11-20
