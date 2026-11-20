@@ -11,13 +11,13 @@ requires: [set, subset, set-operations, real-number-arithmetic, real-order-axiom
 proof: full
 sources:
   - ref: lebl-basic-analysis
-    loc: "7.2.2절 Connected sets, Example 7.2.15 (p.268), Proposition 7.2.16 과 증명, 그림 7.8 (p.269); 1.4절 Proposition 1.4.1 (p.41)"
+    loc: "7.2.2절 Connected sets, Example 7.2.15 (p.268), Proposition 7.2.16 과 증명, 그림 7.8 (p.269); 7.2.4절 연습문제 7.2.5 (p.272); 1.4절 Proposition 1.4.1 (p.41)"
     checked: original
-    note: "(1)과 (2)는 Proposition 7.2.16(p.269: 공집합이 아닌 S ⊆ ℝ 가 연결인 것은 정확히 S 가 구간이거나 한 점일 때)과 같은 내용이다. 이 항목은 공집합을 연결로 두므로 (2)에 공집합이 들어간다. 출처는 '연결이면 구간'을 Example 7.2.15(p.268)의 두 반직선으로 가르는 논법과 Proposition 1.4.1(p.41: 구간인 것은 정확히 두 점 이상을 갖고 두 점 사이의 점을 모두 가질 때)로 보인다. 이 사이트의 interval 은 그 조건을 정의로 삼으므로 (2)는 (1)과 정의에서 나온다. '사이의 점을 가지면 연결'은 출처와 같은 하한 논법(z = inf(U₂ ∩ [x, y]) 가 U₁ 에 속함을 보이고 B(z, δ) ⊆ U₁ 에서 U₁ ∩ U₂ 의 점을 찾는다)이다. 출처는 'Without loss of generality, assume x < y' 로 두고, 이 항목은 (나)를 세워 x < y 와 y < x 의 두 경우에 따로 쓴다. 출처가 z > x 인 경우 'B(z, ε) contains points of [x, y] not in U₂' 로 z ∉ U₂ 를 보이는 곳을, 이 항목은 z ∈ Q 라 하고 p 와 z − δ 를 비교하는 두 경우로 쓴다. 예시 '한 점을 뺀 실수'와 확인 질문 '0 이하이거나 1 이상인 수'는 Example 7.2.15(x < z < y, x, y ∈ S, z ∉ S 이면 연결이 아니다)와 같은 발상이다."
+    note: "(1)과 (2)는 Proposition 7.2.16(p.269: 공집합이 아닌 S ⊆ ℝ 가 연결인 것은 정확히 S 가 구간이거나 한 점일 때)과 같은 내용이다. 이 항목은 공집합을 연결로 두므로 (2)에 공집합이 들어간다. 출처는 '연결이면 구간'을 Example 7.2.15(p.268)의 두 반직선으로 가르는 논법과 Proposition 1.4.1(p.41: 구간인 것은 정확히 두 점 이상을 갖고 두 점 사이의 점을 모두 가질 때)로 보인다. 이 사이트의 interval 은 그 조건을 정의로 삼으므로 (2)는 (1)과 정의에서 나온다. '사이의 점을 가지면 연결'은 출처와 같은 하한 논법(z = inf(U₂ ∩ [x, y]) 가 U₁ 에 속함을 보이고 B(z, δ) ⊆ U₁ 에서 U₁ ∩ U₂ 의 점을 찾는다)이다. 출처는 'Without loss of generality, assume x < y' 로 두고, 이 항목은 (나)를 세워 x < y 와 y < x 의 두 경우에 따로 쓴다. 출처가 z > x 인 경우 'B(z, ε) contains points of [x, y] not in U₂' 로 z ∉ U₂ 를 보이는 곳을, 이 항목은 z ∈ Q 라 하고 p 와 z − δ 를 비교하는 두 경우로 쓴다. 예시 '한 점을 뺀 실수'와 확인 질문 'S = {x ≤ 0} ∪ {1 ≤ x} 는 연결인가'는 Example 7.2.15(x < z < y, x, y ∈ S, z ∉ S 이면 연결이 아니다)와 같은 발상이다. 반례 '유리수와 정수의 빠진 점'의 ℚ 는 연습문제 7.2.5(p.272: ℚ 의 서로 다른 두 점마다 ℚ 를 서로소인 두 열린집합으로 가르라)와 같은 대상이다."
   - ref: fuglede-basic-topology
-    loc: "Connectedness 절의 예 intervals-are-connected (content/connectedness.tex:40–47); 연습문제 2.4 connected-implies-interval (content/exercises.tex:82)"
+    loc: "Connectedness 절의 예 intervals-are-connected (content/connectedness.tex:40–47), 예 (29–35), 명제 S^n ≄ ℝ 의 증명 (137–139), 연결 성분 절의 예 (235–241); 연습문제 2.4 connected-implies-interval (content/exercises.tex:82)"
     checked: original
-    note: "(2)의 '구간은 연결이다'는 출처의 예 intervals-are-connected(40–47)와 같은 내용이다. 출처 42줄은 '모든 A ⊂ ℝ 에 대하여 sup A ∈ Ā' 라고 적고 그 근거로 sup A 가 A 의 수열의 극한이라는 것을 들며, z = sup U₀ 로 증명한다. 이 항목은 수열을 쓰지 않는 Lebl 의 하한 논법으로 증명한다. 거꾸로(연결이면 구간)는 출처 연습문제 2.4 connected-implies-interval(exercises.tex:82)이다. 반례 '유리수와 정수의 빠진 점'의 ℚ 는 출처의 예(connectedness.tex:29–35)와 같은 대상이다."
+    note: "(2)의 '구간은 연결이다'는 출처의 예 intervals-are-connected(40–47)와 같은 내용이다. 출처 42줄은 '모든 A ⊂ ℝ 에 대하여 sup A ∈ Ā' 라고 적고 그 근거로 sup A 가 A 의 수열의 극한이라는 것을 들며, z = sup U₀ 로 증명한다. 이 항목은 수열을 쓰지 않는 Lebl 의 하한 논법으로 증명한다. 거꾸로(연결이면 구간)는 출처 연습문제 2.4 connected-implies-interval(exercises.tex:82)이다. 반례 '유리수와 정수의 빠진 점'의 ℚ 는 출처의 예(connectedness.tex:29–35)와 같은 대상이고, 연결 성분에 관한 예(236–240)는 ℚ 의 서로 다른 두 점 x < y 사이의 무리수 r 로 ℚ 의 부분집합을 가르는 같은 발상을 쓴다. 예시 '한 점을 뺀 실수'의 결론(ℝ 에서 한 점을 빼면 연결이 아니다)은 출처의 명제 S^n ≄ ℝ 의 증명(138: ℝ − {f(p)} 는 연결이 아니다)에 쓰인다."
 status: reviewed
 review_note: "2026-11-19 자기 검토(docs/self-review.md)와 지휘자의 표본 검사를 거쳤다. 독립 검토는 거치지 않았다. 자기 검토에서 거짓이던 직관 문장 1건, 공집합·한 점인 경우를 빠뜨린 진술의 가정, 근거 없는 예시와 반례 제목을 고쳤다."
 added: 2026-11-19

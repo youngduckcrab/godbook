@@ -11,9 +11,9 @@ requires: [set, subset, set-operations, cartesian-product, family-of-sets, real-
 proof: full
 sources:
   - ref: fuglede-basic-topology
-    loc: "Connectedness 절의 Theorem products-connected 와 증명 (content/connectedness.tex:101–115), 그 다음 Corollary 와 증명 (116–122); 연습문제 2.5, 2.15 (content/exercises.tex:83, 93)"
+    loc: "Connectedness 절의 Theorem products-connected 와 증명 (content/connectedness.tex:101–115), 그 다음 Corollary 와 증명 (116–122), 구의 연결에 관한 문단 (131); 연습문제 2.5, 2.15 (content/exercises.tex:83, 93)"
     checked: original
-    note: "(1)과 (2)는 출처 Theorem products-connected(101–115)를 두 공간으로 좁힌 것이다. 출처는 임의 개수의 곱에 대해 '곱이 연결인 것은 정확히 모든 X_i 가 연결일 때'라고 진술하고(103), '곱이 연결이면 각 인자가 연결'을 사영 π_j 의 연속(106)으로 보인다. 이 항목의 (2)는 두 인자가 공집합이 아니라는 가정을 두고, 한 인자가 공집합인 예를 진술에 적었다. (1)의 증명은 출처와 같은 길이다. 출처는 x 를 하나 고정해 A_x = {x} × Y, B_y = X × {y} 로 두고 A_x ∪ B_y 들의 합집합이 모두 (x, y′) 를 품는다고 쓴다(110–114). 이 항목은 가로줄의 둘째 좌표 b 를 고정하고 x 마다 T_x 를 두어 식으로 정한 집합족으로 쓰며, 세로줄과 가로줄의 연결은 maps-into-a-product 의 위상동형과 connected-space 의 (7)로 얻는다(출처는 y 를 (x, y) 로 보내는 함수의 상으로 얻는다). 출처는 유한 개의 곱을 두 개로 귀납하고 무한 개를 연습문제 2.15(exercises.tex:93)로 두며, 이 항목은 두 공간만 다룬다. (3)의 ℝ × ℝ 은 출처 Corollary(117–122: ℝⁿ 은 연결이다)의 n = 2 경우와 같다. 예시 '한 점을 뺀 평면'은 출처 연습문제 2.5(exercises.tex:83: n ≥ 2 이면 ℝⁿ ∖ {0} 은 연결임을 보이라)의 n = 2 경우와 같은 물음이다."
+    note: "(1)과 (2)는 출처 Theorem products-connected(101–115)를 두 공간으로 좁힌 것이다. 출처는 임의 개수의 곱에 대해 '곱이 연결인 것은 정확히 모든 X_i 가 연결일 때'라고 진술하고(103), '곱이 연결이면 각 인자가 연결'을 사영 π_j 의 연속(106)으로 보인다. 이 항목의 (2)는 두 인자가 공집합이 아니라는 가정을 두고, 한 인자가 공집합인 예를 진술에 적었다. (1)의 증명은 출처와 같은 길이다. 출처는 x 를 하나 고정해 A_x = {x} × Y, B_y = X × {y} 로 두고 A_x ∪ B_y 들의 합집합이 모두 (x, y′) 를 품는다고 쓴다(110–114). 이 항목은 가로줄의 둘째 좌표 b 를 고정하고 x 마다 T_x 를 두어 식으로 정한 집합족으로 쓰며, 세로줄과 가로줄의 연결은 maps-into-a-product 의 위상동형과 connected-space 의 (7)로 얻는다(출처는 y 를 (x, y) 로 보내는 함수의 상으로 얻는다). 출처는 유한 개의 곱을 두 개로 귀납하고 무한 개를 연습문제 2.15(exercises.tex:93)로 두며, 이 항목은 두 공간만 다룬다. (3)의 ℝ × ℝ 은 출처 Corollary(117–122: ℝⁿ 은 연결이다)의 n = 2 경우와 같다. 예시 '한 점을 뺀 평면'은 출처 연습문제 2.5(exercises.tex:83: n ≥ 2 이면 ℝⁿ ∖ {0} 은 연결임을 보이라)의 n = 2 경우와 같은 물음이고, 출처 131줄도 n ≥ 1 일 때 ℝ^{n+1} − {0} 이 연결이라는 것을 그 연습문제로 가리킨다."
 status: reviewed
 review_note: "2026-11-19 자기 검토(docs/self-review.md)와 지휘자의 표본 검사를 거쳤다. 독립 검토는 거치지 않았다. 자기 검토에서 거짓이던 직관 문장 1건, 공집합·한 점인 경우를 빠뜨린 진술의 가정, 근거 없는 예시와 반례 제목을 고쳤다."
 added: 2026-11-19

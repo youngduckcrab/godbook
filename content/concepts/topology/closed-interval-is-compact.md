@@ -11,13 +11,13 @@ requires: [set, subset, set-operations, family-of-sets, real-number-arithmetic, 
 proof: full
 sources:
   - ref: fuglede-basic-topology
-    loc: "Compactness in ℝⁿ 절의 Theorem intervals-compact 와 증명, content/compactness.tex:178–190; Compactness 절의 예 interval-compact, 32–35"
+    loc: "Compactness in ℝⁿ 절의 Theorem intervals-compact 와 증명, content/compactness.tex:178–190; Compactness 절의 예 interval-compact, 32–35, 예 s1-compact 와 단순 닫힌 곡선의 예, 78–84; 연습문제 3.1 (a), content/exercises.tex:100"
     checked: original
-    note: "(1)은 출처의 Theorem intervals-compact(178–181, '유계인 닫힌구간 [a, b] ⊆ ℝ 은 콤팩트이다')와 같다. 출처의 증명(182–190)은 열린 덮개 {U_i} 에 대해 M = {x ∈ [a, b] | [a, x] 가 유한 개의 U_i 로 덮인다} 를 두고, 'a ∈ M', 'm = sup M > a', 'M 은 구간이다' 라고 적은 뒤 m < b 를 가정해 m − ε ∈ M 과 m + ε/2 ∈ M 으로 모순을 얻고, 'M = [a, b] 를 보이면 된다' 고 적는다. 이 항목은 같은 상한 논법을 compact-space 의 (3)과 𝒦_𝒱 로 쓰고, s = sup E 가 E 에 든다는 것과 s = b 라는 것을 따로 보이며, 오른쪽으로 넘어갈 점은 min{s + δ/2, b} 로 잡는다. 출처의 [a, x] 는 x = a 에서 한 점이고, 이 사이트의 구간 기호는 a < b 일 때만 쓰므로 집합 {y : a ≤ y ≤ t} 로 적는다. 출처는 예 interval-compact(32–35)에서 [0, 1] 이 콤팩트라는 것을 하이네–보렐 정리의 한 경우라고 적는다."
+    note: "(1)은 출처의 Theorem intervals-compact(178–181, '유계인 닫힌구간 [a, b] ⊆ ℝ 은 콤팩트이다')와 같다. 출처의 증명(182–190)은 열린 덮개 {U_i} 에 대해 M = {x ∈ [a, b] | [a, x] 가 유한 개의 U_i 로 덮인다} 를 두고, 'M = [a, b] 를 보이면 된다' 고 적은 뒤 'a ∈ M', 'm = sup M > a', 'M 은 구간이다' 라고 적고, m < b 를 가정해 m − ε ∈ M 과 m + ε/2 ∈ M 으로 모순을 얻는다. 이 항목은 같은 상한 논법을 compact-space 의 (3)과 𝒦_𝒱 로 쓰고, s = sup E 가 E 에 든다는 것과 s = b 라는 것을 따로 보이며, 오른쪽으로 넘어갈 점은 min{s + δ/2, b} 로 잡는다. 출처의 [a, x] 는 x = a 에서 한 점이고, 이 사이트의 구간 기호는 a < b 일 때만 쓰므로 집합 {y : a ≤ y ≤ t} 로 적는다. 출처는 예 interval-compact(32–35)에서 [0, 1] 이 콤팩트라는 것을 하이네–보렐 정리의 한 경우라고 적는다. 예시 '닫힌구간의 연속 상'은 출처의 예 s1-compact(78–81: [0, 1] 에서 S¹ 로 가는 연속 전사로 S¹ 이 콤팩트)와 같은 발상(닫힌구간의 연속 상은 콤팩트)이고, 확인 질문 '연속이고 단사이면 [0, 1] 과 f([0, 1]) 은 위상동형인가'는 출처의 단순 닫힌 곡선의 예(82–84: S¹ 에서 하우스도르프 공간으로 가는 연속 단사는 그 상과의 위상동형)와 같은 발상이다. 확인 질문 '[0, 1] ∪ [2, 3] 은 콤팩트인가'의 합집합 부분은 출처 연습문제 3.1 (a)(exercises.tex:100)의 경우이다."
   - ref: lebl-basic-analysis
-    loc: "7.4.2절 Example 7.4.12 (p.284), Theorem 7.4.14 의 증명 (p.284)"
+    loc: "7.4.2절 Example 7.4.8 (p.280), Theorem 7.4.11 (p.282), Example 7.4.12 (p.284), Theorem 7.4.14 의 증명 (p.284); 7.5.2절 Lemma 7.5.5 (p.289); 3.3절 Corollary 3.3.13 (p.135)"
     checked: original
-    note: "출처 Example 7.4.12(p.284)는 볼차노–바이어슈트라스 정리로 [a, b] 의 모든 수열이 [a, b] 안으로 수렴하는 부분수열을 가진다는 것을 보이고 [a, b] 가 (수열) 콤팩트라고 적는다. 콤팩트와 수열 콤팩트가 같다는 것은 출처 Theorem 7.4.11 이다. 이 항목은 수열을 쓰지 않고 열린 덮개로 증명한다. 이 항목의 증명의 틀은 해석학 입문의 continuous-on-closed-interval-is-bounded 의 상한 논법과 같다. 예시 '닫힌구간의 연속 상'과 관련해, 출처 Lemma 7.5.5(p.289)는 연속함수가 콤팩트 집합을 콤팩트 집합으로 보낸다고 진술한다."
+    note: "출처 Example 7.4.12(p.284)는 볼차노–바이어슈트라스 정리로 [a, b] 의 모든 수열이 [a, b] 안으로 수렴하는 부분수열을 가진다는 것을 보이고 [a, b] 가 (수열) 콤팩트라고 적는다. 콤팩트와 수열 콤팩트가 같다는 것은 출처 Theorem 7.4.11 이다. 이 항목은 수열을 쓰지 않고 열린 덮개로 증명한다. 이 항목의 증명의 틀은 해석학 입문의 continuous-on-closed-interval-is-bounded 의 상한 논법과 같다. 예시 '닫힌구간의 연속 상'과 관련해, 출처 Lemma 7.5.5(p.289)는 연속함수가 콤팩트 집합을 콤팩트 집합으로 보낸다고 진술하고, Corollary 3.3.13(p.135)은 [a, b] 위의 연속함수의 상이 닫히고 유계인 구간이거나 한 수라고 진술한다(같은 대상, 닫혀 있다는 같은 결론). (2)의 한 점 집합이 콤팩트라는 것은 Example 7.4.8(p.280)이 {0} 에 대해 보인다."
 status: reviewed
 review_note: "2026-11-19 자기 검토(docs/self-review.md)와 지휘자의 표본 검사를 거쳤다. 독립 검토는 거치지 않았다. 자기 검토에서 다른 항목의 예를 근거로 삼은 곳 3군데, 근거 없는 연속 주장, 단원 글의 틀린 문장을 고쳤다."
 added: 2026-11-19
