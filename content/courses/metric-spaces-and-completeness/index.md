@@ -6,10 +6,8 @@ level: undergrad
 order: 5
 track: 해석
 requires: [language-of-math, analysis-intro, topology-intro, riemann-integral]
-status: in-progress
-planned_units:
-  - 유계 사상과 연속 사상의 공간
-  - 피카르 정리
+status: complete
+planned_units: []
 ---
 
 해석학 입문은 실수의 코시 수열이 늘 수렴한다는 것(코시 완비성)을 증명했고, 위상수학 입문은 거리공간과 그 위의 열린집합, 수렴, 연속, 콤팩트성을 다루었습니다. 이 강의는 둘을 이어, 거리공간에서 코시 수열이 늘 수렴하는 성질인 완비성을 중심에 둡니다. 코시 수열과 완비 거리공간, 고른 연속과 축소 사상, 콤팩트 거리공간, 함수열의 점별 수렴과 고른 수렴, 유계 사상과 연속 사상의 공간을 차례로 다루고, 마지막 단원에서 미분방정식의 해가 있고 하나뿐이라는 피카르 정리를 증명합니다. 여섯 단원으로 되어 있습니다.
