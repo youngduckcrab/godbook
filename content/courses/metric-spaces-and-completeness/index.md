@@ -8,8 +8,6 @@ track: 해석
 requires: [language-of-math, analysis-intro, topology-intro, riemann-integral]
 status: in-progress
 planned_units:
-  - 콤팩트 거리공간
-  - 함수열의 점별 수렴과 고른 수렴
   - 유계 사상과 연속 사상의 공간
   - 피카르 정리
 ---
