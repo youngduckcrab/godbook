@@ -6,7 +6,7 @@ kind: theorem
 field: linear-algebra
 msc: ["15A15"]
 level: undergrad
-summary: A 가 m × n, B 가 n × m 행렬이면 AB 와 BA 의 크기가 달라도 tr(AB) = tr(BA) 이다. 따라서 세 행렬의 곱은 돌려 가며 바꾸어도 대각합이 같고, 가역인 Q 에 대해 tr(Q⁻¹MQ) = tr M 이다.
+summary: A 가 m × n, B 가 n × m 행렬이면 AB 와 BA 의 크기가 달라도 tr(AB) = tr(BA) 이다. 따라서 세 행렬의 곱은 돌려 가며 바꾸어도 대각합이 같고, 가역인 Q 에 대해 tr(Q⁻¹MQ) = tr(QMQ⁻¹) = tr M 이다.
 requires: [real-number-arithmetic, finite-sum-of-vectors, matrix, matrix-product, matrix-product-properties, invertible-matrix, double-sum-interchange, trace]
 proof: full
 sources:
@@ -32,7 +32,7 @@ added: 2026-11-24
    \begin{aligned} \operatorname{tr}(ABC) &= \operatorname{tr}(BCA) \\ &= \operatorname{tr}(CAB) \end{aligned}
    $$
    이다. 괄호 없이 쓴 세 행렬의 곱, 예를 들어 $ABC$는 $(AB)C = A(BC)$이다([[matrix-product-properties|행렬 곱의 성질]]의 (1)).
-3. $M$이 $n \times n$ 행렬이고 $Q$가 [[invertible-matrix|가역]]인 $n \times n$ 행렬이면 $\operatorname{tr}(Q^{-1} M Q) = \operatorname{tr} M$이다.
+3. $M$이 $n \times n$ 행렬이고 $Q$가 [[invertible-matrix|가역]]인 $n \times n$ 행렬이면 $\operatorname{tr}(Q^{-1} M Q) = \operatorname{tr} M$이고 $\operatorname{tr}(Q M Q^{-1}) = \operatorname{tr} M$이다.
 :::
 
 :::english
@@ -47,7 +47,7 @@ Below, $m$, $n$, $p$ are natural numbers. The trace $\operatorname{tr}$ and the 
    \begin{aligned} \operatorname{tr}(ABC) &= \operatorname{tr}(BCA) \\ &= \operatorname{tr}(CAB). \end{aligned}
    $$
    A product of three matrices written without parentheses, for example $ABC$, means $(AB)C = A(BC)$ (item (1) of the entry on properties of matrix multiplication).
-3. If $M$ is an $n \times n$ matrix and $Q$ is an invertible $n \times n$ matrix, then $\operatorname{tr}(Q^{-1} M Q) = \operatorname{tr} M$.
+3. If $M$ is an $n \times n$ matrix and $Q$ is an invertible $n \times n$ matrix, then $\operatorname{tr}(Q^{-1} M Q) = \operatorname{tr} M$ and $\operatorname{tr}(Q M Q^{-1}) = \operatorname{tr} M$.
 :::
 
 ## 직관
@@ -91,7 +91,7 @@ $$
 \begin{aligned} \operatorname{tr}((Q^{-1}M)Q) &= \operatorname{tr}(Q(Q^{-1}M)) \\ &= \operatorname{tr}((QQ^{-1})M) \\ &= \operatorname{tr}(I_n M) = \operatorname{tr} M \end{aligned}
 $$
 
-이다. $\blacksquare$
+이다. 같은 방법으로 (1)을 $n \times n$ 행렬 $QM$과 $Q^{-1}$에 쓰면 $\operatorname{tr}((QM)Q^{-1}) = \operatorname{tr}(Q^{-1}(QM)) = \operatorname{tr}((Q^{-1}Q)M) = \operatorname{tr}(I_n M) = \operatorname{tr} M$이다. $\blacksquare$
 :::
 
 ## 예시와 반례
