@@ -11,9 +11,9 @@ requires: [function, finite-set, mathematical-induction, real-function-space, fi
 proof: full
 sources:
   - ref: treil-linear-algebra-done-wrong
-    loc: 1장 5절, 5.5 Trace and matrix multiplication 의 Theorem 5.1 뒤 문단, p.23; 1장 5절 연습문제 5.6, p.24
+    loc: 1장 5절, 5.5 Trace and matrix multiplication 의 Theorem 5.1 뒤 문단, p.23; 1장 5절 연습문제 5.6, p.24; 8장 4.2.2 Differential forms as linear functionals (covectors), p.234
     checked: original
-    note: "출처는 1장 5.5(p.23)에서 Theorem 5.1(trace(AB) = trace(BA))의 증명을 연습문제 5.6(p.24)으로 돌리고, 증명하는 두 길 가운데 하나로 AB 와 BA 의 대각성분을 계산해 그 합을 비교하는 길을 들며, 이 길은 Σ 표기로 합을 다루는 데 익숙해야 한다고 적는다. 이 항목은 그 계산에 드는 이중 합의 순서 바꾸기를 따로 세운 보조정리이다. 출처는 이 사실을 번호 붙은 명제로 적지 않고(책 전체에서 'order of summation', 'double sum', 'interchang', 'change the order', 'Fubini', 'summation' 을 찾았다), 8장 4.2.2(p.234)의 미분형식의 좌표 변환처럼 Σ 두 개의 순서를 계산 안에서 말없이 바꾼다. 출처는 합을 Σ 로 쓰고, 이 사이트는 벡터의 유한 합의 재귀 정의를 ℝ 에 쓴 합으로 쓴다. 증명(행의 개수에 대한 귀납과 (H3))은 이 사이트가 썼다."
+    note: "출처는 1장 5.5(p.23)에서 Theorem 5.1(trace(AB) = trace(BA))의 증명을 연습문제 5.6(p.24)으로 돌리고, 증명하는 두 길 가운데 하나로 AB 와 BA 의 대각성분을 계산해 그 합을 비교하는 길을 들며, 이 길은 Σ 표기로 합을 다루는 데 익숙해야 한다고 적는다. 이 항목은 그 계산에 드는 이중 합의 순서 바꾸기를 따로 세운 보조정리이다. 출처는 이 사실을 번호 붙은 명제로 적지 않고(책 전체에서 'order of summation', 'double sum', 'interchang', 'change the order', 'Fubini', 'summation' 을 찾았다), 8장 4.2.2(p.234)의 미분형식의 좌표 변환처럼 Σ 두 개의 순서를 계산 안에서 바꾸며 그 근거를 따로 적지 않는다. 출처는 합을 Σ 로 쓰고, 이 사이트는 벡터의 유한 합의 재귀 정의를 ℝ 에 쓴 합으로 쓴다. 증명(행의 개수에 대한 귀납과 (H3))은 이 사이트가 썼다."
 status: reviewed
 review_note: "2026-11-24 자기 검토(docs/self-review.md)와 지휘자의 확인. 경계 경우에서 거짓이던 설명 문장 4건과 출처에 해석을 돌린 메모 1건을 작성자가 고쳤다. 독립 검토는 거치지 않았다."
 added: 2026-11-24

@@ -11,9 +11,9 @@ requires: [real-number-arithmetic, vector-space, vector-space-basic-properties, 
 proof: full
 sources:
   - ref: treil-linear-algebra-done-wrong
-    loc: 3장 3절 연습문제 3.6, p.85; 2장 8절 연습문제 8.5, p.73; 4장 1절, 1.3 Finding characteristic polynomial and eigenvalues of an abstract operator, p.101
+    loc: 3장 3절 연습문제 3.6, p.85; 2장 8절 연습문제 8.5, p.73; 4장 1절, 1.3 Finding characteristic polynomial and eigenvalues of an abstract operator, p.101; 5장 6절 연습문제 6.7, pp.150–151
     checked: original
-    note: "(1)의 행렬식 쪽은 출처 3장 3절의 연습문제 3.6(p.85)이 증명하라는 것이고, 대각합 쪽은 2장 8절의 연습문제 8.5(p.73)가 증명하라는 것이다. 출처는 4장 1.3(p.101)에서 닮음을 A = SBS⁻¹ 로 적고, det A = det S det B det S⁻¹ = det B 로 닮은 행렬의 행렬식이 같음을 보인 뒤, A − λI = S(B − λI)S⁻¹ 를 계산해 A − λI 와 B − λI 가 닮았다고 적는다. (3)은 이 계산과 같은 것을 행렬 곱의 성질의 번호로 적은 것이다. 이 사이트의 닮음은 A = Q⁻¹BQ 로 적고(같은 관계이다. S = Q⁻¹), 출처는 5장 6절 연습문제 6.7(p.151)의 귀띔에서도 닮은 행렬의 대각합, 행렬식, 고윳값이 같다고 적는다. (1)은 이 사이트의 행렬식의 곱의 성질과 대각합의 순서 바꾸기로 증명했고, (2)와 (4)의 증명은 이 사이트가 썼다. 확인 질문 '$\\begin{pmatrix} 2 & 0 \\\\ 0 & 3 \\end{pmatrix}$과 $\\begin{pmatrix} 2 & 0 \\\\ 0 & 2 \\end{pmatrix}$는 닮았는가?' 는 출처 2장 8절의 연습문제 8.6(p.73)과 같은 발상이다(대각합이 달라 닮지 않음을 보인다)."
+    note: "(1)의 행렬식 쪽은 출처 3장 3절의 연습문제 3.6(p.85)이 증명하라는 것이고, 대각합 쪽은 2장 8절의 연습문제 8.5(p.73)가 증명하라는 것이다. 출처는 4장 1.3(p.101)에서 닮음을 A = SBS⁻¹ 로 적고, det A = det S det B det S⁻¹ = det B 로 닮은 행렬의 행렬식이 같음을 보인 뒤, A − λI = S(B − λI)S⁻¹ 를 계산해 A − λI 와 B − λI 가 닮았다고 적는다. (3)은 이 계산과 같은 것을 행렬 곱의 성질의 번호로 적은 것이다. 이 사이트의 닮음은 A = Q⁻¹BQ 로 적고(같은 관계이다. S = Q⁻¹), 출처는 5장 6절 연습문제 6.7(pp.150–151)의 귀띔(p.151)에서도 닮은 행렬의 대각합, 행렬식, 고윳값이 같다고 적는다. (1)은 이 사이트의 행렬식의 곱의 성질과 대각합의 순서 바꾸기로 증명했고, (2)와 (4)의 증명은 이 사이트가 썼다. 확인 질문 '$3 \\times 3$ 행렬 $A$의 대각합이 $5$이고 $Q$가 가역인 $3 \\times 3$ 행렬이면 $Q^{-1}AQ - 2I_3$의 대각합은 무엇인가?'가 (3)으로 Q⁻¹AQ − 2I₃ 를 A − 2I₃ 와 닮은 행렬로 보는 것은 출처 4장 1.3(p.101)의 A − λI = S(B − λI)S⁻¹ 계산과 같은 발상이다. 확인 질문 '$\\begin{pmatrix} 2 & 0 \\\\ 0 & 3 \\end{pmatrix}$과 $\\begin{pmatrix} 2 & 0 \\\\ 0 & 2 \\end{pmatrix}$는 닮았는가?' 는 출처 2장 8절의 연습문제 8.6(p.73)과 같은 발상이다(대각합이 달라 닮지 않음을 보인다)."
 status: reviewed
 review_note: "2026-11-24 자기 검토(docs/self-review.md)와 지휘자의 확인. 어긋난 인용 번호 1건, 경계 경우에서 거짓이거나 넓던 설명 문장 3건, 뒤 단원을 예고하던 문장 1건, 겹치는 글자 1건을 작성자가 고쳤다. 독립 검토는 거치지 않았다."
 added: 2026-11-24

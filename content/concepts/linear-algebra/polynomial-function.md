@@ -10,9 +10,9 @@ summary: 0 이상인 정수 k 마다 x 를 xᵏ 으로 보내는 함수 tᵏ 을
 requires: [function, prime-number, well-ordering-principle, even-and-odd, real-number-arithmetic, vector-space, vector-space-basic-properties, real-function-space, subspace, finite-sum-of-vectors, linear-combination-and-span, standard-basis, power-of-a-real-number]
 sources:
   - ref: treil-linear-algebra-done-wrong
-    loc: 1장 1절, 1.2 Examples 의 다섯째 Example(Pₙ), p.4; 1장 2절, Example 2.3, p.7; 1장 연습문제 1.2 c, 1.3 d, e, p.5
+    loc: 1장 1절, 1.1 Examples 의 넷째 Example(Pₙ)과 그 앞 문단, 그 뒤의 Question, p.4; 1장 2절, Example 2.3, p.7; 1장 연습문제 1.2 c, 1.3 d, e, p.5
     checked: original
-    note: "출처는 1장 1.2 의 Example(p.4)에서 Pₙ 을 '차수가 n 이하인 다항식' p(t) = a₀ + a₁t + a₂t² + … + aₙtⁿ 전체로 도입하고 t 를 '독립변수'라 부르며, 계수의 일부나 전부가 0 이어도 된다고 적는다. 다항식이 함수인지 형식적인 식인지는 밝히지 않고, 차수(degree)를 정의하지 않은 채 쓴다. 1장 Example 2.3(p.7)은 e₀ := 1, e₁ := t, …, eₙ := tⁿ 을 Pₙ 의 표준기저라 부른다. 이 항목은 다항함수를 ℝ 위의 실함수 공간의 원소로 정하고 𝒫ₙ 을 t⁰, …, tⁿ 의 생성으로 정의했다. 𝒫ₙ 이 부분공간이라는 것, 𝒫ₘ ⊆ 𝒫ₙ, 값의 계산 (3), 'tᵏ', '다항함수'라는 이름과 번호는 이 사이트의 것이다. 출처의 연습문제 1.2 c(차수가 정확히 n 인 다항식 전체는 벡터공간인가)와 1.3 d, e(두 다항식의 합의 차수)는 차수를 정의한 '다항함수의 계수와 차수' 항목 쪽의 물음이다."
+    note: "출처는 1장 1.1 Examples 의 넷째 Example(p.4)에서 Pₙ 을 '차수가 n 이하인 다항식' p(t) = a₀ + a₁t + a₂t² + … + aₙtⁿ 전체로 도입하고 t 를 '독립변수'라 부르며, 계수의 일부나 전부가 0 이어도 된다고 적는다. 그 바로 앞 문단(p.4)은 이 예에서 다항식의 계수가 성분 노릇을 한다고 적어, 연산을 계수마다 한다는 것을 앞의 예(ℝⁿ 등)와 같이 둔다. (1)의 계수끼리의 합·차·스칼라배 식은 이것과 같은 내용이다. 다항식이 함수인지 형식적인 식인지는 밝히지 않고, 차수(degree)를 정의하지 않은 채 쓴다. 1장 Example 2.3(p.7)은 e₀ := 1, e₁ := t, …, eₙ := tⁿ 을 Pₙ 의 표준기저라 부른다. 이 항목은 다항함수를 ℝ 위의 실함수 공간의 원소로 정하고 𝒫ₙ 을 t⁰, …, tⁿ 의 생성으로 정의했다. 𝒫ₙ 이 부분공간이라는 것, 𝒫ₘ ⊆ 𝒫ₙ, 값의 계산 (3), 'tᵏ', '다항함수'라는 이름과 번호는 이 사이트의 것이다. 출처의 연습문제 1.2 c(차수가 정확히 n 인 다항식 전체는 벡터공간인가)와 1.3 d, e(두 다항식의 합의 차수)는 차수를 정의한 '다항함수의 계수와 차수' 항목 쪽의 물음이다. 예시 '𝒫₀ 의 원소와 영함수'의 '영함수는 모든 𝒫ₙ 에 든다'는 출처 p.4 의 Question(앞의 예들에서 영벡터는 무엇인가)이 Pₙ 에 대해 묻는 것과 같은 대상이다."
 status: reviewed
 review_note: "2026-11-24 자기 검토(docs/self-review.md)와 지휘자의 확인. 뒤 항목에 기대던 반례 2건을 바꾸고, 예시 메모의 부정 주장 2건을 지웠으며, 정의하지 않은 표기와 범위 없는 변수를 작성자가 고쳤다. 독립 검토는 거치지 않았다."
 added: 2026-11-24
