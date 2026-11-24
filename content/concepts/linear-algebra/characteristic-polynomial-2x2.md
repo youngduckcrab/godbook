@@ -11,9 +11,9 @@ requires: [function, real-number-arithmetic, vector-space, vector-space-basic-pr
 proof: full
 sources:
   - ref: treil-linear-algebra-done-wrong
-    loc: "4장 1절 Main definitions, 1.2 Finding eigenvalues: characteristic polynomials, p.100; 1.6 Trace and determinant, Theorem 1.2, p.103; 4장 1절 연습문제 1.2, p.104, 1.10, 1.11, p.105; 4장 2절 Diagonalization, 2.7 Some example 의 2.7.1–2.7.3, pp.112–113"
+    loc: "4장 1절 Main definitions, 1.2 Finding eigenvalues: characteristic polynomials, p.100; 1.6 Trace and determinant, Theorem 1.2, p.103; 4장 1절 연습문제 1.2, p.104, 1.10, 1.11, p.105; 4장 2절 Diagonalization, 2.7 Some example 의 2.7.1–2.7.3, pp.112–113; 7장 4절 Positive definite forms. Minimax. Sylvester's criterion, 4.1 Sylvester's criterion of positivity, p.209"
     checked: original
-    note: "출처 4장 2.7.1–2.7.3(pp.112–113)은 (1 2; 8 1), (1 2; −2 1), (1 1; 0 1) 의 특성다항식을 2 × 2 행렬식으로 직접 계산해 (1 − λ)² − 16, (1 − λ)² + 2², (1 − λ)² 로 적는다. 2 × 2 의 일반식 λ² − (trace A)λ + det A 는 출처에서 찾지 못했다(검색어 trace 의 4장 안 3건(Theorem 1.2, 연습문제 1.11)과 λ2 −, discriminant 0건). (4)의 'tr A = λ₁ + λ₂, det A = λ₁λ₂' 는 출처 1.6 Theorem 1.2(p.103)의 n = 2 경우이고, 출처는 그 증명을 연습문제 1.10, 1.11(p.105)로 돌린다. 이 항목은 n = 2 에서만 계수를 비교해 증명했다. (2)의 '특성다항식이 같아도 닮지 않을 수 있다'의 예 N 은 출처 2.7.3 의 행렬과 같고, 반례 '특성다항식이 같지만 닮지 않은 2 × 2 행렬의 예'는 같은 발상을 3I₂ 로 한 것이다. 출처 4장 연습문제 1.2(p.104)는 2 × 2 행렬 (4 −5; 2 −3), (2 1; −1 4) 의 특성다항식을 구하라고 한다."
+    note: "출처 4장 2.7.1–2.7.3(pp.112–113)은 (1 2; 8 1), (1 2; −2 1), (1 1; 0 1) 의 특성다항식을 2 × 2 행렬식으로 직접 계산해 (1 − λ)² − 16, (1 − λ)² + 2², (1 − λ)² 로 적는다. 2 × 2 의 일반식 λ² − (trace A)λ + det A 는 출처에서 찾지 못했다(책 전체 검색: trace 32건을 읽었고, 4장의 것은 Theorem 1.2 와 연습문제 1.11 이다. λ2 − 3건은 4장 연습문제 1.10, 1.11 과 9장 p.255 의 n 차 곱 꼴이고, discriminant 0건). (4)의 'tr A = λ₁ + λ₂, det A = λ₁λ₂' 는 출처 1.6 Theorem 1.2(p.103)의 n = 2 경우이고, 출처는 그 증명을 연습문제 1.10, 1.11(p.105)로 돌린다. 이 항목은 n = 2 에서만 계수를 비교해 증명했다. 출처 7장 4.1(p.209)은 2 × 2 행렬 (a b; b c) 의 두 고윳값에 대해 λ₁λ₂ = det A, λ₁ + λ₂ = trace A 를 써서 양의 정부호 판정을 증명한다. (2)의 '특성다항식이 같아도 닮지 않을 수 있다'의 예 N 은 출처 2.7.3 의 행렬과 같고, 반례 '특성다항식이 같지만 닮지 않은 2 × 2 행렬의 예'는 같은 발상을 3I₂ 로 한 것이다. 출처 4장 연습문제 1.2(p.104)는 2 × 2 행렬 (4 −5; 2 −3), (2 1; −1 4) 의 특성다항식을 구하라고 한다. 그 둘째 행렬의 특성다항식은 (x − 3)² 으로, 반례 '특성다항식이 같지만 닮지 않은 2 × 2 행렬의 예'의 B 와 3I₂ 의 특성다항식과 같다."
 status: reviewed
 review_note: "2026-11-24 자기 검토(docs/self-review.md)와 지휘자의 확인(새로 쓴 증명 통독, 예의 수치 재계산). 독립 검토는 거치지 않았다."
 added: 2026-11-24
