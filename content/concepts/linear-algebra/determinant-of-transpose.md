@@ -6,14 +6,14 @@ kind: theorem
 field: linear-algebra
 msc: ["15A15"]
 level: undergrad
-summary: 정사각행렬 A 에 대하여 det Aᵀ = det A 이다. 따라서 행에 대한 행렬식의 성질이 열에도 성립한다. 행렬식은 각 열에 대해 선형이고, 서로 다른 두 열이 같거나 영열이 있으면 0 이며, 두 열을 맞바꾸면 부호가 바뀌고, 한 열에 다른 열의 상수배를 더해도 바뀌지 않는다. det A = 0 인 것은 정확히 행이 일차종속일 때이다.
+summary: 정사각행렬 A 에 대하여 det Aᵀ = det A 이다. 따라서 행에 대한 행렬식의 성질이 열에도 성립한다. 행렬식은 각 열에 대해 선형이고(한 열이나 행이 여러 벡터의 일차결합이면 행렬식도 그 계수로 나뉜다), 서로 다른 두 열이 같거나 영열이 있으면 0 이며, 두 열을 맞바꾸면 부호가 바뀌고, 한 열에 다른 열의 상수배를 더해도 바뀌지 않는다. det A = 0 인 것은 정확히 행이 일차종속일 때이다.
 requires: [real-number-arithmetic, mathematical-induction, finite-sum-of-vectors, real-function-space, linear-independence, matrix, transpose, invertible-matrix, inverse-matrix-properties, elementary-matrix, row-equivalence, echelon-form, invertible-matrix-and-row-reduction, determinant-function, determinant, determinant-and-invertibility, determinant-of-product]
 proof: full
 sources:
   - ref: treil-linear-algebra-done-wrong
     loc: "3장 3절 Constructing the determinant, 3.1 Basic properties, p.79; 3.2 Properties of determinant deduced from the basic properties, Proposition 3.1, p.79, Proposition 3.2, p.80; 3.5 Determinants of a transpose and of a product. Determinants of elementary matrices, Theorem 3.4, p.82, 그 증명, pp.83–84; 3.6 Summary of properties of determinant 의 1, 2, 4, 5, 9, 10, pp.84–85; 3절 연습문제 3.2, 3.3, p.85; 7절 연습문제 7.1 b)–e), g), p.97"
     checked: original
-    note: "(1)은 출처 Theorem 3.4(p.82) 'For a square matrix A, det A = det(Aᵀ)' 와 같다. 출처의 증명(pp.83–84)은 기본행렬 E 에서 det E = det(Eᵀ) 를 '쉽게 확인된다'고 하고, 가역이 아니면 Aᵀ 도 가역이 아니어서 둘 다 0 이며, 가역이면 Lemma 3.8 로 A 를 기본행렬의 곱으로 쓰고 전치가 각 기본행렬을 전치하고 순서를 뒤집는다는 것과 Corollary 3.7 로 마친다. 이 항목도 같은 길이지만, 기본행렬의 전치를 (2)에서 성분으로 계산하고, Corollary 3.7 대신 곱의 행렬식과 사슬의 길이에 대한 귀납법을 쓴다. 출처는 행렬식을 열에 대한 세 기본 성질(각 열에 대해 선형, 두 열을 맞바꾸면 부호가 바뀜, det I = 1 — 3.1절, p.79)에서 출발하고, 같은 두 열·영열·한 열이 다른 열의 배수인 경우·열이 일차종속인 경우의 0(Proposition 3.1, p.79)과 한 열에 다른 열들의 일차결합을 더해도 바뀌지 않는다는 것(Proposition 3.2, p.80)을 먼저 증명한다. 행에 대한 성질은 Theorem 3.4 뒤에 얻는다고 적는다(p.82, 3.6절 p.84). 이 강의는 거꾸로 행에 대한 성질로 행렬식 함수를 정의했으므로, 이 항목의 (3)–(7)에서 열에 대한 성질을 Theorem 3.4 로 얻는다. (3)–(7)은 출처 3.6절의 1, 2, 4, 5, 9(pp.84–85)의 열에 관한 부분에 해당하고, (8)은 같은 절의 6 의 행에 관한 부분(한 행이 다른 행들의 일차결합이면 0)을 '정확히 ~일 때'로 적은 것이다. 출처 연습문제 7.1(p.97)의 b)(같은 두 행이나 열), c)(두 행이나 열을 맞바꾼 행렬), d)(한 행이나 열에 스칼라를 곱한 행렬), e)(한 행에 다른 행의 배수를 더한 행렬), g)(det(Aᵀ) = −det(A))는 이 성질들을 참·거짓으로 묻는다. 예시 '열 연산으로 계산한 3 × 3 행렬식'은 출처 연습문제 3.3(p.85, 열 연산이나 행 연산으로 행렬식을 계산하라)과 같은 발상이고, 열에 다른 열의 배수를 더하는 계산은 연습문제 3.2 b)(p.85)의 둘째 열 4a₂ + 5a₁ 과 같은 종류이다. 반례 '두 열을 맞바꾸어 행렬식의 부호가 바뀐 3 × 3 행렬'은 출처 연습문제 7.1 c)(p.97)가 거짓인 경우의 예이다. 확인 질문 '$\\det A = 3$인 $3 \\times 3$ 행렬 $A$의 둘째 열에 첫째 열의 $4$배를 더한 뒤 첫째 열과 셋째 열을 맞바꾸면 행렬식은 무엇이 되는가?' 는 출처 연습문제 3.2(p.85)와 같은 종류의 물음이다."
+    note: "(1)은 출처 Theorem 3.4(p.82) 'For a square matrix A, det A = det(Aᵀ)' 와 같다. 출처의 증명(pp.83–84)은 기본행렬 E 에서 det E = det(Eᵀ) 를 '쉽게 확인된다'고 하고, 가역이 아니면 Aᵀ 도 가역이 아니어서 둘 다 0 이며, 가역이면 Lemma 3.8 로 A 를 기본행렬의 곱으로 쓰고 전치가 각 기본행렬을 전치하고 순서를 뒤집는다는 것과 Corollary 3.7 로 마친다. 이 항목도 같은 길이지만, 기본행렬의 전치를 (2)에서 성분으로 계산하고, Corollary 3.7 대신 곱의 행렬식과 사슬의 길이에 대한 귀납법을 쓴다. 출처는 행렬식을 열에 대한 세 기본 성질(각 열에 대해 선형, 두 열을 맞바꾸면 부호가 바뀜, det I = 1 — 3.1절, p.79)에서 출발하고, 같은 두 열·영열·한 열이 다른 열의 배수인 경우·열이 일차종속인 경우의 0(Proposition 3.1, p.79)과 한 열에 다른 열들의 일차결합을 더해도 바뀌지 않는다는 것(Proposition 3.2, p.80)을 먼저 증명한다. 행에 대한 성질은 Theorem 3.4 뒤에 얻는다고 적는다(p.82, 3.6절 p.84). 이 강의는 거꾸로 행에 대한 성질로 행렬식 함수를 정의했으므로, 이 항목의 (3)–(7)에서 열에 대한 성질을 Theorem 3.4 로 얻는다. (3)–(7)은 출처 3.6절의 1, 2, 4, 5, 9(pp.84–85)의 열에 관한 부분에 해당하고, (8)은 같은 절의 6 의 행에 관한 부분(한 행이 다른 행들의 일차결합이면 0)을 '정확히 ~일 때'로 적은 것이다. (9)의 일차결합 꼴의 선형성은 출처가 Proposition 3.1 의 4 의 증명(p.80)에서 열 v₁ 이 α₂v₂ + ⋯ + αₙvₙ 일 때 '선형성에 의해' 합을 바깥으로 꺼내는 데 쓰는 꼴이다. 출처는 그 자리에서 'by linearity' 라고 적고, 기본 성질 1(3.1절)은 두 항의 꼴로 적혀 있다. 이 항목은 항의 개수에 대한 귀납으로 증명한다. 출처 연습문제 7.1(p.97)의 b)(같은 두 행이나 열), c)(두 행이나 열을 맞바꾼 행렬), d)(한 행이나 열에 스칼라를 곱한 행렬), e)(한 행에 다른 행의 배수를 더한 행렬), g)(det(Aᵀ) = −det(A))는 이 성질들을 참·거짓으로 묻는다. 예시 '열 연산으로 계산한 3 × 3 행렬식'은 출처 연습문제 3.3(p.85, 열 연산이나 행 연산으로 행렬식을 계산하라)과 같은 발상이고, 열에 다른 열의 배수를 더하는 계산은 연습문제 3.2 b)(p.85)의 둘째 열 4a₂ + 5a₁ 과 같은 종류이다. 반례 '두 열을 맞바꾸어 행렬식의 부호가 바뀐 3 × 3 행렬'은 출처 연습문제 7.1 c)(p.97)가 거짓인 경우의 예이다. 확인 질문 '$\\det A = 3$인 $3 \\times 3$ 행렬 $A$의 둘째 열에 첫째 열의 $4$배를 더한 뒤 첫째 열과 셋째 열을 맞바꾸면 행렬식은 무엇이 되는가?' 는 출처 연습문제 3.2(p.85)와 같은 종류의 물음이다."
 status: reviewed
 review_note: "2026-11-24 자기 검토(docs/self-review.md)와 지휘자의 확인. 거짓이던 직관 2건, 단원 글의 상태 문장 1건, 메모의 부정 주장 2건, 근거 없던 작은 사실 3건을 작성자가 고쳤다. 독립 검토는 거치지 않았다."
 added: 2026-11-24
@@ -32,6 +32,18 @@ $n$이 자연수이고 $A$가 $n \times n$ [[matrix|행렬]]이라 하자. $A^T$
 6. (열 맞바꾸기) $j$, $k \in \{1, \dots, n\}$이고 $j \ne k$이며, $B$가 $\mathbf{b}_j = \mathbf{a}_k$, $\mathbf{b}_k = \mathbf{a}_j$이고 $j$도 $k$도 아닌 모든 $l$에서 $\mathbf{b}_l = \mathbf{a}_l$인 $n \times n$ 행렬이면 $\det B = -\det A$이다.
 7. (열 더하기) $j$, $k \in \{1, \dots, n\}$이고 $j \ne k$이며 $c$가 실수이고, $B$가 $k$번째 열을 뺀 모든 열에서 $A$와 같으며 $\mathbf{b}_k = \mathbf{a}_k + c\,\mathbf{a}_j$이면 $\det B = \det A$이다.
 8. (행의 일차종속) $\det A = 0$인 것은 정확히 $A$의 행을 차례로 늘어놓은 $\mathbb{R}^n$의 벡터의 열($j$번째 항이 $A$의 $j$번째 행)이 [[linear-independence|일차종속]]일 때이다.
+9. (일차결합으로 쓴 열과 행) $p \ge 0$이 정수이고 $k \in \{1, \dots, n\}$이며, $x_1, \dots, x_p$가 길이 $p$인 실수의 열, $\mathbf{v}_1, \dots, \mathbf{v}_p$가 $\mathbb{R}^n$의 길이 $p$인 벡터의 열이라 하자. 합과 계수를 곱한 합은 [[finite-sum-of-vectors|벡터의 유한 합]]의 것이다.
+   - (a) (열) $\mathbf{a}_k = x_1 \mathbf{v}_1 + \cdots + x_p \mathbf{v}_p$이고, 각 $i \in \{1, \dots, p\}$에서 $B_i$가 $k$번째 열을 뺀 모든 열에서 $A$와 같고 $k$번째 열이 $\mathbf{v}_i$인 $n \times n$ 행렬이면
+   $$
+   \begin{aligned}
+   \det A &= x_1 \det B_1 \\
+   &\quad + \cdots + x_p \det B_p
+   \end{aligned}
+   $$
+   이다. 오른쪽은 $i$번째 항이 $x_i \det B_i$인 길이 $p$인 실수의 열의 합이다.
+   - (b) (행) $A$의 $k$번째 행이 $x_1 \mathbf{v}_1 + \cdots + x_p \mathbf{v}_p$이고, 각 $i$에서 $B_i$가 $k$번째 행을 뺀 모든 행에서 $A$와 같고 $k$번째 행이 $\mathbf{v}_i$인 $n \times n$ 행렬이면 $\det A = x_1 \det B_1 + \cdots + x_p \det B_p$이다.
+
+   $p = 0$이면 두 경우 모두 $A$의 $k$번째 열이나 행이 영벡터이고 오른쪽은 빈 합 $0$이다.
 
 $n = 1$이면 $A^T = A$이고, $j \ne k$인 $j$, $k \in \{1\}$이 없으므로 (4), (6), (7)과 (2)의 $P_{j,k}$, $R_{k,j}(c)$에 관한 부분은 해당하는 경우가 없다.
 :::
@@ -49,6 +61,18 @@ Let $n$ be a natural number and $A$ an $n \times n$ matrix. $A^T$ is the transpo
 6. (Swapping two columns) If $j$, $k \in \{1, \dots, n\}$, $j \ne k$, and $B$ is the $n \times n$ matrix with $\mathbf{b}_j = \mathbf{a}_k$, $\mathbf{b}_k = \mathbf{a}_j$ and $\mathbf{b}_l = \mathbf{a}_l$ for every $l$ other than $j$ and $k$, then $\det B = -\det A$.
 7. (Adding to a column) If $j$, $k \in \{1, \dots, n\}$, $j \ne k$, $c$ is a real number, $B$ agrees with $A$ in every column except the $k$-th, and $\mathbf{b}_k = \mathbf{a}_k + c\,\mathbf{a}_j$, then $\det B = \det A$.
 8. (Dependent rows) $\det A = 0$ exactly when the sequence of vectors in $\mathbb{R}^n$ listing the rows of $A$ in order (whose $j$-th term is the $j$-th row of $A$) is linearly dependent.
+9. (A column or row written as a linear combination) Let $p \ge 0$ be an integer, $k \in \{1, \dots, n\}$, $x_1, \dots, x_p$ a sequence of real numbers of length $p$, and $\mathbf{v}_1, \dots, \mathbf{v}_p$ a sequence of vectors in $\mathbb{R}^n$ of length $p$. Sums and sums with coefficients are those of finite sums of vectors.
+   - (a) (Columns) If $\mathbf{a}_k = x_1 \mathbf{v}_1 + \cdots + x_p \mathbf{v}_p$ and, for each $i \in \{1, \dots, p\}$, $B_i$ is the $n \times n$ matrix that agrees with $A$ in every column except the $k$-th and whose $k$-th column is $\mathbf{v}_i$, then
+   $$
+   \begin{aligned}
+   \det A &= x_1 \det B_1 \\
+   &\quad + \cdots + x_p \det B_p.
+   \end{aligned}
+   $$
+   The right side is the sum of the sequence of real numbers of length $p$ whose $i$-th term is $x_i \det B_i$.
+   - (b) (Rows) If the $k$-th row of $A$ is $x_1 \mathbf{v}_1 + \cdots + x_p \mathbf{v}_p$ and, for each $i$, $B_i$ is the $n \times n$ matrix that agrees with $A$ in every row except the $k$-th and whose $k$-th row is $\mathbf{v}_i$, then $\det A = x_1 \det B_1 + \cdots + x_p \det B_p$.
+
+   If $p = 0$, then in both cases the $k$-th column or row of $A$ is the zero vector and the right side is the empty sum $0$.
 
 If $n = 1$, then $A^T = A$, and since there are no $j \ne k$ in $\{1\}$, (4), (6), (7) and the parts of (2) about $P_{j,k}$ and $R_{k,j}(c)$ have no cases to which they apply.
 :::
@@ -122,7 +146,26 @@ $A$가 가역이 아니라 하자. $A^T$가 가역이라면 [[inverse-matrix-pro
 
 **(7)의 증명.** $l$번째 항이 $l \ne k$이면 $\mathbf{a}_l$, $l = k$이면 $\mathbf{a}_j$인 $\mathbb{R}^n$의 벡터의 열이 있으므로([[finite-sum-of-vectors|벡터의 유한 합]]의 진술) 행렬의 (4)에 의해 이 열을 열로 갖는 $n \times n$ 행렬 $A'$이 있다. $A$, $A'$, $B$는 $k$번째 열을 뺀 모든 열에서 서로 같고, $\mathbf{b}_k = 1 \cdot \mathbf{a}_k + c\,\mathbf{a}'_k$이다($\mathbf{a}'_k = \mathbf{a}_j$이고, [[real-function-space|실숫값 함수의 공간]]의 스칼라배와 (K1), (K4)에 의해 $1 \cdot \mathbf{a}_k = \mathbf{a}_k$이다). (3)에 의해 $\det B = 1 \cdot \det A + c \det A'$이다. $A'$의 $j$번째 열과 $k$번째 열은 둘 다 $\mathbf{a}_j$이고 $j \ne k$이므로 (4)에 의해 $\det A' = 0$이다. (K9)와 (K4)에 의해 $\det B = \det A$이다.
 
-**(8)의 증명.** (가)에 의해 $A^T$의 $j$번째 열은 $A$의 $j$번째 행이므로, $A^T$의 열을 차례로 늘어놓은 벡터의 열은 모든 자리에서 $A$의 행을 차례로 늘어놓은 벡터의 열과 항이 같고, 벡터의 유한 합의 진술(길이가 같은 두 열은 모든 자리에서 항이 같으면 같은 열)에 의해 같은 열이다. 가역성의 (3)의 (a)를 $A^T$에 쓰면 $\det A^T = 0$인 것은 정확히 이 열이 일차종속일 때이고, (1)에 의해 $\det A^T = \det A$이다. $\blacksquare$
+**(8)의 증명.** (가)에 의해 $A^T$의 $j$번째 열은 $A$의 $j$번째 행이므로, $A^T$의 열을 차례로 늘어놓은 벡터의 열은 모든 자리에서 $A$의 행을 차례로 늘어놓은 벡터의 열과 항이 같고, 벡터의 유한 합의 진술(길이가 같은 두 열은 모든 자리에서 항이 같으면 같은 열)에 의해 같은 열이다. 가역성의 (3)의 (a)를 $A^T$에 쓰면 $\det A^T = 0$인 것은 정확히 이 열이 일차종속일 때이고, (1)에 의해 $\det A^T = \det A$이다.
+
+**(9)의 증명.** 먼저 (b)를 $p$에 대한 [[mathematical-induction|수학적 귀납법]]으로 보인다(시작점 $0$). $p$마다 명제 "모든 $n \times n$ 행렬 $A$, 모든 $k$와 길이 $p$인 모든 $x$, $\mathbf{v}$에 대하여 (b)가 성립한다"를 $S'_p$라 한다.
+
+- 기초 단계: $p = 0$이면 벡터의 유한 합의 정의에 의해 $A$의 $k$번째 행은 영벡터이고, [[real-function-space|실숫값 함수의 공간]]에 의해 그 모든 값이 $0$이므로 [[echelon-form|사다리꼴]]의 정의에 의해 영행이다. 행렬식의 (7)의 (a)에 의해 $\det A = 0$이고, 오른쪽은 빈 합이므로 $\mathbb{R}$의 영벡터 $0$이다.
+- 귀납 단계: $S'_p$가 참이라 하고, 길이 $p + 1$인 $x$, $\mathbf{v}$에 대하여 $A$의 $k$번째 행이 $x_1 \mathbf{v}_1 + \cdots + x_{p+1} \mathbf{v}_{p+1}$이라 하자. $\mathbf{w} = x_1 \mathbf{v}_1 + \cdots + x_p \mathbf{v}_p$(처음 $p$개의 합)라 하면 합의 정의에 의해 $A$의 $k$번째 행은 $\mathbf{w} + x_{p+1} \mathbf{v}_{p+1}$이고, 실숫값 함수의 공간의 스칼라배와 (K1), (K4)에 의해 이것은 $1 \cdot \mathbf{w} + x_{p+1} \mathbf{v}_{p+1}$이다. $k$번째 행을 뺀 모든 행에서 $A$와 같고 $k$번째 행이 $\mathbf{w}$인 $n \times n$ 행렬을 $A'$이라 하자(성분마다 실수가 정해지므로 (G)와 행렬의 (2)에 의해 하나 있다). $A'$, $B_{p+1}$, $A$는 $k$번째 행을 뺀 모든 행에서 서로 같으므로 행렬식의 (1)의 (i)에 의해 $\det A = 1 \cdot \det A' + x_{p+1} \det B_{p+1}$이다. $i \le p$이면 $B_i$는 $k$번째 행을 뺀 모든 행에서 $A'$과도 같고 $k$번째 행이 $\mathbf{v}_i$이므로, $S'_p$를 $A'$에 쓰면 $\det A' = x_1 \det B_1 + \cdots + x_p \det B_p$이다. 따라서 (K4), (K1)과 실수의 열의 합의 정의에 의해
+  $$
+  \begin{aligned}
+  \det A &= (x_1 \det B_1 + \cdots \\
+  &\qquad + x_p \det B_p) \\
+  &\quad + x_{p+1} \det B_{p+1} \\
+  &= x_1 \det B_1 + \cdots \\
+  &\quad + x_{p+1} \det B_{p+1}
+  \end{aligned}
+  $$
+  이다.
+
+따라서 모든 $p \ge 0$에서 (b)가 성립한다.
+
+(a) (가)에 의해 $A^T$의 $k$번째 행은 $\mathbf{a}_k = x_1 \mathbf{v}_1 + \cdots + x_p \mathbf{v}_p$이고, $B_i^T$는 $k$번째 행을 뺀 모든 행에서 $A^T$와 같고 $k$번째 행이 $\mathbf{v}_i$이다. (b)를 $A^T$와 $B_1^T, \dots, B_p^T$에 쓰면 $\det A^T = x_1 \det B_1^T + \cdots + x_p \det B_p^T$이다. (1)에 의해 $\det A^T = \det A$이고 각 $i$에서 $\det B_i^T = \det B_i$이므로, 오른쪽의 열은 모든 자리에서 $x_i \det B_i$와 같아 합도 같다. 따라서 $\det A = x_1 \det B_1 + \cdots + x_p \det B_p$이다. $\blacksquare$
 :::
 
 ## 예시와 반례
