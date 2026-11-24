@@ -9,7 +9,6 @@ requires: [language-of-math, linear-algebra, analysis-intro]
 status: in-progress
 planned_units:
   - 수반행렬과 크라메르 공식
-  - 특성다항식과 고윳값
   - 특성다항식의 구조와 중복도
 ---
 
