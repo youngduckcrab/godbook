@@ -10,9 +10,9 @@ summary: 차원이 1 이상인 유한차원 벡터공간 V 위의 선형사상 T
 requires: [real-number-arithmetic, function, vector-space, vector-space-basic-properties, power-of-a-real-number, basis, standard-basis, dimension, linear-map, linear-map-examples, linear-maps-form-a-vector-space, composition-of-linear-maps, isomorphism, matrix, matrix-vector-product, matrix-of-a-linear-map, matrix-product, matrix-in-bases, change-of-basis-and-similarity, determinant, determinant-and-invertibility, determinant-of-product, trace, trace-of-product, similarity-invariants]
 sources:
   - ref: treil-linear-algebra-done-wrong
-    loc: 4장 1절, 1.3 Finding characteristic polynomial and eigenvalues of an abstract operator, p.101
+    loc: 4장 1절, 1.3 Finding characteristic polynomial and eigenvalues of an abstract operator, p.101; 1.5 Multiplicities of eigenvalues, p.102; 2장 8절 연습문제 8.4, p.73; 6장 5절 Structure of orthogonal matrices, Theorem 5.1, p.187, Theorem 5.2, p.190, Theorem 5.3, p.191
     checked: original
-    note: "출처는 4장 1.3(p.101)에서 추상 벡터공간의 연산자의 고윳값을 구하는 방법으로 '아무 기저를 잡아 그 기저에 관한 행렬의 고윳값을 구한다'를 들고, 두 기저에 관한 연산자의 행렬 [T]_AA 와 [T]_BB 가 닮았다는 것과 닮은 행렬의 행렬식이 같다는 것으로 연산자의 특성다항식이 기저에 따르지 않음을 보인다. 이 항목은 같은 논법으로 선형사상의 행렬식과 대각합을 정의한다. 출처에서 'determinant of (an|the) (operator|linear transformation)', 'trace of (an|the) (operator|linear)', 'det T', 'trace T' 로 책 전체를 찾았을 때 0건이었고, 4장 1.3 은 연산자에 대해 특성다항식만 정의한다. (2)–(6)의 진술과 증명은 이 사이트가 썼다."
+    note: "출처는 4장 1.3(p.101)에서 추상 벡터공간의 연산자의 고윳값을 구하는 방법으로 '아무 기저를 잡아 그 기저에 관한 행렬의 고윳값을 구한다'를 들고, 두 기저에 관한 연산자의 행렬 [T]_AA 와 [T]_BB 가 닮았다는 것과 닮은 행렬의 행렬식이 같다는 것으로 연산자의 특성다항식이 기저에 따르지 않음을 보인다. 이 항목은 같은 논법으로 선형사상의 행렬식과 대각합을 정의한다. 출처에서 'determinant of (an|the) (operator|linear transformation)', 'trace of (an|the) (operator|linear)', 'det T', 'trace T' 로 책 전체를 찾았을 때 0건이었고, 4장 1.3 은 연산자에 대해 특성다항식만 정의한다. 연산자에 det 를 쓰는 곳으로는 4장 1.5(p.102)가 연산자(행렬) A 의 특성다항식을 det(A − zI) 로 적는 것과, 6장 5절(p.187, p.190, p.191)이 ℝⁿ 의 직교 연산자 U 에 det U = 1, det U = −1 의 조건을 붙이는 것이 있다('det U' 로 찾았다). 예시 '두 기저로 계산한 행렬식과 대각합'은 출처 2장 8절 연습문제 8.4(p.73, F² 의 선형 연산자의 행렬을 표준기저와 기저 (1, 1)ᵀ, (1, 2)ᵀ 에서 구하라)와 같은 발상이다. (2)–(6)의 진술과 증명은 이 사이트가 썼다."
 status: reviewed
 review_note: "2026-11-24 자기 검토(docs/self-review.md)와 지휘자의 확인. 어긋난 인용 번호 1건, 경계 경우에서 거짓이거나 넓던 설명 문장 3건, 뒤 단원을 예고하던 문장 1건, 겹치는 글자 1건을 작성자가 고쳤다. 독립 검토는 거치지 않았다."
 added: 2026-11-24

@@ -11,9 +11,9 @@ requires: [real-number-arithmetic, finite-sum-of-vectors, matrix, matrix-product
 proof: full
 sources:
   - ref: treil-linear-algebra-done-wrong
-    loc: 1장 5절, 5.5 Trace and matrix multiplication 의 Theorem 5.1, p.23; 1장 5절 연습문제 5.6, p.24; 2장 8절 연습문제 8.5, p.73
+    loc: 1장 5절, 5.3 Properties of matrix multiplication, p.22; 5.5 Trace and matrix multiplication 의 Theorem 5.1, p.23; 1장 5절 연습문제 5.6, p.24; 2장 8절 연습문제 8.5, p.73
     checked: original
-    note: "(1)은 출처 Theorem 5.1(p.23)과 같은 진술이다(A 는 m × n, B 는 n × m). 출처는 그 증명을 연습문제 5.6(p.24)으로 돌리고 두 길을 귀띔한다: AB 와 BA 의 대각성분을 계산해 합을 비교하는 길과, X 를 trace(AX), trace(XA) 로 보내는 두 선형변환이 생성하는 행렬들(한 성분만 1 인 X_{j,k})에서 같음을 보이는 길이다. 이 항목은 첫째 길을 따르고, 합의 순서를 바꾸는 단계는 [이중 합의 순서 바꾸기] 항목의 (2)로 한다. (3)은 출처 2장 8절의 연습문제 8.5(p.73)가 증명하라는 '닮은 행렬의 대각합은 같다'를 Q⁻¹MQ 의 꼴로 적은 것이고, 그 연습문제는 trace(XY) 와 trace(YX) 의 관계를 떠올리라고 귀띔한다. 출처에서 'trace' 가 나오는 곳(책 전체 32건)과 'ABC' 로 찾은 곳(3건)을 읽었고 'cyclic' 은 0건이었으며, 그 가운데 (2)의 세 행렬의 꼴을 적은 곳은 없었다. 증명은 이 사이트가 썼다."
+    note: "(1)은 출처 Theorem 5.1(p.23)과 같은 진술이다(A 는 m × n, B 는 n × m). 출처는 그 증명을 연습문제 5.6(p.24)으로 돌리고 두 길을 귀띔한다: AB 와 BA 의 대각성분을 계산해 합을 비교하는 길과, X 를 trace(AX), trace(XA) 로 보내는 두 선형변환이 생성하는 행렬들(한 성분만 1 인 X_{j,k})에서 같음을 보이는 길이다. 이 항목은 첫째 길을 따르고, 합의 순서를 바꾸는 단계는 [이중 합의 순서 바꾸기] 항목의 (2)로 한다. (3)은 출처 2장 8절의 연습문제 8.5(p.73)가 증명하라는 '닮은 행렬의 대각합은 같다'를 Q⁻¹MQ 의 꼴로 적은 것이고, 그 연습문제는 trace(XY) 와 trace(YX) 의 관계를 떠올리라고 귀띔한다. 출처에서 'trace' 가 나오는 곳(책 전체 32건)과 'ABC' 로 찾은 곳(3건)을 읽었고 'cyclic' 은 0건이었으며, 그 가운데 (2)의 세 행렬의 꼴을 적은 곳은 없었다. 증명은 이 사이트가 썼다. 예시 '곱이 다르지만 대각합이 같은 2 × 2 행렬'의 AB ≠ BA 는 출처 1장 5.3(p.22)이 행렬의 곱은 일반적으로 교환법칙이 성립하지 않는다(AB ≠ BA)고 적는 것과 같은 관찰이다."
 status: reviewed
 review_note: "2026-11-24 자기 검토(docs/self-review.md)와 지휘자의 확인. 경계 경우에서 거짓이던 설명 문장 4건과 출처에 해석을 돌린 메모 1건을 작성자가 고쳤다. 독립 검토는 거치지 않았다."
 added: 2026-11-24
