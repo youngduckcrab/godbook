@@ -17,7 +17,7 @@ const title = (id) => courses.find((c) => c.id === id)?.data.title ?? id;
   <p class="small"><a href={url('/courses/')}>강의</a> ›</p>
   <h1>{course.data.title} <span class="en">{course.data.title_en}</span></h1>
   <div class="badges"><span class={`badge ${course.data.status}`}>{COURSE_STATUS[course.data.status]}</span><span class="badge">{LEVEL[course.data.level]}</span>
-    {course.data.requires.length > 0 && <span class="badge">먼저: {course.data.requires.map(title).join(', ')}</span>}</div>
+    {course.data.requires.length > 0 && <span class="badge wrap">먼저: {course.data.requires.map(title).join(', ')}</span>}</div>
   <p class="lead">{course.data.summary}</p>
   <div class="progress" data-progress={ids.join(',')}><i></i></div><span class="small muted" data-progress-label></span>
   <div class="prose"><Content /></div>
