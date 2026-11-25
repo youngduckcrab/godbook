@@ -6,7 +6,7 @@ level: undergrad
 order: 7
 track: 해석
 requires: [language-of-math, number-theory-intro, analysis-intro, topology-intro, riemann-integral, metric-spaces-and-completeness, series-and-power-series, abstract-algebra, linear-algebra-2]
-status: in-progress
+status: complete
 planned_units: []
 ---
 
