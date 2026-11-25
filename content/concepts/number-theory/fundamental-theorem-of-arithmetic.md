@@ -13,7 +13,7 @@ sources:
   - ref: stein-elementary-number-theory
     loc: 1.1.1절 Theorem 1.1.6 (Fundamental Theorem of Arithmetic), p.3. 증명은 1.1.4절, p.10. 존재는 1.1.3절 Proposition 1.1.20, p.7. 서문 p.ix
     checked: original
-    note: "출처의 진술은 'Every natural number can be written as a product of primes uniquely up to order'이고 소수는 인수가 하나인 곱, 1은 빈 곱이라고 덧붙인다(p.3). 출처의 유일성 증명(p.10)은 n = p₁p₂⋯p_d와 n = q₁q₂⋯q_m에서 p₁ | q₁(q₂⋯q_m)이므로 Euclid's theorem에 의해 p₁ = q₁이거나 p₁ | q₂⋯q_m이고, 'By induction, we see that p₁ = qᵢ for some i'라 한 뒤 'Now cancel p₁ and qᵢ, and repeat the above argument. Eventually, we find that, up to order, the two factorizations are the same'라고 쓴다. 지우는 단계의 근거와 '순서를 빼면 같다'의 뜻은 적지 않는다. 출처의 존재 증명(Proposition 1.1.20, p.7)은 합성수 n = ab (a, b < n)에 귀납법을 쓰며 소수들의 곱이 어떤 순서로 놓이는지는 말하지 않는다. 이 사이트는 재배열(곱의 순서 바꿈)을 다루지 않으므로 진술을 작은 것부터 늘어놓은 소수의 열이라는 꼴로 바꾸었다. 존재도 작은 것부터 늘어놓은 꼴로 따로 증명했다(가장 작은 소인수를 떼는 강한 귀납법). 유일성의 증명은 맨 앞 소수가 같음을 보이고 (P3)으로 맨 앞을 떼어 소거 법칙으로 지우는 귀납법이다. 이 증명 경로는 출처에 없고 이 사이트가 썼다. 출처의 1은 빈 곱이라는 약속은 쓰지 않는다. 이 항목은 n ≥ 2만 다룬다. 예시와 반례는 새로 만들었다."
+    note: "출처의 진술은 'Every natural number can be written as a product of primes uniquely up to order'이고 소수는 인수가 하나인 곱, 1은 빈 곱이라고 덧붙인다(p.3). 출처의 유일성 증명(p.10)은 n = p₁p₂⋯p_d와 n = q₁q₂⋯q_m에서 p₁ | q₁(q₂⋯q_m)이므로 Euclid's theorem에 의해 p₁ = q₁이거나 p₁ | q₂⋯q_m이고, 'By induction, we see that p₁ = qᵢ for some i'라 한 뒤 'Now cancel p₁ and qᵢ, and repeat the above argument. Eventually, we find that, up to order, the two factorizations are the same'라고 쓴다. 지우는 단계의 근거와 '순서를 빼면 같다'의 뜻은 적지 않는다. 출처의 존재 증명(Proposition 1.1.20, p.7)은 합성수 n = ab (a, b < n)에 귀납법을 쓰며 소수들의 곱이 어떤 순서로 놓이는지는 말하지 않는다. 이 항목은 재배열(곱의 순서 바꿈)을 쓰지 않으므로(재배열은 정수론 입문 4단원에서 다룬다) 진술을 작은 것부터 늘어놓은 소수의 열이라는 꼴로 바꾸었다. 존재도 작은 것부터 늘어놓은 꼴로 따로 증명했다(가장 작은 소인수를 떼는 강한 귀납법). 유일성의 증명은 맨 앞 소수가 같음을 보이고 (P3)으로 맨 앞을 떼어 소거 법칙으로 지우는 귀납법이다. 이 증명 경로는 출처에 없고 이 사이트가 썼다. 출처의 1은 빈 곱이라는 약속은 쓰지 않는다. 이 항목은 n ≥ 2만 다룬다. 예시와 반례는 새로 만들었다."
   - ref: hammack-book-of-proof
     loc: 10.4절 The Fundamental Theorem of Arithmetic, Theorem 10.1, p.192
     checked: original
@@ -41,7 +41,7 @@ A sequence of integers $p_1, p_2, \dots, p_k$ of length $k$ is **sorted** (liste
 
 레고 블록으로 만든 모양을 더 쪼갤 수 없는 블록들로 끝까지 쪼갠다고 합시다. 소수는 더 쪼갤 수 없는 블록이고, $360$을 쪼개면 $2$가 세 개, $3$이 두 개, $5$가 한 개 나옵니다. 쪼개는 길이 달라도 같은 블록이 나올 것 같다는 느낌이 이 정리의 바탕입니다. 이 사이트의 도구로 이 느낌을 정확히 말한 것이 이 정리입니다. 블록을 작은 것부터 늘어놓기로 정하면, 그렇게 늘어놓은 블록의 줄은 하나뿐입니다. 당연해 보이지만 증명이 필요하고, 아래 증명은 [[euclids-lemma|유클리드 보조정리]]를 씁니다.
 
-흔히 이 정리는 "소인수분해는 순서를 빼면 하나뿐이다"라고 말합니다. 이 사이트는 곱의 인수를 재배열해도 곱이 같다는 것을 증명하지 않았습니다. 그래서 순서를 "작은 것부터"로 정해 두고, 그렇게 늘어놓은 소수의 열이 존재하고 하나뿐이라고 진술합니다. 이 정리가 말하는 것은 작은 것부터 늘어놓은 소수의 열이 있고 하나뿐이라는 것입니다. 인수를 임의의 순서로 쓴 두 분해가 어떤 관계인지는 이 정리가 말하지 않습니다. 재배열이 곱을 바꾸지 않는다는 주장은 이 항목에서 증명하지 않았고 쓰지도 않습니다.
+흔히 이 정리는 "소인수분해는 순서를 빼면 하나뿐이다"라고 말합니다. 이 항목은 곱의 인수를 재배열해도 곱이 같다는 것을 쓰지 않습니다(그것은 정수론 입문 4단원에서 다룹니다). 그래서 순서를 "작은 것부터"로 정해 두고, 그렇게 늘어놓은 소수의 열이 존재하고 하나뿐이라고 진술합니다. 이 정리가 말하는 것은 작은 것부터 늘어놓은 소수의 열이 있고 하나뿐이라는 것입니다. 인수를 임의의 순서로 쓴 두 분해가 어떤 관계인지는 이 정리가 말하지 않습니다. 재배열이 곱을 바꾸지 않는다는 주장은 이 항목에서 증명하지 않았고 쓰지도 않습니다.
 
 앞 강의의 [[prime-factorization-exists]]는 $2$ 이상의 정수가 소수들의 곱이라는 것만 보였고, 그 곱의 인수가 어떻게 늘어놓였는지는 말하지 않았습니다. 이 항목의 존재 부분은 작은 것부터 늘어놓은 꼴을 따로 증명한 것입니다.
 
