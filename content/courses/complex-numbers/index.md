@@ -6,9 +6,8 @@ level: undergrad
 order: 7
 track: 해석
 requires: [language-of-math, number-theory-intro, analysis-intro, topology-intro, riemann-integral, metric-spaces-and-completeness, series-and-power-series, abstract-algebra, linear-algebra-2]
-status: in-progress
-planned_units:
-  - 극형식과 거듭제곱근
+status: complete
+planned_units: []
 ---
 
 이 강의는 실수의 순서쌍에 덧셈과 곱셈을 정해 복소수를 만들고, 앞 강의들이 실수에 대해 증명한 것을 복소수로 넓힙니다. 먼저 복소수 전체가 체를 이룬다는 것과 켤레복소수, 복소수의 절댓값을 다루고, 복소평면을 거리공간으로 보아 복소수열의 수렴과 완비성을 봅니다. 이어서 복소 급수와 복소 멱급수, 멱급수로 정의하는 복소 지수함수를 다룹니다. 삼각함수와 원주율 $\pi$는 앞 강의들이 쓰지 않았고, 이 강의에서 복소 지수함수로 정의해 덧셈정리, 멱급수, 도함수, 주기성을 증명합니다. 그 위에서 복소수의 극형식과 거듭제곱근, 대수학의 기본정리를 증명하고, 실행렬의 특성다항식이 복소수의 범위에서 일차식들의 곱으로 인수분해된다는 것으로 마칩니다. 일곱 단원으로 되어 있습니다.
