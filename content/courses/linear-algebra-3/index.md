@@ -8,7 +8,6 @@ track: 대수
 requires: [language-of-math, linear-algebra, linear-algebra-2, analysis-intro]
 status: in-progress
 planned_units:
-  - 이차형식과 양의 정부호
   - 특잇값 분해
 ---
 
