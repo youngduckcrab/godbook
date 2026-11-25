@@ -8,7 +8,6 @@ track: 해석
 requires: [language-of-math, analysis-intro, topology-intro, riemann-integral, metric-spaces-and-completeness]
 status: in-progress
 planned_units:
-  - 근 판정법과 조건수렴의 판정
   - 멱급수와 수렴 반지름
   - 멱급수의 미분과 적분
   - 고계 도함수와 테일러 정리
