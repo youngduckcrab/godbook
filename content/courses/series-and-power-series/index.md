@@ -7,8 +7,7 @@ order: 6
 track: 해석
 requires: [language-of-math, analysis-intro, topology-intro, riemann-integral, metric-spaces-and-completeness]
 status: in-progress
-planned_units:
-  - 멱급수의 미분과 적분
+planned_units: []
 ---
 
 해석학 입문 5단원 "급수"는 급수의 수렴과 합을 부분합 수열로 정의하고, 비교·비·교대급수 판정법과 절대수렴을 증명했습니다. 이 강의는 그 다음을 다룹니다. 수렴하는 급수의 합에 기호 $\Sigma$를 붙이고, 항이 $0$ 이상인 급수를 판정하는 방법(극한 비교, 코시 응축, $p$-급수, 적분 판정)과 근 판정법, 디리클레 판정법, 조건수렴하는 급수를 봅니다. 이어서 급수의 항의 순서를 바꾸는 재배열과 두 급수의 곱인 코시 곱, 함수를 항으로 하는 급수의 고른 수렴과 바이어슈트라스 M 판정법, 멱급수와 수렴 반지름, 멱급수의 항별 미분과 적분을 다루고, 지수함수·로그함수의 멱급수와 이항급수, 고계 도함수와 테일러 정리로 마칩니다. 일곱 단원으로 되어 있습니다.
