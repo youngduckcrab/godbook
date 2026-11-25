@@ -8,7 +8,6 @@ track: 대수
 requires: [language-of-math, linear-algebra, linear-algebra-2, analysis-intro]
 status: in-progress
 planned_units:
-  - 직교와 그람–슈미트 과정
   - 직교 여공간과 최소제곱
   - 수반사상과 자기수반사상
   - 직교사상과 직교행렬
