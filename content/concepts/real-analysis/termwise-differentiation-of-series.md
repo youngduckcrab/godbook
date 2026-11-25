@@ -17,7 +17,7 @@ sources:
   - ref: lebl-basic-analysis
     loc: "6.2.3절 Derivative of the limit 의 Example 6.2.8, Example 6.2.9 (p.238–239), Theorem 6.2.10 (p.239) 과 그 증명 (p.240); 6.2.4절 Convergence of power series 의 Corollary 6.2.13 의 증명 (p.242)"
     checked: original
-    note: "출처 Theorem 6.2.10(p.239)은 실함수열에 대한 같은 정리이고 이 사이트의 uniform-convergence-and-derivative 가 그것을 닫힌구간에서 진술한다. Corollary 6.2.13 의 증명(p.242)은 멱급수의 부분합의 도함수가 고르게 수렴하고 급수가 x = a 에서 수렴한다는 것을 확인해 Theorem 6.2.10 을 부분합에 쓴다. 이 항목의 증명은 같은 논법을 일반 함수항 급수에 쓴 것이다. Example 6.2.8 과 Example 6.2.9(p.238–239)는 함수열만 고르게 수렴하거나 도함수가 점별로만 수렴할 때 극한의 도함수가 도함수의 극한과 다를 수 있다는 예이고, 직관 절의 첫 문단이 말하는 것과 같은 쪽의 예이다."
+    note: "출처 Theorem 6.2.10(p.239)은 실함수열에 대한 같은 정리이고 이 사이트의 uniform-convergence-and-derivative 가 그것을 닫힌구간에서 진술한다. Corollary 6.2.13 의 증명(p.242)은 멱급수의 부분합의 도함수가 고르게 수렴하고 급수가 x = a 에서 수렴한다는 것을 확인해 Theorem 6.2.10 을 부분합에 쓴다. 이 항목의 증명은 같은 논법을 일반 함수항 급수에 쓴 것이다. Example 6.2.8(p.238)은 0 으로 고르게 수렴하는 sin(nx)/n 의 도함수 cos(nx) 가 x = π 에서 수렴하지 않고 x = 0 에서는 극한의 도함수 0 이 아닌 1 로 수렴한다는 예이고, 직관 절의 첫 문단이 함수항 급수에 대해 말하는 것을 함수열로 보인 것이다. Example 6.2.9(p.239)는 1/(1 + nx²) 이 점별로만 수렴하고 도함수가 0 으로 점별 수렴하지만 극한이 0 에서 연속도 아닌 예이다."
 status: reviewed
 review_note: "2026-11-25 자기 검토(docs/self-review.md)와 지휘자의 확인(예의 합 함수·꼬리·반례 재계산). 독립 검토는 거치지 않았다."
 added: 2026-11-25
