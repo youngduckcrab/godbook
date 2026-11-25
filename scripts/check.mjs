@@ -211,6 +211,14 @@ for (const course of courses) {
 }
 for (const course of courses) for (const u of course.units) lintBody(u.file, u.body, null);
 
+// 출처 메모는 YAML 의 큰따옴표 문자열이라 \ne, \neq, \to, \theta 같은 LaTeX 의 역슬래시가 줄바꿈·탭 같은 이스케이프로 읽힌다.
+// 메모 안의 LaTeX 는 역슬래시를 둘(\\ne)로 쓴다. 읽힌 결과에 제어 문자가 있으면 그렇게 깨진 것이다.
+for (const c of concepts) for (const src of c.data?.sources || []) for (const k of ['loc', 'note']) {
+  const v = typeof src[k] === 'string' ? src[k] : '';
+  const m = v.match(/.{0,15}[\x00-\x08\x0a-\x1f].{0,15}/s);
+  if (m) warn(c.file, `출처의 ${k} 에 제어 문자(줄바꿈·탭 등)가 있다: ${JSON.stringify(m[0])}. 큰따옴표 안의 LaTeX 역슬래시는 둘로 쓴다(\\\\ne)`);
+}
+
 // 수식의 HTML 을 만드는 KaTeX(rehype-katex 가 쓰는 것)와 CSS 를 주는 KaTeX 의 버전이 다르면
 // 윗줄(\\overline), 부정 기호(\\ne) 같은 것이 화면에서 사라지거나 어긋난다.
 {
