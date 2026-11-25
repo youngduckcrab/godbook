@@ -13,7 +13,7 @@ sources:
   - ref: lebl-basic-analysis
     loc: 2.5.7절 Exercise 2.5.17 (p.99), 5.3.4절 Exercise 5.3.5 (p.205)
     checked: original
-    note: "이 항등식은 출처에 명제로 없다. Lebl, Basic Analysis I 와 II 의 텍스트 전체를 검색어 'summation by parts', 'partial summation', 'by parts', 'Abel', 'summation' 으로 찾았고(I 권에서 'by parts' 는 적분의 부분적분 Exercise 5.3.5 와 색인뿐, 'Abel' 은 Exercise 2.5.17 과 색인뿐, II 권은 모두 0건), 2.5.7절과 2.6.6절의 연습문제를 처음부터 끝까지 읽었다. 출처 Exercise 2.5.17(p.99)은 부분합이 유계인 급수와 λ_n → 0, Σ |λ_{n+1} − λ_n| 수렴을 가정한 판정법('Abel's theorem')을 힌트 없이 증명하게 하는데, 이 항목은 그 증명(이 사이트의 dirichlet-test)에 쓰는 도구이다. 출처 Exercise 5.3.5(p.205)는 적분의 부분적분을 증명하게 하고, 직관 절은 두 식이 닮았다는 것만 말한다. 이름 '아벨의 합 공식'은 출처에 나오지 않는다."
+    note: "이 항등식은 출처에 명제로 없다. Lebl, Basic Analysis I 와 II 의 텍스트 전체를 검색어 'summation by parts', 'partial summation', 'by parts', 'Abel', 'summation' 으로 찾았고(I 권에서 'by parts' 는 적분의 부분적분 Exercise 5.3.5 와 색인뿐, 'Abel' 은 Exercise 2.5.17 과 색인뿐, II 권은 'by parts' 가 연습문제 9.1.4(p.68)의 '적분의 부분적분을 쓰지 말고' 1건이고 나머지는 0건), 2.5.7절과 2.6.6절의 연습문제를 처음부터 끝까지 읽었다. 출처 Exercise 2.5.17(p.99)은 부분합이 유계인 급수와 λ_n → 0, Σ |λ_{n+1} − λ_n| 수렴을 가정한 판정법('Abel's theorem')을 힌트 없이 증명하게 하는데, 이 항목은 그 증명(이 사이트의 dirichlet-test)에 쓰는 도구이다. 출처 Exercise 5.3.5(p.205)는 적분의 부분적분을 증명하게 하고, 직관 절은 두 식이 닮았다는 것만 말한다. 이름 '아벨의 합 공식'은 출처에 나오지 않는다."
 status: reviewed
 review_note: "2026-11-25 자기 검토(docs/self-review.md)와 지휘자의 확인(아벨의 합 공식을 작은 경우에 대입, 예의 합의 어림 대조). 독립 검토는 거치지 않았다."
 added: 2026-11-25

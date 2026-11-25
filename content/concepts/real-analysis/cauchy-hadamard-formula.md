@@ -11,9 +11,9 @@ requires: [real-number-arithmetic, order-properties-of-reals, absolute-value, po
 proof: full
 sources:
   - ref: lebl-basic-analysis
-    loc: 2.6.5절 Power series, Proposition 2.6.10 의 증명 (p.107–108), Proposition 2.6.11 (p.108), 6.2.4절 Convergence of power series, Corollary 6.2.13 의 증명 (p.242)
+    loc: 2.6.5절 Power series, Proposition 2.6.10 의 증명 (p.107–108), Proposition 2.6.11 (p.108), Proposition 2.6.12 뒤 문단 (p.109), 6.2.4절 Convergence of power series, Corollary 6.2.13 의 증명 (p.242)
     checked: original
-    note: "출처 Proposition 2.6.11(p.108)은 R = lim sup |a_n|^{1/n} 으로 두고, R = ∞ 이면 멱급수는 divergent, R = 0 이면 모든 곳에서 수렴, 그 밖이면 수렴 반지름 ρ = 1/R 이라고 진술하며, 이것을 Proposition 2.6.10 의 증명(p.107–108)에서 배운 것을 다시 적은 것이라 한다. 그 증명은 근 판정법에 lim sup |a_n(x − x_0)ⁿ|^{1/n} = |x − x_0| lim sup |a_n|^{1/n} 을 쓴다. 출처는 상극한이 ∞ 일 수 있게 두지만 이 사이트는 상극한을 유계인 수열에만 정의했으므로, (ⁿ√|c_n|) 이 유계가 아닌 경우를 (2)로 따로 진술하고 root-test 의 (4)로 증명했다. 출처는 Proposition 2.6.10 의 증명에서 ρ = 1/R 로 두어 수렴 반지름이 있음을 보이지만, 이 사이트는 수렴 반지름을 radius-of-convergence 에서 상한으로 정의했으므로 이 항목은 그것과 같은 값을 준다는 정리이고, 반지름의 판정 radius-of-convergence (6)으로 증명한다. 0번째 계수는 0제곱근이 없으므로 쓰지 않는다. '코시–아다마르'라는 이름은 출처에 없다(I 권·II 권 전체에서 'Hadamard' 0건). 널리 쓰이는 이름이라 제목으로 썼다. Corollary 6.2.13 의 증명(p.242)도 수렴 반지름을 R = lim sup |c_n|^{1/n} 의 역수로 둔다."
+    note: "출처 Proposition 2.6.11(p.108)은 R = lim sup |a_n|^{1/n} 으로 두고, R = ∞ 이면 멱급수는 divergent, R = 0 이면 모든 곳에서 수렴, 그 밖이면 수렴 반지름 ρ = 1/R 이라고 진술하며, 이것을 Proposition 2.6.10 의 증명(p.107–108)에서 배운 것을 다시 적은 것이라 한다. 그 증명은 근 판정법에 lim sup |a_n(x − x_0)ⁿ|^{1/n} = |x − x_0| lim sup |a_n|^{1/n} 을 쓴다. 출처는 상극한이 ∞ 일 수 있게 두지만 이 사이트는 상극한을 유계인 수열에만 정의했으므로, (ⁿ√|c_n|) 이 유계가 아닌 경우를 (2)로 따로 진술하고 root-test 의 (4)로 증명했다. 출처는 Proposition 2.6.10 의 증명에서 ρ = 1/R 로 두어 수렴 반지름이 있음을 보이지만, 이 사이트는 수렴 반지름을 radius-of-convergence 에서 상한으로 정의했으므로 이 항목은 그것과 같은 값을 준다는 정리이고, 반지름의 판정 radius-of-convergence (6)으로 증명한다. 0번째 계수는 0제곱근이 없으므로 쓰지 않는다. '코시–아다마르'라는 이름은 출처에 없다(I 권·II 권 전체에서 'Hadamard' 0건). 널리 쓰이는 이름이라 제목으로 썼다. Corollary 6.2.13 의 증명(p.242)도 수렴 반지름을 R = lim sup |c_n|^{1/n} 의 역수로 둔다. 예시 '계수가 유한 개만 0 이 아닌 멱급수'는 2.6.5절 Proposition 2.6.12 뒤 문단(p.109)의 '다항식은 a_n 이 충분히 큰 n 에서 모두 0 인 멱급수'와 같은 대상이다."
   - ref: lebl-basic-analysis-2
     loc: 11.3.2절 Convergence of power series, Proposition 11.3.1 의 증명 (p.154–155), Example 11.3.3 (p.155)
     checked: original
