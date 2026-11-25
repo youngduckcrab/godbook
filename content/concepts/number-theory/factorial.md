@@ -16,14 +16,14 @@ sources:
   - ref: hammack-book-of-proof
     loc: 3.4절 Factorials and Permutations, Definition 3.1, p.78. 식 (3.1)과 표, p.79
     checked: original
-    note: "Hammack은 n!을 'n개의 기호로 중복 없이 만들 수 있는 길이 n인 목록의 개수'로 정의하고(0!도 포함해 n이 음이 아닌 정수), n > 1이면 n! = n(n − 1)(n − 2)···3·2·1이라고 적는다. 이 사이트에는 목록을 세는 도구가 없으므로 이 항목은 n!을 1부터 n까지의 열의 유한 곱으로 정의하고, 정의가 같은 수를 준다는 것은 다루지 않는다. 0!은 정의하지 않는다(빈 곱이 이 사이트에 없다). Hammack의 정의에서는 0! = 1이 나온다(Thus 0! = 1). 점화식은 Hammack p.79의 식 (3.1) n! = n·(n − 1)!과 같은 내용이다(이 항목의 1은 n ≥ 1에서 (n + 1)! = n!·(n + 1)로 적는다). 예시의 1!부터 6!까지의 값은 p.79의 표와 같다. 약수와 집합 위의 곱에 관한 성질과 모든 증명은 출처에 없고 이 사이트가 썼다."
+    note: "Hammack은 n!을 'n개의 기호로 중복 없이 만들 수 있는 길이 n인 목록의 개수'로 정의하고(0!도 포함해 n이 음이 아닌 정수), n > 1이면 n! = n(n − 1)(n − 2)···3·2·1이라고 적는다. 이 사이트에는 목록을 세는 도구가 없으므로 이 항목은 n!을 1부터 n까지의 열의 유한 곱으로 정의하고, 정의가 같은 수를 준다는 것은 다루지 않는다. 0!은 정의하지 않는다(정수의 빈 곱은 finite-product 에서 정의하지 않는다). 정수론 입문은 0!을 쓰지 않는다. Hammack의 정의에서는 0! = 1이 나온다(Thus 0! = 1). 점화식은 Hammack p.79의 식 (3.1) n! = n·(n − 1)!과 같은 내용이다(이 항목의 1은 n ≥ 1에서 (n + 1)! = n!·(n + 1)로 적는다). 예시의 1!부터 6!까지의 값은 p.79의 표와 같다. 약수와 집합 위의 곱에 관한 성질과 모든 증명은 출처에 없고 이 사이트가 썼다."
 status: reviewed
 review_note: "2026-11-16 독립 검토 3회 통과. 출처 메모의 틀린 서술, 예 하나에서 넘겨짚은 일반화, 가정이 쓰이는 단계에 관한 설명, 인용 근거를 보완했다."
 added: 2026-11-16
 ---
 
 :::statement
-$n$이 자연수일 때 **$n$의 계승**(factorial) $n!$을, 각 자리의 값이 그 자리의 번호인 길이 $n$인 정수의 열 $1, 2, \dots, n$(곧 $i$번째 항이 $i$인 열)의 [[finite-product|곱]]으로 정한다. 곧 $n! = 1 \cdot 2 \cdots n$이다. $0!$은 정의하지 않는다(인수가 없는 곱은 [[finite-product]]에서 정의하지 않는다. Hammack의 정의에서는 $0! = 1$이 나오지만 이 사이트는 $0!$을 쓰지 않는다). 다음이 성립한다.
+$n$이 자연수일 때 **$n$의 계승**(factorial) $n!$을, 각 자리의 값이 그 자리의 번호인 길이 $n$인 정수의 열 $1, 2, \dots, n$(곧 $i$번째 항이 $i$인 열)의 [[finite-product|곱]]으로 정한다. 곧 $n! = 1 \cdot 2 \cdots n$이다. $0!$은 정의하지 않는다(인수가 없는 곱은 [[finite-product]]에서 정의하지 않는다. Hammack의 정의에서는 $0! = 1$이 나오지만 정수론 입문은 $0!$을 쓰지 않는다. $0!$은 강의 '급수와 멱급수'에서 정의한다). 다음이 성립한다.
 
 1. $1! = 1$이고, 모든 자연수 $n$에 대하여 $(n + 1)! = n! \cdot (n + 1)$이다.
 2. $n!$은 양의 정수이다. 또 $j$가 $1 \le j \le n$인 정수이면 $j \mid n!$이다.
@@ -33,7 +33,7 @@ $n$이 자연수일 때 **$n$의 계승**(factorial) $n!$을, 각 자리의 값�
 :::
 
 :::english
-For a natural number $n$, the **factorial** $n!$ is the finite product of the sequence $1, 2, \dots, n$ of length $n$ whose $i$-th term is $i$. That is, $n! = 1 \cdot 2 \cdots n$. The value $0!$ is not defined (the product with no factors is not defined; Hammack's definition gives $0! = 1$, but this site does not use $0!$). The following hold.
+For a natural number $n$, the **factorial** $n!$ is the finite product of the sequence $1, 2, \dots, n$ of length $n$ whose $i$-th term is $i$. That is, $n! = 1 \cdot 2 \cdots n$. The value $0!$ is not defined (the product with no factors is not defined; Hammack's definition gives $0! = 1$, but Elementary Number Theory does not use $0!$; $0!$ is defined in the course Series and Power Series). The following hold.
 
 1. $1! = 1$, and $(n + 1)! = n! \cdot (n + 1)$ for every natural number $n$.
 2. $n!$ is a positive integer. Moreover, if $j$ is an integer with $1 \le j \le n$, then $j \mid n!$.
@@ -42,7 +42,7 @@ For a natural number $n$, the **factorial** $n!$ is the finite product of the se
 
 ## 직관
 
-$n!$은 $1$부터 $n$까지를 차례로 곱한 수입니다. $5! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 = 120$이고, 한 단계 올라갈 때마다 새 수를 곱합니다. $6! = 5! \cdot 6 = 720$입니다. 이것이 1의 점화식입니다. 비유로는 갈림길이 있는 나무를 생각할 수 있습니다. $n$번째 층에서는 앞 층의 갈래마다 $n$개씩 새 갈래가 갈라진다고 하면 갈래의 수가 $n!$이 됩니다. 이 비유가 맞는 곳은 "앞의 결과에 새 인수 하나만 곱한다"는 점이고, 어긋나는 곳은, 나무에서는 뿌리를 $0$번째 층으로 볼 수 있지만 이 사이트는 $0!$을 정의하지 않는다는 점입니다. 이 사이트에서는 $0!$을 정의하지 않습니다.
+$n!$은 $1$부터 $n$까지를 차례로 곱한 수입니다. $5! = 1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 = 120$이고, 한 단계 올라갈 때마다 새 수를 곱합니다. $6! = 5! \cdot 6 = 720$입니다. 이것이 1의 점화식입니다. 비유로는 갈림길이 있는 나무를 생각할 수 있습니다. $n$번째 층에서는 앞 층의 갈래마다 $n$개씩 새 갈래가 갈라진다고 하면 갈래의 수가 $n!$이 됩니다. 이 비유가 맞는 곳은 "앞의 결과에 새 인수 하나만 곱한다"는 점이고, 어긋나는 곳은, 나무에서는 뿌리를 $0$번째 층으로 볼 수 있지만 이 항목은 $0!$을 정의하지 않는다는 점입니다. 정수론 입문에서는 $0!$을 쓰지 않습니다.
 
 2의 둘째 문장은 $n!$이 $1$부터 $n$까지의 모든 정수의 배수라는 말입니다. 곱에 나오는 인수는 곱을 나누기 때문입니다([[finite-product]]의 (P4)). 3은 같은 곱을 집합 위의 곱의 기호로 쓸 수 있다는 것으로, [[wilson-theorem|윌슨 정리]]의 증명에서 곱을 집합의 원소별로 나눠 다루는 데 쓰입니다.
 

@@ -162,8 +162,8 @@ function lintBody(file, body, requires, self) {
     const n = (line.replace(/\\\$/g, '').match(/\$/g) || []).length;
     if (n % 2 === 1) warn(file, `본문 ${i + 1}번째 줄의 $ 가 홀수 개다(${n}개). 수식을 여닫는 $ 가 빠졌는지 본다`);
   });
-  // 유한 합의 기호는 finite-sum-of-reals 가 정의한다. 그 항목이 선행에 있을 때와 리만 적분 강의의 단원 글에서만 쓴다.
-  const sumDefined = self === 'finite-sum-of-reals' || (self && closure(self).has('finite-sum-of-reals')) || file.includes('courses/riemann-integral/');
+  // 유한 합의 기호는 finite-sum-of-reals 가 정의한다. 그 항목이 선행에 있을 때와 리만 적분·급수와 멱급수 강의의 단원 글에서만 쓴다.
+  const sumDefined = self === 'finite-sum-of-reals' || (self && closure(self).has('finite-sum-of-reals')) || file.includes('courses/riemann-integral/') || file.includes('courses/series-and-power-series/');
   for (const sym of UNDEFINED_SYMBOLS) {
     if (sym === '\\sum' && sumDefined) continue;
     if (text.includes(sym)) warn(file, sym === '\\sum' ? '유한 합의 기호 \\sum 을 쓰는데 finite-sum-of-reals 가 선행(requires)에 없다' : `정의하지 않은 기호 ${sym} 를 쓴다. 문장으로 풀어 쓴다`);
