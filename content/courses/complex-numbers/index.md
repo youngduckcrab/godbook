@@ -8,7 +8,6 @@ track: 해석
 requires: [language-of-math, number-theory-intro, analysis-intro, topology-intro, riemann-integral, metric-spaces-and-completeness, series-and-power-series, abstract-algebra, linear-algebra-2]
 status: in-progress
 planned_units:
-  - 복소평면의 거리와 수열
   - 복소 급수와 복소 멱급수
   - 복소 지수함수
   - 삼각함수와 π
