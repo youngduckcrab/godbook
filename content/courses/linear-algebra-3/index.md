@@ -8,7 +8,6 @@ track: 대수
 requires: [language-of-math, linear-algebra, linear-algebra-2, analysis-intro]
 status: in-progress
 planned_units:
-  - 대칭행렬의 실고윳값과 스펙트럼 정리
   - 이차형식과 양의 정부호
   - 특잇값 분해
 ---
