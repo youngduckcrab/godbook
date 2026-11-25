@@ -8,7 +8,6 @@ track: 해석
 requires: [language-of-math, number-theory-intro, analysis-intro, topology-intro, riemann-integral, metric-spaces-and-completeness, series-and-power-series, abstract-algebra, linear-algebra-2]
 status: in-progress
 planned_units:
-  - 삼각함수와 π
   - 극형식과 거듭제곱근
 ---
 
