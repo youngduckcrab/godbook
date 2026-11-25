@@ -8,8 +8,6 @@ track: 대수
 requires: [language-of-math, linear-algebra, linear-algebra-2, analysis-intro]
 status: in-progress
 planned_units:
-  - 직교 여공간과 최소제곱
-  - 수반사상과 자기수반사상
   - 직교사상과 직교행렬
   - 대칭행렬의 실고윳값과 스펙트럼 정리
   - 이차형식과 양의 정부호
