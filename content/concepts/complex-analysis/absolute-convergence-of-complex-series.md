@@ -35,7 +35,7 @@ added: 2026-11-25
    $$
    \Bigl| \sum_{n=m}^{\infty} t_n \Bigr| \le \sum_{n=m}^{\infty} |t_n|
    $$
-   이다.
+   이다. 또 $m - 1 \le K$인 모든 정수 $K$에서 $n \ge K + 1$에서 정해진 항 $t_n$의 급수(꼬리)도 절대수렴하고 $\bigl| \sum_{n=K+1}^{\infty} t_n \bigr| \le \sum_{n=K+1}^{\infty} |t_n|$이다.
 3. (**비교 판정법**) $m$ 이상인 모든 정수 $n$에서 $|t_n| \le w_n$이고 $w_n$의 급수가 수렴하면, $t_n$의 급수는 절대수렴하고
    $$
    \Bigl| \sum_{n=m}^{\infty} t_n \Bigr| \le \sum_{n=m}^{\infty} |t_n| \le \sum_{n=m}^{\infty} w_n
@@ -74,6 +74,7 @@ The following hold. Below, $m$ and $t_n$ are as above, $w_n$ are real numbers gi
    $$
    \Bigl| \sum_{n=m}^{\infty} t_n \Bigr| \le \sum_{n=m}^{\infty} |t_n|.
    $$
+   Moreover, for every integer $K$ with $m - 1 \le K$, the series of the terms $t_n$ defined for $n \ge K + 1$ (the tail) also converges absolutely, and $\bigl| \sum_{n=K+1}^{\infty} t_n \bigr| \le \sum_{n=K+1}^{\infty} |t_n|$.
 3. (**Comparison test**) If $|t_n| \le w_n$ for every integer $n \ge m$ and the series of $w_n$ converges, then the series of $t_n$ converges absolutely and
    $$
    \Bigl| \sum_{n=m}^{\infty} t_n \Bigr| \le \sum_{n=m}^{\infty} |t_n| \le \sum_{n=m}^{\infty} w_n.
@@ -131,6 +132,8 @@ The following hold. Below, $m$ and $t_n$ are as above, $w_n$ are real numbers gi
 **2의 증명.** 준비에 의해 $(|u_j|)$의 급수가 수렴한다고 하자. 복소 절댓값 (6)에 의해 모든 $j$에서 $0 \le |\operatorname{Re} u_j| \le |u_j|$이므로 [[comparison-test|비교 판정법]]의 (2)에 의해 $n$번째 항이 $|\operatorname{Re} u_j|$인 실수열의 급수가 수렴한다. 곧 $(\operatorname{Re} u_j)$의 급수는 절대수렴하고, [[absolute-convergence]]의 (1)에 의해 수렴한다. 허수부도 같다. 복소 급수 (2)에 의해 $(u_j)$의 급수는 수렴한다. 그 합을 $S$, $(|u_j|)$의 급수의 합을 $U$라 하자.
 
 $k$번째 부분합 $P_k = \sum_{j=1}^{k} u_j$에 대하여 유한 합 (7)에 의해 $|P_k| \le \sum_{j=1}^{k} |u_j|$이고, [[finite-sum-of-reals|실수의 유한 합]]의 (1)에 의해 오른쪽은 $(|u_j|)$의 $k$번째 부분합이다. 비교 판정법의 (1)에 의해 그것은 $U$ 이하이다. 따라서 모든 자연수 $k$에서 $|P_k| \le U$이다. $(P_k)$는 $S$로 수렴하므로 극한 법칙 (4)에 의해 $(|P_k|)$는 $|S|$로 수렴하고, [[limits-preserve-inequalities|극한과 부등식]]의 (3)에 의해 $|S| \le U$이다. 준비에 의해 이것이 결론이다.
+
+꼬리에 대한 문장: 실수판의 꼬리 쪼개기([[sum-of-a-series]]의 (2)는 $m \ge 1$에서, [[series-indexed-from-zero]]의 (8)은 $m = 0$, $K \ge 0$에서)에 의해 실수 항 $|t_n|$의 급수가 수렴하면 $n \ge K + 1$에서 정해진 실수 항 $|t_n|$의 급수도 수렴한다. $K = m - 1$이면 두 급수는 같은 급수이다. 곧 꼬리도 절대수렴하고, 앞 두 문단을 첫 번호 $K + 1$에 쓰면 부등식이 나온다.
 
 **3의 증명.** 준비의 $(u_j)$, $(v_j)$에 대하여 $j + m - 1 \ge m$이므로 가정에 의해 모든 $j$에서 $0 \le |u_j| \le v_j$이다. 비교 판정법의 (2)에 의해 $(|u_j|)$의 급수는 수렴하고, 두 합을 $U$, $V$라 하면 $U \le V$이다. 곧 $t_n$의 급수는 절대수렴하고 $\sum_{n=m}^{\infty} |t_n| \le \sum_{n=m}^{\infty} w_n$이다. 앞 부등식은 (2)이다.
 
