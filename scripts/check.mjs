@@ -238,6 +238,8 @@ for (const course of courses) {
   if ((course.data?.planned_units ?? []).length === 0 && /작성 예정/.test(course.body ?? '')) warn(course.file ?? course.id, '작성 예정인 단원이 없는데 본문이 "작성 예정"을 말한다');
 }
 for (const course of courses) for (const u of course.units) lintBody(u.file, u.body, null);
+// 연습문제 파일에도 같은 형식 검사를 한다(링크 표시말, 조사, 미정의 기호 등).
+for (const file of walk(path.join(CONTENT, 'exercises'), '.md')) lintBody(path.relative(ROOT, file), readMd(file).body, null);
 
 // 출처 메모는 YAML 의 큰따옴표 문자열이라 \ne, \neq, \to, \theta 같은 LaTeX 의 역슬래시가 줄바꿈·탭 같은 이스케이프로 읽힌다.
 // 메모 안의 LaTeX 는 역슬래시를 둘(\\ne)로 쓴다. 읽힌 결과에 제어 문자가 있으면 그렇게 깨진 것이다.
