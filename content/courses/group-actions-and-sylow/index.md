@@ -8,7 +8,6 @@ track: 대수
 requires: [language-of-math, number-theory-intro, abstract-algebra]
 status: in-progress
 planned_units:
-  - 류 방정식과 p-군
   - 코시 정리와 실로우 제1 정리
   - 실로우 제2·제3 정리와 응용
 ---
