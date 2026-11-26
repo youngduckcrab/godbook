@@ -11,9 +11,9 @@ requires: [real-number-arithmetic, real-order-axioms, order-properties-of-reals,
 proof: full
 sources:
   - ref: lebl-basic-analysis-2
-    loc: "11.5절 Maximum principle and the fundamental theorem of algebra, Lemma 11.5.1 과 그 증명, 그 뒤 문단 (p.169); Remark 11.5.3 (p.170)"
+    loc: "11.5절 Maximum principle and the fundamental theorem of algebra, Lemma 11.5.1 과 그 증명, 그 뒤 문단 (p.169); Remark 11.5.3 과 그 뒤 문단 (p.170)"
     checked: original
-    note: "출처 Lemma 11.5.1(p.169)은 ε > 0 과 상수가 아닌 복소 다항식(또는 B(z₀, ε) 에서 수렴하는 상수가 아닌 멱급수) p 가 p(z₀) ≠ 0 이면 |p(w)| < |p(z₀)| 인 w ∈ B(z₀, ε) 가 있다는 것이고, 다항식인 경우만 증명한다. 증명은 일반성을 잃지 않고 z₀ = 0, p(0) = 1 로 두고, a_k e^{ikt} = −|a_k| 인 t 를 삼각함수로 고르고, r 이 충분히 작으면 괄호 안이 양수라고 하여 끝낸다. 이 항목은 원점으로 옮기는 것을 복소 다항함수의 (4)로, 방향을 극형식과 드무아브르 공식으로 정하고 p(z₀) 로 나누지 않으며, r 을 네 양수의 최소로 식으로 적는다. 멱급수판은 싣지 않는다. (2)는 출처가 Lemma 11.5.1 뒤 문단에서 'the only minima the modulus of analytic functions has are precisely at the zeros' 라고 말하고 이것을 minimum modulus principle 이라 부른다고 적는 것의 다항함수판(한 방향)이다. 예시 '$zz + 1$을 실수에서만 보면' 은 출처 Remark 11.5.3(p.170)의 x² + 1 과 w = iε 의 예와 같은 대상과 같은 결론이다. 이 항목의 이름 '달랑베르 보조정리' 는 출처에 나오지 않는다(출처 텍스트 전체 검색: 'Alembert', 'Argand', 'd'Alembert' 0건)."
+    note: "출처 Lemma 11.5.1(p.169)은 ε > 0 과 상수가 아닌 복소 다항식(또는 B(z₀, ε) 에서 수렴하는 상수가 아닌 멱급수) p 가 p(z₀) ≠ 0 이면 |p(w)| < |p(z₀)| 인 w ∈ B(z₀, ε) 가 있다는 것이고, 다항식인 경우만 증명한다. 증명은 일반성을 잃지 않고 z₀ = 0, p(0) = 1 로 두고, a_k e^{ikt} = −|a_k| 인 t 를 삼각함수로 고르고, r 이 충분히 작으면 괄호 안이 양수라고 하여 끝낸다. 이 항목은 원점으로 옮기는 것을 복소 다항함수의 (4)로, 방향을 극형식과 드무아브르 공식으로 정하고 p(z₀) 로 나누지 않으며, r 을 네 양수의 최소로 식으로 적는다. 멱급수판은 싣지 않는다. (2)는 출처가 Lemma 11.5.1 뒤 문단에서 'the only minima the modulus of analytic functions has are precisely at the zeros' 라고 말하고 이것을 minimum modulus principle 이라 부른다고 적는 것의 다항함수판(한 방향)이다. 예시 '$zz + 1$을 실수에서만 보면' 은 출처 Remark 11.5.3(p.170)의 x² + 1 과 w = iε 의 예와 같은 대상과 같은 결론이다. Remark 11.5.3 뒤 문단(p.170)은 p(0) = 1 이면 0 가까이에서 다항식이 1 + az^k 처럼 보이고 1 + az^k 는 원점에서 최솟값을 갖지 않는다고 적는데, 이 항목의 증명이 가장 낮은 차수의 항 하나로 방향을 정하는 것과 같은 발상이다. 이 항목의 이름 '달랑베르 보조정리' 는 출처에 나오지 않는다(출처 텍스트 전체 검색: 'Alembert', 'Argand', 'd'Alembert' 0건)."
 status: reviewed
 review_note: "2026-11-25 자기 검토(docs/self-review.md)와 지휘자의 확인(달랑베르 증명 통독 — r 의 세 조건이 r^k|b_k| ≤ |b_0| 와 rC' < |b_k| 를 주는지 대조). 독립 검토는 거치지 않았다."
 added: 2026-11-25

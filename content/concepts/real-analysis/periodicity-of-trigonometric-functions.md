@@ -11,17 +11,17 @@ requires: [prime-number, well-ordering-principle, real-number-arithmetic, order-
 proof: full
 sources:
   - ref: lebl-basic-analysis-2
-    loc: 11.4.2절 Trigonometric functions and π, Proposition 11.4.2 (xi)(xii) (p.165)와 그 증명 (p.166–167)
+    loc: 11.4.2절 Trigonometric functions and π, Proposition 11.4.2 (xi)(xii) (p.165)와 그 증명 (p.166–167); 11.8.1소절 Trigonometric polynomials (p.192)
     checked: original
-    note: "출처의 Proposition 11.4.2 (xi)(p.165)는 모든 z ∈ ℂ 에서 e^{2πi} = 1, e^{z+i2π} = e^z 이고, (xii)는 사인과 코사인이 2π-주기이고 더 작은 주기를 갖지 않는다는 것('2π is the smallest number such that …')이다. 출처의 증명(p.166–167)은 sin(π/2) = 1, e^{iπ/2} = i 에서 지수법칙으로 e^{iπ} = −1, e^{i2π} = 1 을 얻는다. 이것이 이 항목의 (1)(2)의 길과 같다. 더 작은 주기가 없다는 것은 'Let x be the smallest positive x such that e^{ix} = 1' 로 시작해 (e^{ix/4})⁴ = 1 과 e^{ix/4} = a + ib 의 네제곱을 전개해 보이는데, 그런 가장 작은 양수가 있다는 것은 적지 않는다. 이 항목은 그 수를 쓰지 않고, 아르키메데스 성질로 x 를 2π 의 정수배와 [0, 2π) 의 나머지로, 그 나머지를 π/2 의 배수와 [0, π/2) 의 나머지로 나눈 뒤 i 를 곱한 네 경우를 실수부·허수부의 부호로 가르는 길로 (3)을 증명한다. (4)가 출처 (xii)를 '모든 x 에서 cos(x + p) = cos x 인 p 는 정확히 2π 의 정수배' 꼴로 적은 것이다. (3′)은 출처가 (xiii)의 증명(p.167)에서 'Suppose e^{ix} = e^{iy} and x > y. Then e^{i(x−y)} = 1, meaning x − y is a multiple of 2π' 라고 적는 것과 같다."
+    note: "출처의 Proposition 11.4.2 (xi)(p.165)는 모든 z ∈ ℂ 에서 e^{2πi} = 1, e^{z+i2π} = e^z 이고, (xii)는 사인과 코사인이 2π-주기이고 더 작은 주기를 갖지 않는다는 것('2π is the smallest number such that …')이다. 출처의 증명(p.166–167)은 sin(π/2) = 1, e^{iπ/2} = i 에서 지수법칙으로 e^{iπ} = −1, e^{i2π} = 1 을 얻는다. 이것이 이 항목의 (1)(2)의 길과 같다. 더 작은 주기가 없다는 것은 'Let x be the smallest positive x such that e^{ix} = 1' 로 시작해 (e^{ix/4})⁴ = 1 과 e^{ix/4} = a + ib 의 네제곱을 전개해 보이는데, 그런 가장 작은 양수가 있다는 것은 적지 않는다. 이 항목은 그 수를 쓰지 않고, 아르키메데스 성질로 x 를 2π 의 정수배와 [0, 2π) 의 나머지로, 그 나머지를 π/2 의 배수와 [0, π/2) 의 나머지로 나눈 뒤 i 를 곱한 네 경우를 실수부·허수부의 부호로 가르는 길로 (3)을 증명한다. (4)가 출처 (xii)를 '모든 x 에서 cos(x + p) = cos x 인 p 는 정확히 2π 의 정수배' 꼴로 적은 것이다. (3′)은 출처가 (xiii)의 증명(p.167)에서 'Suppose e^{ix} = e^{iy} and x > y. Then e^{i(x−y)} = 1, meaning x − y is a multiple of 2π' 라고 적는 것과 같다. 11.8.1소절(p.192)은 'The functions cos(nx), sin(nx), and e^{inx} are 2π-periodic' 이라고 적는데, n = 1 에서 (2)의 2π 를 더하는 꼴과 같은 내용이다."
   - ref: judson-abstract-algebra
     loc: 11.1절 Group Homomorphisms, Example 11.3 (p.134), Example 11.7 (p.135)
     checked: original
     note: "Judson 의 Example 11.3(p.134)은 θ 를 cos θ + i sin θ 로 보내는 ϕ : ℝ → 𝕋 가 준동형임을 덧셈정리로 보이고, Example 11.7(p.135)은 ϕ : ℝ → ℂ* 의 핵이 {2πn : n ∈ ℤ} 라고 증명 없이 적는다. 이 항목의 (6)이 그 핵을 (3)으로 증명한 것이다."
   - ref: lebl-basic-analysis
-    loc: 3.1.3절 Sequential limits, Example 3.1.8 (p.116–117); 3.5.1절 Limits at infinity, Example 3.5.4 (p.145–146)
+    loc: 0.3.3절 Functions, Example 0.3.14 (p.15); 3.1.3절 Sequential limits, Example 3.1.8 (p.116–117); 3.5.1절 Limits at infinity, Example 3.5.4 (p.145–146)
     checked: original
-    note: "Lebl I 의 Example 3.1.8(p.117)은 sin(πn + π/2) = (−1)ⁿ 을, Example 3.5.4(p.145–146)는 sin(π(2n + 1/2)) = 1, sin(π(2n + 3/2)) = −1, sin(πn) = 0 을 쓴다. 이 등식들은 이 항목의 (1), (2), (5)에서 나온다."
+    note: "Lebl I 의 Example 3.1.8(p.117)은 sin(πn + π/2) = (−1)ⁿ 을, Example 3.5.4(p.145–146)는 sin(π(2n + 1/2)) = 1, sin(π(2n + 3/2)) = −1, sin(πn) = 0 을 쓴다. 이 등식들은 이 항목의 (1), (2), (5)에서 나온다. Example 0.3.14(p.15)는 f(x) = sin(πx) 에 대해 f^{−1}({0}) = ℤ 라고 적는데, 이것은 (5)의 '사인이 0 인 것은 정확히 x ∈ πℤ 일 때' 를 πx 에 쓴 것과 같은 내용이다."
 status: reviewed
 review_note: "2026-11-25 자기 검토(docs/self-review.md)와 지휘자의 확인(π 의 어림 cos(3/2), cos(8/5) 의 분수와 3배각 인수분해를 다시 계산). 독립 검토는 거치지 않았다."
 added: 2026-11-25

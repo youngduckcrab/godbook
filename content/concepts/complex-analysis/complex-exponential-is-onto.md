@@ -11,9 +11,9 @@ requires: [prime-number, real-number-arithmetic, order-properties-of-reals, natu
 proof: full
 sources:
   - ref: lebl-basic-analysis-2
-    loc: 11.4.4절 Exercises, Exercise 11.4.4, Exercise 11.4.5 (p.168)
+    loc: 11.4.1절 The complex exponential, Proposition 11.4.1 뒤 문단 (p.164); 11.4.2절 Trigonometric functions and π, Proposition 11.4.2 (xi)와 그 증명 (p.165–166); 11.4.4절 Exercises, Exercise 11.4.4, Exercise 11.4.5 (p.168); 8.5.2절 Exercises, Exercise 8.5.3 (p.58)
     checked: original
-    note: "출처의 Exercise 11.4.4(p.168)는 'Show that the exponential is onto ℂ \\ {0}, and in fact, that for every nonzero w, there are infinitely many z ∈ ℂ such that e^z = w' 이다. 이 항목의 (1)과 (4)가 그것이다. (2)의 해의 꼴과 (3)의 같은 값의 조건, (5)의 핵은 이 연습문제가 묻지 않은 것을 더한 것이다. Exercise 11.4.5(p.168)는 모든 w ≠ 0 과 ε > 0 에 |z| < ε 이고 e^{1/z} = w 인 z 가 있음을 보이라는 것으로, (2)의 해에 허수부가 얼마든지 큰 것이 있다는 것을 쓰는 응용이다. 출처는 e^z 로 쓰고 이 항목은 exp(z) 로 쓴다. 이 항목은 복소수의 로그를 정의하지 않는다."
+    note: "출처의 Exercise 11.4.4(p.168)는 'Show that the exponential is onto ℂ \\ {0}, and in fact, that for every nonzero w, there are infinitely many z ∈ ℂ such that e^z = w' 이다. 이 항목의 (1)과 (4)가 그것이다. (2)의 해의 꼴과 (3)의 같은 값의 조건, (5)의 핵은 이 연습문제가 묻지 않은 것을 더한 것이다. Exercise 11.4.5(p.168)는 모든 w ≠ 0 과 ε > 0 에 |z| < ε 이고 e^{1/z} = w 인 z 가 있음을 보이라는 것으로, (2)의 해에 허수부가 얼마든지 큰 것이 있다는 것을 쓰는 응용이다. 출처는 e^z 로 쓰고 이 항목은 exp(z) 로 쓴다. 이 항목은 복소수의 로그를 정의하지 않는다. (1)의 '값은 모두 0 이 아니다' 는 출처가 11.4.1절(p.164)에서 'e^z ≠ 0 for all z ∈ ℂ, as e^z e^{−z} = e^{z−z} = 1' 이라고 적는 것과 같다. 반례 '0 과 2πi 에서 값이 같은 예'는 출처 Proposition 11.4.2 (xi)(p.165)의 e^{z+i2π} = e^z 를 z = 0 에 쓴 것이고, 출처는 증명(p.166)에서 'So e^{i2π} = 1 = e^0' 이라고 적는다. 8.5.2절 Exercise 8.5.3(p.58)은 f(x, y) = (eˣcos(y), eˣsin(y)) 가 ℝ² \\ {(0, 0)} 로의 전사이고 각 점의 역상이 무한집합임을 보이게 하는데, 이 f 는 실수부와 허수부로 본 exp 이므로 (1)과 (4)와 같은 내용이다."
   - ref: judson-abstract-algebra
     loc: 11.1절 Group Homomorphisms, Example 11.7 (p.135)
     checked: original

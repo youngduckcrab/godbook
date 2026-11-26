@@ -19,9 +19,9 @@ sources:
     checked: original
     note: "Lebl I p.134 는 짝수 차수의 실수 다항식은 실근이 없을 수 있다며 x² + 1 = 0 인 실수 x 가 없다는 것을 들고, 홀수 차수이면 실근이 있다는 것(Proposition 3.3.10)을 증명한다. 예시 '$t^2 + t^0$의 복소수 근' 의 실수 쪽은 같은 예이다. 홀수 차수의 실근은 이 항목이 진술하지 않는다(선형대수 2 의 홀수 크기 행렬의 실고윳값 항목에 있다)."
   - ref: judson-abstract-algebra
-    loc: "21.1절 Extension Fields, Example 21.14 (p.264); 21.5절 Exercises, 연습문제 21 (p.277); 18장 Historical Note (p.234)"
+    loc: "21.1절 Extension Fields, Example 21.14 (p.264); 21.5절 Exercises, 연습문제 21 (p.277); 18장 Historical Note (p.234); 23.1절 Field Automorphisms, Example 23.3, Proposition 23.5 (p.294); 17.6절 Additional Exercises: Solving the Cubic and Quartic Equations, 연습문제 7 (p.223)"
     checked: original
-    note: "Judson Example 21.14(p.264)는 x² + 1 이 ℝ 위에서 기약이라 ℝ[x]/⟨x² + 1⟩ 이 x² + 1 의 근을 가진 ℝ 의 확대체라는 것을 보이는데, 예시 '$t^2 + t^0$의 복소수 근' 과 같은 대상이다. 연습문제 21(p.277)은 F 를 고정하는 자기동형사상이 최소다항식의 근을 근으로 보낸다는 것을 보이게 하는데, (2)는 실수인 복소수를 고정하는 켤레로 같은 일을 하는 것이다. 18장 Historical Note(p.234)는 대수학의 기본정리를 실수 계수의 모든 다항식이 복소수 위에서 일차식들로 인수분해된다는 것으로 적는데, (3)이 그 꼴이다."
+    note: "Judson Example 21.14(p.264)는 x² + 1 이 ℝ 위에서 기약이라 ℝ[x]/⟨x² + 1⟩ 이 x² + 1 의 근을 가진 ℝ 의 확대체라는 것을 보이는데, 예시 '$t^2 + t^0$의 복소수 근' 과 같은 대상이다. 연습문제 21(p.277)은 F 를 고정하는 자기동형사상이 최소다항식의 근을 근으로 보낸다는 것을 보이게 하는데, (2)는 실수인 복소수를 고정하는 켤레로 같은 일을 하는 것이다. 더 가까운 것은 23.1절이다. Example 23.3(p.294)은 켤레 a + bi ↦ a − bi 가 ℝ 를 고정하는 ℂ 의 자기동형사상이라고 적고, Proposition 23.5(p.294)는 F 를 고정하는 자기동형사상이 F[x] 의 다항식의 근을 근으로 보낸다는 것을 증명한다. 둘을 F = ℝ 에서 합친 것이 (2)이다. 17.6절 연습문제 7 (b)(p.223)은 실계수 삼차방정식 y³ + py + q = 0 이 판별식이 양수이면 'one real root and two conjugate imaginary roots' 를 갖는다는 것을 보이게 하는데, 예시 '실수 근과 켤레 짝이 함께 있는 경우'와 같은 모양의 근이다. 18장 Historical Note(p.234)는 대수학의 기본정리를 실수 계수의 모든 다항식이 복소수 위에서 일차식들로 인수분해된다는 것으로 적는데, (3)이 그 꼴이다."
 status: reviewed
 review_note: "2026-11-25 자기 검토(docs/self-review.md)와 지휘자의 확인(달랑베르 증명 통독 — r 의 세 조건이 r^k|b_k| ≤ |b_0| 와 rC' < |b_k| 를 주는지 대조). 독립 검토는 거치지 않았다."
 added: 2026-11-25
