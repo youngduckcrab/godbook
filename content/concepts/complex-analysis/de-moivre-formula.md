@@ -15,9 +15,9 @@ sources:
     checked: original
     note: "출처의 Theorem 4.22(p.51)는 0 이 아닌 z = r cis θ 와 n = 1, 2, … 에서 [r cis θ]ⁿ = rⁿ cis(nθ) 이고, 증명(p.51–52)은 n 에 대한 귀납법으로 rⁿ(cos nθ + i sin nθ)·r(cos θ + i sin θ) 를 전개해 덧셈정리로 묶는다. 이 항목은 귀납법 대신 복소 지수함수의 덧셈 법칙의 (3)(정수배)으로 (1)을 모든 정수 n 에 대해 얻고, (3)에서 극형식의 거듭제곱을 음의 정수까지 적는다. Example 4.23(p.52)은 (1 + i)^{10} = 32i 를 이 정리로 구하고, Theorem 4.25 의 증명(p.52)은 cis(2kπ/n)ⁿ = cis(2kπ) = 1 을, Example 23.11(p.296)은 x⁵ − 1 의 근을 이 정리로 얻는다. 연습문제 18(p.57)은 (1 − i)⁶, (√3 + i)⁵, (−2 + 2i)^{−5} 같은 거듭제곱을 계산하게 한다. 예시 '(−1 + √3 i)³ 의 계산'은 그 연습문제와 같은 종류의 계산이고, 그 수를 2 로 나눈 (−1 + i√3)/2 는 17.6절 Additional Exercises: Solving the Cubic and Quartic Equations 의 연습문제 3(p.222)이 1 의 세제곱근이라고 증명하게 하는 ω 이다. 예시 'n = 3 에서 3배각 공식 다시 얻기'는 Theorem 4.22 의 증명과 같은 전개를 거꾸로 한 것이고, 21.3절 Geometric Constructions 의 Trisecting an Angle(p.274)이 덧셈정리로 cos 3θ = 4cos³θ − 3cos θ 를 얻는 것과 같은 결론이다. 확인 질문 '$\\exp(i\\pi / 4)^n = 1$인 정수 $n$은 어떤 것인가?'의 수 exp(iπ/4) 는 Example 4.26(p.53)의 원시 8제곱근 ω = √2/2 + (√2/2)i 이고, 4.5절 연습문제 3(l)(p.56)이 C∗ 에서 생성하는 부분군을 묻는 (1 + i)/√2 이다. 확인 질문 '$z = 2\\exp(i\\pi / 5)$이면 $z^{-2}$의 절댓값과 편각 하나는 무엇인가?'는 연습문제 18(a), (g)의 음의 지수와 같은 종류의 계산이다. 출처는 이름을 'DeMoivre' 로 적는다."
   - ref: lebl-basic-analysis-2
-    loc: 11.4.3절 The unit circle and polar coordinates (p.167)
+    loc: 11.4.1절 The complex exponential, Proposition 11.4.1 뒤 문단 (p.164); 11.4.3절 The unit circle and polar coordinates (p.167)
     checked: original
-    note: "출처(p.167)는 'The law of exponents e^{a+b} = e^a e^b leads to a useful formula for powers and products of complex numbers in polar coordinates' 라고 적고 (re^{iθ})ⁿ = rⁿe^{inθ} 를 보인다. 지수 n 의 범위와 증명은 적지 않는다. 이 항목의 (3)이 그 공식이고, 출처처럼 지수법칙(덧셈 법칙)에서 얻는다. 출처에 이 공식의 이름은 없다."
+    note: "출처(p.167)는 'The law of exponents e^{a+b} = e^a e^b leads to a useful formula for powers and products of complex numbers in polar coordinates' 라고 적고 (re^{iθ})ⁿ = rⁿe^{inθ} 를 보인다. 그 자리에서는 지수 n 의 범위를 적지 않는다. 출처는 11.4.1절(p.164)에서 지수법칙과 (e^z)^{−1} = e^{−z} 로 '(e^z)ⁿ = e^{nz} for all n ∈ ℤ' 라고 적는데, z = iθ 에서 이것이 (1)이다. 이 항목의 (3)이 p.167 의 공식이고, 출처처럼 지수법칙(덧셈 법칙)에서 얻는다. 출처에 이 공식의 이름은 없다(출처 텍스트 전체 검색 'Moivre' 0건)."
 status: reviewed
 review_note: "2026-11-25 자기 검토(docs/self-review.md)와 지휘자의 확인(드무아브르의 음의 지수 꼴에 경계값, 'Lebl 에 이름이 없다' 를 두 권 검색으로 대조). 독립 검토는 거치지 않았다."
 added: 2026-11-25

@@ -11,9 +11,9 @@ requires: [real-number-arithmetic, power-of-a-real-number, matrix, trace, determ
 proof: full
 sources:
   - ref: treil-linear-algebra-done-wrong
-    loc: "4장 1절 Main definitions, 1.4 Complex vs real spaces (p.102), 1.5 Multiplicities of eigenvalues (p.102–103), 1.6 Trace and determinant, Theorem 1.2 (p.103), 연습문제 1.10, 1.11 (p.105); 4장 2절 Diagonalization, 연습문제 2.2 (p.114)"
+    loc: "4장 1절 Main definitions, 1.4 Complex vs real spaces (p.102), 1.5 Multiplicities of eigenvalues (p.102–103), 1.6 Trace and determinant, Theorem 1.2 (p.103), 연습문제 1.3, 1.5 (p.104), 1.10, 1.11 (p.105); 4장 2절 Diagonalization, 연습문제 2.2 (p.114)"
     checked: original
-    note: "Treil 4장 1.4(p.102)는 대수학의 기본정리를 들어 실행렬을 ℂⁿ 위의 연산자로 보고 복소수 고윳값을 허용한다고 적고, 1.5(p.102–103)는 특성다항식을 중복도를 세어 a_n(z − λ₁)⋯(z − λ_n) 으로 쓴다. Theorem 1.2(p.103)는 복소수 고윳값을 중복도를 세어 늘어놓으면 그 합이 대각합, 곱이 행렬식이라는 것이고, 증명은 연습문제 1.10, 1.11(p.105)로 둔다. (3)은 같은 결론을 이 사이트의 말로 진술한 것이다. 이 사이트는 ℂ 위의 행렬과 행렬식을 두지 않으므로 그 수들을 '복소 고윳값' 이라 부르지 않고 특성다항식의 계수로 만든 복소 다항함수의 근으로 정의하며, 증명은 연습문제 1.10, 1.11 의 힌트처럼 상수항과 z^{n−1} 의 계수를 비교한다(근과 계수의 관계로). 연습문제 2.2(p.114)는 실행렬의 복소수 고윳값 λ 의 켤레도 고윳값임을 보이게 하는데, (5)는 그것을 특성다항식의 근에 대해 말한 것이다."
+    note: "Treil 4장 1.4(p.102)는 대수학의 기본정리를 들어 실행렬을 ℂⁿ 위의 연산자로 보고 복소수 고윳값을 허용한다고 적고, 1.5(p.102–103)는 특성다항식을 중복도를 세어 a_n(z − λ₁)⋯(z − λ_n) 으로 쓴다. Theorem 1.2(p.103)는 복소수 고윳값을 중복도를 세어 늘어놓으면 그 합이 대각합, 곱이 행렬식이라는 것이고, 증명은 연습문제 1.10, 1.11(p.105)로 둔다. (3)은 같은 결론을 이 사이트의 말로 진술한 것이다. 이 사이트는 ℂ 위의 행렬과 행렬식을 두지 않으므로 그 수들을 '복소 고윳값' 이라 부르지 않고 특성다항식의 계수로 만든 복소 다항함수의 근으로 정의하며, 증명은 연습문제 1.10, 1.11 의 힌트처럼 상수항과 z^{n−1} 의 계수를 비교한다(근과 계수의 관계로). 연습문제 2.2(p.114)는 실행렬의 복소수 고윳값 λ 의 켤레도 고윳값임을 보이게 하는데, (5)는 그것을 특성다항식의 근에 대해 말한 것이다. 1.4(p.102)는 α 가 π 의 정수배가 아닌 회전 R_α 를 실고윳값이 없는 선형사상의 예로 드는데, 예시 '$J = \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix}$'의 J 는 α = π/2 인 회전이고 반례 '고윳값과 복소수 근의 개수가 다를 수 있다'는 같은 대상의 같은 결론이다. 연습문제 1.3(p.104)은 회전행렬 (cos α, −sin α; sin α, cos α) 의 고윳값을 구하게 하고 고윳값이 실수가 아니어도 된다고 적는데, 예시 '$\\begin{pmatrix} a & -b \\\\ b & a \\end{pmatrix}$ 꼴의 행렬'에서 a = cos α, b = sin α 로 둔 것이다. 연습문제 1.5(p.104)는 삼각행렬의 고윳값이 대각성분이라는 것을 보이게 하는데, 확인 질문 '$A = \\begin{pmatrix} 2 & 1 \\\\ 0 & 3 \\end{pmatrix}$의 특성다항식의 복소수 근은?'의 답 2, 3 이 A 의 대각성분이다."
   - ref: lebl-basic-analysis-2
     loc: "11.1절 Complex numbers, 11.1.4소절 Exercises, Exercise 11.1.6 (p.143)"
     checked: original

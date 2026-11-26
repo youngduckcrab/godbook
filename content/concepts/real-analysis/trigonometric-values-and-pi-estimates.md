@@ -11,17 +11,17 @@ requires: [real-number-arithmetic, order-properties-of-reals, power-of-a-real-nu
 proof: full
 sources:
   - ref: judson-abstract-algebra
-    loc: 4.2절 Multiplicative Group of Complex Numbers, Example 4.19 (p.51), Example 4.21 (p.51), Example 4.23 (p.52), Example 4.26 (p.53); 4.5절 Exercises, 연습문제 16 (p.56)
+    loc: "4.2절 Multiplicative Group of Complex Numbers, Example 4.19 (p.51), Example 4.21 (p.51), Example 4.23 (p.52), Example 4.26 (p.53); 4.5절 Exercises, 연습문제 4(f), 16 (p.56); 12.1절 Matrix Groups, Example 12.5 (p.144); 17.6절 Additional Exercises: Solving the Cubic and Quartic Equations, 연습문제 3 (p.222); 21.3절 Geometric Constructions, Trisecting an Angle (p.274); 부록 B, 4.5.16, 4.5.17 의 답 (p.321)"
     checked: original
-    note: "Judson 은 4.2절(p.51)에서 극형식의 각을 도(°)로 적고 0° ≤ θ < 360° 를 요구하며 '라디안이면 0 ≤ θ < 2π' 라고 덧붙인다. Example 4.19(p.51)는 2 cis 60° 의 실수부와 허수부를 2 cos 60° = 1, 2 sin 60° = √3 으로 적는데, cos 60° 와 sin 60° 의 값을 바로 적는다. 이 사이트는 도를 정의하지 않으므로 이 항목은 π/3 으로만 쓴다. 예시 'exp(iπ/3) 과 exp(iπ/6)'의 exp(iπ/3) = 1/2 + (√3/2)i 는 그 예의 cis 60° 와 같은 수(2 를 곱하기 전)이고, exp(iπ/6) 은 연습문제 16 (a)의 2 cis(π/6) 과 같은 각이다. (1)의 exp(iπ/4) = (√2/2)(1 + i) 는 Example 4.23(p.52)의 1 + i = √2 cis(π/4) 와, Example 4.26(p.53)의 원시 8제곱근 √2/2 + (√2/2)i 와 같은 수이다. Example 4.21(p.51)은 3 cis(π/3)·2 cis(π/6) = 6 cis(π/2) = 6i 를 계산한다."
+    note: "Judson 은 4.2절(p.51)에서 극형식의 각을 도(°)로 적고 0° ≤ θ < 360° 를 요구하며 '라디안이면 0 ≤ θ < 2π' 라고 덧붙인다. Example 4.19(p.51)는 2 cis 60° 의 실수부와 허수부를 2 cos 60° = 1, 2 sin 60° = √3 으로 적는데, cos 60° 와 sin 60° 의 값을 바로 적는다. 이 사이트는 도를 정의하지 않으므로 이 항목은 π/3 으로만 쓴다. 예시 'exp(iπ/3) 과 exp(iπ/6)'의 exp(iπ/3) = 1/2 + (√3/2)i 는 그 예의 cis 60° 와 같은 수(2 를 곱하기 전)이고, exp(iπ/6) 은 연습문제 16 (a)의 2 cis(π/6) 과 같은 각이다. (1)의 exp(iπ/4) = (√2/2)(1 + i) 는 Example 4.23(p.52)의 1 + i = √2 cis(π/4) 와, Example 4.26(p.53)의 원시 8제곱근 √2/2 + (√2/2)i 와 같은 수이다. Example 4.21(p.51)은 3 cis(π/3)·2 cis(π/6) = 6 cis(π/2) = 6i 를 계산한다. 부록 B(p.321)는 연습문제 16(a)의 답을 √3 + i 로, 17(c)의 2 + 2i 를 2√2 cis(π/4) 로 적는데, 각각 (2)의 π/6 에서의 값과 (1)의 π/4 에서의 값을 쓴 것이다. 연습문제 4(f)(p.56)의 행렬 (√3/2, 1/2; −1/2, √3/2) 와 Example 12.5(p.144)의 직교행렬 (1/2, −√3/2; √3/2, 1/2) 의 성분도 (2)의 값이다. 21.3절 'Trisecting an Angle'(p.274)은 cos 60° = 1/2 를 쓰고 α = cos 20° 가 4α³ − 3α = 1/2 를 만족한다고 적는데, 반례 '3배각 방정식만으로는 cos(π/3) 이 정해지지 않는 예'가 다루는 3배각 방정식과 같은 발상이다. 확인 질문 '$\\cos(2\\pi / 3)$은 무엇인가?'의 답 −1/2 는 17.6절 연습문제 3(p.222)이 1 의 세제곱근이라고 증명하게 하는 ω = (−1 + i√3)/2 의 실수부이다."
   - ref: lebl-basic-analysis-2
     loc: 11.4.2절 Trigonometric functions and π, Proposition 11.4.2 의 증명 (p.166); 11.4.4절 Exercises, Exercise 11.4.8 (p.168)
     checked: original
     note: "출처는 π 를 정의하는 증명(p.166)에서 [0, y) 위에서 cos > 0 인 y 에 대해 y ≤ 2/sin(a) + a 를 얻는다. (3)은 코사인과 사인의 도함수 항목의 고계 도함수와 테일러 정리로 얻는다. (4)의 sin x / x 는 출처 Exercise 11.4.8(p.168)의 sinc(z) = sin(z)/z, sinc(0) = 1 과 같은 함수를 실수에서 본 것이다."
   - ref: lebl-basic-analysis
-    loc: 4.1.3절 Exercises, Exercise 4.1.6 (p.160)
+    loc: 4.1.3절 Exercises, Exercise 4.1.6 (p.160); 5.5절 Improper integrals, Example 5.5.12 (p.220)
     checked: original
-    note: "Lebl I 의 Exercise 4.1.6(p.160)은 |x − sin(x)| ≤ x² 을 가정하고 sin 의 0 에서의 도함수를 구하라고 한다. (4)는 sin′(0) = 1 을 차분몫의 극한으로 읽은 것이고, 같은 대상이다."
+    note: "Lebl I 의 Exercise 4.1.6(p.160)은 |x − sin(x)| ≤ x² 을 가정하고 sin 의 0 에서의 도함수를 구하라고 한다. (4)는 sin′(0) = 1 을 차분몫의 극한으로 읽은 것이고, 같은 대상이다. Example 5.5.12(p.220)는 sinc(x) = sin(x)/x (x ≠ 0), sinc(0) = 1 을 정의하고 'It is not difficult to show that the sinc function is continuous at zero' 라고 적는데, 이것이 (4)와 같은 내용이다."
 status: reviewed
 review_note: "2026-11-25 자기 검토(docs/self-review.md)와 지휘자의 확인(π 의 어림 cos(3/2), cos(8/5) 의 분수와 3배각 인수분해를 다시 계산). 독립 검토는 거치지 않았다."
 added: 2026-11-25

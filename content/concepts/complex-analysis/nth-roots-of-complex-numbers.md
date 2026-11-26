@@ -13,11 +13,11 @@ sources:
   - ref: lebl-basic-analysis-2
     loc: 11.5절 Maximum principle and the fundamental theorem of algebra, Lemma 11.5.1 의 증명 (p.169)
     checked: original
-    note: "출처는 이 정리를 진술하지 않고, Lemma 11.5.1 의 증명(p.169)에서 'Pick t such that a_k e^{ikt} = −|a_k|, which we can do by the discussion on trigonometric functions' 라고 쓴다. 그런 t 가 있다는 것은 절댓값이 1 인 수 −|a_k|/a_k 의 k제곱근 e^{it} 가 있다는 것이고, 이 항목의 (4)가 그것을 진술한다."
+    note: "출처는 이 정리를 진술하지 않고(출처 텍스트 전체 검색 'square root', 'nth root', '𝑘th root', 'roots of' 에서 복소수의 거듭제곱근을 다루는 곳 0건), Lemma 11.5.1 의 증명(p.169)에서 'Pick t such that a_k e^{ikt} = −|a_k|, which we can do by the discussion on trigonometric functions' 라고 쓴다. 그런 t 가 있다는 것은 절댓값이 1 인 수 −|a_k|/a_k 의 k제곱근 e^{it} 가 있다는 것이고, 이 항목의 (4)가 그것을 진술한다."
   - ref: judson-abstract-algebra
-    loc: 23.3절 Applications, Lemma 23.28 의 증명 (p.304)
+    loc: 21.1절 Extension Fields, Example 21.30 (p.268); 23.3절 Applications, Lemma 23.28 의 증명 (p.304)
     checked: original
-    note: "출처는 Lemma 23.28 의 증명(p.304)에서 체 F 위의 xⁿ − a 의 근이 ⁿ√a, ωⁿ√a, …, ω^{n−1}ⁿ√a (ω 는 원시 n제곱근)이고, 근 ζ 하나에 대해 서로 다른 근이 ζ, ωζ, …, ω^{n−1}ζ 라고 증명 없이 적는다. 이 항목의 (5)가 ℂ 에서 이것을 증명한 것이고, (1)의 근 z_k 는 z_0 에 ω_n^k 를 곱한 것이다."
+    note: "출처는 Lemma 23.28 의 증명(p.304)에서 체 F 위의 xⁿ − a 의 근이 ⁿ√a, ωⁿ√a, …, ω^{n−1}ⁿ√a (ω 는 원시 n제곱근)이고, 근 ζ 하나에 대해 서로 다른 근이 ζ, ωζ, …, ω^{n−1}ζ 라고 증명 없이 적는다. 이 항목의 (5)가 ℂ 에서 이것을 증명한 것이고, (1)의 근 z_k 는 z_0 에 ω_n^k 를 곱한 것이다. Example 21.30(p.268)은 x³ − 3 의 복소수 근(complex cube roots of 3)으로 ∛3 과 (−∛3 ± ⁶√3⁵ i)/2 를 적는데, 이것은 (5)에서 w = 3, n = 3, z_0 = ∛3 으로 둔 z_0, z_0 ω₃, z_0 ω₃² 이다."
 status: reviewed
 review_note: "2026-11-25 자기 검토(docs/self-review.md)와 지휘자의 확인(계산 예 (1 − √3i)⁶, 몫, −4 의 네제곱근, 원시 12제곱근의 수를 다시 계산). 독립 검토는 거치지 않았다."
 added: 2026-11-25

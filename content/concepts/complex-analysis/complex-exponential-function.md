@@ -12,11 +12,11 @@ sources:
   - ref: lebl-basic-analysis-2
     loc: 11.4.1절 The complex exponential (p.163); 11.4.2절 Trigonometric functions and π, Proposition 11.4.2 의 증명 (p.165)
     checked: original
-    note: "출처는 p.163 에서 E(z) = Σ_{k=0}^∞ z^k/k! 가 모든 복소수에서 수렴한다고 적고 e^z = E(z) 로 정의한다. 실수 x 에서 E(x) = eˣ 인 것은 E′ = E, E(0) = 1 인 함수의 유일성(Lebl I 5.4절 또는 피카르 정리)으로 보이고, 'We notice that E(0) = 1' 이라고 적는다. 이 항목은 기호 e^z 와 E 를 쓰지 않고 exp 하나만 쓰며, 실수에서의 일치 (2)를 미분방정식의 유일성 대신 실수 지수함수의 멱급수 전개와 복소 멱급수의 실수 계수 일치로 보인다. 켤레 (4)는 출처가 p.165(Proposition 11.4.2 의 증명)에서 '켤레가 연속함수이므로' 정의에서 나온다고 적는 등식이고, 이 항목은 연속을 쓰지 않고 복소 급수의 켤레 성질로 보인다. 실수 y 에서 exp(iy) 의 실수부를 Re(iⁿ) 의 급수로 쓴 (6)의 둘째 부분은 출처 Proposition 11.4.2 (v)(p.165)의 cos(x) = Re(e^{ix}) 와 (iv)(p.164)의 cos 의 멱급수를 함께 본 것과 같은 계산이고, 출처는 그 멱급수의 계산을 연습문제 11.4.1(p.168)로 둔다."
+    note: "출처는 p.163 에서 E(z) = Σ_{k=0}^∞ z^k/k! 가 모든 복소수에서 수렴한다고 적고 e^z = E(z) 로 정의한다. 실수 x 에서 E(x) = eˣ 인 것은 E′ = E, E(0) = 1 인 함수의 유일성(Lebl I 5.4절 또는 피카르 정리)으로 보이고, 'We notice that E(0) = 1' 이라고 적는다. 이 항목은 기호 e^z 와 E 를 쓰지 않고 exp 하나만 쓰며, 실수에서의 일치 (2)를 미분방정식의 유일성 대신 실수 지수함수의 멱급수 전개와 복소 멱급수의 실수 계수 일치로 보인다. 켤레 (4)는 출처가 p.165(Proposition 11.4.2 의 증명)에서 '켤레가 연속함수이므로' 정의에서 나온다고 적는 등식이고, 이 항목은 연속을 쓰지 않고 복소 급수의 켤레 성질로 보인다. 실수 y 에서 exp(iy) 의 실수부를 Re(iⁿ) 의 급수로 쓴 (6)의 둘째 부분은 출처 Proposition 11.4.2 (v)(p.165)의 cos(x) = Re(e^{ix}) 와 (iv)(p.164)의 cos 의 멱급수를 함께 본 것과 같은 계산이고, 출처는 그 멱급수의 계산을 연습문제 11.4.1(p.168)로 둔다. 확인 질문 '실수 $x$에서 $\\exp(\\iota(x))$의 허수부와 실수부의 부호는 무엇인가?'의 허수부가 0 이라는 것은 출처 p.163 의 'for z = x ∈ ℝ, E(x) ∈ ℝ' 와 같은 내용이다."
   - ref: lebl-basic-analysis
-    loc: 5.4.2절 The exponential, Proposition 5.4.2 (p.209)
+    loc: 5.4.2절 The exponential, Proposition 5.4.2 (p.209), Remark 5.4.4 (p.211); 5.4.3절 Exercises, Exercise 5.4.3 (p.212); 6.2.4절 Convergence of power series, Example 6.2.14 (p.242); 2.6.5절 Power series, Example 2.6.7 (p.106)
     checked: original
-    note: "Lebl I 의 Proposition 5.4.2(p.209)는 E(0) = 1 이고 E′ = E 인 함수 E : ℝ → (0, ∞) 의 존재와 유일성이다. 출처 II 는 실수에서의 일치를 이 명제에 넘기고, 이 항목은 그 길을 쓰지 않는다."
+    note: "Lebl I 의 Proposition 5.4.2(p.209)는 E(0) = 1 이고 E′ = E 인 함수 E : ℝ → (0, ∞) 의 존재와 유일성이다. 출처 II 는 실수에서의 일치를 이 명제에 넘기고, 이 항목은 그 길을 쓰지 않는다. 같은 책의 Exercise 5.4.3(p.212)은 테일러 정리로 모든 실수 x 에서 eˣ = Σ_{n=0}^∞ xⁿ/n! 임을 보이게 하는데, (2)의 실수에서의 일치가 그 등식이다. Remark 5.4.4(p.211)와 Example 6.2.14(p.242)는 이 멱급수(수렴 반지름 ∞, f(0) = 1, f′ = f)로 지수함수를 정의할 수도 있다고 적는다. Example 2.6.7(p.106)은 실수 xⁿ/n! 의 급수가 모든 실수에서 절대수렴함을 비 판정법으로 보인다. (1)의 절대수렴이 같은 계산이다. 확인 질문 '실수 $x$에서 $\\exp(\\iota(x))$의 허수부와 실수부의 부호는 무엇인가?'의 실수부가 양수라는 것은 Proposition 5.4.2 의 공역 (0, ∞) 와 같은 내용이다."
 status: reviewed
 review_note: "2026-11-25 자기 검토(docs/self-review.md)와 지휘자의 확인(연속 증명 통독, 예 (2)–(4)에 경계값, 보조정리 n = 0). 독립 검토는 거치지 않았다."
 added: 2026-11-25
