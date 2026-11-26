@@ -91,14 +91,42 @@ for (const course of courses) {
   if (course.data.status !== 'planned' && !course.units.length) err(course.file, '예정이 아닌 강의에 단원이 없다');
 }
 
+// 항목이 실린 강의(항목 id → 강의 id)와 강의의 선행 강의 전체.
+const courseOfItem = new Map();
+for (const course of courses) for (const u of course.units) for (const id of u.data?.concepts ?? []) if (!courseOfItem.has(id)) courseOfItem.set(id, course.id);
+const courseById = new Map(courses.map((c) => [c.id, c]));
+const reqClosure = (id, seen = new Set()) => {
+  for (const r of ids.get(id)?.data.requires ?? []) if (!seen.has(r)) { seen.add(r); reqClosure(r, seen); }
+  return seen;
+};
+const courseClosure = (cid, seen = new Set()) => {
+  for (const r of courseById.get(cid)?.data?.requires ?? []) if (!seen.has(r)) { seen.add(r); courseClosure(r, seen); }
+  return seen;
+};
+
 for (const file of walk(path.join(CONTENT, 'exercises'), '.md')) {
   const rel = path.relative(ROOT, file);
   const unit = path.relative(path.join(CONTENT, 'exercises'), file).replace(/\.md$/, '');
-  if (!courses.some((c) => c.units.some((u) => u.id === unit))) err(rel, `대응하는 단원 content/courses/${unit}.md 가 없다`);
+  const course = courses.find((c) => c.units.some((u) => u.id === unit));
+  if (!course) err(rel, `대응하는 단원 content/courses/${unit}.md 가 없다`);
   const { data, body } = readMd(file);
   for (const s of data?.sources ?? []) if (!sources.has(s.ref)) err(rel, `출처 '${s.ref}' 가 없다`);
-  for (const m of body.matchAll(WIKILINK)) if (!ids.has(m[1])) err(rel, `링크 [[${m[1]}]] 의 대상이 없다`);
+  if (data?.written_by && /claude-[a-z]+-?\d|sonnet|haiku|opus|fable/i.test(data.written_by)) err(rel, 'written_by 에 모델 이름을 쓰지 않는다(Claude 로 쓴다)');
+  // 연습문제는 그 단원까지 배운 항목만 쓴다: 같은 강의의 뒤 단원 항목과, 선행 강의가 아닌 강의의 항목을 가리킬 수 없다.
+  const idx = course ? course.units.findIndex((u) => u.id === unit) : -1;
+  const later = new Set(course ? course.units.slice(idx + 1).flatMap((u) => u.data?.concepts ?? []) : []);
+  const allowedCourses = course ? new Set([course.id, ...courseClosure(course.id)]) : new Set();
+  // 강의가 다른 강의의 항목을 하나씩 빌리는 일(예: real-number-arithmetic)이 많으므로, 그 단원까지의 항목이 선행으로 쓰는 항목도 허용한다.
+  const borrowed = new Set();
+  if (course) for (const u of course.units.slice(0, idx + 1)) for (const id of u.data?.concepts ?? []) for (const r of reqClosure(id)) borrowed.add(r);
+  for (const m of body.matchAll(WIKILINK)) {
+    if (!ids.has(m[1])) { err(rel, `링크 [[${m[1]}]] 의 대상이 없다`); continue; }
+    if (later.has(m[1])) err(rel, `[[${m[1]}]] 는 이 강의의 뒤 단원 항목이다(연습문제는 그 단원까지 배운 항목만 쓴다)`);
+    const owner = courseOfItem.get(m[1]);
+    if (course && owner && !allowedCourses.has(owner) && !borrowed.has(m[1])) err(rel, `[[${m[1]}]] 는 선행 강의가 아닌 '${owner}' 의 항목이다`);
+  }
 }
+
 
 
 // ---- 경고 (빌드를 막지 않는다). 검토에서 반복해 나온 실수를 미리 알려 준다. ----
