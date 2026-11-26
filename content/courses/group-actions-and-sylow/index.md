@@ -5,7 +5,7 @@ summary: 치환의 순환 분해와 홀짝, 군의 작용과 궤도, 류 방정�
 level: undergrad
 order: 4
 track: 대수
-requires: [language-of-math, number-theory-intro, abstract-algebra]
+requires: [language-of-math, number-theory-intro, abstract-algebra, analysis-intro, linear-algebra, topology-intro]
 status: complete
 planned_units: []
 ---
@@ -18,4 +18,4 @@ planned_units: []
 
 이 강의는 증명 없이 받아들이는 사실을 새로 두지 않고, 선택 공리를 쓰지 않습니다. 출처가 원소나 대표를 "고르는" 곳은 집합의 분할, 조건으로 정한 집합, 존재 명제로 바꾸어 씁니다. 예를 들어 치환의 순환 분해는 출처가 "아직 쓰지 않은 첫 정수"를 차례로 잡는 것과 달리, 치환의 궤도 전체가 이루는 분할로 정합니다.
 
-"수학의 언어", "정수론 입문", "추상대수" 전체를 배웠다고 가정합니다. 그 밖에 해석학 입문 3단원의 [[recursion-theorem|재귀 정리]]를 추상대수 강의와 같은 방식으로 빌려, 식이나 하나로 정해진 대상으로 함수를 정할 때와 재귀로 정의할 때 씁니다.
+"수학의 언어", "정수론 입문", "추상대수" 전체를 배웠다고 가정합니다. 그 밖에 다른 강의의 항목 셋을 빌립니다. 해석학 입문 3단원의 [[recursion-theorem|재귀 정리]]는 추상대수 강의와 같은 방식으로, 식이나 하나로 정해진 대상으로 함수를 정할 때와 재귀로 정의할 때 씁니다. 선형대수 1단원의 [[real-number-arithmetic|실수의 계산 법칙]]은 치환의 부호의 값 $1$, $-1$의 곱과, 곱셈군 $\{1, -1\}$이 실수에 곱으로 작용하는 예의 계산에 씁니다. 위상수학 입문 4단원의 [[preimage-and-set-operations|상과 역상의 성질]]은 부분군 위의 켤레 작용이 작용의 조건을 만족한다는 것을 보일 때 합성에 의한 상의 성질로 씁니다.
