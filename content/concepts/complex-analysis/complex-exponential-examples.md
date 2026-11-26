@@ -11,9 +11,9 @@ requires: [natural-logarithm, exponential-function, laws-of-exponential-function
 proof: full
 sources:
   - ref: lebl-basic-analysis-2
-    loc: 11.4.1절 The complex exponential, Proposition 11.4.1 뒤 문단 (p.164); 11.5절, 대수학의 기본정리의 증명 뒤 문단 (p.170)
+    loc: 11.4.1절 The complex exponential, Proposition 11.4.1 뒤 문단 (p.164); 11.4.2절, Proposition 11.4.2 의 증명 (p.165); 11.4.4절 Exercise 11.4.4 (p.168); 11.5절, 대수학의 기본정리의 증명 뒤 문단 (p.170)
     checked: original
-    note: "(1)은 출처 p.164 가 덧셈 법칙의 'yet more complicated consequence' 로 적는 중심 a 의 전개 e^z = e^a e^{z−a} = Σ_{k=0}^∞ (e^a/k!)(z − a)^k 와 같은 등식이고 같은 방법(덧셈 법칙과 정의의 급수)으로 보인다. 이 항목은 그 복소 멱급수가 모든 복소수에서 수렴하는 복소 멱급수라는 것을 덧붙인다. 반례 'z = i 에서 |exp(z)| 와 exp(|z|) 가 다른 예'의 |exp(i)| = 1 은 출처 p.165(Proposition 11.4.2 의 증명)의 'e^{ix} is unimodular for real x' 의 x = 1 인 경우이다. 출처 p.170 은 'The exponential e^z is an analytic function on ℂ with no zeros' 라고 적는다."
+    note: "(1)은 출처 p.164 가 덧셈 법칙의 'yet more complicated consequence' 로 적는 중심 a 의 전개 e^z = e^a e^{z−a} = Σ_{k=0}^∞ (e^a/k!)(z − a)^k 와 같은 등식이고 같은 방법(덧셈 법칙과 정의의 급수)으로 보인다. 이 항목은 그 복소 멱급수가 모든 복소수에서 수렴하는 복소 멱급수라는 것을 덧붙인다. 반례 'z = i 에서 |exp(z)| 와 exp(|z|) 가 다른 예'의 |exp(i)| = 1 은 출처 p.165(Proposition 11.4.2 의 증명)의 'e^{ix} is unimodular for real x' 의 x = 1 인 경우이다. 출처 p.170 은 'The exponential e^z is an analytic function on ℂ with no zeros' 라고 적는다. 확인 질문 '복소수 $w$가 $\\exp(w) = -1$을 만족하면, (3)으로 얻는 수 가운데 제곱이 $-1$인 것은 무엇이고 그 값은 무엇일 수 있는가?'가 가정하는 그런 w 가 있다는 것은 출처 Exercise 11.4.4(p.168)가 보이게 하는 전사성의 w = −1 인 경우이다."
 status: reviewed
 review_note: "2026-11-25 자기 검토(docs/self-review.md)와 지휘자의 확인(연속 증명 통독, 예 (2)–(4)에 경계값, 보조정리 n = 0). 독립 검토는 거치지 않았다."
 added: 2026-11-25

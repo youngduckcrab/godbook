@@ -10,13 +10,13 @@ summary: 복소수는 실수의 순서쌍 (a, b) 이고 그 전체가 ℂ = ℝ 
 requires: [set, cartesian-product, function, binary-operation, real-number-arithmetic]
 sources:
   - ref: lebl-basic-analysis-2
-    loc: 11.1절 Complex numbers, 11.1.1절 The complex plane (p.139), Definition 11.1.1 (p.140)
+    loc: 11.1절 Complex numbers, 11.1.1절 The complex plane (p.139), Definition 11.1.1 (p.140); 11.1.4절 Exercise 11.1.6 (p.143)
     checked: original
-    note: "출처는 복소수를 ℝ² 의 순서쌍 (x, y) 로 두고 덧셈과 곱셈을 이 항목과 같은 식으로 정의하며, 그 집합을 ℂ, 평면으로서 complex plane 이라 부른다(p.139). 이 사이트는 ℝ² 대신 곱집합 ℝ × ℝ 로 쓴다. 출처는 이어서 x ∈ ℝ 를 (x, 0) 과 동일시하고 i = (0, 1) 을 정의한 뒤 (x, y) 를 x + iy 로 쓰며 그 뒤로 순서쌍 표기를 쓰지 않는다(p.139). 이 항목은 동일시를 하지 않고 순서쌍으로 정의를 마친다. 동일시와 a + bi 꼴은 다음 항목(복소수체)의 ι 로 다룬다. (4)의 ii = (−1, 0) 은 출처 p.139 의 계산 i² = (0, 1)(0, 1) = (0 − 1, 0 + 0) = −1 과 같은 계산이다. 출처의 Definition 11.1.1(p.140)은 z = x + iy 에 대해 Re z := x, Im z := y 로 정의한다. 이 항목은 같은 것을 순서쌍의 첫째·둘째 성분으로 정의한다. 예시 '두 복소수의 합과 곱'의 수 (2, −1), (−3, 4) 는 출처의 Figure 11.1(p.140, 점 1, i, x, iy, x + iy)과 다른 수이다."
+    note: "출처는 복소수를 ℝ² 의 순서쌍 (x, y) 로 두고 덧셈과 곱셈을 이 항목과 같은 식으로 정의하며, 그 집합을 ℂ, 평면으로서 complex plane 이라 부른다(p.139). 이 사이트는 ℝ² 대신 곱집합 ℝ × ℝ 로 쓴다. 출처는 이어서 x ∈ ℝ 를 (x, 0) 과 동일시하고 i = (0, 1) 을 정의한 뒤 (x, y) 를 x + iy 로 쓰며 그 뒤로 순서쌍 표기를 쓰지 않는다(p.139). 이 항목은 동일시를 하지 않고 순서쌍으로 정의를 마친다. 동일시와 a + bi 꼴은 다음 항목(복소수체)의 ι 로 다룬다. (4)의 ii = (−1, 0) 은 출처 p.139 의 계산 i² = (0, 1)(0, 1) = (0 − 1, 0 + 0) = −1 과 같은 계산이다. 출처의 Definition 11.1.1(p.140)은 z = x + iy 에 대해 Re z := x, Im z := y 로 정의한다. 이 항목은 같은 것을 순서쌍의 첫째·둘째 성분으로 정의한다. Exercise 11.1.6 a)(p.143)는 x + iy 에 행렬 (x −y; y x) 를 대응시키고 그 행렬을 벡터 (s, t) 에 곱한 것이 (x + iy)(s + it) 와 같음을 보이게 한다. (4)의 (a, b)i = (−b, a) 는 그 계산에서 s + it = i 인 경우이다."
   - ref: judson-abstract-algebra
-    loc: 4.2절 Multiplicative Group of Complex Numbers, p.49–50
+    loc: 4.2절 Multiplicative Group of Complex Numbers, p.49–50; 16.7절 Exercises 36 (p.207)
     checked: original
-    note: "Judson 은 ℂ = {a + bi : a, b ∈ ℝ}, i² = −1 로 정의하고(p.49) 순서쌍으로 만들지 않는다. a 를 real part, b 를 imaginary part 라 부르고, 덧셈 (a + c) + (b + d)i 와 곱셈 (ac − bd) + (ad + bc)i 는 이 항목의 두 식과 같은 식이다(p.49. 곱셈은 '다항식처럼 곱하고 i² = −1 을 쓴다'고 설명한다). p.50 은 a + bi 를 xy 평면의 순서쌍 (a, b) 로 나타내는 것을 rectangular(Cartesian) representation 이라 부르고 Figure 4.17 에 2 + 3i, 1 − 2i, −3 + 2i 를 그린다."
+    note: "Judson 은 ℂ = {a + bi : a, b ∈ ℝ}, i² = −1 로 정의하고(p.49) 순서쌍으로 만들지 않는다. a 를 real part, b 를 imaginary part 라 부르고, 덧셈 (a + c) + (b + d)i 와 곱셈 (ac − bd) + (ad + bc)i 는 이 항목의 두 식과 같은 식이다(p.49. 곱셈은 '다항식처럼 곱하고 i² = −1 을 쓴다'고 설명한다). p.50 은 a + bi 를 xy 평면의 순서쌍 (a, b) 로 나타내는 것을 rectangular(Cartesian) representation 이라 부르고 Figure 4.17 에 2 + 3i, 1 − 2i, −3 + 2i 를 그린다. 반례 '성분끼리 곱한 결과와 비교'의 곱 (ac, bd) 는 16.7절 연습문제 36(p.207)이 두 환의 곱집합 R × S 에 두는 곱셈 (r, s)(r′, s′) = (rr′, ss′) 에서 R = S = ℝ 인 것과 같다."
 status: reviewed
 review_note: "2026-11-25 자기 검토(docs/self-review.md)와 지휘자의 확인(ι 의 약속과 정의가 둘이 되지 않는지, 순서가 없다는 증명 대조). 독립 검토는 거치지 않았다."
 added: 2026-11-25

@@ -11,9 +11,9 @@ requires: [real-number-arithmetic, real-order-axioms, order-properties-of-reals,
 proof: full
 sources:
   - ref: judson-abstract-algebra
-    loc: 4.2절 Multiplicative Group of Complex Numbers, Example 4.16 (p.49), Example 4.23 (p.52); 4.5절 Exercises 15, 18 (p.56–57); 17.6절 Additional Exercises 1 (p.222)
+    loc: 4.2절 Multiplicative Group of Complex Numbers, Example 4.16 (p.49), Example 4.23 (p.52), Example 4.26 (p.53); 4.5절 Exercises 3, 15, 18 (p.56–57); 부록 B 4.5.18 의 답 (p.321); 17.6절 Additional Exercises 1, 3 (p.222)
     checked: original
-    note: "(1)은 Example 4.16(p.49)이 z = 2 + 3i, w = 1 − 2i 로 합, 곱, 역수, 절댓값, 켤레를 구한 것과 같은 종류의 계산이고, 이 항목은 다른 두 수 2 − i, 3 + 4i 를 쓴다. 4.5절 연습문제 15(p.56)도 같은 종류의 계산이다. (2)의 (1 + i)⁻¹ = (1 − i)/2 는 연습문제 18(a)(p.57)의 답이고, (1 + i)ⁿ 은 Example 4.23(p.52)의 (1 + i)^{10} 과 같은 대상이다(출처는 극형식과 드무아브르 정리로 구하고, 이 항목은 (1 + i)² = 2i 와 지수법칙으로 구한다). 17.6절 연습문제 1(p.222)은 실수 계수의 이차방정식 ax² + bx + c = 0 을 완전제곱으로 풀어 근의 공식을 얻게 하고 판별식이 음수이면 서로 다른 두 허근이 있다고 적는다. (4)는 같은 완전제곱의 발상을 복소수 계수에 쓰고, 근호 대신 (3)의 제곱근을 쓴다."
+    note: "(1)은 Example 4.16(p.49)이 z = 2 + 3i, w = 1 − 2i 로 합, 곱, 역수, 절댓값, 켤레를 구한 것과 같은 종류의 계산이고, 이 항목은 다른 두 수 2 − i, 3 + 4i 를 쓴다. 4.5절 연습문제 15(p.56)도 같은 종류의 계산이다. (2)의 (1 + i)⁻¹ = (1 − i)/2 는 연습문제 18(a)(p.57)의 답(부록 p.321)이고, (1 + i)ⁿ 은 Example 4.23(p.52)의 (1 + i)^{10} 과 같은 대상이다(출처는 극형식과 드무아브르 정리로 구하고, 이 항목은 (1 + i)² = 2i 와 지수법칙으로 구한다). 17.6절 연습문제 1(p.222)은 이차방정식 ax² + bx + c = 0 을 완전제곱으로 풀어 근의 공식을 얻게 하고, 판별식 Δ = b² − 4ac 가 양수이면 서로 다른 두 실근, 0 이면 중근, 음수이면 서로 다른 두 허근이 있다고 적는다. (4)는 같은 완전제곱의 발상을 복소수 계수에 쓰고, 근호 대신 (3)의 제곱근을 쓴다. 같은 절 연습문제 3(p.222)의 1 의 세제곱근 (−1 ± i√3)/2 는 z² + z + 1 = 0 의 두 근으로, (4)로 구할 수 있는 같은 대상이다. 예시 '5 − 12i, i, −1 의 제곱근'의 i 의 제곱근 √(1/2) + √(1/2) i 는 Example 4.26(p.53)의 원시 8제곱근 ω = √2/2 + (√2/2)i 와 같은 수이고, 4.5절 연습문제 3(l)(p.56)은 (1 + i)/√2 가 생성하는 ℂ* 의 부분군을 묻는다."
   - ref: lebl-basic-analysis-2
     loc: 11.1.1절 The complex plane (p.139)
     checked: original

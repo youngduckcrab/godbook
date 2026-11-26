@@ -11,13 +11,13 @@ requires: [cartesian-product, function, recursion-theorem, real-number-arithmeti
 proof: full
 sources:
   - ref: lebl-basic-analysis-2
-    loc: "11.1절 Complex numbers, 11.1.1소절 The complex plane (p.140); 10.1절 10.1.5소절 Integration of functions with compact support, Example 10.1.16 과 Example 10.1.17 (p.99)"
+    loc: "11.1절 Complex numbers, 11.1.1소절 The complex plane (p.140); 10.1절 10.1.5소절 Integration of functions with compact support, Example 10.1.16 과 Example 10.1.17 (p.99); 8.2절 Analysis with vector spaces, 8.2.4소절 Exercises 8.2.3, 8.2.4 (p.31), Exercise 8.2.13 (p.33); 11.3절 11.3.6소절 Exercise 11.3.11 (p.162)"
     checked: original
-    note: "출처(p.140)는 ℂ 가 ℝ² 이므로 ℂ 의 거리를 ℝ² 의 표준 유클리드 거리로 둔다고 하고, 그래서 |z| = d(z, 0), |z − w| = d(z, w) 이며 ℂ 의 위상은 유클리드 거리를 준 ℝ² 의 표준 위상과 같다고 적는다. 증명은 없다. 이 항목은 거리를 d(z, w) = |z − w| 로 정한 뒤 그것이 유클리드 거리 d_E 와 같은 함수임을 계산으로 보이고((1)), 위상이 ℝ × ℝ 의 보통 위상이라는 것을 위상수학 입문의 항목으로 증명한다((2)). 출처의 ℝ² 는 ℝ × ℝ 로 옮긴다. 출처는 같은 자리에서 ℂ 가 완비라는 것과 두 꼴의 삼각부등식도 적는데, 완비성은 이 강의의 복소수열의 수렴 항목에 둔다. 출처는 10.1.5소절의 Example 10.1.16 과 10.1.17(p.99)에서 ℝ² 의 C(0, 1) 과 B(0, 1) 을 closed unit disc, unit disc 라 부른다. 별칭의 '원판'은 그 말을 옮긴 것이다."
+    note: "출처(p.140)는 ℂ 가 ℝ² 이므로 ℂ 의 거리를 ℝ² 의 표준 유클리드 거리로 둔다고 하고, 그래서 |z| = d(z, 0), |z − w| = d(z, w) 이며 ℂ 의 위상은 유클리드 거리를 준 ℝ² 의 표준 위상과 같다고 적는다. 증명은 없다. 이 항목은 거리를 d(z, w) = |z − w| 로 정한 뒤 그것이 유클리드 거리 d_E 와 같은 함수임을 계산으로 보이고((1)), 위상이 ℝ × ℝ 의 보통 위상이라는 것을 위상수학 입문의 항목으로 증명한다((2)). 출처의 ℝ² 는 ℝ × ℝ 로 옮긴다. 출처는 같은 자리에서 ℂ 가 완비라는 것과 두 꼴의 삼각부등식도 적는데, 완비성은 이 강의의 복소수열의 수렴 항목에 둔다. 출처는 10.1.5소절의 Example 10.1.16 과 10.1.17(p.99)에서 ℝ² 의 C(0, 1) 과 B(0, 1) 을 closed unit disc, unit disc 라 부른다. 별칭의 '원판'은 그 말을 옮긴 것이다. 11.3.6소절 Exercise 11.3.11(p.162)도 ℂ 의 B(0, 1) 을 unit disc 𝔻 라 부른다. 8.2.4소절 Exercises 8.2.3, 8.2.4(p.31)는 ℝⁿ 위의 max norm ∥x∥∞ 와 1-norm ∥x∥₁(taxicab distance)이 노름임을 보이게 하고, Exercise 8.2.13(p.33)은 유한차원 공간의 두 노름이 상수배로 서로를 누르고 같은 열린집합을 준다는 것을 보이게 한다. (2)의 세 거리 d_max, d, d_sum 의 부등식과 위상의 일치는 ℝ² 에서 같은 내용이다."
   - ref: lebl-basic-analysis
-    loc: "7.1절 Metric spaces, Example 7.1.6 (p.259)"
+    loc: "7.1절 Metric spaces, Example 7.1.6 (p.259); 7.1.1소절 Exercises 7.1.6 (p.262), 7.1.8 (p.262)"
     checked: original
-    note: "출처 Example 7.1.6(p.259)은 극한을 다룰 때 ℂ 를 거리공간 ℝ² 로 보고, z₁ = x₁ + iy₁, z₂ = x₂ + iy₂ 사이의 거리가 √((x₁ − x₂)² + (y₁ − y₂)²) = |z₁ − z₂| 라고 계산한다. (1)의 계산과 같은 것이다. 출처는 이어서 |z₁ − z₂|² 를 켤레로 (z₁ − z₂) 와 그 켤레의 곱으로 쓰는데, 이것은 이 강의의 복소수의 절댓값 항목 (2)의 내용이다. 예시 '1 + 2i 와 4 − 2i 사이의 거리'는 이 예의 식에 수를 넣은 것과 같은 계산이다."
+    note: "출처 Example 7.1.6(p.259)은 극한을 다룰 때 ℂ 를 거리공간 ℝ² 로 보고, z₁ = x₁ + iy₁, z₂ = x₂ + iy₂ 사이의 거리가 √((x₁ − x₂)² + (y₁ − y₂)²) = |z₁ − z₂| 라고 계산한다. (1)의 계산과 같은 것이다. 출처는 이어서 |z₁ − z₂|² 를 켤레로 (z₁ − z₂) 와 그 켤레의 곱으로 쓰는데, 이것은 이 강의의 복소수의 절댓값 항목 (2)의 내용이다. 예시 '1 + 2i 와 4 − 2i 사이의 거리'는 이 예의 식에 수를 넣은 것과 같은 계산이다. Exercise 7.1.6(p.262)은 두 거리공간의 곱에 d_X + d_Y 와 max{d_X, d_Y} 가 거리임을 보이게 하는데, ℝ × ℝ 에서 이것이 (2)의 d_sum 과 d_max 이다. Exercise 7.1.8 a)(p.262)의 pseudometric 은 거리의 조건 가운데 d(x, y) = 0 이면 x = y 라는 것만 빠진 것이고, 반례 '절댓값의 차로 정한 함수가 거리가 아닌 예'의 함수가 바로 그 조건만 어기는 같은 종류의 함수이다."
 status: reviewed
 review_note: "2026-11-25 자기 검토(docs/self-review.md)와 지휘자의 확인(d 와 d_E 가 같은 함수라는 것, 꼬리판 역수의 극한 대조). 독립 검토는 거치지 않았다."
 added: 2026-11-25

@@ -11,7 +11,7 @@ requires: [well-ordering-principle, mathematical-induction, real-number-arithmet
 proof: full
 sources:
   - ref: judson-abstract-algebra
-    loc: 2.1절 Mathematical Induction, Example 2.4 (p.18–19)
+    loc: 2.1절 Mathematical Induction, Example 2.4 (p.18–19), 계승의 정의 (p.19); 2.4절 Exercises 8 (p.24); 8.1절 Error-Detecting and Correcting Codes, Theorem 8.7 의 증명 (p.95); 22.1절 Structure of a Finite Field, Lemma 22.3 (p.278–279)
     checked: original
     note: "Judson 의 Example 2.4(p.18–19)는 실수 a, b 와 자연수 n 에 대하여 이항정리 (a + b)ⁿ = Σ_{k=0}^n \\binom{n}{k} a^k b^{n−k} 를 이항계수 \\binom{n}{k} = n!/(k!(n − k)!) 로 진술하고, 먼저 계승을 통분해 \\binom{n+1}{k} = \\binom{n}{k} + \\binom{n}{k−1} 을 보인 뒤 n 에 대한 귀납법으로 증명한다. n = 1 인 경우는 'easy to verify' 라고만 적는다. 같은 절 p.19 는 양의 정수 n 의 계승만 두 가지로 정의하고(1! = 1, n > 1 에서 n! = n(n − 1)!), Example 2.4 의 k = 0 과 k = n 인 항에는 0! 이 들어간다. 이 항목은 같은 등식을 이항계수라는 이름 없이 양변을 n! 으로 나눈 꼴 (1)로 진술하고, 복소수 z, w 와 n = 0 까지 넓힌다. 증명은 파스칼의 등식 대신 계승의 점화식 (k + 1)((k + 1)!)⁻¹ = (k!)⁻¹ 을 써서, z 를 곱한 합과 w 를 곱한 합을 k = 0 부터 n + 1 까지의 합으로 맞추고 항마다 계수 k 와 n + 1 − k 를 더한다. (2)의 둘째 등식의 계수 n!/(k!(n − k)!) 은 출처가 이항계수를 정의하는 식과 같고, (3)은 n ≥ 1 에서 출처의 진술과 같은 내용이다. 같은 2.4절 연습문제 8(p.24)의 라이프니츠 규칙 (fg)^{(n)} = Σ \\binom{n}{k} f^{(k)} g^{(n−k)} 도 같은 이항계수로 적힌 전개이고, 8.1절 Theorem 8.7 의 증명(p.95)은 같은 식 n!/(k!(n − k)!) 을 'the number of combinations of n things taken k at a time' 이라 부른다. 반례 '계승이나 가운데 항을 빼면 틀리는 예'의 끝의 두 항만 남긴 식 (z + w)ⁿ = zⁿ + wⁿ 은 22.1절 Lemma 22.3(p.278–279, 'Freshman's Dream')이 표수가 소수 p 인 정역에서 지수 p^n 에 대해 성립한다고 증명하는 식과 같은 꼴이고, 그 증명은 n = 1 인 경우에 Example 2.4 를 인용한다."
 status: reviewed

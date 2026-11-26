@@ -10,13 +10,13 @@ summary: 복소수 z 의 절댓값은 실수 |z| = √((Re z)² + (Im z)²) 이�
 requires: [real-number-arithmetic, real-order-axioms, order-properties-of-reals, absolute-value, square-root-exists, power-of-a-real-number, ring, ring-basic-properties, field, complex-number, complex-field, complex-conjugate]
 sources:
   - ref: lebl-basic-analysis-2
-    loc: 11.1.1절 The complex plane, Definition 11.1.1 (p.140); 11.1.4절 Exercise 11.1.2 (p.142)
+    loc: 11.1.1절 The complex plane, Definition 11.1.1 (p.140); 11.1.4절 Exercise 11.1.2 (p.142); 11.4.2절 Trigonometric functions and π, Proposition 11.4.2 의 증명 (p.165)
     checked: original
-    note: "출처의 Definition 11.1.1(p.140)은 z = x + iy 의 modulus 를 |z| := √(x² + y²) 로 정의한다(PDF 그림으로 확인). 바로 뒤에서 modulus 는 절댓값의 복소수판이고 비슷한 성질을 가진다며 그 예로 |zw| = |z||w| 를 들고 연습문제로 남긴다(p.140, Exercise 11.1.2 p.142). (3)의 증명이 그것이다. 같은 쪽의 |z|² = x² + y² = (x + iy)(x − iy) = z z̄ 는 (2)의 첫 등식과 같다. 출처는 modulus 가 절댓값의 'complex analogue' 라고 적는다. (5)는 실수를 ι 로 옮긴 복소수에서 두 절댓값이 같은 수임을 증명해, 같은 막대 기호가 두 정의가 되지 않게 한다."
+    note: "출처의 Definition 11.1.1(p.140)은 z = x + iy 의 modulus 를 |z| := √(x² + y²) 로 정의한다(PDF 그림으로 확인). 바로 뒤에서 modulus 는 절댓값의 복소수판이고 비슷한 성질을 가진다며 그 예로 |zw| = |z||w| 를 들고 연습문제로 남긴다(p.140, Exercise 11.1.2 p.142). (3)의 증명이 그것이다. 같은 쪽의 |z|² = x² + y² = (x + iy)(x − iy) = z z̄ 는 (2)의 첫 등식과 같다. 출처는 modulus 가 절댓값의 'complex analogue' 라고 적는다. (5)는 실수를 ι 로 옮긴 복소수에서 두 절댓값이 같은 수임을 증명해, 같은 막대 기호가 두 정의가 되지 않게 한다. Proposition 11.4.2 의 증명(p.165)은 실수 x 에서 1 = e^{ix} e^{−ix} = e^{ix} \\overline{e^{ix}} = |e^{ix}|² 로 계산해 e^{ix} 가 단위원 위에 있음을 보인다. (2)의 z z̄ = |z|² 를 쓴 계산이고, 절댓값이 1 인 수의 역원이 켤레라는 확인 질문 '$|z| = 1$인 복소수 $z$의 역원은 무엇인가?'와 같은 대상이다."
   - ref: judson-abstract-algebra
-    loc: 4.2절 Multiplicative Group of Complex Numbers (p.49), Proposition 4.20 (p.51); 4.5절 Exercises 19 (p.57); 3.2절 Example 3.16 (p.36); 18.2절 Example 18.20 (p.231)
+    loc: 4.2절 Multiplicative Group of Complex Numbers (p.49), Proposition 4.20 (p.51); 4.5절 Exercises 19 (p.57); 3.2절 Example 3.16 (p.36); 18.2절 Example 18.20 (p.231); 4.2절 Proposition 4.24 (p.52), 4.5절 Exercises 42 (p.58)
     checked: original
-    note: "Judson 은 a + bi 의 absolute value 또는 modulus 를 |z| = √(a² + b²) 로 정의하고(p.49), 4.5절 연습문제 19(p.57, PDF 그림으로 확인)에서 (a) |z| = |z̄|, (b) z z̄ = |z|², (c) z⁻¹ = z̄/|z|², (f) |zw| = |z||w| 를 증명하게 한다. 이 넷은 (2), (4), (3)의 내용이다. 역원 공식 z⁻¹ = (a − bi)/(a² + b²) 는 Example 3.16(p.36)과 p.49 에도 있다. Example 18.20(p.231)은 가우스 정수의 유클리드 값매김을 보일 때 |zw|² = |z|²|w|² 를 쓴다. 4.2절 Proposition 4.20(p.51)은 0 이 아닌 z = r cis θ, w = s cis φ 에서 zw = rs cis(θ + φ) 라 적는데, 그 rs 가 (3)과 같은 내용을 극형식으로 적은 것이다. 예시 '4 − 3i 와 −2 + i 의 절댓값'의 계산은 p.49 의 Example 4.16 이 |2 + 3i| = √13 을 적은 것과 같은 종류의 계산이다."
+    note: "Judson 은 a + bi 의 absolute value 또는 modulus 를 |z| = √(a² + b²) 로 정의하고(p.49), 4.5절 연습문제 19(p.57, PDF 그림으로 확인)에서 (a) |z| = |z̄|, (b) z z̄ = |z|², (c) z⁻¹ = z̄/|z|², (f) |zw| = |z||w| 를 증명하게 한다. 이 넷은 (2), (4), (3)의 내용이다. 역원 공식 z⁻¹ = (a − bi)/(a² + b²) 는 Example 3.16(p.36)과 p.49 에도 있다. Example 18.20(p.231)은 가우스 정수의 유클리드 값매김을 보일 때 |zw|² = |z|²|w|² 를 쓴다. 4.2절 Proposition 4.20(p.51)은 0 이 아닌 z = r cis θ, w = s cis φ 에서 zw = rs cis(θ + φ) 라 적는데, 그 rs 가 (3)과 같은 내용을 극형식으로 적은 것이다. 예시 '4 − 3i 와 −2 + i 의 절댓값'의 계산은 p.49 의 Example 4.16 이 |2 + 3i| = √13 을 적은 것과 같은 종류의 계산이다. 확인 질문 '$|z| = 1$인 복소수 $z$의 역원은 무엇인가?'의 |z| = 1 인 복소수 전체는 p.52 의 circle group 𝕋 이고, Proposition 4.24(p.52)는 𝕋 가 ℂ* 의 부분군이라 적는다(연습문제 42, p.58)."
 status: reviewed
 review_note: "2026-11-25 자기 검토(docs/self-review.md)와 지휘자의 확인(ι 의 약속과 정의가 둘이 되지 않는지, 순서가 없다는 증명 대조). 독립 검토는 거치지 않았다."
 added: 2026-11-25

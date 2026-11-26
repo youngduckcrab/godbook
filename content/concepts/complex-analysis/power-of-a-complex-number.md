@@ -10,13 +10,13 @@ summary: 복소수 z 와 0 이상인 정수 n 에 대하여 z⁰ = 1, z^(n+1) = 
 requires: [natural-numbers-are-infinite, prime-number, well-ordering-principle, mathematical-induction, recursion-theorem, division-theorem, real-number-arithmetic, real-order-axioms, order-properties-of-reals, power-of-a-real-number, group, power-in-a-group, laws-of-exponents, ring, ring-basic-properties, field, complex-number, complex-field, complex-conjugate, modulus-of-complex-number]
 sources:
   - ref: lebl-basic-analysis-2
-    loc: 11.1.1절 The complex plane (p.139); 11.3.1절 Analytic functions (p.153)
+    loc: 11.1.1절 The complex plane (p.139); 11.3.1절 Analytic functions (p.153); 11.4.1절 The complex exponential (p.164)
     checked: original
-    note: "출처는 p.139 에서 i² = (0, 1)(0, 1) = −1 과 z² + 1 = 0 을, p.153 에서 |z| < 1 일 때의 등비급수 Σ zⁿ 을 쓴다. 이 항목의 재귀 정의와 (2), (5)는 해석학 입문의 실수의 거듭제곱, 추상대수의 군의 거듭제곱과 같은 값이 되도록 이 사이트가 둔 것이다."
+    note: "출처는 p.139 에서 i² = (0, 1)(0, 1) = −1 과 z² + 1 = 0 을, p.153 에서 |z| < 1 일 때의 등비급수 Σ zⁿ 을 쓴다. 11.4.1절(p.164)은 (e^z)⁻¹ = e^{−z} 와 모든 정수 n 에서 (e^z)ⁿ = e^{nz} 를 적어 음의 지수의 거듭제곱도 쓴다. 이 항목은 거듭제곱을 재귀 정리로 정의하고, (2)와 (5)로 추상대수의 군의 거듭제곱, 해석학 입문의 실수의 거듭제곱과 같은 값임을 진술한다."
   - ref: judson-abstract-algebra
-    loc: 4.2절 Multiplicative Group of Complex Numbers, Example 4.23 (p.52); 4.5절 Exercises 3, 15, 17, 18 (p.55–57)
+    loc: 4.2절 Multiplicative Group of Complex Numbers, Example 4.23 (p.52), The Circle Group and the Roots of Unity (p.52); 4.5절 Exercises 2, 3, 15, 17, 18, 40 (p.55–58); 부록 B 4.5.18 의 답 (p.321)
     checked: original
-    note: "Judson 은 복소수의 거듭제곱을 곱셈군 ℂ* 의 원소의 거듭제곱으로 쓴다(Example 4.23 p.52 의 (1 + i)^{10}, 연습문제 18(g)(p.57)의 (−2 + 2i)^{−5} 처럼 음의 지수도 쓴다). (2)는 0 이 아닌 z 에서 두 거듭제곱이 같다는 것이다. 연습문제 15(e)(p.56)의 i^{45} 와 연습문제 3(j)(p.56)의 'i 가 생성하는 ℂ* 의 부분군'은 (6)의 i 의 거듭제곱의 표로 답하는 물음이다. 예시 'i 와 1 + i 의 거듭제곱'의 (1 + i)ⁿ 은 Example 4.23 과 연습문제 18 의 (1 − i)⁶ 과 같은 대상이고, 이 항목은 극형식 없이 (1 + i)² = 2i 에서 지수법칙으로 계산한다. 확인 질문 '$z = 1 - i$이면 $z^4$와 $(\\overline{z})^4$는 무엇인가?'의 1 − i 는 연습문제 17(a)(p.57)과 18(b)의 1 − i 와 같은 수이다."
+    note: "Judson 은 복소수의 거듭제곱을 곱셈군 ℂ* 의 원소의 거듭제곱으로 쓴다(Example 4.23 p.52 의 (1 + i)^{10}, 연습문제 18(g)(p.57)의 (−2 + 2i)^{−5} 처럼 음의 지수도 쓴다). (2)는 0 이 아닌 z 에서 두 거듭제곱이 같다는 것이다. 연습문제 15(e)(p.56)의 i^{45} 와 연습문제 3(j)(p.56)의 'i 가 생성하는 ℂ* 의 부분군'은 (6)의 i 의 거듭제곱의 표로 답하는 물음이다. 예시 'i 와 1 + i 의 거듭제곱'의 (1 + i)ⁿ 은 Example 4.23 과 연습문제 18 의 (1 − i)⁶ 과 같은 대상이고, 이 항목은 극형식 없이 (1 + i)² = 2i 에서 지수법칙으로 계산한다. 확인 질문 '$z = 1 - i$이면 $z^4$와 $(\\overline{z})^4$는 무엇인가?'의 1 − i 는 연습문제 17(a)(p.57)과 18(b)의 1 − i 와 같은 수이고, 연습문제 18(e)(p.57)의 ((1 − i)/2)⁴ 는 그 (1 − i)⁴ = −4 를 2⁴ 로 나눈 것이다(부록 p.321 의 답 −1/4). 확인 질문 '$i^n = 1$인 정수 $n$은 어떤 것인가?'는 ℂ* 에서 i 의 위수를 묻는 것과 같다. p.52 는 1, −1, i, −i 가 정확히 z⁴ = 1 의 해라고 적고, 연습문제 2(d)(p.55)는 −i ∈ ℂ* 의 위수를, 연습문제 40(p.58)은 −1 이 n제곱근이 되는 정수 n 을 묻는다."
 status: reviewed
 review_note: "2026-11-25 자기 검토(docs/self-review.md)와 지휘자의 확인(삼각부등식의 등호 조건, 예의 거듭제곱 재계산). 독립 검토는 거치지 않았다."
 added: 2026-11-25

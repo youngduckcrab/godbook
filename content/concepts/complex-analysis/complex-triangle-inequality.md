@@ -11,9 +11,9 @@ requires: [real-number-arithmetic, real-order-axioms, order-properties-of-reals,
 proof: full
 sources:
   - ref: lebl-basic-analysis-2
-    loc: 11.1.1절 The complex plane (p.140)
+    loc: 11.1.1절 The complex plane (p.140); 8.2절 Analysis with vector spaces, Theorem 8.2.2 (p.20)
     checked: original
-    note: "출처는 p.140 에서 |z| 가 ℝ² 의 유클리드 노름이므로 두 가지 삼각부등식 |z + w| ≤ |z| + |w| 와 ||z| − |w|| ≤ |z − w| 가 성립한다고 적고(PDF 그림으로 바깥 막대 확인), 증명은 유클리드 노름의 성질에 넘긴다. 이 항목은 켤레복소수와 절댓값의 진술로 (1)의 등식을 먼저 보이고 그것으로 (2)와 (4)를 증명한다. (1)의 Re(z w̄) = (Re z)(Re w) + (Im z)(Im w) 와 |Re(z w̄)| ≤ |z||w| 는 위상수학 입문의 두 항의 코시–슈바르츠 부등식과 같은 내용이다. 출처는 p.140 에서 |z − w| = d(z, w) 라 적는다. (5)는 이 거리의 삼각부등식이다."
+    note: "출처는 p.140 에서 |z| 가 ℝ² 의 유클리드 노름이므로 두 가지 삼각부등식 |z + w| ≤ |z| + |w| 와 ||z| − |w|| ≤ |z − w| 가 성립한다고 적고(PDF 그림으로 바깥 막대 확인), 증명은 유클리드 노름의 성질에 넘긴다. 이 항목은 켤레복소수와 절댓값의 진술로 (1)의 등식을 먼저 보이고 그것으로 (2)와 (4)를 증명한다. (1)의 Re(z w̄) = (Re z)(Re w) + (Im z)(Im w) 와 |Re(z w̄)| ≤ |z||w| 는 위상수학 입문의 두 항의 코시–슈바르츠 부등식과 같은 내용이다. 출처는 p.140 에서 |z − w| = d(z, w) 라 적는다. (5)는 이 거리의 삼각부등식이다. 8.2절 Theorem 8.2.2(p.20)는 ℝⁿ 의 코시–슈바르츠 부등식 |x · y| ≤ ∥x∥ ∥y∥ 를 진술하고 등호는 정확히 한 벡터가 다른 벡터의 실수배일 때라고 적는다. (1)의 |Re(z w̄)| ≤ |z||w| 는 n = 2 인 경우와 같은 내용이고, (3)과 확인 질문 '$z \\ne 0$, $w \\ne 0$이고 $|z + w| = |z| + |w|$이면 $z / w$는 어떤 수인가?'의 등호 조건은 그 실수배에 0 이상이라는 조건을 더한 것이다."
   - ref: judson-abstract-algebra
     loc: 4.5절 Exercises 19 (p.57)
     checked: original
