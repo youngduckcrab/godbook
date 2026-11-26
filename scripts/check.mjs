@@ -239,7 +239,14 @@ for (const course of courses) {
 }
 for (const course of courses) for (const u of course.units) lintBody(u.file, u.body, null);
 // 연습문제 파일에도 같은 형식 검사를 한다(링크 표시말, 조사, 미정의 기호 등).
-for (const file of walk(path.join(CONTENT, 'exercises'), '.md')) lintBody(path.relative(ROOT, file), readMd(file).body, null);
+for (const file of walk(path.join(CONTENT, 'exercises'), '.md')) {
+  // Σ 는 finite-sum-of-reals 를 배운 강의(리만 적분과 그 뒤 강의)의 연습문제에서 쓸 수 있다.
+  const unit = path.relative(path.join(CONTENT, 'exercises'), file).replace(/\.md$/, '');
+  const course = courses.find((c) => c.units.some((u) => u.id === unit));
+  const owner = courseOfItem.get('finite-sum-of-reals');
+  const sumOk = course && owner && (course.id === owner || courseClosure(course.id).has(owner));
+  lintBody(path.relative(ROOT, file), readMd(file).body, null, sumOk ? 'finite-sum-of-reals' : undefined);
+}
 
 // 출처 메모는 YAML 의 큰따옴표 문자열이라 \ne, \neq, \to, \theta 같은 LaTeX 의 역슬래시가 줄바꿈·탭 같은 이스케이프로 읽힌다.
 // 메모 안의 LaTeX 는 역슬래시를 둘(\\ne)로 쓴다. 읽힌 결과에 제어 문자가 있으면 그렇게 깨진 것이다.
