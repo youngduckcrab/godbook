@@ -17,7 +17,7 @@ sources:
   - ref: judson-abstract-algebra
     loc: "21.1절 Extension Fields, Theorem 21.25 와 Theorem 21.28 및 그 앞 문단 (p.267–268); 23.3절 Applications, Theorem 23.34 와 그 앞뒤 문단 (p.307); 18장 Historical Note (p.234); 17.6절 Additional Exercises: Solving the Cubic and Quartic Equations, 연습문제 1 (p.222)"
     checked: original
-    note: "Judson Theorem 21.28(p.268)은 '복소수체는 대수적으로 닫혀 있다' 는 꼴로 이 정리를 진술하고 증명을 23장으로 미루며, Theorem 23.34(p.307)는 갈루아 이론과 실로우 정리로 증명한다. 출처 p.307 은 그 증명이 홀수 차수의 실다항식이 실근을 갖는다는 것과 양수의 제곱근을 위해 완비성 공리를 써야 한다고 적는다. 이 항목의 증명은 출처의 증명과 완전히 다르다. '대수적으로 닫혀 있다' 의 정의(21.1절 p.267)는 형식적인 다항식환 F[x] 의 말이라 이 사이트는 그 꼴로 진술하지 않는다. 역사와 맥락의 두 문장은 출처 p.268 과 18장 Historical Note(p.234)에서 읽었다. 17.6절 연습문제 1(p.222)은 완전제곱으로 이차방정식의 근의 공식을 얻게 하고 판별식이 음수이면 'two distinct imaginary solutions' 가 있다고 적는데, 예시 '일차와 이차의 근'의 실계수 이차식 zz + 2z + 5 의 실수가 아닌 근과 같은 경우이다."
+    note: "Judson Theorem 21.28(p.268)은 '복소수체는 대수적으로 닫혀 있다' 는 꼴로 이 정리를 진술하고 증명을 23장으로 미루며, Theorem 23.34(p.307)는 갈루아 이론과 실로우 정리로 증명한다. 출처 p.307 은 그 증명이 홀수 차수의 실다항식이 실근을 갖는다는 것과 양수의 제곱근을 위해 완비성 공리를 써야 한다고 적는다. 이 항목의 증명은 출처의 증명과 완전히 다르다. '대수적으로 닫혀 있다' 의 정의(21.1절 p.267)는 형식적인 다항식환 F[x] 의 말이라 이 항목은 그 꼴로 진술하지 않는다(그 꼴은 강의 '다항식환과 체'의 polynomials-and-polynomial-functions (4)에 있다). 역사와 맥락의 두 문장은 출처 p.268 과 18장 Historical Note(p.234)에서 읽었다. 17.6절 연습문제 1(p.222)은 완전제곱으로 이차방정식의 근의 공식을 얻게 하고 판별식이 음수이면 'two distinct imaginary solutions' 가 있다고 적는데, 예시 '일차와 이차의 근'의 실계수 이차식 zz + 2z + 5 의 실수가 아닌 근과 같은 경우이다."
 status: reviewed
 review_note: "2026-11-25 자기 검토(docs/self-review.md)와 지휘자의 확인(달랑베르 증명 통독 — r 의 세 조건이 r^k|b_k| ≤ |b_0| 와 rC' < |b_k| 를 주는지 대조). 독립 검토는 거치지 않았다."
 added: 2026-11-25
