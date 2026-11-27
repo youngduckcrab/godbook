@@ -1,0 +1,9 @@
+type: book
+authors: [Matthias Beck, Gerald Marchesi, Dennis Pixton, Lucas Sabalka]
+title: A First Course in Complex Analysis
+edition: "1.6 (August 2025), PreTeXt 판. GitHub 저장소 davidaustinm/fcca 의 커밋 87f2c256688ca45d9d1dd14ee6ccd6608c5c8a70 에 있는 PreTeXt 원본"
+year: 2025
+url: https://github.com/davidaustinm/fcca
+access: open
+license: CC BY 4.0
+note: "저자들이 무료로 공개하는 교재이다. 책의 안내 주소는 https://matthbeck.github.io/complex.html 이고(원본 source/frontmatter.ptx 의 url), 이 사이트는 그 판의 PreTeXt 원본을 위 저장소의 커밋에서 받아 기준으로 삼는다. 원본 source/frontmatter.ptx 에 저자 넷, 판 '1.6 (August 2025)', 저작권 '2002–2025 Matthias Beck, Gerald Marchesi, Dennis Pixton, and Lucas Sabalka' 와 Creative Commons Attribution 4.0 International License 가 적혀 있다. 같은 파일의 머리말은 PreTeXt 판의 변환을 David Austin 과 Christina Safranski 가 도왔다고 적는다. 인쇄본은 Orthogonal Publishing 에서 나온다고 적지만 그 판과 대조하지 않았다. source/docinfo.ptx 에 남아 있는 매크로 \\versionnumber{1.54}, \\versionyear{2018} 은 앞 판의 흔적으로 보고 판 표시로 쓰지 않는다. 쪽 번호가 없고 정리 번호는 컴파일하지 않아 확정되지 않으므로, 이 사이트의 loc 는 절 제목과 원본 파일의 줄(source/<파일>.ptx:<줄>)로 적는다. 장 파일(예: functionchapter.ptx)은 절 파일(예: sec_diffholom.ptx)을 불러오기만 하고, 본문은 절 파일과 장마다의 연습문제 파일(exercises-chapN.ptx)에 있다."
