@@ -11,9 +11,9 @@ requires: [prime-number, well-ordering-principle, even-and-odd, divisibility, in
 proof: full
 sources:
   - ref: judson-abstract-algebra
-    loc: "16.1절 Rings, Example 16.9 (p.193); 18.1절 Fields of Fractions 첫머리 (p.225); 17.3절 Irreducible Polynomials, Lemma 17.13 (p.216)"
+    loc: "16.1절 Rings, Example 16.9 (p.193); 18.1절 Fields of Fractions 첫머리 (p.225); 17.3절 Irreducible Polynomials, Lemma 17.13 (p.216); 16.1절 Rings, Example 16.2 (p.191)"
     checked: original
-    note: "출처 Example 16.9(p.193)는 부분환의 사슬 'Z ⊂ Q ⊂ R ⊂ C' 를 적는다. 이 항목의 (1)은 그 가운데 ℚ 가 ℝ 의 부분체라는 것을 판정법으로 증명한다. 출처 18.1절 첫머리(p.225)는 분수 a/b 와 c/d 가 같은 것이 ad = bc 일 때라는 것을 분수체를 만드는 동기로 적는데, (2)의 (i)이 이것을 실수의 계산으로 보인다. (2)의 기약분수 꼴과 (3)의 공분모는 출처 Lemma 17.13(p.216)의 증명이 계수의 분모를 곱해 c_0 ⋯ c_n 으로 묶고 'Reducing d/(c_0 ⋯ c_n) to its lowest terms' 라고 쓰는 단계를 진술로 올린 것이다. 이 사이트의 유리수 항목은 '둘 다 짝수는 아닌 분수' 꼴을 받아들인 사실로 두는데, 이 항목은 그 사실을 쓰지 않고 최대공약수로 (2)를 증명한다. 예시 '분모를 맞추는 계산' 과 반례, 확인 질문은 (2)(3)의 정의를 구체적인 분수에 적용한 것이다."
+    note: "출처 Example 16.9(p.193)는 부분환의 사슬 'Z ⊂ Q ⊂ R ⊂ C' 를 적는다. 이 항목의 (1)은 그 가운데 ℚ 가 ℝ 의 부분체라는 것을 판정법으로 증명한다. 출처 18.1절 첫머리(p.225)는 분수 a/b 와 c/d 가 같은 것이 ad = bc 일 때라는 것을 분수체를 만드는 동기로 적는데, (2)의 (i)이 이것을 실수의 계산으로 보인다. (2)의 기약분수 꼴과 (3)의 공분모는 출처 Lemma 17.13(p.216)의 증명이 계수의 분모를 곱해 c_0 ⋯ c_n 으로 묶고 'Reducing d/(c_0 ⋯ c_n) to its lowest terms' 라고 쓰는 단계를 진술로 올린 것이다. 이 사이트의 유리수 항목은 '둘 다 짝수는 아닌 분수' 꼴을 받아들인 사실로 두는데, 이 항목은 그 사실을 쓰지 않고 최대공약수로 (2)를 증명한다. 예시 '분모를 맞추는 계산' 의 첫 문단은 출처 Lemma 17.13 의 증명(p.216)이 계수의 분모를 곱해 정수 계수로 만드는 것과 같은 계산이다. 반례 '분모의 부호를 정하지 않은 $\\frac{1}{2}$와 $\\frac{-1}{-2}$' 는 출처 18.1절 첫머리(p.225)가 '1/2 = 2/4 = 3/6' 과 'the pairs (3, 6) and (2, 4) both represent the fraction 1/2' 로 한 유리수를 여러 쌍이 나타낸다고 하는 것과 같은 발상이다. 확인 질문 '상수 다항식 $2$는 $\\mathbb{Z}[X]$의 가역원인가? $\\mathbb{Q}[X]$에서는?' 의 ℤ 쪽 답은 출처 16.1절 Example 16.2(p.191)의 'There is no integer that is the multiplicative inverse of 2' 와 같은 내용이다."
 status: reviewed
 review_note: "2026-11-27 자기 검토와 지휘자 확인(새로 쓴 가우스 보조정리 증명 통독, 아이젠슈타인의 n = 0 경계 확인). 독립 검토 없음."
 added: 2026-11-27
