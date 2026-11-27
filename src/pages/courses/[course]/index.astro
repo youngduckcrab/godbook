@@ -1,6 +1,6 @@
 ---
 import Base from '../../../layouts/Base.astro';
-import { render } from 'astro:content';
+import { render, getCollection } from 'astro:content';
 import { loadAll, url, LEVEL, COURSE_STATUS, unitSlug, unitNo, KIND } from '../../../lib/site';
 export async function getStaticPaths() {
   const { courses } = await loadAll();
@@ -11,6 +11,7 @@ const { byId, unitsOf, sequence, courses } = await loadAll();
 const units = unitsOf(course.id);
 const ids = sequence(course.id).map((x) => x.id);
 const { Content } = await render(course);
+const exCount = new Map((await getCollection('exercises')).map((e) => [e.id, (e.body.match(/^:::exercise\[/gm) ?? []).length]));
 const title = (id) => courses.find((c) => c.id === id)?.data.title ?? id;
 ---
 <Base title={course.data.title} description={course.data.summary}>
@@ -27,6 +28,7 @@ const title = (id) => courses.find((c) => c.id === id)?.data.title ?? id;
     <div class="card">
       <h3><a href={url(`/courses/${course.id}/${unitSlug(u.id)}/`)}>{unitNo(u.id)}단원. {u.data.title}</a></h3>
       <p class="small muted">{u.data.summary}</p>
+      {exCount.get(u.id) > 0 && <p class="small"><a href={url(`/courses/${course.id}/${unitSlug(u.id)}/#exercises`)}>연습문제 {exCount.get(u.id)}문제 →</a></p>}
       <ol class="seq">
         {u.data.concepts.map((id) => <li data-concept={id}><a href={url(`/c/${id}/`)}>{byId.get(id)?.data.title}</a> <span class="small muted">{KIND[byId.get(id)?.data.kind]}</span></li>)}
       </ol>

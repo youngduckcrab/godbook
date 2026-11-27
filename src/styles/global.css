@@ -94,3 +94,6 @@ a.wikilink.missing { color: var(--bad); text-decoration: underline dotted; }
 .filters { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0; }
 .filters select, .filters input { font: inherit; font-size: .92rem; padding: 5px 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
 .filters input { flex: 1 1 180px; }
+
+/* 연습문제로 바로 가는 링크가 머리글 아래에 제목을 보이게 한다 */
+#exercises { scroll-margin-top: 96px; }
