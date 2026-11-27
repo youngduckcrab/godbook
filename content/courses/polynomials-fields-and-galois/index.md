@@ -8,7 +8,6 @@ track: 대수
 requires: [language-of-math, number-theory-intro, abstract-algebra, group-actions-and-sylow, linear-algebra, analysis-intro]
 status: in-progress
 planned_units:
-  - 분해체
   - 유한체
   - 갈루아 군과 기본정리
   - 근호에 의한 풀이
