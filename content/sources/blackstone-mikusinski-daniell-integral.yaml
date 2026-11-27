@@ -1,0 +1,9 @@
+type: paper
+authors: [Elliot Blackstone, Piotr Mikusiński]
+title: "The Daniell Integral"
+edition: arXiv:1401.0310v2
+year: 2016
+url: https://arxiv.org/abs/1401.0310
+arxiv: "1401.0310"
+access: open
+note: "arXiv 에 공개된 글이다. arXiv 초록 쪽에 따르면 v1 은 2014년 1월 1일, v2 는 2016년 3월 17일에 제출되었고, 라이선스는 arXiv 의 비독점 배포 허락(arXiv.org perpetual, non-exclusive license 1.0)이며 Creative Commons 라이선스는 아니다. 이 사이트는 내용을 옮겨 싣지 않고 정의와 증명의 길을 인용하는 데만 쓴다. v2 의 PDF(19쪽)를 쓰며 쪽수는 PDF 쪽(인쇄된 쪽 번호와 같다)이다. 계단함수(이 글의 'simple function', 반열린 구간의 지시함수의 일차결합)의 급수가 절대수렴하는 꼴로 적분가능한 함수를 정의하는 미쿠신스키의 방식을 추상적인 다니엘 공간에서 전개한다. Theorem 3.9 의 증명(8쪽)이 함수마다 급수 표현을 하나씩 고르므로(가산 선택), 이 사이트는 그 뒤의 수렴 정리를 표현이 주어진 꼴로 좁혀 쓴다."

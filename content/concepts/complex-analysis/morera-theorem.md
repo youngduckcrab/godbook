@@ -11,9 +11,9 @@ requires: [complex-plane-as-metric-space, open-ball, open-ball-is-open, open-set
 proof: full
 sources:
   - ref: beck-first-course-complex-analysis
-    loc: "Antiderivatives Again 절의 Corollary morera 와 그 증명, 그 뒤 문단, source/sec_antiderivagain.ptx:16–50"
+    loc: "Antiderivatives Again 절의 Corollary morera 와 그 증명, 그 뒤 문단, source/sec_antiderivagain.ptx:16–50; Classification of Singularities 절의 예와 Proposition singbasics, source/sec_classificationsingul.ptx:61–80, 132–153; 8장 연습문제 ex_8_6, source/exercises-chap8.ptx:419–445"
     checked: original
-    note: "출처 Corollary morera(sec_antiderivagain.ptx:16–29)는 영역 G 에서 연속인 f 가 G 안의 모든 조각마다 매끄러운 닫힌 경로에서 적분이 0 이면 정칙이라고 진술하고, 증명(30–38)은 Theorem thm_FTC1 의 원시함수 F 와 Corollary infdiff 로 F′ = f 가 정칙이라고 한다. 출처는 그 뒤 문단(40–50)에서 닫힌 다각형 경로만으로 조건을 바꾸면 더 강한 판이 된다고 적는다. 이 항목의 (1)은 조건을 G 에 드는 닫힌 삼각형의 둘레로 더 줄이고, 정의역을 영역 대신 열린집합으로 둔다. 원시함수는 G 전체가 아니라 각 점의 원판에서만 만든다(별 모양 집합의 원시함수). (3)의 이름은 붙이지 않는다."
+    note: "출처 Corollary morera(sec_antiderivagain.ptx:16–29)는 영역 G 에서 연속인 f 가 G 안의 모든 조각마다 매끄러운 닫힌 경로에서 적분이 0 이면 정칙이라고 진술하고, 증명(30–38)은 Theorem thm_FTC1 의 원시함수 F 와 Corollary infdiff 로 F′ = f 가 정칙이라고 한다. 출처는 그 뒤 문단(40–50)에서 닫힌 다각형 경로만으로 조건을 바꾸면 더 강한 판이 된다고 적는다. 이 항목의 (1)은 조건을 G 에 드는 닫힌 삼각형의 둘레로 더 줄이고, 정의역을 영역 대신 열린집합으로 둔다. 원시함수는 G 전체가 아니라 각 점의 원판에서만 만든다(별 모양 집합의 원시함수). (3)의 이름은 붙이지 않는다. (3)은 출처 Proposition singbasics 의 첫째 판정(sec_classificationsingul.ptx:132–153: 고립된 특이점 z₀ 이 없앨 수 있는 것은 정확히 lim (z − z₀)f(z) = 0 일 때)을 z₀ 에서 연속인 함수에 쓴 것과 같은 결론이다. 예시 '한 점을 메운 함수'는 출처 Classification of Singularities 절의 예(61–80줄: (exp(z) − 1)/z 는 0 에서 없앨 수 있는 특이점을 갖는다)와 8장 연습문제 ex_8_6 의 둘째 물음(exercises-chap8.ptx:419–445: z ≠ 0 에서 (cos z − 1)/z², 0 에서 −1/2 로 정한 함수가 정함수임을 보이라)과 같은 발상이고, (f(z) − f(0))/z 에 0 에서 f′(0) 을 채운 함수가 정함수인지 묻는 확인 질문도 같은 물음이다."
 status: reviewed
 review_note: "2026-11-27 자기 검토와 지휘자 확인(코시 부등식의 수열 없는 귀류, 계수 유일성의 번호). 독립 검토 없음."
 added: 2026-11-27

@@ -12,11 +12,11 @@ sources:
   - ref: lebl-basic-analysis-2
     loc: "11.1절 Complex numbers, 11.1.3소절 Complex-valued functions (p.142)"
     checked: original
-    note: "정의는 출처 11.1.3소절(p.142)의 것과 같다. 출처는 f : [a, b] → ℂ 를 실함수 u, v 로 f = u + iv 라 쓰고, u 와 v 가 리만 적분가능하면 f 가 리만 적분가능하다고 하며 ∫_a^b f := ∫_a^b u + i ∫_a^b v 로 정한다. 출처는 같은 정의를 '다른 모든 종류의 적분'에도 쓴다고 적는다. 이 항목은 그 말을 riemann-integral 의 (4)의 더 큰 정의역과 oriented-integral 의 방향 있는 적분에 대해 정의로 적는다. (1)은 정의를 다시 적은 것이다. (2)–(6)은 출처에 명제로 없다(11.1–11.2절에서 'integrable', 'integral', '∫' 를 줄을 이어 찾아 나온 곳을 모두 읽었고, 11.1.4·11.2.4소절 연습문제를 처음부터 읽었다. 11.2.2소절은 고른 수렴과 적분을 다룬다). 출처의 Proposition 11.2.11 의 증명이 '실수의 결과로 돌린다'(연습문제 11.2.7, p.149)고 적는 방식이 이 항목의 증명 방식과 같다."
+    note: "정의는 출처 11.1.3소절(p.142)의 것과 같다. 출처는 f : [a, b] → ℂ 를 실함수 u, v 로 f = u + iv 라 쓰고, u 와 v 가 리만 적분가능하면 f 가 리만 적분가능하다고 하며 ∫_a^b f := ∫_a^b u + i ∫_a^b v 로 정한다. 출처는 같은 정의를 '다른 모든 종류의 적분'에도 쓴다고 적는다. 이 항목은 그 말을 riemann-integral 의 (4)의 더 큰 정의역과 oriented-integral 의 방향 있는 적분에 대해 정의로 적는다. (1)은 정의를 다시 적은 것이다. (2)–(6)은 출처에 명제로 없다(11.1–11.2절에서 'integrable', 'integral', '∫' 를 줄을 이어 찾아 나온 곳을 모두 읽었고, 11.1.4·11.2.4소절 연습문제를 처음부터 읽었다. 11.2.2소절은 고른 수렴과 적분을 다룬다). 출처가 Proposition 11.2.11 의 뒤 문단(p.149)에서 증명은 1권 6장의 결과에서 바로 나온다며 연습문제(11.2.7, p.152: '실수의 결과로 돌려 증명하라')로 남기는 방식이 이 항목의 증명 방식과 같다."
   - ref: beck-first-course-complex-analysis
     loc: "Definition and Basic Properties 절 첫머리, source/sec_intdef.ptx:6–14; 같은 절의 Example firstintexample, source/sec_intdef.ptx:72–153; Theorems from Calculus 부록의 Theorem thm_realintegralproperties, source/app_calculus.ptx:91–102"
     checked: original
-    note: "출처는 a, b ∈ ℝ 와 연속인 g : [a, b] → ℂ 에 대해서만 ∫_a^b g(t) dt := ∫_a^b Re g(t) dt + i ∫_a^b Im g(t) dt 로 정의한다(sec_intdef.ptx:6–14). 출처는 a < b 를 적지 않고 적분가능성을 따로 말하지 않는다. 이 항목은 Lebl 처럼 실수부와 허수부가 적분가능한 함수 전체에 정의하고, 연속이면 적분가능하다는 것을 (3)으로 둔다. 출처의 부록(app_calculus.ptx:91–102)은 실수 상수의 선형성만 연속함수에 대해 적는다. 예시 't + t² i 의 적분'은 출처 Example firstintexample(sec_intdef.ptx:92–110)이 포물선 위의 경로 적분을 [0, 1] 위의 t 의 다항식인 복소수값 함수의 적분으로 바꿔 실수부와 허수부로 계산하는 것과 같은 발상이고, 함수 t + t² i 는 그 예의 경로 γ(t) = t + it² 와 같은 함수이다."
+    note: "출처는 a, b ∈ ℝ 와 연속인 g : [a, b] → ℂ 에 대해서만 ∫_a^b g(t) dt := ∫_a^b Re g(t) dt + i ∫_a^b Im g(t) dt 로 정의한다(sec_intdef.ptx:6–14). 출처는 a < b 를 적지 않고 적분가능성을 따로 말하지 않는다. 이 항목은 Lebl 처럼 실수부와 허수부가 적분가능한 함수 전체에 정의하고, 연속이면 적분가능하다는 것을 (3)으로 둔다. 출처 부록의 Theorem thm_realintegralproperties(app_calculus.ptx:91–102)는 실수 상수의 선형성을 연속함수에 대해서만 적는다. 예시 't + t² i 의 적분'은 출처 Example firstintexample(sec_intdef.ptx:96–116)이 포물선 위의 경로 적분을 [0, 1] 위의 t 의 다항식인 복소수값 함수의 적분으로 바꿔 실수부와 허수부로 계산하는 것과 같은 발상이고, 함수 t + t² i 는 그 예의 경로 γ(t) = t + it² 와 같은 함수이다."
 status: reviewed
 review_note: "2026-11-27 자기 검토와 지휘자 표본 확인(예·확인 질문의 계산, 반례 제목). 독립 검토 없음."
 added: 2026-11-27

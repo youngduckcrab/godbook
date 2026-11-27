@@ -10,13 +10,13 @@ summary: 세 복소수 a, b, c 의 닫힌 삼각형 Δ(a, b, c) 를 무게가 0 
 requires: [real-number-arithmetic, real-order-axioms, order-properties-of-reals, absolute-value, open-set-in-metric-space, boundary, subspace-and-continuity, composition-of-continuous-maps, continuous-image-of-compact, complex-finite-sum, complex-number, complex-field, complex-conjugate, modulus-of-complex-number, complex-triangle-inequality, complex-plane-as-metric-space, continuity-of-complex-operations, compact-subsets-of-complex-plane, diameter, path-in-the-complex-plane, path-integral, length-of-path-and-ml-inequality, primitive-and-path-integral]
 sources:
   - ref: klazar-complex-derivatives-continuous
-    loc: "2절, 직사각형과 그 둘레의 적분의 정의 (k.txt 141–147줄, p.3), Proposition 2.1 의 2.(둘레 p(R)) (151–160줄, p.4), Proposition 2.2 의 2. 의 증명 첫머리(넷으로 나누기, 212–217줄, p.5)"
+    loc: "2절, 직사각형과 그 둘레의 적분의 정의 (k.txt 141–147줄, p.3), Proposition 2.1 의 2.(둘레 p(R)) (151–160줄, p.4), Proposition 2.1 의 3. (162줄, p.4), Proposition 2.2 의 2. 의 증명 첫머리(넷으로 나누기, 212–217줄, p.5), Proposition 2.4 의 증명 (299–312줄, p.6)"
     checked: original
-    note: "출처는 꼭짓점 a, b, c, d 를 왼쪽 아래부터 시계 반대 방향으로 늘어놓은 직사각형 R 의 둘레 ∂R 을 네 선분의 합집합으로 두고, 둘레 위의 적분을 네 선분 적분의 합으로 정의하며(141–147줄), 둘레의 길이 p(R) 를 네 변의 길이의 합으로 둔다(160줄). 구르사 논법에서는 맞변의 중점을 잇는 두 선분으로 R 을 넷으로 나누고 그 적분의 합이 R 의 적분이며 각 조각의 둘레가 절반이라는 것을 쓴다(212–217줄). 이 항목은 직사각형 대신 삼각형을 쓰고(지휘자 결정), 둘레를 점의 집합이 아닌 세 선분 경로의 닫힌 경로열 ∂Δ(a, b, c) 로, 둘레의 길이를 그 경로열의 길이 ℓ(∂Δ(a, b, c)) 로 정의한다. (5)의 넷으로 나누기는 세 변의 중점으로 나누는 삼각형판이고, 적분의 등식은 출처처럼 안쪽 선분의 적분이 서로 지워진다는 것으로 보인다. 퇴화한 삼각형(세 점이 한 직선 위)을 정의에서 빼지 않는다. (6)–(9)는 예외점이 있는 판에 쓰는 분해로, 출처는 직사각형을 아홉으로 나누는 다른 길을 쓴다(Proposition 2.4 의 증명, 291–312줄, p.6)."
+    note: "출처는 꼭짓점 a, b, c, d 를 왼쪽 아래부터 시계 반대 방향으로 늘어놓은 직사각형 R 의 둘레 ∂R 을 네 선분의 합집합으로 두고, 둘레 위의 적분을 네 선분 적분의 합으로 정의하며(141–147줄), 둘레의 길이 p(R) 를 네 변의 길이의 합으로 둔다(160줄). 구르사 논법에서는 맞변의 중점을 잇는 두 선분으로 R 을 넷으로 나누고 그 적분의 합이 R 의 적분이며 각 조각의 둘레가 절반이라는 것을 쓴다(212–217줄). 이 항목은 직사각형 대신 삼각형을 쓰고(지휘자 결정), 둘레를 점의 집합이 아닌 세 선분 경로의 닫힌 경로열 ∂Δ(a, b, c) 로, 둘레의 길이를 그 경로열의 길이 ℓ(∂Δ(a, b, c)) 로 정의한다. (5)의 넷으로 나누기는 세 변의 중점으로 나누는 삼각형판이고, 적분의 등식은 출처처럼 안쪽 선분의 적분이 서로 지워진다는 것으로 보인다. 퇴화한 삼각형(세 점이 한 직선 위)을 정의에서 빼지 않는다. (6)–(9)는 예외점이 있는 판에 쓰는 분해로, 출처는 직사각형을 아홉으로 나누어 Proposition 2.4 의 적분값이 직사각형의 선택에 상관없음을 보이고(Proposition 2.4 의 증명, 299–310줄, p.6), 그 2. 는 직사각형을 a 로 줄여 얻는다(312줄). 반례 '꼭짓점의 순서를 거꾸로 적어 부호가 바뀌는 예'가 쓰는 것, 곧 선분을 거꾸로 지나면 적분의 부호가 바뀐다는 것은 출처 Proposition 2.1 의 3. 의 앞 등식(162줄, p.4)과 같은 내용이다."
   - ref: beck-first-course-complex-analysis
-    loc: "연습문제의 볼록 영역의 정의, source/exercises-chap4.ptx:876–890"
+    loc: "연습문제의 볼록 영역의 정의, source/exercises-chap4.ptx:876–890; firstintexample 의 세 경로에서 z̄ 를 적분하는 연습문제와 연습문제 ex_varint, source/exercises-chap4.ptx:106–113, 183–235"
     checked: original
-    note: "출처는 영역 G 가 '볼록하다'는 것을 G 의 두 점을 잇는 선분이 G 에 든다는 것으로 정의한다(883–886줄). 이 항목의 (2)의 마지막 문장은 삼각형이 이 뜻으로 볼록하다는 것과 같다."
+    note: "출처는 영역 G 가 '볼록하다'는 것을 G 의 두 점을 잇는 선분이 G 에 든다는 것으로 정의한다(883–886줄). 이 항목의 (2)의 마지막 문장은 삼각형이 이 뜻으로 볼록하다는 것과 같다. 반례 '꼭짓점의 순서를 거꾸로 적어 부호가 바뀌는 예'의 함수 z̄ 는 출처 연습문제 exercises-chap4.ptx:106–113(firstintexample 의 세 경로에서 z̄ 를 적분하라)과 ex_varint(183–235: 선분과 원에서 x, y, z, z̄ 를 적분하라)의 z̄ 와 같은 함수이다."
 status: reviewed
 review_note: "2026-11-27 자기 검토와 지휘자 확인(구르사 증명의 재귀와 어림 통독, 둘레 적분 예 재계산). 독립 검토 없음."
 added: 2026-11-27
@@ -34,7 +34,7 @@ $$
 &\qquad s + t \le 1\,\}
 \end{aligned}
 $$
-를 $a$, $b$, $c$의 **닫힌 삼각형**(closed triangle)이라 하고, $a$, $b$, $c$를 그 **꼭짓점**이라 한다. 세 점이 한 직선 위에 있거나 두 점이 같아도 된다. 그런 경우를 **퇴화한** 삼각형이라 부른다(아래 (8), (9)). 글자 $\Delta$는 이 강의에서 이 집합에 쓴다.
+를 $a$, $b$, $c$의 **닫힌 삼각형**(closed triangle)이라 하고, $a$, $b$, $c$를 그 **꼭짓점**이라 한다. 세 점이 한 직선 위에 있거나 두 점이 같아도 된다. 그런 경우를 **퇴화한** 삼각형이라 부른다(아래 (8), (9)). 이 항목과 뒤 항목에서 괄호 안에 꼭짓점 셋을 적은 $\Delta(a, b, c)$ 꼴은 이 집합을 뜻한다.
 
 **둘레 경로열.** 세 선분 경로의 경로열 $(\sigma_{a,b}, \sigma_{b,c}, \sigma_{c,a})$를 $\partial\Delta(a, b, c)$로 쓰고 $\Delta(a, b, c)$의 **둘레 경로열**이라 한다. 각 선분의 끝점이 다음 선분의 시작점이고 시작점과 끝점이 $a$이므로 이것은 닫힌 경로열이다. 기호 $\partial$는 위상공간의 경계([[boundary]])와 같은 글자이지만 여기서는 순서가 붙은 세 꼭짓점으로 정한 경로열의 이름이다. 둘레 경로열은 집합 $\Delta(a, b, c)$만으로 정해지지 않고 꼭짓점을 적은 순서로 정해진다. $f$가 세 선분의 상 위에서 연속이면 $\int_{\partial\Delta(a, b, c)} f$는 경로열의 경로 적분, 곧 세 선분 경로를 따른 적분의 합이다. **둘레의 길이** $\ell(\partial\Delta(a, b, c))$는 경로열의 길이이고, 경로의 길이와 적분의 어림의 (1)에 의해
 $$
@@ -110,7 +110,7 @@ $$
 &\qquad s + t \le 1\,\}
 \end{aligned}
 $$
-is called the **closed triangle** of $a$, $b$, $c$, and $a$, $b$, $c$ are its **vertices**. The three points may lie on a line and two of them may coincide; such a triangle is called **degenerate** (see (8) and (9) below). In this course the letter $\Delta$ is used for this set.
+is called the **closed triangle** of $a$, $b$, $c$, and $a$, $b$, $c$ are its **vertices**. The three points may lie on a line and two of them may coincide; such a triangle is called **degenerate** (see (8) and (9) below). In this entry and later entries, the notation $\Delta(a, b, c)$, with three vertices in parentheses, denotes this set.
 
 **Boundary chain.** The chain $(\sigma_{a,b}, \sigma_{b,c}, \sigma_{c,a})$ of three line segment paths is written $\partial\Delta(a, b, c)$ and called the **boundary chain** of $\Delta(a, b, c)$. The terminal point of each segment is the initial point of the next, and the initial and terminal points are $a$, so this is a closed chain. The symbol $\partial$ is the same letter as the boundary of a set in a topological space, but here it is the name of a chain determined by three vertices given in order. The boundary chain is not determined by the set $\Delta(a, b, c)$ alone but by the order in which the vertices are written. If $f$ is continuous on the images of the three segments, then $\int_{\partial\Delta(a, b, c)} f$ is the path integral along the chain, that is, the sum of the integrals along the three segment paths. The **length of the boundary** $\ell(\partial\Delta(a, b, c))$ is the length of the chain, and by (1) of the entry on lengths of paths and estimates of integrals,
 $$
