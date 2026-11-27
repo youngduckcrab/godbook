@@ -5,10 +5,9 @@ summary: 환의 유한 합과 곱, 다항식환과 기약 다항식, 체 위의 
 level: undergrad
 order: 5
 track: 대수
-requires: [language-of-math, number-theory-intro, abstract-algebra, group-actions-and-sylow, linear-algebra]
+requires: [language-of-math, number-theory-intro, abstract-algebra, group-actions-and-sylow, linear-algebra, analysis-intro]
 status: in-progress
 planned_units:
-  - 체의 확대와 대수적 원소
   - 분해체
   - 유한체
   - 갈루아 군과 기본정리
@@ -21,4 +20,4 @@ planned_units:
 
 이 강의는 증명 없이 받아들이는 사실을 새로 두지 않고, 선택 공리를 쓰지 않습니다. 다항식은 계수의 열로 정의하며, 다항식에 수를 넣어 얻는 함수와 같은 것으로 보지 않습니다. 부정원은 대문자 $X$로 씁니다. 한 체를 다른 체 안에 넣을 때 두 체를 같은 것으로 보지 않고, 단사인 환 준동형으로 옮겨 진술합니다.
 
-내용은 Thomas W. Judson 의 *Abstract Algebra: Theory and Applications* 2022 판(출처 항목 `judson-abstract-algebra`)의 16–18장과 20–23장, 13장의 일부를 바탕으로 합니다. 출처가 정의 없이 쓰는 기초(유한 합과 유한 곱, 이항계수)는 이 강의에서 정의하고, 출처의 증명에 빈틈이 있는 곳은 고쳐 쓴 증명을 싣고 각 항목의 출처 메모에 적습니다. 다른 강의의 항목을 빌리는 곳은 각 항목의 선행 목록에 밝히며, 해석학 입문의 [[recursion-theorem|재귀 정리]]는 유한 곱과 이항계수를 재귀로 정할 때 씁니다.
+내용은 Thomas W. Judson 의 *Abstract Algebra: Theory and Applications* 2022 판(출처 항목 `judson-abstract-algebra`)의 16–18장과 20–23장, 13장의 일부를 바탕으로 합니다. 출처가 정의 없이 쓰는 기초(유한 합과 유한 곱, 이항계수)는 이 강의에서 정의하고, 출처의 증명에 빈틈이 있는 곳은 고쳐 쓴 증명을 싣고 각 항목의 출처 메모에 적습니다. 다른 강의의 항목을 빌리는 곳은 각 항목의 선행 목록에 밝히며, 해석학 입문의 항목으로는 [[recursion-theorem|재귀 정리]]를 유한 곱과 이항계수를 재귀로 정할 때 쓰고, 실수의 순서, 거듭제곱, 제곱근, 사잇값 정리를 실수의 부분체의 예([[field-extension-examples|체의 확대의 예]])에서 씁니다.
