@@ -196,6 +196,10 @@ function lintBody(file, body, requires, self) {
     if (sym === '\\sum' && sumDefined) continue;
     if (text.includes(sym)) warn(file, sym === '\\sum' ? '유한 합의 기호 \\sum 을 쓰는데 finite-sum-of-reals 가 선행(requires)에 없다' : `정의하지 않은 기호 ${sym} 를 쓴다. 문장으로 풀어 쓴다`);
   }
+  for (const h of ['## 예시와 반례', '## 확인 질문', '## 직관', '## 증명']) {
+    const n = text.split('\n').filter((l) => l.trim() === h).length;
+    if (n > 1) warn(file, `절 제목 "${h}" 가 ${n}번 나온다`);
+  }
   if (text.includes('\\tag')) warn(file, '\\tag 를 쓴다. 꼬리표가 식 바로 뒤에 붙어 곱처럼 읽힌다. 식에 문장으로 이름을 붙인다');
   if (/(위|아래|앞|뒤|끝)의?\s*remark|remark\s*(에서|참조|에 의해)/.test(text)) warn(file, '본문에서 "remark" 라는 낱말로 블록을 가리킨다. 블록의 제목으로 가리킨다');
   if (requires) {
