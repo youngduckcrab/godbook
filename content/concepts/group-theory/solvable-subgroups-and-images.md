@@ -11,7 +11,7 @@ requires: [set, subset, function, set-operations, injective-surjective-bijective
 proof: full
 sources:
   - ref: judson-abstract-algebra
-    loc: "13.4 Exercises, 연습문제 12, 14, 15 (p.166); 부록 B 의 13.4.12 힌트 (p.327)"
+    loc: "13.4 Exercises, 연습문제 12, 14, 15 (p.166); 부록 B 의 13.4.12 힌트 (p.327); 13.4 Exercises, 연습문제 9 (p.166); 13.2절, Example 13.11 (p.162); 10.1절, Example 10.5 (p.126); 23.3절, S₃ 의 예 (p.304)"
     checked: original
     note: "(1)은 출처 연습문제 13.4.14('가해군의 부분군은 가해군'), (4)는 연습문제 13.4.15('가해군 G 와 정규부분군 N 에 대하여 G/N 은 가해군'), (5)는 연습문제 13.4.12('N 과 G/N 이 가해군이면 G 도 가해군')이고, 출처는 셋 모두 증명을 연습문제로 둔다. 13.4.12 의 힌트(p.327)는 N 과 G/N 의 가해열 N = Nₙ ⊃ ⋯ ⊃ N₀ = {e}, G/N = Gₙ/N ⊃ ⋯ ⊃ G₀/N = {N} 을 적는데, 이것은 G/N 의 부분군을 N 을 포함하는 부분군 Gᵢ 의 몫으로 쓴 꼴이다. 이 항목의 (5)는 그 대신 G/N 의 부분군 S 에서 Hₛ = {g ∈ G : gN ∈ S} 를 만들어(subgroups-of-a-quotient-group (2)) 두 열을 이어 붙인다. (2)(3)의 준동형상은 출처 13.4절 연습문제에 따로 없고, 같은 절의 연습문제 9(p.166, 가해군 둘의 직곱)는 이 항목이 다루지 않는 직곱에 관한 것이다. 예시 '정수의 덧셈군의 가해열을 3ℤ로 자르기'는 출처 Example 13.11(p.162)의 정수의 배수로 만든 열과 같은 대상이다. 예시 '아벨군 둘로 쌓은 $S_3$'의 몫군 S₃/A₃ 은 출처 Example 10.5(p.126)의 대상이고, 그 열은 출처 23.3절(p.304)의 {id} ⊂ A₃ ⊂ S₃ 과 같다."
 status: reviewed
