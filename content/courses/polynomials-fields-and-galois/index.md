@@ -8,7 +8,6 @@ track: 대수
 requires: [language-of-math, number-theory-intro, abstract-algebra, group-actions-and-sylow, linear-algebra, analysis-intro, linear-algebra-2, riemann-integral, series-and-power-series, complex-numbers]
 status: in-progress
 planned_units:
-  - 유한체
   - 근호에 의한 풀이
 ---
 
