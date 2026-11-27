@@ -9,7 +9,6 @@ requires: [language-of-math, number-theory-intro, abstract-algebra, group-action
 status: in-progress
 planned_units:
   - 체 위의 다항식의 기약성
-  - 체 위의 벡터공간
   - 체의 확대와 대수적 원소
   - 분해체
   - 유한체
