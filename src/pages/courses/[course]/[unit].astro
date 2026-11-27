@@ -16,6 +16,7 @@ const prev = siblings[i - 1], next = siblings[i + 1];
 const { Content } = await render(unit);
 const ex = await getEntry('exercises', unit.id);
 const Exercises = ex ? (await render(ex)).Content : null;
+const nEx = ex ? (ex.body.match(/^:::exercise\[/gm) ?? []).length : 0;
 const link = (u) => url(`/courses/${courseId}/${unitSlug(u.id)}/`);
 ---
 <Base title={`${unit.data.title} · ${course.data.title}`} description={unit.data.summary}>
@@ -23,6 +24,7 @@ const link = (u) => url(`/courses/${courseId}/${unitSlug(u.id)}/`);
   <h1>{unitNo(unit.id)}단원. {unit.data.title}</h1>
   <p class="lead">{unit.data.summary}</p>
   <div class="progress" data-progress={unit.data.concepts.join(',')}><i></i></div><span class="small muted" data-progress-label></span>
+  {nEx > 0 && <p class="small"><a href="#exercises">이 단원의 연습문제 {nEx}문제로 바로 가기 ↓</a></p>}
   <div class="prose"><Content /></div>
 
   <h2>이 단원에서 읽을 항목</h2>
@@ -34,7 +36,7 @@ const link = (u) => url(`/courses/${courseId}/${unitSlug(u.id)}/`);
     ))}
   </ol>
 
-  <h2>연습문제</h2>
+  <h2 id="exercises">연습문제</h2>
   {Exercises ? (
     <>
       <p class="small muted">작성: {ex.data.written_by} · {ex.data.status === 'reviewed' ? '풀이 재검토 완료' : '풀이 재검토 전'}</p>

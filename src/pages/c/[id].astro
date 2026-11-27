@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { render } from 'astro:content';
+import { getCollection } from 'astro:content';
 import { loadAll, url, KIND, LEVEL, STATUS, CHECKED, FIELDS, prerequisiteOrder, unitSlug, unitNo } from '../../lib/site';
 export async function getStaticPaths() {
   const { concepts } = await loadAll();
@@ -22,6 +23,9 @@ const places = courses.flatMap((course) => {
   return [{ course, unit: seq[i].unit, i, n: seq.length, prev: byId.get(seq[i - 1]?.id), next: byId.get(seq[i + 1]?.id) }];
 });
 const main = places[0];
+// 단원의 마지막 항목이면 그 단원의 연습문제로 가는 길을 보여 준다.
+const exIds = new Map((await getCollection('exercises')).map((e) => [e.id, (e.body.match(/^:::exercise\[/gm) ?? []).length]));
+const lastInUnit = main && main.unit.data.concepts[main.unit.data.concepts.length - 1] === concept.id && exIds.get(main.unit.id) > 0;
 const fmt = (x) => x.toISOString().slice(0, 10);
 const cite = (s) => `${s.authors.join(', ')}, ${s.title}${s.edition ? ` (${s.edition})` : ''}, ${s.publisher ?? s.journal ?? ''} ${s.year}`.replace(' ,', ',').replace(/,\s+(\d{4})$/, ', $1');
 ---
@@ -56,6 +60,12 @@ const cite = (s) => `${s.authors.join(', ')}, ${s.title}${s.edition ? ` (${s.edi
   <article class="prose"><Content /></article>
 
   <p data-pagefind-ignore><button class="read" data-id={concept.id} aria-pressed="false">읽음으로 표시</button></p>
+
+  {lastInUnit && (
+    <div class="card small" data-pagefind-ignore>
+      <b>{unitNo(main.unit.id)}단원을 다 읽었습니다.</b> <a href={url(`/courses/${main.course.id}/${unitSlug(main.unit.id)}/#exercises`)}>이 단원의 연습문제 {exIds.get(main.unit.id)}문제 풀어 보기 →</a>
+    </div>
+  )}
 
   {main && (
     <div class="pager" data-pagefind-ignore>
