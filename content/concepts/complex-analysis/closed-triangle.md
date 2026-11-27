@@ -34,7 +34,7 @@ $$
 &\qquad s + t \le 1\,\}
 \end{aligned}
 $$
-를 $a$, $b$, $c$의 **닫힌 삼각형**(closed triangle)이라 하고, $a$, $b$, $c$를 그 **꼭짓점**이라 한다. 세 점이 한 직선 위에 있거나 두 점이 같아도 된다. 그런 경우를 **퇴화한** 삼각형이라 부른다(아래 (8), (9)). 글자 $\Delta$는 이 강의에서 이 집합에 쓴다.
+를 $a$, $b$, $c$의 **닫힌 삼각형**(closed triangle)이라 하고, $a$, $b$, $c$를 그 **꼭짓점**이라 한다. 세 점이 한 직선 위에 있거나 두 점이 같아도 된다. 그런 경우를 **퇴화한** 삼각형이라 부른다(아래 (8), (9)). 이 항목과 뒤 항목에서 괄호 안에 꼭짓점 셋을 적은 $\Delta(a, b, c)$ 꼴은 이 집합을 뜻한다.
 
 **둘레 경로열.** 세 선분 경로의 경로열 $(\sigma_{a,b}, \sigma_{b,c}, \sigma_{c,a})$를 $\partial\Delta(a, b, c)$로 쓰고 $\Delta(a, b, c)$의 **둘레 경로열**이라 한다. 각 선분의 끝점이 다음 선분의 시작점이고 시작점과 끝점이 $a$이므로 이것은 닫힌 경로열이다. 기호 $\partial$는 위상공간의 경계([[boundary]])와 같은 글자이지만 여기서는 순서가 붙은 세 꼭짓점으로 정한 경로열의 이름이다. 둘레 경로열은 집합 $\Delta(a, b, c)$만으로 정해지지 않고 꼭짓점을 적은 순서로 정해진다. $f$가 세 선분의 상 위에서 연속이면 $\int_{\partial\Delta(a, b, c)} f$는 경로열의 경로 적분, 곧 세 선분 경로를 따른 적분의 합이다. **둘레의 길이** $\ell(\partial\Delta(a, b, c))$는 경로열의 길이이고, 경로의 길이와 적분의 어림의 (1)에 의해
 $$
@@ -110,7 +110,7 @@ $$
 &\qquad s + t \le 1\,\}
 \end{aligned}
 $$
-is called the **closed triangle** of $a$, $b$, $c$, and $a$, $b$, $c$ are its **vertices**. The three points may lie on a line and two of them may coincide; such a triangle is called **degenerate** (see (8) and (9) below). In this course the letter $\Delta$ is used for this set.
+is called the **closed triangle** of $a$, $b$, $c$, and $a$, $b$, $c$ are its **vertices**. The three points may lie on a line and two of them may coincide; such a triangle is called **degenerate** (see (8) and (9) below). In this entry and later entries, the notation $\Delta(a, b, c)$, with three vertices in parentheses, denotes this set.
 
 **Boundary chain.** The chain $(\sigma_{a,b}, \sigma_{b,c}, \sigma_{c,a})$ of three line segment paths is written $\partial\Delta(a, b, c)$ and called the **boundary chain** of $\Delta(a, b, c)$. The terminal point of each segment is the initial point of the next, and the initial and terminal points are $a$, so this is a closed chain. The symbol $\partial$ is the same letter as the boundary of a set in a topological space, but here it is the name of a chain determined by three vertices given in order. The boundary chain is not determined by the set $\Delta(a, b, c)$ alone but by the order in which the vertices are written. If $f$ is continuous on the images of the three segments, then $\int_{\partial\Delta(a, b, c)} f$ is the path integral along the chain, that is, the sum of the integrals along the three segment paths. The **length of the boundary** $\ell(\partial\Delta(a, b, c))$ is the length of the chain, and by (1) of the entry on lengths of paths and estimates of integrals,
 $$
