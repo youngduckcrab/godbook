@@ -6,7 +6,7 @@ kind: definition
 field: field-theory
 msc: ["12F05"]
 level: undergrad
-summary: 확대체 E 의 원소 α 가 F 위의 영이 아닌 다항식의 근일 때 F 위에서 대수적이라 한다. 그때 α 를 근으로 갖는 F 위의 다항식 전체는 하나의 모닉 다항식 m 이 만드는 주 아이디얼이고, 이 m 을 최소다항식이라 한다. m 은 기약이고, α 를 근으로 갖는 다항식은 정확히 m 의 배수이며, α 를 근으로 갖는 모닉 기약 다항식은 m 뿐이다. 서로 다른 두 모닉 기약 다항식은 공통 근을 갖지 않는다.
+summary: 확대체 E 의 원소 α 가 F 위의 영이 아닌 다항식의 근일 때 F 위에서 대수적이라 한다. 그때 α 를 근으로 갖는 F 위의 다항식 전체는 하나의 모닉 다항식 m 이 만드는 주 아이디얼이고, 이 m 을 최소다항식이라 한다. m 은 기약이고, α 를 근으로 갖는 다항식은 정확히 m 의 배수이며, α 를 근으로 갖는 모닉 기약 다항식은 m 뿐이다. 서로 다른 두 모닉 기약 다항식은 공통 근을 갖지 않는다. 단사인 환 준동형 τ 로 옮기면 τ(α) 의 τ(F) 위의 최소다항식은 m 의 계수를 τ 로 옮긴 것이다.
 requires: [integers-modulo-n, ring, ring-homomorphism, ideal, integral-domain, field, finite-integral-domain-is-a-field, finite-products-in-a-commutative-ring, polynomial-ring, degree-of-a-polynomial, evaluation-homomorphism, division-algorithm-for-polynomials, divisibility-in-integral-domains, principal-ideal-domain, irreducible-polynomial, irreducible-polynomial-and-maximal-ideal, subfield, extension-field, kronecker-theorem]
 sources:
   - ref: judson-abstract-algebra
@@ -39,6 +39,7 @@ added: 2026-11-27
 7. (사이의 체) $K$가 $E$의 부분체이고 $F \subseteq K$라 하자([[extension-field|확대체]]의 (1)의 (ii)에 의해 $F$는 $K$의 부분체이다). $\alpha \in E$가 $F$ 위에서 대수적이고 $m$이 그 $F$ 위의 최소다항식이면, $\alpha$는 $K$ 위에서도 대수적이고, $\alpha$의 $K$ 위의 최소다항식 $m_K$는 $K[X]$에서 $m$을 나누며 $\deg m_K \le \deg m$이다.
 8. (공통 근) $h$와 $g$가 $F$ 위의 모닉 기약 다항식이고 $h \ne g$이면, $h(c) = 0$이고 $g(c) = 0$인 $c \in E$는 없다.
 9. (크로네커의 체) $K$가 체이고 $h \in K[X]$가 기약이며, $L$, $\iota$, $\alpha$가 [[kronecker-theorem|크로네커 정리]]의 설정의 것이라 하자. $c$가 $h$의 최고차계수이고 $u = c^{-1}h$라 하면, $u^{\iota}$는 $\iota(K)[X]$의 원소이고, $\alpha$는 $\iota(K)$ 위에서 대수적이며 그 최소다항식은 $u^{\iota}$이다. 특히 $\alpha$의 $\iota(K)$ 위의 차수는 $\deg h$이고, $h$가 모닉이면 최소다항식은 $h^{\iota}$이다.
+10. (단사인 준동형으로 옮기기) $E'$이 체이고 $\tau : E \to E'$이 단사인 환 준동형이라 하자. [[extension-field|확대체]]의 (5)의 (i)에 의해 $\tau(F)$는 $E'$의 부분체이다. $\alpha \in E$가 $F$ 위에서 대수적이고 $m$이 그 $F$ 위의 최소다항식이면, $m$을 $E[X]$의 원소로 보고 계수를 $\tau$로 옮긴 $m^{\tau} \in E'[X]$는 $\tau(F)[X]$의 원소이고, $\tau(\alpha)$는 $\tau(F)$ 위에서 대수적이며 그 최소다항식은 $m^{\tau}$이다. 특히 $\tau(\alpha)$의 $\tau(F)$ 위의 차수는 $\alpha$의 $F$ 위의 차수와 같다.
 :::
 
 :::english
@@ -62,6 +63,7 @@ Fields are as in units and fields; subfields and extension fields are as in the 
 7. (Fields in between) Let $K$ be a subfield of $E$ with $F \subseteq K$ (by item (1)(ii) of extension fields, $F$ is a subfield of $K$). If $\alpha \in E$ is algebraic over $F$ with minimal polynomial $m$ over $F$, then $\alpha$ is also algebraic over $K$, and the minimal polynomial $m_K$ of $\alpha$ over $K$ divides $m$ in $K[X]$, with $\deg m_K \le \deg m$.
 8. (Common roots) If $h$ and $g$ are monic irreducible polynomials over $F$ with $h \ne g$, then there is no $c \in E$ with $h(c) = 0$ and $g(c) = 0$.
 9. (Kronecker's field) Let $K$ be a field, $h \in K[X]$ irreducible, and $L$, $\iota$, $\alpha$ as in the setting of Kronecker's theorem. If $c$ is the leading coefficient of $h$ and $u = c^{-1}h$, then $u^{\iota}$ is an element of $\iota(K)[X]$, $\alpha$ is algebraic over $\iota(K)$, and its minimal polynomial is $u^{\iota}$. In particular the degree of $\alpha$ over $\iota(K)$ is $\deg h$, and if $h$ is monic, the minimal polynomial is $h^{\iota}$.
+10. (Transport by an injective homomorphism) Let $E'$ be a field and $\tau : E \to E'$ an injective ring homomorphism. By item (5)(i) of extension fields, $\tau(F)$ is a subfield of $E'$. If $\alpha \in E$ is algebraic over $F$ with minimal polynomial $m$ over $F$, then the polynomial $m^{\tau} \in E'[X]$, obtained by regarding $m$ as an element of $E[X]$ and transporting its coefficients by $\tau$, is an element of $\tau(F)[X]$; $\tau(\alpha)$ is algebraic over $\tau(F)$, and its minimal polynomial is $m^{\tau}$. In particular the degree of $\tau(\alpha)$ over $\tau(F)$ equals the degree of $\alpha$ over $F$.
 :::
 
 ## 직관
@@ -110,6 +112,8 @@ Fields are as in units and fields; subfields and extension fields are as in the 
 **8.** $h(c) = 0$이고 $g(c) = 0$인 $c \in E$가 있다고 하자. (5)에 의해 $h$와 $g$는 둘 다 $c$의 $F$ 위의 최소다항식이고, (3)에 의해 최소다항식은 하나뿐이므로 $h = g$가 되어 가정과 어긋난다.
 
 **9.** 크로네커 정리의 (1)의 (ii)에 의해 $\iota$는 $\iota(1) = 1$인 단사인 환 준동형이고 $\iota(K)$는 $L$의 부분체이다. [[extension-field|확대체]]의 (3)의 (iii)에 의해 $\iota$를 함수 $\sigma : K \to \iota(K)$로 선언한 것은 환 동형사상이다. 기약의 (3)의 (iii)에 의해 $u = c^{-1}h$는 $K$ 위의 모닉 기약 다항식이고, 기약의 (7)에 의해 $u^{\sigma} \in \iota(K)[X]$는 $\iota(K)$ 위의 모닉 기약 다항식이다. 모든 $n$에서 $\operatorname{coef}_n(u^{\sigma}) = \sigma(\operatorname{coef}_n(u)) = \iota(\operatorname{coef}_n(u)) = \operatorname{coef}_n(u^{\iota})$이므로, 다항식환의 (7)의 (i)에 의해 $L[X]$의 원소로 본 $u^{\sigma}$는 $u^{\iota}$와 같다. 따라서 $u^{\iota}$는 $\iota(K)[X]$의 원소이고 $\iota(K)$ 위의 모닉 기약 다항식이다. $u = c^{-1}h = h\,c^{-1}$이므로 $K[X]$에서 $h \mid u$이다. 크로네커 정리의 (1)의 (iv)에 의해 $u^{\iota}(\alpha) = 0$이고, (5)를 체 $L$, 부분체 $\iota(K)$, 다항식 $u^{\iota}$에 쓰면 $\alpha$는 $\iota(K)$ 위에서 대수적이고 최소다항식은 $u^{\iota}$이다. [[evaluation-homomorphism|대입 준동형]]의 (3)의 (i)에 의해 $\deg u^{\iota} = \deg u$이고, 차수의 (5)에 의해 $\deg u = \deg h$이다. $h$가 모닉이면 $c = 1$이고 $u = h$이다.
+
+**10.** [[extension-field|확대체]]의 (3)의 (ii)에 의해 $\tau(1) = 1$이므로 계수 사상 $m^{\tau}$가 정해진다. 모든 $n$에서 $\operatorname{coef}_n(m^{\tau}) = \tau(\operatorname{coef}_n(m))$이고 $\operatorname{coef}_n(m) \in F$이므로 계수는 모두 $\tau(F)$에 속하고, 다항식환의 (7)의 (i)에 의해 $m^{\tau} \in \tau(F)[X]$이다. $\tau$를 $F$로 제한한 함수는 환 준동형이고([[ring-homomorphism|환 준동형]]의 (3)의 (ii)) 단사이므로, 확대체의 (3)의 (iii)에 의해 그 공역을 $\tau(F)$로 선언한 함수 $\sigma : F \to \tau(F)$는 환 동형사상이다. 모든 $n$에서 $\operatorname{coef}_n(m^{\sigma}) = \sigma(\operatorname{coef}_n(m)) = \operatorname{coef}_n(m^{\tau})$이므로 다항식환의 (7)의 (i)에 의해 $E'[X]$의 원소로 본 $m^{\sigma}$는 $m^{\tau}$와 같다. (3)의 (i)에 의해 $m$은 $F$ 위의 모닉 기약 다항식이고, 기약의 (7)의 (i), (iii)에 의해 $m^{\sigma} = m^{\tau}$는 $\tau(F)$ 위의 모닉 기약 다항식이다. [[evaluation-homomorphism|대입 준동형]]의 (5)를 $E[X]$의 원소 $m$과 $\tau$에 쓰면 $m^{\tau}(\tau(\alpha)) = \tau(m(\alpha)) = \tau(0) = 0$이다. (5)를 체 $E'$, 부분체 $\tau(F)$, 다항식 $m^{\tau}$에 쓰면 $\tau(\alpha)$는 $\tau(F)$ 위에서 대수적이고 최소다항식은 $m^{\tau}$이다. 대입 준동형의 (3)의 (i)에 의해 $\deg m^{\tau} = \deg m$이다.
 :::
 
 ## 예시와 반례
