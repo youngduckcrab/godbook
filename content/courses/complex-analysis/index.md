@@ -9,7 +9,6 @@ requires: [language-of-math, number-theory-intro, analysis-intro, topology-intro
 status: in-progress
 planned_units:
   - 멱급수와 복소 지수함수의 미분
-  - 복소수값 함수의 적분과 경로 적분
   - 원시함수와 구르사 정리
   - 코시 적분 공식과 멱급수 전개
   - 코시 공식의 따름 정리
