@@ -191,7 +191,7 @@ function lintBody(file, body, requires, self) {
     if (n % 2 === 1) warn(file, `본문 ${i + 1}번째 줄의 $ 가 홀수 개다(${n}개). 수식을 여닫는 $ 가 빠졌는지 본다`);
   });
   // 유한 합의 기호는 finite-sum-of-reals 가 정의한다. 그 항목이 선행에 있을 때와 리만 적분·급수와 멱급수 강의의 단원 글에서만 쓴다.
-  const sumDefined = self === 'finite-sum-of-reals' || (self && closure(self).has('finite-sum-of-reals')) || file.includes('courses/riemann-integral/') || file.includes('courses/series-and-power-series/');
+  const sumDefined = ['finite-sum-of-reals', 'finite-sums-in-a-ring'].some((s) => self === s || (self && closure(self).has(s))) || file.includes('courses/riemann-integral/') || file.includes('courses/series-and-power-series/');
   for (const sym of UNDEFINED_SYMBOLS) {
     if (sym === '\\sum' && sumDefined) continue;
     if (text.includes(sym)) warn(file, sym === '\\sum' ? '유한 합의 기호 \\sum 을 쓰는데 finite-sum-of-reals 가 선행(requires)에 없다' : `정의하지 않은 기호 ${sym} 를 쓴다. 문장으로 풀어 쓴다`);
@@ -243,8 +243,10 @@ for (const file of walk(path.join(CONTENT, 'exercises'), '.md')) {
   // Σ 는 finite-sum-of-reals 를 배운 강의(리만 적분과 그 뒤 강의)의 연습문제에서 쓸 수 있다.
   const unit = path.relative(path.join(CONTENT, 'exercises'), file).replace(/\.md$/, '');
   const course = courses.find((c) => c.units.some((u) => u.id === unit));
-  const owner = courseOfItem.get('finite-sum-of-reals');
-  const sumOk = course && owner && (course.id === owner || courseClosure(course.id).has(owner));
+  const sumOk = course && ['finite-sum-of-reals', 'finite-sums-in-a-ring'].some((s) => {
+    const owner = courseOfItem.get(s);
+    return owner && (course.id === owner || courseClosure(course.id).has(owner));
+  });
   lintBody(path.relative(ROOT, file), readMd(file).body, null, sumOk ? 'finite-sum-of-reals' : undefined);
 }
 
