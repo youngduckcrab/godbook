@@ -6,9 +6,8 @@ level: undergrad
 order: 5
 track: 대수
 requires: [language-of-math, number-theory-intro, abstract-algebra, group-actions-and-sylow, linear-algebra, analysis-intro, linear-algebra-2, riemann-integral, series-and-power-series, complex-numbers]
-status: in-progress
-planned_units:
-  - 근호에 의한 풀이
+status: complete
+planned_units: []
 ---
 
 추상대수 강의는 환과 체를 정의하고 아이디얼과 몫환까지 다뤘습니다. 이 강의는 그 위에서 계수가 환의 원소인 다항식을 다루고, 다항식의 근을 담는 더 큰 체를 만드는 방법과, 그런 체의 자기동형들이 이루는 군으로 다항식의 근을 연구하는 갈루아 이론을 다룹니다. 끝에서는 근호로 풀리는 방정식의 갈루아 군이 가해군이라는 것을 복소수의 부분체에서 다룹니다.

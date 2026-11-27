@@ -40,6 +40,7 @@ added: 2026-11-27
 4. (켤레) $F$가 $\mathbb{C}$의 부분체이고 $F$의 원소가 모두 실수인 복소수라 하자((1)의 (ii)에 의해 $\iota(\mathbb{Q})$와 $\iota(\mathbb{R})$가 그런 부분체이다). $f$, $d$, $R$이 (3)의 것이라 하자.
    - (i) 켤레를 취하는 함수는 $F$의 모든 원소를 고정한다. 따라서 (3)의 (vi)에 의해 $z \in R$이면 $\overline{z} \in R$이고, $z \in F(R)$이면 $\overline{z} \in F(R)$이다. $z \in F(R)$에서의 값이 $\overline{z}$인 함수 $F(R) \to F(R)$은 $F$의 모든 원소를 고정하는 환 동형사상이고, $R$을 $R$ 위로 전단사로 보낸다. 이 함수를 **$F(R)$로 제한한 켤레**라 한다.
    - (ii) $z \in R$에 대하여 $\overline{z} = z$인 것은 정확히 $z$가 실수인 복소수일 때이다. $F(R)$로 제한한 켤레가 항등함수인 것은 정확히 $R$의 원소가 모두 실수인 복소수일 때이다.
+   - (iii) (실수가 아닌 근) $z \in R$이 실수인 복소수가 아니면, $\overline{z}$는 $R$의 원소이고 실수인 복소수가 아니며 $\overline{z} \ne z$이고, $F(R)$로 제한한 켤레는 $z$를 $\overline{z}$로, $\overline{z}$를 $z$로 보낸다. 따라서 $R$의 원소 가운데 실수인 복소수가 아닌 것이 정확히 두 개 $z$, $w$이면 $w = \overline{z}$이고, $F(R)$로 제한한 켤레는 $R$의 실수인 원소를 모두 고정하고 $z$와 $w$를 맞바꾼다.
 :::
 
 :::english
@@ -63,6 +64,7 @@ Fields, units and inverses are as in "Units and Fields", and $0$, $1$, $-a$, $a 
 4. (Conjugation) Let $F$ be a subfield of $\mathbb{C}$ all of whose elements are real complex numbers (by (1)(ii), $\iota(\mathbb{Q})$ and $\iota(\mathbb{R})$ are such subfields), and let $f$, $d$, $R$ be as in (3).
    - (i) The conjugation function fixes every element of $F$. Hence, by (3)(vi), $\overline{z} \in R$ if $z \in R$, and $\overline{z} \in F(R)$ if $z \in F(R)$. The function $F(R) \to F(R)$ whose value at $z \in F(R)$ is $\overline{z}$ is a ring isomorphism fixing all elements of $F$, and it maps $R$ bijectively onto $R$. We call this function **the conjugation restricted to $F(R)$**.
    - (ii) For $z \in R$, $\overline{z} = z$ exactly when $z$ is a real complex number. The conjugation restricted to $F(R)$ is the identity function exactly when all elements of $R$ are real complex numbers.
+   - (iii) (Non-real roots) If $z \in R$ is not a real complex number, then $\overline{z}$ is an element of $R$ that is not a real complex number, $\overline{z} \ne z$, and the conjugation restricted to $F(R)$ sends $z$ to $\overline{z}$ and $\overline{z}$ to $z$. Hence, if exactly two elements $z$, $w$ of $R$ are not real complex numbers, then $w = \overline{z}$, and the conjugation restricted to $F(R)$ fixes every real element of $R$ and interchanges $z$ and $w$.
 :::
 
 ## 직관
@@ -137,6 +139,8 @@ $M$이 $F(R) \subseteq M$인 $\mathbb{C}$의 부분체라 하자. 쓰는 사실�
 **(4)의 (i).** [[complex-conjugate|켤레복소수]]의 (6)에 의해 켤레를 취하는 함수 $\mathbb{C} \to \mathbb{C}$는 환 동형사상이고 실수인 복소수를 그대로 둔다. $F$의 원소는 실수인 복소수이므로 이 함수는 $F$의 모든 원소를 고정한다. (3)의 (vi)을 $M = \mathbb{C}$와 이 함수에 쓰면 나머지 주장이 나온다.
 
 **(4)의 (ii).** 첫 문장은 켤레복소수의 (4)이다. $R$의 원소가 모두 실수인 복소수라 하자. $S = \{z \in F(R) : \overline{z} = z\}$로 두면, 켤레복소수의 (2)와 (4)에 의해 $1 \in S$이고, $z, w \in S$이면 $\overline{z - w} = z - w$, $\overline{zw} = zw$이며, $z \ne 0$이면 $\overline{z^{-1}} = z^{-1}$이다. $F(R)$은 부분체이므로 이 원소들은 $F(R)$에 속하고, 부분체의 (1)에 의해 $S$는 $\mathbb{C}$의 부분체이다. $F$의 원소와 $R$의 원소는 실수인 복소수이므로 $F \subseteq S$, $R \subseteq S$이고, (3)의 (ii)에 의해 $F(R) \subseteq S$이다. 따라서 $F(R)$로 제한한 켤레는 항등함수이다. 거꾸로 그 제한이 항등함수이면 $R$의 모든 원소 $z$에서 $\overline{z} = z$이고, 첫 문장에 의해 $z$는 실수인 복소수이다.
+
+**(4)의 (iii).** $z \in R$이 실수인 복소수가 아니라 하자. (i)에 의해 $\overline{z} \in R$이고, (ii)의 첫 문장에 의해 $\overline{z} \ne z$이다. [[complex-conjugate|켤레복소수]]의 (1)에 의해 $\overline{\overline{z}} = z$이므로, $\overline{z}$가 실수인 복소수라면 켤레복소수의 (4)에 의해 $z = \overline{\overline{z}} = \overline{z}$가 되어 어긋난다. 따라서 $\overline{z}$는 실수인 복소수가 아니다. 제한한 켤레의 값은 켤레이므로 $z$를 $\overline{z}$로, $\overline{z}$를 $\overline{\overline{z}} = z$로 보낸다. 실수가 아닌 원소가 정확히 $z$, $w$이면, $\overline{z}$는 $R$의 실수가 아닌 원소이고 $z$와 다르므로 $\overline{z} = w$이다. $R$의 실수인 원소는 (ii)의 첫 문장에 의해 고정되고, $z$와 $w = \overline{z}$는 방금 본 대로 맞바뀐다.
 :::
 
 ## 예시와 반례
