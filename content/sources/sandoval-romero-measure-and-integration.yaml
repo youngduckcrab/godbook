@@ -1,0 +1,10 @@
+type: lecture-notes
+authors: [María de los Ángeles Sandoval-Romero, Hugo Guadalupe Reyna-Castañeda, Luis Antonio Cedeño-Pérez]
+title: "Introduction to Measure and Integration Theory"
+edition: "arXiv:2606.05215v1 (First Preliminary Version: February–May 2026)"
+year: 2026
+url: https://arxiv.org/abs/2606.05215
+arxiv: "2606.05215"
+access: open
+license: CC BY-NC-ND 4.0
+note: "UNAM 이학부(Facultad de Ciencias) 강의에서 나온 강의록이다. PDF(259쪽) 1쪽의 저자 순서는 Sandoval-Romero, Reyna-Castañeda, Cedeño-Pérez 이고 arXiv 초록 쪽의 저자 순서는 Reyna-Castañeda 가 먼저이다. 이 항목은 PDF 의 순서를 따른다. 라이선스는 arXiv 초록 쪽에 적힌 CC BY-NC-ND 4.0 이며 PDF 안에는 라이선스 문구가 없다. 2026년 5월 28일에 제출된 v1 을 쓴다. 쪽수는 PDF 쪽이고 인쇄된 쪽 번호와 같다(1장이 PDF 9쪽, 인쇄 9쪽). 측도공간을 공리로 두고 σ-대수, 가측함수, 측도, 적분과 수렴 정리, L^p 를 다룬다. ℝ 위의 르베그 측도는 Example 4.11(95쪽)에서 '있고 하나뿐이다'라고 적을 뿐 구성하지 않는다. 이 사이트는 내용을 옮겨 싣지 않고 진술과 증명의 길을 인용하는 데만 쓴다."
