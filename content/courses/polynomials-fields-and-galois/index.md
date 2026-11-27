@@ -9,7 +9,6 @@ requires: [language-of-math, number-theory-intro, abstract-algebra, group-action
 status: in-progress
 planned_units:
   - 유한체
-  - 갈루아 군과 기본정리
   - 근호에 의한 풀이
 ---
 
