@@ -6,9 +6,8 @@ level: undergrad
 order: 8
 track: 해석
 requires: [language-of-math, number-theory-intro, analysis-intro, topology-intro, riemann-integral, metric-spaces-and-completeness, series-and-power-series, abstract-algebra, linear-algebra-2, complex-numbers]
-status: in-progress
-planned_units:
-  - 코시 공식의 따름 정리
+status: complete
+planned_units: []
 ---
 
 복소수 강의는 복소수와 복소평면, 복소 멱급수와 복소 지수함수를 다뤘지만 복소수값 함수의 미분은 다루지 않았습니다. 이 강의는 정의역이 복소평면의 열린집합인 함수를 복소수로 미분하는 것에서 출발합니다. 복소 미분가능이라는 조건은 실함수의 미분가능과 같은 꼴의 식으로 정의되지만 모든 방향에서 다가오는 점을 함께 요구하므로, 그런 함수는 실함수에서는 볼 수 없는 강한 성질을 갖습니다. 그 성질들, 곧 원 위의 적분으로 함숫값을 나타내는 코시 적분 공식과 정칙함수가 멱급수로 전개된다는 것을 증명하는 것이 이 강의의 목표입니다.
