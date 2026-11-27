@@ -8,7 +8,6 @@ track: 대수
 requires: [language-of-math, number-theory-intro, abstract-algebra, group-actions-and-sylow, linear-algebra]
 status: in-progress
 planned_units:
-  - 체의 확대와 대수적 원소
   - 분해체
   - 유한체
   - 갈루아 군과 기본정리
