@@ -10,13 +10,13 @@ summary: 세 복소수 a, b, c 의 닫힌 삼각형 Δ(a, b, c) 를 무게가 0 
 requires: [real-number-arithmetic, real-order-axioms, order-properties-of-reals, absolute-value, open-set-in-metric-space, boundary, subspace-and-continuity, composition-of-continuous-maps, continuous-image-of-compact, complex-finite-sum, complex-number, complex-field, complex-conjugate, modulus-of-complex-number, complex-triangle-inequality, complex-plane-as-metric-space, continuity-of-complex-operations, compact-subsets-of-complex-plane, diameter, path-in-the-complex-plane, path-integral, length-of-path-and-ml-inequality, primitive-and-path-integral]
 sources:
   - ref: klazar-complex-derivatives-continuous
-    loc: "2절, 직사각형과 그 둘레의 적분의 정의 (k.txt 141–147줄, p.3), Proposition 2.1 의 2.(둘레 p(R)) (151–160줄, p.4), Proposition 2.2 의 2. 의 증명 첫머리(넷으로 나누기, 212–217줄, p.5)"
+    loc: "2절, 직사각형과 그 둘레의 적분의 정의 (k.txt 141–147줄, p.3), Proposition 2.1 의 2.(둘레 p(R)) (151–160줄, p.4), Proposition 2.1 의 3. (162줄, p.4), Proposition 2.2 의 2. 의 증명 첫머리(넷으로 나누기, 212–217줄, p.5), Proposition 2.4 의 증명 (299–312줄, p.6)"
     checked: original
-    note: "출처는 꼭짓점 a, b, c, d 를 왼쪽 아래부터 시계 반대 방향으로 늘어놓은 직사각형 R 의 둘레 ∂R 을 네 선분의 합집합으로 두고, 둘레 위의 적분을 네 선분 적분의 합으로 정의하며(141–147줄), 둘레의 길이 p(R) 를 네 변의 길이의 합으로 둔다(160줄). 구르사 논법에서는 맞변의 중점을 잇는 두 선분으로 R 을 넷으로 나누고 그 적분의 합이 R 의 적분이며 각 조각의 둘레가 절반이라는 것을 쓴다(212–217줄). 이 항목은 직사각형 대신 삼각형을 쓰고(지휘자 결정), 둘레를 점의 집합이 아닌 세 선분 경로의 닫힌 경로열 ∂Δ(a, b, c) 로, 둘레의 길이를 그 경로열의 길이 ℓ(∂Δ(a, b, c)) 로 정의한다. (5)의 넷으로 나누기는 세 변의 중점으로 나누는 삼각형판이고, 적분의 등식은 출처처럼 안쪽 선분의 적분이 서로 지워진다는 것으로 보인다. 퇴화한 삼각형(세 점이 한 직선 위)을 정의에서 빼지 않는다. (6)–(9)는 예외점이 있는 판에 쓰는 분해로, 출처는 직사각형을 아홉으로 나누는 다른 길을 쓴다(Proposition 2.4 의 증명, 291–312줄, p.6)."
+    note: "출처는 꼭짓점 a, b, c, d 를 왼쪽 아래부터 시계 반대 방향으로 늘어놓은 직사각형 R 의 둘레 ∂R 을 네 선분의 합집합으로 두고, 둘레 위의 적분을 네 선분 적분의 합으로 정의하며(141–147줄), 둘레의 길이 p(R) 를 네 변의 길이의 합으로 둔다(160줄). 구르사 논법에서는 맞변의 중점을 잇는 두 선분으로 R 을 넷으로 나누고 그 적분의 합이 R 의 적분이며 각 조각의 둘레가 절반이라는 것을 쓴다(212–217줄). 이 항목은 직사각형 대신 삼각형을 쓰고(지휘자 결정), 둘레를 점의 집합이 아닌 세 선분 경로의 닫힌 경로열 ∂Δ(a, b, c) 로, 둘레의 길이를 그 경로열의 길이 ℓ(∂Δ(a, b, c)) 로 정의한다. (5)의 넷으로 나누기는 세 변의 중점으로 나누는 삼각형판이고, 적분의 등식은 출처처럼 안쪽 선분의 적분이 서로 지워진다는 것으로 보인다. 퇴화한 삼각형(세 점이 한 직선 위)을 정의에서 빼지 않는다. (6)–(9)는 예외점이 있는 판에 쓰는 분해로, 출처는 직사각형을 아홉으로 나누어 Proposition 2.4 의 적분값이 직사각형의 선택에 상관없음을 보이고(Proposition 2.4 의 증명, 299–310줄, p.6), 그 2. 는 직사각형을 a 로 줄여 얻는다(312줄). 반례 '꼭짓점의 순서를 거꾸로 적어 부호가 바뀌는 예'가 쓰는 것, 곧 선분을 거꾸로 지나면 적분의 부호가 바뀐다는 것은 출처 Proposition 2.1 의 3. 의 앞 등식(162줄, p.4)과 같은 내용이다."
   - ref: beck-first-course-complex-analysis
-    loc: "연습문제의 볼록 영역의 정의, source/exercises-chap4.ptx:876–890"
+    loc: "연습문제의 볼록 영역의 정의, source/exercises-chap4.ptx:876–890; firstintexample 의 세 경로에서 z̄ 를 적분하는 연습문제와 연습문제 ex_varint, source/exercises-chap4.ptx:106–113, 183–235"
     checked: original
-    note: "출처는 영역 G 가 '볼록하다'는 것을 G 의 두 점을 잇는 선분이 G 에 든다는 것으로 정의한다(883–886줄). 이 항목의 (2)의 마지막 문장은 삼각형이 이 뜻으로 볼록하다는 것과 같다."
+    note: "출처는 영역 G 가 '볼록하다'는 것을 G 의 두 점을 잇는 선분이 G 에 든다는 것으로 정의한다(883–886줄). 이 항목의 (2)의 마지막 문장은 삼각형이 이 뜻으로 볼록하다는 것과 같다. 반례 '꼭짓점의 순서를 거꾸로 적어 부호가 바뀌는 예'의 함수 z̄ 는 출처 연습문제 exercises-chap4.ptx:106–113(firstintexample 의 세 경로에서 z̄ 를 적분하라)과 ex_varint(183–235: 선분과 원에서 x, y, z, z̄ 를 적분하라)의 z̄ 와 같은 함수이다."
 status: reviewed
 review_note: "2026-11-27 자기 검토와 지휘자 확인(구르사 증명의 재귀와 어림 통독, 둘레 적분 예 재계산). 독립 검토 없음."
 added: 2026-11-27
