@@ -9,7 +9,7 @@ export const LEVELS = ['intro', 'undergrad', 'grad', 'research'] as const;
 export const STATUSES = ['reviewed', 'source-checked', 'unverified'] as const;
 
 const concepts = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './content/concepts', generateId: ({ entry }) => base(entry) }),
+  loader: glob({ pattern: '**/*.md', base: './content/concepts', generateId: ({ entry }) => base(entry), deferRender: true }),
   schema: z.object({
     title: z.string(),
     title_en: z.string(),
@@ -56,7 +56,7 @@ const sources = defineCollection({
 });
 
 const courses = defineCollection({
-  loader: glob({ pattern: '*/index.md', base: './content/courses', generateId: ({ entry }) => entry.split('/')[0] }),
+  loader: glob({ pattern: '*/index.md', base: './content/courses', generateId: ({ entry }) => entry.split('/')[0], deferRender: true }),
   schema: z.object({
     title: z.string(),
     title_en: z.string(),
@@ -71,7 +71,7 @@ const courses = defineCollection({
 });
 
 const units = defineCollection({
-  loader: glob({ pattern: '*/!(index).md', base: './content/courses', generateId: ({ entry }) => entry.replace(/\.md$/, '') }),
+  loader: glob({ pattern: '*/!(index).md', base: './content/courses', generateId: ({ entry }) => entry.replace(/\.md$/, ''), deferRender: true }),
   schema: z.object({
     title: z.string(),
     summary: z.string(),
@@ -80,7 +80,7 @@ const units = defineCollection({
 });
 
 const exercises = defineCollection({
-  loader: glob({ pattern: '*/*.md', base: './content/exercises', generateId: ({ entry }) => entry.replace(/\.md$/, '') }),
+  loader: glob({ pattern: '*/*.md', base: './content/exercises', generateId: ({ entry }) => entry.replace(/\.md$/, ''), deferRender: true }),
   schema: z.object({
     written_by: z.string(),
     status: z.enum(['reviewed', 'unreviewed']),
