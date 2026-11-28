@@ -11,9 +11,9 @@ requires: [real-number-arithmetic, order-properties-of-reals, absolute-value, se
 proof: full
 sources:
   - ref: lebl-basic-analysis
-    loc: "6.2.2 소절, Theorem 6.2.4 앞의 각주 (p.236), Example 6.2.6 (p.238)"
+    loc: "6.2.1 소절, Example 6.2.1 (p.234); 6.2.2 소절, Example 6.2.3, Theorem 6.2.4 앞의 각주 (p.236), Example 6.2.6 (p.238)"
     checked: original
-    note: "출처는 Theorem 6.2.4(고르게 수렴하면 적분과 극한의 순서를 바꿀 수 있다) 앞의 각주(p.236)에서, 그 정리는 f 가 적분가능하고 모든 n 에서 ‖f_n‖ ≤ M 인 M 이 있으면 점별 수렴만으로도 성립하지만 그 증명에는 르베그 적분이 필요하다고 적고, 증명하지 않는다. 이 항목의 (1)이 그 진술이다. 이 사이트는 이 정리를 아르첼라의 이름으로 부르는데, 이 이름은 이 강의의 출처들에서 찾은 곳이 없다(검색어 'Arzel', 'bounded convergence', 'uniformly bounded' 로 Lebl 두 권, Blackstone–Mikusiński, Sandoval-Romero 외, Kanovei–Katz 를 찾았다. Lebl II 의 'Arzel' 17건은 모두 아르첼라–아스콜리 정리와 그 차례·색인이고, 'uniformly bounded' 18건은 함수열이나 함수의 고른 유계를 말하는 곳(대부분 11.6절)으로 적분의 극한에 관한 진술이 아니며, Sandoval-Romero 외의 'bounded convergence' 1건은 유한 측도공간의 Corollary 6.15 이다). 확인 질문 '분모가 n! 을 나누는 유리수에서 1 인 함수열의 극한의 적분은?'은 출처 Example 6.2.6(p.238, 기약분수의 분모가 n 이하인 점에서 1 인 함수열이 디리클레 함수로 점별 수렴한다)과 같은 발상이다."
+    note: "출처는 Theorem 6.2.4(고르게 수렴하면 적분과 극한의 순서를 바꿀 수 있다) 앞의 각주(p.236)에서, 그 정리는 f 가 적분가능하고 모든 n 에서 ‖f_n‖ ≤ M 인 M 이 있으면 점별 수렴만으로도 성립하지만 그 증명에는 르베그 적분이 필요하다고 적고, 증명하지 않는다. 이 항목의 (1)이 그 진술이다. 이 사이트는 이 정리를 아르첼라의 이름으로 부르는데, 이 이름은 이 강의의 출처들에서 찾은 곳이 없다(검색어 'Arzel', 'bounded convergence', 'uniformly bounded' 로 Lebl 두 권, Blackstone–Mikusiński, Sandoval-Romero 외, Kanovei–Katz 를 찾았다. Lebl II 의 'Arzel' 17건은 모두 아르첼라–아스콜리 정리와 그 차례·색인이고, 'uniformly bounded' 18건은 함수열이나 함수의 고른 유계를 말하는 곳(대부분 11.6절)으로 적분의 극한에 관한 진술이 아니며, Sandoval-Romero 외의 'bounded convergence' 1건은 유한 측도공간의 Corollary 6.15 이다). 확인 질문 '분모가 n! 을 나누는 유리수에서 1 인 함수열의 극한의 적분은?'은 출처 Example 6.2.6(p.238, 기약분수의 분모가 n 이하인 점에서 1 인 함수열이 디리클레 함수로 점별 수렴한다)과 같은 발상이다. 예시 '왼쪽 끝으로 좁아지는 지시함수'의 점별 극한(0 에서 1, 나머지에서 0)은 출처 Example 6.2.1(p.234, x < 1/n 에서 1 − nx 인 연속함수열)의 점별 극한과 같은 함수이고, 반례 '상수로 눌리지 않는 리만 적분가능 함수열의 예'는 출처 Example 6.2.3(p.236, 점마다 0 으로 가지만 적분이 모두 1/2 이고 값이 n 까지 커지는 함수열)과 같은 결론을 보이는 예이다."
   - ref: sandoval-romero-measure-and-integration
     loc: "6.2절, Corollary 6.15 (p.176)"
     checked: original
