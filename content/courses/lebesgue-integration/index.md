@@ -8,7 +8,6 @@ track: 해석
 requires: [language-of-math, analysis-intro, topology-intro, riemann-integral, series-and-power-series]
 status: in-progress
 planned_units:
-  - μ-적분가능한 함수와 지배 수렴 정리
   - L¹ 반노름과 리스–피셔 정리
 ---
 
