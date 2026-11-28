@@ -5,7 +5,7 @@ summary: 케일리–해밀턴 정리와 조르당 표준형. 선형사상과 �
 level: undergrad
 order: 6
 track: 대수
-requires: [language-of-math, number-theory-intro, analysis-intro, linear-algebra, linear-algebra-2, linear-algebra-3, polynomials-fields-and-galois]
+requires: [language-of-math, number-theory-intro, abstract-algebra, analysis-intro, linear-algebra, linear-algebra-2, linear-algebra-3, polynomials-fields-and-galois]
 status: in-progress
 planned_units:
   - 케일리–해밀턴 정리
