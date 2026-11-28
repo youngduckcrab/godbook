@@ -11,9 +11,9 @@ requires: [mathematical-induction, power-set, sigma-algebra, measurable-function
 proof: full
 sources:
   - ref: sandoval-romero-measure-and-integration
-    loc: 5.3절 Convergence theorems, Corollary 5.18 (p.138), Theorem 5.20 의 증명 (p.139); 6.1절 The integral of measurable functions (p.163); 5.5절 Exercise 5.10, 5.11 (p.156)
+    loc: 5.3절 Convergence theorems, Corollary 5.18 (p.138), Theorem 5.20 의 증명 (p.139); 6장 Lebesgue Integrable Functions 첫머리 (6.1절 앞, p.163); 5.5절 Exercise 5.10, 5.11 (p.156)
     checked: original
-    note: "(1)과 (2)는 출처 Corollary 5.18 의 (b)(c)(p.138)이다. 출처의 (a)(실수배)는 이 사이트에서 0 이상인 가측함수의 적분 항목의 (4)이다. 출처의 증명은 Lemma 3.18 의 단조증가하는 단순함수열 s_k, t_k 에 χ_A 를 곱한 열에 Proposition 5.2 와 Theorem 5.17 을 쓴다. 이 항목도 같은 길이고, 출처가 'there exist nondecreasing sequences' 라고 쓴 열을 식으로 정한 표준 근사열 s_k^f, s_k^g 로 잡았으며, A 위의 꼴은 f + g 에 대한 결과를 fχ_A, gχ_A 에 써서 얻었다. 출처의 (b)의 증명의 마지막 등식의 오른쪽은 ∫_A f dµ + ∫_B g dµ 로 인쇄되어 있다. 진술의 오른쪽과 같은 ∫_A g dµ 로 읽어야 등식이 진술과 맞는다. 출처의 (c)는 χ_{A∪B} = χ_A + χ_B 로 (b)에 돌리고 이 항목의 (2)도 같다. (3)의 유한 합의 등식 ∫ Σ_{k=1}^{j} f_k dµ = Σ_{k=1}^{j} ∫ f_k dµ 는 출처 Theorem 5.20(p.139)의 증명이 근거를 적지 않고 쓰는 등식이다. 출처는 MCT 없이 덧셈을 증명하는 길을 Exercise 5.10, 5.11(p.156)로 둔다. 반례 '적분만으로 차의 적분을 정할 수 없는 예'는 출처 6.1절(p.163)이 ∫ f⁺ 와 ∫ f⁻ 가 모두 +∞ 이면 (+∞) − (+∞) 꼴이 되어 정해지지 않는다고 적는 것과 같은 까닭이다."
+    note: "(1)과 (2)는 출처 Corollary 5.18 의 (b)(c)(p.138)이다. 출처의 (a)(실수배)는 이 사이트에서 0 이상인 가측함수의 적분 항목의 (4)이다. 출처의 증명은 Lemma 3.18 의 단조증가하는 단순함수열 s_k, t_k 에 χ_A 를 곱한 열에 Proposition 5.2 와 Theorem 5.17 을 쓴다. 이 항목도 같은 길이고, 출처가 'there exist nondecreasing sequences' 라고 쓴 열을 식으로 정한 표준 근사열 s_k^f, s_k^g 로 잡았으며, A 위의 꼴은 f + g 에 대한 결과를 fχ_A, gχ_A 에 써서 얻었다. 출처의 (b)의 증명의 마지막 등식의 오른쪽은 ∫_A f dµ + ∫_B g dµ 로 인쇄되어 있다. 진술의 오른쪽과 같은 ∫_A g dµ 로 읽어야 등식이 진술과 맞는다. 출처의 (c)는 χ_{A∪B} = χ_A + χ_B 로 (b)에 돌리고 이 항목의 (2)도 같다. (3)의 유한 합의 등식 ∫ Σ_{k=1}^{j} f_k dµ = Σ_{k=1}^{j} ∫ f_k dµ 는 출처 Theorem 5.20(p.139)의 증명이 근거를 적지 않고 쓰는 등식이다. 출처는 MCT 없이 덧셈을 증명하는 길을 Exercise 5.10, 5.11(p.156)로 둔다. 반례 '적분만으로 차의 적분을 정할 수 없는 예'는 출처 6장 첫머리(6.1절 앞, p.163)가 ∫ f⁺ 와 ∫ f⁻ 가 모두 +∞ 이면 (+∞) − (+∞) 꼴이 되어 정해지지 않는다고 적는 것과 같은 까닭이다."
 status: reviewed
 review_note: "2026-11-28 자기 검토와 지휘자 확인(출처 증명의 연습문제 번호와 Cor 5.18 마지막 줄을 원문 대조, 디랙 측도의 f(p) = ∞ 경우). 독립 검토 없음."
 added: 2026-11-28

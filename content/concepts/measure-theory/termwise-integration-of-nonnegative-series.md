@@ -11,9 +11,9 @@ requires: [indicator-function, extended-nonnegative-reals, series-in-extended-no
 proof: full
 sources:
   - ref: sandoval-romero-measure-and-integration
-    loc: 5.3절 Convergence theorems, Theorem 5.20 (p.139), Theorem 5.22 와 Example 5.23 (p.140); 5.5절 Exercise 5.15 (p.157)
+    loc: 5.3절 Convergence theorems, Theorem 5.17 앞 문단의 각주 (p.135), Theorem 5.20 (p.139), Theorem 5.22 와 Example 5.23 (p.140); 5.5절 Exercise 5.15 (p.157); 5.1절 Theorem 5.8 의 증명 (p.127)
     checked: original
-    note: "(1)은 출처 Theorem 5.20(Beppo Levi, p.139)이다. 출처의 증명도 부분합 g_j 에 단조 수렴 정리를 쓰고, 유한 합의 적분을 근거를 적지 않고 각 적분의 합으로 바꾸며, A 위의 꼴은 f_k·χ_A 에 같은 논법을 쓴다. 이 항목은 유한 합에 0 이상인 함수의 적분의 덧셈 (3)을 인용했다. 출처는 정리 뒤 문단(p.139)에서 이 정리를 셈측도에 써서 이중급수를 다룬다(Corollary 5.21). (2)는 출처 Theorem 5.22(p.140)이고 출처는 증명을 Exercise 5.15(p.157)로 둔다. 출처는 그 측도를 µ_f 로 쓰고 이 항목은 ν_f 로 썼다. 출처 Example 5.23(p.140)의 ∫ g dµ_f = ∫ fg dµ 는 싣지 않았다. 출처는 그 예의 단순함수인 경우에서 'linearity of the integral (see Corollary 5.19)' 를 인용하는데 Corollary 5.19 는 감소열에 관한 따름정리이다. '베포 레비 정리' 는 출처가 Theorem 5.20 에 붙인 이름이다. 확인 질문 '$E \\in \\mathcal{M}$일 때 $\\nu_{\\chi_E}$는 어떤 측도인가?' 의 축약 측도는 출처 Theorem 5.8 의 증명(p.127)이 쓰는 µ^{A_j}(출처 Example 4.8 의 contraction)와 같은 대상이다."
+    note: "(1)은 출처 Theorem 5.20(Beppo Levi, p.139)이다. 출처의 증명도 부분합 g_j 에 단조 수렴 정리를 쓰고, 유한 합의 적분을 근거를 적지 않고 각 적분의 합으로 바꾸며, A 위의 꼴은 f_k·χ_A 에 같은 논법을 쓴다. 이 항목은 유한 합에 0 이상인 함수의 적분의 덧셈 (3)을 인용했다. 출처는 정리 뒤 문단(p.139)에서 이 정리를 셈측도에 써서 이중급수를 다룬다(Corollary 5.21). (2)는 출처 Theorem 5.22(p.140)이고 출처는 증명을 Exercise 5.15(p.157)로 둔다. 출처는 그 측도를 µ_f 로 쓰고 이 항목은 ν_f 로 썼다. 출처 Example 5.23(p.140)의 ∫ g dµ_f = ∫ fg dµ 는 싣지 않았다. 출처는 그 예의 단순함수인 경우에서 'linearity of the integral (see Corollary 5.19)' 를 인용하는데 Corollary 5.19 는 감소열에 관한 따름정리이다. '베포 레비 정리' 는 출처가 Theorem 5.20 에 붙인 이름이고, 출처는 Example 6.6(p.167)과 Corollary 6.16 의 증명(p.177)에서도 Theorem 5.20 을 이 이름으로 가리킨다. 출처는 단조 수렴 정리(Theorem 5.17) 바로 앞 문단의 레비를 소개하는 각주(p.135)에서 'In his honor, that theorem is called the “Beppo Levi theorem”' 이라 적는다. 확인 질문 '$E \\in \\mathcal{M}$일 때 $\\nu_{\\chi_E}$는 어떤 측도인가?' 의 축약 측도는 출처 Theorem 5.8 의 증명(p.127)이 쓰는 µ^{A_j}(출처 Example 4.8 의 contraction)와 같은 대상이다."
 status: reviewed
 review_note: "2026-11-28 자기 검토와 지휘자 확인(a.e. 판 단조 수렴의 예외 집합이 식으로 정해지는지, 마르코프의 이름에 대한 메모, 디랙 측도 확인 질문). 독립 검토 없음."
 added: 2026-11-28
