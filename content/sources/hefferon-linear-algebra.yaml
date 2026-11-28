@@ -1,0 +1,9 @@
+type: book
+authors: [Jim Hefferon]
+title: Linear Algebra
+edition: "4판(원본 src/pref/pref.tex 의 'Fourth edition, second printing', src/publicationdate.tex 의 2021-Oct-12). GitLab 저장소 jim.hefferon/linear-algebra 의 커밋 a8f619d9153318f0afae137bcff60de9ef03af80 에 있는 LaTeX 원본"
+year: 2021
+url: https://gitlab.com/jim.hefferon/linear-algebra
+access: open
+license: CC BY-SA 2.5 또는 GNU FDL (저자가 둘 가운데 고르게 한다)
+note: "저자가 무료로 공개하는 교재이다. 책의 안내 주소는 https://hefferon.net/linearalgebra/ 이다. 저장소의 LICENSE 파일에 'Use it under either the GNU Free Documentation License or the Creative Commons License Creative Commons Attribution-ShareAlike 2.5 License, at your discretion' 이 적혀 있다. PDF 는 받지 못했고(안내 주소가 가리키는 jheffero.w3.uvm.edu 가 막혀 있다) 위 커밋의 LaTeX 원본을 기준으로 삼는다. 저장소는 2021년 인쇄 뒤에도 고쳐지고 있어(예: src/jc/jc4.tex 는 2026-07 에 고쳐졌다) 인쇄본과 대조하지 않았다. 쪽 번호가 없고 정리 번호는 컴파일하지 않아 확정되지 않으므로, 이 사이트의 loc 는 절 제목과 원본 파일의 줄(src/<폴더>/<파일>.tex:<줄>)로 적고 정리는 \\label 이름으로 가리킨다. 5장 Similarity(src/jc/jc1.tex–jc4.tex)는 스칼라를 복소수로 둔다(jc1.tex 의 'we shall use complex numbers for our scalars')."
