@@ -8,8 +8,6 @@ track: 해석
 requires: [language-of-math, analysis-intro, topology-intro, riemann-integral, series-and-power-series]
 status: in-progress
 planned_units:
-  - σ-대수와 가측함수
-  - 측도
   - 0 이상인 함수의 적분
   - μ-적분가능한 함수와 지배 수렴 정리
   - L¹ 반노름과 리스–피셔 정리
