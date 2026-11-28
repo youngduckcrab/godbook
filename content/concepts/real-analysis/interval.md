@@ -39,7 +39,7 @@ $[a, b]$를 **닫힌구간**(closed interval), $(a, b)$를 **열린구간**(open
 
 **열린구간과 순서쌍.** 열린구간 $(a, b)$와 [[cartesian-product|곱집합]]의 원소인 순서쌍 $(a, b)$는 같은 표기이다. 이 사이트는 둘을 문맥으로 구별한다. "열린구간 $(a, b)$", "구간 $(a, b)$"처럼 구간이라는 말과 함께 쓰거나 "실수 $x$에 대하여 $x \in (a, b)$"처럼 실수가 원소로 속하는 집합으로 쓰면 열린구간이고, "$(a, b) \in \mathbb{R} \times \mathbb{R}$"처럼 곱집합의 원소로 쓰거나 함수에 속하는 쌍으로 쓰면 순서쌍이다.
 
-**유계가 아닌 구간.** 실수 $a$에 대하여 네 집합 $\{x \in \mathbb{R} : a \le x\}$, $\{x \in \mathbb{R} : a < x\}$, $\{x \in \mathbb{R} : x \le a\}$, $\{x \in \mathbb{R} : x < a\}$와 $\mathbb{R}$은 아래 (2)에 의해 구간이다. 이 사이트는 이것들에 구간 기호를 따로 두지 않고 집합 표기로 쓰며, $\infty$를 구간 기호 안에 쓰지 않는다.
+**유계가 아닌 구간.** 실수 $a$에 대하여 네 집합 $\{x \in \mathbb{R} : a \le x\}$, $\{x \in \mathbb{R} : a < x\}$, $\{x \in \mathbb{R} : x \le a\}$, $\{x \in \mathbb{R} : x < a\}$와 $\mathbb{R}$은 아래 (2)에 의해 구간이다. 이 항목은 이것들에 구간 기호를 두지 않고 집합 표기로 쓰며, 이 항목의 구간 기호 안에 $\infty$를 쓰지 않는다.
 
 다음이 성립한다. 아래에서 $a$, $b$는 실수이다.
 
@@ -70,7 +70,7 @@ $[a, b]$ is called a **closed interval**, $(a, b)$ an **open interval**, and $(a
 
 **Open intervals and ordered pairs.** The open interval $(a, b)$ and the ordered pair $(a, b)$, an element of a Cartesian product, are written the same way. This site tells them apart by context. When written together with the word interval, as in "the open interval $(a, b)$" or "the interval $(a, b)$", or as a set to which a real number belongs, as in "$x \in (a, b)$ for a real number $x$", it is the open interval; when written as an element of a Cartesian product, as in "$(a, b) \in \mathbb{R} \times \mathbb{R}$", or as a pair belonging to a function, it is the ordered pair.
 
-**Unbounded intervals.** For a real number $a$, the four sets $\{x \in \mathbb{R} : a \le x\}$, $\{x \in \mathbb{R} : a < x\}$, $\{x \in \mathbb{R} : x \le a\}$, $\{x \in \mathbb{R} : x < a\}$ and $\mathbb{R}$ are intervals by (2) below. This site introduces no separate interval symbols for them and writes them in set notation; $\infty$ is not used inside interval symbols.
+**Unbounded intervals.** For a real number $a$, the four sets $\{x \in \mathbb{R} : a \le x\}$, $\{x \in \mathbb{R} : a < x\}$, $\{x \in \mathbb{R} : x \le a\}$, $\{x \in \mathbb{R} : x < a\}$ and $\mathbb{R}$ are intervals by (2) below. This entry introduces no interval symbols for them and writes them in set notation; $\infty$ is not used inside the interval symbols of this entry.
 
 The following hold. Below, $a$ and $b$ are real numbers.
 

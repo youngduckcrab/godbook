@@ -15,9 +15,9 @@ sources:
     checked: original
     note: "출처는 1절(p.2)에서 ℕ 과의 일대일 대응이 있기만 한 'countable set' 과, 특정한 대응 ι_B : B → ℕ 이 골라져 있는 'counted set' 을 구별하고, 서로소인 counted 집합들의 가산 족은 'immediately identifiable with N × N' 이어서 그 합집합이 'snaking argument' 로 가산이라고 적는다. 이어서 같은 논법이 countable 집합들의 족에는 'does not a priori work in ZF' 인데, 각 A_α 와 ℕ 의 대응을 모든 α 에 대해 동시에 골라야 하고 'This procedure requires the axiom of countable choice (ACC)' 라고 적는다. 이 항목의 '열거'는 출처의 counted 와 같은 구실을 한다. 다만 출처는 B → ℕ 방향의 대응을 쓰고 이 항목은 ℕ 에서 A_n 으로의 전사를 한 함수 e 로 묶어 주며, 서로소를 요구하지 않는다. 출처 3절의 각주 2(p.4)는 'there is no need for the axiom of choice to prove that a finite union of countable sets is itself countable' 이라고 적는다(이 항목의 (3)). 출처는 그 근거로 Fremlin 의 책(참고문헌 [3])을 가리킨다."
   - ref: lebl-basic-analysis
-    loc: 0.3.5절 Cardinality, Example 0.3.31 (p.18); 0.3.6절 Exercise 0.3.19 (p.21)
+    loc: 0.3.5절 Cardinality, Example 0.3.31 (p.18); Example 0.3.32 (p.18); 0.3.6절 Exercise 0.3.19 (p.21)
     checked: original
-    note: "출처 Example 0.3.31 은 ℕ × ℕ 을 두 성분의 합이 같은 것끼리 차례로 늘어놓아 가산 무한임을 보이고, 이 항목의 (1)은 그 늘어놓기 대신 짝짓기 함수 π 의 역함수로 e 를 한 줄로 늘어놓는다. Exercise 0.3.19 는 합집합이 유한집합이 아닌 유한집합들의 가산 족의 예를 들라고 한다."
+    note: "출처 Example 0.3.31 은 ℕ × ℕ 을 두 성분의 합이 같은 것끼리 차례로 늘어놓아 가산 무한임을 보이고, 이 항목의 (1)은 그 늘어놓기 대신 짝짓기 함수 π 의 역함수로 e 를 한 줄로 늘어놓는다. Exercise 0.3.19 는 합집합이 유한집합이 아닌 유한집합들의 가산 족의 예를 들라고 한다. 확인 질문 '$X = \\mathbb{Z}$, $A_n = \\{-n, n\\}$이고 $e(n, 1) = -n$, $k \\ge 2$에서 $e(n, k) = n$이라 하자. $e$가 $(A_n)$을 열거함을 확인하고 $u(1), \\dots, u(6)$을 구하라.'의 A_n = {−n, n} 은 이 연습문제가 묻는 꼴의 한 예이다(원소 두 개인 집합들의 합집합이 0 이 아닌 정수 전체). 예시 '분모가 $n$인 분수들의 합집합'은 출처 Example 0.3.32(p.18)와 같은 대상(분수로 쓴 유리수 전체의 가산성)을 다룬다."
 status: reviewed
 review_note: "2026-11-28 자기 검토와 지휘자 표본 확인(러셀의 논법, Kanovei–Katz 인용 대조, min·max 와 1 의 합의 경계 경우). 독립 검토 없음."
 added: 2026-11-28

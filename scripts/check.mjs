@@ -36,10 +36,12 @@ for (const c of concepts) {
   for (const s of d.sources ?? []) {
     if (!sources.has(s.ref)) err(c.file, `출처 '${s.ref}' 가 content/sources 에 없다`);
     if (!s.loc?.trim()) err(c.file, `출처 '${s.ref}' 의 위치(loc)가 비었다`);
+    if (/지휘자|작성자에게|검토자/.test(`${s.note ?? ''} ${s.loc ?? ''}`)) warn(c.file, `출처 '${s.ref}' 의 메모에 작업 용어(지휘자·작성자·검토자)가 있다. 독자에게 보이는 글이므로 사실만 적는다`);
   }
   const opened = (d.sources ?? []).some((s) => s.checked === 'original' || s.checked === 'mirror');
   if (d.status !== 'unverified' && !opened) err(c.file, `status 가 '${d.status}' 인데 실제로 열어 본 출처가 없다`);
   if (d.status === 'reviewed' && !d.review_note) err(c.file, "status 가 'reviewed' 이면 review_note 가 필요하다");
+  if (/지휘자/.test(c.body)) warn(c.file, '본문에 작업 용어(지휘자)가 있다');
   if (/[$\\]/.test(d.summary ?? '')) err(c.file, 'summary 에는 수식($...$)이나 LaTeX 명령을 쓸 수 없다 (글자 그대로 표시된다). 말이나 유니코드 기호로 쓴다');
   if (!/^:::statement\s*$/m.test(c.body)) err(c.file, ':::statement 블록이 없다');
   if (!/^:::statement\s*\n[\s\S]*?\n:::\s*\n+:::english\s*$/m.test(c.body)) err(c.file, ':::statement 바로 뒤에 :::english 블록(영어 진술)이 없다');

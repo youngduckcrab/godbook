@@ -11,9 +11,9 @@ requires: [real-number-arithmetic, order-properties-of-reals, absolute-value, se
 proof: full
 sources:
   - ref: blackstone-mikusinski-daniell-integral
-    loc: "6절 Theorem 6.3 (p.14)"
+    loc: "2절 Definition 2.8 뒤 문단 (p.5); 3절 Theorem 3.9 (p.8), Corollary 3.11 (p.9); 6절 Theorem 6.3 (p.14)"
     checked: original
-    note: "출처 Theorem 6.3(p.14)은 U 의 단조열 f_n 이 모든 n 에서 ∫f_n ≤ M 이면 f_n 이 노름과 거의 어디서나의 뜻으로 수렴하는 f ∈ U 가 있고 ∫f ≤ M 이라는 것이다. 출처의 증명은 'Without loss of generality, we can assume that the sequence is non-decreasing and the functions are non-negative' 로 시작해 Σ∫|f_{n+1} − f_n| ≤ M 에서 Corollary 3.11 로 f ≃ f_1 + (f_2 − f_1) + ⋯ 를 얻고, Theorem 4.7 과 Corollary 5.10 으로 결론을 낸다. 감소열에서는 ∫f_n ≤ ∫f_1 이 늘 성립하므로, 이 항목은 (1)의 증가열에 '적분이 위로 유계', (2)의 감소열에 '적분이 아래로 유계'를 따로 가정한다. Corollary 3.11 의 증명은 Theorem 3.9 를 거쳐 함수마다 표현을 고르므로, 이 항목은 표현족이 주어진 꼴로 좁히고 representation-family 의 (3)–(5)를 쓴다. 출처의 극한 f 는 거의 어디서나로만 정해지지만, 이 항목은 점마다 위로 유계인 곳에서 극한, 아닌 곳에서 0 으로 하나를 정한다. 예시 '0 쪽으로 높아지는 계단의 극한'은 출처 p.5 의 Σ 2^{−n}χ_{[n−1,n)} (계단함수의 급수로 쓴 계단함수가 아닌 함수)와 같은 발상이다."
+    note: "출처 Theorem 6.3(p.14)은 U 의 단조열 f_n 이 모든 n 에서 ∫f_n ≤ M 이면 f_n 이 노름과 거의 어디서나의 뜻으로 수렴하는 f ∈ U 가 있고 ∫f ≤ M 이라는 것이다. 출처의 증명은 'Without loss of generality, we can assume that the sequence is non-decreasing and the functions are non-negative' 로 시작해 Σ∫|f_{n+1} − f_n| ≤ M 에서 Corollary 3.11 로 f ≃ f_1 + (f_2 − f_1) + ⋯ 를 얻고, Theorem 4.7 과 Corollary 5.10 으로 결론을 낸다. 감소열에서는 ∫f_n ≤ ∫f_1 이 늘 성립하므로, 이 항목은 (1)의 증가열에 '적분이 위로 유계', (2)의 감소열에 '적분이 아래로 유계'를 따로 가정한다. Corollary 3.11(p.9)의 증명은 f 를 식으로 정의하는 것뿐이고, f 가 U* 의 원소라는 것은 Theorem 3.9(p.8)에서 나오며 그 증명이 함수마다 표현을 고르므로, 이 항목은 표현족이 주어진 꼴로 좁히고 representation-family 의 (3)–(5)를 쓴다. 출처의 극한 f 는 거의 어디서나로만 정해지지만, 이 항목은 점마다 위로 유계인 곳에서 극한, 아닌 곳에서 0 으로 하나를 정한다. 예시 '0 쪽으로 높아지는 계단의 극한'은 출처 p.5 의 Σ 2^{−n}χ_{[n−1,n)} (계단함수의 급수로 쓴 계단함수가 아닌 함수)와 같은 발상이다."
 status: reviewed
 review_note: "2026-11-28 자기 검토와 지휘자 확인(아르첼라의 출처 주장을 Lebl I 6.2.2 각주와 다섯 출처의 검색으로 대조, 수렴 정리의 예외 집합 가정 꼴). 독립 검토 없음."
 added: 2026-11-28
